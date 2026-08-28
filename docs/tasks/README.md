@@ -28,7 +28,7 @@ T00 기준선
 | T09 | DONE | 병렬 A | T08 | corpus/API/retrieval/evaluation 테스트와 CI |
 | T10 | DONE | 병렬 B | T08 | Docker, Compose, K8s, homelab handoff |
 | T11 | DONE | 운영 | T09,T10 | 21,211 청크, 역추적 99.87%, 검색 평가 통과 |
-| T12 | DOING | 순차 | T11 | 서버 대화 이력, API 속도 제한, 본인 인터뷰 워크플로 배포·검증 |
+| T12 | DONE | 순차 | T11 | 서버 대화 이력, API 속도 제한, 본인 인터뷰 워크플로 배포·검증 |
 
 T11은 2만 청크 품질 게이트까지 실행됐다. T12는 대화 맥락을 PostgreSQL에 저장하고 공개
 API를 보호하며, 질문지 답변을 검토 가능한 1인칭 자료로 승격한다. 구체적인 절차는
