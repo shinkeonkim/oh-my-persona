@@ -1,0 +1,25 @@
+{
+  "documents": 2715,
+  "chunks": 5773,
+  "exact_duplicates": 0,
+  "traceable_chunks": 5752,
+  "traceability_rate": 0.9964,
+  "sensitive_findings": [],
+  "chunks_per_source": {
+    "SRC-0001": 210,
+    "SRC-0002": 549,
+    "SRC-0003": 1,
+    "SRC-0004": 1,
+    "SRC-0005": 1,
+    "SRC-0006": 3,
+    "SRC-0007": 1,
+    "SRC-0008": 2,
+    "SRC-0009": 1,
+    "SRC-0011": 99,
+    "SRC-0012": 1440,
+    "SRC-0013": 67,
+    "SRC-0014": 3377,
+    "authored": 21
+  },
+  "quality_gate_500": true
+}

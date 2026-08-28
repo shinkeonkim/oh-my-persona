@@ -7,6 +7,7 @@ COPY src ./src
 COPY static ./static
 COPY data/registry ./data/registry
 COPY data/curated ./data/curated
+COPY data/processed ./data/processed
 COPY docs ./docs
 RUN pip install --no-cache-dir .
 USER persona

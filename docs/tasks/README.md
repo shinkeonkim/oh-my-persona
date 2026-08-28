@@ -27,9 +27,11 @@ T00 기준선
 | T08 | DONE | 순차 | T07A,T07B | Strands+LiteLLM RAG 연결, 근거 없는 응답 abstain |
 | T09 | DONE | 병렬 A | T08 | corpus/API/retrieval/evaluation 테스트와 CI |
 | T10 | DONE | 병렬 B | T08 | Docker, Compose, K8s, homelab handoff |
-| T11 | DOING | 운영 | T09,T10 | 첫 654 청크 적재 완료; 5천~1만 확장·운영 배포 입력 대기 |
+| T11 | DOING | 운영 | T09,T10 | 5,773 청크 품질 게이트 완료; 1만 확장 진행 |
 
-T11은 첫 500청크 품질 게이트까지 실행됐다. 다음 배치는 외부 사이트 대량 수집, 사용자가 제공할 문서, 별도 저장소 PR/시크릿/DNS라는 운영 입력이 필요한 반복 작업이다. 구체적인 절차는 [T11](/docs/tasks/T11-corpus-and-production.md)에 있다.
+T11은 첫 5천 청크 품질 게이트와 운영 배포까지 실행됐다. 다음 배치는 게시물 단위 외부
+사이트 수집과 사용자가 제공할 문서를 포함해 1만 청크로 확장하는 반복 작업이다. 구체적인
+절차는 [T11](/docs/tasks/T11-corpus-and-production.md)에 있다.
 
 ## 공통 Definition of Done
 

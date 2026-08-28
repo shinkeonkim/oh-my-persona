@@ -66,6 +66,49 @@ def collect_local_repository(root: Path, repo: Path, source: dict[str, Any]) -> 
         })
         accepted += 1
 
+    history = git_value(
+        repo,
+        "log",
+        "--all",
+        "--date=iso-strict",
+        "--pretty=format:%H%x00%aI%x00%s%x1e",
+    )
+    for entry in history.split("\x1e"):
+        entry = entry.strip()
+        if not entry:
+            continue
+        commit_sha, authored_at, subject = entry.split("\x00", 2)
+        subject = " ".join(subject.split())
+        content = (
+            f"GitHub repository: {source['canonical_url']}\n"
+            f"Commit date: {authored_at}\n"
+            f"Commit: {subject}\n"
+        )
+        reasons = [name for name, pattern in SENSITIVE_PATTERNS.items() if pattern.search(content)]
+        if reasons:
+            rejected += 1
+            continue
+        digest = hashlib.sha256(content.encode()).hexdigest()
+        if digest in seen_hashes:
+            duplicates += 1
+            continue
+        seen_hashes.add(digest)
+        relative = Path(".history") / f"{commit_sha}.txt"
+        destination = destination_root / relative
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_text(content, encoding="utf-8")
+        records.append({
+            "document_id": f"DOC-{digest[:20]}", "source_id": source["source_id"],
+            "canonical_url": f"{source['canonical_url']}/commit/{commit_sha}",
+            "repository_url": source["canonical_url"], "commit_sha": commit_sha,
+            "relative_path": relative.as_posix(),
+            "raw_path": str(destination.relative_to(root)), "content_sha256": digest,
+            "mime_type": "text/plain", "published_at": authored_at,
+            "observed_at": observed_at, "extractor_version": "local-git-history-v1",
+            "status": "accepted",
+        })
+        accepted += 1
+
     manifest_path.parent.mkdir(parents=True, exist_ok=True)
     all_records = sorted(retained + records, key=lambda item: (item["source_id"], item["relative_path"]))
     manifest_path.write_text("".join(json.dumps(item, ensure_ascii=False) + "\n" for item in all_records), encoding="utf-8")

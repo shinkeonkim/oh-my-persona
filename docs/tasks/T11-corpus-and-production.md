@@ -1,6 +1,6 @@
 # T11 — 5천~1만 corpus와 운영 전환
 
-상태: DOING (첫 500청크 품질 게이트 완료, 추가 자료 대기)
+상태: DOING (5천 청크 품질 게이트 완료, 1만 확장 진행)
 선행: T09, T10
 
 ## 2026-08-29 실행 기록
@@ -16,14 +16,18 @@
 - 공개 저장소 `https://github.com/shinkeonkim/oh-my-persona` 생성·초기 push 및 CI 통과
 - 공개 멀티아키텍처 이미지 `ghcr.io/shinkeonkim/oh-my-persona:main` 발행
 - `oh-my-homelab` draft PR #78 생성 및 GitOps CI 통과
+- `my-cv`, `oh-my-interview-helper`, GitHub profile repository, legacy GitHub Pages blog를
+  추가하고 6개 저장소의 전체 커밋 이력을 날짜·영구 commit URL과 함께 snapshot
+- source 14, snapshot document 2,715, 중복 제거 청크 5,773으로 첫 5천 목표 통과
+- exact duplicate 0, 민감정보 패턴 0, source 역추적 가능 청크 5,752/5,773(99.64%)
+- `data/processed/chunks.jsonl`을 재현 가능한 검색 산출물로 이미지에 포함해 운영 챗봇이
+  전체 코퍼스를 실제로 검색하도록 수정
 
 ## 차단 입력
 
 1. 사용자가 제공할 PDF/Markdown ZIP의 공개·검색 허용 범위
-2. 5,000개 이상 확장을 위한 GitHub API token 또는 추가 공개 저장소 범위
-3. 블로그별 robots/약관 검토 후 실제 crawl 실행
-4. 준비된 `feat/persona-service` 브랜치의 리뷰/PR과 실제 SOPS secret
-5. LiteLLM virtual key, DB secret, Cloudflare Public Hostname 생성
+2. 10,000개 확장을 위한 추가 공개 저장소·발표·기고 범위
+3. 블로그별 robots/약관 검토 후 게시물 단위 crawl 실행
 
 ## 배치 반복
 
