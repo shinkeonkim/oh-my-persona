@@ -8,6 +8,7 @@ from .audit import write_audit
 from .collect import collect_local_repository
 from .corpus import build_chunks, iter_corpus_files, read_jsonl, validate
 from .ingest import approve_inbox, inspect_inbox
+from .qa import build_answers
 from .service import search
 from .web_collect import collect_web_source
 
@@ -18,10 +19,11 @@ def project_root() -> Path:
 
 def main() -> None:
     parser = argparse.ArgumentParser(prog="persona")
-    parser.add_argument("command", choices=("validate", "inventory", "chunk", "audit", "collect-local", "collect-web", "inspect-inbox", "ingest-inbox", "evaluate"))
+    parser.add_argument("command", choices=("validate", "inventory", "chunk", "audit", "collect-local", "collect-web", "inspect-inbox", "ingest-inbox", "build-answers", "evaluate"))
     parser.add_argument("--approve", action="store_true", help="required before copying inbox files to raw")
     parser.add_argument("--source-id")
     parser.add_argument("--repo", type=Path)
+    parser.add_argument("--answers", type=Path)
     args = parser.parse_args()
     root = project_root()
 
@@ -70,6 +72,10 @@ def main() -> None:
         print(json.dumps([finding.__dict__ for finding in findings], ensure_ascii=False, indent=2))
         if any(finding.status == "rejected" for finding in findings):
             raise SystemExit(2)
+    elif args.command == "build-answers":
+        if not args.answers:
+            raise SystemExit("build-answers requires --answers")
+        print(json.dumps(build_answers(root, args.answers), ensure_ascii=False))
     else:
         evaluations = read_jsonl(root / "evals/questions.jsonl")
         failures = []

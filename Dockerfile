@@ -9,6 +9,7 @@ COPY data/registry ./data/registry
 COPY data/curated ./data/curated
 COPY data/processed ./data/processed
 COPY docs ./docs
+COPY migrations ./migrations
 RUN pip install --no-cache-dir .
 USER persona
 EXPOSE 8000

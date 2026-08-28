@@ -12,7 +12,7 @@
 - `data/registry/sources.jsonl`: 정규 URL, 관측일, 공개 범위, 수집 정책을 가진 출처 레지스트리
 - `data/curated/claims.jsonl`: 날짜 정밀도와 근거를 가진 초기 원자 사실
 - `docs/persona.md`: 기존 3,000줄 문서를 보강한 시계열 페르소나
-- `docs/research-plan.md`: 5,000~10,000+ **검색 청크** 확보 계획과 품질 게이트
+- `docs/research-plan.md`: 20,000~50,000 **검색 청크** 확보 계획과 품질 게이트
 - `docs/architecture.md`: Strands Agents + LiteLLM + PostgreSQL/pgvector 기반 웹 챗봇 설계
 - `src/oh_my_persona`: 수집 자료 정규화·청킹·검증 및 API 골격
 
@@ -30,6 +30,11 @@ uv run persona evaluate
 uv run pytest
 ```
 
+본인 서술은 `data/questionnaires/persona-questions.jsonl`의 질문에 로컬로 답변한 뒤
+`uv run persona build-answers --answers <답변.jsonl>`로 공개 가능한 답변만 검색 문서로
+승격합니다. 자세한 형식과 검토 절차는 [인터뷰 워크플로](docs/persona-interview-workflow.md)에
+있습니다.
+
 `chunk`는 `data/raw/`와 `data/curated/`를 읽고 재생성 가능한 `data/processed/chunks.jsonl`을 만듭니다. 원문 PDF/ZIP은 Git에 바로 넣지 말고 `data/inbox/`에 두며, 수집 승인 후 raw 저장소로 승격합니다.
 
 전체 작업 순서와 진행 상태는 [docs/tasks/README.md](docs/tasks/README.md)에 있습니다.
@@ -44,6 +49,8 @@ uv run uvicorn oh_my_persona.api:app --reload
 ```
 
 모델 키는 브라우저에 전달하지 않습니다. 운영에서는 LiteLLM Proxy의 논리 모델 이름(`persona-chat`)을 사용해 Provider를 서버 쪽에서 교체합니다.
+대화는 서버의 PostgreSQL에 보존되어 여러 웹 서버에서도 이어지며, 공개 AI 요청에는 IP를
+salted hash로 변환한 시간창 속도 제한을 적용합니다.
 
 ## 데이터 디렉터리
 

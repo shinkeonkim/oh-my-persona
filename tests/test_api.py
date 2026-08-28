@@ -1,6 +1,8 @@
 from fastapi.testclient import TestClient
 
+from oh_my_persona import api
 from oh_my_persona.api import app
+from oh_my_persona.conversations import RateLimiter
 
 client = TestClient(app)
 
@@ -29,3 +31,31 @@ def test_private_query_abstains() -> None:
     assert response.status_code == 200
     assert response.json()["sources"] == []
     assert "개인정보" in response.json()["answer"]
+
+
+def test_multiturn_conversation_is_saved(monkeypatch) -> None:
+    monkeypatch.delenv("PERSONA_LITELLM_URL", raising=False)
+    first = client.post(
+        "/api/chat",
+        headers={"cf-connecting-ip": "192.0.2.10"},
+        json={"message": "특전사 복무 기간은?"},
+    ).json()
+    second = client.post(
+        "/api/chat",
+        headers={"cf-connecting-ip": "192.0.2.10"},
+        json={"message": "그때 맡은 역할은?", "conversation_id": first["conversation_id"]},
+    )
+    assert second.status_code == 200
+    saved = client.get(f"/api/conversations/{first['conversation_id']}").json()["messages"]
+    assert [item["role"] for item in saved] == ["user", "assistant", "user", "assistant"]
+
+
+def test_unknown_conversation_and_rate_limit(monkeypatch) -> None:
+    missing = "00000000-0000-4000-8000-000000000000"
+    assert client.get(f"/api/conversations/{missing}").status_code == 404
+    monkeypatch.setattr(api, "limiter", RateLimiter(api.store, limit=1, window_seconds=60))
+    headers = {"cf-connecting-ip": "192.0.2.99"}
+    assert client.post("/api/chat", headers=headers, json={"message": "주민등록번호는?"}).status_code == 200
+    limited = client.post("/api/chat", headers=headers, json={"message": "집 주소는?"})
+    assert limited.status_code == 429
+    assert int(limited.headers["retry-after"]) >= 1

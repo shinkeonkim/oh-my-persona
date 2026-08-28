@@ -1,0 +1,50 @@
+{"question_id":"PQ-001","category":"identity","question":"지금 스스로를 어떤 개발자라고 소개하나요?","time_scope":"2026-08","sensitivity":"public"}
+{"question_id":"PQ-002","category":"identity","question":"shinkeonkim, singun11, koa, kokoa라는 닉네임은 각각 언제부터 왜 사용했나요?","time_scope":"lifetime","sensitivity":"public"}
+{"question_id":"PQ-003","category":"values","question":"개발할 때 가장 중요하게 지키는 세 가지 원칙은 무엇인가요?","time_scope":"2026-08","sensitivity":"public"}
+{"question_id":"PQ-004","category":"values","question":"과거와 비교해 가장 크게 달라진 개발 가치관은 무엇인가요?","time_scope":"lifetime","sensitivity":"public"}
+{"question_id":"PQ-005","category":"values","question":"의견 충돌이 있을 때 결정을 내리는 기준은 무엇인가요?","time_scope":"current","sensitivity":"public"}
+{"question_id":"PQ-006","category":"career","question":"개발자가 되기로 결심한 계기와 정확한 시기는 언제인가요?","time_scope":"lifetime","sensitivity":"public"}
+{"question_id":"PQ-007","category":"career","question":"각 직장과 조직을 선택했던 이유는 무엇인가요?","time_scope":"lifetime","sensitivity":"public"}
+{"question_id":"PQ-008","category":"career","question":"그렙에서 가장 큰 영향을 준 프로젝트와 본인의 기여는 무엇인가요?","time_scope":"2020-12/2022-10","sensitivity":"public"}
+{"question_id":"PQ-009","category":"career","question":"운영 장애를 해결한 사례에서 상황, 판단, 조치, 결과를 날짜와 함께 설명해주세요.","time_scope":"lifetime","sensitivity":"public"}
+{"question_id":"PQ-010","category":"career","question":"지금 다시 한다면 다르게 설계할 과거 프로젝트는 무엇인가요?","time_scope":"lifetime","sensitivity":"public"}
+{"question_id":"PQ-011","category":"military","question":"특전사 정보체계운용정비병으로서 실제 맡았던 업무 범위는 무엇인가요?","time_scope":"2022-11-28/2024-05-26","sensitivity":"public"}
+{"question_id":"PQ-012","category":"military","question":"군 복무가 운영·보안·장애 대응 관점에 어떤 변화를 만들었나요?","time_scope":"2022-11-28/2024-05-26","sensitivity":"public"}
+{"question_id":"PQ-013","category":"education","question":"국민대학교에서 가장 영향을 받은 수업, 활동, 사람은 무엇인가요?","time_scope":"2019-03/2026-08","sensitivity":"public"}
+{"question_id":"PQ-014","category":"education","question":"멋쟁이사자처럼 운영진 대표 경험에서 잘한 점과 아쉬운 점은 무엇인가요?","time_scope":"2021","sensitivity":"public"}
+{"question_id":"PQ-015","category":"community","question":"SIPE에 참여한 이유와 기수별 활동·기여를 날짜와 함께 설명해주세요.","time_scope":"lifetime","sensitivity":"public"}
+{"question_id":"PQ-016","category":"technology","question":"Ruby on Rails를 선택하거나 선호했던 이유는 무엇인가요?","time_scope":"lifetime","sensitivity":"public"}
+{"question_id":"PQ-017","category":"technology","question":"Django와 Rails를 어떤 기준으로 비교하고 선택하나요?","time_scope":"current","sensitivity":"public"}
+{"question_id":"PQ-018","category":"technology","question":"최근 Python, Rust, TypeScript 사용 비중과 선택 기준은 무엇인가요?","time_scope":"2025/2026","sensitivity":"public"}
+{"question_id":"PQ-019","category":"technology","question":"검색 시스템을 설계하거나 개선한 경험을 수치와 함께 설명해주세요.","time_scope":"lifetime","sensitivity":"public"}
+{"question_id":"PQ-020","category":"technology","question":"데이터베이스 정규화와 JSONB 사용에 대한 현재 관점은 무엇인가요?","time_scope":"current","sensitivity":"public"}
+{"question_id":"PQ-021","category":"technology","question":"API 현대화 또는 레거시 개선에서 가장 어려웠던 판단은 무엇인가요?","time_scope":"lifetime","sensitivity":"public"}
+{"question_id":"PQ-022","category":"operations","question":"배포와 운영을 개발 완료의 일부로 보는 이유는 무엇인가요?","time_scope":"current","sensitivity":"public"}
+{"question_id":"PQ-023","category":"operations","question":"홈랩을 시작한 시기, 목적, 현재 구조와 운영 원칙은 무엇인가요?","time_scope":"lifetime","sensitivity":"public"}
+{"question_id":"PQ-024","category":"operations","question":"GitOps를 적용하며 얻은 교훈과 실제 장애 사례는 무엇인가요?","time_scope":"lifetime","sensitivity":"public"}
+{"question_id":"PQ-025","category":"ai","question":"AI 에이전트를 개발 과정에 도입한 시기와 사용 방식의 변화는 무엇인가요?","time_scope":"2024/2026","sensitivity":"public"}
+{"question_id":"PQ-026","category":"ai","question":"AI가 생성한 코드나 답변을 신뢰하기 위한 검증 기준은 무엇인가요?","time_scope":"current","sensitivity":"public"}
+{"question_id":"PQ-027","category":"ai","question":"twin-ai와 oh-my-persona를 만든 목적과 차이는 무엇인가요?","time_scope":"2025/2026","sensitivity":"public"}
+{"question_id":"PQ-028","category":"projects","question":"가장 자랑스러운 개인 프로젝트 세 개와 각각의 이유는 무엇인가요?","time_scope":"lifetime","sensitivity":"public"}
+{"question_id":"PQ-029","category":"projects","question":"실패했거나 중단한 프로젝트에서 배운 점은 무엇인가요?","time_scope":"lifetime","sensitivity":"public"}
+{"question_id":"PQ-030","category":"projects","question":"오픈소스 프로젝트를 공개하고 유지하는 기준은 무엇인가요?","time_scope":"current","sensitivity":"public"}
+{"question_id":"PQ-031","category":"problem_solving","question":"복잡한 문제를 처음 접했을 때 조사하고 쪼개는 순서는 무엇인가요?","time_scope":"current","sensitivity":"public"}
+{"question_id":"PQ-032","category":"problem_solving","question":"속도와 완성도 사이에서 타협했던 실제 사례는 무엇인가요?","time_scope":"lifetime","sensitivity":"public"}
+{"question_id":"PQ-033","category":"collaboration","question":"좋은 코드 리뷰와 좋지 않은 코드 리뷰를 어떻게 구분하나요?","time_scope":"current","sensitivity":"public"}
+{"question_id":"PQ-034","category":"collaboration","question":"지식을 문서화하거나 교육할 때 사용하는 방식은 무엇인가요?","time_scope":"current","sensitivity":"public"}
+{"question_id":"PQ-035","category":"collaboration","question":"동료에게 받은 피드백 중 행동을 바꾼 사례는 무엇인가요?","time_scope":"lifetime","sensitivity":"public"}
+{"question_id":"PQ-036","category":"growth","question":"연도별로 개발자로서 가장 크게 성장한 사건을 하나씩 꼽아주세요.","time_scope":"2017/2026","sensitivity":"public"}
+{"question_id":"PQ-037","category":"growth","question":"현재 부족하다고 느끼며 의도적으로 학습하는 영역은 무엇인가요?","time_scope":"2026-08","sensitivity":"public"}
+{"question_id":"PQ-038","category":"growth","question":"기술 학습의 깊이와 폭을 결정하는 기준은 무엇인가요?","time_scope":"current","sensitivity":"public"}
+{"question_id":"PQ-039","category":"future","question":"3년 뒤 어떤 문제를 해결하는 개발자가 되고 싶나요?","time_scope":"2026/2029","sensitivity":"public"}
+{"question_id":"PQ-040","category":"future","question":"현재 만들고 싶은 제품과 그 제품이 해결할 문제는 무엇인가요?","time_scope":"2026-08","sensitivity":"public"}
+{"question_id":"PQ-041","category":"personal","question":"개발 외 관심사가 문제 해결 방식에 어떤 영향을 주나요?","time_scope":"current","sensitivity":"public"}
+{"question_id":"PQ-042","category":"personal","question":"일과 개인 프로젝트, 학습 사이의 우선순위를 어떻게 정하나요?","time_scope":"current","sensitivity":"public"}
+{"question_id":"PQ-043","category":"evidence","question":"이력서에 있는 성과 중 수치나 맥락을 보강해야 할 항목은 무엇인가요?","time_scope":"lifetime","sensitivity":"public"}
+{"question_id":"PQ-044","category":"evidence","question":"공개 자료에 잘못 기록됐거나 현재는 달라진 내용이 있나요?","time_scope":"current","sensitivity":"public"}
+{"question_id":"PQ-045","category":"evidence","question":"본인을 오해하기 쉬운 공개 정보와 바로잡고 싶은 맥락은 무엇인가요?","time_scope":"current","sensitivity":"public"}
+{"question_id":"PQ-046","category":"preferences","question":"선호하는 팀 규모, 개발 문화, 의사결정 방식은 무엇인가요?","time_scope":"current","sensitivity":"public"}
+{"question_id":"PQ-047","category":"preferences","question":"좋은 백엔드 시스템의 기준을 우선순위대로 설명해주세요.","time_scope":"current","sensitivity":"public"}
+{"question_id":"PQ-048","category":"preferences","question":"기술 부채를 언제 감수하고 언제 즉시 해결하나요?","time_scope":"current","sensitivity":"public"}
+{"question_id":"PQ-049","category":"reflection","question":"과거의 자신에게 해주고 싶은 기술적 조언은 무엇인가요?","time_scope":"lifetime","sensitivity":"public"}
+{"question_id":"PQ-050","category":"reflection","question":"이 페르소나 챗봇이 반드시 정직하게 모른다고 답해야 하는 영역은 무엇인가요?","time_scope":"current","sensitivity":"public"}

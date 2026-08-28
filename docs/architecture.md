@@ -9,7 +9,8 @@ Strands Agents를 유지하고 그 모델 계층에 LiteLLM을 연결한다. Str
 ```text
 브라우저(모바일/PC)
   → persona.shinkeonkim.com
-  → FastAPI /chat (SSE 예정)
+  → FastAPI /chat 또는 /chat/stream (SSE)
+  → PostgreSQL 대화 이력 + IP salted-hash 속도 제한
   → query rewrite + 날짜/별칭 필터
   → PostgreSQL: FTS(BM25 계열) + pgvector
   → rerank + source diversity
@@ -28,6 +29,8 @@ Strands Agents를 유지하고 그 모델 계층에 LiteLLM을 연결한다. Str
 - `chunks`: document/claim FK, 텍스트, section/page, token 수, content hash
 - `embeddings`: chunk FK, provider/model/dimension/version; 모델별 컬렉션 분리
 - `citations`: 답변에서 사용한 chunk와 공개 URL
+- `conversations`, `conversation_messages`: 서버 측 다중 대화와 답변 근거
+- `rate_limit_events`: 원 IP를 저장하지 않는 시간창 요청 기록
 
 임베딩 모델/차원이 다르면 같은 컬럼에서 fallback하지 않는다. 새 모델은 별도 버전으로 전량 생성하고 shadow 평가 후 alias를 전환한다.
 
@@ -37,7 +40,9 @@ Strands Agents를 유지하고 그 모델 계층에 LiteLLM을 연결한다. Str
 - 관리 ingestion API는 인터넷에 노출하지 않고 homelab 내부 인증을 적용한다.
 - LLM 키는 LiteLLM/Kubernetes Secret에만 두며 프론트엔드 번들에 포함하지 않는다.
 - 프롬프트 인젝션을 막기 위해 수집 문서는 명령이 아닌 인용 데이터로 감싼다.
-- 요청별 model alias, 검색 chunk ID, 비용, latency, citation coverage를 기록하되 질문 원문 보존 기간은 최소화한다.
+- 요청별 model alias, 검색 chunk ID, 비용, latency, citation coverage를 기록한다.
+- 공개 요청 IP는 비밀 salt와 함께 단방향 hash한 식별자만 저장하고 시간창이 지난 제한
+  이벤트는 주기적으로 삭제한다.
 
 ## 단계별 구현
 

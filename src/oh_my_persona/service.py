@@ -35,11 +35,16 @@ def grounded_fallback(question: str, hits: list[dict]) -> str:
     return "\n\n".join(lines)
 
 
-def answer(question: str, model_alias: str | None = None) -> tuple[str, list[dict]]:
+def answer(question: str, model_alias: str | None = None,
+           history: list[dict] | None = None) -> tuple[str, list[dict]]:
     if any(term.lower() in question.lower() for term in PRIVATE_QUERY_TERMS):
         return "개인정보나 인증정보는 공개 자료 검색 및 답변 대상에서 제외합니다.", []
-    hits = search(question)
+    recent_user_context = " ".join(
+        item["content"] for item in (history or [])[-6:] if item.get("role") == "user"
+    )
+    retrieval_query = f"{recent_user_context} {question}".strip()
+    hits = search(retrieval_query)
     if not hits or not os.environ.get("PERSONA_LITELLM_URL") or not os.environ.get("PERSONA_LITELLM_KEY"):
         return grounded_fallback(question, hits), hits
     from .agent import invoke
-    return invoke(question, hits, model_alias), hits
+    return invoke(question, hits, model_alias, history), hits

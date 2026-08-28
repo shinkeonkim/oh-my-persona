@@ -7,6 +7,7 @@ requires-python = ">=3.11"
 dependencies = [
   "fastapi>=0.115",
   "pydantic>=2.10",
+  "psycopg[binary]>=3.2",
   "strands-agents[litellm]>=1.0",
   "uvicorn[standard]>=0.34",
 ]
@@ -28,6 +29,7 @@ packages = ["src/oh_my_persona"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
+testpaths = ["tests"]
 
 [tool.ruff]
 line-length = 100

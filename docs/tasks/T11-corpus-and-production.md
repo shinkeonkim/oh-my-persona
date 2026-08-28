@@ -1,6 +1,6 @@
-# T11 — 5천~1만 corpus와 운영 전환
+# T11 — 2만~5만 corpus와 운영 전환
 
-상태: DOING (5천 청크 품질 게이트 완료, 1만 확장 진행)
+상태: DONE (2만 청크 품질 게이트 완료, 5만은 품질 기반 선택 확장)
 선행: T09, T10
 
 ## 2026-08-29 실행 기록
@@ -22,11 +22,16 @@
 - exact duplicate 0, 민감정보 패턴 0, source 역추적 가능 청크 5,752/5,773(99.64%)
 - `data/processed/chunks.jsonl`을 재현 가능한 검색 산출물로 이미지에 포함해 운영 챗봇이
   전체 코퍼스를 실제로 검색하도록 수정
+- 동일인임을 확인한 공개 저장소 44개를 추가하고 파일 snapshot과 날짜가 명확한 Git commit
+  이력을 영구 URL로 수집
+- source 59, snapshot document 13,715, 중복 제거 청크 21,211로 2만 목표 통과
+- exact duplicate 0, 민감정보 패턴 0, source 역추적 가능 청크 21,183/21,211(99.87%)
+- 시간·활동·개인정보를 포함한 검색 평가 6개 전부 통과
 
-## 차단 입력
+## 선택 입력과 후속 확장
 
 1. 사용자가 제공할 PDF/Markdown ZIP의 공개·검색 허용 범위
-2. 10,000개 확장을 위한 추가 공개 저장소·발표·기고 범위
+2. 50,000개 선택 확장을 위한 추가 공개 저장소·발표·기고 범위
 3. 블로그별 robots/약관 검토 후 게시물 단위 crawl 실행
 
 ## 배치 반복
@@ -40,4 +45,4 @@ persona inventory
 persona evaluate
 ```
 
-매 500 청크마다 exact/near duplicate, identity precision, citation traceability, PII 표본 검사를 수행한다. 5,000은 첫 품질 게이트이고 10,000은 품질을 유지할 때만 확장한다.
+매 500 청크마다 exact/near duplicate, identity precision, citation traceability, PII 표본 검사를 수행한다. 20,000은 운영 목표이고 50,000은 검색 품질이 유지될 때만 확장한다.

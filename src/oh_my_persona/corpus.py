@@ -43,7 +43,7 @@ def read_jsonl(path: Path) -> list[dict[str, Any]]:
     return records
 
 
-def chunk_text(text: str, source_path: str, max_chars: int = 900) -> list[Chunk]:
+def chunk_text(text: str, source_path: str, max_chars: int = 750) -> list[Chunk]:
     blocks = [block.strip() for block in re.split(r"\n\s*\n", text) if block.strip()]
     chunks: list[Chunk] = []
     buffer = ""
@@ -70,7 +70,7 @@ def iter_corpus_files(root: Path) -> Iterable[Path]:
             yield from sorted(path for path in directory.rglob("*") if path.suffix in {".md", ".txt"})
 
 
-def build_chunks(root: Path, max_chars: int = 900) -> list[dict[str, Any]]:
+def build_chunks(root: Path, max_chars: int = 750) -> list[dict[str, Any]]:
     """Build traceable chunks from registered snapshots and authored project docs."""
     output: list[dict[str, Any]] = []
     seen_content: set[str] = set()
