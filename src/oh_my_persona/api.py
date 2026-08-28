@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import asyncio
 import json
-from pathlib import Path
 
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import FileResponse, StreamingResponse
@@ -13,7 +12,7 @@ from .agent import ALLOWED_MODELS
 from .corpus import read_jsonl
 from .service import answer, root_path, search
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = root_path()
 STATIC = ROOT / "static"
 app = FastAPI(title="oh-my-persona", version="0.1.0")
 app.mount("/static", StaticFiles(directory=STATIC), name="static")

@@ -8,6 +8,7 @@ client = TestClient(app)
 def test_health_and_models() -> None:
     assert client.get("/healthz").json() == {"status": "ok"}
     assert "persona-chat" in client.get("/api/models").json()["models"]
+    assert client.get("/").status_code == 200
 
 
 def test_search_and_grounded_chat_without_credentials(monkeypatch) -> None:

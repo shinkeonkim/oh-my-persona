@@ -11,7 +11,8 @@ PRIVATE_QUERY_TERMS = ("주민등록번호", "전화번호", "집주소", "비�
 
 
 def root_path() -> Path:
-    return Path(__file__).resolve().parents[2]
+    configured = os.environ.get("PERSONA_ROOT")
+    return Path(configured).resolve() if configured else Path.cwd().resolve()
 
 
 @lru_cache(maxsize=1)
