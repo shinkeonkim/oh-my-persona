@@ -1,0 +1,40 @@
+# 실행 작업 그래프
+
+기준일: 2026-08-28. 상태는 `TODO`, `DOING`, `DONE`, `BLOCKED` 중 하나다.
+
+```text
+T00 기준선
+ ├─ T01 task/계약 ─┬─ T02 안전 수집 ─┬─ T04 corpus build ─ T06 hybrid search ─┐
+ │                 └─ T03 DB schema ─┘                                      ├─ T08 통합
+ └─ T05 자료 조사 seed ──────────────────────────────────────────────────────┘
+                                      T06 ─┬─ T07A RAG API ─┐
+                                            └─ T07B Web UI ──┤
+                                                            ├─ T09 평가/CI
+                                                            └─ T10 배포 패키지
+```
+
+| ID | 상태 | 실행 | 선행 | 산출물/완료 기준 |
+|---|---|---|---|---|
+| T00 | DONE | 순차 | - | 기존 3,000줄, resume, portfolio, homelab 규약 조사 |
+| T01 | DONE | 순차 | T00 | 작업 그래프, 데이터 계약, ADR |
+| T02 | DONE | 병렬 A | T01 | ZIP/PDF/MD inbox 검사·추출·격리·manifest |
+| T03 | DONE | 병렬 B | T01 | PostgreSQL/pgvector migration과 저장 계보 |
+| T04 | DONE | 순차 | T02,T03 | source/document/claim/chunk build 및 exact dedupe |
+| T05 | DONE | 병렬 C | T01 | URL·관측일·동일인 근거를 가진 seed corpus |
+| T06 | DONE | 순차 | T04,T05 | 메모리 lexical + PostgreSQL hybrid/RRF 검색 |
+| T07A | DONE | 병렬 A | T06 | `/search`, `/sources`, `/chat`, `/chat/stream` |
+| T07B | DONE | 병렬 B | T06 | 반응형 웹 UI, 시점·인용 카드, 모델 alias 선택 |
+| T08 | DONE | 순차 | T07A,T07B | Strands+LiteLLM RAG 연결, 근거 없는 응답 abstain |
+| T09 | DONE | 병렬 A | T08 | corpus/API/retrieval/evaluation 테스트와 CI |
+| T10 | DONE | 병렬 B | T08 | Docker, Compose, K8s, homelab handoff |
+| T11 | DOING | 운영 | T09,T10 | 첫 654 청크 적재 완료; 5천~1만 확장·운영 배포 입력 대기 |
+
+T11은 첫 500청크 품질 게이트까지 실행됐다. 다음 배치는 외부 사이트 대량 수집, 사용자가 제공할 문서, 별도 저장소 PR/시크릿/DNS라는 운영 입력이 필요한 반복 작업이다. 구체적인 절차는 [T11](/docs/tasks/T11-corpus-and-production.md)에 있다.
+
+## 공통 Definition of Done
+
+1. 모든 파생 데이터는 원 source URL과 content hash로 역추적된다.
+2. 날짜가 없는 자료에 날짜를 추정해서 넣지 않는다.
+3. 동명이인 자료는 strong identity signal 두 개 미만이면 자동 채택하지 않는다.
+4. 비밀·PII 의심 자료는 격리되고 검색 대상이 되지 않는다.
+5. `persona validate`, `pytest`, `ruff check`를 통과한다.

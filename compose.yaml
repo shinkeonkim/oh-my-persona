@@ -1,0 +1,25 @@
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_DB: persona
+      POSTGRES_USER: persona
+      POSTGRES_PASSWORD: local-persona-only
+    volumes:
+      - persona-db:/var/lib/postgresql/data
+      - ./migrations:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U persona"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+  app:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      PERSONA_DATABASE_URL: postgresql://persona:local-persona-only@db/persona
+      PERSONA_MODEL_ALIASES: persona-chat,persona-fast
+    depends_on:
+      db: {condition: service_healthy}
+volumes:
+  persona-db: {}

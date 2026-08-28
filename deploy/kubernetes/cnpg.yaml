@@ -1,0 +1,14 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata: {name: persona-db, namespace: persona}
+spec:
+  instances: 1
+  imageName: ghcr.io/cloudnative-pg/postgresql:17-standard-trixie
+  storage: {size: 3Gi, storageClass: longhorn}
+  bootstrap:
+    initdb:
+      database: persona
+      owner: persona
+      secret: {name: persona-db-credentials}
+      postInitApplicationSQLRefs:
+        configMapRefs: [{name: persona-migrations, key: 001_initial.sql}]

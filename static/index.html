@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="출처와 시점을 함께 보여주는 김신건 페르소나 챗봇">
+  <title>김신건 Persona</title>
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+  <main class="shell">
+    <header><p class="eyebrow">PROVENANCE-FIRST PERSONA</p><h1>김신건에게 물어보세요.</h1><p>답변의 사실, 시점, 원출처를 함께 확인할 수 있습니다.</p></header>
+    <section id="messages" class="messages" aria-live="polite">
+      <article class="message assistant"><p>경력 변화, 프로젝트, 기술적 판단, 가치관에 대해 질문해 보세요.</p></article>
+    </section>
+    <form id="chat-form">
+      <div class="controls"><label for="model">모델</label><select id="model"></select></div>
+      <div class="composer"><textarea id="message" maxlength="4000" required placeholder="예: 2020년과 2026년의 개발자 정체성은 어떻게 달라졌나요?"></textarea><button type="submit">질문</button></div>
+    </form>
+  </main>
+  <template id="message-template"><article class="message"><p></p><ol class="sources"></ol></article></template>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>
