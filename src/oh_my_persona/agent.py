@@ -14,7 +14,7 @@ def invoke(question: str, hits: list[dict], model_alias: str | None = None) -> s
         raise ValueError("model alias is not allowed")
     model = LiteLLMModel(
         client_args={"api_base": os.environ["PERSONA_LITELLM_URL"], "api_key": os.environ["PERSONA_LITELLM_KEY"]},
-        model_id=f"litellm_proxy/{alias}", params={"temperature": 0.1, "max_tokens": 1400},
+        model_id=f"litellm_proxy/{alias}", params={"max_tokens": 1400},
     )
     context = "\n\n".join(
         f"<source id=\"{index}\" url=\"{hit.get('url') or ''}\" observed_at=\"{hit.get('observed_at') or ''}\">\n{hit['text']}\n</source>"
