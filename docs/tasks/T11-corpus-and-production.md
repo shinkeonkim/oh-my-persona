@@ -13,6 +13,9 @@
 - temporal/activity/privacy 평가 통과
 - `oh-my-homelab`의 별도 `feat/persona-service` worktree에 Application, CNPG, Deployment,
   Service, PDB, NetworkPolicy, SOPS 예시를 작성하고 GitOps 전체 검증 통과
+- 공개 저장소 `https://github.com/shinkeonkim/oh-my-persona` 생성·초기 push 및 CI 통과
+- 공개 멀티아키텍처 이미지 `ghcr.io/shinkeonkim/oh-my-persona:main` 발행
+- `oh-my-homelab` draft PR #78 생성 및 GitOps CI 통과
 
 ## 차단 입력
 
