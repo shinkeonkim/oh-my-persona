@@ -3,6 +3,23 @@ from __future__ import annotations
 import os
 
 ALLOWED_MODELS = tuple(filter(None, os.environ.get("PERSONA_MODEL_ALIASES", "persona-chat,persona-fast").split(",")))
+MAX_SOURCE_CONTEXT_CHARS = 3_000
+MAX_TOTAL_CONTEXT_CHARS = 18_000
+
+
+def build_context(hits: list[dict]) -> str:
+    sources: list[str] = []
+    remaining = MAX_TOTAL_CONTEXT_CHARS
+    for index, hit in enumerate(hits, 1):
+        if remaining <= 0:
+            break
+        text = hit["text"][: min(MAX_SOURCE_CONTEXT_CHARS, remaining)]
+        sources.append(
+            f'<source id="{index}" url="{hit.get("url") or ""}" '
+            f'observed_at="{hit.get("observed_at") or ""}">\n{text}\n</source>'
+        )
+        remaining -= len(text)
+    return "\n\n".join(sources)
 
 
 def invoke(question: str, hits: list[dict], model_alias: str | None = None,
@@ -17,10 +34,7 @@ def invoke(question: str, hits: list[dict], model_alias: str | None = None,
         client_args={"api_base": os.environ["PERSONA_LITELLM_URL"], "api_key": os.environ["PERSONA_LITELLM_KEY"]},
         model_id=f"litellm_proxy/{alias}", params={"max_tokens": 1400},
     )
-    context = "\n\n".join(
-        f"<source id=\"{index}\" url=\"{hit.get('url') or ''}\" observed_at=\"{hit.get('observed_at') or ''}\">\n{hit['text']}\n</source>"
-        for index, hit in enumerate(hits, 1)
-    )
+    context = build_context(hits)
     prior = "\n".join(
         f"{item['role']}: {item['content'][:1200]}" for item in (history or [])[-10:]
     )
