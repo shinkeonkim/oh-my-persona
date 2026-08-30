@@ -59,3 +59,26 @@ def test_unknown_conversation_and_rate_limit(monkeypatch) -> None:
     limited = client.post("/api/chat", headers=headers, json={"message": "집 주소는?"})
     assert limited.status_code == 429
     assert int(limited.headers["retry-after"]) >= 1
+
+
+def test_admin_auth_knowledge_crud_and_conversation_list(monkeypatch) -> None:
+    monkeypatch.setenv("PERSONA_ADMIN_TOKEN", "test-admin-token")
+    assert client.get("/api/admin/knowledge").status_code == 401
+    headers = {"authorization": "Bearer test-admin-token"}
+    payload = {
+        "title": "관리자 인터뷰 기록",
+        "content": "저는 관리자 입력 지식을 검색에 반영합니다.",
+        "source_url": "https://shinkeonkim.com/admin-interview",
+        "observed_at": "2026-08-30",
+        "status": "active",
+    }
+    created = client.post("/api/admin/knowledge", headers=headers, json=payload)
+    assert created.status_code == 201
+    item_id = created.json()["id"]
+    assert any(hit["chunk_id"] == f"ADMIN-{item_id}" for hit in client.get(
+        "/api/search", params={"q": "관리자 입력 지식"}
+    ).json()["hits"])
+    payload["title"] = "수정된 기록"
+    assert client.put(f"/api/admin/knowledge/{item_id}", headers=headers, json=payload).status_code == 200
+    assert client.get("/api/admin/conversations", headers=headers).status_code == 200
+    assert client.delete(f"/api/admin/knowledge/{item_id}", headers=headers).status_code == 204

@@ -101,6 +101,35 @@ class ConversationStore:
             )
             cursor.execute("UPDATE conversations SET updated_at=now() WHERE id=%s", (conversation_id,))
 
+    def list_conversations(self, limit: int = 100, offset: int = 0) -> list[dict]:
+        if not self.database_url:
+            items = []
+            for conversation_id, messages in reversed(list(self._memory.items())):
+                items.append({
+                    "id": conversation_id,
+                    "message_count": len(messages),
+                    "preview": messages[0]["content"][:160] if messages else "",
+                    "updated_at": messages[-1]["created_at"] if messages else None,
+                })
+            return items[offset : offset + limit]
+        import psycopg
+        from psycopg.rows import dict_row
+
+        with psycopg.connect(self.database_url, row_factory=dict_row) as connection:
+            rows = connection.execute(
+                """SELECT c.id,c.created_at,c.updated_at,count(m.id)::integer AS message_count,
+                   coalesce((array_agg(m.content ORDER BY m.id)
+                     FILTER (WHERE m.role='user'))[1],'') AS preview
+                   FROM conversations c LEFT JOIN conversation_messages m ON m.conversation_id=c.id
+                   GROUP BY c.id ORDER BY c.updated_at DESC LIMIT %s OFFSET %s""",
+                (limit, offset),
+            ).fetchall()
+        return [
+            {key: value.isoformat() if hasattr(value, "isoformat") else value
+             for key, value in row.items()}
+            for row in rows
+        ]
+
 
 class RateLimiter:
     def __init__(self, store: ConversationStore, limit: int | None = None, window_seconds: int | None = None):

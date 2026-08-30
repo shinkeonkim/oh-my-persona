@@ -4,17 +4,19 @@ import asyncio
 import hashlib
 import json
 import os
+import secrets
 from contextlib import asynccontextmanager
+from datetime import date
 
-from fastapi import FastAPI, HTTPException, Query, Request
+from fastapi import Depends, FastAPI, Header, HTTPException, Query, Request
 from fastapi.responses import FileResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
-from pydantic import BaseModel, Field
+from pydantic import AnyHttpUrl, BaseModel, Field
 
 from .agent import ALLOWED_MODELS
 from .conversations import ConversationStore, RateLimiter
 from .corpus import read_jsonl
-from .service import answer, root_path, search
+from .service import answer, knowledge_store, root_path, search
 
 ROOT = root_path()
 STATIC = ROOT / "static"
@@ -25,6 +27,7 @@ limiter = RateLimiter(store)
 @asynccontextmanager
 async def lifespan(_: FastAPI):
     await asyncio.to_thread(store.initialize)
+    await asyncio.to_thread(knowledge_store.initialize)
     yield
 
 
@@ -38,9 +41,31 @@ class ChatRequest(BaseModel):
     conversation_id: str | None = None
 
 
+class KnowledgeRequest(BaseModel):
+    title: str = Field(min_length=1, max_length=200)
+    content: str = Field(min_length=1, max_length=50_000)
+    source_url: AnyHttpUrl
+    observed_at: date | None = None
+    status: str = Field(pattern="^(active|draft)$")
+
+
+def require_admin(authorization: str | None = Header(default=None)) -> None:
+    expected = os.environ.get("PERSONA_ADMIN_TOKEN")
+    supplied = authorization.removeprefix("Bearer ") if authorization else ""
+    if not expected:
+        raise HTTPException(status_code=503, detail="admin access is not configured")
+    if not secrets.compare_digest(supplied, expected):
+        raise HTTPException(status_code=401, detail="invalid admin token")
+
+
 @app.get("/", include_in_schema=False)
 def index():
     return FileResponse(STATIC / "index.html")
+
+
+@app.get("/admin", include_in_schema=False)
+def admin_index():
+    return FileResponse(STATIC / "admin.html")
 
 
 @app.get("/healthz")
@@ -77,6 +102,57 @@ def get_conversation(conversation_id: str):
     if not store.exists(conversation_id):
         raise HTTPException(status_code=404, detail="conversation not found")
     return {"conversation_id": conversation_id, "messages": store.messages(conversation_id)}
+
+
+@app.get("/api/admin/knowledge")
+def admin_knowledge(
+    limit: int = Query(100, ge=1, le=500), offset: int = Query(0, ge=0),
+    _: None = Depends(require_admin),
+):
+    managed = knowledge_store.list(limit, offset)
+    chunks = read_jsonl(root_path() / "data/processed/chunks.jsonl")
+    packaged = [{
+        "id": item["chunk_id"], "title": item.get("source_path", "packaged chunk"),
+        "content": item["text"], "source_url": item.get("canonical_url"),
+        "observed_at": item.get("observed_at"), "status": "packaged", "managed": False,
+    } for item in chunks[offset : offset + limit]]
+    return {"managed": managed, "packaged": packaged, "packaged_total": len(chunks)}
+
+
+@app.post("/api/admin/knowledge", status_code=201)
+def create_admin_knowledge(request: KnowledgeRequest, _: None = Depends(require_admin)):
+    return knowledge_store.create(_knowledge_values(request))
+
+
+@app.put("/api/admin/knowledge/{item_id}")
+def update_admin_knowledge(
+    item_id: str, request: KnowledgeRequest, _: None = Depends(require_admin),
+):
+    item = knowledge_store.update(item_id, _knowledge_values(request))
+    if not item:
+        raise HTTPException(status_code=404, detail="knowledge not found")
+    return item
+
+
+@app.delete("/api/admin/knowledge/{item_id}", status_code=204)
+def delete_admin_knowledge(item_id: str, _: None = Depends(require_admin)):
+    if not knowledge_store.delete(item_id):
+        raise HTTPException(status_code=404, detail="knowledge not found")
+
+
+@app.get("/api/admin/conversations")
+def admin_conversations(
+    limit: int = Query(100, ge=1, le=500), offset: int = Query(0, ge=0),
+    _: None = Depends(require_admin),
+):
+    return {"conversations": store.list_conversations(limit, offset)}
+
+
+@app.get("/api/admin/conversations/{conversation_id}")
+def admin_conversation(conversation_id: str, _: None = Depends(require_admin)):
+    if not store.exists(conversation_id):
+        raise HTTPException(status_code=404, detail="conversation not found")
+    return {"conversation_id": conversation_id, "messages": store.messages(conversation_id, 500)}
 
 
 @app.post("/api/chat")
@@ -139,3 +215,13 @@ def _enforce_rate_limit(request: Request) -> None:
             detail="시간당 AI 질문 한도를 초과했습니다. 잠시 후 다시 시도해주세요.",
             headers={"Retry-After": str(retry_after)},
         )
+
+
+def _knowledge_values(request: KnowledgeRequest) -> dict:
+    return {
+        "title": request.title,
+        "content": request.content,
+        "source_url": str(request.source_url),
+        "observed_at": request.observed_at.isoformat() if request.observed_at else None,
+        "status": request.status,
+    }

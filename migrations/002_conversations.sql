@@ -22,3 +22,14 @@ CREATE TABLE IF NOT EXISTS rate_limit_events (
   created_at timestamptz NOT NULL DEFAULT now()
 );
 CREATE INDEX IF NOT EXISTS rate_limit_events_lookup_idx ON rate_limit_events(identity_hash, created_at);
+
+CREATE TABLE IF NOT EXISTS admin_knowledge (
+  id uuid PRIMARY KEY DEFAULT gen_random_uuid(),
+  title text NOT NULL,
+  content text NOT NULL,
+  source_url text NOT NULL CHECK (source_url LIKE 'https://%'),
+  observed_at date,
+  status text NOT NULL DEFAULT 'active' CHECK (status IN ('active','draft')),
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now()
+);

@@ -15,6 +15,7 @@
 - `docs/research-plan.md`: 20,000~50,000 **검색 청크** 확보 계획과 품질 게이트
 - `docs/architecture.md`: Strands Agents + LiteLLM + PostgreSQL/pgvector 기반 웹 챗봇 설계
 - `src/oh_my_persona`: 수집 자료 정규화·청킹·검증 및 API 골격
+- `/admin`: 토큰 인증 기반 관리 지식 CRUD, 패키지 청크 및 대화 기록 조회
 
 ## 빠른 시작
 
