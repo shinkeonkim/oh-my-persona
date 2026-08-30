@@ -1,0 +1,12 @@
+GitHub repository: https://github.com/kokoa-study-room/transaction-isolation-level
+Author account: shinkeonkim
+
+2026-08-28T07:51:07Z	6f04a66b152c757c570fe7d50f20346d0c859ced	https://github.com/kokoa-study-room/transaction-isolation-level/commit/6f04a66b152c757c570fe7d50f20346d0c859ced	Merge pull request #2 from kokoa-study-room/project-lens/add-ads-txt-b1018d99 chore(ads): add ads.txt
+2026-08-28T07:05:13Z	f79b5ad0bfb8bb82588b2fd2bec4e1296baced61	https://github.com/kokoa-study-room/transaction-isolation-level/commit/f79b5ad0bfb8bb82588b2fd2bec4e1296baced61	chore(ads): add ads.txt project-lens automated commit.
+2026-08-27T14:53:27Z	4b1a788e4e11cfb284ad129f612003b972f3bde9	https://github.com/kokoa-study-room/transaction-isolation-level/commit/4b1a788e4e11cfb284ad129f612003b972f3bde9	fix: build assets during CI install
+2026-08-27T14:51:26Z	6d2b1846bdaf7ae7ce82993ddc251a2334212441	https://github.com/kokoa-study-room/transaction-isolation-level/commit/6d2b1846bdaf7ae7ce82993ddc251a2334212441	Merge pull request #1 from kokoa-study-room/project-lens/add-gtm-tracking-14 chore(tracking): GTM 스니펫 추가 (GTM-WG9BQZPS)
+2026-08-27T05:08:06Z	d159303f9d6a81df7adcd4f33198e82273b5cc7e	https://github.com/kokoa-study-room/transaction-isolation-level/commit/d159303f9d6a81df7adcd4f33198e82273b5cc7e	chore(tracking): add GTM snippet (GTM-WG9BQZPS) project-lens automated commit.
+2026-08-25T14:55:34Z	82936517c3633a495bae40e708b1c379038149ac	https://github.com/kokoa-study-room/transaction-isolation-level/commit/82936517c3633a495bae40e708b1c379038149ac	docs: update development and architecture guide
+2026-08-25T14:55:24Z	6bd0c8fe18f774b1c08b73c7e5187b0effe7b96e	https://github.com/kokoa-study-room/transaction-isolation-level/commit/6bd0c8fe18f774b1c08b73c7e5187b0effe7b96e	feat: migrate isolation guide to Vite React
+2026-08-24T15:22:32Z	670cd8b194902c338bfe19c83c13f372c322feab	https://github.com/kokoa-study-room/transaction-isolation-level/commit/670cd8b194902c338bfe19c83c13f372c322feab	feat: cloudflare 설정 추가
+2026-08-24T15:19:13Z	3718e062f5083a0f9d9b2e08b2abf3a716a765c6	https://github.com/kokoa-study-room/transaction-isolation-level/commit/3718e062f5083a0f9d9b2e08b2abf3a716a765c6	feat: 초기 자료

@@ -1,0 +1,12 @@
+GitHub repository: https://github.com/palette-team/saju_compatibility_tags_extractor
+Author account: shinkeonkim
+
+2025-11-06T13:35:55Z	66393d0c824cb666590cee7d1adabad0a0ca561a	https://github.com/palette-team/saju_compatibility_tags_extractor/commit/66393d0c824cb666590cee7d1adabad0a0ca561a	chore: 생성된 데이터 추가
+2025-11-05T16:09:46Z	ae79d6fd523590b5f761c99d98e7837ce6268edf	https://github.com/palette-team/saju_compatibility_tags_extractor/commit/ae79d6fd523590b5f761c99d98e7837ce6268edf	feat: .db 파일 .csv로 변환하는 로직 (AI)
+2025-10-30T13:27:51Z	8cd949533e5f81ea737ed3728444162261e3b827	https://github.com/palette-team/saju_compatibility_tags_extractor/commit/8cd949533e5f81ea737ed3728444162261e3b827	fix: 개수를 일부러 여유있게 더 넣고 이후 랜덤으로 활용할 여지를 둠
+2025-10-30T13:07:32Z	cf28b542309528c02f13aa0a42fe6406195c8fff	https://github.com/palette-team/saju_compatibility_tags_extractor/commit/cf28b542309528c02f13aa0a42fe6406195c8fff	fix: 주어지는 후보군 내에서 태그를 고르도록 변경
+2025-10-30T10:23:40Z	7454a8d2381c23d54afe4236a32a3766673b4b8a	https://github.com/palette-team/saju_compatibility_tags_extractor/commit/7454a8d2381c23d54afe4236a32a3766673b4b8a	fix: 오타 수정
+2025-10-30T10:21:56Z	22660330e24f60ae192bd4e2c976e86131fee262	https://github.com/palette-team/saju_compatibility_tags_extractor/commit/22660330e24f60ae192bd4e2c976e86131fee262	feat: 프로젝트 요구사항 구성
+2025-10-30T10:19:16Z	8db86021e590c2f12120917bab4a6edab4a9e046	https://github.com/palette-team/saju_compatibility_tags_extractor/commit/8db86021e590c2f12120917bab4a6edab4a9e046	feat: 기본적인 sqlite3 세팅
+2025-10-30T10:18:52Z	e828b233923f846336f2663d8eae86ba8a5e6cf3	https://github.com/palette-team/saju_compatibility_tags_extractor/commit/e828b233923f846336f2663d8eae86ba8a5e6cf3	feat: 기본적인 일주 특성 상수 추가
+2025-10-30T10:08:05Z	cfca8a260a6fc824561f555f289b82e92890350c	https://github.com/palette-team/saju_compatibility_tags_extractor/commit/cfca8a260a6fc824561f555f289b82e92890350c	feat: project settings

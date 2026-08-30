@@ -1,0 +1,5 @@
+GitHub repository: https://github.com/shinkeonkim/safe-cover-letter
+Author account: shinkeonkim
+
+2020-09-10T18:04:57Z	fc486402bb6d546e9920e46e67302aa5442c46b4	https://github.com/shinkeonkim/safe-cover-letter/commit/fc486402bb6d546e9920e46e67302aa5442c46b4	feat: electorn 세팅
+2020-09-10T17:26:21Z	a6bff0d87e02031e9cbe368225f8fb2fe811a58f	https://github.com/shinkeonkim/safe-cover-letter/commit/a6bff0d87e02031e9cbe368225f8fb2fe811a58f	Initial commit

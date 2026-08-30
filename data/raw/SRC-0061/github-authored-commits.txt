@@ -1,0 +1,12 @@
+GitHub repository: https://github.com/joah-team/infra
+Author account: shinkeonkim
+
+2025-11-19T15:33:24Z	78e987c3f2aa443d856352a925672dff28c67872	https://github.com/joah-team/infra/commit/78e987c3f2aa443d856352a925672dff28c67872	fix: job
+2025-11-19T15:11:41Z	080df9ef21d98ed7d95aed6b2edd59564f5dcd50	https://github.com/joah-team/infra/commit/080df9ef21d98ed7d95aed6b2edd59564f5dcd50	fix: migration job template mounts
+2025-11-19T15:05:36Z	d23e0af36e41e642a29ec15a8b6f62281f0635db	https://github.com/joah-team/infra/commit/d23e0af36e41e642a29ec15a8b6f62281f0635db	fix: indent
+2025-11-19T15:03:40Z	e2ae05a917f0fa33566d405813e6d78addcb79e0	https://github.com/joah-team/infra/commit/e2ae05a917f0fa33566d405813e6d78addcb79e0	fix: volume mounts
+2025-11-19T14:58:23Z	7cd864edd5f82c053c6fa72fef1a86fdbb0d2bbf	https://github.com/joah-team/infra/commit/7cd864edd5f82c053c6fa72fef1a86fdbb0d2bbf	fix: ingress
+2025-11-19T11:46:05Z	db1ea9b80a553ebbf4ac73a14264e3d13b58ef68	https://github.com/joah-team/infra/commit/db1ea9b80a553ebbf4ac73a14264e3d13b58ef68	fix: config
+2025-11-19T11:30:45Z	abf1b54a76db30fa2cf9673848674c4687902268	https://github.com/joah-team/infra/commit/abf1b54a76db30fa2cf9673848674c4687902268	feat: migration / collectstatic
+2025-11-19T11:14:20Z	052b5046bd928190ebff13bf7b4a9273d1f2bbd9	https://github.com/joah-team/infra/commit/052b5046bd928190ebff13bf7b4a9273d1f2bbd9	fix: environments
+2025-11-19T10:56:50Z	7ff0832ef2b99a64054886c1159f5c6713c62bce	https://github.com/joah-team/infra/commit/7ff0832ef2b99a64054886c1159f5c6713c62bce	feat: 전체 구성 yml

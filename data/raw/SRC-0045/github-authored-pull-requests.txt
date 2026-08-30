@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/shinkeonkim/dpd_template
+Pull request author: shinkeonkim
+
+2022-07-10T06:59:18Z	#1	MERGED	https://github.com/shinkeonkim/dpd_template/pull/1	Create LICENSE	merged=2022-07-10T06:59:25Z	closed=2022-07-10T06:59:25Z	commits=1	files=1	+21/-0	

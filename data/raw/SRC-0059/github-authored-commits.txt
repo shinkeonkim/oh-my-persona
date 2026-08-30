@@ -1,0 +1,20 @@
+GitHub repository: https://github.com/shinkeonkim/django-coffee-model
+Author account: shinkeonkim
+
+2021-11-28T07:17:35Z	a2efd080aba969231ad1faa5e7e4aae4293a285a	https://github.com/shinkeonkim/django-coffee-model/commit/a2efd080aba969231ad1faa5e7e4aae4293a285a	fix: DarkCoffeeModel object issue
+2021-11-28T06:40:21Z	c0f276bbd1cc0a39ce5ac899566e88149065c7a0	https://github.com/shinkeonkim/django-coffee-model/commit/c0f276bbd1cc0a39ce5ac899566e88149065c7a0	fix: model meta issue
+2021-11-28T06:32:35Z	ad0060333512b77b17eaf27a5ae7eb74367f9a5b	https://github.com/shinkeonkim/django-coffee-model/commit/ad0060333512b77b17eaf27a5ae7eb74367f9a5b	feat: versioning
+2021-11-28T06:31:10Z	4cd75351f45dfb3db41ba8088cb91b5485a1abec	https://github.com/shinkeonkim/django-coffee-model/commit/4cd75351f45dfb3db41ba8088cb91b5485a1abec	fix: model inheritance issue
+2021-11-14T11:44:56Z	8bc78f8a900ded3250b85e7e5d1a4f1bd37f8aad	https://github.com/shinkeonkim/django-coffee-model/commit/8bc78f8a900ded3250b85e7e5d1a4f1bd37f8aad	Update README.md
+2021-11-14T11:35:00Z	0ba019011732591d7775f593f02bb20254ed37e0	https://github.com/shinkeonkim/django-coffee-model/commit/0ba019011732591d7775f593f02bb20254ed37e0	fix: directory structure
+2021-11-14T11:31:54Z	e55201f2f05e603e25fc99cdd1b0e8d6ebda4efe	https://github.com/shinkeonkim/django-coffee-model/commit/e55201f2f05e603e25fc99cdd1b0e8d6ebda4efe	fix: setup.py version
+2021-11-14T11:30:18Z	732e30649bf27378701b65afc32a5d66ad4bbcdc	https://github.com/shinkeonkim/django-coffee-model/commit/732e30649bf27378701b65afc32a5d66ad4bbcdc	fix: setup settings
+2021-11-14T06:45:51Z	7b55d8f80523cd38d4f56bca9061d7482cf6dc0e	https://github.com/shinkeonkim/django-coffee-model/commit/7b55d8f80523cd38d4f56bca9061d7482cf6dc0e	fix: typing bug
+2021-11-14T06:45:37Z	a224bbb9f1ba15c710554b0172c11fa8f1c8e18c	https://github.com/shinkeonkim/django-coffee-model/commit/a224bbb9f1ba15c710554b0172c11fa8f1c8e18c	fix: package naming
+2021-11-14T06:34:07Z	d7bd87894fd56c48fb959bfd68cadf8a209937bc	https://github.com/shinkeonkim/django-coffee-model/commit/d7bd87894fd56c48fb959bfd68cadf8a209937bc	fix: versioning
+2021-11-14T06:33:36Z	5db519f77c29c6e4171dcae647a3d4ef77e300ef	https://github.com/shinkeonkim/django-coffee-model/commit/5db519f77c29c6e4171dcae647a3d4ef77e300ef	fix: bugs
+2021-11-14T06:16:22Z	0238df908df96cbd80a9e021ca44e219cebee060	https://github.com/shinkeonkim/django-coffee-model/commit/0238df908df96cbd80a9e021ca44e219cebee060	fix: setup
+2021-11-14T06:05:15Z	962a386d9bc8411999010e7ae586670019507b51	https://github.com/shinkeonkim/django-coffee-model/commit/962a386d9bc8411999010e7ae586670019507b51	fix: versioning
+2021-11-14T06:00:13Z	305a5c39a6b335b9d978d8c2736267d878479a9c	https://github.com/shinkeonkim/django-coffee-model/commit/305a5c39a6b335b9d978d8c2736267d878479a9c	feat: django coffee models
+2021-11-14T05:40:57Z	4a64a50700cc5e16cd89e8dad252ed2e5bf4028f	https://github.com/shinkeonkim/django-coffee-model/commit/4a64a50700cc5e16cd89e8dad252ed2e5bf4028f	feat: initial setup
+2021-11-14T05:26:55Z	d55b5a0f678dc1c2093a27e42dcc94638553462e	https://github.com/shinkeonkim/django-coffee-model/commit/d55b5a0f678dc1c2093a27e42dcc94638553462e	Initial commit

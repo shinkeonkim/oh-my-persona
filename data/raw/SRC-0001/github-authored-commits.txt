@@ -1,0 +1,52 @@
+GitHub repository: https://github.com/shinkeonkim/my-resume
+Author account: shinkeonkim
+
+2026-08-27T16:49:41Z	3eb6bc4853182c25e6799849cb7d203c4e493b56	https://github.com/shinkeonkim/my-resume/commit/3eb6bc4853182c25e6799849cb7d203c4e493b56	Merge pull request #1 from shinkeonkim/project-lens/add-gtm-tracking-18 chore(tracking): GTM 스니펫 추가 (GTM-MLKBPMMT)
+2026-08-27T05:09:55Z	aba01ce9157557728164b9a69b08381623fa5396	https://github.com/shinkeonkim/my-resume/commit/aba01ce9157557728164b9a69b08381623fa5396	chore(tracking): add GTM snippet (GTM-MLKBPMMT) project-lens automated commit.
+2026-08-24T06:49:39Z	afd4cf058363336c4981284cf59cf6b637a682a6	https://github.com/shinkeonkim/my-resume/commit/afd4cf058363336c4981284cf59cf6b637a682a6	fix: correct 2017 ICT award details
+2026-08-20T03:14:56Z	fa2fb2e21161a6f53bd3ccf9127869d8ac9ef5e4	https://github.com/shinkeonkim/my-resume/commit/fa2fb2e21161a6f53bd3ccf9127869d8ac9ef5e4	content: 학력 정보 갱신 국민대학교 학력에서 졸업 예정 표기를 제거했다. 졸업 상태이므로 기간 정보만으로 충분하고, 별도 졸업 텍스트는 넣지 않았다. 한/영 양쪽 모두 반영. Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com> Claude-Session: https://claude.ai/code/session_01DYuEFdnUy655MjrfDFjgYx
+2026-08-07T02:50:33Z	a3a81d51832e31e6fa3c36e8bbefe5a9bd9f0832	https://github.com/shinkeonkim/my-resume/commit/a3a81d51832e31e6fa3c36e8bbefe5a9bd9f0832	fix: linkedin 삭제
+2026-08-06T12:00:16Z	134369afbb1a30f423d0f33f8bdc1a3da11b71eb	https://github.com/shinkeonkim/my-resume/commit/134369afbb1a30f423d0f33f8bdc1a3da11b71eb	refactor: 학력을 활동 섹션에서 분리 활동이 2개로 줄면서 "학력 & 활동" 2열 그리드에 빈 칸이 생겼다. 학력을 끼워 넣던 로직을 걷어내고 기존 EducationSection 을 독립 섹션으로 배치해 활동 2개가 그리드를 정확히 채우게 했다. 학력의 기간 컬럼에 걸려 있던 pt-0 은 .columns 의 음수 margin-top 을 상쇄하지 못해 섹션 제목 밑줄과 겹쳤다. pt-0 을 빼고 상단 정렬로 바꿔 기간이 학교명과 같은 줄에 오도록 했다. Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
+2026-08-06T12:00:16Z	59756951ce88d5d2062d2d810a4ae306f6ca8d1e	https://github.com/shinkeonkim/my-resume/commit/59756951ce88d5d2062d2d810a4ae306f6ca8d1e	content: 활동·경력 서술 정리 및 중복 항목 제거 헬퍼 활동을 멋쟁이사자처럼과 같은 2줄 함축 구조로 통일하고, 강사/교육 봉사 항목은 삭제했다. 가장 긴 경력 두 건(채용 SSR→SPA 전환, 대회 도메인 확장)에 앞머리 라벨을 붙여 훑어볼 수 있게 하고, 테스트 전환과 에러 라우팅이 한 불릿에 섞여 있던 부분을 분리했다. 신호가 약한 어드민 select box 정리 항목과 사내 PR 리뷰 알림 봇 확장 항목은 뺐다. 기술 스택에서 familiar 수준의 Java 를 제거했다. 한/영 양쪽 모두 반영. Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
+2026-08-05T10:04:40Z	31836cd366a41d7f8dac2026cfc201d1480a486d	https://github.com/shinkeonkim/my-resume/commit/31836cd366a41d7f8dac2026cfc201d1480a486d	Update profile.ts
+2026-08-04T10:23:10Z	dd5200ee30e83db4eb1e9c0c0b3e516770704923	https://github.com/shinkeonkim/my-resume/commit/dd5200ee30e83db4eb1e9c0c0b3e516770704923	content: 영문 번역 반영
+2026-08-04T10:20:26Z	57fd22a3325017b6df6ccf941cbb74eca01491b1	https://github.com/shinkeonkim/my-resume/commit/57fd22a3325017b6df6ccf941cbb74eca01491b1	content: 이력서 내용 정리
+2026-08-03T13:37:59Z	53595fb4d92d6515cf51231e056b3fd49316e766	https://github.com/shinkeonkim/my-resume/commit/53595fb4d92d6515cf51231e056b3fd49316e766	content: AWS Solutions Architect Associate (SAA) 자격증 정보 추가
+2026-07-31T06:05:11Z	b4f95f253d6b2672ea36beaa3cb055a513383365	https://github.com/shinkeonkim/my-resume/commit/b4f95f253d6b2672ea36beaa3cb055a513383365	fix: cloudflare deploy
+2026-07-31T05:45:39Z	39fe176d993c67149560ee60e2e85fd691e25539	https://github.com/shinkeonkim/my-resume/commit/39fe176d993c67149560ee60e2e85fd691e25539	Create CNAME
+2026-07-25T08:54:27Z	f5d808720ec057f154506893fd812e37a73e9f15	https://github.com/shinkeonkim/my-resume/commit/f5d808720ec057f154506893fd812e37a73e9f15	content: 경력 기간 정보 개선 및 디자인 개선
+2026-07-21T13:52:29Z	7c2ff792cf6ae015471edaaea5a9fb08dd24feae	https://github.com/shinkeonkim/my-resume/commit/7c2ff792cf6ae015471edaaea5a9fb08dd24feae	fix: 사이트 정보 여러개로 확장
+2026-07-21T13:37:14Z	71bf379f8789e39630965352d5edd3889b228f33	https://github.com/shinkeonkim/my-resume/commit/71bf379f8789e39630965352d5edd3889b228f33	content(fix): 잘못된 내용 삭제
+2026-07-21T13:35:48Z	9a17606820d3aeaf2dd0ab9ff05ada32c8f4426b	https://github.com/shinkeonkim/my-resume/commit/9a17606820d3aeaf2dd0ab9ff05ada32c8f4426b	content: 기술 태그 정리
+2026-07-21T13:23:21Z	9269fe7fb667bab01452ec54fa220b8e045900df	https://github.com/shinkeonkim/my-resume/commit/9269fe7fb667bab01452ec54fa220b8e045900df	content: 내용 간소화
+2026-07-21T11:19:03Z	abc5243f6a06a4dec94c7846d6c58dd1ecfe5156	https://github.com/shinkeonkim/my-resume/commit/abc5243f6a06a4dec94c7846d6c58dd1ecfe5156	content: 이력서 내용 함축적으로 정리
+2026-07-17T09:44:52Z	4ff225efc09209bc3cee98accec3940887f14d24	https://github.com/shinkeonkim/my-resume/commit/4ff225efc09209bc3cee98accec3940887f14d24	content: 자격증 정보 추가
+2026-07-17T09:44:42Z	20d6d50a7155036b93a111bd5d79ee52589834ec	https://github.com/shinkeonkim/my-resume/commit/20d6d50a7155036b93a111bd5d79ee52589834ec	content: 경력 정보 다듬기
+2026-07-11T01:53:59Z	ffad8fd664d22e58f664fc641f68a4fb464703c1	https://github.com/shinkeonkim/my-resume/commit/ffad8fd664d22e58f664fc641f68a4fb464703c1	content: 자격증 추가
+2026-06-12T08:34:35Z	6c1fd514c0844abaa96af847f57b1c416ef54ee6	https://github.com/shinkeonkim/my-resume/commit/6c1fd514c0844abaa96af847f57b1c416ef54ee6	chore: SEO
+2026-06-12T07:34:57Z	f7c95246be77ab7d04c6634caaa64002f502cee2	https://github.com/shinkeonkim/my-resume/commit/f7c95246be77ab7d04c6634caaa64002f502cee2	fix: 경력 내용 정리
+2026-06-11T12:24:53Z	0920b329351a84cb8ba98a7d34dd5538afc1ebeb	https://github.com/shinkeonkim/my-resume/commit/0920b329351a84cb8ba98a7d34dd5538afc1ebeb	fix: 오타 수정
+2026-06-11T12:18:49Z	acd84d6a469bca97d1c74aea845ba78da6b7c197	https://github.com/shinkeonkim/my-resume/commit/acd84d6a469bca97d1c74aea845ba78da6b7c197	fix: mefit 정보 수정
+2026-06-11T12:17:09Z	4f93655ae6533110c92038045db38ab5a75a8cf6	https://github.com/shinkeonkim/my-resume/commit/4f93655ae6533110c92038045db38ab5a75a8cf6	feat: variant 적용
+2026-06-10T11:56:23Z	d3884d926c3aefe5c2613e21b740b70dce205109	https://github.com/shinkeonkim/my-resume/commit/d3884d926c3aefe5c2613e21b740b70dce205109	경력 내용 보강
+2026-06-09T08:51:20Z	2f318aa1eab1e67236d2f0d0d483171f102921e9	https://github.com/shinkeonkim/my-resume/commit/2f318aa1eab1e67236d2f0d0d483171f102921e9	chore: 자동 번역
+2026-06-09T08:11:35Z	deaa4326307d207fd17921bedb5d52520875626c	https://github.com/shinkeonkim/my-resume/commit/deaa4326307d207fd17921bedb5d52520875626c	fix: 한글 내용 수정 - 할루시네이션으로 기존에 직접 작성한 내용을 다르게 작성해두는 문제가 있었음.
+2026-06-09T07:55:09Z	bf0d0dd5ed1653e48b4a30e6ec0769b4adfd50b3	https://github.com/shinkeonkim/my-resume/commit/bf0d0dd5ed1653e48b4a30e6ec0769b4adfd50b3	chore: 영문 버전 변환 (AI 번역, WIP)
+2026-06-09T07:54:45Z	b146e72b77b068e9ab09085d454f9f3b82927ff0	https://github.com/shinkeonkim/my-resume/commit/b146e72b77b068e9ab09085d454f9f3b82927ff0	fix: 정보 수정
+2026-06-06T17:06:29Z	e8b03c855e104b095557cbea8ba8bf4eb1c75f79	https://github.com/shinkeonkim/my-resume/commit/e8b03c855e104b095557cbea8ba8bf4eb1c75f79	fix: 날짜 오타 수정
+2026-06-06T17:04:53Z	ef0cc56a1f399d4f89d9fa306857171d312bbeac	https://github.com/shinkeonkim/my-resume/commit/ef0cc56a1f399d4f89d9fa306857171d312bbeac	docs: 미핏 프로젝트 내용 추가
+2026-06-04T07:21:45Z	7103aa0f66163c1dd067f3fffa204e5614e3292e	https://github.com/shinkeonkim/my-resume/commit/7103aa0f66163c1dd067f3fffa204e5614e3292e	design: 각 섹션 간의 공간 추가
+2026-06-04T06:44:17Z	eca1caf46130c87bda5fd0cf7168fc797f7dbd37	https://github.com/shinkeonkim/my-resume/commit/eca1caf46130c87bda5fd0cf7168fc797f7dbd37	feat: github page 배포로 shinkeonkim.com/my-resume URL 통해 들어올 수 있도록 처리
+2026-06-04T06:17:34Z	6aaa2d6f9f76435fdb4c58996c5799d9a1c94de4	https://github.com/shinkeonkim/my-resume/commit/6aaa2d6f9f76435fdb4c58996c5799d9a1c94de4	chore: 내용 개선
+2026-03-21T10:19:49Z	9294c3a78fd3fb19bfd5f378642acec311e96255	https://github.com/shinkeonkim/my-resume/commit/9294c3a78fd3fb19bfd5f378642acec311e96255	fix: 학력 섹션 순서 조정
+2026-03-21T10:19:33Z	90b79020348f176fce4660d34041d93e89161164	https://github.com/shinkeonkim/my-resume/commit/90b79020348f176fce4660d34041d93e89161164	fix: 내용 수정
+2026-03-21T10:19:18Z	6a5afb7620eba239dbbd907fbcadafb67dba6cc5	https://github.com/shinkeonkim/my-resume/commit/6a5afb7620eba239dbbd907fbcadafb67dba6cc5	feat: linkedIn 주소 추가
+2026-01-18T11:09:36Z	9e6b50c37ee8a1516638824e91ddfae20abe80de	https://github.com/shinkeonkim/my-resume/commit/9e6b50c37ee8a1516638824e91ddfae20abe80de	fix: timeline
+2026-01-13T05:58:24Z	540949ebf81050cc55f6c662c67aa0e376d2a37b	https://github.com/shinkeonkim/my-resume/commit/540949ebf81050cc55f6c662c67aa0e376d2a37b	feat: GA 태그 추가
+2026-01-07T11:12:18Z	3f50f4ba9c049061a2a2308a830361740842fe43	https://github.com/shinkeonkim/my-resume/commit/3f50f4ba9c049061a2a2308a830361740842fe43	style: 모바일 대응 및 디자인 개선
+2026-01-07T04:10:49Z	9c682cf4aad89023c3bdc5864f11bda8506647d5	https://github.com/shinkeonkim/my-resume/commit/9c682cf4aad89023c3bdc5864f11bda8506647d5	fix: 글씨체 크기 조정
+2026-01-07T03:59:44Z	1348998b32fb81233367e96b2749601d50865b26	https://github.com/shinkeonkim/my-resume/commit/1348998b32fb81233367e96b2749601d50865b26	fix: text-shadow로 인한 PDF 출력시 음영 발생 -> 삭제
+2026-01-07T03:51:06Z	126e22a224fc3973e4bce0e8cba6ec5d8b597d61	https://github.com/shinkeonkim/my-resume/commit/126e22a224fc3973e4bce0e8cba6ec5d8b597d61	fix: PageBreak 조정
+2026-01-07T03:48:32Z	75fa050d93fdf9594c49f19c3baaa15df5255716	https://github.com/shinkeonkim/my-resume/commit/75fa050d93fdf9594c49f19c3baaa15df5255716	chore: 데이터 수정
+2026-01-07T03:19:07Z	4dd0583853886483458633dcd5f6016dc21cafc5	https://github.com/shinkeonkim/my-resume/commit/4dd0583853886483458633dcd5f6016dc21cafc5	feat: cloudflare pages deployment configs
+2026-01-07T03:06:54Z	3c18e927f35a83aeebea43d1f0e6a98b66ded2b1	https://github.com/shinkeonkim/my-resume/commit/3c18e927f35a83aeebea43d1f0e6a98b66ded2b1	feat: initial project settings & resume contents

@@ -1,0 +1,7 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-scoreboard-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:28:46Z	8ad8c6332766a19039613205a126b52a958a32c3	https://github.com/kokoa-hobby/minecraft-scoreboard-plugin/commit/8ad8c6332766a19039613205a126b52a958a32c3	Add README
+2026-07-22T12:22:19Z	583a48d5e40b9d8bda68602cb8a5381bc88d1809	https://github.com/kokoa-hobby/minecraft-scoreboard-plugin/commit/583a48d5e40b9d8bda68602cb8a5381bc88d1809	Add ScoreboardPlugin main class
+2026-07-22T12:22:19Z	6999b4fcdd033ea0ce02f5921e15080293d7e46d	https://github.com/kokoa-hobby/minecraft-scoreboard-plugin/commit/6999b4fcdd033ea0ce02f5921e15080293d7e46d	Add plugin manifest and resources
+2026-07-22T12:22:19Z	9e0094604a0dcd7c6bbaf5e65e4ca68c037e4a79	https://github.com/kokoa-hobby/minecraft-scoreboard-plugin/commit/9e0094604a0dcd7c6bbaf5e65e4ca68c037e4a79	Add Gradle project scaffold

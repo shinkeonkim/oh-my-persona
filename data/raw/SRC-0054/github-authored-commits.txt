@@ -1,0 +1,6 @@
+GitHub repository: https://github.com/shinkeonkim/nextjs-blog-example
+Author account: shinkeonkim
+
+2020-10-01T12:38:22Z	bb71309e57e7dd8a120a962cf773cb1f9dadfd81	https://github.com/shinkeonkim/nextjs-blog-example/commit/bb71309e57e7dd8a120a962cf773cb1f9dadfd81	feat: antd 적용
+2020-10-01T10:33:49Z	581a66d5838f3e84ecb9532094fa26e96635aac0	https://github.com/shinkeonkim/nextjs-blog-example/commit/581a66d5838f3e84ecb9532094fa26e96635aac0	feat: initial setting
+2020-10-01T10:12:55Z	14adface4d0b41ad6df5dcf8ac0fe65f60ed6051	https://github.com/shinkeonkim/nextjs-blog-example/commit/14adface4d0b41ad6df5dcf8ac0fe65f60ed6051	Initial commit from Create Next App

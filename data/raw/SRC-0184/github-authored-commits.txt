@@ -1,0 +1,54 @@
+GitHub repository: https://github.com/palette-team/palette-dev-infra
+Author account: shinkeonkim
+
+2026-02-11T09:01:46Z	7f3e4bbad257e458fb96397f479b03a87764fa71	https://github.com/palette-team/palette-dev-infra/commit/7f3e4bbad257e458fb96397f479b03a87764fa71	fix: redis host 변경
+2025-12-02T07:10:41Z	510420a90f2ac33b5efe6109494b08ca185e137f	https://github.com/palette-team/palette-dev-infra/commit/510420a90f2ac33b5efe6109494b08ca185e137f	fix: nginx.conf
+2025-12-02T07:05:05Z	905ed2a6814371d374cd54bdbf1fe51520ed38a4	https://github.com/palette-team/palette-dev-infra/commit/905ed2a6814371d374cd54bdbf1fe51520ed38a4	feat: production nginx 추가 및 ip 처리 수정
+2025-11-28T06:22:22Z	e7ca3afe19b6253489ceeffac7e5362fd42d03bf	https://github.com/palette-team/palette-dev-infra/commit/e7ca3afe19b6253489ceeffac7e5362fd42d03bf	fix: alpha allowed hosts
+2025-11-25T11:37:33Z	39eed12c81809ceb0c98553104d52f30e006cf05	https://github.com/palette-team/palette-dev-infra/commit/39eed12c81809ceb0c98553104d52f30e006cf05	fix: 이전 rev를 최대 5개까지만 남기도록 함
+2025-11-18T13:51:17Z	016d57ec145241c9d49d4e4113e2c1f00ccc66c3	https://github.com/palette-team/palette-dev-infra/commit/016d57ec145241c9d49d4e4113e2c1f00ccc66c3	fix: 백업은 새벽 5시에 돌도록 하기
+2025-11-18T06:12:56Z	36a948fe02e044a90ceec29a6ccc935920c147de	https://github.com/palette-team/palette-dev-infra/commit/36a948fe02e044a90ceec29a6ccc935920c147de	fix: allowed hosts
+2025-11-16T15:59:57Z	26ebeff792861b419a552014786a45d5e4373bce	https://github.com/palette-team/palette-dev-infra/commit/26ebeff792861b419a552014786a45d5e4373bce	fix: sh
+2025-11-16T15:53:10Z	bebad0a4b81c0c428e7fca2e48c1fbbc48f8566e	https://github.com/palette-team/palette-dev-infra/commit/bebad0a4b81c0c428e7fca2e48c1fbbc48f8566e	fix: restore
+2025-11-16T15:20:50Z	06ef287e1fed6f178f984323d83a2d9ec1d510cd	https://github.com/palette-team/palette-dev-infra/commit/06ef287e1fed6f178f984323d83a2d9ec1d510cd	fix: sh
+2025-11-16T15:05:02Z	d4b3811fe44867d0b9b7cc189d83bf6eac2acd8a	https://github.com/palette-team/palette-dev-infra/commit/d4b3811fe44867d0b9b7cc189d83bf6eac2acd8a	fix: db shell script
+2025-11-16T14:19:50Z	cb9c757416b02d1e26fdf4791e9c159fe69f9572	https://github.com/palette-team/palette-dev-infra/commit/cb9c757416b02d1e26fdf4791e9c159fe69f9572	feat: shell scripts
+2025-11-16T13:09:19Z	8a5ad33f5e2fce09e847601a0765c0e6e7379737	https://github.com/palette-team/palette-dev-infra/commit/8a5ad33f5e2fce09e847601a0765c0e6e7379737	feat: s3 / cloudfront 관련 리소스 정의
+2025-11-16T13:08:06Z	5a29bae692f7620ef2cc3d9b6c3efd6b01099f70	https://github.com/palette-team/palette-dev-infra/commit/5a29bae692f7620ef2cc3d9b6c3efd6b01099f70	fix: 수동 job들은 별도 폴더로 이동
+2025-11-16T12:50:05Z	4fd8c2eb8c27b71ed6ff32dc041fee6e8f978939	https://github.com/palette-team/palette-dev-infra/commit/4fd8c2eb8c27b71ed6ff32dc041fee6e8f978939	feat: backup / restrore job
+2025-11-16T12:49:41Z	fc14114bbfcb03ab3e148b32b9f6ab72ce734fb5	https://github.com/palette-team/palette-dev-infra/commit/fc14114bbfcb03ab3e148b32b9f6ab72ce734fb5	fix: config map
+2025-11-16T12:44:17Z	4c41974e8d9f4d7e5074487e0b3ea464a84d092d	https://github.com/palette-team/palette-dev-infra/commit/4c41974e8d9f4d7e5074487e0b3ea464a84d092d	fix: ingress route
+2025-11-16T12:20:01Z	f2e9d5d7c85d48bb3aded496c2c50848f2980a03	https://github.com/palette-team/palette-dev-infra/commit/f2e9d5d7c85d48bb3aded496c2c50848f2980a03	fix: initial delay seconds
+2025-11-16T12:18:20Z	a6c776e60f81ad8845fd0185a0a8343a9ebc4889	https://github.com/palette-team/palette-dev-infra/commit/a6c776e60f81ad8845fd0185a0a8343a9ebc4889	fix: health check 주기
+2025-11-16T12:06:36Z	26e1fd46ed2b03103b234f8dee9b19efc8038d3f	https://github.com/palette-team/palette-dev-infra/commit/26e1fd46ed2b03103b234f8dee9b19efc8038d3f	fix: flower
+2025-11-16T11:56:13Z	4721a8733b8094378c51ec4f284d937d2a64f254	https://github.com/palette-team/palette-dev-infra/commit/4721a8733b8094378c51ec4f284d937d2a64f254	fix: s3 설정
+2025-11-16T11:40:36Z	5758642eba1b74c4e956044c84b06ef1608c657f	https://github.com/palette-team/palette-dev-infra/commit/5758642eba1b74c4e956044c84b06ef1608c657f	feat: jobs
+2025-11-16T11:19:26Z	8db0647f3e3a805e68b526d064ba075b79de1284	https://github.com/palette-team/palette-dev-infra/commit/8db0647f3e3a805e68b526d064ba075b79de1284	fix: psql log
+2025-11-16T10:48:40Z	9bc4019ee1ccf68f466fc3e91f8111c92fe0e70c	https://github.com/palette-team/palette-dev-infra/commit/9bc4019ee1ccf68f466fc3e91f8111c92fe0e70c	fix: media, static, nginx 정리
+2025-11-12T10:40:49Z	4e307523d4cb05675b7b03eeb13c9353da10e12a	https://github.com/palette-team/palette-dev-infra/commit/4e307523d4cb05675b7b03eeb13c9353da10e12a	fix: production에 맞게 변경
+2025-11-12T09:25:12Z	358a0b87c7755d3abbb80ead495c90de63326def	https://github.com/palette-team/palette-dev-infra/commit/358a0b87c7755d3abbb80ead495c90de63326def	feat: 기본적인 내용 alpha 환경 내용 그대로 옮기기
+2025-11-08T17:23:04Z	8d9cd684decacdc598391f77305faff51944633e	https://github.com/palette-team/palette-dev-infra/commit/8d9cd684decacdc598391f77305faff51944633e	fix: allowed hosts
+2025-10-28T12:42:36Z	6b2653ce3540042490e53036004b8b6a8274fcb6	https://github.com/palette-team/palette-dev-infra/commit/6b2653ce3540042490e53036004b8b6a8274fcb6	fix: config base url
+2025-10-21T04:11:28Z	e182c0e35fdb7ba1dad8deafe0c9b2dacdbaf2e8	https://github.com/palette-team/palette-dev-infra/commit/e182c0e35fdb7ba1dad8deafe0c9b2dacdbaf2e8	fix: priority
+2025-10-21T04:00:38Z	e12b47e054d45f9b3d2b5186b91c8b50882b3d50	https://github.com/palette-team/palette-dev-infra/commit/e12b47e054d45f9b3d2b5186b91c8b50882b3d50	fix: middleware
+2025-10-21T03:57:08Z	4afed07cbd411b70dafe21a32a84c95708f063ce	https://github.com/palette-team/palette-dev-infra/commit/4afed07cbd411b70dafe21a32a84c95708f063ce	fix: 중첩 룰 삭제
+2025-10-21T03:33:12Z	3ea30bb28eb9967b342b74d51efbaa0d904c59a6	https://github.com/palette-team/palette-dev-infra/commit/3ea30bb28eb9967b342b74d51efbaa0d904c59a6	fix: /api route에 대해서 traefik 내부 타 route와 중첩되는 이슈 수정
+2025-10-14T18:06:20Z	3a28d6e0d26f6a749294885d0ed11d9c38d7baf8	https://github.com/palette-team/palette-dev-infra/commit/3a28d6e0d26f6a749294885d0ed11d9c38d7baf8	fix: 중복된 선언 삭제
+2025-10-12T09:22:52Z	9fd8fb517434236986819ae68437c00f0c1ee651	https://github.com/palette-team/palette-dev-infra/commit/9fd8fb517434236986819ae68437c00f0c1ee651	fix: LoadBalancer 타입으로 변경
+2025-10-12T08:45:18Z	1354f7199b6db12a11015db5e8c7469e5cf8777a	https://github.com/palette-team/palette-dev-infra/commit/1354f7199b6db12a11015db5e8c7469e5cf8777a	fix: ingress route
+2025-10-12T08:34:29Z	25f8a2ff0c6b6a1800f14e0f724bfa75e4f6bc2e	https://github.com/palette-team/palette-dev-infra/commit/25f8a2ff0c6b6a1800f14e0f724bfa75e4f6bc2e	fix: certificate
+2025-10-12T08:22:36Z	b9c34f1543dc3f8dd2f451493c181bf722386e7d	https://github.com/palette-team/palette-dev-infra/commit/b9c34f1543dc3f8dd2f451493c181bf722386e7d	fix: args 추가
+2025-10-12T07:37:07Z	395adefbe0d336bfc41e6f25297c87390f2311ec	https://github.com/palette-team/palette-dev-infra/commit/395adefbe0d336bfc41e6f25297c87390f2311ec	fix: volume 위치 수정
+2025-10-12T07:33:58Z	a055b7b296cdc57e279f6e4483b52cb38988a1db	https://github.com/palette-team/palette-dev-infra/commit/a055b7b296cdc57e279f6e4483b52cb38988a1db	feat: init script
+2025-10-12T07:29:03Z	72508ce6f41c3e264bb24a1ff307615503c83d4a	https://github.com/palette-team/palette-dev-infra/commit/72508ce6f41c3e264bb24a1ff307615503c83d4a	fix: psql issue
+2025-10-12T07:20:56Z	f9a1f27f2576820104cd284eb8a16e32ce924fb8	https://github.com/palette-team/palette-dev-infra/commit/f9a1f27f2576820104cd284eb8a16e32ce924fb8	Merge branch 'main' of https://github.com/palette-team/palette-dev-infra
+2025-10-12T07:20:52Z	88e3bd51e5f014f8aa256694001dddc9a021fe6a	https://github.com/palette-team/palette-dev-infra/commit/88e3bd51e5f014f8aa256694001dddc9a021fe6a	fix: init db
+2025-10-12T07:04:48Z	b100cd6f15325939ff219e361fb3d4d83ecfecdf	https://github.com/palette-team/palette-dev-infra/commit/b100cd6f15325939ff219e361fb3d4d83ecfecdf	Update service.yml
+2025-10-12T06:11:35Z	18c484d263abbd0e4aeea2904c7da015956ff301	https://github.com/palette-team/palette-dev-infra/commit/18c484d263abbd0e4aeea2904c7da015956ff301	fix: deployment dns policy
+2025-10-12T06:01:39Z	b419062a86837d54972b3f9828a5546d74c98b77	https://github.com/palette-team/palette-dev-infra/commit/b419062a86837d54972b3f9828a5546d74c98b77	fix: ingress route
+2025-10-12T05:47:37Z	c7efb48c94aeedeea50e377abe27886a364f67d3	https://github.com/palette-team/palette-dev-infra/commit/c7efb48c94aeedeea50e377abe27886a364f67d3	fix: secretref
+2025-10-12T05:42:31Z	39433b5e791f6a3e055990d3d0610d10026fa4d5	https://github.com/palette-team/palette-dev-infra/commit/39433b5e791f6a3e055990d3d0610d10026fa4d5	fix: health check testing
+2025-10-12T05:39:51Z	6fffd14fe36dccb011d7353f533ffe068588a2bf	https://github.com/palette-team/palette-dev-infra/commit/6fffd14fe36dccb011d7353f533ffe068588a2bf	fix: certificate issue
+2025-10-12T05:32:47Z	a25174243aa65c5c88ffac79d7037333c2969b6c	https://github.com/palette-team/palette-dev-infra/commit/a25174243aa65c5c88ffac79d7037333c2969b6c	fix: api version
+2025-10-12T05:06:56Z	af1c030585c4bd7abb5b515705596c58b7e9003c	https://github.com/palette-team/palette-dev-infra/commit/af1c030585c4bd7abb5b515705596c58b7e9003c	feat: 기본 infra code
+2025-10-11T07:51:45Z	e301bf502d8afca78970c619f893c87479d6f130	https://github.com/palette-team/palette-dev-infra/commit/e301bf502d8afca78970c619f893c87479d6f130	feat: demo test

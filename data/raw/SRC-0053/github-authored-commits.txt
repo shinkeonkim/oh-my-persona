@@ -1,0 +1,8 @@
+GitHub repository: https://github.com/shinkeonkim/kmu-ecampus-darkmode-extension
+Author account: shinkeonkim
+
+2020-10-20T04:47:35Z	01c6d86eee1370e807178bdebc6ebc4a296c51a2	https://github.com/shinkeonkim/kmu-ecampus-darkmode-extension/commit/01c6d86eee1370e807178bdebc6ebc4a296c51a2	fix: style
+2020-10-08T14:07:03Z	967c9863508ddc722a13beae2774f8f95a699cc7	https://github.com/shinkeonkim/kmu-ecampus-darkmode-extension/commit/967c9863508ddc722a13beae2774f8f95a699cc7	docs: 설명 추가
+2020-10-08T13:59:00Z	f3ef9b1cce99d16b138876d142341ed79e2e6454	https://github.com/shinkeonkim/kmu-ecampus-darkmode-extension/commit/f3ef9b1cce99d16b138876d142341ed79e2e6454	feat: 주석 추가, 공지사항, 수업 화면 WIP
+2020-10-08T13:32:59Z	92fda9bcc79ea71ff04361903b638f86582068b9	https://github.com/shinkeonkim/kmu-ecampus-darkmode-extension/commit/92fda9bcc79ea71ff04361903b638f86582068b9	feat: 임시 스타일 적용
+2020-10-07T16:06:46Z	050453bc8df3e9a6897ba91fe3b52da8d0cb00af	https://github.com/shinkeonkim/kmu-ecampus-darkmode-extension/commit/050453bc8df3e9a6897ba91fe3b52da8d0cb00af	Initial commit

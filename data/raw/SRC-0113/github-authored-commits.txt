@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-hello-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:26:43Z	ab29ff9cd949986607be53a7ef406303bcab00e3	https://github.com/kokoa-hobby/minecraft-hello-plugin/commit/ab29ff9cd949986607be53a7ef406303bcab00e3	Add README
+2026-07-22T12:22:16Z	fe418bc7157648a6419d6884df6bd395b2d73759	https://github.com/kokoa-hobby/minecraft-hello-plugin/commit/fe418bc7157648a6419d6884df6bd395b2d73759	Add HelloPlugin main class
+2026-07-22T12:22:16Z	5bd939ea79be0893a020c7f82027e7170154a710	https://github.com/kokoa-hobby/minecraft-hello-plugin/commit/5bd939ea79be0893a020c7f82027e7170154a710	Add listeners
+2026-07-22T12:22:16Z	d571d29c61a9d357ed68df1a5dc227f48dd1f5f3	https://github.com/kokoa-hobby/minecraft-hello-plugin/commit/d571d29c61a9d357ed68df1a5dc227f48dd1f5f3	Add commands
+2026-07-22T12:22:15Z	8495c371940c171d2cd29cfe745613ec5d6cc2fc	https://github.com/kokoa-hobby/minecraft-hello-plugin/commit/8495c371940c171d2cd29cfe745613ec5d6cc2fc	Add plugin manifest and resources
+2026-07-22T12:22:15Z	5110621393afc01f244a3d8cd5c05c081e2d0d3d	https://github.com/kokoa-hobby/minecraft-hello-plugin/commit/5110621393afc01f244a3d8cd5c05c081e2d0d3d	Add Gradle project scaffold

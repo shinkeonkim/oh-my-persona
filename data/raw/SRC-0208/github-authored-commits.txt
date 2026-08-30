@@ -1,0 +1,18 @@
+GitHub repository: https://github.com/shinkeonkim/hackathon-dj-template
+Author account: shinkeonkim
+
+2025-10-02T01:28:43Z	38ae7063d75e65e7fc40ec4e075c7847b2a8b2ae	https://github.com/shinkeonkim/hackathon-dj-template/commit/38ae7063d75e65e7fc40ec4e075c7847b2a8b2ae	docs: 사용법 및 설명 내용 작성
+2025-10-02T01:28:27Z	abb2ed747c6adfd693ddada77a84fa3b49cb42f9	https://github.com/shinkeonkim/hackathon-dj-template/commit/abb2ed747c6adfd693ddada77a84fa3b49cb42f9	refactor: workflow 이름 변경
+2025-10-02T01:19:42Z	60d09fd3477e20bd3df9379029f034e446fd6d96	https://github.com/shinkeonkim/hackathon-dj-template/commit/60d09fd3477e20bd3df9379029f034e446fd6d96	feat: swagger / coverage report / CI 추가
+2025-10-01T14:55:32Z	ef090550cda69bc9ac1aeb6406d6856530c6d539	https://github.com/shinkeonkim/hackathon-dj-template/commit/ef090550cda69bc9ac1aeb6406d6856530c6d539	feat: 기본 user, api 앱 추가
+2025-10-01T14:50:02Z	9e3ea487babf547ec6fd73dd4313c920efebae7d	https://github.com/shinkeonkim/hackathon-dj-template/commit/9e3ea487babf547ec6fd73dd4313c920efebae7d	feat: 기본 장고 설정
+2025-10-01T14:43:57Z	8a164655162c2563483b7e2a09a51d1e1bd9007d	https://github.com/shinkeonkim/hackathon-dj-template/commit/8a164655162c2563483b7e2a09a51d1e1bd9007d	feat: 개발 환경 내에서 사용하기 편하게 커맨드 추가
+2025-10-01T14:38:26Z	0135a999105d4f3fb58f7de7ae7d626750c7fd47	https://github.com/shinkeonkim/hackathon-dj-template/commit/0135a999105d4f3fb58f7de7ae7d626750c7fd47	feat: pre-commit 내용 추가
+2025-10-01T14:28:56Z	4016851fe0cafbabd35602c441266df07edf9b60	https://github.com/shinkeonkim/hackathon-dj-template/commit/4016851fe0cafbabd35602c441266df07edf9b60	feat: docker 설정 추가
+2025-10-01T14:26:30Z	bd991600c2761f306a07629ed62f6c142fcc245c	https://github.com/shinkeonkim/hackathon-dj-template/commit/bd991600c2761f306a07629ed62f6c142fcc245c	chore: .dockerignore 추가
+2025-10-01T14:26:16Z	8ea5928e5942a2625cdaaac8f02954e322fa2396	https://github.com/shinkeonkim/hackathon-dj-template/commit/8ea5928e5942a2625cdaaac8f02954e322fa2396	fix: .gitignore 수정
+2025-10-01T14:26:06Z	809ff4287e8aaa664d711d8b89d4bce5194a7251	https://github.com/shinkeonkim/hackathon-dj-template/commit/809ff4287e8aaa664d711d8b89d4bce5194a7251	fix: pre-commit 설정 수정
+2025-09-29T07:58:02Z	30e6bee271482dca4efded15ab3516ea4f802eb3	https://github.com/shinkeonkim/hackathon-dj-template/commit/30e6bee271482dca4efded15ab3516ea4f802eb3	feat: pre-commit 설정 및 lint 재적용
+2025-09-29T07:38:02Z	83489f0843795c86fd55d778dc0a5b112c512d85	https://github.com/shinkeonkim/hackathon-dj-template/commit/83489f0843795c86fd55d778dc0a5b112c512d85	docs: github pull request template 추가
+2025-09-28T16:39:10Z	b9cec21a7483cad69af551cad8f6c1bc3116ff0e	https://github.com/shinkeonkim/hackathon-dj-template/commit/b9cec21a7483cad69af551cad8f6c1bc3116ff0e	chore: .gitignore 추가 - gitignore.io 사용
+2025-09-28T16:37:41Z	3d43bde7055fe33991bb2ec1e24daecfed5251e0	https://github.com/shinkeonkim/hackathon-dj-template/commit/3d43bde7055fe33991bb2ec1e24daecfed5251e0	feat: django 프로젝트 기본 구조 추가

@@ -1,0 +1,5 @@
+GitHub repository: https://github.com/kokoa-tools/pdf-to-jpgs
+Author account: shinkeonkim
+
+2025-10-08T11:41:50Z	6a674576ef7d20d6e7f9eb3d3adf667bae5a7ee0	https://github.com/kokoa-tools/pdf-to-jpgs/commit/6a674576ef7d20d6e7f9eb3d3adf667bae5a7ee0	Create LICENSE
+2025-10-08T11:40:52Z	54599b1326bb259b84a72be68807d70f54aff16a	https://github.com/kokoa-tools/pdf-to-jpgs/commit/54599b1326bb259b84a72be68807d70f54aff16a	feat: pdf to jpgs의 최소 기능을 갖춘 파이썬 스크립트 및 sh 추가

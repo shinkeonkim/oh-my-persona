@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/kokoa-lab/fastapi-sql-injection-experment
+Author account: shinkeonkim
+
+2025-09-18T09:40:27Z	4dbfd827759306a9bdc754500b5e48d340be634e	https://github.com/kokoa-lab/fastapi-sql-injection-experment/commit/4dbfd827759306a9bdc754500b5e48d340be634e	feat: 기본적인 SQL Injection에 대한 설명 및 실험 프로젝트

@@ -1,0 +1,267 @@
+{% extends "admin/base.html" %}
+{% load i18n unfold %}
+
+{% block breadcrumbs %}
+{% if not is_popup %}
+<div class="px-4">
+    <div class="container mb-6 mx-auto -my-3 lg:mb-12">
+        <ul class="flex flex-wrap">
+            {% url 'admin:index' as link %}
+            {% trans 'Home' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with link=link name=name %}
+
+            {% url 'admin:companies_company_changelist' as link %}
+            {% trans 'Companies' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with link=link name=name %}
+
+            {% trans 'Bulk Collect Financial Statements for All Companies' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with name=name %}
+        </ul>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="px-4">
+    <div class="container mx-auto">
+        <div class="main-card bg-white dark:bg-gray-900 shadow-lg rounded-lg p-6 border border-gray-200 dark:border-gray-700">
+            <h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">{{ title }}</h2>
+
+            <div class="mb-6">
+                <p class="text-gray-700 dark:text-gray-300 mb-2">
+                    모든 회사에 대해 특정 연도의 재무제표를 배치 단위로 수집하고 재생성합니다.
+                </p>
+                <p class="text-sm text-yellow-600 dark:text-yellow-400 mt-2">
+                    ⚠️ API 요청 제한을 고려하여 배치 단위로 나누어 처리됩니다. 대량의 백그라운드 작업이 실행되므로 신중하게 사용하세요.
+                </p>
+            </div>
+
+            <!-- 통계 정보 -->
+            <div class="stats-grid grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                <div class="stat-card p-4 bg-blue-50 dark:bg-gray-800 rounded-lg border border-blue-200 dark:border-gray-600">
+                    <div class="text-sm text-gray-600 dark:text-gray-400">전체 회사</div>
+                    <div class="text-2xl font-bold text-blue-600 dark:text-blue-400">{{ stats.total }}</div>
+                </div>
+                <div class="stat-card p-4 bg-green-50 dark:bg-gray-800 rounded-lg border border-green-200 dark:border-gray-600">
+                    <div class="text-sm text-gray-600 dark:text-gray-400">상장 회사</div>
+                    <div class="text-2xl font-bold text-green-600 dark:text-green-400">{{ stats.listed }}</div>
+                </div>
+                <div class="stat-card p-4 bg-purple-50 dark:bg-gray-800 rounded-lg border border-purple-200 dark:border-gray-600">
+                    <div class="text-sm text-gray-600 dark:text-gray-400">비금융 회사</div>
+                    <div class="text-2xl font-bold text-purple-600 dark:text-purple-400">{{ stats.non_financial }}</div>
+                </div>
+                <div class="stat-card p-4 bg-indigo-50 dark:bg-gray-800 rounded-lg border border-indigo-200 dark:border-gray-600">
+                    <div class="text-sm text-gray-600 dark:text-gray-400">상장 비금융</div>
+                    <div class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">{{ stats.listed_non_financial }}</div>
+                </div>
+            </div>
+
+            <form method="post" class="space-y-6">
+                {% csrf_token %}
+
+                {% if form.non_field_errors %}
+                <div class="bg-red-50 dark:bg-red-900/30 border border-red-400 dark:border-red-500 text-red-700 dark:text-red-300 px-4 py-3 rounded mb-4">
+                    {{ form.non_field_errors }}
+                </div>
+                {% endif %}
+
+                <div class="space-y-5">
+                    <!-- Fiscal Year (Required) -->
+                    <div>
+                        <label for="{{ form.fiscal_year.id_for_label }}" class="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                            {{ form.fiscal_year.label }} <span class="text-red-500">*</span>
+                        </label>
+                        {{ form.fiscal_year }}
+                        {% if form.fiscal_year.help_text %}
+                        <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ form.fiscal_year.help_text }}</p>
+                        {% endif %}
+                        {% if form.fiscal_year.errors %}
+                        <p class="mt-2 text-sm text-red-600 dark:text-red-400">{{ form.fiscal_year.errors }}</p>
+                        {% endif %}
+                    </div>
+
+                    <!-- Quarters (Required) -->
+                    <div>
+                        <label for="{{ form.quarters.id_for_label }}" class="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                            {{ form.quarters.label }} <span class="text-red-500">*</span>
+                        </label>
+                        {{ form.quarters }}
+                        {% if form.quarters.help_text %}
+                        <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ form.quarters.help_text }}</p>
+                        {% endif %}
+                        {% if form.quarters.errors %}
+                        <p class="mt-2 text-sm text-red-600 dark:text-red-400">{{ form.quarters.errors }}</p>
+                        {% endif %}
+                    </div>
+
+                    <!-- Batch Settings -->
+                    <div class="batch-settings space-y-4 p-4 bg-yellow-50 dark:bg-gray-800 rounded-lg border border-yellow-200 dark:border-gray-600">
+                        <h3 class="text-sm font-bold text-gray-800 dark:text-gray-200 mb-3">배치 처리 설정</h3>
+
+                        <div>
+                            <label for="{{ form.batch_size.id_for_label }}" class="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                                {{ form.batch_size.label }} <span class="text-red-500">*</span>
+                            </label>
+                            {{ form.batch_size }}
+                            {% if form.batch_size.help_text %}
+                            <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ form.batch_size.help_text }}</p>
+                            {% endif %}
+                        </div>
+
+                        <div>
+                            <label for="{{ form.sleep_seconds.id_for_label }}" class="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                                {{ form.sleep_seconds.label }} <span class="text-red-500">*</span>
+                            </label>
+                            {{ form.sleep_seconds }}
+                            {% if form.sleep_seconds.help_text %}
+                            <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ form.sleep_seconds.help_text }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <!-- Filter Options -->
+                    <div class="filter-options space-y-3 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-600">
+                        <h3 class="text-sm font-bold text-gray-800 dark:text-gray-200 mb-3">필터 옵션</h3>
+
+                        <div class="flex items-center space-x-3">
+                            {{ form.is_listed_only }}
+                            <label for="{{ form.is_listed_only.id_for_label }}" class="text-sm font-medium text-gray-800 dark:text-gray-200">
+                                {{ form.is_listed_only.label }}
+                            </label>
+                        </div>
+                        {% if form.is_listed_only.help_text %}
+                        <p class="text-sm text-gray-600 dark:text-gray-400 ml-8">{{ form.is_listed_only.help_text }}</p>
+                        {% endif %}
+
+                        <div class="flex items-center space-x-3">
+                            {{ form.is_financial_excluded }}
+                            <label for="{{ form.is_financial_excluded.id_for_label }}" class="text-sm font-medium text-gray-800 dark:text-gray-200">
+                                {{ form.is_financial_excluded.label }}
+                            </label>
+                        </div>
+                        {% if form.is_financial_excluded.help_text %}
+                        <p class="text-sm text-gray-600 dark:text-gray-400 ml-8">{{ form.is_financial_excluded.help_text }}</p>
+                        {% endif %}
+                    </div>
+
+                    <!-- Page Count -->
+                    <div>
+                        <label for="{{ form.page_count.id_for_label }}" class="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                            {{ form.page_count.label }} <span class="text-red-500">*</span>
+                        </label>
+                        {{ form.page_count }}
+                        {% if form.page_count.help_text %}
+                        <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ form.page_count.help_text }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 pt-6 border-t border-gray-200 dark:border-gray-700">
+                    <button type="submit" name="apply_calculation" class="bg-primary-600 hover:bg-primary-700 dark:bg-primary-600 dark:hover:bg-primary-700 text-white font-semibold py-2.5 px-6 rounded-lg shadow-sm transition-colors">
+                        전체 수집 시작
+                    </button>
+                    <a href="{% url 'admin:companies_company_changelist' %}"
+                       class="bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-semibold py-2.5 px-6 rounded-lg transition-colors">
+                        취소
+                    </a>
+                </div>
+            </form>
+
+            <div class="reference-section mt-8 p-5 bg-blue-50 dark:bg-gray-800 rounded-lg border border-blue-200 dark:border-gray-600">
+                <h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white">배치 처리 방식</h3>
+                <ul class="list-disc list-inside space-y-3 text-sm text-gray-800 dark:text-gray-200">
+                    <li><strong>배치 단위 처리:</strong> 전체 회사를 지정한 배치 크기로 나누어 순차적으로 처리합니다.</li>
+                    <li><strong>배치 간 대기:</strong> 각 배치 처리 후 지정한 시간만큼 sleep하여 API 요청 제한을 회피합니다.</li>
+                    <li><strong>비동기 작업:</strong> 각 배치 내의 회사들은 Celery를 통해 비동기로 처리됩니다.</li>
+                    <li><strong>예상 소요 시간:</strong> 배치 수 × sleep 시간 + 실제 작업 처리 시간</li>
+                    <li><strong>예시:</strong> 3700개 회사, 배치 크기 25, sleep 180초 → 148 배치 × 3분 = 약 7.4시간</li>
+                    <li><strong>처리 범위:</strong> 각 회사별로 지정한 연도의 모든 분기 데이터를 수집하고 재생성합니다.</li>
+                </ul>
+            </div>
+
+            <div class="warning-section mt-4 p-5 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg border border-yellow-200 dark:border-yellow-700">
+                <h3 class="text-lg font-bold mb-3 text-yellow-800 dark:text-yellow-400">⚠️ 주의사항</h3>
+                <ul class="list-disc list-inside space-y-2 text-sm text-yellow-800 dark:text-yellow-300">
+                    <li>이 작업은 수천 개의 백그라운드 작업을 생성할 수 있습니다.</li>
+                    <li>Celery Worker가 충분히 실행 중인지 확인하세요.</li>
+                    <li>배치 크기와 sleep 시간을 신중하게 설정하세요. (권장: batch_size=25, sleep=180초)</li>
+                    <li>API 요청 제한을 초과하지 않도록 주의하세요.</li>
+                    <li>작업 진행 상황은 Celery Flower나 로그를 통해 확인할 수 있습니다.</li>
+                    <li>처리 시간은 회사 수, 배치 크기, Worker 수에 따라 달라집니다.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* 기본 폼 필드 스타일 (라이트 모드) */
+.main-card input[type="number"],
+.main-card input[type="text"],
+.main-card input[type="checkbox"],
+.main-card select {
+    padding: 0.625rem 0.875rem;
+    border: 2px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    transition: all 0.15s ease-in-out;
+    background-color: white;
+    color: #111827;
+}
+
+.main-card input[type="number"],
+.main-card input[type="text"],
+.main-card select {
+    width: 100%;
+    max-width: 400px;
+}
+
+.main-card input[type="checkbox"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+}
+
+/* 다크모드 스타일 */
+.dark .main-card input[type="number"],
+.dark .main-card input[type="text"],
+.dark .main-card input[type="checkbox"],
+.dark .main-card select {
+    background-color: #1f2937;
+    border-color: #6b7280;
+    color: #f3f4f6;
+}
+
+.dark .main-card input[type="number"]:hover,
+.dark .main-card input[type="text"]:hover,
+.dark .main-card select:hover {
+    border-color: #9ca3af;
+}
+
+.dark .main-card input[type="number"]:focus,
+.dark .main-card input[type="text"]:focus,
+.dark .main-card select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.dark .main-card input[type="checkbox"]:checked {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+.dark .main-card {
+  background-color: #111827;
+}
+
+.dark .reference-section,
+.dark .batch-settings,
+.dark .filter-options {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+</style>
+{% endblock %}

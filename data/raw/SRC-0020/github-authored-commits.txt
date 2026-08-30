@@ -1,0 +1,23 @@
+GitHub repository: https://github.com/shinkeonkim/url-shortener
+Author account: shinkeonkim
+
+2026-08-28T06:56:14Z	2f6fcd7239e9c5698d4cf0541b64c2294327ba19	https://github.com/shinkeonkim/url-shortener/commit/2f6fcd7239e9c5698d4cf0541b64c2294327ba19	deploy: pin tiered analytics image (#16) deploy: pin tiered analytics image
+2026-08-28T06:55:24Z	518ec25e40588b3bed3b5777adca91ae76632f93	https://github.com/shinkeonkim/url-shortener/commit/518ec25e40588b3bed3b5777adca91ae76632f93	deploy: pin tiered analytics image
+2026-08-28T06:48:02Z	47676aca82124c6ef6650fd6674aafd623feed9b	https://github.com/shinkeonkim/url-shortener/commit/47676aca82124c6ef6650fd6674aafd623feed9b	feat: add tiered analytics and detailed monitoring (#15) feat: add tiered analytics and detailed Grafana monitoring
+2026-08-28T06:36:39Z	9c1c59410a76bc046338359896e6c6d3fde697e5	https://github.com/shinkeonkim/url-shortener/commit/9c1c59410a76bc046338359896e6c6d3fde697e5	feat: add tiered analytics and detailed monitoring
+2026-08-27T08:27:22Z	e1250b7ff92cf13c50e98cbfd837eb37595378d9	https://github.com/shinkeonkim/url-shortener/commit/e1250b7ff92cf13c50e98cbfd837eb37595378d9	deploy: pin quiet metrics image (#14) deploy: pin quiet metrics image
+2026-08-27T08:26:27Z	003b483e4f5cfad6e6d6a0888cab919d7cca2897	https://github.com/shinkeonkim/url-shortener/commit/003b483e4f5cfad6e6d6a0888cab919d7cca2897	deploy: pin quiet metrics image
+2026-08-27T08:25:14Z	ac9b56a52f9f3876a365247f8f282cc6592bd030	https://github.com/shinkeonkim/url-shortener/commit/ac9b56a52f9f3876a365247f8f282cc6592bd030	fix: exclude monitoring endpoints from access logs (#13) fix: exclude monitoring endpoints from access logs
+2026-08-27T08:24:09Z	ad54b729c92eea16d0663c6ea62c7a808e4fe336	https://github.com/shinkeonkim/url-shortener/commit/ad54b729c92eea16d0663c6ea62c7a808e4fe336	fix: exclude metrics probes from access logs
+2026-08-27T08:07:58Z	c1c8d16dbb48d98e6ad4716c4f5c41c66c3a3405	https://github.com/shinkeonkim/url-shortener/commit/c1c8d16dbb48d98e6ad4716c4f5c41c66c3a3405	fix: grant non-root app access to SQLite PVC (#12) fix: grant non-root app access to SQLite PVC
+2026-08-27T08:06:56Z	a75c1d806508d6cace390ac05c7ba08c83dabb9a	https://github.com/shinkeonkim/url-shortener/commit/a75c1d806508d6cace390ac05c7ba08c83dabb9a	fix: grant app group access to SQLite volume
+2026-08-27T04:05:53Z	b808d721debc743947c15e4b19fe969eab7db373	https://github.com/shinkeonkim/url-shortener/commit/b808d721debc743947c15e4b19fe969eab7db373	release: integrate completed URL shortener stack (#11) release: integrate completed URL shortener stack
+2026-08-27T03:50:26Z	c31ec444c328567ec328c8715ef2940e26dc2277	https://github.com/shinkeonkim/url-shortener/commit/c31ec444c328567ec328c8715ef2940e26dc2277	Merge pull request #6 from shinkeonkim/stack/01-foundation feat: build service foundation and SQLite store
+2026-08-27T01:43:20Z	83e0562234bd860c825c2dbbd1826906a370b5fb	https://github.com/shinkeonkim/url-shortener/commit/83e0562234bd860c825c2dbbd1826906a370b5fb	ci: use Node 24 based actions
+2026-08-27T01:41:24Z	17302f8480956db7eb8fb0ecb6caeef4a4ebc107	https://github.com/shinkeonkim/url-shortener/commit/17302f8480956db7eb8fb0ecb6caeef4a4ebc107	test: wait for server before E2E cleanup
+2026-08-27T01:39:30Z	088ba5630f17a12bb3d34d32f344bf0713ef2a84	https://github.com/shinkeonkim/url-shortener/commit/088ba5630f17a12bb3d34d32f344bf0713ef2a84	ops: add Kubernetes delivery and operations docs
+2026-08-27T01:36:35Z	1759a9ef363866ea3273496a872bba9fcc03a91e	https://github.com/shinkeonkim/url-shortener/commit/1759a9ef363866ea3273496a872bba9fcc03a91e	build: add observability container and CI
+2026-08-27T01:34:18Z	dadb1ec8c94663d5c452ea72b81a2f1ea0e4f244	https://github.com/shinkeonkim/url-shortener/commit/dadb1ec8c94663d5c452ea72b81a2f1ea0e4f244	feat: add admin authentication CRUD and UI
+2026-08-27T01:31:17Z	3cfbe7a3a72bafd87c378915a5e29d51ee7ec7b1	https://github.com/shinkeonkim/url-shortener/commit/3cfbe7a3a72bafd87c378915a5e29d51ee7ec7b1	feat: add redirects statistics and QR API
+2026-08-27T01:29:05Z	198cd266452642b39f1e6a70c6dd7cba512f1592	https://github.com/shinkeonkim/url-shortener/commit/198cd266452642b39f1e6a70c6dd7cba512f1592	feat: build service foundation and SQLite store
+2026-08-27T01:27:01Z	78c77d4005cacdd63e2b75337d560db56cde5fb8	https://github.com/shinkeonkim/url-shortener/commit/78c77d4005cacdd63e2b75337d560db56cde5fb8	docs: define url shortener project plan

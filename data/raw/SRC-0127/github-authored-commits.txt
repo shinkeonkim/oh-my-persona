@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-tombstone-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:27:21Z	99a07df4da9b8b071faf805a85963b8dc772e0f1	https://github.com/kokoa-hobby/minecraft-tombstone-plugin/commit/99a07df4da9b8b071faf805a85963b8dc772e0f1	Add README
+2026-07-22T12:22:20Z	aa95c5d0c9e8763f388f7890d39299d6b828137c	https://github.com/kokoa-hobby/minecraft-tombstone-plugin/commit/aa95c5d0c9e8763f388f7890d39299d6b828137c	Add TombstonePlugin main class
+2026-07-22T12:22:20Z	8895fc86bff5c24855fae53d09d3642ad670f081	https://github.com/kokoa-hobby/minecraft-tombstone-plugin/commit/8895fc86bff5c24855fae53d09d3642ad670f081	Add TombstoneData
+2026-07-22T12:22:20Z	a276134dd07962d82cd81f9a4822d308efc34346	https://github.com/kokoa-hobby/minecraft-tombstone-plugin/commit/a276134dd07962d82cd81f9a4822d308efc34346	Add listeners
+2026-07-22T12:22:20Z	017f80e2bb62e83a3377a0105193bfa27f9099c0	https://github.com/kokoa-hobby/minecraft-tombstone-plugin/commit/017f80e2bb62e83a3377a0105193bfa27f9099c0	Add plugin manifest and resources
+2026-07-22T12:22:19Z	695f27835eeb36c277ca465973f113fbc53122e4	https://github.com/kokoa-hobby/minecraft-tombstone-plugin/commit/695f27835eeb36c277ca465973f113fbc53122e4	Add Gradle project scaffold

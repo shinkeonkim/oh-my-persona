@@ -1,0 +1,6 @@
+GitHub repository: https://github.com/kokoa-lab/gc-sweeper
+Pull request author: shinkeonkim
+
+2026-08-28T07:02:08Z	#3	MERGED	https://github.com/kokoa-lab/gc-sweeper/pull/3	chore(ads): add ads.txt	merged=2026-08-28T07:55:56Z	closed=2026-08-28T07:55:56Z	commits=1	files=1	+1/-0	project-lens가 자동 생성한 PR입니다. - public/ads.txt를 추가했습니다. - AdSense 게시자: ca-pub-3060818993817836
+2026-08-28T05:28:10Z	#2	MERGED	https://github.com/kokoa-lab/gc-sweeper/pull/2	docs: write a real README	merged=2026-08-28T07:55:48Z	closed=2026-08-28T07:55:48Z	commits=1	files=1	+35/-0	README.md was thin/placeholder. Replaced it with an accurate description based on the actual source (features, tech stack, real dev/build/deploy commands read from package.json and wrangler.toml).
+2026-08-27T16:55:00Z	#1	MERGED	https://github.com/kokoa-lab/gc-sweeper/pull/1	chore(tracking): GTM 스니펫 추가 (GTM-W4LH4L5W)	merged=2026-08-28T03:53:24Z	closed=2026-08-28T03:53:24Z	commits=1	files=1	+13/-0	project-lens가 자동 생성한 PR입니다. - index.html에 GTM(GTM-W4LH4L5W) 스니펫을 삽입했습니다. - GTM 컨테이너: GTM-W4LH4L5W

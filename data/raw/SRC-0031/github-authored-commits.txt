@@ -1,0 +1,34 @@
+GitHub repository: https://github.com/shinkeonkim/notion-blog
+Author account: shinkeonkim
+
+2024-04-25T05:24:52Z	6569b170738a84733d1fed3f4d2d4fef7b42cd42	https://github.com/shinkeonkim/notion-blog/commit/6569b170738a84733d1fed3f4d2d4fef7b42cd42	chore: 불필요한 action 삭제 - 이후 노션 블로그 활성화 시 다시 바꾸는 걸로 함.
+2022-06-01T09:37:33Z	1cea60235d3ec21359e0a11301e0c144e03a455b	https://github.com/shinkeonkim/notion-blog/commit/1cea60235d3ec21359e0a11301e0c144e03a455b	Update README.md
+2022-06-01T09:24:32Z	c4b07e97f4b4275e81cbad62bca7246f84ba524f	https://github.com/shinkeonkim/notion-blog/commit/c4b07e97f4b4275e81cbad62bca7246f84ba524f	Update README.md
+2022-06-01T07:15:25Z	fa08f4e18e438b26f038b6404afbc03f05982cdd	https://github.com/shinkeonkim/notion-blog/commit/fa08f4e18e438b26f038b6404afbc03f05982cdd	Update deploy.yml
+2022-06-01T06:49:14Z	66e9a60470f70b6a3ccb49885301b2167ea5b33d	https://github.com/shinkeonkim/notion-blog/commit/66e9a60470f70b6a3ccb49885301b2167ea5b33d	fix: CNAME
+2022-06-01T06:45:43Z	394cf8ada1e7d699058cd31d3ecb305c27eeccce	https://github.com/shinkeonkim/notion-blog/commit/394cf8ada1e7d699058cd31d3ecb305c27eeccce	Update README.md
+2022-06-01T06:40:54Z	3b35acaa6688b801fd720d0cec4dc78d57d2324c	https://github.com/shinkeonkim/notion-blog/commit/3b35acaa6688b801fd720d0cec4dc78d57d2324c	Create CNAME
+2022-06-01T06:38:41Z	652fd8982e536067ff35a3d383d4fa59865d3172	https://github.com/shinkeonkim/notion-blog/commit/652fd8982e536067ff35a3d383d4fa59865d3172	fix: html lang
+2022-06-01T06:31:22Z	d12d028281254b3481bcf6c7f5ca7f65c2766e0a	https://github.com/shinkeonkim/notion-blog/commit/d12d028281254b3481bcf6c7f5ca7f65c2766e0a	fix: subdomain
+2022-06-01T06:29:46Z	66f64b47971137007a5105a4b504ffa16c281216	https://github.com/shinkeonkim/notion-blog/commit/66f64b47971137007a5105a4b504ffa16c281216	fix: subdomain
+2022-06-01T06:26:12Z	209e0af5452894e631302dbd25764629361605ad	https://github.com/shinkeonkim/notion-blog/commit/209e0af5452894e631302dbd25764629361605ad	fix: subdomain
+2022-06-01T06:23:04Z	3b4a4e17287e7cb05ea1fbd0e1d8a42e1b486b40	https://github.com/shinkeonkim/notion-blog/commit/3b4a4e17287e7cb05ea1fbd0e1d8a42e1b486b40	fix: subdomain
+2022-06-01T06:05:32Z	557785831df72681178881e154dfe60ee37abf20	https://github.com/shinkeonkim/notion-blog/commit/557785831df72681178881e154dfe60ee37abf20	chore: remove console.log
+2022-06-01T05:30:13Z	5ba1b079fbc2b09b62517ecaa68363d6377317db	https://github.com/shinkeonkim/notion-blog/commit/5ba1b079fbc2b09b62517ecaa68363d6377317db	fix: 한글 title에 대한 normalize
+2022-06-01T05:24:32Z	cac7c1fa9eb1a84edc284f9b86d3f903ea9bc037	https://github.com/shinkeonkim/notion-blog/commit/cac7c1fa9eb1a84edc284f9b86d3f903ea9bc037	Update README.md
+2022-06-01T05:21:46Z	ab8a013236d0cc03f4805c095aa6879268037f53	https://github.com/shinkeonkim/notion-blog/commit/ab8a013236d0cc03f4805c095aa6879268037f53	fix: uuid -- issue
+2022-06-01T05:17:03Z	05d54efa62edcaf673a5761cc05545fe569cc9e2	https://github.com/shinkeonkim/notion-blog/commit/05d54efa62edcaf673a5761cc05545fe569cc9e2	fix: subdomain issue
+2022-06-01T03:40:09Z	9c50a4caccc9da7e3182dc0e9f2e787eb3820b64	https://github.com/shinkeonkim/notion-blog/commit/9c50a4caccc9da7e3182dc0e9f2e787eb3820b64	fix: mixed contents
+2022-06-01T03:32:34Z	1c07a70a19e3e97e998b8fdcf988546ec281f025	https://github.com/shinkeonkim/notion-blog/commit/1c07a70a19e3e97e998b8fdcf988546ec281f025	fix: link issue
+2022-06-01T03:16:55Z	139cb2d8315016e517ec1d78b350420cd5e8e83b	https://github.com/shinkeonkim/notion-blog/commit/139cb2d8315016e517ec1d78b350420cd5e8e83b	chore: add basePath
+2022-06-01T03:08:39Z	13f301ce922c20fce65d55d48bdf6ee8abe05563	https://github.com/shinkeonkim/notion-blog/commit/13f301ce922c20fce65d55d48bdf6ee8abe05563	fix: workflow
+2022-06-01T03:04:32Z	e8ce5805a8d035ff9ba7438b449ea9fa191a3cec	https://github.com/shinkeonkim/notion-blog/commit/e8ce5805a8d035ff9ba7438b449ea9fa191a3cec	fix: workflow
+2022-06-01T02:49:57Z	bc8bc29bf04d4796b62615d466b40237174aeb9a	https://github.com/shinkeonkim/notion-blog/commit/bc8bc29bf04d4796b62615d466b40237174aeb9a	Update deploy.yml
+2022-06-01T02:49:13Z	bd899803f4bdc6f240146c4ac03541258eaaaff9	https://github.com/shinkeonkim/notion-blog/commit/bd899803f4bdc6f240146c4ac03541258eaaaff9	fix: deploy settings
+2022-06-01T02:33:30Z	6afbebcb2cad0073a66deb91ffabe1bf9101d2eb	https://github.com/shinkeonkim/notion-blog/commit/6afbebcb2cad0073a66deb91ffabe1bf9101d2eb	chore: export command
+2022-06-01T02:31:02Z	536fae150dc8c3449e26d3a97057ce8b685ceee7	https://github.com/shinkeonkim/notion-blog/commit/536fae150dc8c3449e26d3a97057ce8b685ceee7	fix: node version
+2022-06-01T02:25:25Z	974c905cc5f76c09a3c01536512640724913c364	https://github.com/shinkeonkim/notion-blog/commit/974c905cc5f76c09a3c01536512640724913c364	fix: branchs
+2022-06-01T02:24:43Z	5a7aa5417088b5c4fe6ed039eea941130c3f104b	https://github.com/shinkeonkim/notion-blog/commit/5a7aa5417088b5c4fe6ed039eea941130c3f104b	docs: README.md 수정
+2022-06-01T02:21:47Z	79b4a35dfa9eba342c4ef1a884af8186e93307b8	https://github.com/shinkeonkim/notion-blog/commit/79b4a35dfa9eba342c4ef1a884af8186e93307b8	chore: gh-pages를 통한 배포
+2022-06-01T02:10:23Z	e16c6f92bba8ab35c0c6ebc1de006b680434f056	https://github.com/shinkeonkim/notion-blog/commit/e16c6f92bba8ab35c0c6ebc1de006b680434f056	feat: react-notion-x를 이용한 notion page 불러오기
+2022-05-29T06:46:04Z	f361e3850d0db910fff2129ef840186cbb686e18	https://github.com/shinkeonkim/notion-blog/commit/f361e3850d0db910fff2129ef840186cbb686e18	Initial commit from Create Next App

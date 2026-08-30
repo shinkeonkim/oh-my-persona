@@ -1,0 +1,11 @@
+GitHub repository: https://github.com/kokoa-lab/please-delete-my-account
+Author account: shinkeonkim
+
+2026-08-28T07:57:18Z	8809aebdb206eeb83b4f59cf79570430176e2880	https://github.com/kokoa-lab/please-delete-my-account/commit/8809aebdb206eeb83b4f59cf79570430176e2880	Merge pull request #3 from kokoa-lab/project-lens/add-ads-txt-59b553b7 chore(ads): add ads.txt
+2026-08-28T07:57:08Z	1a480d044c427adf549f73271bd35efce5e45553	https://github.com/kokoa-lab/please-delete-my-account/commit/1a480d044c427adf549f73271bd35efce5e45553	Merge pull request #2 from kokoa-lab/docs/expand-readme docs: expand README
+2026-08-28T07:03:27Z	693c47e3a112f263d18dde11e55c290fc7d84b54	https://github.com/kokoa-lab/please-delete-my-account/commit/693c47e3a112f263d18dde11e55c290fc7d84b54	chore(ads): add ads.txt project-lens automated commit.
+2026-08-28T05:27:45Z	3c96b810505dafd6f14c655b37f7f4362dfa8166	https://github.com/kokoa-lab/please-delete-my-account/commit/3c96b810505dafd6f14c655b37f7f4362dfa8166	docs: expand README with real project description and dev/build/deploy instructions
+2026-08-27T16:47:28Z	f3c181943ab6bc12269ebcd53406fda3454f7b41	https://github.com/kokoa-lab/please-delete-my-account/commit/f3c181943ab6bc12269ebcd53406fda3454f7b41	Merge pull request #1 from kokoa-lab/project-lens/add-gtm-tracking-12 chore(tracking): GTM 스니펫 추가 (GTM-P46569WC)
+2026-08-27T05:07:00Z	1c453c2f2d68c1723a68597804aa98b1d471b627	https://github.com/kokoa-lab/please-delete-my-account/commit/1c453c2f2d68c1723a68597804aa98b1d471b627	chore(tracking): add GTM snippet (GTM-P46569WC) project-lens automated commit.
+2026-03-15T13:27:30Z	cd7a2018ea68f8833900054e2b3ac117b2c22a4c	https://github.com/kokoa-lab/please-delete-my-account/commit/cd7a2018ea68f8833900054e2b3ac117b2c22a4c	Add README
+2026-03-12T09:51:30Z	b6506ac28c5d5617182594abe5945a52b72ac4f2	https://github.com/kokoa-lab/please-delete-my-account/commit/b6506ac28c5d5617182594abe5945a52b72ac4f2	feat: initial project settings by lovable

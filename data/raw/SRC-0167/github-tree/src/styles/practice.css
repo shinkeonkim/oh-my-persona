@@ -1,0 +1,167 @@
+.practice-dashboard {
+  position: sticky;
+  inset-block-start: calc(var(--sl-nav-height) + 0.75rem);
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(12rem, 1fr) minmax(8rem, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 1.5rem 2rem;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background: color-mix(in srgb, var(--sl-color-black) 92%, transparent);
+  box-shadow: 0 2px 8px rgb(50 22 83 / 8%);
+  backdrop-filter: blur(0.75rem);
+}
+
+.practice-dashboard__label {
+  margin: 0;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+.practice-dashboard progress {
+  width: 100%;
+  accent-color: var(--sl-color-accent);
+}
+
+.practice-dashboard button,
+.practice-actions button {
+  border: 1px solid var(--sl-color-gray-4);
+  border-radius: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  color: var(--sl-color-white);
+  background: var(--sl-color-gray-6);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 120ms ease-out, border-color 120ms ease-out, background-color 120ms ease-out;
+}
+
+.practice-dashboard button:hover,
+.practice-actions button:hover {
+  border-color: var(--sl-color-accent);
+  background: var(--sl-color-accent-low);
+}
+
+.practice-dashboard button:active,
+.practice-actions button:active {
+  transform: translateY(1px);
+}
+
+.practice-question {
+  scroll-margin-block-start: calc(var(--sl-nav-height) + 6rem);
+  margin-block: 2rem;
+  border: 1px solid var(--sl-color-gray-5);
+  border-inline-start: 0.25rem solid var(--sl-color-accent);
+  border-radius: 0.5rem;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  background: color-mix(in srgb, var(--sl-color-gray-6) 68%, var(--sl-color-black));
+  box-shadow: 0 1px 1px rgb(97 104 117 / 5%), 0 4px 12px rgb(50 22 83 / 5%);
+}
+
+.practice-question > .sl-heading-wrapper:first-child h3 {
+  margin-block-start: 0;
+  text-wrap: balance;
+}
+
+.practice-options {
+  display: grid;
+  gap: 0.5rem;
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+.practice-options > li {
+  position: relative;
+  margin: 0;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.375rem;
+  padding: 0.75rem 0.875rem 0.75rem 2.75rem;
+  background: var(--sl-color-black);
+  cursor: pointer;
+  transition: transform 120ms ease-out, border-color 120ms ease-out, background-color 120ms ease-out;
+}
+
+.practice-options > li::before {
+  position: absolute;
+  inset-block-start: 0.9rem;
+  inset-inline-start: 0.875rem;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid var(--sl-color-gray-3);
+  border-radius: 50%;
+  content: '';
+}
+
+.practice-options[role='group'] > li::before {
+  border-radius: 0.2rem;
+}
+
+.practice-options > li:hover {
+  transform: translateX(0.125rem);
+  border-color: var(--sl-color-accent);
+}
+
+.practice-options > li.is-selected {
+  border-color: var(--sl-color-accent);
+  background: var(--sl-color-accent-low);
+}
+
+.practice-options > li.is-selected::after {
+  position: absolute;
+  inset-block-start: 1.18rem;
+  inset-inline-start: 1.18rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--sl-color-accent);
+  content: '';
+}
+
+.practice-options[role='group'] > li.is-selected::after {
+  border-radius: 0.1rem;
+}
+
+.practice-options > li:focus-visible,
+.practice-dashboard button:focus-visible,
+.practice-actions button:focus-visible {
+  outline: 3px solid var(--sl-color-accent);
+  outline-offset: 2px;
+}
+
+.practice-question > details {
+  margin-block-start: 1.25rem;
+  border-block-start: 1px solid var(--sl-color-gray-5);
+  padding-block-start: 1rem;
+}
+
+.practice-question > details > summary {
+  color: var(--sl-color-accent-high);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.practice-question.is-reviewed {
+  border-inline-start-color: var(--sl-color-accent-high);
+}
+
+.practice-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-block-start: 1.25rem;
+}
+
+@media (max-width: 48rem) {
+  .practice-dashboard {
+    position: static;
+    grid-template-columns: 1fr;
+  }
+
+  .practice-dashboard button,
+  .practice-actions button {
+    min-height: 2.75rem;
+  }
+}

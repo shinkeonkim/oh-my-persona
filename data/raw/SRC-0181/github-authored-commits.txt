@@ -1,0 +1,6 @@
+GitHub repository: https://github.com/palette-team/extractor-data
+Author account: shinkeonkim
+
+2026-02-14T16:51:15Z	2b6adb7556b463c59219cc52d6b4fd197ad5e52f	https://github.com/palette-team/extractor-data/commit/2b6adb7556b463c59219cc52d6b4fd197ad5e52f	Add files via upload
+2026-02-14T16:50:49Z	1f75b29e2809968f080e0fd6b9c3af0a20435e0a	https://github.com/palette-team/extractor-data/commit/1f75b29e2809968f080e0fd6b9c3af0a20435e0a	Add files via upload
+2026-02-14T16:50:25Z	2485fddd8712ab18a3667b38248a5995a3289b20	https://github.com/palette-team/extractor-data/commit/2485fddd8712ab18a3667b38248a5995a3289b20	Add files via upload

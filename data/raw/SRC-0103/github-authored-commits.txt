@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-chatchannels-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:29:00Z	963ad2664df703d05e15d6bdbc00f3d789120cc1	https://github.com/kokoa-hobby/minecraft-chatchannels-plugin/commit/963ad2664df703d05e15d6bdbc00f3d789120cc1	Add README
+2026-07-22T12:22:13Z	b202d2253984dabd6687615e469f12f77131050b	https://github.com/kokoa-hobby/minecraft-chatchannels-plugin/commit/b202d2253984dabd6687615e469f12f77131050b	Add ChatChannelsPlugin main class
+2026-07-22T12:22:13Z	9cacc861884b9ca20e4acaef8dece042b32778a2	https://github.com/kokoa-hobby/minecraft-chatchannels-plugin/commit/9cacc861884b9ca20e4acaef8dece042b32778a2	Add listeners
+2026-07-22T12:22:13Z	beae7838af7ddae946b0036c31553e19baa95a51	https://github.com/kokoa-hobby/minecraft-chatchannels-plugin/commit/beae7838af7ddae946b0036c31553e19baa95a51	Add commands
+2026-07-22T12:22:13Z	bba9f4f43820c110ca2a2af56c417d03812173b9	https://github.com/kokoa-hobby/minecraft-chatchannels-plugin/commit/bba9f4f43820c110ca2a2af56c417d03812173b9	Add plugin manifest and resources
+2026-07-22T12:22:13Z	6c5914bc4ba9e246359cb0635588512278031242	https://github.com/kokoa-hobby/minecraft-chatchannels-plugin/commit/6c5914bc4ba9e246359cb0635588512278031242	Add Gradle project scaffold

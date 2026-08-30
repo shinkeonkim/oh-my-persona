@@ -1,0 +1,195 @@
+{% extends "admin/base.html" %}
+{% load i18n unfold %}
+
+{% block breadcrumbs %}
+{% if not is_popup %}
+<div class="px-4">
+    <div class="container mb-6 mx-auto -my-3 lg:mb-12">
+        <ul class="flex flex-wrap">
+            {% url 'admin:index' as link %}
+            {% trans 'Home' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with link=link name=name %}
+
+            {% url 'admin:companies_company_changelist' as link %}
+            {% trans 'Companies' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with link=link name=name %}
+
+            {% trans 'Queue Financial Statement Ingest & Regeneration' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with name=name %}
+        </ul>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="px-4">
+    <div class="container mx-auto">
+        <div class="main-card bg-white dark:bg-gray-900 shadow-lg rounded-lg p-6 border border-gray-200 dark:border-gray-700">
+            <h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">{{ title }}</h2>
+
+            <div class="mb-6">
+                <p class="text-gray-700 dark:text-gray-300 mb-2">
+                    선택한 회사들의 재무제표 정보를 OpenDART API를 통해 수집하고, 수집된 데이터를 정제하여 저장합니다.
+                </p>
+                <div class="bg-green-50 dark:bg-green-900/20 border border-green-300 dark:border-green-700 text-green-800 dark:text-green-300 px-4 py-3 rounded mt-4">
+                    <p class="font-semibold">✓ 통합 작업 (Ingest + Regeneration)</p>
+                    <p class="text-sm mt-1">이 작업은 Raw 데이터 수집과 정제된 데이터 생성을 한번에 처리합니다.</p>
+                </div>
+            </div>
+
+            <form method="post" class="space-y-6">
+                {% csrf_token %}
+                <input type="hidden" name="action" value="{{ action }}">
+                {% for obj_id in selected_ids %}
+                    <input type="hidden" name="_selected_action" value="{{ obj_id }}">
+                {% endfor %}
+
+                {% if form.non_field_errors %}
+                <div class="bg-red-50 dark:bg-red-900/30 border border-red-400 dark:border-red-500 text-red-700 dark:text-red-300 px-4 py-3 rounded mb-4">
+                    {{ form.non_field_errors }}
+                </div>
+                {% endif %}
+
+                <div class="space-y-5">
+                    <!-- Years -->
+                    <div>
+                        <label for="{{ form.years.id_for_label }}" class="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                            {{ form.years.label }}
+                        </label>
+                        {{ form.years }}
+                        {% if form.years.help_text %}
+                        <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ form.years.help_text }}</p>
+                        {% endif %}
+                        {% if form.years.errors %}
+                        <p class="mt-2 text-sm text-red-600 dark:text-red-400">{{ form.years.errors }}</p>
+                        {% endif %}
+                    </div>
+
+                    <!-- Quarters -->
+                    <div>
+                        <label for="{{ form.quarters.id_for_label }}" class="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                            {{ form.quarters.label }}
+                        </label>
+                        {{ form.quarters }}
+                        {% if form.quarters.help_text %}
+                        <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ form.quarters.help_text }}</p>
+                        {% endif %}
+                        {% if form.quarters.errors %}
+                        <p class="mt-2 text-sm text-red-600 dark:text-red-400">{{ form.quarters.errors }}</p>
+                        {% endif %}
+                    </div>
+
+                    <!-- Page Count -->
+                    <div>
+                        <label for="{{ form.page_count.id_for_label }}" class="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                            {{ form.page_count.label }}
+                        </label>
+                        {{ form.page_count }}
+                        {% if form.page_count.help_text %}
+                        <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ form.page_count.help_text }}</p>
+                        {% endif %}
+                        {% if form.page_count.errors %}
+                        <p class="mt-2 text-sm text-red-600 dark:text-red-400">{{ form.page_count.errors }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 pt-6 border-t border-gray-200 dark:border-gray-700">
+                    <button type="submit" name="apply_fs" class="bg-primary-600 hover:bg-primary-700 dark:bg-primary-600 dark:hover:bg-primary-700 text-white font-semibold py-2.5 px-6 rounded-lg shadow-sm transition-colors">
+                        수집 및 재생성 시작
+                    </button>
+                    <a href="{% url 'admin:companies_company_changelist' %}"
+                       class="bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-semibold py-2.5 px-6 rounded-lg transition-colors">
+                        취소
+                    </a>
+                </div>
+            </form>
+
+            <!-- Selected Companies List -->
+            <div class="company-list mt-8 p-5 bg-green-50 dark:bg-gray-800 rounded-lg border border-green-200 dark:border-gray-600">
+                <h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white">선택된 회사 목록</h3>
+                <ul class="list-none space-y-2">
+                    {% for company in companies %}
+                        <li class="py-2 px-3 bg-white dark:bg-gray-700 rounded border-l-4 border-green-500 dark:border-green-400">
+                            <span class="font-medium text-gray-900 dark:text-white">{{ company.name }}</span>
+                            <span class="text-sm text-gray-600 dark:text-gray-400 ml-2">({{ company.corp_code }})</span>
+                        </li>
+                    {% empty %}
+                        <li class="text-gray-600 dark:text-gray-400">선택된 회사가 없습니다.</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="reference-section mt-8 p-5 bg-blue-50 dark:bg-gray-800 rounded-lg border border-blue-200 dark:border-gray-600">
+                <h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white">참고사항</h3>
+                <ul class="list-disc list-inside space-y-3 text-sm text-gray-800 dark:text-gray-200">
+                    <li><strong>통합 작업:</strong> Raw 데이터 수집(Ingest)과 정제된 데이터 생성(Regeneration)을 순차적으로 실행합니다.</li>
+                    <li><strong>Phase 1 - Ingest:</strong> OpenDART API를 통해 재무제표 원본 데이터를 수집합니다.</li>
+                    <li><strong>Phase 2 - Regeneration:</strong> 수집된 데이터를 Mapping Rule에 따라 정제하여 FinancialStatementItem과 Account를 생성합니다.</li>
+                    <li><strong>Years:</strong> 수집할 회계연도를 쉼표로 구분하여 입력합니다. (예: 2023,2024)</li>
+                    <li><strong>Quarters:</strong> 수집할 분기를 1-4 범위에서 쉼표로 구분하여 입력합니다. (예: 1,2,3,4)</li>
+                    <li><strong>Page count:</strong> DART API 응답당 요청할 최대 행 수를 지정합니다.</li>
+                    <li>각 회사별로 별도의 백그라운드 작업이 실행됩니다.</li>
+                    <li>작업 완료 후 FinancialStatement, FinancialStatementItem, FinancialStatementAccount가 생성됩니다.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* 기본 폼 필드 스타일 (라이트 모드) */
+.main-card input[type="number"],
+.main-card input[type="text"],
+.main-card select {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.625rem 0.875rem;
+    border: 2px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    transition: all 0.15s ease-in-out;
+    background-color: white;
+    color: #111827;
+}
+
+/* 다크모드 스타일 */
+.dark .main-card input[type="number"],
+.dark .main-card input[type="text"],
+.dark .main-card select {
+    background-color: #1f2937;
+    border-color: #6b7280;
+    color: #f3f4f6;
+}
+
+.dark .main-card input[type="number"]:hover,
+.dark .main-card input[type="text"]:hover,
+.dark .main-card select:hover {
+    border-color: #9ca3af;
+}
+
+.dark .main-card input[type="number"]:focus,
+.dark .main-card input[type="text"]:focus,
+.dark .main-card select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.dark .main-card {
+  background-color: #111827;
+}
+
+.dark .reference-section {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+.dark .company-list {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+</style>
+{% endblock %}

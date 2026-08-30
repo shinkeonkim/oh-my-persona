@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/shinkeonkim/today-ps
+Pull request author: shinkeonkim
+
+2020-01-07T06:21:53Z	#1	MERGED	https://github.com/shinkeonkim/today-ps/pull/1	Create LICENSE	merged=2020-01-07T06:22:13Z	closed=2020-01-07T06:22:13Z	commits=1	files=1	+201/-0	

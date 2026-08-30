@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/shinkeonkim/janggi-go-game-server
+Author account: shinkeonkim
+
+2020-06-23T01:01:33Z	9fbfb6df330c771021b43442317c0be173e2cebd	https://github.com/shinkeonkim/janggi-go-game-server/commit/9fbfb6df330c771021b43442317c0be173e2cebd	Initial commit

@@ -1,0 +1,206 @@
+{% extends "admin/base.html" %}
+{% load i18n unfold %}
+
+{% block breadcrumbs %}
+{% if not is_popup %}
+<div class="px-4">
+    <div class="container mb-6 mx-auto -my-3 lg:mb-12">
+        <ul class="flex flex-wrap">
+            {% url 'admin:index' as link %}
+            {% trans 'Home' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with link=link name=name %}
+
+            {% url 'admin:stocks_stock_changelist' as link %}
+            {% trans 'Stocks' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with link=link name=name %}
+
+            {% trans 'Calculate Derived Indicators' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with name=name %}
+        </ul>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="px-4">
+    <div class="container mx-auto">
+        <div class="main-card bg-white dark:bg-gray-900 shadow-lg rounded-lg p-6 border border-gray-200 dark:border-gray-700">
+            <h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">{{ title }}</h2>
+
+            <div class="mb-6">
+                <p class="text-gray-700 dark:text-gray-300 mb-2">
+                    선택한 종목들의 파생지표(PER, PBR, ROE, ROA 등)를 재무제표와 주가 데이터를 기반으로 계산합니다.
+                </p>
+            </div>
+
+            <form method="post" class="space-y-6">
+                {% csrf_token %}
+                <input type="hidden" name="action" value="{{ action }}">
+                {% for obj_id in selected_ids %}
+                    <input type="hidden" name="_selected_action" value="{{ obj_id }}">
+                {% endfor %}
+
+                {% if form.non_field_errors %}
+                <div class="bg-red-50 dark:bg-red-900/30 border border-red-400 dark:border-red-500 text-red-700 dark:text-red-300 px-4 py-3 rounded mb-4">
+                    {{ form.non_field_errors }}
+                </div>
+                {% endif %}
+
+                <div class="space-y-5">
+                    <!-- Calculate All Periods Checkbox -->
+                    <div class="flex items-center space-x-3 p-4 bg-blue-50 dark:bg-gray-800 rounded-lg border border-blue-200 dark:border-gray-600">
+                        {{ form.calculate_all_periods }}
+                        <label for="{{ form.calculate_all_periods.id_for_label }}" class="text-sm font-semibold text-gray-800 dark:text-gray-200">
+                            {{ form.calculate_all_periods.label }}
+                        </label>
+                    </div>
+                    {% if form.calculate_all_periods.help_text %}
+                    <p class="mt-2 text-sm text-gray-600 dark:text-gray-400 ml-8">{{ form.calculate_all_periods.help_text }}</p>
+                    {% endif %}
+
+                    <!-- Fiscal Year -->
+                    <div>
+                        <label for="{{ form.fiscal_year.id_for_label }}" class="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                            {{ form.fiscal_year.label }}
+                        </label>
+                        {{ form.fiscal_year }}
+                        {% if form.fiscal_year.help_text %}
+                        <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ form.fiscal_year.help_text }}</p>
+                        {% endif %}
+                        {% if form.fiscal_year.errors %}
+                        <p class="mt-2 text-sm text-red-600 dark:text-red-400">{{ form.fiscal_year.errors }}</p>
+                        {% endif %}
+                    </div>
+
+                    <!-- Fiscal Quarter -->
+                    <div>
+                        <label for="{{ form.fiscal_quarter.id_for_label }}" class="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                            {{ form.fiscal_quarter.label }}
+                        </label>
+                        {{ form.fiscal_quarter }}
+                        {% if form.fiscal_quarter.help_text %}
+                        <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ form.fiscal_quarter.help_text }}</p>
+                        {% endif %}
+                        {% if form.fiscal_quarter.errors %}
+                        <p class="mt-2 text-sm text-red-600 dark:text-red-400">{{ form.fiscal_quarter.errors }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 pt-6 border-t border-gray-200 dark:border-gray-700">
+                    <button type="submit" name="apply_calculation" class="bg-primary-600 hover:bg-primary-700 dark:bg-primary-600 dark:hover:bg-primary-700 text-white font-semibold py-2.5 px-6 rounded-lg shadow-sm transition-colors">
+                        계산 시작
+                    </button>
+                    <a href="{% url 'admin:stocks_stock_changelist' %}"
+                       class="bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-semibold py-2.5 px-6 rounded-lg transition-colors">
+                        취소
+                    </a>
+                </div>
+            </form>
+
+            <!-- Selected Stocks List -->
+            <div class="stock-list mt-8 p-5 bg-green-50 dark:bg-gray-800 rounded-lg border border-green-200 dark:border-gray-600">
+                <h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white">선택된 종목 목록</h3>
+                <ul class="list-none space-y-2">
+                    {% for stock in stocks %}
+                        <li class="py-2 px-3 bg-white dark:bg-gray-700 rounded border-l-4 border-green-500 dark:border-green-400">
+                            <span class="font-medium text-gray-900 dark:text-white">{{ stock.name }}</span>
+                            <span class="text-sm text-gray-600 dark:text-gray-400 ml-2">({{ stock.code }})</span>
+                            <span class="text-xs text-gray-500 dark:text-gray-500 ml-2">- {{ stock.company.name }}</span>
+                        </li>
+                    {% empty %}
+                        <li class="text-gray-600 dark:text-gray-400">선택된 종목이 없습니다.</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="reference-section mt-8 p-5 bg-blue-50 dark:bg-gray-800 rounded-lg border border-blue-200 dark:border-gray-600">
+                <h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white">참고사항</h3>
+                <ul class="list-disc list-inside space-y-3 text-sm text-gray-800 dark:text-gray-200">
+                    <li><strong>모든 기간 계산:</strong> 체크하면 재무제표가 있는 모든 분기에 대해 파생지표를 계산합니다.</li>
+                    <li><strong>회계연도:</strong> 특정 연도만 계산하려면 연도를 입력합니다. 비워두면 모든 연도를 계산합니다.</li>
+                    <li><strong>분기:</strong> 특정 분기(1-4)만 계산하려면 선택합니다. "All"로 두면 해당 연도의 모든 분기를 계산합니다.</li>
+                    <li><strong>계산 지표:</strong> PER, PBR, ROE, ROA, 배당수익률 등이 자동으로 계산됩니다.</li>
+                    <li><strong>필요 데이터:</strong> 재무제표(FinancialStatement)와 주가(StockPrice) 데이터가 필요합니다.</li>
+                    <li><strong>기준 주가:</strong> 분기 말일의 종가를 기준으로 지표를 계산합니다.</li>
+                    <li>각 종목별로 별도의 백그라운드 작업이 실행됩니다.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* 기본 폼 필드 스타일 (라이트 모드) */
+.main-card input[type="number"],
+.main-card input[type="text"],
+.main-card input[type="checkbox"],
+.main-card select {
+    padding: 0.625rem 0.875rem;
+    border: 2px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    transition: all 0.15s ease-in-out;
+    background-color: white;
+    color: #111827;
+}
+
+.main-card input[type="number"],
+.main-card input[type="text"],
+.main-card select {
+    width: 100%;
+    max-width: 400px;
+}
+
+.main-card input[type="checkbox"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+}
+
+/* 다크모드 스타일 */
+.dark .main-card input[type="number"],
+.dark .main-card input[type="text"],
+.dark .main-card input[type="checkbox"],
+.dark .main-card select {
+    background-color: #1f2937;
+    border-color: #6b7280;
+    color: #f3f4f6;
+}
+
+.dark .main-card input[type="number"]:hover,
+.dark .main-card input[type="text"]:hover,
+.dark .main-card select:hover {
+    border-color: #9ca3af;
+}
+
+.dark .main-card input[type="number"]:focus,
+.dark .main-card input[type="text"]:focus,
+.dark .main-card select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.dark .main-card input[type="checkbox"]:checked {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+.dark .main-card {
+  background-color: #111827;
+}
+
+.dark .reference-section {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+.dark .stock-list {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+</style>
+{% endblock %}

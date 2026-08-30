@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-lab/npm-version-era
+Author account: shinkeonkim
+
+2026-08-28T07:56:37Z	4fd8d9d6774618faf647881bf99d2018b1449ebd	https://github.com/kokoa-lab/npm-version-era/commit/4fd8d9d6774618faf647881bf99d2018b1449ebd	Merge pull request #3 from kokoa-lab/project-lens/add-ads-txt-db2e1f24 chore(ads): add ads.txt
+2026-08-28T07:56:27Z	f5df2cc6a924ddf54ce034091a18c5df17eca945	https://github.com/kokoa-lab/npm-version-era/commit/f5df2cc6a924ddf54ce034091a18c5df17eca945	Merge pull request #2 from kokoa-lab/docs/readme docs: write a real README
+2026-08-28T07:02:32Z	b9ec13054fb3a96636c1ead70b5f243c3b84122e	https://github.com/kokoa-lab/npm-version-era/commit/b9ec13054fb3a96636c1ead70b5f243c3b84122e	chore(ads): add ads.txt project-lens automated commit.
+2026-08-28T03:53:16Z	64d7ac6090caae1d435878d3ed40008bead00fc1	https://github.com/kokoa-lab/npm-version-era/commit/64d7ac6090caae1d435878d3ed40008bead00fc1	Merge pull request #1 from kokoa-lab/project-lens/add-gtm-tracking-87 chore(tracking): GTM 스니펫 추가 (GTM-KSSHWSMK)
+2026-08-27T16:55:29Z	76c43955c1ee65dc2f50a89e80c28b289057aaae	https://github.com/kokoa-lab/npm-version-era/commit/76c43955c1ee65dc2f50a89e80c28b289057aaae	chore(tracking): add GTM snippet (GTM-KSSHWSMK) project-lens automated commit.
+2026-03-09T06:48:36Z	ffe69bead93169426ceeb1b8fb95ee34b03f969f	https://github.com/kokoa-lab/npm-version-era/commit/ffe69bead93169426ceeb1b8fb95ee34b03f969f	feat: initial project settings by lovable

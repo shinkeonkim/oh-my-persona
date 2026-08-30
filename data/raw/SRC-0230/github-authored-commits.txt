@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/shinkeonkim/snippets
+Author account: shinkeonkim
+
+2023-08-19T06:06:42Z	9cad3e853f1056239bedf3dc32ad5eb0380d5755	https://github.com/shinkeonkim/snippets/commit/9cad3e853f1056239bedf3dc32ad5eb0380d5755	Update cpp.json
+2023-08-13T04:01:43Z	8de01eee6dc6d779ece878a56d0584bf95ee8fdf	https://github.com/shinkeonkim/snippets/commit/8de01eee6dc6d779ece878a56d0584bf95ee8fdf	Update cpp.json
+2023-08-13T01:00:41Z	28663c3ad3b573b3349cc1277dcdb2d184c74693	https://github.com/shinkeonkim/snippets/commit/28663c3ad3b573b3349cc1277dcdb2d184c74693	feat: add basic geometry code to ps-start snippet - pdd, pii 등 타입 선언 추가
+2022-10-12T09:48:39Z	b2381e2b608e0767e339e46f15a15ddc3c40cfc1	https://github.com/shinkeonkim/snippets/commit/b2381e2b608e0767e339e46f15a15ddc3c40cfc1	Create python.json
+2022-10-12T09:48:12Z	490d398efd20294b8aa19673e894714457dcbcd8	https://github.com/shinkeonkim/snippets/commit/490d398efd20294b8aa19673e894714457dcbcd8	Create cpp.json
+2022-08-17T08:36:06Z	286bc8de07886965c597fbc67b47d1a96a3220d7	https://github.com/shinkeonkim/snippets/commit/286bc8de07886965c597fbc67b47d1a96a3220d7	Initial commit

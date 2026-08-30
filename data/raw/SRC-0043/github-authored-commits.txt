@@ -1,0 +1,10 @@
+GitHub repository: https://github.com/shinkeonkim/alcolpedia-app
+Author account: shinkeonkim
+
+2020-08-17T07:00:40Z	21866ab976eec46259a0e343886d3131721cce66	https://github.com/shinkeonkim/alcolpedia-app/commit/21866ab976eec46259a0e343886d3131721cce66	feat: token 자동 인증 기능
+2020-08-16T18:21:18Z	282feb23269115e5f652888036a973e47e65d64e	https://github.com/shinkeonkim/alcolpedia-app/commit/282feb23269115e5f652888036a973e47e65d64e	feat: api 오류 메세지 토스트 기능
+2020-08-16T18:06:42Z	a287df0bf18f1cbf9888cf97c49421aa4924b9bd	https://github.com/shinkeonkim/alcolpedia-app/commit/a287df0bf18f1cbf9888cf97c49421aa4924b9bd	feat: 사용자 입력으로 api 전송, 결과 출력까지 WIP
+2020-08-14T18:57:43Z	865375dbe498f21f2d33300f400f3bbc159e8e88	https://github.com/shinkeonkim/alcolpedia-app/commit/865375dbe498f21f2d33300f400f3bbc159e8e88	src: loginScreen, registerScreen Card design + Navigator
+2020-08-14T12:18:08Z	ae5655dd18752a38b76a693289e969045f564d87	https://github.com/shinkeonkim/alcolpedia-app/commit/ae5655dd18752a38b76a693289e969045f564d87	feat: Screen 파일 분리, LoginScreen WIP
+2020-08-14T08:48:44Z	8fa78e616e5450dc6db3d1ba2bc06d61eda5967b	https://github.com/shinkeonkim/alcolpedia-app/commit/8fa78e616e5450dc6db3d1ba2bc06d61eda5967b	src: route 설정, json data 다루기
+2020-08-11T09:00:29Z	878dd0409f9a5baf30da03bd152ac4fb077b6d78	https://github.com/shinkeonkim/alcolpedia-app/commit/878dd0409f9a5baf30da03bd152ac4fb077b6d78	feat: init flutter project

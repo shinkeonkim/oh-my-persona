@@ -1,0 +1,23 @@
+GitHub repository: https://github.com/shinkeonkim/is_likelion
+Author account: shinkeonkim
+
+2022-04-03T11:24:19Z	c3f5afd927b50f682e475cdc8b100955cc2698ef	https://github.com/shinkeonkim/is_likelion/commit/c3f5afd927b50f682e475cdc8b100955cc2698ef	Update README.rst
+2022-04-03T11:23:56Z	37f272032caf693f0ac550da95d573dd64c9b64e	https://github.com/shinkeonkim/is_likelion/commit/37f272032caf693f0ac550da95d573dd64c9b64e	Merge pull request #5 from shinkeonkim/0003_test_code 0003 test code
+2022-04-03T11:20:07Z	6b9acb2cb938707cd50a1fa816ebde1eaee3b36e	https://github.com/shinkeonkim/is_likelion/commit/6b9acb2cb938707cd50a1fa816ebde1eaee3b36e	chore: version update
+2022-04-03T11:17:55Z	5e783b65a3c046f009d81766c19e0c51465d739f	https://github.com/shinkeonkim/is_likelion/commit/5e783b65a3c046f009d81766c19e0c51465d739f	chore: coverage badge
+2022-04-03T11:17:44Z	c739e410dc1dce4a27f22b048c09a897146b9a63	https://github.com/shinkeonkim/is_likelion/commit/c739e410dc1dce4a27f22b048c09a897146b9a63	fix: python3.7 삭제
+2022-04-03T11:14:50Z	b0f5c2401f48ab697476f417984cdaf2c341661e	https://github.com/shinkeonkim/is_likelion/commit/b0f5c2401f48ab697476f417984cdaf2c341661e	fix python-coverall issue https://github.com/z4r/python-coveralls/issues/74
+2022-04-03T11:11:44Z	b681b75489dd4aca6fe3061053a4045c7e0a0a6d	https://github.com/shinkeonkim/is_likelion/commit/b681b75489dd4aca6fe3061053a4045c7e0a0a6d	fix: 커버리지를 측정할 파일 위치 명시
+2022-04-03T11:01:24Z	f7fab9d7be5a28abfd0187c1febfc3b11d4de23f	https://github.com/shinkeonkim/is_likelion/commit/f7fab9d7be5a28abfd0187c1febfc3b11d4de23f	chore: 오타 수정
+2022-04-03T10:59:51Z	25eca100124b4ddc07be67c8945a82bbd82ddc84	https://github.com/shinkeonkim/is_likelion/commit/25eca100124b4ddc07be67c8945a82bbd82ddc84	chore: travis settings
+2022-04-03T10:59:41Z	27ff5ce6915f4fe4923c0883b4af6ca07e5592c4	https://github.com/shinkeonkim/is_likelion/commit/27ff5ce6915f4fe4923c0883b4af6ca07e5592c4	spec: test code
+2022-04-03T10:58:46Z	cc7656ea3415c7a780c49efe070da8cdca9478a1	https://github.com/shinkeonkim/is_likelion/commit/cc7656ea3415c7a780c49efe070da8cdca9478a1	chore: add test requirements
+2022-04-03T10:17:25Z	066eb79f155c152bab721f3ecc2242309a0632c0	https://github.com/shinkeonkim/is_likelion/commit/066eb79f155c152bab721f3ecc2242309a0632c0	Merge pull request #3 from shinkeonkim/0002 0002
+2022-04-03T10:16:51Z	a986a5c0b972a4d8f0b721419af3fc9937102e9c	https://github.com/shinkeonkim/is_likelion/commit/a986a5c0b972a4d8f0b721419af3fc9937102e9c	chore: version update
+2022-04-03T10:16:24Z	b23de68ae3735b182abcf811a84cfdd8c213a285	https://github.com/shinkeonkim/is_likelion/commit/b23de68ae3735b182abcf811a84cfdd8c213a285	feat: 멋쟁이사자처럼도 likelion이다!
+2022-03-28T12:22:23Z	c2b61f5317182f94761fb411fbe871fe65535fe4	https://github.com/shinkeonkim/is_likelion/commit/c2b61f5317182f94761fb411fbe871fe65535fe4	feat: 0.0.2
+2022-03-28T12:00:53Z	d8da6c056e52510ebca539e1e785e511e60726b3	https://github.com/shinkeonkim/is_likelion/commit/d8da6c056e52510ebca539e1e785e511e60726b3	feat: 0.0.1
+2022-03-28T12:25:54Z	7a51b46ba3d57a6a367a6f93f44178c29bebd896	https://github.com/shinkeonkim/is_likelion/commit/7a51b46ba3d57a6a367a6f93f44178c29bebd896	Merge pull request #1 from shinkeonkim/add-license-1
+2022-03-28T12:25:44Z	423651cf9e7bd3dffe57d90ddb13729ead219322	https://github.com/shinkeonkim/is_likelion/commit/423651cf9e7bd3dffe57d90ddb13729ead219322	Create LICENSE
+2022-03-28T12:20:44Z	9da1d6ae7377115b6bcabdf660442fa391de520d	https://github.com/shinkeonkim/is_likelion/commit/9da1d6ae7377115b6bcabdf660442fa391de520d	Update README.rst
+2022-03-28T11:56:37Z	9c5aff96d1ce302800d4e64d1bcdbba892738313	https://github.com/shinkeonkim/is_likelion/commit/9c5aff96d1ce302800d4e64d1bcdbba892738313	feat: initial settings

@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/shinkeonkim/3d-printer-calibration-program
+Author account: shinkeonkim
+
+2020-12-21T11:48:09Z	b1318b110d0615b0555a016f3980f8499269e070	https://github.com/shinkeonkim/3d-printer-calibration-program/commit/b1318b110d0615b0555a016f3980f8499269e070	Create LICENSE
+2020-12-21T11:30:03Z	a032fd06a29af6cc8fe7cb256b6cdb417ff6a58c	https://github.com/shinkeonkim/3d-printer-calibration-program/commit/a032fd06a29af6cc8fe7cb256b6cdb417ff6a58c	update README.md
+2020-12-06T11:52:43Z	610e1a676d242c984830e8774abea8416bb71c4a	https://github.com/shinkeonkim/3d-printer-calibration-program/commit/610e1a676d242c984830e8774abea8416bb71c4a	Update README.md
+2020-08-08T14:23:05Z	488019223845158a1e4103e0597567ad876add3a	https://github.com/shinkeonkim/3d-printer-calibration-program/commit/488019223845158a1e4103e0597567ad876add3a	Add files via upload
+2020-08-08T14:21:57Z	6021e89414a98db455661ed8c6ed00fa36c9f9ee	https://github.com/shinkeonkim/3d-printer-calibration-program/commit/6021e89414a98db455661ed8c6ed00fa36c9f9ee	docs: pdf file
+2020-08-08T14:19:49Z	922720a55f649ae9e34386dd4d65342d56da58e1	https://github.com/shinkeonkim/3d-printer-calibration-program/commit/922720a55f649ae9e34386dd4d65342d56da58e1	Initial commit

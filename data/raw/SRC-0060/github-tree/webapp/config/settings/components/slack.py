@@ -1,0 +1,13 @@
+from .common import env
+
+DATA_COLLECT_SLACK_CHANNEL_ID = env("DATA_COLLECT_SLACK_CHANNEL_ID", default="")
+DATA_COLLECT_SLACK_BOT_TOKEN = env("DATA_COLLECT_SLACK_BOT_TOKEN", default="")
+
+SLACK_BOT_SETTINGS_BY_CATEGOTY = {
+  "data_collect": {
+    "channel_id": DATA_COLLECT_SLACK_CHANNEL_ID,
+    "bot_token": DATA_COLLECT_SLACK_BOT_TOKEN,
+  },
+}
+
+__all__ = ["SLACK_BOT_SETTINGS_BY_CATEGOTY"]

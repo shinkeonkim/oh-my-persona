@@ -1,0 +1,28 @@
+GitHub repository: https://github.com/shinkeonkim/what-did-you-do-today
+Author account: shinkeonkim
+
+2022-10-02T02:49:22Z	400b35bd8e115cd80e952247867a00e55230f170	https://github.com/shinkeonkim/what-did-you-do-today/commit/400b35bd8e115cd80e952247867a00e55230f170	feat: 참여자 정보를 쉽게 삭제할 수 있도록 함
+2022-10-02T02:42:43Z	aac126e246005dd86d7e068006b388c94c86511f	https://github.com/shinkeonkim/what-did-you-do-today/commit/aac126e246005dd86d7e068006b388c94c86511f	feat: 벌금 관련 기능 추가
+2022-09-13T12:18:46Z	15e922d86dda37538901561bbfc54fa7a5c14cb5	https://github.com/shinkeonkim/what-did-you-do-today/commit/15e922d86dda37538901561bbfc54fa7a5c14cb5	feat: 패스권 관련 컬럼 추가
+2022-09-07T15:24:01Z	6d2c18b75fcc67f9a1321cf954d0c2ee9b14fa63	https://github.com/shinkeonkim/what-did-you-do-today/commit/6d2c18b75fcc67f9a1321cf954d0c2ee9b14fa63	fix: bug
+2022-09-07T15:11:33Z	f49a87741fe0ede5da905a50b3300561909135a4	https://github.com/shinkeonkim/what-did-you-do-today/commit/f49a87741fe0ede5da905a50b3300561909135a4	feat: 기능 추가
+2022-09-07T14:54:34Z	e1c714c9d026ee2a6180f0f3734c6e674ee261ee	https://github.com/shinkeonkim/what-did-you-do-today/commit/e1c714c9d026ee2a6180f0f3734c6e674ee261ee	feat: admin action
+2022-09-07T14:46:15Z	69c5e7737519a8e633905088335fb07371bbb7aa	https://github.com/shinkeonkim/what-did-you-do-today/commit/69c5e7737519a8e633905088335fb07371bbb7aa	fix: bug
+2022-09-07T14:21:18Z	cd76b31f3c93199eb69fb3230253b113f2b0418f	https://github.com/shinkeonkim/what-did-you-do-today/commit/cd76b31f3c93199eb69fb3230253b113f2b0418f	fix: workflow
+2022-09-07T14:16:34Z	53352224dc81d8f9dde49c25788821f8cc761c44	https://github.com/shinkeonkim/what-did-you-do-today/commit/53352224dc81d8f9dde49c25788821f8cc761c44	feat: 메인 기능
+2022-09-05T15:30:38Z	19ec4e9b03aa8593e92945ee457ed4f07b41f8c0	https://github.com/shinkeonkim/what-did-you-do-today/commit/19ec4e9b03aa8593e92945ee457ed4f07b41f8c0	Update refresh.yml
+2022-09-05T15:12:12Z	28bc9fde255c3dc7695f1a845cbbd7403cd619ce	https://github.com/shinkeonkim/what-did-you-do-today/commit/28bc9fde255c3dc7695f1a845cbbd7403cd619ce	chore: test
+2022-09-05T15:07:41Z	61643105fe18e6f4e5410adf950e743b9054becc	https://github.com/shinkeonkim/what-did-you-do-today/commit/61643105fe18e6f4e5410adf950e743b9054becc	chore: test
+2022-09-05T15:06:10Z	f5f42c2b489651ecdd53a122030cfe8de5307d59	https://github.com/shinkeonkim/what-did-you-do-today/commit/f5f42c2b489651ecdd53a122030cfe8de5307d59	chore: index
+2022-09-05T15:05:11Z	afae7f02891bfb59ac1cc5f5e0502acd4e65b049	https://github.com/shinkeonkim/what-did-you-do-today/commit/afae7f02891bfb59ac1cc5f5e0502acd4e65b049	fix: csrf issue
+2022-09-05T15:05:00Z	b5c8dd55368a385362633ba4195336991caca662	https://github.com/shinkeonkim/what-did-you-do-today/commit/b5c8dd55368a385362633ba4195336991caca662	chore: comment
+2022-09-05T14:57:42Z	be74f03fcbcf36e1ac5007029e2c556c474b2c8c	https://github.com/shinkeonkim/what-did-you-do-today/commit/be74f03fcbcf36e1ac5007029e2c556c474b2c8c	fix: workflow
+2022-09-05T14:51:59Z	d595c409c4f61e29c28d458b3da17c82791e9e87	https://github.com/shinkeonkim/what-did-you-do-today/commit/d595c409c4f61e29c28d458b3da17c82791e9e87	chore: index
+2022-09-05T14:43:42Z	d48f6a5d871cbf5ffb19559b747c70e45a5999a0	https://github.com/shinkeonkim/what-did-you-do-today/commit/d48f6a5d871cbf5ffb19559b747c70e45a5999a0	refactor: gh-action을 이용하는 걸로 우회
+2022-09-05T14:05:29Z	14044b8fbdfffdd8aca24e0b4a483bdf902eb88e	https://github.com/shinkeonkim/what-did-you-do-today/commit/14044b8fbdfffdd8aca24e0b4a483bdf902eb88e	fix: bug
+2022-09-05T13:58:20Z	d6e88de9c6d655545735d88947165f4e818814de	https://github.com/shinkeonkim/what-did-you-do-today/commit/d6e88de9c6d655545735d88947165f4e818814de	fix: cron
+2022-09-05T13:28:48Z	4cfb1af4fd5f879ed81dd9e8bcaba7980fa61200	https://github.com/shinkeonkim/what-did-you-do-today/commit/4cfb1af4fd5f879ed81dd9e8bcaba7980fa61200	feat: django-crontab
+2022-09-05T12:38:14Z	762628dcd0bfc62233283438144b6acb1531be73	https://github.com/shinkeonkim/what-did-you-do-today/commit/762628dcd0bfc62233283438144b6acb1531be73	feat: 문제 푼 횟수를 기록을 남기기 위한 앱 작성
+2022-09-05T11:10:18Z	68daf5df2fafec5dbaf7d946998dfbaa9fc09f76	https://github.com/shinkeonkim/what-did-you-do-today/commit/68daf5df2fafec5dbaf7d946998dfbaa9fc09f76	feat: 유저 커스텀
+2022-09-05T10:57:39Z	9e7ae9664e22a84777d82ee02c6302aac5999f21	https://github.com/shinkeonkim/what-did-you-do-today/commit/9e7ae9664e22a84777d82ee02c6302aac5999f21	docs: README
+2022-09-05T10:54:25Z	bf438e4d8d33e0f99de38dd7ae372c429cfa9a18	https://github.com/shinkeonkim/what-did-you-do-today/commit/bf438e4d8d33e0f99de38dd7ae372c429cfa9a18	feat: project settings

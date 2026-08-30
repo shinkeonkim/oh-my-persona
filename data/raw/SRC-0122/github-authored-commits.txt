@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-rtp-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:27:18Z	a55c0983e3011d46c28141d57a8b8cdc5498509a	https://github.com/kokoa-hobby/minecraft-rtp-plugin/commit/a55c0983e3011d46c28141d57a8b8cdc5498509a	Add README
+2026-07-22T12:22:18Z	09970f8d7a1c219914185f09de8e3fb8dbf06619	https://github.com/kokoa-hobby/minecraft-rtp-plugin/commit/09970f8d7a1c219914185f09de8e3fb8dbf06619	Add RtpPlugin main class
+2026-07-22T12:22:18Z	cb6819d7617cfc6877bb9286eeaa6f43b1ea4b30	https://github.com/kokoa-hobby/minecraft-rtp-plugin/commit/cb6819d7617cfc6877bb9286eeaa6f43b1ea4b30	Add SafeLocationFinder
+2026-07-22T12:22:18Z	737351e0645cd92760d761e1f85c68bb8b4a2954	https://github.com/kokoa-hobby/minecraft-rtp-plugin/commit/737351e0645cd92760d761e1f85c68bb8b4a2954	Add commands
+2026-07-22T12:22:18Z	44b936f4ee1d3b6fcabce09e2028265eee41c3bf	https://github.com/kokoa-hobby/minecraft-rtp-plugin/commit/44b936f4ee1d3b6fcabce09e2028265eee41c3bf	Add plugin manifest and resources
+2026-07-22T12:22:18Z	8c39977d3ae0ee0a12ed778411ea9f277b8fcede	https://github.com/kokoa-hobby/minecraft-rtp-plugin/commit/8c39977d3ae0ee0a12ed778411ea9f277b8fcede	Add Gradle project scaffold

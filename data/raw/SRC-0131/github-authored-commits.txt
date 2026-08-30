@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/kokoa-lab/TDS-experiment-with-pencil
+Author account: shinkeonkim
+
+2026-02-05T09:54:35Z	b7c7485ccfc84f3e9eaa35aeda3f35ed13ef3660	https://github.com/kokoa-lab/TDS-experiment-with-pencil/commit/b7c7485ccfc84f3e9eaa35aeda3f35ed13ef3660	Initial commit

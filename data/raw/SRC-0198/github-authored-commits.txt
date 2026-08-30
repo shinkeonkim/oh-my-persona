@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/shinkeonkim/blog-comments
+Author account: shinkeonkim
+
+2021-12-29T04:42:51Z	bd58457d2669125d72f5112ced13f58bc2683f13	https://github.com/shinkeonkim/blog-comments/commit/bd58457d2669125d72f5112ced13f58bc2683f13	Create utterances.json

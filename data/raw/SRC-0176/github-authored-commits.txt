@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/kokoa-tools/slack-message-collector
+Author account: shinkeonkim
+
+2026-05-26T05:31:01Z	2662f3340cd05914bedeceed0441d91d87f8e97d	https://github.com/kokoa-tools/slack-message-collector/commit/2662f3340cd05914bedeceed0441d91d87f8e97d	feat: initial project codes

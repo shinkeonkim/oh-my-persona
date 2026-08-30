@@ -1,0 +1,6 @@
+GitHub repository: https://github.com/shinkeonkim/is_likelion
+Pull request author: shinkeonkim
+
+2022-04-03T11:21:28Z	#5	MERGED	https://github.com/shinkeonkim/is_likelion/pull/5	0003 test code	merged=2022-04-03T11:23:56Z	closed=2022-04-03T11:23:56Z	commits=9	files=7	+35/-1	- travis CI 세팅 - coverall 연결
+2022-04-03T10:17:08Z	#3	MERGED	https://github.com/shinkeonkim/is_likelion/pull/3	0002	merged=2022-04-03T10:17:25Z	closed=2022-04-03T10:17:25Z	commits=2	files=2	+9/-2	
+2022-03-28T12:25:47Z	#1	MERGED	https://github.com/shinkeonkim/is_likelion/pull/1	Create LICENSE	merged=2022-03-28T12:25:54Z	closed=2022-03-28T12:25:54Z	commits=1	files=1	+21/-0	

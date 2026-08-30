@@ -1,0 +1,10 @@
+GitHub repository: https://github.com/kokoa-lab/review-slot
+Author account: shinkeonkim
+
+2026-08-28T07:57:35Z	bb3155ede93f5f6829b0c5c3cbcf58c22101f5c3	https://github.com/kokoa-lab/review-slot/commit/bb3155ede93f5f6829b0c5c3cbcf58c22101f5c3	Merge pull request #2 from kokoa-lab/project-lens/add-ads-txt-e81ea2f3 chore(ads): add ads.txt
+2026-08-28T07:03:41Z	075705ca1b9f6da4dd021ade3f594d08b6d72281	https://github.com/kokoa-lab/review-slot/commit/075705ca1b9f6da4dd021ade3f594d08b6d72281	chore(ads): add ads.txt project-lens automated commit.
+2026-08-27T16:47:41Z	f25af91aeafd7d10eb3a172e0012abfe35f2423c	https://github.com/kokoa-lab/review-slot/commit/f25af91aeafd7d10eb3a172e0012abfe35f2423c	Merge pull request #1 from kokoa-lab/project-lens/add-gtm-tracking-11 chore(tracking): GTM 스니펫 추가 (GTM-WTD424LW)
+2026-08-27T05:06:33Z	ddb8f458aeda15e9110c0ea1fd282b6ed4497a73	https://github.com/kokoa-lab/review-slot/commit/ddb8f458aeda15e9110c0ea1fd282b6ed4497a73	chore(tracking): add GTM snippet (GTM-WTD424LW) project-lens automated commit.
+2026-03-16T08:40:40Z	fbc74da4f1bbc97c7b3213362c3a1ba83d514544	https://github.com/kokoa-lab/review-slot/commit/fbc74da4f1bbc97c7b3213362c3a1ba83d514544	Enhance README with project details and instructions Added detailed project description, features, and usage instructions to README.
+2026-03-08T18:17:04Z	ad6f4823608bb9a535fdeb9f4586a032faa758c2	https://github.com/kokoa-lab/review-slot/commit/ad6f4823608bb9a535fdeb9f4586a032faa758c2	feat: wrangler 설정 추가
+2026-03-08T18:12:11Z	fcac94a5a84c3c4fc3a8e7369cc77815aa3f5833	https://github.com/kokoa-lab/review-slot/commit/fcac94a5a84c3c4fc3a8e7369cc77815aa3f5833	feat: initial project by Lovable

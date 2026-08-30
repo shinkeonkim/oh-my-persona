@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/kmu-shinkeonkim/smart-network-service-practice
+Author account: shinkeonkim
+
+2025-09-19T08:27:50Z	94bea5c2063cfe618dca73c4fd62a0e1ae159961	https://github.com/kmu-shinkeonkim/smart-network-service-practice/commit/94bea5c2063cfe618dca73c4fd62a0e1ae159961	feat: 스마트네트워크 서비스 SMTP 실습 자료 추가

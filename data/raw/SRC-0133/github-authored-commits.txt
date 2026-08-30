@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-lab/cache-fridge
+Author account: shinkeonkim
+
+2026-08-28T07:53:04Z	6a268e893b162755505f570c2e9cbdb065aa2018	https://github.com/kokoa-lab/cache-fridge/commit/6a268e893b162755505f570c2e9cbdb065aa2018	Merge pull request #3 from kokoa-lab/project-lens/add-ads-txt-ead4b339 chore(ads): add ads.txt
+2026-08-28T07:00:11Z	5f8ac862089bf6c994e6f61f662dbbbbe6f88aa7	https://github.com/kokoa-lab/cache-fridge/commit/5f8ac862089bf6c994e6f61f662dbbbbe6f88aa7	chore(ads): add ads.txt project-lens automated commit.
+2026-08-28T05:38:37Z	5cbc0463411947d4f9cc3f2390962fbca66459f1	https://github.com/kokoa-lab/cache-fridge/commit/5cbc0463411947d4f9cc3f2390962fbca66459f1	Merge pull request #2 from kokoa-lab/docs/add-readme docs: add README
+2026-08-28T03:54:15Z	9710bf840760f154a4157b09658748e7e86cf3fb	https://github.com/kokoa-lab/cache-fridge/commit/9710bf840760f154a4157b09658748e7e86cf3fb	Merge pull request #1 from kokoa-lab/project-lens/add-gtm-tracking-81 chore(tracking): GTM 스니펫 추가 (GTM-M7CLWGZV)
+2026-08-27T16:52:32Z	adf6e251116148d22cbe9f5d55e0ef6ab001df09	https://github.com/kokoa-lab/cache-fridge/commit/adf6e251116148d22cbe9f5d55e0ef6ab001df09	chore(tracking): add GTM snippet (GTM-M7CLWGZV) project-lens automated commit.
+2026-03-09T06:35:47Z	d660b21abea69beda20430e1e2c45aa04443628d	https://github.com/kokoa-lab/cache-fridge/commit/d660b21abea69beda20430e1e2c45aa04443628d	feat: initial project settings by lovable

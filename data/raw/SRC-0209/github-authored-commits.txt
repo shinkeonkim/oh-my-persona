@@ -1,0 +1,5 @@
+GitHub repository: https://github.com/shinkeonkim/hangul
+Author account: shinkeonkim
+
+2022-05-23T14:05:53Z	ea1b89c05f2acdce66e0c0beac8c30041d9cbf5f	https://github.com/shinkeonkim/hangul/commit/ea1b89c05f2acdce66e0c0beac8c30041d9cbf5f	feat: marquee를 이용한 home demo page
+2022-05-22T15:33:34Z	4a153e2c6e916a3d8dd9e4919135a0a6b9eb537e	https://github.com/shinkeonkim/hangul/commit/4a153e2c6e916a3d8dd9e4919135a0a6b9eb537e	Initial commit

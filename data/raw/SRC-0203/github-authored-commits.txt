@@ -1,0 +1,24 @@
+GitHub repository: https://github.com/shinkeonkim/django_o_template
+Author account: shinkeonkim
+
+2021-07-31T08:36:48Z	99cb8fd1a2fa44708ebdea7a1343366f5867ddb0	https://github.com/shinkeonkim/django_o_template/commit/99cb8fd1a2fa44708ebdea7a1343366f5867ddb0	docs: 문서 추가
+2021-07-31T05:15:31Z	9958218666ced94a943fd651a1cd1800bafe3d1d	https://github.com/shinkeonkim/django_o_template/commit/9958218666ced94a943fd651a1cd1800bafe3d1d	feat: 비밀번호 변경 View 추가
+2021-07-31T03:00:52Z	1085478f4ae50a78e82c0ceb104467b125727fd4	https://github.com/shinkeonkim/django_o_template/commit/1085478f4ae50a78e82c0ceb104467b125727fd4	feat: N+1 query detector 추가
+2021-07-30T17:08:33Z	d3d893d3a95a8e02e11b1e351c7624cc77fb2b53	https://github.com/shinkeonkim/django_o_template/commit/d3d893d3a95a8e02e11b1e351c7624cc77fb2b53	feat: monitoring tool
+2021-07-30T17:01:17Z	077f0f305f58ec7f730167fb3a8ff1adf89b8031	https://github.com/shinkeonkim/django_o_template/commit/077f0f305f58ec7f730167fb3a8ff1adf89b8031	chore: 빠진 requirements.txt 추가
+2021-07-30T16:52:52Z	d0d7af2758629d0d73ed8e62b44738dbeaeab93d	https://github.com/shinkeonkim/django_o_template/commit/d0d7af2758629d0d73ed8e62b44738dbeaeab93d	feat: django-extensions, admin theme, cors-header settings
+2021-07-30T16:16:52Z	f78e2512f941bade3b2dc94b213aec82796fbdc1	https://github.com/shinkeonkim/django_o_template/commit/f78e2512f941bade3b2dc94b213aec82796fbdc1	feat: django-unicorn 라이브러리 추가
+2021-07-30T16:11:45Z	d92f43a168eb1ba4d51659625d3d0e16cb88507d	https://github.com/shinkeonkim/django_o_template/commit/d92f43a168eb1ba4d51659625d3d0e16cb88507d	fix: Docker를 쓰지 않아도, explorer 사용할 수 있게 수정
+2021-07-30T16:05:19Z	41edda7de71d03dd7ae99e8a064656bea1967e5c	https://github.com/shinkeonkim/django_o_template/commit/41edda7de71d03dd7ae99e8a064656bea1967e5c	feat: docker를 쓰는 경우 sql-explorer 사용할 수 있도록 추가
+2021-07-30T15:40:47Z	4c4fd5a5675bf42f0472f2ed352972fb254ce046	https://github.com/shinkeonkim/django_o_template/commit/4c4fd5a5675bf42f0472f2ed352972fb254ce046	feat: 라이브러리 추가
+2021-07-30T15:32:58Z	d900446e06c5809fbad25898e10bc09bdaad45cc	https://github.com/shinkeonkim/django_o_template/commit/d900446e06c5809fbad25898e10bc09bdaad45cc	Merge branch 'main' of https://github.com/shinkeonkim/django_o_template
+2021-07-30T15:32:52Z	7388dda94deff0d974e637205cb4d405a546c167	https://github.com/shinkeonkim/django_o_template/commit/7388dda94deff0d974e637205cb4d405a546c167	feat: debug tools settings
+2021-07-30T15:32:39Z	311464a8a480b3e5beed8c0fd11f058a9a1f9b79	https://github.com/shinkeonkim/django_o_template/commit/311464a8a480b3e5beed8c0fd11f058a9a1f9b79	fix: 빠진 template 파일에 따른 변경사항 수정
+2021-07-30T00:04:09Z	4a9506cefce3b3f4d60b89cc028eb91586d04d45	https://github.com/shinkeonkim/django_o_template/commit/4a9506cefce3b3f4d60b89cc028eb91586d04d45	Update README.md
+2021-07-29T12:57:39Z	ed23c6437642ae7b8a4acad709527989d4521fd3	https://github.com/shinkeonkim/django_o_template/commit/ed23c6437642ae7b8a4acad709527989d4521fd3	feat: formantic-ui 적용, toast message 기본 추가 https://fomantic-ui.com/
+2021-07-29T11:51:08Z	e99eca2fa08697b2bad3e76de5480177f8a374aa	https://github.com/shinkeonkim/django_o_template/commit/e99eca2fa08697b2bad3e76de5480177f8a374aa	feat: sass, static, media files settings
+2021-07-28T15:16:54Z	e24122fd9d0efee08022e97fcdb77fbd138dfd83	https://github.com/shinkeonkim/django_o_template/commit/e24122fd9d0efee08022e97fcdb77fbd138dfd83	feat: 회원가입, 로그인, 로그아웃, 인증메일 기능 추가
+2021-07-17T18:33:42Z	c07b07f7529633a3877d390c5e3570bdf447b973	https://github.com/shinkeonkim/django_o_template/commit/c07b07f7529633a3877d390c5e3570bdf447b973	feat: 기본적인 유저 모델 세팅 및 test coverage 측정 커맨드 추가
+2021-07-17T15:04:08Z	fdfa5b1f5463be091ec9dbcf9db6e53a24495aa6	https://github.com/shinkeonkim/django_o_template/commit/fdfa5b1f5463be091ec9dbcf9db6e53a24495aa6	feat: add default runserver value
+2021-07-17T15:03:43Z	b26eb4dc60e8c9ff29454cd4f66fe4810aaafa18	https://github.com/shinkeonkim/django_o_template/commit/b26eb4dc60e8c9ff29454cd4f66fe4810aaafa18	chore: settings.py - add comments
+2021-07-17T13:23:21Z	7368080fa148467d97d221510d30c8d1c64ec5c8	https://github.com/shinkeonkim/django_o_template/commit/7368080fa148467d97d221510d30c8d1c64ec5c8	feat: template initial settings

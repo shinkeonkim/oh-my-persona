@@ -1,0 +1,145 @@
+@import 'tailwindcss';
+
+/* .scroll-bar {
+  scrollbar-width: thin;
+  scrollbar-color: #f2b637 transparent;
+} */
+
+.scroll-bar::-webkit-scrollbar {
+  width: 14px;
+  background: transparent;
+}
+
+.scroll-bar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+  background: #f2b637;
+  border: 4px solid #9d5c15;
+  border-radius: 20px;
+}
+
+@layer base {
+  /* 모든 요소 기본 설정 */
+  * {
+    @apply box-border;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* HTML 스크롤 부드럽게 */
+  html {
+    @apply scroll-smooth;
+  }
+
+  /* Body 기본 스타일 */
+  body {
+    @apply bg-[#FFFCEA] font-sans text-main-text;
+    font-family: 'NanumSquareRoundExtraBold', sans-serif;
+  }
+
+  /* 링크 기본 스타일 */
+  a {
+    @apply text-inherit no-underline;
+  }
+
+  /* 버튼 기본 리셋 */
+  button {
+    @apply cursor-pointer;
+    border: none;
+    background: none;
+  }
+
+  .font-malrangiche {
+    font-family: 'GeekbleMalrangiche', sans-serif;
+  }
+
+  .font-nanum {
+    font-family: 'NanumSquareRoundExtraBold', 'NanumSquareRound', sans-serif;
+  }
+}
+
+/* ✅ GeekbleMalrangiche */
+@font-face {
+  font-family: 'GeekbleMalrangiche';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/GeekbleMalang2WOFF2.woff2')
+    format('woff2');
+  font-weight: normal;
+  font-display: swap;
+}
+
+/* ✅ NanumSquareRound */
+@font-face {
+  font-family: 'NanumSquareRoundExtraBold';
+  src: url('../assets/fonts/NanumSquareRoundOTFEB.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SDSamliphopangcheBasic';
+  src: url('../assets/fonts/SDSamliphopangcheBasic.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --color-background-header: #ffe3a7;
+  --color-main-text: #4d2d07;
+  --color-input-bg: #fbfbfb;
+  --color-input-border: #e3dbcb;
+  --color-placeholder-text: #c1bfbc;
+  --color-input-text: #535353;
+  --color-button-text: #d3770e;
+  --color-error-text: #ec4040;
+  --color-sub-button-bg: #e7e1d7;
+  --color-sub-button-text: #baab96;
+  --color-tooltip-text: #5f4423;
+  --color-button-bg: #ef9338;
+  --color-button-bg-bottom: #feac07;
+  --color-progress-bar-bg: #d5c7b4;
+  --color-progress-bar-border: #d36a09;
+  --color-progress-bar-left: #ffab35;
+  --color-progress-bar-right: #f48c2a;
+  --color-progress-bar-text: #a28565;
+  --color-modal-bg: #f2b637;
+  --color-modal-border: #9d5c15;
+  --color-modal-glow: #faca67;
+  --color-modal-inner-top-bg: #fff5e3;
+  --color-modal-inner-bottom-bg: #ffeed1;
+  --color-modal-inner-glow: #f6e0b6;
+  --color-modal-inner-border: #ad6926;
+  --color-modal-inner-text: #98816b;
+  --color-modal-title-text-border: #5b3715;
+  --color-modal-inner-input-border: #efd8ad;
+  --color-main-footer-glow: #ffcf74;
+}
+
+@theme {
+  --font-malrang: 'GeekbleMalrangiche', sans-serif;
+  --font-nanum: 'NanumSquareRoundExtraBold', sans-serif;
+  --font-sdsamliphopangche: 'SDSamliphopangcheBasic', sans-serif;
+  --clip-button-curve: polygon(
+    0 0,
+    100% 0,
+    100% 50%,
+    90% 57%,
+    80% 60%,
+    70% 63.5%,
+    50% 65%,
+    30% 63.5%,
+    20% 60%,
+    10% 57%,
+    0 50%
+  );
+}
+
+@layer utilities {
+  /* 🔸 버튼 곡선 */
+  .clip-button-curve {
+    clip-path: var(--clip-button-curve);
+  }
+}

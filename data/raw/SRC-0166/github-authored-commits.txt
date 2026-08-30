@@ -1,0 +1,6 @@
+GitHub repository: https://github.com/kokoa-study-room/redis-practice
+Author account: shinkeonkim
+
+2026-04-26T09:24:21Z	435ebc0e2577acd8080be23f1b5a7949e4ec3175	https://github.com/kokoa-study-room/redis-practice/commit/435ebc0e2577acd8080be23f1b5a7949e4ec3175	fix: redisinsignt network error
+2026-04-26T09:19:39Z	3fbcc5c326ce81ffbb3164e207fdb4bed6ff3659	https://github.com/kokoa-study-room/redis-practice/commit/3fbcc5c326ce81ffbb3164e207fdb4bed6ff3659	fix: redis container error 원인 Redis 의 config 파서는 inline 주석을 허용하지 않습니다. list-max-listpack-size -2 # ... 의 뒤쪽 # 부터를 추가 인자로 해석해서 wrong number of arguments. > 참고: <https://redis.io/docs/latest/operate/oss_and_stack/management/config/> — "Configuration directives use a per-line format" + 주석은 # 으로 시작하는 줄 전체. 수정한 라인 (redis.conf 181-182) Before: list-max-listpack-size -2 # -2 = 8KB per listpack node list-compress-depth 0 # quicklist 양 끝 노드 N개 제외 압축 (0 = 압축 안 함) After: # list-max-listpack-size: -2 = 한 노드 당 8KB (기본). -1=4KB, -3=16KB, -4=32KB, -5=64KB. # 양수 N 이면 한 노드에 N개 요소. list-max-listpack-size -2 # list-compress-depth: quicklist 양 끝에서 N 개 노드를 제외한 중간 노드를 LZF 압축. # 0 = 압축 안 함 (기본). list-compress-depth 0
+2026-04-26T09:06:59Z	d2833172a6cfc22d6fb35632102ace06474c4268	https://github.com/kokoa-study-room/redis-practice/commit/d2833172a6cfc22d6fb35632102ace06474c4268	chore: AI 기반 학습 자료 생성

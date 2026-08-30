@@ -1,0 +1,5 @@
+GitHub repository: https://github.com/kmu-shinkeonkim/smart-network-service-hw1
+Author account: shinkeonkim
+
+2025-10-02T06:27:15Z	31a32f49f015f675782cb0331bc78a36d85159d7	https://github.com/kmu-shinkeonkim/smart-network-service-hw1/commit/31a32f49f015f675782cb0331bc78a36d85159d7	fix: 파일명
+2025-10-01T10:57:25Z	da8eea83a38b482a697fd63e614b4ba5bde6bb2b	https://github.com/kmu-shinkeonkim/smart-network-service-hw1/commit/da8eea83a38b482a697fd63e614b4ba5bde6bb2b	과제 해결 방안 추가

@@ -1,0 +1,10 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-storage-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:28:05Z	016a1c07b12af202b7146c7ff812240cde6ae577	https://github.com/kokoa-hobby/minecraft-storage-plugin/commit/016a1c07b12af202b7146c7ff812240cde6ae577	Add README
+2026-07-22T12:22:19Z	047faf110ebcc9696a74177391b2c9ace4ebcfc5	https://github.com/kokoa-hobby/minecraft-storage-plugin/commit/047faf110ebcc9696a74177391b2c9ace4ebcfc5	Add StoragePlugin main class
+2026-07-22T12:22:19Z	f2be2141f3131c0e50af0e6bfd68e13c2ce1099c	https://github.com/kokoa-hobby/minecraft-storage-plugin/commit/f2be2141f3131c0e50af0e6bfd68e13c2ce1099c	Add StorageHolder
+2026-07-22T12:22:19Z	6981363502a03dd604c28471513f2e340703fa70	https://github.com/kokoa-hobby/minecraft-storage-plugin/commit/6981363502a03dd604c28471513f2e340703fa70	Add listeners
+2026-07-22T12:22:19Z	15a2abee770b28b55a8513ad0d49cf1cd7ace8d9	https://github.com/kokoa-hobby/minecraft-storage-plugin/commit/15a2abee770b28b55a8513ad0d49cf1cd7ace8d9	Add commands
+2026-07-22T12:22:19Z	6f59fe74726e84de49a64a74c51a15288e119333	https://github.com/kokoa-hobby/minecraft-storage-plugin/commit/6f59fe74726e84de49a64a74c51a15288e119333	Add plugin manifest and resources
+2026-07-22T12:22:19Z	3bd283dfdecc33e746d9f7ff7e186a1d05684702	https://github.com/kokoa-hobby/minecraft-storage-plugin/commit/3bd283dfdecc33e746d9f7ff7e186a1d05684702	Add Gradle project scaffold

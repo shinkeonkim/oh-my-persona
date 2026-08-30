@@ -1,0 +1,8 @@
+GitHub repository: https://github.com/shinkeonkim/basic_django_template
+Author account: shinkeonkim
+
+2022-05-06T12:08:18Z	61863415280e3b4fe5250120c4029ff3783cec07	https://github.com/shinkeonkim/basic_django_template/commit/61863415280e3b4fe5250120c4029ff3783cec07	Update README.md
+2022-05-06T12:03:55Z	242f5da9e0978c0c1cc15fe39e78c0d436fca16b	https://github.com/shinkeonkim/basic_django_template/commit/242f5da9e0978c0c1cc15fe39e78c0d436fca16b	Update README.md
+2022-05-06T12:02:24Z	98081b16a25043dffedf51965bd29c3856ad1386	https://github.com/shinkeonkim/basic_django_template/commit/98081b16a25043dffedf51965bd29c3856ad1386	Update README.md
+2022-05-06T12:01:52Z	3b304d6257934404cb5b1615d9f2bafb2f823563	https://github.com/shinkeonkim/basic_django_template/commit/3b304d6257934404cb5b1615d9f2bafb2f823563	Update README.md
+2022-05-06T11:53:46Z	cdebc426ef2ea1494dd7676ab4ea5ef6e0976f43	https://github.com/shinkeonkim/basic_django_template/commit/cdebc426ef2ea1494dd7676ab4ea5ef6e0976f43	feat: basic django template

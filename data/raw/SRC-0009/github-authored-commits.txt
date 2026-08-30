@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/shinkeonkim/twin-ai
+Author account: shinkeonkim
+
+2025-06-02T10:42:22Z	f8faea50e9d8ed7c4c00166ab00c086f8fcaf5ed	https://github.com/shinkeonkim/twin-ai/commit/f8faea50e9d8ed7c4c00166ab00c086f8fcaf5ed	chore: port number 변경
+2025-05-31T07:32:22Z	a48317504702439d3f1d5bfe1493c4edc8e20870	https://github.com/shinkeonkim/twin-ai/commit/a48317504702439d3f1d5bfe1493c4edc8e20870	feat: 프롬프트 개선 및 openAI를 활용하는 경우 수정
+2025-05-30T16:08:05Z	41c588be3d2d06270f144bf6cd48b76c88a5880b	https://github.com/shinkeonkim/twin-ai/commit/41c588be3d2d06270f144bf6cd48b76c88a5880b	feat: 간단한 문서 관리 및 RAG 구성
+2025-05-30T15:34:41Z	f0c098390f16fc1cd9483d54b75e0d855cacdcd5	https://github.com/shinkeonkim/twin-ai/commit/f0c098390f16fc1cd9483d54b75e0d855cacdcd5	feat: 간단한 프롬프트를 이용한 slack bot 구성까지의 MVP 버전
+2025-05-30T15:33:04Z	4b3caff382a1a9b2d60cd3cb7e75419be6a129ad	https://github.com/shinkeonkim/twin-ai/commit/4b3caff382a1a9b2d60cd3cb7e75419be6a129ad	feat: 기본 프로젝트 설정
+2025-05-30T15:32:28Z	9cbf3be9c5ff1c7b80e07037bd9d52c81eca11ab	https://github.com/shinkeonkim/twin-ai/commit/9cbf3be9c5ff1c7b80e07037bd9d52c81eca11ab	docs: 기본 문서 작성

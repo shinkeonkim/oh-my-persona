@@ -1,0 +1,5 @@
+GitHub repository: https://github.com/kokoa-study-room/kokoa-study-room.github.io
+Author account: shinkeonkim
+
+2026-06-11T15:07:24Z	861331da90ccc94c064cced1e0ffba21ee283cdd	https://github.com/kokoa-study-room/kokoa-study-room.github.io/commit/861331da90ccc94c064cced1e0ffba21ee283cdd	Create CNAME
+2026-06-11T14:40:03Z	5352396e6f4e4aed515a3935870bf1686285f62b	https://github.com/kokoa-study-room/kokoa-study-room.github.io/commit/5352396e6f4e4aed515a3935870bf1686285f62b	Initial commit

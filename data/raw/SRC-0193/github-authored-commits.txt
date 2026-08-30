@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/shinkeonkim/In-Kookmin-Extension
+Author account: shinkeonkim
+
+2020-12-07T10:49:44Z	493436c4a9770c579b81d5b1bca506fde0577bb2	https://github.com/shinkeonkim/In-Kookmin-Extension/commit/493436c4a9770c579b81d5b1bca506fde0577bb2	Merge pull request #1 from shinkeonkim/feature/chrome-extension-setting Featuer/Chrome-extension-setting
+2020-12-07T10:46:34Z	842d4f477c1bbef578a181fad2b56ff9322815d8	https://github.com/shinkeonkim/In-Kookmin-Extension/commit/842d4f477c1bbef578a181fad2b56ff9322815d8	feat: create-react-app, chrome extension mainfest setting
+2020-11-30T08:35:52Z	2d7a3d4df0b00fc3e83931d8626a7adc9127e74d	https://github.com/shinkeonkim/In-Kookmin-Extension/commit/2d7a3d4df0b00fc3e83931d8626a7adc9127e74d	Update README.md
+2020-11-30T08:31:46Z	a153f6235c55731c23c95e626e442b2a1d7a3072	https://github.com/shinkeonkim/In-Kookmin-Extension/commit/a153f6235c55731c23c95e626e442b2a1d7a3072	Update README.md
+2020-11-30T08:19:20Z	eb3527c427347b8e29401d407d95edb4ff083565	https://github.com/shinkeonkim/In-Kookmin-Extension/commit/eb3527c427347b8e29401d407d95edb4ff083565	Update README.md
+2020-11-30T08:12:37Z	9e64e32eade559039cf2ccd42fd37daa04d010ee	https://github.com/shinkeonkim/In-Kookmin-Extension/commit/9e64e32eade559039cf2ccd42fd37daa04d010ee	Initial commit

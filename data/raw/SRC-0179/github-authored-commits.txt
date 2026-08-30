@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/palette-team/.github
+Author account: shinkeonkim
+
+2025-09-08T14:43:44Z	f69e8de6b9887a87503eec0282e523437f080bf2	https://github.com/palette-team/.github/commit/f69e8de6b9887a87503eec0282e523437f080bf2	docs: default README

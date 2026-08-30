@@ -1,0 +1,1 @@
+from .custom_kakao_oauth2_adapter import CustomKakaoOAuth2Adapter

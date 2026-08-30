@@ -1,0 +1,10 @@
+GitHub repository: https://github.com/kokoa-lab/dev-tarot
+Author account: shinkeonkim
+
+2026-08-28T07:50:44Z	7e66ecbf869740debbef76716afddf2e1810b14a	https://github.com/kokoa-lab/dev-tarot/commit/7e66ecbf869740debbef76716afddf2e1810b14a	Merge pull request #2 from kokoa-lab/project-lens/add-ads-txt-39963d0f chore(ads): add ads.txt
+2026-08-28T07:01:25Z	dfefcd058ece26f3a5a67124c701b86754b9f4fa	https://github.com/kokoa-lab/dev-tarot/commit/dfefcd058ece26f3a5a67124c701b86754b9f4fa	chore(ads): add ads.txt project-lens automated commit.
+2026-08-27T16:47:54Z	2b5e16125ced5ff06a810f880bcc54dad0206faa	https://github.com/kokoa-lab/dev-tarot/commit/2b5e16125ced5ff06a810f880bcc54dad0206faa	Merge pull request #1 from kokoa-lab/project-lens/add-gtm-tracking-10 chore(tracking): GTM 스니펫 추가 (GTM-5VWMS98X)
+2026-08-27T05:06:04Z	de090b5648e590d412bb26590ee204458f48fd6f	https://github.com/kokoa-lab/dev-tarot/commit/de090b5648e590d412bb26590ee204458f48fd6f	chore(tracking): add GTM snippet (GTM-5VWMS98X) project-lens automated commit.
+2026-03-16T09:05:26Z	2140e24768d22cded9c156b13d9086f8d956872f	https://github.com/kokoa-lab/dev-tarot/commit/2140e24768d22cded9c156b13d9086f8d956872f	Revise README for DevTarot project Updated README to enhance project description and features.
+2026-03-08T18:34:22Z	b2a69837757df5dd8251db99fb75843d6058f91b	https://github.com/kokoa-lab/dev-tarot/commit/b2a69837757df5dd8251db99fb75843d6058f91b	fix: lovable package 코드 삭제
+2026-03-08T18:29:06Z	88aaa66179b93b8518eb9e808945b550c96ebcbf	https://github.com/kokoa-lab/dev-tarot/commit/88aaa66179b93b8518eb9e808945b550c96ebcbf	feat: initial project settings by lovable

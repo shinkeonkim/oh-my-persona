@@ -1,0 +1,246 @@
+{% extends "admin/base.html" %}
+{% load i18n unfold %}
+
+{% block breadcrumbs %}
+{% if not is_popup %}
+<div class="px-4">
+    <div class="container mb-6 mx-auto -my-3 lg:mb-12">
+        <ul class="flex flex-wrap">
+            {% url 'admin:index' as link %}
+            {% trans 'Home' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with link=link name=name %}
+
+            {% url 'admin:financial_statements_financialstatement_changelist' as link %}
+            {% trans 'Financial Statements' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with link=link name=name %}
+
+            {% trans 'Parser Preview' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with name=name %}
+        </ul>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="px-4">
+    <div class="container mx-auto">
+        <div class="main-card bg-white dark:bg-gray-900 shadow-lg rounded-lg p-6 border border-gray-200 dark:border-gray-700">
+            <h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">{{ title }}</h2>
+
+            <div class="mb-6">
+                <p class="text-gray-700 dark:text-gray-300 mb-2">
+                    재무제표에 파서를 적용하여 JSON 구조로 파싱된 결과를 미리 봅니다.
+                </p>
+                <p class="text-sm text-gray-600 dark:text-gray-400">
+                    누락된 키, 각 키의 값, 그리고 JSON 미리보기를 확인할 수 있습니다.
+                </p>
+            </div>
+
+            <!-- Statement Info -->
+            {% if statement %}
+            <div class="mb-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-700">
+                <h3 class="text-lg font-bold mb-2 text-gray-900 dark:text-white">선택된 재무제표</h3>
+                <div class="grid grid-cols-2 gap-4 text-sm">
+                    <div>
+                        <span class="font-semibold text-gray-700 dark:text-gray-300">회사:</span>
+                        <span class="text-gray-900 dark:text-white ml-2">{{ statement.company.name }}</span>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-gray-700 dark:text-gray-300">회계연도/분기:</span>
+                        <span class="text-gray-900 dark:text-white ml-2">{{ statement.fiscal_year }}년 Q{{ statement.fiscal_quarter }}</span>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-gray-700 dark:text-gray-300">보고서 유형:</span>
+                        <span class="text-gray-900 dark:text-white ml-2">{{ statement.get_report_type_display }}</span>
+                    </div>
+                    <div>
+                        <span class="font-semibold text-gray-700 dark:text-gray-300">재무제표 구분:</span>
+                        <span class="text-gray-900 dark:text-white ml-2">{{ statement.get_source_display }}</span>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- Parser Selection Form -->
+            <form method="get" class="mb-6 space-y-4">
+                {% if statement %}
+                    <input type="hidden" name="statement_id" value="{{ statement.id }}">
+                {% endif %}
+
+                <div>
+                    <label for="parser" class="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                        파서 선택
+                    </label>
+                    <select name="parser" id="parser" class="parser-select" onchange="this.form.submit()">
+                        <option value="">-- 파서를 선택하세요 --</option>
+                        {% for parser in parsers %}
+                            <option value="{{ parser.name }}" {% if selected_parser == parser.name %}selected{% endif %}>
+                                {{ parser.display_name }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </form>
+
+            <!-- Preview Result -->
+            {% if preview_result %}
+                {% if preview_result.success %}
+                    <!-- Missing Keys Section -->
+                    {% if preview_result.missing_keys %}
+                    <div class="mb-6 p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg border border-yellow-200 dark:border-yellow-700">
+                        <h3 class="text-lg font-bold mb-3 text-gray-900 dark:text-white">
+                            ⚠️ 누락된 키 ({{ preview_result.missing_keys|length }}개)
+                        </h3>
+                        <div class="space-y-2">
+                            {% for missing in preview_result.missing_keys %}
+                                <div class="p-2 bg-white dark:bg-gray-800 rounded border-l-4 border-yellow-500">
+                                    <div class="flex items-center gap-2">
+                                        <span class="font-mono text-sm text-gray-900 dark:text-white">
+                                            <strong>{{ missing.account_id }}</strong>
+                                        </span>
+                                        {% if missing.account_type %}
+                                            <span class="text-xs px-2 py-0.5 rounded
+                                                {% if missing.account_type == 'abstract' %}bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300{% else %}bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300{% endif %}">
+                                                {{ missing.account_type }}
+                                            </span>
+                                        {% endif %}
+                                    </div>
+                                    <div class="text-sm text-gray-600 dark:text-gray-400 mt-1">
+                                        {{ missing.account_name }} ({{ missing.statement_type }})
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% else %}
+                    <div class="mb-6 p-4 bg-green-50 dark:bg-green-900/20 rounded-lg border border-green-200 dark:border-green-700">
+                        <h3 class="text-lg font-bold text-gray-900 dark:text-white">
+                            ✓ 모든 키가 존재합니다
+                        </h3>
+                    </div>
+                    {% endif %}
+
+                    <!-- Key Values Section -->
+                    {% if preview_result.key_values %}
+                    <div class="mb-6 p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg border border-indigo-200 dark:border-indigo-700">
+                        <h3 class="text-lg font-bold mb-3 text-gray-900 dark:text-white">
+                            각 키의 값 ({{ preview_result.key_values|length }}개)
+                        </h3>
+                        <div class="max-h-96 overflow-y-auto space-y-2">
+                            {% for kv in preview_result.key_values %}
+                                <div class="p-3 bg-white dark:bg-gray-800 rounded border-l-4
+                                    {% if kv.account_id|slice:':5' == 'ifrs_' %}border-green-500{% else %}border-gray-400{% endif %}">
+                                    <div class="grid grid-cols-2 gap-2 text-sm">
+                                        <div>
+                                            <span class="font-semibold text-gray-700 dark:text-gray-300">계정:</span>
+                                            <span class="font-mono text-gray-900 dark:text-white ml-2
+                                                {% if kv.account_id|slice:':5' == 'ifrs_' %}text-green-600 dark:text-green-400 font-bold{% endif %}">
+                                                {{ kv.account_id }}
+                                            </span>
+                                            {% if kv.account_type %}
+                                                <span class="ml-2 text-xs px-2 py-0.5 rounded
+                                                    {% if kv.account_type == 'abstract' %}bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300{% else %}bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-300{% endif %}">
+                                                    {{ kv.account_type }}
+                                                </span>
+                                            {% endif %}
+                                        </div>
+                                        <div>
+                                            <span class="font-semibold text-gray-700 dark:text-gray-300">값:</span>
+                                            <span class="text-gray-900 dark:text-white ml-2">{{ kv.value|floatformat:0|default:"-" }}</span>
+                                        </div>
+                                        <div class="col-span-2">
+                                            <span class="text-gray-600 dark:text-gray-400">{{ kv.account_name }}</span>
+                                            <span class="text-xs text-gray-500 dark:text-gray-500 ml-2">({{ kv.statement_type }})</span>
+                                        </div>
+                                        {% if kv.path %}
+                                        <div class="col-span-2 mt-1">
+                                            <span class="text-xs text-gray-500 dark:text-gray-400">경로: {{ kv.path }}</span>
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+
+                    <!-- JSON Preview Section -->
+                    <div class="mb-6 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-600">
+                        <h3 class="text-lg font-bold mb-3 text-gray-900 dark:text-white">
+                            JSON 미리보기
+                        </h3>
+                        <pre class="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto text-xs font-mono max-h-96 overflow-y-auto">{{ preview_result.json_preview }}</pre>
+                    </div>
+
+                {% else %}
+                    <!-- Error Section -->
+                    <div class="mb-6 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-700">
+                        <h3 class="text-lg font-bold mb-2 text-gray-900 dark:text-white">
+                            ❌ 파서 적용 실패
+                        </h3>
+                        <p class="text-red-700 dark:text-red-300">{{ preview_result.error }}</p>
+                    </div>
+                {% endif %}
+            {% endif %}
+
+            <!-- Back Button -->
+            <div class="flex items-center space-x-4 pt-6 border-t border-gray-200 dark:border-gray-700">
+                <a href="{% url 'admin:financial_statements_financialstatement_changelist' %}"
+                   class="bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-semibold py-2.5 px-6 rounded-lg transition-colors">
+                    목록으로 돌아가기
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* 기본 폼 필드 스타일 (라이트 모드) */
+.main-card input[type="number"],
+.main-card input[type="text"],
+.main-card select,
+.parser-select {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.625rem 0.875rem;
+    border: 2px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    transition: all 0.15s ease-in-out;
+    background-color: white;
+    color: #111827;
+}
+
+/* 다크모드 스타일 */
+.dark .main-card input[type="number"],
+.dark .main-card input[type="text"],
+.dark .main-card select,
+.dark .parser-select {
+    background-color: #1f2937;
+    border-color: #6b7280;
+    color: #f3f4f6;
+}
+
+.dark .main-card input[type="number"]:hover,
+.dark .main-card input[type="text"]:hover,
+.dark .main-card select:hover,
+.dark .parser-select:hover {
+    border-color: #9ca3af;
+}
+
+.dark .main-card input[type="number"]:focus,
+.dark .main-card input[type="text"]:focus,
+.dark .main-card select:focus,
+.dark .parser-select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.dark .main-card {
+  background-color: #111827;
+}
+</style>
+{% endblock %}

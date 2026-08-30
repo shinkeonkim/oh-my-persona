@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/shinkeonkim/boardai
+Author account: shinkeonkim
+
+2026-07-20T07:42:02Z	51409fcb3bdc0c309b6d2a38587b5f3e01c4fa23	https://github.com/shinkeonkim/boardai/commit/51409fcb3bdc0c309b6d2a38587b5f3e01c4fa23	Create README.md

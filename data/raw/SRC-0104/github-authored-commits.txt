@@ -1,0 +1,8 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-chestshop-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:28:56Z	fe5a720bcc1766d02e4f5b8bb66b668e2a2ea044	https://github.com/kokoa-hobby/minecraft-chestshop-plugin/commit/fe5a720bcc1766d02e4f5b8bb66b668e2a2ea044	Add README
+2026-07-22T12:22:13Z	5e120f7eb1cc0be061d564faa71c559c344a8773	https://github.com/kokoa-hobby/minecraft-chestshop-plugin/commit/5e120f7eb1cc0be061d564faa71c559c344a8773	Add ChestShopPlugin main class
+2026-07-22T12:22:13Z	e52e33b018b50fe8f79b58cb262f9586873d1ab8	https://github.com/kokoa-hobby/minecraft-chestshop-plugin/commit/e52e33b018b50fe8f79b58cb262f9586873d1ab8	Add listeners
+2026-07-22T12:22:13Z	ad4921b67804d5b0742424d9b834e2db14baec10	https://github.com/kokoa-hobby/minecraft-chestshop-plugin/commit/ad4921b67804d5b0742424d9b834e2db14baec10	Add plugin manifest and resources
+2026-07-22T12:22:13Z	e41c030f5d4a9646a510e5d514ccbfacb8892693	https://github.com/kokoa-hobby/minecraft-chestshop-plugin/commit/e41c030f5d4a9646a510e5d514ccbfacb8892693	Add Gradle project scaffold

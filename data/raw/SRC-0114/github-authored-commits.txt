@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-homewarp-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:27:26Z	8f559a80cf6a5cd21f6bd7ff25ac352563492986	https://github.com/kokoa-hobby/minecraft-homewarp-plugin/commit/8f559a80cf6a5cd21f6bd7ff25ac352563492986	Add README
+2026-07-22T12:22:16Z	b9a001d6b28326d11d13ba152348e7f1a016594e	https://github.com/kokoa-hobby/minecraft-homewarp-plugin/commit/b9a001d6b28326d11d13ba152348e7f1a016594e	Add HomeWarpPlugin main class
+2026-07-22T12:22:16Z	3fb54c2a31308ea3eaed6fe8da691b3e0cb5b9e9	https://github.com/kokoa-hobby/minecraft-homewarp-plugin/commit/3fb54c2a31308ea3eaed6fe8da691b3e0cb5b9e9	Add LocationSerialization
+2026-07-22T12:22:16Z	6f5e8a5c3d8f6c0b875fe0358dda6890c20c7089	https://github.com/kokoa-hobby/minecraft-homewarp-plugin/commit/6f5e8a5c3d8f6c0b875fe0358dda6890c20c7089	Add commands
+2026-07-22T12:22:16Z	6481f68438cf342f5fa93a3a9aa147ab41a2656b	https://github.com/kokoa-hobby/minecraft-homewarp-plugin/commit/6481f68438cf342f5fa93a3a9aa147ab41a2656b	Add plugin manifest and resources
+2026-07-22T12:22:16Z	0795d69db8b27684e4f5f31b8f5bd2d2653fbab9	https://github.com/kokoa-hobby/minecraft-homewarp-plugin/commit/0795d69db8b27684e4f5f31b8f5bd2d2653fbab9	Add Gradle project scaffold

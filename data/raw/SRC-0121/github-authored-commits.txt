@@ -1,0 +1,10 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-publicplace-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:29:05Z	45d29a0640ff904b2c91f3c40e0b94af86465252	https://github.com/kokoa-hobby/minecraft-publicplace-plugin/commit/45d29a0640ff904b2c91f3c40e0b94af86465252	Add README
+2026-07-22T12:22:18Z	1bbf978f78ef8008de91b92452150949ec5edbb2	https://github.com/kokoa-hobby/minecraft-publicplace-plugin/commit/1bbf978f78ef8008de91b92452150949ec5edbb2	Add PublicPlacePlugin main class
+2026-07-22T12:22:18Z	7a5c1268f0e734040a3b835994edd39a0d742d4a	https://github.com/kokoa-hobby/minecraft-publicplace-plugin/commit/7a5c1268f0e734040a3b835994edd39a0d742d4a	Add PublicPlaceApi
+2026-07-22T12:22:18Z	d4fc070095c06ae012e68da55ece015607d68bd7	https://github.com/kokoa-hobby/minecraft-publicplace-plugin/commit/d4fc070095c06ae012e68da55ece015607d68bd7	Add PublicPlace
+2026-07-22T12:22:18Z	1eacf92abfc31e1b67cd8a96d1ad99d64c2a2bfb	https://github.com/kokoa-hobby/minecraft-publicplace-plugin/commit/1eacf92abfc31e1b67cd8a96d1ad99d64c2a2bfb	Add commands
+2026-07-22T12:22:18Z	03122d1e82ee7c7658c9dd57f177be5b71845b1e	https://github.com/kokoa-hobby/minecraft-publicplace-plugin/commit/03122d1e82ee7c7658c9dd57f177be5b71845b1e	Add plugin manifest and resources
+2026-07-22T12:22:18Z	37e8eb4316be040a3ad3190156796f2a99c35bc7	https://github.com/kokoa-hobby/minecraft-publicplace-plugin/commit/37e8eb4316be040a3ad3190156796f2a99c35bc7	Add Gradle project scaffold

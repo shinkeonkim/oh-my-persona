@@ -1,0 +1,10 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-mailbox-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:28:55Z	ff2c337ff5545e81bc629c70522cc0e91eff6446	https://github.com/kokoa-hobby/minecraft-mailbox-plugin/commit/ff2c337ff5545e81bc629c70522cc0e91eff6446	Add README
+2026-07-22T12:22:17Z	5bf1a47f23fbacaf32af2a19fbdcb51def332430	https://github.com/kokoa-hobby/minecraft-mailbox-plugin/commit/5bf1a47f23fbacaf32af2a19fbdcb51def332430	Add MailboxPlugin main class
+2026-07-22T12:22:17Z	138ed421ae474c1ea16116e59a088c5d29fc6ec2	https://github.com/kokoa-hobby/minecraft-mailbox-plugin/commit/138ed421ae474c1ea16116e59a088c5d29fc6ec2	Add Mail
+2026-07-22T12:22:17Z	5a11c22a2dbcd44212298ae9fc19ce11b3ec6ca6	https://github.com/kokoa-hobby/minecraft-mailbox-plugin/commit/5a11c22a2dbcd44212298ae9fc19ce11b3ec6ca6	Add listeners
+2026-07-22T12:22:17Z	9124556e0c6e2ccae760045167f9e6bdd93f6a18	https://github.com/kokoa-hobby/minecraft-mailbox-plugin/commit/9124556e0c6e2ccae760045167f9e6bdd93f6a18	Add commands
+2026-07-22T12:22:17Z	ae2faa16833ba4e074bd7b83c160ce99969046e1	https://github.com/kokoa-hobby/minecraft-mailbox-plugin/commit/ae2faa16833ba4e074bd7b83c160ce99969046e1	Add plugin manifest and resources
+2026-07-22T12:22:17Z	3baeea11e2ad1c4def6700f3cac949a60fd13c0a	https://github.com/kokoa-hobby/minecraft-mailbox-plugin/commit/3baeea11e2ad1c4def6700f3cac949a60fd13c0a	Add Gradle project scaffold

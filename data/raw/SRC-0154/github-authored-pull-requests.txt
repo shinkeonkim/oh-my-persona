@@ -1,0 +1,6 @@
+GitHub repository: https://github.com/kokoa-lab/works-on-mine
+Pull request author: shinkeonkim
+
+2026-08-28T07:04:25Z	#3	MERGED	https://github.com/kokoa-lab/works-on-mine/pull/3	chore(ads): add ads.txt	merged=2026-08-28T07:11:40Z	closed=2026-08-28T07:11:40Z	commits=1	files=1	+1/-0	project-lens가 자동 생성한 PR입니다. - public/ads.txt를 추가했습니다. - AdSense 게시자: ca-pub-3060818993817836
+2026-08-28T05:29:02Z	#2	MERGED	https://github.com/kokoa-lab/works-on-mine/pull/2	docs: expand README	merged=2026-08-28T07:11:31Z	closed=2026-08-28T07:11:31Z	commits=1	files=1	+28/-0	README was just a title. Add what the project actually does, deploy URL, and dev/build/deploy commands (matching the format used for shinkeonkim/base64-code).
+2026-08-27T16:56:26Z	#1	MERGED	https://github.com/kokoa-lab/works-on-mine/pull/1	chore(tracking): GTM 스니펫 추가 (GTM-KQRVWCW9)	merged=2026-08-28T03:52:59Z	closed=2026-08-28T03:52:59Z	commits=1	files=1	+13/-0	project-lens가 자동 생성한 PR입니다. - index.html에 GTM(GTM-KQRVWCW9) 스니펫을 삽입했습니다. - GTM 컨테이너: GTM-KQRVWCW9

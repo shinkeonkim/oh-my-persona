@@ -1,0 +1,26 @@
+GitHub repository: https://github.com/kmu-aws-capstone-team-4/docs
+Author account: shinkeonkim
+
+2026-03-18T06:56:16Z	625b20df5a9bf80cad75abc08c3febd98f805c36	https://github.com/kmu-aws-capstone-team-4/docs/commit/625b20df5a9bf80cad75abc08c3febd98f805c36	fix: 이력서 등록 필수 여부 수정
+2026-03-18T04:59:58Z	defac2f4f38d0e4e66853e1157f8fb2e8303f112	https://github.com/kmu-aws-capstone-team-4/docs/commit/defac2f4f38d0e4e66853e1157f8fb2e8303f112	design: tab, movbile view에 대한 side nav bar 추가
+2026-03-16T05:03:51Z	ef8b030531d3ea24cebfaa6c4046ec6e79f07d22	https://github.com/kmu-aws-capstone-team-4/docs/commit/ef8b030531d3ea24cebfaa6c4046ec6e79f07d22	design: 디자인 수정
+2026-03-15T13:16:50Z	219eaad31e219931d8ba1515bebaea7d861cb25f	https://github.com/kmu-aws-capstone-team-4/docs/commit/219eaad31e219931d8ba1515bebaea7d861cb25f	design: 인증 이메일에 대한 디자인 추가
+2026-03-15T13:08:28Z	da7b48d11eccb94c8a8295a7e8418d08cce2dfbc	https://github.com/kmu-aws-capstone-team-4/docs/commit/da7b48d11eccb94c8a8295a7e8418d08cce2dfbc	docs: pencil에 활용한 design prompt 추가
+2026-03-15T13:08:07Z	948b72df6feefc142925f12933b8a2cba1003e24	https://github.com/kmu-aws-capstone-team-4/docs/commit/948b72df6feefc142925f12933b8a2cba1003e24	docs: template 문서 추가
+2026-03-15T13:07:30Z	9cd25ce4961e224a386efc6b900b9e0fb29721e1	https://github.com/kmu-aws-capstone-team-4/docs/commit/9cd25ce4961e224a386efc6b900b9e0fb29721e1	docs: README.md를 통한 정리
+2026-03-15T13:05:06Z	01a3d079b7727f40783b5fb434331202c35bf922	https://github.com/kmu-aws-capstone-team-4/docs/commit/01a3d079b7727f40783b5fb434331202c35bf922	docs: 시퀀스 다이어그램 정리
+2026-03-15T13:02:55Z	b6a389419d2fcb2e296906e73d176a7dbde5f976	https://github.com/kmu-aws-capstone-team-4/docs/commit/b6a389419d2fcb2e296906e73d176a7dbde5f976	docs: schema, sitemap
+2026-03-15T12:59:58Z	931795e236e412f53d2d5dbd74c14c770752b39e	https://github.com/kmu-aws-capstone-team-4/docs/commit/931795e236e412f53d2d5dbd74c14c770752b39e	fix: 모순 내용 수정
+2026-03-15T12:58:39Z	297c4a24bfd8709f3874b9da2cf2cd548ba60c3b	https://github.com/kmu-aws-capstone-team-4/docs/commit/297c4a24bfd8709f3874b9da2cf2cd548ba60c3b	docs: glossary 문서 추가
+2026-03-15T12:55:39Z	a5ed297f734ea881ff1ceb2913daadc47682761a	https://github.com/kmu-aws-capstone-team-4/docs/commit/a5ed297f734ea881ff1ceb2913daadc47682761a	docs: UC-INT 문서 추가
+2026-03-15T12:54:34Z	5092844645f67d0e996c1ff4bc4278bf2c295fb3	https://github.com/kmu-aws-capstone-team-4/docs/commit/5092844645f67d0e996c1ff4bc4278bf2c295fb3	docs: UC-DOC 문서 추가
+2026-03-15T12:46:07Z	965e8f07c6b65f25a51de900b00ce9bed95b636b	https://github.com/kmu-aws-capstone-team-4/docs/commit/965e8f07c6b65f25a51de900b00ce9bed95b636b	docs: UC-GMF 문서 추가
+2026-03-15T12:44:53Z	dbb36bc788ac8bbcbd575b053f28d076684ea0be	https://github.com/kmu-aws-capstone-team-4/docs/commit/dbb36bc788ac8bbcbd575b053f28d076684ea0be	docs: UC-PUB 문서 추가
+2026-03-15T12:44:44Z	270c7ac3f3b3c0da8928a144ed57d97220a09b44	https://github.com/kmu-aws-capstone-team-4/docs/commit/270c7ac3f3b3c0da8928a144ed57d97220a09b44	docs: UC-PVC문서 추가
+2026-03-15T12:44:38Z	28dd99fb9807e108c304840129d40c667fa2ef95	https://github.com/kmu-aws-capstone-team-4/docs/commit/28dd99fb9807e108c304840129d40c667fa2ef95	docs: UC-NAV 문서 추가
+2026-03-14T18:06:38Z	78ea6a1a87c0e0fbdf2391360f272472193bc8a7	https://github.com/kmu-aws-capstone-team-4/docs/commit/78ea6a1a87c0e0fbdf2391360f272472193bc8a7	docs: UC-USR 문서 추가
+2026-03-14T18:01:23Z	9665742c61eaa417aeb6536f64b647259597cb57	https://github.com/kmu-aws-capstone-team-4/docs/commit/9665742c61eaa417aeb6536f64b647259597cb57	docs: 유즈케이스 카테고리 및 액터 정리
+2026-03-14T18:00:02Z	4f39710b4243caabc14f8336f045096d766a2940	https://github.com/kmu-aws-capstone-team-4/docs/commit/4f39710b4243caabc14f8336f045096d766a2940	chore: .gitignore
+2026-03-14T17:59:30Z	ae8afb956d4ac8aa87cb3a681eb12b1ef813c33f	https://github.com/kmu-aws-capstone-team-4/docs/commit/ae8afb956d4ac8aa87cb3a681eb12b1ef813c33f	docs: Claude AI Research 문서
+2026-03-14T17:59:12Z	16ebc1bb17c470d53c1857a57bd9b4e512cf55a2	https://github.com/kmu-aws-capstone-team-4/docs/commit/16ebc1bb17c470d53c1857a57bd9b4e512cf55a2	design: 전체 와이어프레임 작성 - 디자인 요소 - 컴포넌트 정리 - sign-in / sign-out / sign-up - email verification - interview 기본 내용 - 각 메뉴별 기본 내용
+2026-03-11T09:39:25Z	c3b3fe195dce06e0d1d87376e5e36f0218e30898	https://github.com/kmu-aws-capstone-team-4/docs/commit/c3b3fe195dce06e0d1d87376e5e36f0218e30898	Update README with project documentation info Add project documentation details in README

@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/shinkeonkim/slidev-md-boilterplate
+Author account: shinkeonkim
+
+2021-05-23T11:58:03Z	499752e180c7fae2efe88f9e1528d4a3c398e4b3	https://github.com/shinkeonkim/slidev-md-boilterplate/commit/499752e180c7fae2efe88f9e1528d4a3c398e4b3	feat: initial commit

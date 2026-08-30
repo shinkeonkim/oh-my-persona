@@ -1,0 +1,25 @@
+GitHub repository: https://github.com/shinkeonkim/can-you-catch-circle
+Author account: shinkeonkim
+
+2021-12-19T10:28:03Z	2a369df5142ed47d20c0c5498b16b8c0f5782ae7	https://github.com/shinkeonkim/can-you-catch-circle/commit/2a369df5142ed47d20c0c5498b16b8c0f5782ae7	Update README.md
+2021-12-19T09:31:28Z	88ca36d0c4c25e52577029858f9be5061fb801e3	https://github.com/shinkeonkim/can-you-catch-circle/commit/88ca36d0c4c25e52577029858f9be5061fb801e3	feat: webkit css 추가
+2021-12-19T09:30:10Z	f716edcbb151e22b32c9b7d742fe4ea330dc2f80	https://github.com/shinkeonkim/can-you-catch-circle/commit/f716edcbb151e22b32c9b7d742fe4ea330dc2f80	feat: window size에 따라 animation의 속도가 다른 문제 수정
+2021-12-17T18:33:20Z	197b1b037b273a383d60ec391d9e25c3fb3514c9	https://github.com/shinkeonkim/can-you-catch-circle/commit/197b1b037b273a383d60ec391d9e25c3fb3514c9	fix: margin-left to transform
+2021-12-17T18:24:48Z	96f22a05208241549aa53734398939f781df41f0	https://github.com/shinkeonkim/can-you-catch-circle/commit/96f22a05208241549aa53734398939f781df41f0	fix: ios webkit animation issue
+2021-12-17T18:17:52Z	4246bf2906a238a036cc7e5f810e9b077ae227a2	https://github.com/shinkeonkim/can-you-catch-circle/commit/4246bf2906a238a036cc7e5f810e9b077ae227a2	fix: ios webkit animation issue
+2021-12-17T18:08:57Z	8bea9b89e9ebaea5743fb81bf6094c0cc810d9be	https://github.com/shinkeonkim/can-you-catch-circle/commit/8bea9b89e9ebaea5743fb81bf6094c0cc810d9be	Merge branch 'main' of https://github.com/shinkeonkim/can-you-catch-circle
+2021-12-17T18:08:51Z	d8d146241a753b696d17d7fdf13925091141eb7d	https://github.com/shinkeonkim/can-you-catch-circle/commit/d8d146241a753b696d17d7fdf13925091141eb7d	feat: use vue router
+2021-12-17T18:02:45Z	164f5ad51908a2afbf7b60d001f84dc1e9a07444	https://github.com/shinkeonkim/can-you-catch-circle/commit/164f5ad51908a2afbf7b60d001f84dc1e9a07444	Update gh-page.deploy.yml
+2021-12-17T17:57:52Z	287811887bece794b05394c4f0788181c0339146	https://github.com/shinkeonkim/can-you-catch-circle/commit/287811887bece794b05394c4f0788181c0339146	fix: path issue
+2021-12-17T17:32:23Z	ac8a59d857209ab3555137b978fd88d59765efbd	https://github.com/shinkeonkim/can-you-catch-circle/commit/ac8a59d857209ab3555137b978fd88d59765efbd	fix: deploy base
+2021-12-17T17:21:45Z	15ab83b1c15d70ad5256a23b08348178c6ca2ca4	https://github.com/shinkeonkim/can-you-catch-circle/commit/15ab83b1c15d70ad5256a23b08348178c6ca2ca4	fix: build base
+2021-12-17T17:17:09Z	c2bfb67f4ce3f83c0c231451ddaeb04aad198e89	https://github.com/shinkeonkim/can-you-catch-circle/commit/c2bfb67f4ce3f83c0c231451ddaeb04aad198e89	feat: add compileOption baseUrl
+2021-12-17T17:12:58Z	9a137cd605947aea48e45d6994facfb1705f1270	https://github.com/shinkeonkim/can-you-catch-circle/commit/9a137cd605947aea48e45d6994facfb1705f1270	Merge branch 'main' of https://github.com/shinkeonkim/can-you-catch-circle
+2021-12-17T17:12:23Z	74e4aae9741fbdfba4db18bedd3046dc709c2d81	https://github.com/shinkeonkim/can-you-catch-circle/commit/74e4aae9741fbdfba4db18bedd3046dc709c2d81	fix: gh-page deploy path issue
+2021-12-17T17:06:00Z	80237ae71cfaa15843a3ffa06c266dd938454690	https://github.com/shinkeonkim/can-you-catch-circle/commit/80237ae71cfaa15843a3ffa06c266dd938454690	Update gh-page.deploy.yml
+2021-12-17T17:01:05Z	1fc5487ed07e48a33ff59a66326e18104863d234	https://github.com/shinkeonkim/can-you-catch-circle/commit/1fc5487ed07e48a33ff59a66326e18104863d234	Update gh-page.deploy.yml
+2021-12-17T16:58:03Z	9ae7624ffd2a1cffa25750cd8375da4f6bb6abcf	https://github.com/shinkeonkim/can-you-catch-circle/commit/9ae7624ffd2a1cffa25750cd8375da4f6bb6abcf	Rename node.js.yml to gh-page.deploy.yml
+2021-12-17T16:57:39Z	aa837f3af51cb1f202db81703e0dd3fc7cff8b38	https://github.com/shinkeonkim/can-you-catch-circle/commit/aa837f3af51cb1f202db81703e0dd3fc7cff8b38	Update node.js.yml
+2021-12-17T16:54:53Z	34927393bc76f53d7b54cf3d97751795b302f1d9	https://github.com/shinkeonkim/can-you-catch-circle/commit/34927393bc76f53d7b54cf3d97751795b302f1d9	Create node.js.yml
+2021-12-17T16:44:27Z	f397c7b5513f5327499bbaf6f4d751668c7c8844	https://github.com/shinkeonkim/can-you-catch-circle/commit/f397c7b5513f5327499bbaf6f4d751668c7c8844	fix: build command
+2021-12-17T16:32:42Z	92167367491da5e7f6f308977f5dafa0cd3f4e85	https://github.com/shinkeonkim/can-you-catch-circle/commit/92167367491da5e7f6f308977f5dafa0cd3f4e85	feat: vite vue app settings && catch circle example

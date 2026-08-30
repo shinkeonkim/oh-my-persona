@@ -1,0 +1,10 @@
+GitHub repository: https://github.com/kokoa-lab/commit-city
+Author account: shinkeonkim
+
+2026-08-28T07:53:26Z	8c7407ae93d5645fe24a6b87d15d65cbd0af1174	https://github.com/kokoa-lab/commit-city/commit/8c7407ae93d5645fe24a6b87d15d65cbd0af1174	Merge pull request #3 from kokoa-lab/project-lens/add-ads-txt-5ec44789 chore(ads): add ads.txt
+2026-08-28T07:53:17Z	924f981e04fed81ee196de161ce44f3c6dfc1837	https://github.com/kokoa-lab/commit-city/commit/924f981e04fed81ee196de161ce44f3c6dfc1837	Merge pull request #2 from kokoa-lab/docs/add-readme docs: add README
+2026-08-28T07:00:27Z	eb198a959b67f9bbcfeb5b546d6ab4d319d785fe	https://github.com/kokoa-lab/commit-city/commit/eb198a959b67f9bbcfeb5b546d6ab4d319d785fe	chore(ads): add ads.txt project-lens automated commit.
+2026-08-28T03:54:04Z	2e5016e8cbf08a3783c7c7cd01952f27d90128fe	https://github.com/kokoa-lab/commit-city/commit/2e5016e8cbf08a3783c7c7cd01952f27d90128fe	Merge pull request #1 from kokoa-lab/project-lens/add-gtm-tracking-82 chore(tracking): GTM 스니펫 추가 (GTM-NZZHGJQP)
+2026-08-27T16:53:01Z	f3d57b51100efc9d8b9aa9b4861a2ea51d8816a1	https://github.com/kokoa-lab/commit-city/commit/f3d57b51100efc9d8b9aa9b4861a2ea51d8816a1	chore(tracking): add GTM snippet (GTM-NZZHGJQP) project-lens automated commit.
+2026-03-09T04:20:08Z	9040d510791199669f88ff0ca0a548a30c17a872	https://github.com/kokoa-lab/commit-city/commit/9040d510791199669f88ff0ca0a548a30c17a872	feat: wrangler 설정 추가
+2026-03-09T04:15:49Z	e3cda9437e0a78e91e69a21470b8038620d24cd7	https://github.com/kokoa-lab/commit-city/commit/e3cda9437e0a78e91e69a21470b8038620d24cd7	feat: initial project settings by lovable

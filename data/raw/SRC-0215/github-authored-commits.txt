@@ -1,0 +1,6 @@
+GitHub repository: https://github.com/shinkeonkim/likelion-git-practice
+Author account: shinkeonkim
+
+2021-02-27T10:44:54Z	f8c211a09fb08ce8c452789e9846bfb409d48def	https://github.com/shinkeonkim/likelion-git-practice/commit/f8c211a09fb08ce8c452789e9846bfb409d48def	hello_github.txt 수정
+2021-02-27T06:18:12Z	8e2973e257c3436845f450a4fa323e573f253903	https://github.com/shinkeonkim/likelion-git-practice/commit/8e2973e257c3436845f450a4fa323e573f253903	Hello Github!
+2021-02-27T05:55:16Z	155ac7f267dc8293490e939371e724121773d247	https://github.com/shinkeonkim/likelion-git-practice/commit/155ac7f267dc8293490e939371e724121773d247	Initial commit

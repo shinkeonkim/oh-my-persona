@@ -1,0 +1,117 @@
+:root {
+  --sl-font: "Avenir Next", Avenir, "Noto Sans KR", system-ui, sans-serif;
+  --sl-font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --sl-color-accent-low: #f1eafb;
+  --sl-color-accent: #6f3caf;
+  --sl-color-accent-high: #321653;
+  --sl-color-white: #17191f;
+  --sl-color-gray-1: #2f323a;
+  --sl-color-gray-2: #555a65;
+  --sl-color-gray-3: #777d88;
+  --sl-color-gray-4: #b9bdc5;
+  --sl-color-gray-5: #e2e3e7;
+  --sl-color-gray-6: #f3f3f5;
+  --sl-color-black: #fbfaf8;
+  --sl-content-width: 52rem;
+  --sl-sidebar-width: 19rem;
+  --sl-text-5xl: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+:root[data-theme="dark"] {
+  --sl-color-accent-low: #2e1b40;
+  --sl-color-accent: #b78be2;
+  --sl-color-accent-high: #eee0fb;
+  --sl-color-white: #f1f1f3;
+  --sl-color-gray-1: #d6d8dd;
+  --sl-color-gray-2: #aeb2bb;
+  --sl-color-gray-3: #777c87;
+  --sl-color-gray-4: #4a4e57;
+  --sl-color-gray-5: #2b2e35;
+  --sl-color-gray-6: #1d2026;
+  --sl-color-black: #0d0e12;
+}
+
+body {
+  font-feature-settings: "kern" 1;
+  line-height: 1.68;
+}
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.hero {
+  padding-block: clamp(3rem, 8vw, 6rem);
+}
+
+.hero > img,
+.hero > .hero-html {
+  filter: drop-shadow(0 1px 1px rgb(97 104 117 / 5%));
+}
+
+.sl-markdown-content .sl-heading-wrapper.level-h2 {
+  border-block-start: 1px solid var(--sl-color-gray-5);
+  padding-block-start: 2rem;
+}
+
+.sl-markdown-content h2 {
+  letter-spacing: -0.02em;
+}
+
+.sl-markdown-content h3 {
+  letter-spacing: -0.012em;
+}
+
+.sl-markdown-content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  font-size: var(--sl-text-sm);
+}
+
+.sl-markdown-content code:not(:where(.not-content *)) {
+  border-radius: 0.25rem;
+}
+
+.sl-markdown-content :where(p, li, td, th) {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.card {
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 1px rgb(97 104 117 / 5%), 0 2px 2px rgb(97 104 117 / 5%);
+}
+
+.ko-en {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-block: 1.5rem;
+}
+
+.ko-en > section {
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.ko-en > section > :first-child {
+  margin-block-start: 0;
+}
+
+@media (max-width: 48rem) {
+  .ko-en {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

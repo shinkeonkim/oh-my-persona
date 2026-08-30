@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/shinkeonkim/productive-box
+Author account: shinkeonkim
+
+2024-03-09T01:33:05Z	77d3c27bb7b541f75b24f59f3ab8f7e2b0c40f50	https://github.com/shinkeonkim/productive-box/commit/77d3c27bb7b541f75b24f59f3ab8f7e2b0c40f50	Update schedule.yml

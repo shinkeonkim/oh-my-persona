@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/shinkeonkim/youtube-comment-viewer
+Author account: shinkeonkim
+
+2021-03-23T13:29:56Z	8aef80266b752a757bcc5c5380183c23e1e83fca	https://github.com/shinkeonkim/youtube-comment-viewer/commit/8aef80266b752a757bcc5c5380183c23e1e83fca	feat: initial settings using template

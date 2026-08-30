@@ -1,0 +1,10 @@
+GitHub repository: https://github.com/kmu-aws-capstone-team-4/.github
+Author account: shinkeonkim
+
+2026-06-04T07:09:00Z	2320aec0869c1ecf2ece7b7e5e6eeb83509c0db3	https://github.com/kmu-aws-capstone-team-4/.github/commit/2320aec0869c1ecf2ece7b7e5e6eeb83509c0db3	Add video link to project overview in README
+2026-06-04T07:05:23Z	c0635f7a7680e2c43a35b2d5126d46411138effd	https://github.com/kmu-aws-capstone-team-4/.github/commit/c0635f7a7680e2c43a35b2d5126d46411138effd	Fix module links in README Updated module links in the README to point to GitHub repositories.
+2026-06-04T07:03:26Z	2ced7012c5999ab36f4c6b6d93be852ec49ef453	https://github.com/kmu-aws-capstone-team-4/.github/commit/2ced7012c5999ab36f4c6b6d93be852ec49ef453	Update core values section in README
+2026-06-04T07:02:32Z	d8dfb3cee03dff258f8b6873b665b5766fa64f9b	https://github.com/kmu-aws-capstone-team-4/.github/commit/d8dfb3cee03dff258f8b6873b665b5766fa64f9b	Update README.md
+2026-06-04T07:01:16Z	8039f092b20711fee8b42273198c2e9cb09f3e6a	https://github.com/kmu-aws-capstone-team-4/.github/commit/8039f092b20711fee8b42273198c2e9cb09f3e6a	Update README.md
+2026-03-19T07:16:27Z	2379810c94f3ce62f204baca42abfffd2e23a39f	https://github.com/kmu-aws-capstone-team-4/.github/commit/2379810c94f3ce62f204baca42abfffd2e23a39f	Add contribution guidelines for external users Added contribution guidelines in Korean and English, outlining restrictions for external contributions to the project.
+2026-03-11T07:06:12Z	a4dfc92c0ccd5f001f6e58824a7771e780bca232	https://github.com/kmu-aws-capstone-team-4/.github/commit/a4dfc92c0ccd5f001f6e58824a7771e780bca232	Create README.md

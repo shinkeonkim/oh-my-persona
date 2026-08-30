@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/palette-team/saju_profile_tags_extractor
+Author account: shinkeonkim
+
+2025-11-06T12:25:57Z	9ca2932f77b4e9fa198a4c0c35165aaa3c77febd	https://github.com/palette-team/saju_profile_tags_extractor/commit/9ca2932f77b4e9fa198a4c0c35165aaa3c77febd	feat: LLM 활용 사주 태그 생성 프로젝트

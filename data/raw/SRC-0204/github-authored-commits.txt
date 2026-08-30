@@ -1,0 +1,14 @@
+GitHub repository: https://github.com/shinkeonkim/drf-discord-handler
+Author account: shinkeonkim
+
+2025-12-21T11:23:55Z	3a3be84dee30f28d732c05bfb55fb0c2d8069eb8	https://github.com/shinkeonkim/drf-discord-handler/commit/3a3be84dee30f28d732c05bfb55fb0c2d8069eb8	fix: versioning issue
+2025-12-21T11:14:28Z	90290ede34e9bd1ad2b8df0af6b4863512cfd52b	https://github.com/shinkeonkim/drf-discord-handler/commit/90290ede34e9bd1ad2b8df0af6b4863512cfd52b	docs: handler path 설명 수정
+2025-12-21T11:09:18Z	ff3ce9f3c586f32a12fb0699ed64c9b5b5903749	https://github.com/shinkeonkim/drf-discord-handler/commit/ff3ce9f3c586f32a12fb0699ed64c9b5b5903749	chore: versioning
+2025-12-21T11:09:06Z	27c67f839956844a758da7ef0390bef1adbedd0b	https://github.com/shinkeonkim/drf-discord-handler/commit/27c67f839956844a758da7ef0390bef1adbedd0b	docs: README.md
+2025-12-21T11:08:52Z	664c86e6d5f1859bb46a7521b5c6575f3a3ac618	https://github.com/shinkeonkim/drf-discord-handler/commit/664c86e6d5f1859bb46a7521b5c6575f3a3ac618	docs: LICENSE
+2025-12-21T10:58:39Z	9b85f7a640292841291960f9cc5e1d611d7d2fd8	https://github.com/shinkeonkim/drf-discord-handler/commit/9b85f7a640292841291960f9cc5e1d611d7d2fd8	fix: n-plus-one detect feature 삭제
+2025-12-21T10:53:53Z	8b200e71607fdf59b5b123eb62fee315e1e2c8f8	https://github.com/shinkeonkim/drf-discord-handler/commit/8b200e71607fdf59b5b123eb62fee315e1e2c8f8	feat: publish to pypi github actions
+2025-12-21T10:44:14Z	0d4ef9faf129f38f2760e2a01fa61b73950ae91f	https://github.com/shinkeonkim/drf-discord-handler/commit/0d4ef9faf129f38f2760e2a01fa61b73950ae91f	feat: exception handler 및 discord message 전송에 대한 MVP 구현
+2025-12-21T10:42:38Z	b0e49162873319032d4e49f3b4819811b3c0bbf3	https://github.com/shinkeonkim/drf-discord-handler/commit/b0e49162873319032d4e49f3b4819811b3c0bbf3	feat: discord client
+2025-12-17T16:08:39Z	0c69994c387794d34f8afd6aaaede5b8bdf39bc5	https://github.com/shinkeonkim/drf-discord-handler/commit/0c69994c387794d34f8afd6aaaede5b8bdf39bc5	feat: python 3.14 + uv package settings
+2025-12-17T16:08:03Z	080a468b071bbe22c4295a8f08d2142d8e1db138	https://github.com/shinkeonkim/drf-discord-handler/commit/080a468b071bbe22c4295a8f08d2142d8e1db138	docs: README.md

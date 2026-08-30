@@ -1,0 +1,7 @@
+GitHub repository: https://github.com/kmu-aws-capstone-team-4/mefit-tools
+Author account: shinkeonkim
+
+2026-04-19T12:43:21Z	13380dc6c7771a2c8a66913c5c0fb9454028b702	https://github.com/kmu-aws-capstone-team-4/mefit-tools/commit/13380dc6c7771a2c8a66913c5c0fb9454028b702	fix: localstack
+2026-04-18T08:05:23Z	c224f9919c14d9c13458669273145f66a5a1d30c	https://github.com/kmu-aws-capstone-team-4/mefit-tools/commit/c224f9919c14d9c13458669273145f66a5a1d30c	feat: add analysis-video (LocalStack) to service orchestration analysis-video 프로젝트를 mefit-tools 통합 관리에 추가: - config.py: analysis-video ProjectInfo (LocalStack, port 4566) - docker_ops.py: _resolve_project_dir() 도입 (directory 필드 기반 경로 해석) - Makefile: up-all/down-all에 analysis-video/local 추가 - scripts: up-all.sh/down-all.sh에 LocalStack 시작/중지 단계 추가 - QUICK_LINKS에 LocalStack URL 추가 directory='analysis-video/local'로 compose 파일 경로 차이를 해소.
+2026-04-17T01:22:05Z	14397802132b26051c34c4cc6c280cbc54ba0a3c	https://github.com/kmu-aws-capstone-team-4/mefit-tools/commit/14397802132b26051c34c4cc6c280cbc54ba0a3c	feat: frontend
+2026-04-17T00:55:23Z	5bf7839550ed22d2a15f7768ad3d3edb32d7fd01	https://github.com/kmu-aws-capstone-team-4/mefit-tools/commit/5bf7839550ed22d2a15f7768ad3d3edb32d7fd01	feat: project initial settings

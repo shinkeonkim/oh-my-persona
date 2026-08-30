@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>카카오 인증 실패</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .error {
+            background-color: #ffebee;
+            border: 1px solid #f44336;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #f44336;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2196F3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>❌ 카카오 인증 실패</h1>
+
+        <div class="error">
+            {% if error %}
+            <p><strong>에러:</strong> {{ error }}</p>
+            {% endif %}
+            {% if error_description %}
+            <p><strong>설명:</strong> {{ error_description }}</p>
+            {% endif %}
+            {% if not error and not error_description %}
+            <p>Authorization Code가 없습니다.</p>
+            {% endif %}
+        </div>
+
+        <a href="/api/v1/users/kakao/test/" class="btn">다시 시도</a>
+    </div>
+</body>
+</html>

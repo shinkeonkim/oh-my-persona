@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-lab/duck-therapy
+Author account: shinkeonkim
+
+2026-08-28T07:55:31Z	6e25c0261f0e4791febbc7e310564163da3cf608	https://github.com/kokoa-lab/duck-therapy/commit/6e25c0261f0e4791febbc7e310564163da3cf608	Merge pull request #3 from kokoa-lab/project-lens/add-ads-txt-6c5fd0be chore(ads): add ads.txt
+2026-08-28T07:55:22Z	052b4c1e519e2f8fade77c3a88db5f00ae1d4ed2	https://github.com/kokoa-lab/duck-therapy/commit/052b4c1e519e2f8fade77c3a88db5f00ae1d4ed2	Merge pull request #2 from kokoa-lab/docs/readme docs: write a real README
+2026-08-28T07:01:52Z	ba6d82ab9779355fefebb5533efaccd9d54df7a5	https://github.com/kokoa-lab/duck-therapy/commit/ba6d82ab9779355fefebb5533efaccd9d54df7a5	chore(ads): add ads.txt project-lens automated commit.
+2026-08-28T03:53:34Z	5433529c6b0fb1218f6316a738b50fa81b552008	https://github.com/kokoa-lab/duck-therapy/commit/5433529c6b0fb1218f6316a738b50fa81b552008	Merge pull request #1 from kokoa-lab/project-lens/add-gtm-tracking-85 chore(tracking): GTM 스니펫 추가 (GTM-P3QZFJ5J)
+2026-08-27T16:54:28Z	f2102188a6fcf3d4460a2e549574ad3c4502df60	https://github.com/kokoa-lab/duck-therapy/commit/f2102188a6fcf3d4460a2e549574ad3c4502df60	chore(tracking): add GTM snippet (GTM-P3QZFJ5J) project-lens automated commit.
+2026-03-09T06:22:00Z	16a6f950e3a6ece2be9148fa3981a14419c22848	https://github.com/kokoa-lab/duck-therapy/commit/16a6f950e3a6ece2be9148fa3981a14419c22848	feat: initial project settings by lovable

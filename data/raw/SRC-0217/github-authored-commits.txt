@@ -1,0 +1,183 @@
+GitHub repository: https://github.com/shinkeonkim/lotteng
+Author account: shinkeonkim
+
+2020-10-24T10:56:13Z	1c0f11eab97a449e3036e5882c9afb086ed5fea3	https://github.com/shinkeonkim/lotteng/commit/1c0f11eab97a449e3036e5882c9afb086ed5fea3	Merge pull request #71 from hyeoneedyou/develop Deploy
+2020-10-24T10:55:32Z	95570c456393de5a404333d5cb991040dc5f343d	https://github.com/shinkeonkim/lotteng/commit/95570c456393de5a404333d5cb991040dc5f343d	Merge branch 'hotfix_badge' into develop
+2020-10-24T10:55:16Z	331c041be133b9cb2fe1799e568c28ca9129328d	https://github.com/shinkeonkim/lotteng/commit/331c041be133b9cb2fe1799e568c28ca9129328d	fix: 주문 내역 badge issue
+2020-10-24T10:48:15Z	85459a39ab102e97dad4d8e5f23626375dfc2a5e	https://github.com/shinkeonkim/lotteng/commit/85459a39ab102e97dad4d8e5f23626375dfc2a5e	Merge pull request #70 from hyeoneedyou/develop Deploy
+2020-10-24T10:48:14Z	5b3ffa1c163674fe97e4bece71da664f31453404	https://github.com/shinkeonkim/lotteng/commit/5b3ffa1c163674fe97e4bece71da664f31453404	Merge branch 'master' of https://github.com/hyeoneedyou/lotteng into develop
+2020-10-24T10:47:21Z	116702da997ee5f8ae07f6bc51dcf6e901cd3b49	https://github.com/shinkeonkim/lotteng/commit/116702da997ee5f8ae07f6bc51dcf6e901cd3b49	Merge branch 'hotfix_filter' into develop
+2020-10-24T10:46:56Z	97c60e488f0b2ed40ff4f58b26b88febb61db149	https://github.com/shinkeonkim/lotteng/commit/97c60e488f0b2ed40ff4f58b26b88febb61db149	fix: filter
+2020-10-24T10:25:28Z	3ee2dc4995abd41d89880a0a3a45f52d0ddf1cb4	https://github.com/shinkeonkim/lotteng/commit/3ee2dc4995abd41d89880a0a3a45f52d0ddf1cb4	Merge pull request #69 from hyeoneedyou/develop Deploy
+2020-10-24T10:23:57Z	f5c5ea76b8e161b1c0a5ad7d7f8de7aba36d0378	https://github.com/shinkeonkim/lotteng/commit/f5c5ea76b8e161b1c0a5ad7d7f8de7aba36d0378	Merge branch 'feature_pagination' into develop
+2020-10-24T10:23:44Z	05cb0b7b5921961bfb29c2ad54cb34a5cccbfac2	https://github.com/shinkeonkim/lotteng/commit/05cb0b7b5921961bfb29c2ad54cb34a5cccbfac2	feat: pagination 수정, badge issue
+2020-10-24T09:45:41Z	b7f2dfd3087e7ceb54dbb415f6fdbd63a291babb	https://github.com/shinkeonkim/lotteng/commit/b7f2dfd3087e7ceb54dbb415f6fdbd63a291babb	Merge pull request #68 from hyeoneedyou/develop Deploy
+2020-10-24T09:44:04Z	185a337567645ae20e10d5273f762b310018a858	https://github.com/shinkeonkim/lotteng/commit/185a337567645ae20e10d5273f762b310018a858	Merge branch 'hotfix_product_list' into develop
+2020-10-24T09:43:53Z	c06191ce563f74c8f7688c22d2c7e20a77f67cde	https://github.com/shinkeonkim/lotteng/commit/c06191ce563f74c8f7688c22d2c7e20a77f67cde	fix: non published product in list issue
+2020-10-24T09:43:31Z	e6994d15c79ff43573ecf07e5099f0f4d34d6a4e	https://github.com/shinkeonkim/lotteng/commit/e6994d15c79ff43573ecf07e5099f0f4d34d6a4e	fix: badge None issue
+2020-10-24T09:17:17Z	87224241adccdb7ed7c2ff930f68d538e5dcf069	https://github.com/shinkeonkim/lotteng/commit/87224241adccdb7ed7c2ff930f68d538e5dcf069	Merge pull request #67 from hyeoneedyou/develop Deploy
+2020-10-24T09:16:43Z	9c5a03e9a2a739e39121bce07051d98954de551c	https://github.com/shinkeonkim/lotteng/commit/9c5a03e9a2a739e39121bce07051d98954de551c	Merge pull request #66 from hyeoneedyou/feature_shop_filter feat: 추가 filter 적용
+2020-10-24T09:14:35Z	da7b0ac82b62aa62ff8451c77c76956d9c81ee23	https://github.com/shinkeonkim/lotteng/commit/da7b0ac82b62aa62ff8451c77c76956d9c81ee23	feat: 추가 filter 적용
+2020-10-24T08:24:32Z	13a621da6bfa672466b11f7bdba8ca78563e4bbc	https://github.com/shinkeonkim/lotteng/commit/13a621da6bfa672466b11f7bdba8ca78563e4bbc	Merge pull request #65 from hyeoneedyou/develop 로그인 페이지 로고 최신화, kinds null,blank=True 추가
+2020-10-23T15:55:13Z	c2657dcbf3a6efbb28a24f5d4b2a69dd61cea452	https://github.com/shinkeonkim/lotteng/commit/c2657dcbf3a6efbb28a24f5d4b2a69dd61cea452	Merge pull request #64 from hyeoneedyou/develop Deploy
+2020-10-23T15:54:50Z	f08b61dc67223e4d981068989f9fa8d9f31d7a89	https://github.com/shinkeonkim/lotteng/commit/f08b61dc67223e4d981068989f9fa8d9f31d7a89	Merge pull request #63 from shinkeonkim/hotfix_responsive feat: map, signin, signout responsive issue
+2020-10-23T15:54:22Z	7b5e29a2f250cedd3047663e989b2891ee1be166	https://github.com/shinkeonkim/lotteng/commit/7b5e29a2f250cedd3047663e989b2891ee1be166	feat: map, signin, signout responsive issue
+2020-10-23T15:26:46Z	4c0cb299fef1eb80f0b9f0b9449159cc84f1c35f	https://github.com/shinkeonkim/lotteng/commit/4c0cb299fef1eb80f0b9f0b9449159cc84f1c35f	Merge pull request #62 from hyeoneedyou/develop Deploy
+2020-10-23T15:26:20Z	66b732edc1240e6d9100cfb3b6c5f338d3dfaf22	https://github.com/shinkeonkim/lotteng/commit/66b732edc1240e6d9100cfb3b6c5f338d3dfaf22	Merge pull request #61 from shinkeonkim/feature_password_set feat: password set page
+2020-10-23T15:25:47Z	f747dffa718df248fdf8a675c9e6985099fe4e89	https://github.com/shinkeonkim/lotteng/commit/f747dffa718df248fdf8a675c9e6985099fe4e89	feat: password set page
+2020-10-23T15:07:44Z	e349b8e8e9944c672764023fbe75e822a8e45397	https://github.com/shinkeonkim/lotteng/commit/e349b8e8e9944c672764023fbe75e822a8e45397	Merge branch 'master' into develop
+2020-10-23T15:02:58Z	6a4d27305884b8c2c439a12523cbbae4af2b1eb7	https://github.com/shinkeonkim/lotteng/commit/6a4d27305884b8c2c439a12523cbbae4af2b1eb7	Merge pull request #59 from hyeoneedyou/develop Deploy
+2020-10-23T15:02:21Z	ddd4a00bfc718e2ab3e3544f1cbe01d8fb1623ce	https://github.com/shinkeonkim/lotteng/commit/ddd4a00bfc718e2ab3e3544f1cbe01d8fb1623ce	Merge pull request #58 from shinkeonkim/develop fix: card 배치, nav바 연결
+2020-10-23T15:01:37Z	973c980f4660a9089360ea248094c5c2b53a1486	https://github.com/shinkeonkim/lotteng/commit/973c980f4660a9089360ea248094c5c2b53a1486	Merge branch 'hotfix_design' into develop
+2020-10-23T15:01:16Z	e3049fea0b45332fc296c79bf3c23d51d819ab3b	https://github.com/shinkeonkim/lotteng/commit/e3049fea0b45332fc296c79bf3c23d51d819ab3b	fix: card 배치, nav바 연결
+2020-10-23T13:43:50Z	d0c9eba3baafbb10bc28cce0516d3b3e5fdaaa42	https://github.com/shinkeonkim/lotteng/commit/d0c9eba3baafbb10bc28cce0516d3b3e5fdaaa42	Merge pull request #57 from hyeoneedyou/develop Deploy
+2020-10-23T13:43:24Z	af1e46c73d5fd3b39fde7471f17d55c2099affa0	https://github.com/shinkeonkim/lotteng/commit/af1e46c73d5fd3b39fde7471f17d55c2099affa0	Merge pull request #56 from shinkeonkim/hotfix_design fix: css cash issue, shopping cart no img issue
+2020-10-23T13:42:52Z	f99dc324675c1980cad5a6d988e3684a2659d23a	https://github.com/shinkeonkim/lotteng/commit/f99dc324675c1980cad5a6d988e3684a2659d23a	fix: css cash issue, shopping cart no img issue
+2020-10-23T13:32:42Z	f2e1b4ddb9f068a513f4f0474c2d76fff1360d23	https://github.com/shinkeonkim/lotteng/commit/f2e1b4ddb9f068a513f4f0474c2d76fff1360d23	Merge pull request #55 from hyeoneedyou/develop Deploy
+2020-10-23T13:32:15Z	a8fdb725d2cecd273ac41185bc39968a1357ea7b	https://github.com/shinkeonkim/lotteng/commit/a8fdb725d2cecd273ac41185bc39968a1357ea7b	Merge pull request #54 from shinkeonkim/hotfix_detail fix: detail
+2020-10-23T13:30:57Z	088d47c1a5a615a7760a830460f67bb5bc4573de	https://github.com/shinkeonkim/lotteng/commit/088d47c1a5a615a7760a830460f67bb5bc4573de	feat: 날짜 형식 변경
+2020-10-23T13:30:00Z	967343b2644a76b56f115f0b1b5d6095934dff07	https://github.com/shinkeonkim/lotteng/commit/967343b2644a76b56f115f0b1b5d6095934dff07	feat: 날짜 형식 변경
+2020-10-23T13:10:31Z	541c1a47996b41a02910e6ef97774eb1245dad38	https://github.com/shinkeonkim/lotteng/commit/541c1a47996b41a02910e6ef97774eb1245dad38	feat: card img, font size down
+2020-10-23T12:41:56Z	352b1418690bc9fd4f24d8cc8895f380b89f79d7	https://github.com/shinkeonkim/lotteng/commit/352b1418690bc9fd4f24d8cc8895f380b89f79d7	Merge pull request #53 from shinkeonkim/hotfix_detail feat: detail 페이지 숫자 3자리 구분 기호, 디자인 변경
+2020-10-23T12:41:13Z	3e45902578eb577dd23f747b075ffe7bf6d94fda	https://github.com/shinkeonkim/lotteng/commit/3e45902578eb577dd23f747b075ffe7bf6d94fda	feat: detail 페이지 숫자 3자리 구분 기호, 디자인 변경
+2020-10-23T10:15:23Z	6defda65936845cb8822b98153ca2837f4f31fc9	https://github.com/shinkeonkim/lotteng/commit/6defda65936845cb8822b98153ca2837f4f31fc9	Merge pull request #52 from hyeoneedyou/develop Deploy
+2020-10-23T10:13:52Z	8a950957230234c62d4cbd96de3c880cd86cb43b	https://github.com/shinkeonkim/lotteng/commit/8a950957230234c62d4cbd96de3c880cd86cb43b	Merge pull request #50 from shinkeonkim/feature_purchase_process Feature purchase process
+2020-10-23T10:13:43Z	87f14c8a4d6b0ddfde182cb2c821530c5fcf7a11	https://github.com/shinkeonkim/lotteng/commit/87f14c8a4d6b0ddfde182cb2c821530c5fcf7a11	Merge pull request #51 from shinkeonkim/fix_product_detail fix: img width
+2020-10-23T10:12:57Z	ddb2a4c151205afae3c34681530025de02e4e505	https://github.com/shinkeonkim/lotteng/commit/ddb2a4c151205afae3c34681530025de02e4e505	fix: img width
+2020-10-23T10:11:41Z	47ab04c5e51621d3b1e4dd14c0c56bf66b887be4	https://github.com/shinkeonkim/lotteng/commit/47ab04c5e51621d3b1e4dd14c0c56bf66b887be4	feat: 제품 페이지 구매 프로세스
+2020-10-23T10:01:06Z	280198b2d996c2d64d401dc243b50aec7b04a449	https://github.com/shinkeonkim/lotteng/commit/280198b2d996c2d64d401dc243b50aec7b04a449	feat: 장바구니를 통한 결제 프로세스
+2020-10-23T09:31:59Z	fdaceb22f0d7e9c356bff689502bbe6dbc7ebb76	https://github.com/shinkeonkim/lotteng/commit/fdaceb22f0d7e9c356bff689502bbe6dbc7ebb76	feat: 결제 전반적인 디자인, 재고 체크 프로세스
+2020-10-23T06:24:19Z	731152303775dd069d0f3558f6bbea7b412e8d9f	https://github.com/shinkeonkim/lotteng/commit/731152303775dd069d0f3558f6bbea7b412e8d9f	Merge pull request #49 from hyeoneedyou/develop Deploy
+2020-10-23T06:23:58Z	bc513bbe654a6ef9107c63e16ca5ed3f25ab5fd4	https://github.com/shinkeonkim/lotteng/commit/bc513bbe654a6ef9107c63e16ca5ed3f25ab5fd4	Merge pull request #48 from shinkeonkim/hotfix_detail fix : detail markdown
+2020-10-23T06:23:10Z	fdf590d2663eca935536ca6aa7c42c23c897ef9a	https://github.com/shinkeonkim/lotteng/commit/fdf590d2663eca935536ca6aa7c42c23c897ef9a	fix : detail markdown
+2020-10-23T05:16:34Z	5a548c7b5c6476261e80d8a5df7ad70987d77f16	https://github.com/shinkeonkim/lotteng/commit/5a548c7b5c6476261e80d8a5df7ad70987d77f16	Merge pull request #47 from hyeoneedyou/develop Deploy
+2020-10-23T05:15:59Z	9877b92f47d40e114b59db801301bca5926935c8	https://github.com/shinkeonkim/lotteng/commit/9877b92f47d40e114b59db801301bca5926935c8	Merge pull request #46 from shinkeonkim/develop fix: 필터 초기 상태에 all 로 설정
+2020-10-23T05:15:10Z	25cbd98198e718ec2dd4619d6e064acd018bf193	https://github.com/shinkeonkim/lotteng/commit/25cbd98198e718ec2dd4619d6e064acd018bf193	Merge branch 'feature_filter' into develop
+2020-10-23T05:14:07Z	ff3d96a4c2874bcaadd50b029e75f094cd54d8b5	https://github.com/shinkeonkim/lotteng/commit/ff3d96a4c2874bcaadd50b029e75f094cd54d8b5	fix: 초기 상태에 all 로 설정
+2020-10-23T05:07:29Z	a6e2f3dfe13b5577ed81325c8efb952fdce4e1dd	https://github.com/shinkeonkim/lotteng/commit/a6e2f3dfe13b5577ed81325c8efb952fdce4e1dd	Merge pull request #45 from hyeoneedyou/develop Deploy
+2020-10-23T04:58:52Z	3622ba3f6d05904468814509d4948d2c4742f3aa	https://github.com/shinkeonkim/lotteng/commit/3622ba3f6d05904468814509d4948d2c4742f3aa	Merge pull request #44 from shinkeonkim/feature_filter feat: 필터 다중 선택 기능 추가
+2020-10-23T04:58:22Z	b4998fea6595dde7bae9185ad1d8b49b1e793b45	https://github.com/shinkeonkim/lotteng/commit/b4998fea6595dde7bae9185ad1d8b49b1e793b45	feat: 필터 다중 선택 기능 추가
+2020-10-22T16:19:43Z	e9f6eb7d1660fa30ddb6e353ba6f31efd6e97e38	https://github.com/shinkeonkim/lotteng/commit/e9f6eb7d1660fa30ddb6e353ba6f31efd6e97e38	Merge pull request #43 from hyeoneedyou/develop Deploy
+2020-10-22T16:19:20Z	cc7468a467a3622c90de5579ebfc26cc6224f3da	https://github.com/shinkeonkim/lotteng/commit/cc7468a467a3622c90de5579ebfc26cc6224f3da	Merge pull request #42 from shinkeonkim/feature_filter feat: reload filter
+2020-10-22T16:01:43Z	ec2919f19040d93316e16e7cd7de2efb9ba4fb2b	https://github.com/shinkeonkim/lotteng/commit/ec2919f19040d93316e16e7cd7de2efb9ba4fb2b	feat: relaod filter 기능
+2020-10-22T13:45:20Z	1696e6b67eb0d065cfdf761f0685476a98d6af83	https://github.com/shinkeonkim/lotteng/commit/1696e6b67eb0d065cfdf761f0685476a98d6af83	Merge branch 'develop' of https://github.com/hyeoneedyou/lotteng into develop
+2020-10-22T13:44:42Z	65ae33e3d4b7ecc1c2f500068bc0ea5d6c9dec10	https://github.com/shinkeonkim/lotteng/commit/65ae33e3d4b7ecc1c2f500068bc0ea5d6c9dec10	Merge branch 'master' into develop
+2020-10-22T13:43:09Z	617ca658706a0b747b90fc9800fff6390f4d0281	https://github.com/shinkeonkim/lotteng/commit/617ca658706a0b747b90fc9800fff6390f4d0281	Merge remote-tracking branch 'upstream/master' into develop
+2020-10-22T12:51:21Z	4bc68cd92099703daeeb452288d76151ea21ea3d	https://github.com/shinkeonkim/lotteng/commit/4bc68cd92099703daeeb452288d76151ea21ea3d	Merge pull request #41 from hyeoneedyou/develop Deploy
+2020-10-22T12:50:36Z	3e806d852b862b839f9028533040511d2b4a1bd8	https://github.com/shinkeonkim/lotteng/commit/3e806d852b862b839f9028533040511d2b4a1bd8	Merge pull request #39 from shinkeonkim/feature_right_nav feat: right nav 수정
+2020-10-22T12:50:22Z	9cf46f5dde9a0a49cf8ee26e8ca0d9d47e1776ec	https://github.com/shinkeonkim/lotteng/commit/9cf46f5dde9a0a49cf8ee26e8ca0d9d47e1776ec	Merge pull request #40 from shinkeonkim/feature_team feat: team info
+2020-10-22T12:49:48Z	5b246d79e874549a03184dde27de019132c36ae9	https://github.com/shinkeonkim/lotteng/commit/5b246d79e874549a03184dde27de019132c36ae9	feat: team info
+2020-10-22T10:49:12Z	d18a86e4e39141b380bf31573bfe3776fa05bbc8	https://github.com/shinkeonkim/lotteng/commit/d18a86e4e39141b380bf31573bfe3776fa05bbc8	feat: right nav 수정
+2020-10-22T10:33:23Z	9e0468e7e3faf4e305ce23cae16cc5a6d2e6fd3f	https://github.com/shinkeonkim/lotteng/commit/9e0468e7e3faf4e305ce23cae16cc5a6d2e6fd3f	Merge pull request #38 from hyeoneedyou/develop Deploy
+2020-10-22T10:09:02Z	b4a225b285041d829fe8be0a89950b11ea8ba571	https://github.com/shinkeonkim/lotteng/commit/b4a225b285041d829fe8be0a89950b11ea8ba571	Merge pull request #37 from shinkeonkim/feature_shoppingcart_cancel feat: 장바구니 상품 제거 기능 추가
+2020-10-22T10:08:50Z	5324a4b583e4cd197249d98c740fbd681f16e6f3	https://github.com/shinkeonkim/lotteng/commit/5324a4b583e4cd197249d98c740fbd681f16e6f3	Merge pull request #36 from shinkeonkim/feature_customer_page feat: 인증번호 페이지 디자인 + 연결
+2020-10-22T10:06:24Z	0dcdd5ff17e8cabf717353f27f398379ddbf1364	https://github.com/shinkeonkim/lotteng/commit/0dcdd5ff17e8cabf717353f27f398379ddbf1364	feat: 장바구니 상품 제거 기능 추가
+2020-10-22T09:41:22Z	089a2436ec1a43424ff5c9de021cd4889b4dd7b7	https://github.com/shinkeonkim/lotteng/commit/089a2436ec1a43424ff5c9de021cd4889b4dd7b7	feat: 인증번호 페이지 디자인 + 연결
+2020-10-22T08:26:19Z	e1fdd472e37152c9bd666bcbed41e4706e82de61	https://github.com/shinkeonkim/lotteng/commit/e1fdd472e37152c9bd666bcbed41e4706e82de61	Merge pull request #35 from hyeoneedyou/develop Deploy
+2020-10-22T08:25:49Z	817b8babdc5b49bea686ea5c3a8f40b77d436295	https://github.com/shinkeonkim/lotteng/commit/817b8babdc5b49bea686ea5c3a8f40b77d436295	Merge pull request #30 from shinkeonkim/feature_shoppingcart feat: shopping cart 프론트, 백 연결
+2020-10-22T08:25:38Z	6474edb5d9f08e1bcb30fb304927d431c8d923c5	https://github.com/shinkeonkim/lotteng/commit/6474edb5d9f08e1bcb30fb304927d431c8d923c5	Merge branch 'develop' into feature_shoppingcart
+2020-10-22T08:24:49Z	34c4bacb3ff57e27c1e5ca2b6fc1094809fc9a68	https://github.com/shinkeonkim/lotteng/commit/34c4bacb3ff57e27c1e5ca2b6fc1094809fc9a68	Merge pull request #31 from shinkeonkim/feature_purchase_auth feat: auth number model 생성
+2020-10-22T06:03:17Z	76eb53d6752db008546c8afedff6d0b2d8e82448	https://github.com/shinkeonkim/lotteng/commit/76eb53d6752db008546c8afedff6d0b2d8e82448	fix: map 연결
+2020-10-22T03:53:22Z	98e33f2d2698a7f108350dfe5768b6ccba6e8f26	https://github.com/shinkeonkim/lotteng/commit/98e33f2d2698a7f108350dfe5768b6ccba6e8f26	Merge pull request #33 from taeyeon0319/develop feat: 로그아웃, 비밀번호 변경, 회원가입 페이지 템플릿 수정
+2020-10-21T19:37:59Z	6833813af804f23eacb4d9eacd0ab1f7a80b7d32	https://github.com/shinkeonkim/lotteng/commit/6833813af804f23eacb4d9eacd0ab1f7a80b7d32	Merge pull request #32 from hyeoneedyou/develop Deploy
+2020-10-21T19:31:46Z	5d4d1c8bad41d1a1466a8b8e2ebc9695cdbf8952	https://github.com/shinkeonkim/lotteng/commit/5d4d1c8bad41d1a1466a8b8e2ebc9695cdbf8952	feat: auth number model 생성
+2020-10-21T19:17:22Z	8cdc416b7a679bca7e02080adde503c1578e3f87	https://github.com/shinkeonkim/lotteng/commit/8cdc416b7a679bca7e02080adde503c1578e3f87	feat: search 페이지에도 ajax 코드 적용
+2020-10-21T19:12:03Z	0ef3a35b9ff50f9ad99c33fc71e3a15b3f3b287c	https://github.com/shinkeonkim/lotteng/commit/0ef3a35b9ff50f9ad99c33fc71e3a15b3f3b287c	feat: shopping car 목록상의 버튼 ajax 연동
+2020-10-21T18:55:56Z	21309a2e54ee395cbe6d6c8717e4bd8d5c44044c	https://github.com/shinkeonkim/lotteng/commit/21309a2e54ee395cbe6d6c8717e4bd8d5c44044c	feat: shopping cart list front
+2020-10-21T16:48:26Z	9f4300fcb6d4ca8f4b060e586a1f05b90b59b7d0	https://github.com/shinkeonkim/lotteng/commit/9f4300fcb6d4ca8f4b060e586a1f05b90b59b7d0	Merge pull request #29 from shinkeonkim/feature_model_setting feat: company, shop initial data
+2020-10-21T16:43:35Z	87b75f88bd3cf25035aa2e78f0c78c9cb562e6ca	https://github.com/shinkeonkim/lotteng/commit/87b75f88bd3cf25035aa2e78f0c78c9cb562e6ca	feat: company, shop initial data
+2020-10-21T15:50:44Z	f370fbc30372e51051af23c809bd009898f68d62	https://github.com/shinkeonkim/lotteng/commit/f370fbc30372e51051af23c809bd009898f68d62	Merge branch 'master' into develop
+2020-10-21T15:50:09Z	9a7bf812db3c64698e8ebe667dfefc7dbbb3f48b	https://github.com/shinkeonkim/lotteng/commit/9a7bf812db3c64698e8ebe667dfefc7dbbb3f48b	Merge branch 'develop' of https://github.com/hyeoneedyou/lotteng into develop
+2020-10-21T15:43:34Z	349852da2d86d719acc89cbca63fa38cd928e491	https://github.com/shinkeonkim/lotteng/commit/349852da2d86d719acc89cbca63fa38cd928e491	Merge pull request #26 from hehahihang/feature_map feat : map
+2020-10-21T09:56:53Z	9b185129ec190b9b2646cd1e351b2c53e6eb4d22	https://github.com/shinkeonkim/lotteng/commit/9b185129ec190b9b2646cd1e351b2c53e6eb4d22	fix: deploy static setting
+2020-10-21T07:03:12Z	9963da692086f8e7368bb6086145085743ebc9ac	https://github.com/shinkeonkim/lotteng/commit/9963da692086f8e7368bb6086145085743ebc9ac	Merge pull request #28 from hyeoneedyou/develop feat: deploy setting
+2020-10-21T07:02:31Z	7367a1886452e9a3f054eb09b81d7f3b9c198033	https://github.com/shinkeonkim/lotteng/commit/7367a1886452e9a3f054eb09b81d7f3b9c198033	Merge pull request #27 from shinkeonkim/develop feat: deploy setting
+2020-10-21T07:01:02Z	980bbdf670cdfb259d89ec45d0679d097d8a3592	https://github.com/shinkeonkim/lotteng/commit/980bbdf670cdfb259d89ec45d0679d097d8a3592	Merge branch 'feature_deploy_setting' into develop
+2020-10-21T07:00:47Z	c19794bfaf8d1891c40e25976b1c8716654570dc	https://github.com/shinkeonkim/lotteng/commit/c19794bfaf8d1891c40e25976b1c8716654570dc	feat: deploy setting
+2020-10-21T06:37:45Z	4a5054a40dfa0d8536f9c3f55739e1347dc0c85e	https://github.com/shinkeonkim/lotteng/commit/4a5054a40dfa0d8536f9c3f55739e1347dc0c85e	Merge branch 'develop'
+2020-10-21T06:36:46Z	f0426dcbd004a33d5d7a6ffc06d225d616e17d5f	https://github.com/shinkeonkim/lotteng/commit/f0426dcbd004a33d5d7a6ffc06d225d616e17d5f	Merge branch 'master' of https://github.com/hyeoneedyou/lotteng into develop
+2020-10-20T04:17:49Z	9d27896430340aece6135c8ce09bddf308aee5ab	https://github.com/shinkeonkim/lotteng/commit/9d27896430340aece6135c8ce09bddf308aee5ab	Merge pull request #24 from shinkeonkim/feature_purchase_modal feat: 장바구니 버튼 모달, ajax 백엔드 연결
+2020-10-20T04:17:37Z	d446e316f95ea4fd51f6446a7708e0eff90f3c9a	https://github.com/shinkeonkim/lotteng/commit/d446e316f95ea4fd51f6446a7708e0eff90f3c9a	Merge branch 'develop' into feature_purchase_modal
+2020-10-20T04:16:42Z	61fa7d1627141dbd8e83f2b30fbee57d4e57f765	https://github.com/shinkeonkim/lotteng/commit/61fa7d1627141dbd8e83f2b30fbee57d4e57f765	Merge pull request #25 from shinkeonkim/feature_product_price feat: 가격 관련 js 코드 추가
+2020-10-19T12:03:00Z	57dee8a4db6c1de621bf62608b1e5e86f0cb2d6c	https://github.com/shinkeonkim/lotteng/commit/57dee8a4db6c1de621bf62608b1e5e86f0cb2d6c	feat: 가격 숫자 3자리 구분 콤마 삽입
+2020-10-19T11:52:50Z	717b522cb6db60cb268012fb619e5cce0ce933f6	https://github.com/shinkeonkim/lotteng/commit/717b522cb6db60cb268012fb619e5cce0ce933f6	feat: 할인율 계산
+2020-10-19T08:39:13Z	d57407e63589a00fbda3bc4db266360d2b6aaf56	https://github.com/shinkeonkim/lotteng/commit/d57407e63589a00fbda3bc4db266360d2b6aaf56	feat: 디테일 페이지 장바구니 프론트 백엔드 연결
+2020-10-19T07:49:23Z	fc010e202942d1d9889b70a3cdd196b1c539ecfe	https://github.com/shinkeonkim/lotteng/commit/fc010e202942d1d9889b70a3cdd196b1c539ecfe	feat: shopping cart detail page modal
+2020-10-19T04:44:06Z	1affb719bb298388b241f171f62f35bc85891dd3	https://github.com/shinkeonkim/lotteng/commit/1affb719bb298388b241f171f62f35bc85891dd3	Merge pull request #23 from shinkeonkim/feature_product_model feat: product 대표 이미지 represent_image field 추가
+2020-10-19T04:43:59Z	a5ae20c263c75ee2d100546846c4043df0a71913	https://github.com/shinkeonkim/lotteng/commit/a5ae20c263c75ee2d100546846c4043df0a71913	Merge pull request #22 from shinkeonkim/feature_team feat: 팀원 페이지 이미지 적용
+2020-10-18T14:00:42Z	bb7fac845373c5d90acf525af6930dad1466da58	https://github.com/shinkeonkim/lotteng/commit/bb7fac845373c5d90acf525af6930dad1466da58	feat: product 대표 이미지 represent_image field 추가
+2020-10-18T13:12:35Z	1c5f74df856067149ce9fbc5bc6bc2caaff1a46c	https://github.com/shinkeonkim/lotteng/commit/1c5f74df856067149ce9fbc5bc6bc2caaff1a46c	feat: 팀원 페이지 이미지 적용
+2020-10-17T12:17:07Z	83d961c229eb99e8f50bce2ab5d303c601400ad0	https://github.com/shinkeonkim/lotteng/commit/83d961c229eb99e8f50bce2ab5d303c601400ad0	Merge pull request #21 from Awarduuu/feature_search feature search
+2020-10-17T11:55:48Z	ab49d920cc358acb948661c21c0ab1d51ebe012d	https://github.com/shinkeonkim/lotteng/commit/ab49d920cc358acb948661c21c0ab1d51ebe012d	Merge pull request #20 from audwin505/feature_mypage feat : mypage(구매목록) 구현
+2020-10-17T10:50:07Z	6349ddd65821b3d01b7347908b737ed7e43c7df3	https://github.com/shinkeonkim/lotteng/commit/6349ddd65821b3d01b7347908b737ed7e43c7df3	Merge pull request #18 from didwldn3032/feature_shoppingcart feat : shopping cart 구현
+2020-10-17T10:49:59Z	4c3c7c238d662e19921f884f24eeae0b5e2596ed	https://github.com/shinkeonkim/lotteng/commit/4c3c7c238d662e19921f884f24eeae0b5e2596ed	Merge branch 'develop' into feature_shoppingcart
+2020-10-17T10:07:10Z	8b16eba88edd54fdfe2ed45c229195d571eb28b2	https://github.com/shinkeonkim/lotteng/commit/8b16eba88edd54fdfe2ed45c229195d571eb28b2	Merge pull request #17 from shinkeonkim/feature_pagination feat: 페이지네이션 개발
+2020-10-17T10:04:05Z	6e3c0101399198eec9b5ae4f6c2eeeeb3cd22367	https://github.com/shinkeonkim/lotteng/commit/6e3c0101399198eec9b5ae4f6c2eeeeb3cd22367	feat: 페이지네이션 개발
+2020-10-17T07:13:00Z	f1e1be65786139a4d681691f320aff823fa800f7	https://github.com/shinkeonkim/lotteng/commit/f1e1be65786139a4d681691f320aff823fa800f7	Merge pull request #16 from shinkeonkim/hotfix_product_list fix: product list rendering error
+2020-10-17T07:11:45Z	560f5a16587c2529c7918a250c4df7ea79e02495	https://github.com/shinkeonkim/lotteng/commit/560f5a16587c2529c7918a250c4df7ea79e02495	fix: product list rendering error
+2020-10-17T07:00:13Z	dc7f9386ed494b0f6eb1bdffd9cc91e78e24b8b0	https://github.com/shinkeonkim/lotteng/commit/dc7f9386ed494b0f6eb1bdffd9cc91e78e24b8b0	Merge pull request #15 from shinkeonkim/feature_model feature: model
+2020-10-17T06:58:22Z	ff9080a321bc6b474b19cfddbea5a42eb290cd4a	https://github.com/shinkeonkim/lotteng/commit/ff9080a321bc6b474b19cfddbea5a42eb290cd4a	fix: 유통기한 삭제
+2020-10-17T06:57:07Z	78b95beb12a7633d69fa3e09d39a8aa804b2290d	https://github.com/shinkeonkim/lotteng/commit/78b95beb12a7633d69fa3e09d39a8aa804b2290d	feat: 대표 model __str__ 추가
+2020-10-17T06:56:28Z	e86973afb813f30ff9ad693f81a5b4c6828a429a	https://github.com/shinkeonkim/lotteng/commit/e86973afb813f30ff9ad693f81a5b4c6828a429a	feat: md editor
+2020-10-17T05:58:33Z	052b8a4f9b0d153586f2866fcfc0357a1cfd992c	https://github.com/shinkeonkim/lotteng/commit/052b8a4f9b0d153586f2866fcfc0357a1cfd992c	Merge pull request #14 from hyeoneedyou/develop feat: ver.0.1
+2020-10-17T05:53:15Z	a722b6215ab10fefc8a599801808f27e89f48645	https://github.com/shinkeonkim/lotteng/commit/a722b6215ab10fefc8a599801808f27e89f48645	Merge pull request #13 from shinkeonkim/hotfix_main fix: main merge conflict human error
+2020-10-17T05:52:08Z	468a2655fe03cbb193c0c4f148985bc6c92d0b54	https://github.com/shinkeonkim/lotteng/commit/468a2655fe03cbb193c0c4f148985bc6c92d0b54	fix: main merge conflict human error
+2020-10-17T05:37:21Z	42d8f71ec4515d2e15fd0d61a0a01e738dbcfa27	https://github.com/shinkeonkim/lotteng/commit/42d8f71ec4515d2e15fd0d61a0a01e738dbcfa27	Merge pull request #12 from shinkeonkim/feature_team_profile feat: 팀원 프로필 페이지
+2020-10-17T05:37:14Z	4bb3381c9f8b613f323e30a8e62e544fb170fa04	https://github.com/shinkeonkim/lotteng/commit/4bb3381c9f8b613f323e30a8e62e544fb170fa04	Merge branch 'develop' into feature_team_profile
+2020-10-17T05:36:35Z	10249d73b281901eb46f930cedbb3e2c3af09b80	https://github.com/shinkeonkim/lotteng/commit/10249d73b281901eb46f930cedbb3e2c3af09b80	Merge pull request #11 from shinkeonkim/feature_onSaleProduct_detail feature: onSaleProduct Detail Page
+2020-10-17T05:29:59Z	b6a9a8861124a75b769ae02a1c681171d2b4c745	https://github.com/shinkeonkim/lotteng/commit/b6a9a8861124a75b769ae02a1c681171d2b4c745	Merge pull request #10 from shinkeonkim/feature_shoppingCart feat: shopping cart model
+2020-10-16T18:09:53Z	762c5c9cd90153ad760cb5e43e2aec79f23e573e	https://github.com/shinkeonkim/lotteng/commit/762c5c9cd90153ad760cb5e43e2aec79f23e573e	feat: 팀원 프로필 페이지 목업
+2020-10-16T17:46:04Z	4b4a13c15fa42811fea1241748941c6b377096d7	https://github.com/shinkeonkim/lotteng/commit/4b4a13c15fa42811fea1241748941c6b377096d7	feat: 상품 디테일 페이지 디자인 반영
+2020-10-16T16:49:26Z	5db2603d2738cfac96348042dc68a1ca87e0b86c	https://github.com/shinkeonkim/lotteng/commit/5db2603d2738cfac96348042dc68a1ca87e0b86c	feat: arrow 적용
+2020-10-16T16:34:47Z	f345e4f977782026fa496588999170aa000d4ee4	https://github.com/shinkeonkim/lotteng/commit/f345e4f977782026fa496588999170aa000d4ee4	feat: 상품 모델 데이터 렌더링
+2020-10-16T16:08:48Z	28d464ec0957d6121bca2b8dba1c6994f9baa63d	https://github.com/shinkeonkim/lotteng/commit/28d464ec0957d6121bca2b8dba1c6994f9baa63d	fix: card 정보 model에서 가져오기
+2020-10-16T15:58:15Z	d954b34d8e4279115064054dd2d4fa3fdc2d8b7a	https://github.com/shinkeonkim/lotteng/commit/d954b34d8e4279115064054dd2d4fa3fdc2d8b7a	feat: 상품 detail page 기본 틀
+2020-10-16T15:55:56Z	6bcb264a8eb23de4aea0d8b323d7d5fa28454800	https://github.com/shinkeonkim/lotteng/commit/6bcb264a8eb23de4aea0d8b323d7d5fa28454800	feat: product card detail 페이지 연결
+2020-10-16T15:52:31Z	728767e52bdcfb00e22c4c8211fff4339f9a4e93	https://github.com/shinkeonkim/lotteng/commit/728767e52bdcfb00e22c4c8211fff4339f9a4e93	fix: main 화면의 product list 불러오는 방식 개선
+2020-10-15T16:38:00Z	2c0fa721f05afe32f04a5295bca0b409f98bc8dd	https://github.com/shinkeonkim/lotteng/commit/2c0fa721f05afe32f04a5295bca0b409f98bc8dd	Merge pull request #8 from shinkeonkim/hotfix_model fix: onSaleProduct shop column
+2020-10-15T16:37:46Z	f2badca23c2f11fe9e7a5d9f193b9815e3edf537	https://github.com/shinkeonkim/lotteng/commit/f2badca23c2f11fe9e7a5d9f193b9815e3edf537	Merge pull request #7 from shinkeonkim/feature_nav feat: nav
+2020-10-15T16:36:53Z	cd2b9c78fdc6c20355a68e370a517a761125d260	https://github.com/shinkeonkim/lotteng/commit/cd2b9c78fdc6c20355a68e370a517a761125d260	feat: shopping cart model
+2020-10-15T15:13:42Z	5b398c7ed7c17d44aafbcf64fae40e9661967a2e	https://github.com/shinkeonkim/lotteng/commit/5b398c7ed7c17d44aafbcf64fae40e9661967a2e	fix: onSaleProduct shop column
+2020-10-15T15:04:13Z	153bffa95df168aa7d6505657b95ffdba37ba17e	https://github.com/shinkeonkim/lotteng/commit/153bffa95df168aa7d6505657b95ffdba37ba17e	feat: nav 바 디자인 변경, right side nav바 추가
+2020-10-15T15:03:49Z	056a50669aa8f50dcd9d8a064adb41f7e4a16d2c	https://github.com/shinkeonkim/lotteng/commit/056a50669aa8f50dcd9d8a064adb41f7e4a16d2c	fix: 회원 정보 관련 링크 main에서 제거
+2020-10-15T15:03:21Z	34beb44d08bacf9bdaff6ad7316cba72331a3f06	https://github.com/shinkeonkim/lotteng/commit/34beb44d08bacf9bdaff6ad7316cba72331a3f06	feat: jquery 추가
+2020-10-14T14:30:21Z	3dc05474067a8bcc0d550ee2290d5a60f1782451	https://github.com/shinkeonkim/lotteng/commit/3dc05474067a8bcc0d550ee2290d5a60f1782451	Merge pull request #6 from shinkeonkim/feature_footer feat: footer
+2020-10-14T14:29:39Z	179d65e5fca7c4fdf0eb39cd670622d58b4d13ce	https://github.com/shinkeonkim/lotteng/commit/179d65e5fca7c4fdf0eb39cd670622d58b4d13ce	Merge pull request #5 from shinkeonkim/develop feat: main 화면 디자인
+2020-10-14T14:27:16Z	d6c38d1f3e15f206cd03f179f2b1719865472078	https://github.com/shinkeonkim/lotteng/commit/d6c38d1f3e15f206cd03f179f2b1719865472078	Merge branch 'develop' of https://github.com/hyeoneedyou/lotteng into develop
+2020-10-14T13:02:28Z	79e357747794f24f306668ba0fbad207c1b93ff9	https://github.com/shinkeonkim/lotteng/commit/79e357747794f24f306668ba0fbad207c1b93ff9	feat: footer
+2020-10-14T12:08:50Z	69b942e0f239576c05b6c3ad5cf79d41a97fb9a4	https://github.com/shinkeonkim/lotteng/commit/69b942e0f239576c05b6c3ad5cf79d41a97fb9a4	Merge branch 'feature_home' into develop
+2020-10-14T12:06:47Z	3dde2ebe6db595af07413da1149772b6f5388ef9	https://github.com/shinkeonkim/lotteng/commit/3dde2ebe6db595af07413da1149772b6f5388ef9	feat: product card, card list mockup design
+2020-10-14T07:47:08Z	447e384dc6d4fde7ff7e72235c556f45bc7166f5	https://github.com/shinkeonkim/lotteng/commit/447e384dc6d4fde7ff7e72235c556f45bc7166f5	feat: favicon 추가
+2020-10-14T07:27:24Z	3e97a04c7ffdf010d3745fe886fabd1429be5f71	https://github.com/shinkeonkim/lotteng/commit/3e97a04c7ffdf010d3745fe886fabd1429be5f71	feat: nav bar 기본 디자인
+2020-10-12T09:06:47Z	6c92414227f84802995b6e73534b47f9a36527aa	https://github.com/shinkeonkim/lotteng/commit/6c92414227f84802995b6e73534b47f9a36527aa	Merge pull request #4 from shinkeonkim/develop feat: onSaleProductView
+2020-10-11T09:29:44Z	7d048fcccca17fbc5b8e5dd9d5e1c7c832de9065	https://github.com/shinkeonkim/lotteng/commit/7d048fcccca17fbc5b8e5dd9d5e1c7c832de9065	Merge branch 'feature_onSaleProductView' into develop
+2020-10-11T09:29:23Z	5ad6428f6f326754f3482b03bbf904c68055bd45	https://github.com/shinkeonkim/lotteng/commit/5ad6428f6f326754f3482b03bbf904c68055bd45	fix: DEBUG mode for dev
+2020-10-11T09:28:56Z	b2d3af605052697eb5ab488a9469adadd56d08d5	https://github.com/shinkeonkim/lotteng/commit/b2d3af605052697eb5ab488a9469adadd56d08d5	feat: onSaleProduct detail comment
+2020-10-11T09:26:37Z	a3ffc810027970b45ea298998ffd993c14441248	https://github.com/shinkeonkim/lotteng/commit/a3ffc810027970b45ea298998ffd993c14441248	feat: onSaleProduct detail
+2020-10-11T09:26:15Z	6fc4f08380529a6c37a43334b4c599d98721896c	https://github.com/shinkeonkim/lotteng/commit/6fc4f08380529a6c37a43334b4c599d98721896c	feat: onSaleProduct 임시 template
+2020-10-11T09:16:03Z	a3341b7d794d13c6c7e55265d1415f5256a97ecf	https://github.com/shinkeonkim/lotteng/commit/a3341b7d794d13c6c7e55265d1415f5256a97ecf	feat: detail page urls setting
+2020-10-11T09:15:14Z	ee417f7b5a198e0d456fd7ae1d196c4224309348	https://github.com/shinkeonkim/lotteng/commit/ee417f7b5a198e0d456fd7ae1d196c4224309348	feat: 404 page setting
+2020-10-11T09:02:21Z	f1bf5f18f9afb8f965b2f66564461f491e32ab2b	https://github.com/shinkeonkim/lotteng/commit/f1bf5f18f9afb8f965b2f66564461f491e32ab2b	feat: onSaleProduct List View
+2020-10-11T08:23:00Z	9c1e38312c7ea5a181427dc5c61fdcac1a49e2bb	https://github.com/shinkeonkim/lotteng/commit/9c1e38312c7ea5a181427dc5c61fdcac1a49e2bb	Merge pull request #3 from shinkeonkim/develop fix: pip setting
+2020-10-11T08:21:55Z	94990c012cc07ef4cf3beece3e1ad3c2e719a4a2	https://github.com/shinkeonkim/lotteng/commit/94990c012cc07ef4cf3beece3e1ad3c2e719a4a2	Merge branch 'hotfix_pip_setting' into develop
+2020-10-11T08:21:33Z	e504965dff96d6c2d31f0915964a8f46a70e2819	https://github.com/shinkeonkim/lotteng/commit/e504965dff96d6c2d31f0915964a8f46a70e2819	fix: pip requirements.txt
+2020-10-10T13:51:03Z	95d2a047d498de7764cd9d1167cf5ddeba8caed0	https://github.com/shinkeonkim/lotteng/commit/95d2a047d498de7764cd9d1167cf5ddeba8caed0	Merge pull request #1 from taeyeon0319/develop feat : 결제완료페이지 구현
+2020-10-10T13:50:51Z	b9c8e083db62ce71ea488f3d6f90f6dfbc84b504	https://github.com/shinkeonkim/lotteng/commit/b9c8e083db62ce71ea488f3d6f90f6dfbc84b504	Merge branch 'develop' into develop
+2020-10-10T13:34:56Z	bdf403dbe5bf6fc241c38f7cbe7e8f23954c8c12	https://github.com/shinkeonkim/lotteng/commit/bdf403dbe5bf6fc241c38f7cbe7e8f23954c8c12	Merge pull request #2 from didwldn3032/develop feat : 로그인/로그아웃 구현
+2020-10-06T08:32:32Z	d3f25ea94f51a4a8ff5dc59387235ace1e5f785d	https://github.com/shinkeonkim/lotteng/commit/d3f25ea94f51a4a8ff5dc59387235ace1e5f785d	Merge branch 'feature_main' into develop
+2020-10-06T08:32:11Z	35c0599866939043245900b7482170ed8d015dad	https://github.com/shinkeonkim/lotteng/commit/35c0599866939043245900b7482170ed8d015dad	fix: nav 이미지 임시 제거
+2020-10-06T08:27:09Z	b42c86d01bcdf2547142953abdaf2259338accf2	https://github.com/shinkeonkim/lotteng/commit/b42c86d01bcdf2547142953abdaf2259338accf2	Merge branch 'hotfix_admin' into develop
+2020-10-06T08:26:55Z	0da5c34d5164c1a181562efd500dd181952621b0	https://github.com/shinkeonkim/lotteng/commit/0da5c34d5164c1a181562efd500dd181952621b0	fix: admin query content
+2020-10-06T08:25:06Z	cbbee77f3e81304e0ab6de9c60177c0f122525a4	https://github.com/shinkeonkim/lotteng/commit/cbbee77f3e81304e0ab6de9c60177c0f122525a4	Merge branch 'feature_main' into develop
+2020-10-04T07:07:57Z	6e4a0c03db45cc65065892f2bf055a0bc2373ee6	https://github.com/shinkeonkim/lotteng/commit/6e4a0c03db45cc65065892f2bf055a0bc2373ee6	feat: main template 적용 WIP
+2020-09-30T10:52:48Z	63c815ed4f09fd459aa01789e04a7e134606226d	https://github.com/shinkeonkim/lotteng/commit/63c815ed4f09fd459aa01789e04a7e134606226d	Merge branch 'feature_admin' into develop
+2020-09-30T10:52:26Z	6cec78dc0286bd60594111eff98481fced253b4a	https://github.com/shinkeonkim/lotteng/commit/6cec78dc0286bd60594111eff98481fced253b4a	fix: product status msg
+2020-09-30T10:49:14Z	7476d50a03fc2f3fd9f112d4def14a983b5ad055	https://github.com/shinkeonkim/lotteng/commit/7476d50a03fc2f3fd9f112d4def14a983b5ad055	Merge branch 'feature_admin' into develop
+2020-09-30T10:48:57Z	58e01830e8fb06bb9ea648c6e33e31d418ac8755	https://github.com/shinkeonkim/lotteng/commit/58e01830e8fb06bb9ea648c6e33e31d418ac8755	feat: admin filter, product status column
+2020-09-30T10:31:02Z	7c959dd3cff882565192df20c65a1602682455de	https://github.com/shinkeonkim/lotteng/commit/7c959dd3cff882565192df20c65a1602682455de	fix: admin site model register
+2020-09-29T14:22:56Z	114a55b62d8ec34c6307eb2e5ee62f1c2dad1738	https://github.com/shinkeonkim/lotteng/commit/114a55b62d8ec34c6307eb2e5ee62f1c2dad1738	Merge branch 'feature_admin' into develop
+2020-09-29T14:22:47Z	cf13bbc053323cf7bf49258012e270fa7dfb6696	https://github.com/shinkeonkim/lotteng/commit/cf13bbc053323cf7bf49258012e270fa7dfb6696	fix: model issue, admin page setting
+2020-09-29T14:07:49Z	2bd9c0a5a4d2b6f1214275582917ac04c224869b	https://github.com/shinkeonkim/lotteng/commit/2bd9c0a5a4d2b6f1214275582917ac04c224869b	Merge branch 'feature_model' into develop
+2020-09-29T14:07:41Z	c71e49deef67e1cac3898eef64947c6837dd8d7b	https://github.com/shinkeonkim/lotteng/commit/c71e49deef67e1cac3898eef64947c6837dd8d7b	feat: model 초기화
+2020-09-26T08:38:58Z	2ef813525fba2ccbe75b5470702182683d18e762	https://github.com/shinkeonkim/lotteng/commit/2ef813525fba2ccbe75b5470702182683d18e762	docs: Dev Usage
+2020-09-26T08:33:24Z	3e7db38d142adee21474d4a504e1004c42b46773	https://github.com/shinkeonkim/lotteng/commit/3e7db38d142adee21474d4a504e1004c42b46773	feat: project initial setting

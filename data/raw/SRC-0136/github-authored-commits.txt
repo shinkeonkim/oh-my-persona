@@ -1,0 +1,10 @@
+GitHub repository: https://github.com/kokoa-lab/cors-port
+Author account: shinkeonkim
+
+2026-08-28T07:54:12Z	f2ebadd62ddecb0e9c8f4d84b018555c28e7390b	https://github.com/kokoa-lab/cors-port/commit/f2ebadd62ddecb0e9c8f4d84b018555c28e7390b	Merge pull request #3 from kokoa-lab/project-lens/add-ads-txt-0057a075 chore(ads): add ads.txt
+2026-08-28T07:54:03Z	1b363e13441ccdfbc3056a6da07a7ec91855cefd	https://github.com/kokoa-lab/cors-port/commit/1b363e13441ccdfbc3056a6da07a7ec91855cefd	Merge pull request #2 from kokoa-lab/docs/add-readme docs: add README
+2026-08-28T07:00:56Z	5f442ad526ca4413f0d081dd2a9972e041361f44	https://github.com/kokoa-lab/cors-port/commit/5f442ad526ca4413f0d081dd2a9972e041361f44	chore(ads): add ads.txt project-lens automated commit.
+2026-08-28T03:53:44Z	47546c171167b7780952b4a32344bafd1d419236	https://github.com/kokoa-lab/cors-port/commit/47546c171167b7780952b4a32344bafd1d419236	Merge pull request #1 from kokoa-lab/project-lens/add-gtm-tracking-84 chore(tracking): GTM 스니펫 추가 (GTM-5JVH96GB)
+2026-08-27T16:54:01Z	bb617a5a47d9efc6e1622148463d9c8b0105d35c	https://github.com/kokoa-lab/cors-port/commit/bb617a5a47d9efc6e1622148463d9c8b0105d35c	chore(tracking): add GTM snippet (GTM-5JVH96GB) project-lens automated commit.
+2026-03-09T06:54:49Z	8a1b7b40c7b33cc2fc8a3af2500163ede8025931	https://github.com/kokoa-lab/cors-port/commit/8a1b7b40c7b33cc2fc8a3af2500163ede8025931	fix: 프로젝트명 변경
+2026-03-09T06:53:08Z	90677e8b12596be6c34ec56cbc789e6ee45ceed1	https://github.com/kokoa-lab/cors-port/commit/90677e8b12596be6c34ec56cbc789e6ee45ceed1	feat: initial project settings by lovable

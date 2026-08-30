@@ -1,0 +1,5 @@
+GitHub repository: https://github.com/kokoa-study-room/terraform-associate-004-study-notes
+Pull request author: shinkeonkim
+
+2026-08-28T07:05:05Z	#2	MERGED	https://github.com/kokoa-study-room/terraform-associate-004-study-notes/pull/2	chore(ads): add ads.txt	merged=2026-08-28T07:59:17Z	closed=2026-08-28T07:59:17Z	commits=1	files=1	+1/-0	project-lens가 자동 생성한 PR입니다. - public/ads.txt를 추가했습니다. - AdSense 게시자: ca-pub-3060818993817836
+2026-08-27T05:09:07Z	#1	MERGED	https://github.com/kokoa-study-room/terraform-associate-004-study-notes/pull/1	chore(tracking): GTM 스니펫 추가 (GTM-PLLJFF5V)	merged=2026-08-27T08:47:15Z	closed=2026-08-27T08:47:15Z	commits=1	files=1	+6/-0	project-lens가 자동 생성한 PR입니다. - astro.config.mjs에 Starlight head 옵션으로 GTM(GTM-PLLJFF5V) 스크립트를 추가했습니다. - GTM 컨테이너: GTM-PLLJFF5V

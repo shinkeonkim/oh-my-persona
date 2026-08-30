@@ -1,0 +1,6 @@
+GitHub repository: https://github.com/kmu-shinkeonkim/file-proessing-exam-helper
+Author account: shinkeonkim
+
+2025-12-10T12:43:26Z	4cfc18b7d6e4dba7be9d3db1c6fe9e9337226f10	https://github.com/kmu-shinkeonkim/file-proessing-exam-helper/commit/4cfc18b7d6e4dba7be9d3db1c6fe9e9337226f10	feat: C++ 빌드 파일 모두 추가
+2025-11-27T10:17:23Z	d637243dc9e7739e82df9a51c6a2b37892e93b1d	https://github.com/kmu-shinkeonkim/file-proessing-exam-helper/commit/d637243dc9e7739e82df9a51c6a2b37892e93b1d	Create LICENSE
+2025-11-27T10:10:57Z	665d8732b7d3345a473f09a448a4a5a0ea3f21ac	https://github.com/kmu-shinkeonkim/file-proessing-exam-helper/commit/665d8732b7d3345a473f09a448a4a5a0ea3f21ac	feat: initial project

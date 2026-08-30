@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authorization Code 받기 성공!</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .success {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 5px solid #4caf50;
+        }
+        .code {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-family: monospace;
+            word-break: break-all;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .btn:hover {
+            background-color: #357ae8;
+        }
+        .copy-btn {
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .copy-btn:hover {
+            background-color: #f57c00;
+        }
+        pre {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+    <script>
+        function copyCode() {
+            const codeElement = document.getElementById('authCode');
+            navigator.clipboard.writeText(codeElement.textContent);
+            alert('Authorization Code가 클립보드에 복사되었습니다!');
+        }
+
+        function testLogin() {
+            const code = document.getElementById('authCode').textContent;
+            const resultDiv = document.getElementById('result');
+
+            resultDiv.innerHTML = '<p>로그인 API 호출 중...</p>';
+
+            fetch('/api/v1/users/google/login/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ code: code, redirect_uri: "{{ redirect_uri }}" })
+            })
+            .then(response => response.json())
+            .then(data => {
+                resultDiv.innerHTML = '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+                if (data.access) {
+                    resultDiv.innerHTML += '<p style="color: green; font-weight: bold;">✅ 로그인 성공!</p>';
+                }
+            })
+            .catch(error => {
+                resultDiv.innerHTML = '<p style="color: red;">❌ Error: ' + error + '</p>';
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="success">
+            <h2>✅ Authorization Code 받기 성공!</h2>
+            <p>Google OAuth 인증이 성공적으로 완료되었습니다.</p>
+        </div>
+
+        <h3>Authorization Code</h3>
+        <div class="code">
+            <span id="authCode">{{ code }}</span>
+            <button class="copy-btn" onclick="copyCode()">📋 복사</button>
+        </div>
+
+        <h3>API 테스트</h3>
+        <button class="btn" onclick="testLogin()">🚀 로그인 API 테스트</button>
+        <a href="/api/v1/users/google/test/" class="btn">🏠 처음으로</a>
+
+        <h3>테스트 결과</h3>
+        <div id="result" class="code" style="min-height: 100px;">
+            위의 "로그인 API 테스트" 버튼을 클릭하여 API를 테스트해보세요.
+        </div>
+
+        <h3>수동 curl 테스트</h3>
+        <div class="code">
+curl -X POST http://localhost:8000/api/v1/users/google/login/ \
+  -H "Content-Type: application/json" \
+  -d '{"code": "{{ code }}", "redirect_uri": "{{ redirect_uri }}"}'
+        </div>
+
+        <h3>💡 다음 단계</h3>
+        <div class="code" style="background-color: #e8f4fd;">
+            <strong>프론트엔드 통합:</strong><br>
+            1. 위의 Authorization Code를 확인했습니다.<br>
+            2. 실제 앱에서는 이 code를 받아서 백엔드 API로 전송합니다.<br>
+            3. 백엔드는 JWT 토큰을 발급하여 응답합니다.<br>
+            4. 프론트엔드는 받은 JWT 토큰을 저장하고 사용합니다.
+        </div>
+    </div>
+</body>
+</html>

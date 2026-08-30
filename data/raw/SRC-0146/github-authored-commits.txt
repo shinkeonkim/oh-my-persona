@@ -1,0 +1,10 @@
+GitHub repository: https://github.com/kokoa-lab/pattern-type
+Author account: shinkeonkim
+
+2026-08-28T07:56:53Z	ddbf03614e92e17ad7ef67eee1c656e03275480c	https://github.com/kokoa-lab/pattern-type/commit/ddbf03614e92e17ad7ef67eee1c656e03275480c	Merge pull request #2 from kokoa-lab/project-lens/add-ads-txt-f04bab7d chore(ads): add ads.txt
+2026-08-28T07:03:12Z	1824c6b0ddf3e7708d4edf91dea4408fb7fae1fe	https://github.com/kokoa-lab/pattern-type/commit/1824c6b0ddf3e7708d4edf91dea4408fb7fae1fe	chore(ads): add ads.txt project-lens automated commit.
+2026-08-27T16:48:06Z	27619cbf1b723c8d22f1ebb39fecb6aea3163ded	https://github.com/kokoa-lab/pattern-type/commit/27619cbf1b723c8d22f1ebb39fecb6aea3163ded	Merge pull request #1 from kokoa-lab/project-lens/add-gtm-tracking-9 chore(tracking): GTM 스니펫 추가 (GTM-544WKMKX)
+2026-08-27T05:05:35Z	a816402ed180132517796826e4f3303ac634dae9	https://github.com/kokoa-lab/pattern-type/commit/a816402ed180132517796826e4f3303ac634dae9	chore(tracking): add GTM snippet (GTM-544WKMKX) project-lens automated commit.
+2026-03-16T09:06:03Z	85a2e75b0fd5bc4e83840643a470c43393dd674a	https://github.com/kokoa-lab/pattern-type/commit/85a2e75b0fd5bc4e83840643a470c43393dd674a	Update site link in README.md
+2026-03-16T09:03:29Z	f193f5713279cdc59f29cece2ca17df4d8bf417b	https://github.com/kokoa-lab/pattern-type/commit/f193f5713279cdc59f29cece2ca17df4d8bf417b	Initialize README with project overview and setup Add README.md with project details and instructions
+2026-03-09T04:45:37Z	d08c8cb7a9436fa1df8c4c5df9f34b4062823256	https://github.com/kokoa-lab/pattern-type/commit/d08c8cb7a9436fa1df8c4c5df9f34b4062823256	feat: initial project settings by lovable

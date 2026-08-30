@@ -1,0 +1,10 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-economy-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:27:37Z	e2d243298302c334077b7a5610153f2386585c06	https://github.com/kokoa-hobby/minecraft-economy-plugin/commit/e2d243298302c334077b7a5610153f2386585c06	Add README
+2026-07-22T12:22:15Z	b32d1501846af7155b1874fc14d7b05a92fab522	https://github.com/kokoa-hobby/minecraft-economy-plugin/commit/b32d1501846af7155b1874fc14d7b05a92fab522	Add EconomyPlugin main class
+2026-07-22T12:22:15Z	aebbea6b4258534cbaa845608123a97a0825a13f	https://github.com/kokoa-hobby/minecraft-economy-plugin/commit/aebbea6b4258534cbaa845608123a97a0825a13f	Add EconomyApi
+2026-07-22T12:22:14Z	eb8d902510e573de2eb7790803bc55ea2a165038	https://github.com/kokoa-hobby/minecraft-economy-plugin/commit/eb8d902510e573de2eb7790803bc55ea2a165038	Add listeners
+2026-07-22T12:22:14Z	747dadc93ae79c081448d7b701525669faedfa33	https://github.com/kokoa-hobby/minecraft-economy-plugin/commit/747dadc93ae79c081448d7b701525669faedfa33	Add commands
+2026-07-22T12:22:14Z	6efd246ea9f4235cc7a97d21c4135feac5afe651	https://github.com/kokoa-hobby/minecraft-economy-plugin/commit/6efd246ea9f4235cc7a97d21c4135feac5afe651	Add plugin manifest and resources
+2026-07-22T12:22:14Z	b5b39335b3cd805dfbd1e7f8ef09c39118bdf3b1	https://github.com/kokoa-hobby/minecraft-economy-plugin/commit/b5b39335b3cd805dfbd1e7f8ef09c39118bdf3b1	Add Gradle project scaffold

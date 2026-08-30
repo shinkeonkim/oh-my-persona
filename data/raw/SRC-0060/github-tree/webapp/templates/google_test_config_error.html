@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>환경 변수 설정 필요</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .error {
+            background-color: #ffebee;
+            border: 1px solid #f44336;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .code {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 3px;
+            font-family: monospace;
+            margin: 10px 0;
+        }
+        .info {
+            background-color: #e8f4fd;
+            border: 1px solid #4285f4;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        ol {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚠️ 환경 변수 설정이 필요합니다</h1>
+
+        <div class="error">
+            <p><strong>Google OAuth 설정이 완료되지 않았습니다.</strong></p>
+            <p>.env 파일에 Google OAuth 관련 환경변수가 설정되어 있지 않습니다.</p>
+        </div>
+
+        <h2>📝 설정 방법</h2>
+
+        <div class="info">
+            <h3>1. Google Cloud Console에서 OAuth 2.0 클라이언트 ID 생성</h3>
+            <ol>
+                <li><a href="https://console.cloud.google.com/" target="_blank">Google Cloud Console</a>에 접속</li>
+                <li>프로젝트 선택 또는 새 프로젝트 생성</li>
+                <li>좌측 메뉴에서 "API 및 서비스" → "사용자 인증 정보" 선택</li>
+                <li>"사용자 인증 정보 만들기" → "OAuth 2.0 클라이언트 ID" 선택</li>
+                <li>애플리케이션 유형: "웹 애플리케이션" 선택</li>
+                <li>이름 입력 (예: "Joah Backend")</li>
+                <li>승인된 리디렉션 URI 추가:
+                    <div class="code">http://localhost:8000/api/v1/users/google/test/callback/</div>
+                </li>
+                <li>"만들기" 클릭하여 클라이언트 ID와 보안 비밀 확인</li>
+            </ol>
+        </div>
+
+        <div class="info">
+            <h3>2. .env 파일에 환경변수 추가</h3>
+            <p><code>/Users/koa/joah-team/backend/.env</code> 파일에 다음 내용을 추가하세요:</p>
+            <div class="code">
+# Google OAuth Configuration<br>
+GOOGLE_CLIENT_ID=your-google-client-id.apps.googleusercontent.com<br>
+GOOGLE_CLIENT_SECRET=your-google-client-secret<br>
+GOOGLE_CALLBACK_URI=http://localhost:8000/api/v1/users/google/callback/<br>
+GOOGLE_TEST_CALLBACK_URI=http://localhost:8000/api/v1/users/google/test/callback/
+            </div>
+        </div>
+
+        <div class="info">
+            <h3>3. 서버 재시작</h3>
+            <p>환경변수를 추가한 후 Django 개발 서버를 재시작하세요:</p>
+            <div class="code">
+# 현재 서버 중지 (Ctrl+C)<br>
+# 서버 다시 시작<br>
+python manage.py runserver
+            </div>
+        </div>
+
+        <div class="info">
+            <h3>4. OAuth 동의 화면 설정 (필요시)</h3>
+            <p>처음 OAuth 클라이언트를 만드는 경우, OAuth 동의 화면도 설정해야 합니다:</p>
+            <ol>
+                <li>Google Cloud Console → "API 및 서비스" → "OAuth 동의 화면"</li>
+                <li>사용자 유형: "외부" 선택 (테스트용)</li>
+                <li>앱 정보 입력 (앱 이름, 이메일 등)</li>
+                <li>범위(Scope) 추가: email, profile, openid</li>
+                <li>테스트 사용자 추가 (개발 중에는 등록된 사용자만 로그인 가능)</li>
+            </ol>
+        </div>
+
+        <p><a href="/api/v1/users/google/test/">설정 완료 후 다시 시도</a></p>
+
+        <div class="info">
+            <h4>💡 참고</h4>
+            <p>.env.sample 파일을 참고하여 필요한 모든 환경변수를 확인할 수 있습니다.</p>
+        </div>
+    </div>
+</body>
+</html>

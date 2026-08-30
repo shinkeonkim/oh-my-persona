@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/shinkeonkim/flutter_slidable_example
+Author account: shinkeonkim
+
+2021-05-23T10:48:26Z	62334d3aeb40222c91591ac6b63d748a2f126013	https://github.com/shinkeonkim/flutter_slidable_example/commit/62334d3aeb40222c91591ac6b63d748a2f126013	feat: initial contents

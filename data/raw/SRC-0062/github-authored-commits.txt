@@ -1,0 +1,10 @@
+GitHub repository: https://github.com/kkambbaki/.github
+Author account: shinkeonkim
+
+2025-11-14T09:32:26Z	b4c32dd88fef61a05423bb7dcff8d4fac0165a00	https://github.com/kkambbaki/.github/commit/b4c32dd88fef61a05423bb7dcff8d4fac0165a00	Update team member images and links in README
+2025-11-13T12:52:44Z	4fce6e28d1f6f6d9a0eee2d4b70ac216720b7458	https://github.com/kkambbaki/.github/commit/4fce6e28d1f6f6d9a0eee2d4b70ac216720b7458	Update README.md
+2025-11-13T12:50:23Z	9af844266c8a6d0dbacf7090d2f4242845f5c3db	https://github.com/kkambbaki/.github/commit/9af844266c8a6d0dbacf7090d2f4242845f5c3db	Change profile images to use HTML img tags Updated profile images to use HTML img tags with specified dimensions.
+2025-11-13T12:42:20Z	94f2e7f8ded6b56bc7b3814e1bf150c09eacf02d	https://github.com/kkambbaki/.github/commit/94f2e7f8ded6b56bc7b3814e1bf150c09eacf02d	Update README.md
+2025-11-13T12:41:52Z	f93cb80bd09ea61259ff7883797b3ce0a9221368	https://github.com/kkambbaki/.github/commit/f93cb80bd09ea61259ff7883797b3ce0a9221368	Update README.md
+2025-11-13T12:32:49Z	2586b710dc1ca0fc31ae488e37166eb24a24435b	https://github.com/kkambbaki/.github/commit/2586b710dc1ca0fc31ae488e37166eb24a24435b	docs: 문서 최신화
+2025-11-13T11:48:59Z	99ffa73d5fd5ab3ce8bf58484fdb24870f26a7c8	https://github.com/kkambbaki/.github/commit/99ffa73d5fd5ab3ce8bf58484fdb24870f26a7c8	Create README.md

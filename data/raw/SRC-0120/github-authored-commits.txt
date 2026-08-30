@@ -1,0 +1,10 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-party-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:28:47Z	2399098a619ba6dcda815e82eb3a6fca4907e028	https://github.com/kokoa-hobby/minecraft-party-plugin/commit/2399098a619ba6dcda815e82eb3a6fca4907e028	Add README
+2026-07-22T12:22:18Z	4a6a4034be90839ef26562b6fc5bfcdcb390a02f	https://github.com/kokoa-hobby/minecraft-party-plugin/commit/4a6a4034be90839ef26562b6fc5bfcdcb390a02f	Add PartyPlugin main class
+2026-07-22T12:22:18Z	f2732692daf165fc250cab4f9675abd725c3d94b	https://github.com/kokoa-hobby/minecraft-party-plugin/commit/f2732692daf165fc250cab4f9675abd725c3d94b	Add Party
+2026-07-22T12:22:18Z	e880f0dc9f229074b4952774dc8ecf88f9a41539	https://github.com/kokoa-hobby/minecraft-party-plugin/commit/e880f0dc9f229074b4952774dc8ecf88f9a41539	Add listeners
+2026-07-22T12:22:18Z	8290be7b17b42ae98605dbba4482aeb062ba5cd4	https://github.com/kokoa-hobby/minecraft-party-plugin/commit/8290be7b17b42ae98605dbba4482aeb062ba5cd4	Add commands
+2026-07-22T12:22:18Z	f45c00e7d2f3c941458577609d22a545ccbc7cf9	https://github.com/kokoa-hobby/minecraft-party-plugin/commit/f45c00e7d2f3c941458577609d22a545ccbc7cf9	Add plugin manifest and resources
+2026-07-22T12:22:18Z	7f274dac412bbefa56a46b2c344a01ac0cadc720	https://github.com/kokoa-hobby/minecraft-party-plugin/commit/7f274dac412bbefa56a46b2c344a01ac0cadc720	Add Gradle project scaffold

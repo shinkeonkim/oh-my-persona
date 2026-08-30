@@ -1,0 +1,8 @@
+GitHub repository: https://github.com/shinkeonkim/books
+Author account: shinkeonkim
+
+2021-02-18T08:55:20Z	d52ed59fa02f144ef2b7e2731af3289c0c5f670a	https://github.com/shinkeonkim/books/commit/d52ed59fa02f144ef2b7e2731af3289c0c5f670a	퍼펙트 루비 온 레일즈
+2020-04-04T02:59:19Z	356df06721c7581d916ce38466366c9809f76430	https://github.com/shinkeonkim/books/commit/356df06721c7581d916ce38466366c9809f76430	읽고있는 중인 책 - 전공책
+2020-04-01T04:15:53Z	e1be3052aea0d30c28c9faae7e6fbcfce5210962	https://github.com/shinkeonkim/books/commit/e1be3052aea0d30c28c9faae7e6fbcfce5210962	기억에 남는 고등학교 1,2학년 책(1)
+2020-03-29T07:14:39Z	c529cf5d3e0a0c55c89c007c0b08b3ef64eb710d	https://github.com/shinkeonkim/books/commit/c529cf5d3e0a0c55c89c007c0b08b3ef64eb710d	update default template
+2020-03-29T06:56:21Z	7b726db322c01144eaa823a6eaff29bc67a4b0c4	https://github.com/shinkeonkim/books/commit/7b726db322c01144eaa823a6eaff29bc67a4b0c4	Initial commit

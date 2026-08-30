@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-mobdrops-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:28:37Z	ace7b77d5fbb95e46c4c5d6431a1acf1c025c7cb	https://github.com/kokoa-hobby/minecraft-mobdrops-plugin/commit/ace7b77d5fbb95e46c4c5d6431a1acf1c025c7cb	Add README
+2026-07-22T12:22:18Z	27aad9b21afcdd7c09c5daafb99675907960a567	https://github.com/kokoa-hobby/minecraft-mobdrops-plugin/commit/27aad9b21afcdd7c09c5daafb99675907960a567	Add MobDropsPlugin main class
+2026-07-22T12:22:18Z	763606e2983706ba78611f555559b6e1ddf744c5	https://github.com/kokoa-hobby/minecraft-mobdrops-plugin/commit/763606e2983706ba78611f555559b6e1ddf744c5	Add DropEntry
+2026-07-22T12:22:18Z	b034e94d10682f5c23ae53baa38ca12ac2ae2904	https://github.com/kokoa-hobby/minecraft-mobdrops-plugin/commit/b034e94d10682f5c23ae53baa38ca12ac2ae2904	Add listeners
+2026-07-22T12:22:17Z	9636d6ee6bd89960e62a2b741dd311e229bc9398	https://github.com/kokoa-hobby/minecraft-mobdrops-plugin/commit/9636d6ee6bd89960e62a2b741dd311e229bc9398	Add plugin manifest and resources
+2026-07-22T12:22:17Z	709d1041de6a3138cb3f667e42821b4c2a842747	https://github.com/kokoa-hobby/minecraft-mobdrops-plugin/commit/709d1041de6a3138cb3f667e42821b4c2a842747	Add Gradle project scaffold

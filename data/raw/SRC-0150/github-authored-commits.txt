@@ -1,0 +1,12 @@
+GitHub repository: https://github.com/kokoa-lab/stack-digger
+Author account: shinkeonkim
+
+2026-08-28T07:57:55Z	05cb5348040317b820ed7273221545267808ff31	https://github.com/kokoa-lab/stack-digger/commit/05cb5348040317b820ed7273221545267808ff31	Merge pull request #3 from kokoa-lab/project-lens/add-ads-txt-1078bf8d chore(ads): add ads.txt
+2026-08-28T07:57:48Z	049ed3910cd3123b3dc528ba288f7d64319cbdd0	https://github.com/kokoa-lab/stack-digger/commit/049ed3910cd3123b3dc528ba288f7d64319cbdd0	Merge pull request #2 from kokoa-lab/docs/expand-readme docs: expand README
+2026-08-28T07:03:54Z	fa01b66fa718fde6375bd1015aa0364908b70022	https://github.com/kokoa-lab/stack-digger/commit/fa01b66fa718fde6375bd1015aa0364908b70022	chore(ads): add ads.txt project-lens automated commit.
+2026-08-28T05:28:30Z	bb41acd5f82308170838147ae4654e9e0b3ae15b	https://github.com/kokoa-lab/stack-digger/commit/bb41acd5f82308170838147ae4654e9e0b3ae15b	docs: expand README with real project description and dev/build/deploy instructions
+2026-08-28T03:52:46Z	d2e7f1e48f338b8ac9a35bc395d7caec4b56a559	https://github.com/kokoa-lab/stack-digger/commit/d2e7f1e48f338b8ac9a35bc395d7caec4b56a559	Merge pull request #1 from kokoa-lab/project-lens/add-gtm-tracking-90 chore(tracking): GTM 스니펫 추가 (GTM-K4JGN7QF)
+2026-08-27T16:56:50Z	afcedde6beb51338f4e84684d24a462030abb20a	https://github.com/kokoa-lab/stack-digger/commit/afcedde6beb51338f4e84684d24a462030abb20a	chore(tracking): add GTM snippet (GTM-K4JGN7QF) project-lens automated commit.
+2026-03-09T04:48:34Z	a80d00121d5dce6e08866d506694f2b460f36fac	https://github.com/kokoa-lab/stack-digger/commit/a80d00121d5dce6e08866d506694f2b460f36fac	feat: wrangler 설정
+2026-03-09T04:48:26Z	03632b2b5be115c5c9979aad2c6bc86f29f95a37	https://github.com/kokoa-lab/stack-digger/commit/03632b2b5be115c5c9979aad2c6bc86f29f95a37	fix: 연도 범위 수정
+2026-03-09T04:31:26Z	dec1b4de413d37de42bc50cc9ca07b25bddd65e2	https://github.com/kokoa-lab/stack-digger/commit/dec1b4de413d37de42bc50cc9ca07b25bddd65e2	feat: initial project settings by lovable

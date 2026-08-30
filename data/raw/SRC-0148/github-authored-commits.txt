@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/kokoa-lab/poll-system-experiment
+Author account: shinkeonkim
+
+2025-09-24T13:45:30Z	01b79854b146b3933ee1e4cf2b1f994887ab7b38	https://github.com/kokoa-lab/poll-system-experiment/commit/01b79854b146b3933ee1e4cf2b1f994887ab7b38	feat: experiment 초기 코드 추가 - claude code 활용

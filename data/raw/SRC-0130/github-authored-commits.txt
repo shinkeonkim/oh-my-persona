@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-vanish-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:28:12Z	a5143b661f2c75714b2264470a7c24420c973a92	https://github.com/kokoa-hobby/minecraft-vanish-plugin/commit/a5143b661f2c75714b2264470a7c24420c973a92	Add README
+2026-07-22T12:22:20Z	a333a1208dedca92b87f2bd6ae3b4660205d37e8	https://github.com/kokoa-hobby/minecraft-vanish-plugin/commit/a333a1208dedca92b87f2bd6ae3b4660205d37e8	Add VanishPlugin main class
+2026-07-22T12:22:20Z	d8ebae31f753be31778b221a0199ce1118e44438	https://github.com/kokoa-hobby/minecraft-vanish-plugin/commit/d8ebae31f753be31778b221a0199ce1118e44438	Add listeners
+2026-07-22T12:22:20Z	61f776cc654abd096d909074b63947b8a78588af	https://github.com/kokoa-hobby/minecraft-vanish-plugin/commit/61f776cc654abd096d909074b63947b8a78588af	Add commands
+2026-07-22T12:22:20Z	937b16ebb7d67c892d3c1a0756f7b6e5af803968	https://github.com/kokoa-hobby/minecraft-vanish-plugin/commit/937b16ebb7d67c892d3c1a0756f7b6e5af803968	Add plugin manifest and resources
+2026-07-22T12:22:20Z	cfb8aa9322931ba000575f435183bca4007843b4	https://github.com/kokoa-hobby/minecraft-vanish-plugin/commit/cfb8aa9322931ba000575f435183bca4007843b4	Add Gradle project scaffold

@@ -1,0 +1,11 @@
+GitHub repository: https://github.com/kokoa-lab/cozy-hive
+Author account: shinkeonkim
+
+2026-08-28T07:54:44Z	b0fb86639f991f6e8ec851179ac1309f9d9f7ca3	https://github.com/kokoa-lab/cozy-hive/commit/b0fb86639f991f6e8ec851179ac1309f9d9f7ca3	Merge pull request #4 from kokoa-lab/project-lens/add-ads-txt-ae880b7a chore(ads): add ads.txt
+2026-08-28T07:54:29Z	058cad69eee151c20180bbb208b63426eea5bd7f	https://github.com/kokoa-lab/cozy-hive/commit/058cad69eee151c20180bbb208b63426eea5bd7f	Merge pull request #3 from kokoa-lab/docs/readme docs: write a real README
+2026-08-28T07:01:11Z	6b45702fc02cbc3ba81c1005e1ef73d0354af007	https://github.com/kokoa-lab/cozy-hive/commit/6b45702fc02cbc3ba81c1005e1ef73d0354af007	chore(ads): add ads.txt project-lens automated commit.
+2026-08-27T16:46:48Z	5d14f30b736cef9c92294c8a74ee1993461f8b87	https://github.com/kokoa-lab/cozy-hive/commit/5d14f30b736cef9c92294c8a74ee1993461f8b87	Merge pull request #2 from kokoa-lab/project-lens/add-gtm-tracking-13 chore(tracking): GTM 스니펫 추가 (GTM-53RJS739)
+2026-08-27T05:07:30Z	3e0be9736526429e69e77abbff804f5e8ac9c097	https://github.com/kokoa-lab/cozy-hive/commit/3e0be9736526429e69e77abbff804f5e8ac9c097	chore(tracking): add GTM snippet (GTM-53RJS739) project-lens automated commit.
+2026-03-10T16:01:08Z	faf8841a20531a3e13e30d4c49e17e30258f4459	https://github.com/kokoa-lab/cozy-hive/commit/faf8841a20531a3e13e30d4c49e17e30258f4459	Merge pull request #1 from kokoa-lab/update_worker_name_to_cozy-hive Update name in Wrangler configuration file to match deployed Worker
+2026-03-09T08:57:51Z	247fd841b47ccd487057a636d8a02974d64d97c6	https://github.com/kokoa-lab/cozy-hive/commit/247fd841b47ccd487057a636d8a02974d64d97c6	fix: wrangler setting
+2026-03-09T08:54:12Z	f13d0a97d53a5a544d5af939ec6347bb1f949937	https://github.com/kokoa-lab/cozy-hive/commit/f13d0a97d53a5a544d5af939ec6347bb1f949937	feat: initial project settings by lovable

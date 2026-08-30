@@ -1,0 +1,40 @@
+.study-layout { display: grid; grid-template-columns: 15rem minmax(0, 1fr) 13.75rem; gap: 2rem; padding: 2rem 0 4rem; }
+.study-sidebar, .study-toc { position: sticky; top: 5.5rem; max-height: calc(100dvh - 7rem); overflow: auto; align-self: start; }
+.study-sidebar { border-right: 1px solid var(--border); padding-right: 1rem; }
+.study-toc { border-left: 2px solid var(--border); padding-left: 1rem; color: var(--text-muted); font-size: 0.75rem; }
+.study-toc-nav { display: grid; gap: var(--space-1); margin-top: var(--space-3); }
+.study-toc-link { border-radius: 0.35rem; color: var(--text-dim); padding: var(--space-1) var(--space-2); line-height: 1.4; }
+.study-toc-link:hover { color: var(--accent); background: var(--accent-soft); }
+.study-toc-link[data-level="2"] { padding-left: var(--space-3); }
+.study-toc-link[data-level="3"] { padding-left: var(--space-5); }
+.study-toc-link[data-level="4"] { padding-left: var(--space-8); color: var(--text-muted); }
+.study-nav-link { display: block; border-radius: 0.5rem; color: var(--text-dim); padding: 0.45rem 0.55rem; font-size: 0.875rem; }
+.study-nav-link:hover, .study-nav-link[aria-current="page"] { color: var(--accent); background: var(--accent-soft); }
+.prose { min-width: 0; max-width: 52.5rem; overflow-wrap: anywhere; }
+.prose h1, .prose h2, .prose h3, .prose h4 { color: var(--text); text-wrap: balance; scroll-margin-top: 6rem; }
+.prose h1 { font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.12; letter-spacing: -0.03em; }
+.prose h2 { margin: 3rem 0 1.2rem; border-left: 3px solid var(--accent); border-bottom: 1px solid var(--border); padding: 0 0 0.7rem 1rem; font-size: 1.75rem; }
+.prose h3 { margin: 2rem 0 0.8rem; font-size: 1.25rem; }
+.prose h4 { margin: 1.5rem 0 0.6rem; font-size: 1rem; }
+.prose p, .prose li { color: var(--text-dim); }
+.prose a { color: var(--accent); text-decoration: underline; text-underline-offset: 0.2em; }
+.prose strong { color: var(--text); }
+.prose blockquote { margin: 1.5rem 0; border-left: 3px solid var(--accent); border-radius: 0 0.5rem 0.5rem 0; background: var(--accent-soft); padding: 1rem 1.25rem; }
+.prose code { border: 1px solid var(--border); border-radius: 0.35rem; background: var(--surface-raised); padding: 0.1rem 0.35rem; font-family: "SFMono-Regular", Menlo, monospace; }
+.prose pre { overflow-x: auto; border: 1px solid var(--border); border-radius: 0.75rem; background: var(--surface-raised); padding: 1rem; }
+.prose pre code { border: 0; padding: 0; }
+.prose table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; margin: 1.5rem 0; }
+.prose th, .prose td { border: 1px solid var(--border); padding: 0.7rem 0.9rem; text-align: left; }
+.prose th { background: var(--surface-raised); color: var(--text); }
+.quiz-shell { width: min(100% - 2rem, 52.5rem); margin: 2rem auto 4rem; }
+.quiz-option { width: 100%; display: grid; grid-template-columns: 2rem 1fr; gap: 0.8rem; border: 1px solid var(--border); border-radius: 0.75rem; background: var(--surface); color: var(--text); padding: 1rem; text-align: left; cursor: pointer; }
+.quiz-option:hover, .quiz-option[data-selected="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.quiz-option-key { color: var(--accent); font-family: "SFMono-Regular", Menlo, monospace; font-weight: 750; }
+.quiz-feedback { margin-top: 1rem; border-left: 3px solid var(--info); background: var(--surface-raised); padding: 1rem; }
+.metric-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; overflow: hidden; border: 1px solid var(--border); border-radius: 0.75rem; background: var(--border); }
+.metric { background: var(--surface); padding: 1.25rem; }
+.metric dt { color: var(--text-muted); font-size: 0.75rem; }
+.metric dd { margin: 0.2rem 0 0; color: var(--accent); font-family: "SFMono-Regular", Menlo, monospace; font-size: 1.5rem; font-weight: 750; }
+@media (max-width: 68.75rem) { .study-layout { grid-template-columns: 14rem minmax(0, 1fr); } .study-toc { display: none; } }
+@media (max-width: 56.25rem) { .study-layout { grid-template-columns: 1fr; } .study-sidebar { position: static; max-height: none; border: 1px solid var(--border); border-radius: 0.75rem; padding: 1rem; } }
+@media (max-width: 40rem) { .metric-strip { grid-template-columns: 1fr; } }

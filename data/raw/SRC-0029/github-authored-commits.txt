@@ -1,0 +1,20 @@
+GitHub repository: https://github.com/shinkeonkim/army-tiger
+Author account: shinkeonkim
+
+2022-10-23T15:05:40Z	6d4451509e6b9da92dc0837f062f5d5121c69793	https://github.com/shinkeonkim/army-tiger/commit/6d4451509e6b9da92dc0837f062f5d5121c69793	Update README.md
+2022-10-23T15:02:05Z	799da0a8b24666e2cc5f407713b54270e5848bd7	https://github.com/shinkeonkim/army-tiger/commit/799da0a8b24666e2cc5f407713b54270e5848bd7	fix: 너비 조절
+2022-10-23T15:00:25Z	2b12908239486924ee30fb4253f10f57eb522616	https://github.com/shinkeonkim/army-tiger/commit/2b12908239486924ee30fb4253f10f57eb522616	fix: 너비 조절
+2022-10-23T14:58:47Z	ffc4d9e46774bb7534e2a6a4a7fc072137ca99df	https://github.com/shinkeonkim/army-tiger/commit/ffc4d9e46774bb7534e2a6a4a7fc072137ca99df	feat: percent 추가
+2022-10-23T14:47:59Z	4c20731de009b5186b532eb5ef7892457254df6d	https://github.com/shinkeonkim/army-tiger/commit/4c20731de009b5186b532eb5ef7892457254df6d	fix: script
+2022-10-23T14:35:20Z	6c808bf8fcaa1e8583554d2742e42d7015c58e27	https://github.com/shinkeonkim/army-tiger/commit/6c808bf8fcaa1e8583554d2742e42d7015c58e27	Update run.yml
+2022-10-23T14:30:06Z	d84e9cf1a68c858beafb19b8e3473d59e5a2bcc1	https://github.com/shinkeonkim/army-tiger/commit/d84e9cf1a68c858beafb19b8e3473d59e5a2bcc1	fix: node place
+2022-10-23T14:28:54Z	d987834561157099d68786c5835f9585b6d033c7	https://github.com/shinkeonkim/army-tiger/commit/d987834561157099d68786c5835f9585b6d033c7	fix: script
+2022-10-23T14:22:38Z	8b20f4f0a8f3979a75f169070b6839da9bcfba50	https://github.com/shinkeonkim/army-tiger/commit/8b20f4f0a8f3979a75f169070b6839da9bcfba50	fix: script
+2022-10-23T14:19:28Z	a64ce23301c28805c8c7eb4009936b3f92190469	https://github.com/shinkeonkim/army-tiger/commit/a64ce23301c28805c8c7eb4009936b3f92190469	fix: script
+2022-10-23T14:11:50Z	d0eccc0cac6a57207025a0d660b05551749d1666	https://github.com/shinkeonkim/army-tiger/commit/d0eccc0cac6a57207025a0d660b05551749d1666	fix: node version
+2022-10-23T14:10:46Z	3e450f2f82eb70c4cf65e9f2683abe1f65e06b4b	https://github.com/shinkeonkim/army-tiger/commit/3e450f2f82eb70c4cf65e9f2683abe1f65e06b4b	fix: node version
+2022-10-23T14:06:07Z	8b2659bc154f7e3e3cd606bf995957d049885967	https://github.com/shinkeonkim/army-tiger/commit/8b2659bc154f7e3e3cd606bf995957d049885967	fix: workflow 브랜치명 수정
+2022-10-23T14:03:58Z	e5bcb480abaf37020b1b16f7d1621bae2ef6e349	https://github.com/shinkeonkim/army-tiger/commit/e5bcb480abaf37020b1b16f7d1621bae2ef6e349	docs: README 생성
+2022-10-23T13:52:55Z	929259b6ce1e62971cacde65ea3c320802503659	https://github.com/shinkeonkim/army-tiger/commit/929259b6ce1e62971cacde65ea3c320802503659	chore: 액션 이름 수정
+2022-10-23T13:52:14Z	89a52ed81187e7004a7b9814de041e27286e77cc	https://github.com/shinkeonkim/army-tiger/commit/89a52ed81187e7004a7b9814de041e27286e77cc	feat: workflow 추가
+2022-10-23T13:52:04Z	763503d873d83b5891265d711d194a8e66767d8f	https://github.com/shinkeonkim/army-tiger/commit/763503d873d83b5891265d711d194a8e66767d8f	feat: gist에 입대일/전역일/일정 메세지를 표시할 수 있도록 함.

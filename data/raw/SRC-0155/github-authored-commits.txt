@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/kokoa-study-room/PEP723-practice
+Author account: shinkeonkim
+
+2026-02-20T06:45:23Z	f4216bc4c75fdabe837e0159fc9dab556e10dab0	https://github.com/kokoa-study-room/PEP723-practice/commit/f4216bc4c75fdabe837e0159fc9dab556e10dab0	feat: first commit

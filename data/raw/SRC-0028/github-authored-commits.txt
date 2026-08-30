@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/shinkeonkim/code-testcase-generator
+Author account: shinkeonkim
+
+2025-06-05T07:02:28Z	9cb6011801cc8268e27357d74c337d7a2b8d4c26	https://github.com/shinkeonkim/code-testcase-generator/commit/9cb6011801cc8268e27357d74c337d7a2b8d4c26	feat: code-testcase-generator MVP 버전

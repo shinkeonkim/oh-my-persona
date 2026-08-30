@@ -1,0 +1,24 @@
+GitHub repository: https://github.com/shinkeonkim/prevent-factory-video-deletion
+Author account: shinkeonkim
+
+2021-11-20T07:00:47Z	557a8d840bfbeb7959326dac0c93c8a7bff823a7	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/557a8d840bfbeb7959326dac0c93c8a7bff823a7	fix: inactivate schedule
+2021-11-19T16:29:41Z	6050ce5165c836734de990107627ec7d184ded2f	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/6050ce5165c836734de990107627ec7d184ded2f	fix: image
+2021-11-19T16:28:42Z	e4f9902d859e294e2988334d31cfac01f4cea74e	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/e4f9902d859e294e2988334d31cfac01f4cea74e	docs
+2021-11-19T16:21:12Z	7c7fa8b60f4cc496c9bd6d787b0bbf82aeb3a619	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/7c7fa8b60f4cc496c9bd6d787b0bbf82aeb3a619	fix: timing
+2021-11-19T16:07:25Z	cd69adc0983527b4b9566fde432eea52b0f06d41	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/cd69adc0983527b4b9566fde432eea52b0f06d41	fix: chromedriver
+2021-11-19T16:05:10Z	21255dabdef84adb9d1a2fd1d320789b40e77bd7	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/21255dabdef84adb9d1a2fd1d320789b40e77bd7	fix: timing
+2021-11-19T15:42:38Z	e57cd9da0d9a23a5eb7e440e159c8932a84e19a8	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/e57cd9da0d9a23a5eb7e440e159c8932a84e19a8	fix: timing
+2021-11-19T15:40:28Z	d1d2e2039b935291d8057a90aa20c05b4ebb85e4	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/d1d2e2039b935291d8057a90aa20c05b4ebb85e4	fix: timing
+2021-11-19T15:37:26Z	9249599ed6ce3bf2b748e8606ff8de268c2851bd	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/9249599ed6ce3bf2b748e8606ff8de268c2851bd	fix: add comment timing
+2021-11-19T15:24:41Z	07139c8f5d863a34b4e266db1d7c2aa1a8e79222	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/07139c8f5d863a34b4e266db1d7c2aa1a8e79222	test: screetshot
+2021-11-19T15:20:45Z	851e5a2e8c7039f9fb5f21425f01e5febfda4331	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/851e5a2e8c7039f9fb5f21425f01e5febfda4331	fix: sleep time
+2021-11-19T15:17:54Z	116da12fc2dcd77b7dce17db5eee9a67f0da333d	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/116da12fc2dcd77b7dce17db5eee9a67f0da333d	fix: chromedriver error
+2021-11-19T15:15:45Z	bf0a077922b0eaa2cebc9ab3b42af05d6c0428b0	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/bf0a077922b0eaa2cebc9ab3b42af05d6c0428b0	fix: errors
+2021-11-19T14:43:24Z	1cc7ac41ed466b721a15575d3a984c351f20690f	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/1cc7ac41ed466b721a15575d3a984c351f20690f	fix: timing
+2021-11-19T14:39:10Z	a26fc66586d4d06a4606c047483ea92bb6a296e9	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/a26fc66586d4d06a4606c047483ea92bb6a296e9	fix: chrome_driver error
+2021-11-19T14:36:08Z	74761db44662861dcc54efc76311b0afa1716203	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/74761db44662861dcc54efc76311b0afa1716203	fix: chrome options
+2021-11-19T14:31:09Z	343773c5b9ef6986431ffc69ecabc11bc4a56e62	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/343773c5b9ef6986431ffc69ecabc11bc4a56e62	Merge branch 'main' of https://github.com/shinkeonkim/prevent-factory-video-deletion
+2021-11-19T14:30:52Z	f35b19987b28c4fd506ccb5e13bea3d7bd44d06a	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/f35b19987b28c4fd506ccb5e13bea3d7bd44d06a	fix: requirements.txt
+2021-11-19T14:28:54Z	3e57692d375196513348d7c07234e8f1ce07b128	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/3e57692d375196513348d7c07234e8f1ce07b128	Update crawler.yml
+2021-11-19T13:57:28Z	25a4b7e4607b0e33988e2eac926346f2d49c5a47	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/25a4b7e4607b0e33988e2eac926346f2d49c5a47	feat: crawler 추가
+2021-09-06T11:38:56Z	40fa784c5094cd4bd9ddb36203f568352d6797fd	https://github.com/shinkeonkim/prevent-factory-video-deletion/commit/40fa784c5094cd4bd9ddb36203f568352d6797fd	Initial commit

@@ -1,0 +1,8 @@
+GitHub repository: https://github.com/shinkeonkim/saveMsgDiscordBot
+Author account: shinkeonkim
+
+2020-06-26T11:39:16Z	d26b1822845d66903f4e98b39f2daa5e5fab5a74	https://github.com/shinkeonkim/saveMsgDiscordBot/commit/d26b1822845d66903f4e98b39f2daa5e5fab5a74	fix: save msg file format txt -> json
+2020-06-24T16:05:10Z	b63f94b1359ad7bb84994c08b18d784b9606f71e	https://github.com/shinkeonkim/saveMsgDiscordBot/commit/b63f94b1359ad7bb84994c08b18d784b9606f71e	add: discord bot server 기초 코드, txt 파일에 저장 기능
+2020-06-24T15:08:40Z	ac1987b7165a2ff1577c0ebc02294f457bc4be05	https://github.com/shinkeonkim/saveMsgDiscordBot/commit/ac1987b7165a2ff1577c0ebc02294f457bc4be05	Delete secrets.json
+2020-06-24T14:49:23Z	52eb824f62706c6cedc36aeac7e4f526322be26d	https://github.com/shinkeonkim/saveMsgDiscordBot/commit/52eb824f62706c6cedc36aeac7e4f526322be26d	add: git 세팅
+2020-06-24T14:41:42Z	4e385e2362e70f474b709df636dec7fc8135bce8	https://github.com/shinkeonkim/saveMsgDiscordBot/commit/4e385e2362e70f474b709df636dec7fc8135bce8	Initial commit

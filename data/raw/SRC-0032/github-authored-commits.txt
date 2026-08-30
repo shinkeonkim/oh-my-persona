@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/shinkeonkim/algorithms
+Author account: shinkeonkim
+
+2022-05-25T03:53:28Z	b1d86934022482acd7f929b837bdba97a0e6a532	https://github.com/shinkeonkim/algorithms/commit/b1d86934022482acd7f929b837bdba97a0e6a532	fix: 오타 수정
+2022-05-24T12:09:11Z	f918b8a846e44b44e9a01a6b52623055b1df75d2	https://github.com/shinkeonkim/algorithms/commit/f918b8a846e44b44e9a01a6b52623055b1df75d2	coin change - ruby
+2022-05-24T11:57:24Z	c2cb5471416859de473b9a4f5f231d5e7f55c703	https://github.com/shinkeonkim/algorithms/commit/c2cb5471416859de473b9a4f5f231d5e7f55c703	coin change
+2022-05-24T11:56:58Z	675d4dbf0618722aeebc901ed54f518aa539991d	https://github.com/shinkeonkim/algorithms/commit/675d4dbf0618722aeebc901ed54f518aa539991d	feat: 기본 폴더 구조 구성
+2022-05-22T10:11:32Z	0cccd690720b64232e67675e76f59be7ff036d99	https://github.com/shinkeonkim/algorithms/commit/0cccd690720b64232e67675e76f59be7ff036d99	Update README.md
+2022-05-21T13:06:58Z	62c49f9afc3f2e3db502629d6d12f098cea75068	https://github.com/shinkeonkim/algorithms/commit/62c49f9afc3f2e3db502629d6d12f098cea75068	Initial commit

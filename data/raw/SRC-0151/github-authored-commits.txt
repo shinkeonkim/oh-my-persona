@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-lab/term-card
+Author account: shinkeonkim
+
+2026-08-28T07:58:07Z	62c2879480d5fcc699e2bbc698c1e4d5c0727cc8	https://github.com/kokoa-lab/term-card/commit/62c2879480d5fcc699e2bbc698c1e4d5c0727cc8	Merge pull request #2 from kokoa-lab/project-lens/add-ads-txt-6a93c9cd chore(ads): add ads.txt
+2026-08-28T07:04:07Z	4ca849e5fa4fdac0413e4daa48cc7679f5ae58dd	https://github.com/kokoa-lab/term-card/commit/4ca849e5fa4fdac0413e4daa48cc7679f5ae58dd	chore(ads): add ads.txt project-lens automated commit.
+2026-08-28T03:53:07Z	4edba31943abd3bccbecbed3ad838adfd464d0c7	https://github.com/kokoa-lab/term-card/commit/4edba31943abd3bccbecbed3ad838adfd464d0c7	Merge pull request #1 from kokoa-lab/project-lens/add-gtm-tracking-88 chore(tracking): GTM 스니펫 추가 (GTM-5C4QJ6Q5)
+2026-08-27T16:55:56Z	40512cb9990adc1825854c814a86ee8f172e61db	https://github.com/kokoa-lab/term-card/commit/40512cb9990adc1825854c814a86ee8f172e61db	chore(tracking): add GTM snippet (GTM-5C4QJ6Q5) project-lens automated commit.
+2026-03-15T18:17:09Z	1f08c8c1171aa58b22e6452451321e207faff9dc	https://github.com/kokoa-lab/term-card/commit/1f08c8c1171aa58b22e6452451321e207faff9dc	Create README.md with project overview and instructions Add README.md with project details and usage instructions
+2026-03-09T09:14:47Z	bbdfee32c96d6ef395fecaa78c6fe1843111cbee	https://github.com/kokoa-lab/term-card/commit/bbdfee32c96d6ef395fecaa78c6fe1843111cbee	feat: initial project settings by lovable

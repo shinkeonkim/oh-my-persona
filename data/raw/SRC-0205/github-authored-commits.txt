@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/shinkeonkim/empty_django_project
+Author account: shinkeonkim
+
+2021-09-25T00:42:43Z	02a6dd808ad1c72dc8c650fc4a0b6f7c76cce7a1	https://github.com/shinkeonkim/empty_django_project/commit/02a6dd808ad1c72dc8c650fc4a0b6f7c76cce7a1	feat: initail settings

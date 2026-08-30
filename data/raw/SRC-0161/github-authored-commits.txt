@@ -1,0 +1,8 @@
+GitHub repository: https://github.com/kokoa-study-room/clf-c02-study-notes
+Author account: shinkeonkim
+
+2026-07-18T08:54:02Z	ef72932f7bac6c55302ce6d5af0f6e84ebaf987b	https://github.com/kokoa-study-room/clf-c02-study-notes/commit/ef72932f7bac6c55302ce6d5af0f6e84ebaf987b	feat: 문제 풀이 시스템 추가
+2026-07-17T09:45:15Z	3ba9c8038b9e38c965ebe4df2e338765b65bda6c	https://github.com/kokoa-study-room/clf-c02-study-notes/commit/3ba9c8038b9e38c965ebe4df2e338765b65bda6c	chore: table content
+2026-07-17T03:12:41Z	2657bf46586b246b0187c22eec9819d12fcad402	https://github.com/kokoa-study-room/clf-c02-study-notes/commit/2657bf46586b246b0187c22eec9819d12fcad402	chore: .gitignore
+2026-07-17T03:12:22Z	0b5925fb41a5bdef42063fbc369294a2d6763d9d	https://github.com/kokoa-study-room/clf-c02-study-notes/commit/0b5925fb41a5bdef42063fbc369294a2d6763d9d	content: 키노트
+2026-07-17T03:12:12Z	49a86727a81a1f7b31e47f7f07e450bbcdd33ab3	https://github.com/kokoa-study-room/clf-c02-study-notes/commit/49a86727a81a1f7b31e47f7f07e450bbcdd33ab3	content: 문제 아카이빙

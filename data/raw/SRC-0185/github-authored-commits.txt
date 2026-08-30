@@ -1,0 +1,5 @@
+GitHub repository: https://github.com/palette-team/palette-prod-infra
+Author account: shinkeonkim
+
+2025-11-10T06:55:21Z	1276edb1562da3b84f90d59c30d2f6ed8b6edbeb	https://github.com/palette-team/palette-prod-infra/commit/1276edb1562da3b84f90d59c30d2f6ed8b6edbeb	fix: 일부 비용 최적화
+2025-11-09T12:28:06Z	df83cd565330047c91d77c07e3ce1afbf6550c40	https://github.com/palette-team/palette-prod-infra/commit/df83cd565330047c91d77c07e3ce1afbf6550c40	feat: terraform 기반 프로덕션 인프라 구성

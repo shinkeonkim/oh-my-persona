@@ -1,0 +1,8 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-elevator-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:27:08Z	3fd29fe1faa5728217c862fcc696779059c16591	https://github.com/kokoa-hobby/minecraft-elevator-plugin/commit/3fd29fe1faa5728217c862fcc696779059c16591	Add README
+2026-07-22T12:22:15Z	387ea7ffd7a5713f4287cbe0dd8539a069962fe0	https://github.com/kokoa-hobby/minecraft-elevator-plugin/commit/387ea7ffd7a5713f4287cbe0dd8539a069962fe0	Add ElevatorPlugin main class
+2026-07-22T12:22:15Z	9c912f0bd6c94224d0f1ac7f9f4a1907d04e9bcd	https://github.com/kokoa-hobby/minecraft-elevator-plugin/commit/9c912f0bd6c94224d0f1ac7f9f4a1907d04e9bcd	Add listeners
+2026-07-22T12:22:15Z	b12d0c5baedeef51202fd12bf77c1419340e0941	https://github.com/kokoa-hobby/minecraft-elevator-plugin/commit/b12d0c5baedeef51202fd12bf77c1419340e0941	Add plugin manifest and resources
+2026-07-22T12:22:15Z	0692b2f03ff51b480d0a13c549a401d849955f95	https://github.com/kokoa-hobby/minecraft-elevator-plugin/commit/0692b2f03ff51b480d0a13c549a401d849955f95	Add Gradle project scaffold

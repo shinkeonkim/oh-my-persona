@@ -1,0 +1,10 @@
+GitHub repository: https://github.com/shinkeonkim/xaskify
+Author account: shinkeonkim
+
+2022-04-19T15:13:56Z	c12995c6a41a63553014ae2fb1498f2c6986a9c2	https://github.com/shinkeonkim/xaskify/commit/c12995c6a41a63553014ae2fb1498f2c6986a9c2	1.0.4 : remove example project
+2022-04-19T15:01:36Z	c6ae641fd18ea6d2d4a8288cbc02f38214880cde	https://github.com/shinkeonkim/xaskify/commit/c6ae641fd18ea6d2d4a8288cbc02f38214880cde	1.0.3
+2022-04-19T14:49:20Z	777eda757c93150b91504dfcf0416fb4991fa0bf	https://github.com/shinkeonkim/xaskify/commit/777eda757c93150b91504dfcf0416fb4991fa0bf	fix: Uncaught ReferenceError: Cannot access 'xakify' before initialization
+2022-04-19T13:57:09Z	33b8941d23f480d46f30e97fcb366355d1cc3357	https://github.com/shinkeonkim/xaskify/commit/33b8941d23f480d46f30e97fcb366355d1cc3357	chore: versioning
+2022-04-19T13:55:56Z	527dfa201627924d9d3cad8637a9bf3ed7fcc394	https://github.com/shinkeonkim/xaskify/commit/527dfa201627924d9d3cad8637a9bf3ed7fcc394	fix: types
+2022-04-19T13:43:11Z	ccba6948a418f6dc76b6a3776aae92ea8d815268	https://github.com/shinkeonkim/xaskify/commit/ccba6948a418f6dc76b6a3776aae92ea8d815268	fix: yarn package settings
+2022-04-19T13:35:16Z	1dcc11f0d81f3fe4eafebe30d4f968702acf2bc9	https://github.com/shinkeonkim/xaskify/commit/1dcc11f0d81f3fe4eafebe30d4f968702acf2bc9	feat: initial package settings

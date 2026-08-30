@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-lab/how-to-get-google-dot-com
+Author account: shinkeonkim
+
+2026-08-28T07:56:08Z	3b1da2f1e1f1d258895287140b4b8cb14197c73d	https://github.com/kokoa-lab/how-to-get-google-dot-com/commit/3b1da2f1e1f1d258895287140b4b8cb14197c73d	Merge pull request #2 from kokoa-lab/project-lens/add-ads-txt-9d702f3a chore(ads): add ads.txt
+2026-08-28T07:02:18Z	2f6eb2a8abdb2240bf65cb27065849fdd1c9fdae	https://github.com/kokoa-lab/how-to-get-google-dot-com/commit/2f6eb2a8abdb2240bf65cb27065849fdd1c9fdae	chore(ads): add ads.txt project-lens automated commit.
+2026-08-27T16:48:24Z	ef0ef6a7bd2164dd10292bb72093da7f895e4332	https://github.com/kokoa-lab/how-to-get-google-dot-com/commit/ef0ef6a7bd2164dd10292bb72093da7f895e4332	Merge pull request #1 from kokoa-lab/project-lens/add-gtm-tracking-7 chore(tracking): GTM 스니펫 추가 (GTM-5HC6M5L7)
+2026-08-27T05:04:39Z	307c287ec0ccb221c1fbfcda87cfb43d74d907ad	https://github.com/kokoa-lab/how-to-get-google-dot-com/commit/307c287ec0ccb221c1fbfcda87cfb43d74d907ad	chore(tracking): add GTM snippet (GTM-5HC6M5L7) project-lens automated commit.
+2026-08-24T08:08:37Z	c9c0e368d92f0f288a17bc76e2103cdbc533756b	https://github.com/kokoa-lab/how-to-get-google-dot-com/commit/c9c0e368d92f0f288a17bc76e2103cdbc533756b	chore: configure Cloudflare Workers deployment
+2026-08-24T07:49:20Z	18f33c7b81914a93f411d4807693ba2d0f4c7243	https://github.com/kokoa-lab/how-to-get-google-dot-com/commit/18f33c7b81914a93f411d4807693ba2d0f4c7243	feat: initialize interactive networking guide

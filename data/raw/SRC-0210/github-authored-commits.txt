@@ -1,0 +1,5 @@
+GitHub repository: https://github.com/shinkeonkim/hexagonal-grid-illumination-visualizer
+Author account: shinkeonkim
+
+2026-01-18T10:58:37Z	b44960a54dcf83b59c8522344b85b087c2176a63	https://github.com/shinkeonkim/hexagonal-grid-illumination-visualizer/commit/b44960a54dcf83b59c8522344b85b087c2176a63	Update README with image and features list Added an image and expanded the features section in the README.
+2026-01-18T10:48:58Z	c438ea6e8f50ac04b236eba1363bf2a66b23d112	https://github.com/shinkeonkim/hexagonal-grid-illumination-visualizer/commit/c438ea6e8f50ac04b236eba1363bf2a66b23d112	feat: 바이브코딩을 활용한 페이지 초기 작업

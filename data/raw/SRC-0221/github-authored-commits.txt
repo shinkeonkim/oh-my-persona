@@ -1,0 +1,5 @@
+GitHub repository: https://github.com/shinkeonkim/notion-bs-badge
+Author account: shinkeonkim
+
+2021-04-24T18:53:47Z	171e1b037799723e58e58ad3cf5037ff4b3307f1	https://github.com/shinkeonkim/notion-bs-badge/commit/171e1b037799723e58e58ad3cf5037ff4b3307f1	fix: design issue
+2021-04-24T18:47:19Z	3d85ac2b4111e0016364afc3289f0c6534dd3760	https://github.com/shinkeonkim/notion-bs-badge/commit/3d85ac2b4111e0016364afc3289f0c6534dd3760	feat: initial settings

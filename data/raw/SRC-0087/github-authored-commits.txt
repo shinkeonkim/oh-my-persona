@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/kmu-shinkeonkim/.github
+Author account: shinkeonkim
+
+2025-09-25T03:20:10Z	dec8e5218d29d5310db7e8051b02d599ae41bec0	https://github.com/kmu-shinkeonkim/.github/commit/dec8e5218d29d5310db7e8051b02d599ae41bec0	Create README.md

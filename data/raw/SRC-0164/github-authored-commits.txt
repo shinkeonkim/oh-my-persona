@@ -1,0 +1,5 @@
+GitHub repository: https://github.com/kokoa-study-room/db-union-query-benchmark
+Author account: shinkeonkim
+
+2026-06-12T17:34:41Z	770c33fd18a3e5b8a97856745d0ccddf0629ec67	https://github.com/kokoa-study-room/db-union-query-benchmark/commit/770c33fd18a3e5b8a97856745d0ccddf0629ec67	README 개선: sparse multi-column 벤치마크 결과 기반으로 재작성 - 문제 상황 / 결론 요약 / Quick Start 구조로 변경 - IN vs OR vs UNION ALL 비교 결과 테이블 추가 - 테이블 구조, 측정 조건, 아키텍처 설명 보강
+2026-06-12T17:33:32Z	41b48ad8cab8bf1b94807fceaa3c256069ad5616	https://github.com/kokoa-study-room/db-union-query-benchmark/commit/41b48ad8cab8bf1b94807fceaa3c256069ad5616	프로젝트 초기 구성: Docker Compose 멀티 DB 환경 + benchmark runner - PG 13/15/17, MySQL 5.7(ARM emulation)/8.0/8.4 컨테이너 구성 - CPU/mem limit 고정, config 파일 박제 (재현성) - FastAPI benchmark runner scaffold - run_benchmark.sh: --clean / --clean-only / --status 옵션

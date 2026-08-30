@@ -1,0 +1,5 @@
+GitHub repository: https://github.com/shinkeonkim/project_a
+Author account: shinkeonkim
+
+2023-11-08T14:11:56Z	ee051086c382ad0bf28478dc9d6b59e19d5c2fd7	https://github.com/shinkeonkim/project_a/commit/ee051086c382ad0bf28478dc9d6b59e19d5c2fd7	feat: 기본 마인드맵 프로젝트 구성
+2023-11-08T13:28:16Z	a530db32e80d0b7724d8da9dee3fb5f6171d5add	https://github.com/shinkeonkim/project_a/commit/a530db32e80d0b7724d8da9dee3fb5f6171d5add	chore: PROJECT INIT

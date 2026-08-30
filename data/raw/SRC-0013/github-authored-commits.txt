@@ -1,0 +1,67 @@
+GitHub repository: https://github.com/shinkeonkim/shinkeonkim
+Author account: shinkeonkim
+
+2026-08-08T04:47:44Z	63aed529fb6da0550470abc2ef08a02cfe74d8d2	https://github.com/shinkeonkim/shinkeonkim/commit/63aed529fb6da0550470abc2ef08a02cfe74d8d2	Update links in README.md
+2026-07-24T17:09:01Z	f1c3a93a35bbf901609589a2cbaaad9049021008	https://github.com/shinkeonkim/shinkeonkim/commit/f1c3a93a35bbf901609589a2cbaaad9049021008	Update certifications in README.md
+2026-07-24T16:55:30Z	d01052406b542c4fc3fa3d995fc14608a4a155ef	https://github.com/shinkeonkim/shinkeonkim/commit/d01052406b542c4fc3fa3d995fc14608a4a155ef	Update README.md
+2026-07-07T04:59:30Z	afd63f0ac0354b16083a5c7c81da7383810a4101	https://github.com/shinkeonkim/shinkeonkim/commit/afd63f0ac0354b16083a5c7c81da7383810a4101	Remove top languages image from README Removed the GitHub stats image from the README.
+2026-07-04T12:13:46Z	b319a261fa2fca1a98b8d5a38b898c85a70b5723	https://github.com/shinkeonkim/shinkeonkim/commit/b319a261fa2fca1a98b8d5a38b898c85a70b5723	Revise stats section in README.md Updated GitHub stats images and added a new stats section.
+2026-07-04T12:09:45Z	59e52e6706c101a2ce09734b492393d35fd945a5	https://github.com/shinkeonkim/shinkeonkim/commit/59e52e6706c101a2ce09734b492393d35fd945a5	Update trophy image link in README.md
+2026-07-04T12:05:59Z	b081562217431bfc291b6f6d297f070d9898e51a	https://github.com/shinkeonkim/shinkeonkim/commit/b081562217431bfc291b6f6d297f070d9898e51a	Update README.md
+2026-06-11T14:47:28Z	ba2506c8fd2f207abb50209eeef76ae5bee1b6a2	https://github.com/shinkeonkim/shinkeonkim/commit/ba2506c8fd2f207abb50209eeef76ae5bee1b6a2	fix: 문서 개선
+2026-06-11T14:27:27Z	0b8b6ec35cd48b7dd756098014b7af5ae6850e9b	https://github.com/shinkeonkim/shinkeonkim/commit/0b8b6ec35cd48b7dd756098014b7af5ae6850e9b	chore: 내용 최신화
+2026-05-08T13:28:19Z	7c934cc132132728bdcdb5113446036664f34cb8	https://github.com/shinkeonkim/shinkeonkim/commit/7c934cc132132728bdcdb5113446036664f34cb8	Update README.md
+2025-09-18T01:18:26Z	76b78f45600dffb6368a924a1fbfef245d93a74e	https://github.com/shinkeonkim/shinkeonkim/commit/76b78f45600dffb6368a924a1fbfef245d93a74e	Update README
+2025-09-17T14:36:51Z	b5fae5db071c00875090e1d57638a54b4c704371	https://github.com/shinkeonkim/shinkeonkim/commit/b5fae5db071c00875090e1d57638a54b4c704371	design: card
+2025-09-17T14:28:04Z	9d2f2cb140f83659332e3f3a963d96e2ff06b869	https://github.com/shinkeonkim/shinkeonkim/commit/9d2f2cb140f83659332e3f3a963d96e2ff06b869	Update README with organization links and badges Add links to Kokoa organization profiles and badges
+2025-09-17T14:25:18Z	1338f425c0e615a51efddf8243a7a1ee20b04f9b	https://github.com/shinkeonkim/shinkeonkim/commit/1338f425c0e615a51efddf8243a7a1ee20b04f9b	Add files via upload
+2025-09-17T14:10:58Z	c1acf1e1d5783e2081055b2cfcd449ad50c6e2b8	https://github.com/shinkeonkim/shinkeonkim/commit/c1acf1e1d5783e2081055b2cfcd449ad50c6e2b8	Add organization profile image to README
+2025-09-17T14:08:43Z	438e5e97e00657528c03f5c93edb37cc5096df1e	https://github.com/shinkeonkim/shinkeonkim/commit/438e5e97e00657528c03f5c93edb37cc5096df1e	Update introduce-organizations.svg
+2025-09-17T14:04:34Z	9c40e52a8e718b4a4c5c7d99fa4bbce6d0177f9f	https://github.com/shinkeonkim/shinkeonkim/commit/9c40e52a8e718b4a4c5c7d99fa4bbce6d0177f9f	Change image sources to local paths Updated image references to local files instead of remote URLs.
+2025-09-17T14:02:48Z	c751b5ebf095b418c56405a3a92ffbcd3418ffda	https://github.com/shinkeonkim/shinkeonkim/commit/c751b5ebf095b418c56405a3a92ffbcd3418ffda	Add files via upload
+2025-09-17T14:00:46Z	ea48829c0078351114a7da88c958cd9354b18bb5	https://github.com/shinkeonkim/shinkeonkim/commit/ea48829c0078351114a7da88c958cd9354b18bb5	Add files via upload
+2025-09-17T12:43:30Z	978aa49e5b61578c531813509ea791d79f90f3cb	https://github.com/shinkeonkim/shinkeonkim/commit/978aa49e5b61578c531813509ea791d79f90f3cb	Update README.md
+2025-07-28T08:47:28Z	f1211d376bc91fafae63ca92b1ff83379cfec8e3	https://github.com/shinkeonkim/shinkeonkim/commit/f1211d376bc91fafae63ca92b1ff83379cfec8e3	Update README.md
+2025-04-22T04:04:29Z	14bb0a31024e14f507517f8a87f8f865a99f7e90	https://github.com/shinkeonkim/shinkeonkim/commit/14bb0a31024e14f507517f8a87f8f865a99f7e90	Update README.md
+2025-04-18T06:57:16Z	262b185f11e73e133af9d6b2265d3673c5f3a3c2	https://github.com/shinkeonkim/shinkeonkim/commit/262b185f11e73e133af9d6b2265d3673c5f3a3c2	Update README.md
+2025-04-18T06:53:58Z	0266640df0a8876ac15acdb3aae5295aa30c308e	https://github.com/shinkeonkim/shinkeonkim/commit/0266640df0a8876ac15acdb3aae5295aa30c308e	Update README.md
+2025-04-18T06:51:06Z	c30adb9515c9372deba412a190a359a7690d8b94	https://github.com/shinkeonkim/shinkeonkim/commit/c30adb9515c9372deba412a190a359a7690d8b94	Update snake.yml
+2025-04-18T06:48:47Z	0bcc8704cf546d031b3beaa3cb92aaed35e2a3a8	https://github.com/shinkeonkim/shinkeonkim/commit/0bcc8704cf546d031b3beaa3cb92aaed35e2a3a8	Update snake.yml
+2025-04-18T06:44:31Z	859c9ab2f2906047786a4ea89baa80fbe5ae02e0	https://github.com/shinkeonkim/shinkeonkim/commit/859c9ab2f2906047786a4ea89baa80fbe5ae02e0	Update README.md
+2025-04-18T06:17:18Z	bf66a6a36e0f5f0fc16422df3800c4fdd17862b4	https://github.com/shinkeonkim/shinkeonkim/commit/bf66a6a36e0f5f0fc16422df3800c4fdd17862b4	Update README.md
+2025-03-30T11:47:29Z	a3f243e014aebec84ec81dc7fc62bcb9de40552c	https://github.com/shinkeonkim/shinkeonkim/commit/a3f243e014aebec84ec81dc7fc62bcb9de40552c	Update README.md
+2025-03-18T14:53:29Z	fff0af075b39744519398ef58e169c030a41aea3	https://github.com/shinkeonkim/shinkeonkim/commit/fff0af075b39744519398ef58e169c030a41aea3	Update README.md
+2025-03-18T14:50:02Z	b3b05982eddca298020e4e8e7fd5c0356a94dcbc	https://github.com/shinkeonkim/shinkeonkim/commit/b3b05982eddca298020e4e8e7fd5c0356a94dcbc	Update README.md
+2025-03-18T14:48:15Z	8fbb33feafdc85dfdd3aa93be0169a2a3301768d	https://github.com/shinkeonkim/shinkeonkim/commit/8fbb33feafdc85dfdd3aa93be0169a2a3301768d	Update README.md
+2023-05-31T10:40:34Z	1ead4be38eab571b596bd505b86c8c2ccb43472f	https://github.com/shinkeonkim/shinkeonkim/commit/1ead4be38eab571b596bd505b86c8c2ccb43472f	Update README.md
+2023-02-19T04:15:46Z	044a5ca4c6c5022887de6d8cc4074a014d017828	https://github.com/shinkeonkim/shinkeonkim/commit/044a5ca4c6c5022887de6d8cc4074a014d017828	Update README.md
+2022-11-16T12:29:05Z	b2b5a23611e87f3b0912542295d6b46e1efd13d4	https://github.com/shinkeonkim/shinkeonkim/commit/b2b5a23611e87f3b0912542295d6b46e1efd13d4	Update snake.yml
+2022-10-26T02:49:43Z	94812f7bc6f0070368c03e9d372103cb7db3c21d	https://github.com/shinkeonkim/shinkeonkim/commit/94812f7bc6f0070368c03e9d372103cb7db3c21d	Update README.md
+2022-10-23T14:07:49Z	ea7bdfab0ad06293030cf429661907ffdd87c9f6	https://github.com/shinkeonkim/shinkeonkim/commit/ea7bdfab0ad06293030cf429661907ffdd87c9f6	Update README.md
+2022-07-02T01:46:10Z	d8ce860818cda7e845339792f08dcb85050d2024	https://github.com/shinkeonkim/shinkeonkim/commit/d8ce860818cda7e845339792f08dcb85050d2024	Update README.md
+2022-05-01T05:21:39Z	4c488dfe8cf17ea826f88a7eec96316eb74b95c2	https://github.com/shinkeonkim/shinkeonkim/commit/4c488dfe8cf17ea826f88a7eec96316eb74b95c2	Update README.md
+2022-03-30T07:18:56Z	01dea166bfcb3e3af428cf0ddee6213608431d33	https://github.com/shinkeonkim/shinkeonkim/commit/01dea166bfcb3e3af428cf0ddee6213608431d33	Update README.md
+2022-03-30T04:21:08Z	e9968410ea2be876543bb3e28554186629fe9f08	https://github.com/shinkeonkim/shinkeonkim/commit/e9968410ea2be876543bb3e28554186629fe9f08	Update README.md
+2022-03-30T04:19:56Z	ed0f3d99a208ea512b69855c6a7afcf3a303e056	https://github.com/shinkeonkim/shinkeonkim/commit/ed0f3d99a208ea512b69855c6a7afcf3a303e056	Update README.md
+2022-03-26T09:34:35Z	62e974c218ffd9e648c13c1241e8fa736ef05492	https://github.com/shinkeonkim/shinkeonkim/commit/62e974c218ffd9e648c13c1241e8fa736ef05492	Update README.md
+2021-11-23T08:28:15Z	b55753aa0df9c523b86f195b7ae46da5a2ad5081	https://github.com/shinkeonkim/shinkeonkim/commit/b55753aa0df9c523b86f195b7ae46da5a2ad5081	Update README.md
+2021-11-23T08:16:52Z	e4173e776c51e2a4d4e93ac71f642918e54a259a	https://github.com/shinkeonkim/shinkeonkim/commit/e4173e776c51e2a4d4e93ac71f642918e54a259a	Update snake.yml
+2021-11-23T08:13:54Z	92652cd69ce1c213f8e83423f93cf4f335b14731	https://github.com/shinkeonkim/shinkeonkim/commit/92652cd69ce1c213f8e83423f93cf4f335b14731	Create snake.yml
+2021-11-16T07:23:54Z	da0fa721678eb0448f174d6be63f203cce607000	https://github.com/shinkeonkim/shinkeonkim/commit/da0fa721678eb0448f174d6be63f203cce607000	Update README.md
+2021-10-06T01:48:50Z	ee9b669a7da95559402d970053181b8547bfcf9e	https://github.com/shinkeonkim/shinkeonkim/commit/ee9b669a7da95559402d970053181b8547bfcf9e	Update README.md
+2021-09-28T16:37:42Z	84c68b31be328279c05f36995e091d31b7abc403	https://github.com/shinkeonkim/shinkeonkim/commit/84c68b31be328279c05f36995e091d31b7abc403	Update README.md
+2021-09-10T09:50:27Z	623a315273e4258c0095fd252407ce8b481e8b4d	https://github.com/shinkeonkim/shinkeonkim/commit/623a315273e4258c0095fd252407ce8b481e8b4d	Update README.md
+2021-08-15T10:16:40Z	e67791343f670196460ba4bce6980c70d32ad74f	https://github.com/shinkeonkim/shinkeonkim/commit/e67791343f670196460ba4bce6980c70d32ad74f	Update README.md
+2021-08-14T05:53:15Z	6b651a25e21c55d67bddcba9237b55324c8e7151	https://github.com/shinkeonkim/shinkeonkim/commit/6b651a25e21c55d67bddcba9237b55324c8e7151	Update README.md
+2021-07-11T18:31:08Z	7d388c1e7849c9fe84b2d3bbd8d9c93c48463c96	https://github.com/shinkeonkim/shinkeonkim/commit/7d388c1e7849c9fe84b2d3bbd8d9c93c48463c96	Update README.md
+2021-07-10T09:19:32Z	6c004f98376ca9fdd42da88417ffce4cb0d6a93f	https://github.com/shinkeonkim/shinkeonkim/commit/6c004f98376ca9fdd42da88417ffce4cb0d6a93f	Update README.md
+2021-01-30T02:47:13Z	d5b209853ff53d6ca18415ba1dc184e6b4402161	https://github.com/shinkeonkim/shinkeonkim/commit/d5b209853ff53d6ca18415ba1dc184e6b4402161	fix: contents
+2021-01-30T02:36:22Z	c6d211c6918a47ad68d5a576bce446716fe4ec04	https://github.com/shinkeonkim/shinkeonkim/commit/c6d211c6918a47ad68d5a576bce446716fe4ec04	fix: contents
+2021-01-15T01:23:46Z	09561bd6b2d5a48c939e72ced1ed4cba8349d2dc	https://github.com/shinkeonkim/shinkeonkim/commit/09561bd6b2d5a48c939e72ced1ed4cba8349d2dc	Update README.md
+2021-01-02T13:17:47Z	7b9d620fe7fd22c711007772bced772f438c989d	https://github.com/shinkeonkim/shinkeonkim/commit/7b9d620fe7fd22c711007772bced772f438c989d	Update README.md
+2020-09-18T04:03:57Z	6a3816a4e7bf493112674d8700723104de359758	https://github.com/shinkeonkim/shinkeonkim/commit/6a3816a4e7bf493112674d8700723104de359758	Update README.md
+2020-08-06T01:52:59Z	7ae0065ec7aaa3158099e2ffa3796a3fde43e195	https://github.com/shinkeonkim/shinkeonkim/commit/7ae0065ec7aaa3158099e2ffa3796a3fde43e195	fix: README.md emoji
+2020-08-06T01:47:22Z	03fcc8281fe654853cb219e57d7a0e0df66568cf	https://github.com/shinkeonkim/shinkeonkim/commit/03fcc8281fe654853cb219e57d7a0e0df66568cf	fix: README.md
+2020-08-02T02:15:16Z	562f9abce27be05d224be4e8befcdd81bc80ec04	https://github.com/shinkeonkim/shinkeonkim/commit/562f9abce27be05d224be4e8befcdd81bc80ec04	Update README.md
+2020-07-13T10:50:53Z	d0ed3f92b35a83d6fc257632bc4ce1e79e54cd92	https://github.com/shinkeonkim/shinkeonkim/commit/d0ed3f92b35a83d6fc257632bc4ce1e79e54cd92	Update README.md
+2020-07-13T10:43:52Z	080417c66c0c452bccf39864a3d28043b93fa102	https://github.com/shinkeonkim/shinkeonkim/commit/080417c66c0c452bccf39864a3d28043b93fa102	Initial commit

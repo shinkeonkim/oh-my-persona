@@ -1,0 +1,6 @@
+GitHub repository: https://github.com/shinkeonkim/wordle-online
+Author account: shinkeonkim
+
+2024-08-17T11:04:44Z	864b30f8d802f7dace34f95ef7538a839cfb2a23	https://github.com/shinkeonkim/wordle-online/commit/864b30f8d802f7dace34f95ef7538a839cfb2a23	feat: back / front 프로젝트 초기 세팅
+2024-08-17T11:02:39Z	997b2d4ccc12f101a266fa2120f3042ae7797690	https://github.com/shinkeonkim/wordle-online/commit/997b2d4ccc12f101a266fa2120f3042ae7797690	chore: gitignore
+2024-08-16T13:28:49Z	372473ad59d742ff90406a3dab50e85af6d438e5	https://github.com/shinkeonkim/wordle-online/commit/372473ad59d742ff90406a3dab50e85af6d438e5	Initial commit

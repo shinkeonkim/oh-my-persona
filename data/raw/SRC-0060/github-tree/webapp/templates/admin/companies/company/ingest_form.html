@@ -1,0 +1,138 @@
+{% extends "admin/base.html" %}
+{% load i18n unfold %}
+
+{% block breadcrumbs %}
+{% if not is_popup %}
+<div class="px-4">
+    <div class="container mb-6 mx-auto -my-3 lg:mb-12">
+        <ul class="flex flex-wrap">
+            {% url 'admin:index' as link %}
+            {% trans 'Home' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with link=link name=name %}
+
+            {% url 'admin:companies_company_changelist' as link %}
+            {% trans 'Companies' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with link=link name=name %}
+
+            {% trans 'Company Metadata Ingest' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with name=name %}
+        </ul>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="px-4">
+    <div class="container mx-auto">
+        <div class="main-card bg-white dark:bg-gray-900 shadow-lg rounded-lg p-6 border border-gray-200 dark:border-gray-700">
+            <h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">{{ title }}</h2>
+
+            <div class="mb-6">
+                <p class="text-gray-700 dark:text-gray-300 mb-2">
+                    KRX 및 OpenDART API를 통해 회사 메타데이터를 수집합니다.
+                </p>
+            </div>
+
+            <form method="post" class="space-y-6">
+                {% csrf_token %}
+
+                {% if form.non_field_errors %}
+                <div class="bg-red-50 dark:bg-red-900/30 border border-red-400 dark:border-red-500 text-red-700 dark:text-red-300 px-4 py-3 rounded mb-4">
+                    {{ form.non_field_errors }}
+                </div>
+                {% endif %}
+
+                <div class="space-y-5">
+                    <!-- Trade Date -->
+                    <div>
+                        <label for="{{ form.trade_date.id_for_label }}" class="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                            {{ form.trade_date.label }}
+                        </label>
+                        {{ form.trade_date }}
+                        {% if form.trade_date.help_text %}
+                        <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ form.trade_date.help_text }}</p>
+                        {% endif %}
+                        {% if form.trade_date.errors %}
+                        <p class="mt-2 text-sm text-red-600 dark:text-red-400">{{ form.trade_date.errors }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 pt-6 border-t border-gray-200 dark:border-gray-700">
+                    <button type="submit" name="apply" class="bg-primary-600 hover:bg-primary-700 dark:bg-primary-600 dark:hover:bg-primary-700 text-white font-semibold py-2.5 px-6 rounded-lg shadow-sm transition-colors">
+                        수집 시작
+                    </button>
+                    <a href="{% url 'admin:companies_company_changelist' %}"
+                       class="bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-semibold py-2.5 px-6 rounded-lg transition-colors">
+                        취소
+                    </a>
+                </div>
+            </form>
+
+            <div class="reference-section mt-8 p-5 bg-blue-50 dark:bg-gray-800 rounded-lg border border-blue-200 dark:border-gray-600">
+                <h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white">참고사항</h3>
+                <ul class="list-disc list-inside space-y-3 text-sm text-gray-800 dark:text-gray-200">
+                    <li>거래일을 선택하지 않으면 현재일 기준으로 수집됩니다.</li>
+                    <li>KRX API에서 상장 종목 정보를 가져옵니다.</li>
+                    <li>OpenDART API에서 법인 정보를 가져옵니다.</li>
+                    <li>보통주(종목 코드가 0으로 끝남)를 먼저 처리하여 Company를 생성합니다.</li>
+                    <li>우선주 및 기타 주식은 해당 보통주 Company에 연결됩니다.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* 기본 폼 필드 스타일 (라이트 모드) */
+.main-card input[type="date"],
+.main-card input[type="text"],
+.main-card select {
+    width: 100%;
+    padding: 0.625rem 0.875rem;
+    border: 2px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    transition: all 0.15s ease-in-out;
+    background-color: white;
+    color: #111827;
+    background-position: right 0.75rem center;
+    background-repeat: no-repeat;
+    appearance: none;
+}
+
+/* 다크모드 스타일 */
+.dark .main-card input[type="date"],
+.dark .main-card input[type="text"],
+.dark .main-card select {
+    background-color: #1f2937;
+    border-color: #6b7280;
+    color: #f3f4f6;
+}
+
+.dark .main-card input[type="date"]:hover,
+.dark .main-card input[type="text"]:hover,
+.dark .main-card select:hover {
+    border-color: #9ca3af;
+}
+
+.dark .main-card input[type="date"]:focus,
+.dark .main-card input[type="text"]:focus,
+.dark .main-card select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.dark .main-card {
+  background-color: #111827;
+}
+
+.dark .reference-section {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+</style>
+{% endblock %}

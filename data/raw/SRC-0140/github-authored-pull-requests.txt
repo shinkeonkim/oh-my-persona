@@ -1,0 +1,6 @@
+GitHub repository: https://github.com/kokoa-lab/duck-therapy
+Pull request author: shinkeonkim
+
+2026-08-28T07:01:56Z	#3	MERGED	https://github.com/kokoa-lab/duck-therapy/pull/3	chore(ads): add ads.txt	merged=2026-08-28T07:55:31Z	closed=2026-08-28T07:55:31Z	commits=1	files=1	+1/-0	project-lens가 자동 생성한 PR입니다. - public/ads.txt를 추가했습니다. - AdSense 게시자: ca-pub-3060818993817836
+2026-08-28T05:28:08Z	#2	MERGED	https://github.com/kokoa-lab/duck-therapy/pull/2	docs: write a real README	merged=2026-08-28T07:55:22Z	closed=2026-08-28T07:55:22Z	commits=1	files=1	+35/-0	README.md was thin/placeholder. Replaced it with an accurate description based on the actual source (features, tech stack, real dev/build/deploy commands read from package.json and wrangler.toml).
+2026-08-27T16:54:32Z	#1	MERGED	https://github.com/kokoa-lab/duck-therapy/pull/1	chore(tracking): GTM 스니펫 추가 (GTM-P3QZFJ5J)	merged=2026-08-28T03:53:34Z	closed=2026-08-28T03:53:34Z	commits=1	files=1	+13/-0	project-lens가 자동 생성한 PR입니다. - index.html에 GTM(GTM-P3QZFJ5J) 스니펫을 삽입했습니다. - GTM 컨테이너: GTM-P3QZFJ5J

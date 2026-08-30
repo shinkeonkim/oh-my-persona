@@ -1,0 +1,7 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-tablist-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:29:06Z	2e97bdbc293a5153259e9affaa3fac974eac5fb1	https://github.com/kokoa-hobby/minecraft-tablist-plugin/commit/2e97bdbc293a5153259e9affaa3fac974eac5fb1	Add README
+2026-07-22T12:22:19Z	df172e19f047a0159dd5927d714b80b513e5d4ef	https://github.com/kokoa-hobby/minecraft-tablist-plugin/commit/df172e19f047a0159dd5927d714b80b513e5d4ef	Add TabListPlugin main class
+2026-07-22T12:22:19Z	eaa846008787ad745cda4815d2a49926419164dc	https://github.com/kokoa-hobby/minecraft-tablist-plugin/commit/eaa846008787ad745cda4815d2a49926419164dc	Add plugin manifest and resources
+2026-07-22T12:22:19Z	27737bf321285d43ce9020af6286fa8c8675466a	https://github.com/kokoa-hobby/minecraft-tablist-plugin/commit/27737bf321285d43ce9020af6286fa8c8675466a	Add Gradle project scaffold

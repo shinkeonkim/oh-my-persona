@@ -1,0 +1,6 @@
+GitHub repository: https://github.com/kokoa-lab/cors-port
+Pull request author: shinkeonkim
+
+2026-08-28T07:00:59Z	#3	MERGED	https://github.com/kokoa-lab/cors-port/pull/3	chore(ads): add ads.txt	merged=2026-08-28T07:54:12Z	closed=2026-08-28T07:54:12Z	commits=1	files=1	+1/-0	project-lens가 자동 생성한 PR입니다. - public/ads.txt를 추가했습니다. - AdSense 게시자: ca-pub-3060818993817836
+2026-08-28T05:28:43Z	#2	MERGED	https://github.com/kokoa-lab/cors-port/pull/2	docs: add README	merged=2026-08-28T07:54:04Z	closed=2026-08-28T07:54:04Z	commits=1	files=1	+31/-0	이 프로젝트가 실제로 무엇을 하는지 설명하는 README를 작성했습니다 (기존엔 없었거나 제목만 있었습니다).
+2026-08-27T16:54:05Z	#1	MERGED	https://github.com/kokoa-lab/cors-port/pull/1	chore(tracking): GTM 스니펫 추가 (GTM-5JVH96GB)	merged=2026-08-28T03:53:44Z	closed=2026-08-28T03:53:44Z	commits=1	files=1	+13/-0	project-lens가 자동 생성한 PR입니다. - index.html에 GTM(GTM-5JVH96GB) 스니펫을 삽입했습니다. - GTM 컨테이너: GTM-5JVH96GB

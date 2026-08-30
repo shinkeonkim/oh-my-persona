@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/shinkeonkim/css-animation-study
+Author account: shinkeonkim
+
+2020-11-12T14:28:11Z	ce0bfd524cef70491b8ed8a70ded960e7f7411dd	https://github.com/shinkeonkim/css-animation-study/commit/ce0bfd524cef70491b8ed8a70ded960e7f7411dd	fix: img size
+2020-11-12T14:12:40Z	ea43f12866273323e02872cefc37788c321f17e6	https://github.com/shinkeonkim/css-animation-study/commit/ea43f12866273323e02872cefc37788c321f17e6	feat: home design
+2020-11-09T02:35:42Z	f1d7d428c547d6aae2e806401a314336a6cd987a	https://github.com/shinkeonkim/css-animation-study/commit/f1d7d428c547d6aae2e806401a314336a6cd987a	fix: example.html -> index.html
+2020-11-09T02:35:22Z	0c57c146581c1e29b87bc484d760f452bc1ef9f2	https://github.com/shinkeonkim/css-animation-study/commit/0c57c146581c1e29b87bc484d760f452bc1ef9f2	feat: neon button
+2020-11-08T13:22:24Z	51a321d47938f942d5cf0273a649c5c11ddee614	https://github.com/shinkeonkim/css-animation-study/commit/51a321d47938f942d5cf0273a649c5c11ddee614	feat: bouncing ball
+2020-11-07T17:38:00Z	402f4d7d992a44013c376173f438f9147b3d5033	https://github.com/shinkeonkim/css-animation-study/commit/402f4d7d992a44013c376173f438f9147b3d5033	feat: shining-loading

@@ -1,0 +1,11 @@
+GitHub repository: https://github.com/kokoa-lab/works-on-mine
+Author account: shinkeonkim
+
+2026-08-28T07:11:39Z	55f4d69ec982071be9223fe705c4ad71401b42f4	https://github.com/kokoa-lab/works-on-mine/commit/55f4d69ec982071be9223fe705c4ad71401b42f4	Merge pull request #3 from kokoa-lab/project-lens/add-ads-txt-3219e212 chore(ads): add ads.txt
+2026-08-28T07:11:31Z	0546c2628fb260155af69fbe8f91f7c2608ac09e	https://github.com/kokoa-lab/works-on-mine/commit/0546c2628fb260155af69fbe8f91f7c2608ac09e	Merge pull request #2 from kokoa-lab/docs/expand-readme docs: expand README
+2026-08-28T07:04:21Z	a4102be242a8055cec3fdcdeaeca33b20a56df96	https://github.com/kokoa-lab/works-on-mine/commit/a4102be242a8055cec3fdcdeaeca33b20a56df96	chore(ads): add ads.txt project-lens automated commit.
+2026-08-28T05:28:58Z	38bedbb2e78c8039ef942ecc7a146ea02b108440	https://github.com/kokoa-lab/works-on-mine/commit/38bedbb2e78c8039ef942ecc7a146ea02b108440	docs: expand README with real project description and dev/build/deploy instructions
+2026-08-28T03:52:58Z	5f0e1e0e71dddfe5469d0c778cc27eaaf3adb430	https://github.com/kokoa-lab/works-on-mine/commit/5f0e1e0e71dddfe5469d0c778cc27eaaf3adb430	Merge pull request #1 from kokoa-lab/project-lens/add-gtm-tracking-89 chore(tracking): GTM 스니펫 추가 (GTM-KQRVWCW9)
+2026-08-27T16:56:22Z	14f6b3aac84e37ae2554f48096f6964ea350bb30	https://github.com/kokoa-lab/works-on-mine/commit/14f6b3aac84e37ae2554f48096f6964ea350bb30	chore(tracking): add GTM snippet (GTM-KQRVWCW9) project-lens automated commit.
+2026-03-09T09:24:52Z	d7dbb77fb54ca7ce3f3a22f7011c9bb2153f845d	https://github.com/kokoa-lab/works-on-mine/commit/d7dbb77fb54ca7ce3f3a22f7011c9bb2153f845d	Create README.md
+2026-03-09T09:24:24Z	50cec62c58916364e0c2674ae42a288c95a60e00	https://github.com/kokoa-lab/works-on-mine/commit/50cec62c58916364e0c2674ae42a288c95a60e00	feat: initial project settings by lovable

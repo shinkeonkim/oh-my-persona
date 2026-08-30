@@ -1,0 +1,165 @@
+GitHub repository: https://github.com/meme-party/dionysus
+Author account: shinkeonkim
+
+2025-09-14T13:36:09Z	130eeee5eadfe2b28b1b3fbd09e4688663c961bd	https://github.com/meme-party/dionysus/commit/130eeee5eadfe2b28b1b3fbd09e4688663c961bd	hotfix: memo 관련 제대로 처리안되는 이슈 수정
+2025-08-24T05:11:24Z	98f243a87d0090c857549bfedf28cd9618985c27	https://github.com/meme-party/dionysus/commit/98f243a87d0090c857549bfedf28cd9618985c27	refactor: CI
+2025-08-24T05:05:54Z	54d37408fe4653ab74002605df4fdb6f18af9ac8	https://github.com/meme-party/dionysus/commit/54d37408fe4653ab74002605df4fdb6f18af9ac8	refactor: 쿼리 리팩토링 및 수정
+2025-08-23T13:42:37Z	16b19fe154a0e73ce27aa7d9378d71240e359a66	https://github.com/meme-party/dionysus/commit/16b19fe154a0e73ce27aa7d9378d71240e359a66	fix: tags issue 수정
+2025-08-21T14:42:54Z	4ef3f90b3d9f4d7a434c43cb33bf9f11d2d01984	https://github.com/meme-party/dionysus/commit/4ef3f90b3d9f4d7a434c43cb33bf9f11d2d01984	fix: url 변경
+2025-08-21T14:41:33Z	5a94712f46a443f40d153a43792b47099346f813	https://github.com/meme-party/dionysus/commit/5a94712f46a443f40d153a43792b47099346f813	feat: 문서 수정
+2025-08-21T13:26:08Z	3a160d0ed320b6cbbb3bb7391570f73cbd0fcab0	https://github.com/meme-party/dionysus/commit/3a160d0ed320b6cbbb3bb7391570f73cbd0fcab0	Merge pull request #20 from meme-party/bookmarking-without-bookmark Bookmarking without bookmark
+2025-08-20T17:50:37Z	09051d37f4474ffae80102f6f920136713215846	https://github.com/meme-party/dionysus/commit/09051d37f4474ffae80102f6f920136713215846	feat: 일부 설정값에 대한 모킹 추가
+2025-08-20T17:50:10Z	6950a0e8b744595cecd2f2b44215458bd703d710	https://github.com/meme-party/dionysus/commit/6950a0e8b744595cecd2f2b44215458bd703d710	feat: bookmarkings_count를 초기화하는 로직개선
+2025-08-20T17:49:23Z	be5ccaa40e84dfcc75e70900e532c5ef5d22ac17	https://github.com/meme-party/dionysus/commit/be5ccaa40e84dfcc75e70900e532c5ef5d22ac17	feat: bookmarking에 대해서 bookmark 없이 bookmarking하는 케이스를 고려한 API 추가
+2025-08-20T17:47:26Z	c474f68e8b22209fdd62622c3c7e9d505313571c	https://github.com/meme-party/dionysus/commit/c474f68e8b22209fdd62622c3c7e9d505313571c	feat: Base APIView 추가
+2025-08-20T17:46:04Z	ab4f5c1159bbb1bb34b446416d604a3e4398a7f5	https://github.com/meme-party/dionysus/commit/ab4f5c1159bbb1bb34b446416d604a3e4398a7f5	test: (AI) bookmarking model 테스트 코드
+2025-08-20T17:42:56Z	cf316bc7e20bca80789f44d1f986e209f7fc7483	https://github.com/meme-party/dionysus/commit/cf316bc7e20bca80789f44d1f986e209f7fc7483	feat: bookmark 없는 bookmarking을 위한 모델 변경사항
+2025-07-27T15:33:05Z	3f723ceff84fa8692909f466bd91c754419758e5	https://github.com/meme-party/dionysus/commit/3f723ceff84fa8692909f466bd91c754419758e5	Merge pull request #19 from meme-party/features/memo-api Features/memo api
+2025-07-27T15:02:49Z	59bb8a855b7ef87f670ac94f16dadb780a2a1a25	https://github.com/meme-party/dionysus/commit/59bb8a855b7ef87f670ac94f16dadb780a2a1a25	chore: API들마다 tags 적용하여 swagger 문서 개선
+2025-07-27T15:02:16Z	2e359c670e980652c6de8bebb5ad275aa855ffc6	https://github.com/meme-party/dionysus/commit/2e359c670e980652c6de8bebb5ad275aa855ffc6	feat: memo API 추가
+2025-07-27T15:01:36Z	8254100ee29ee5e1f385e4e75408eafbec13d0f6	https://github.com/meme-party/dionysus/commit/8254100ee29ee5e1f385e4e75408eafbec13d0f6	feat: memo serializer 추가
+2025-07-27T15:01:17Z	2c8ea6ced64d1f46e327cbb296c2a197fbc3f78f	https://github.com/meme-party/dionysus/commit/2c8ea6ced64d1f46e327cbb296c2a197fbc3f78f	refactor: meme serializers 폴더 분리
+2025-07-27T14:42:15Z	9ac48a273c77adebc3423778f8913873d28bcad0	https://github.com/meme-party/dionysus/commit/9ac48a273c77adebc3423778f8913873d28bcad0	feat: memos 테이블 추가 및 어드민 추가
+2025-07-16T08:01:15Z	4a02c6022a26dd7af2c008e616a77b93fae72fbc	https://github.com/meme-party/dionysus/commit/4a02c6022a26dd7af2c008e616a77b93fae72fbc	feat: 해당 밈의 북마크 id 목록을 반환하는 API
+2025-07-15T14:38:40Z	8b57ca36fe9201fee3b644642d69ef057d9b609b	https://github.com/meme-party/dionysus/commit/8b57ca36fe9201fee3b644642d69ef057d9b609b	feat: 유저 상세 조회시 username 정보 추가
+2025-05-22T03:41:27Z	7585f53c1015af22790717b223b4499fb33926bb	https://github.com/meme-party/dionysus/commit/7585f53c1015af22790717b223b4499fb33926bb	fix: api/v1/memes 에서 발생하는 N + 1 쿼리 이슈 수정
+2025-05-05T10:04:42Z	937f9786aa3f8c096f6d1d7dc23624697686f78c	https://github.com/meme-party/dionysus/commit/937f9786aa3f8c096f6d1d7dc23624697686f78c	fix: thumbnail 링크가 https로 시작하도록 변경
+2025-05-05T09:56:14Z	04969b6fa0d3d3ad7f459834926dc0ac11e6013e	https://github.com/meme-party/dionysus/commit/04969b6fa0d3d3ad7f459834926dc0ac11e6013e	feat: CI가 성공한 경우와 workflow를 직접 실행한 경우에 대해서만 이미지 빌드가 수행되도록 하기
+2025-05-05T09:50:30Z	e13ea2a5f323afe0027cc9601137ee9caca60be4	https://github.com/meme-party/dionysus/commit/e13ea2a5f323afe0027cc9601137ee9caca60be4	feat: original_title 추가 및 original_link를 URL Field 로 변경
+2025-04-08T13:15:30Z	8f91ef50e97822e2212f809df12b692811ea138c	https://github.com/meme-party/dionysus/commit/8f91ef50e97822e2212f809df12b692811ea138c	fix: CORS settings
+2025-04-08T13:05:54Z	58fd2ab948c521580b44d9f31d53455744e843b4	https://github.com/meme-party/dionysus/commit/58fd2ab948c521580b44d9f31d53455744e843b4	fix: CORS settings
+2025-04-08T12:51:26Z	b82b1d7fbb92966c97349bb08476c12bad8cec2e	https://github.com/meme-party/dionysus/commit/b82b1d7fbb92966c97349bb08476c12bad8cec2e	fix: 테스트를 위한 CORS 수정
+2025-04-08T12:38:21Z	bdca5687accfa3986d216cc7fe5e23ecaea4f491	https://github.com/meme-party/dionysus/commit/bdca5687accfa3986d216cc7fe5e23ecaea4f491	fix: CORS settings
+2025-04-08T12:35:42Z	9fbc822465766a0fccb142e7074781220b0b65ac	https://github.com/meme-party/dionysus/commit/9fbc822465766a0fccb142e7074781220b0b65ac	fix: CORS settings
+2025-04-08T12:23:32Z	3b7dc46a31ceeb960fb313a1a58ca50c530ab165	https://github.com/meme-party/dionysus/commit/3b7dc46a31ceeb960fb313a1a58ca50c530ab165	fix: CORS settings
+2025-04-08T11:18:26Z	fbda7e0300e100d05b860a4bd7f1b86612a0fe91	https://github.com/meme-party/dionysus/commit/fbda7e0300e100d05b860a4bd7f1b86612a0fe91	fix: 인기도 점수 로직 개선
+2025-04-08T10:45:13Z	2ce78ed48cd5971b0dfd346fac884cea11624d85	https://github.com/meme-party/dionysus/commit/2ce78ed48cd5971b0dfd346fac884cea11624d85	fix: ordering
+2025-04-06T09:17:28Z	fb1ca402fbbe7af277d59d3a96325eb9fd8560f6	https://github.com/meme-party/dionysus/commit/fb1ca402fbbe7af277d59d3a96325eb9fd8560f6	Merge branch 'main' of https://github.com/meme-party/dionysus
+2025-04-06T09:17:22Z	75f3599b92b6b515d25a720f37212d1bf79a90f8	https://github.com/meme-party/dionysus/commit/75f3599b92b6b515d25a720f37212d1bf79a90f8	fix: 모델에서 validation을 수행하지 않고, form을 변경함
+2025-03-29T15:32:51Z	430b24248ee6977c6d89fd47093404aaa57938ac	https://github.com/meme-party/dionysus/commit/430b24248ee6977c6d89fd47093404aaa57938ac	fix: 익명 유저일때 발생하는 버그 수정
+2025-03-29T14:59:19Z	c3298baa4f29c09af8b9805ade72e9950e581f48	https://github.com/meme-party/dionysus/commit/c3298baa4f29c09af8b9805ade72e9950e581f48	fix: test dummy key issue
+2025-03-29T08:07:12Z	f8f6c28493f8ff0b630ae883f2af91d275daeb13	https://github.com/meme-party/dionysus/commit/f8f6c28493f8ff0b630ae883f2af91d275daeb13	feat: user 탈퇴 API 추가
+2025-03-29T08:06:31Z	70839b1be63cfaca34caf2d7bb1a77ca5fa23685	https://github.com/meme-party/dionysus/commit/70839b1be63cfaca34caf2d7bb1a77ca5fa23685	fix: logging config
+2025-03-29T08:06:23Z	02a7dde857be083570876896ad0959c4ca283b0f	https://github.com/meme-party/dionysus/commit/02a7dde857be083570876896ad0959c4ca283b0f	fix: api app, url setting
+2025-03-29T06:25:53Z	e0b656f99a65606662338257744f3bd4fca420bb	https://github.com/meme-party/dionysus/commit/e0b656f99a65606662338257744f3bd4fca420bb	feat: is_bookmarked field 추가
+2025-03-29T05:58:25Z	8fac3776e941f7533860ec8bad3a72fa8755f341	https://github.com/meme-party/dionysus/commit/8fac3776e941f7533860ec8bad3a72fa8755f341	fix: logger bug
+2025-03-29T05:43:20Z	a79c3c5fe0cc92db825acaf7d9e1b376ee73155d	https://github.com/meme-party/dionysus/commit/a79c3c5fe0cc92db825acaf7d9e1b376ee73155d	feat: dummy meme 생성 로직 개선
+2025-03-29T05:41:51Z	b40398d68272cf1c960c51f63516c4044c0778e0	https://github.com/meme-party/dionysus/commit/b40398d68272cf1c960c51f63516c4044c0778e0	feat: camel case middleware 및 parser 추가
+2025-03-29T05:02:12Z	50870a82af046a59e221826d44bfc9dd9834fb06	https://github.com/meme-party/dionysus/commit/50870a82af046a59e221826d44bfc9dd9834fb06	feat: logger 설정 추가
+2025-03-28T14:53:18Z	cc19daff589d2499be86aad4f313ea2bbc0ce4ea	https://github.com/meme-party/dionysus/commit/cc19daff589d2499be86aad4f313ea2bbc0ce4ea	test: base factory 추가
+2025-03-28T14:49:00Z	35159dfd478315997bd24dfe100abad59aea807b	https://github.com/meme-party/dionysus/commit/35159dfd478315997bd24dfe100abad59aea807b	refactor: github action caching
+2025-03-28T14:31:39Z	58ca3b7af3b04799acacb970fad75e7862a63eb7	https://github.com/meme-party/dionysus/commit/58ca3b7af3b04799acacb970fad75e7862a63eb7	feat: dummy data를 위한 내용 추가
+2025-03-28T13:04:09Z	7bec4c385039a60685c4f4847d9bf74ac15b0ece	https://github.com/meme-party/dionysus/commit/7bec4c385039a60685c4f4847d9bf74ac15b0ece	fix: test coverage report workflow
+2025-03-28T12:14:33Z	af5e5e5dbf55f0be3a625a2b3295e02d5095672e	https://github.com/meme-party/dionysus/commit/af5e5e5dbf55f0be3a625a2b3295e02d5095672e	fix: 인기도 로직
+2025-03-28T12:10:07Z	43d8120ee1d3acbde05f6eb4a87196134cb1489f	https://github.com/meme-party/dionysus/commit/43d8120ee1d3acbde05f6eb4a87196134cb1489f	feat: coverage report를 github 상에서 확인할 수 있도록 workflow 추가
+2025-03-28T11:52:42Z	9c0a61d6699c8eae67a581e4f6fa58f4e7ebca2b	https://github.com/meme-party/dionysus/commit/9c0a61d6699c8eae67a581e4f6fa58f4e7ebca2b	feat: test coverage check
+2025-03-28T11:19:54Z	b92e910498dba7b2fbe1b5126c163a27b7e91610	https://github.com/meme-party/dionysus/commit/b92e910498dba7b2fbe1b5126c163a27b7e91610	feat: meme 생성 어드민에서 기본값으로 현재 어드민 사용자가 들어가도록 함
+2025-03-28T10:42:19Z	89ded997597388e98efa122ecbcc2069f981d28a	https://github.com/meme-party/dionysus/commit/89ded997597388e98efa122ecbcc2069f981d28a	feat: 계정 설정 최신화
+2025-03-28T10:41:55Z	0e19eab1bc63a835aa126f269df004d6355bc7f6	https://github.com/meme-party/dionysus/commit/0e19eab1bc63a835aa126f269df004d6355bc7f6	feat: 인기도 정보에 따른 정렬 추가
+2025-03-28T10:40:06Z	20c346f99cf5a9eb91d3e6c5927865d7aa65be3e	https://github.com/meme-party/dionysus/commit/20c346f99cf5a9eb91d3e6c5927865d7aa65be3e	feat: tag_counter, tag_user_counter에 대한 어드민 및 API 반영
+2025-03-28T10:36:41Z	d54e081e60fe2ccc418946eca6d67ccfb9f2caef	https://github.com/meme-party/dionysus/commit/d54e081e60fe2ccc418946eca6d67ccfb9f2caef	feat: tag counter를 위한 task, service, signal 추가
+2025-03-28T10:18:12Z	ade0cf7b54e7b2da86ef65cb913e4490c1e58192	https://github.com/meme-party/dionysus/commit/ade0cf7b54e7b2da86ef65cb913e4490c1e58192	feat: user_tag_counter → tag_user_counter로 이전 및 tag_counter 모델 추가
+2025-03-28T10:15:21Z	a7d57433318289c02f4b39937500e6d643371dc3	https://github.com/meme-party/dionysus/commit/a7d57433318289c02f4b39937500e6d643371dc3	feat: celery 관련 설정 추가
+2025-03-28T06:50:52Z	67fcaf35ed6c78ddd010d79ed013f75bc14e0fbe	https://github.com/meme-party/dionysus/commit/67fcaf35ed6c78ddd010d79ed013f75bc14e0fbe	feat: log entry admin
+2025-03-28T06:50:43Z	ff5e05e95b9826d4e14d9fa71615f5c7eddee66f	https://github.com/meme-party/dionysus/commit/ff5e05e95b9826d4e14d9fa71615f5c7eddee66f	fix: swagger docs issue
+2025-03-28T06:50:21Z	28d415d4f2dde1acb4b6854cdd8d0e89ceb0a7e4	https://github.com/meme-party/dionysus/commit/28d415d4f2dde1acb4b6854cdd8d0e89ceb0a7e4	fix: default ordering 추가
+2025-03-28T05:49:37Z	66d978ad14361bd383b4aaca4f4280f59b2f432a	https://github.com/meme-party/dionysus/commit/66d978ad14361bd383b4aaca4f4280f59b2f432a	chore: 이미 고려된 TODO 코멘트 삭제
+2025-03-23T03:12:34Z	3b7a172254018b2cf1de8d621ef25dc06d9d7d76	https://github.com/meme-party/dionysus/commit/3b7a172254018b2cf1de8d621ef25dc06d9d7d76	feat: production 환경을 위한 설정 및 이미지 빌드 과정 추가
+2025-03-21T12:13:20Z	20cf329e50be40ef16807acd45dcace4f5b8ba52	https://github.com/meme-party/dionysus/commit/20cf329e50be40ef16807acd45dcace4f5b8ba52	fix: oauth username issue
+2025-03-21T09:43:26Z	c6979cb32ec71740f85c127b08ce846df55d7eb0	https://github.com/meme-party/dionysus/commit/c6979cb32ec71740f85c127b08ce846df55d7eb0	fix: user soft delete 삭제
+2025-03-21T09:26:22Z	ec7654f08a95dd8bc320c0d96027929020e4e23b	https://github.com/meme-party/dionysus/commit/ec7654f08a95dd8bc320c0d96027929020e4e23b	fix: temp error variable
+2025-03-21T09:17:28Z	7b0661bca65a2d88f46afa13af173ddd2795014c	https://github.com/meme-party/dionysus/commit/7b0661bca65a2d88f46afa13af173ddd2795014c	fix: redirect_url
+2025-03-21T09:14:08Z	6f89fc4dc9b9df35990ea2e4283849dd9c30e7e8	https://github.com/meme-party/dionysus/commit/6f89fc4dc9b9df35990ea2e4283849dd9c30e7e8	fix: error
+2025-03-21T08:51:09Z	cd15c130a9e8a4745dbeb7a4905e9c0a22f3d55e	https://github.com/meme-party/dionysus/commit/cd15c130a9e8a4745dbeb7a4905e9c0a22f3d55e	fix: 익명 유저 조회시 발생하는 문제 수정
+2025-03-21T08:17:06Z	088f2883480cc0c0dafb3286cddad78e761ac1f5	https://github.com/meme-party/dionysus/commit/088f2883480cc0c0dafb3286cddad78e761ac1f5	feat: CORS settings
+2025-03-21T07:17:40Z	226a26ab31c244ded14e847b199b0306945b5576	https://github.com/meme-party/dionysus/commit/226a26ab31c244ded14e847b199b0306945b5576	fix: redirect_uri 정보를 프론트에 맞게 설정할 수 있도록 함
+2025-03-20T14:50:01Z	e39c48f5e455d7900880d92255b5afb320cf718a	https://github.com/meme-party/dionysus/commit/e39c48f5e455d7900880d92255b5afb320cf718a	fix: Meme API bugs
+2025-03-20T14:30:19Z	6ebb40f2f697eab38cfb988d728f0ab8f164abe9	https://github.com/meme-party/dionysus/commit/6ebb40f2f697eab38cfb988d728f0ab8f164abe9	fix: test code
+2025-03-20T14:24:54Z	0edd5393071f79c4aa603a0168e9f39b1d9674e0	https://github.com/meme-party/dionysus/commit/0edd5393071f79c4aa603a0168e9f39b1d9674e0	feat: meme 생성시 meme_counter를 같이 생성하도록 함
+2025-03-20T14:03:21Z	f25cda6c97ee7d5f7977eaa284987d442f54b2e4	https://github.com/meme-party/dionysus/commit/f25cda6c97ee7d5f7977eaa284987d442f54b2e4	test: Meme 모델에 대한 간단한 테스트 추가
+2025-03-20T13:52:26Z	061e0487a02c2965ec1734b70d3249adda7f16bd	https://github.com/meme-party/dionysus/commit/061e0487a02c2965ec1734b70d3249adda7f16bd	feat: 연관 밈 목록을 반환하는 API 추가
+2025-03-20T13:51:41Z	66fd18d0672bd7ad3e0485fb75b7994287858d09	https://github.com/meme-party/dionysus/commit/66fd18d0672bd7ad3e0485fb75b7994287858d09	chore: swagger 문서 추가
+2025-03-20T13:50:56Z	2d18e883802e8bd391966fb8ecc32cba821ddc75	https://github.com/meme-party/dionysus/commit/2d18e883802e8bd391966fb8ecc32cba821ddc75	fix: django 개발 중 프로세스가 제대로 종료되지 않아, 인위적으로 컨테이너를 재시작해야 하는 이슈 수정
+2025-03-20T13:11:58Z	5b5d8386f40e69e8a37b5dad794e6d6529f9982b	https://github.com/meme-party/dionysus/commit/5b5d8386f40e69e8a37b5dad794e6d6529f9982b	feat: 밈 인기순 정렬 추가
+2025-03-20T12:42:38Z	d9aa01a6b569d42382702eab146dcc23992516c9	https://github.com/meme-party/dionysus/commit/d9aa01a6b569d42382702eab146dcc23992516c9	feat: 인기순 정렬을 위한 조회수 정보 추가
+2025-03-20T12:39:53Z	85d5ec880225537ea5c45e6536db208dff603e2e	https://github.com/meme-party/dionysus/commit/85d5ec880225537ea5c45e6536db208dff603e2e	fix: DEBUG 모드가 켜져있는 경우 sentry report 되지 않도록 함
+2025-03-20T12:21:41Z	2787563ac6f704949663f4662cd1b4d0be2da697	https://github.com/meme-party/dionysus/commit/2787563ac6f704949663f4662cd1b4d0be2da697	refactor: 의미없는 코드 삭제
+2025-03-20T10:17:02Z	a64911de978cd383004b72335178e4bcd615d99c	https://github.com/meme-party/dionysus/commit/a64911de978cd383004b72335178e4bcd615d99c	feat: sentry sdk 설정 추가
+2025-03-20T06:13:37Z	c7358211e64e043617392ded89c6e087d24e5ec0	https://github.com/meme-party/dionysus/commit/c7358211e64e043617392ded89c6e087d24e5ec0	feat: Video 관리 개선 - 파일 외에 링크로도 추가할 수 있도록 함
+2025-03-19T05:37:12Z	4d1d8c9381a6c5f95edee951ad56dcba8d3039b0	https://github.com/meme-party/dionysus/commit/4d1d8c9381a6c5f95edee951ad56dcba8d3039b0	feat: Meme의 thumbnail link에 대해 full path가 나오도록함.
+2025-03-19T05:30:43Z	6bd921a3416831e3e2d6b739a8aa5618d24435c8	https://github.com/meme-party/dionysus/commit/6bd921a3416831e3e2d6b739a8aa5618d24435c8	fix: AllowAny로 정책 변경
+2025-03-19T04:58:02Z	a1234eafc563e595f972fcf8b2202ee9ba014d1a	https://github.com/meme-party/dionysus/commit/a1234eafc563e595f972fcf8b2202ee9ba014d1a	feat: 태그를 초성별로 반환하는 API 및 초성 목록 API 추가
+2025-03-19T04:32:21Z	37702c15c073b8134ebbdc3553ce5617d6ef2055	https://github.com/meme-party/dionysus/commit/37702c15c073b8134ebbdc3553ce5617d6ef2055	feat: /api/v1/accounts/user/ 상세 정보에 provider 정보를 제공
+2025-03-19T04:31:37Z	da8211afd7d4dea3d1b36874aad471c13a30d0a7	https://github.com/meme-party/dionysus/commit/da8211afd7d4dea3d1b36874aad471c13a30d0a7	fix: permission class가 잘못 지정된 이슈 수정
+2025-03-19T02:37:59Z	71e6bdf0d0dfae7f5db681b34779bb95e262fa0a	https://github.com/meme-party/dionysus/commit/71e6bdf0d0dfae7f5db681b34779bb95e262fa0a	feat: callback url에 대한 swagger docs 추가
+2025-03-19T02:19:18Z	fa1c3f72b7666002f5cf54cceb806b4c256e7274	https://github.com/meme-party/dionysus/commit/fa1c3f72b7666002f5cf54cceb806b4c256e7274	fix: diff 가 없는 경우 skip 처리
+2025-03-19T02:10:59Z	7edd8e39d30c3706120987087dcac1a6c532f6db	https://github.com/meme-party/dionysus/commit/7edd8e39d30c3706120987087dcac1a6c532f6db	fix: file stats
+2025-03-19T02:06:34Z	18963862b1fa674bb1baaab10164169809fceb84	https://github.com/meme-party/dionysus/commit/18963862b1fa674bb1baaab10164169809fceb84	fix: github action bot permission issue
+2025-03-19T02:03:31Z	3169e5bd28e022794dbd5f365d1d1fb64dc0f881	https://github.com/meme-party/dionysus/commit/3169e5bd28e022794dbd5f365d1d1fb64dc0f881	fix: env 값들이 없는 이슈
+2025-03-19T01:58:23Z	43751ae9ae99951889ba3827be560d8dd219769b	https://github.com/meme-party/dionysus/commit/43751ae9ae99951889ba3827be560d8dd219769b	Merge branch 'main' of https://github.com/meme-party/dionysus
+2025-03-19T01:58:08Z	a8833076fc9d6301bb97b086451843961f099c73	https://github.com/meme-party/dionysus/commit/a8833076fc9d6301bb97b086451843961f099c73	feat: create swagger file workflow
+2025-03-16T10:59:18Z	29c3eacaf4e4b7ff71fb54751f8c1f700e67e5cf	https://github.com/meme-party/dionysus/commit/29c3eacaf4e4b7ff71fb54751f8c1f700e67e5cf	fix: alpha url
+2025-03-16T10:52:00Z	452c2f6a5c2583236f57d22ef39395d31cf61468	https://github.com/meme-party/dionysus/commit/452c2f6a5c2583236f57d22ef39395d31cf61468	fix: CSRF_TRUSTED_ORIGINS
+2025-03-16T08:23:57Z	12c2520a8c7324586e62c30e8f6ab71a230ea798	https://github.com/meme-party/dionysus/commit/12c2520a8c7324586e62c30e8f6ab71a230ea798	fix: default value 추가
+2025-03-16T08:16:14Z	c60c8744074270ec160f03aa7ee9b19cfe797cc2	https://github.com/meme-party/dionysus/commit/c60c8744074270ec160f03aa7ee9b19cfe797cc2	chore: 기본 포트를 8000으로 변경
+2025-03-16T08:16:01Z	79512cadac2a5a23deeda3f5093fa799f04ece0a	https://github.com/meme-party/dionysus/commit/79512cadac2a5a23deeda3f5093fa799f04ece0a	feat: kakao login
+2025-03-16T08:14:43Z	994217285af941fccf194b66afd374f1410ecd18	https://github.com/meme-party/dionysus/commit/994217285af941fccf194b66afd374f1410ecd18	Merge branch 'main' of https://github.com/meme-party/dionysus
+2025-03-16T08:13:06Z	dd63ba622219e85a28d8dc31ffe7dbfbb4d096c8	https://github.com/meme-party/dionysus/commit/dd63ba622219e85a28d8dc31ffe7dbfbb4d096c8	fix: account app을 user app으로 변경 및 각 마이그레이션 파일 정리 및 oauth2 인증 관련 설정 - 이후 데이터베이스 초기화 필요 - 해당 작업 이후로는 데이터베이스 마이그레이션을 초기화하는 작업 지양
+2025-03-12T13:32:26Z	4f6a140a3647c418e75c73d6119093339d0d0363	https://github.com/meme-party/dionysus/commit/4f6a140a3647c418e75c73d6119093339d0d0363	fix: database setting
+2025-03-12T11:36:09Z	8f289708e5287ffcd0b825f60830fea722b6b56e	https://github.com/meme-party/dionysus/commit/8f289708e5287ffcd0b825f60830fea722b6b56e	fix: entrypoint
+2025-03-12T11:30:21Z	e67edaf54c1aa4a2a7758f8fb3486e2acf040680	https://github.com/meme-party/dionysus/commit/e67edaf54c1aa4a2a7758f8fb3486e2acf040680	fix: exec
+2025-03-12T11:15:40Z	79ad760c09b19317fc63be8f02d8f0241f800425	https://github.com/meme-party/dionysus/commit/79ad760c09b19317fc63be8f02d8f0241f800425	fix: dockerfile
+2025-03-12T11:05:11Z	475a702ddc0814adfe9523de66691b6c91384055	https://github.com/meme-party/dionysus/commit/475a702ddc0814adfe9523de66691b6c91384055	fix: asgi path
+2025-03-11T11:08:41Z	427567343d616b83caeb47c79a4a523e74d5293a	https://github.com/meme-party/dionysus/commit/427567343d616b83caeb47c79a4a523e74d5293a	feat: alpha image build workflow
+2025-03-11T10:56:43Z	cd25b1166b24ec78b6d0516f0c7f0a98fc02a028	https://github.com/meme-party/dionysus/commit/cd25b1166b24ec78b6d0516f0c7f0a98fc02a028	feat: CI workflow 추가
+2025-03-11T10:49:43Z	41b3b469f6e6218790f680d830b5acf65f65643d	https://github.com/meme-party/dionysus/commit/41b3b469f6e6218790f680d830b5acf65f65643d	feat: uvicorn 추가
+2025-02-09T06:01:55Z	c3e1fd40f4624851c8457aa76450492b3180c5b3	https://github.com/meme-party/dionysus/commit/c3e1fd40f4624851c8457aa76450492b3180c5b3	feat: pagination class 지정
+2025-02-09T05:39:48Z	4ca30ef5e1bed86a843699afb2715a4e4dbad6fd	https://github.com/meme-party/dionysus/commit/4ca30ef5e1bed86a843699afb2715a4e4dbad6fd	feat: tag와 tag_category에 대해서 더미 데이터 생성할 수 있는 command 추가
+2025-02-09T05:38:15Z	6ead7327665a6e3448c2e5b4da3ef5266a99adff	https://github.com/meme-party/dionysus/commit/6ead7327665a6e3448c2e5b4da3ef5266a99adff	fix: bulk create 시에 signal이 발동되지 않는 이슈 수정
+2025-02-08T09:18:19Z	772faa96c2c85fd39f4964ada963900c01f8dc25	https://github.com/meme-party/dionysus/commit/772faa96c2c85fd39f4964ada963900c01f8dc25	feat: dev console command
+2025-02-08T09:18:03Z	a234031ed0a4aed61aff10c9c69da88f05aa5b8d	https://github.com/meme-party/dionysus/commit/a234031ed0a4aed61aff10c9c69da88f05aa5b8d	feat: published 요소만 API 상에 노출되도록 함
+2025-01-30T10:15:23Z	bc835928137e6ffbc8a165c8d0c91e6f6b9c7bd8	https://github.com/meme-party/dionysus/commit/bc835928137e6ffbc8a165c8d0c91e6f6b9c7bd8	feat: 한 밈에 10개를 초과하는 태그가 달리지 않도록 제한 정책 추가
+2025-01-30T10:14:47Z	9b7f3c5ccf6fdcf35be01220f7a3d200a7ddd4be	https://github.com/meme-party/dionysus/commit/9b7f3c5ccf6fdcf35be01220f7a3d200a7ddd4be	feat: Django ValidationError와 drf ValidationError 를 다루는 BaseModelSerializer 추가
+2025-01-30T09:53:19Z	d8fb86e0cf2b442c4fe60397541a0a6de8a9e1ce	https://github.com/meme-party/dionysus/commit/d8fb86e0cf2b442c4fe60397541a0a6de8a9e1ce	feat: bookmarking viewset은 reaonly로 대체하고, 별도의 sync api를 두어 bookmark를 복수로 할 수 있는 별도 API 및 삭제 API 추가
+2025-01-29T17:32:17Z	a486716f12ec1bcc636601058c2c4577fad60a04	https://github.com/meme-party/dionysus/commit/a486716f12ec1bcc636601058c2c4577fad60a04	feat: 태그의 자모를 분리하여 첫글자와 분리된 문자열을 별도로 저장하고 사용하도록 함
+2025-01-29T17:27:29Z	e89741a2efe976d417fe3f6bbab8bcc907f96706	https://github.com/meme-party/dionysus/commit/e89741a2efe976d417fe3f6bbab8bcc907f96706	refactor: model manager 관련 이슈 수정
+2025-01-29T16:39:52Z	3a4b2f5c3fed755678cd0730440cf15f58acb212	https://github.com/meme-party/dionysus/commit/3a4b2f5c3fed755678cd0730440cf15f58acb212	feat: 최애 태그를 bookmarking count를 기준으로 나열
+2025-01-29T16:27:09Z	d4a374ef76be4b87c0fa6767fea6467977f55b82	https://github.com/meme-party/dionysus/commit/d4a374ef76be4b87c0fa6767fea6467977f55b82	feat: user와 tag 사이의 액션에 대해 카운팅하는 모델 및 관련 어드민 추가
+2025-01-29T16:26:06Z	51b015330ddbbe2a24e7b353d8d3e3a299a1ade5	https://github.com/meme-party/dionysus/commit/51b015330ddbbe2a24e7b353d8d3e3a299a1ade5	refactor: tag list api view 정리
+2025-01-29T16:24:40Z	d2dd995294442591f86ab3148824ddaad46f31fc	https://github.com/meme-party/dionysus/commit/d2dd995294442591f86ab3148824ddaad46f31fc	refactor: meme viewset file 정리
+2025-01-29T16:23:51Z	68f19091a52ee12d3010b0e8ec3ac182adbf36f3	https://github.com/meme-party/dionysus/commit/68f19091a52ee12d3010b0e8ec3ac182adbf36f3	feat: psql 기능을 사용하기 위한 패키지 설정
+2025-01-29T14:39:57Z	8e04285244a170dc79c2625d631638b4560cb154	https://github.com/meme-party/dionysus/commit/8e04285244a170dc79c2625d631638b4560cb154	chore: migrations files
+2025-01-29T14:29:53Z	a27d43c0075af678bde29bc7d00069df6523104f	https://github.com/meme-party/dionysus/commit/a27d43c0075af678bde29bc7d00069df6523104f	feat: meme router 정리 (API로는 조회만 가능하게 하도록)
+2025-01-29T14:29:13Z	da128c61dffda78397ba1288c5437161ed7a2ac5	https://github.com/meme-party/dionysus/commit/da128c61dffda78397ba1288c5437161ed7a2ac5	feat: 각 밈 타입마다 타입 기본 값 설정 및 blank 설정
+2025-01-29T14:06:17Z	b41904366bb6ced135c2b0de7237740df35b8180	https://github.com/meme-party/dionysus/commit/b41904366bb6ced135c2b0de7237740df35b8180	feat: 밈의 타입별로 어드민을 구성하고, publish, archive 액션을 쓰도록 함
+2025-01-29T13:56:05Z	be5a1a97dd6c9e3e4cb5f5ee16afa3d789ac217e	https://github.com/meme-party/dionysus/commit/be5a1a97dd6c9e3e4cb5f5ee16afa3d789ac217e	feat: meme counter를 별도 모델로 만들고, 북마크 카운트를 저장함
+2025-01-29T13:25:01Z	a9f58085c6d9cbd2cfb6dfff1c2f74ebba33f510	https://github.com/meme-party/dionysus/commit/a9f58085c6d9cbd2cfb6dfff1c2f74ebba33f510	feat: bookmarking action 시마다 count가 초기화되도록 함
+2025-01-29T13:17:24Z	27f640d0f11894967ff8d5cf7814c01c73aa26e3	https://github.com/meme-party/dionysus/commit/27f640d0f11894967ff8d5cf7814c01c73aa26e3	feat: filtering 관련해서 기본 설정 추가
+2025-01-29T13:05:51Z	31f4cc2085fbff1fcd5d0beee768e50c14025356	https://github.com/meme-party/dionysus/commit/31f4cc2085fbff1fcd5d0beee768e50c14025356	feat: audio, video 파일에 대한 연결 추가
+2025-01-29T12:44:21Z	d564d24ba4b9ae4fcbcecec2f52cef05b65e6a08	https://github.com/meme-party/dionysus/commit/d564d24ba4b9ae4fcbcecec2f52cef05b65e6a08	feat: thumbnail와 관련된 내용을 API에 반영함
+2025-01-29T12:35:06Z	74ef12c370bf847f84b3f770006bf44295b48a9a	https://github.com/meme-party/dionysus/commit/74ef12c370bf847f84b3f770006bf44295b48a9a	feat: 기본적인 file manager - thumbnail에 대해서 연결
+2025-01-29T12:01:13Z	7281ff9d3169badfda002459f8874f7b6f07a6e3	https://github.com/meme-party/dionysus/commit/7281ff9d3169badfda002459f8874f7b6f07a6e3	feat: 기본적인 밈, 북마크, 태그에 대한 API / API 성능 및 N + 1 쿼리에 대한 추적 추가
+2025-01-29T11:55:16Z	4ecc41068c4b9a5188399cf6a2bf15e762c8f808	https://github.com/meme-party/dionysus/commit/4ecc41068c4b9a5188399cf6a2bf15e762c8f808	refactor: account app으로 변경
+2025-01-29T06:35:07Z	05d7dba8e23f04921403479eef97a8569ef72b8a	https://github.com/meme-party/dionysus/commit/05d7dba8e23f04921403479eef97a8569ef72b8a	feat: 서랍 기능 (bookmark)에 대해 모델 및 어드민 선언
+2025-01-29T06:09:26Z	c92935de1d60416679c46b8f33916c8b8a538e9c	https://github.com/meme-party/dionysus/commit/c92935de1d60416679c46b8f33916c8b8a538e9c	feat: 서비스의 기본적인 모델 베이스 추가 - 마이그레이션 파일은 전체 구조 성립 후 한번에 처리 예정
+2025-01-29T05:59:19Z	1b90d6038a0a2a1e05edbcef5b09f492e7a3b717	https://github.com/meme-party/dionysus/commit/1b90d6038a0a2a1e05edbcef5b09f492e7a3b717	refactor: account app으로 변경
+2025-01-27T07:28:41Z	baaf98f44a9efb9502c11f9be4a915a5007961e6	https://github.com/meme-party/dionysus/commit/baaf98f44a9efb9502c11f9be4a915a5007961e6	feat: 기본적인 앱 구성 추가
+2025-01-27T07:00:34Z	c89d1ad3dd9ab1d6f597ed0e0550be83a2d2af4a	https://github.com/meme-party/dionysus/commit/c89d1ad3dd9ab1d6f597ed0e0550be83a2d2af4a	feat: 기본적인 datetime과 softdelete 기능을 지원하는 모델 추가
+2025-01-27T07:00:08Z	d5ae5168f13a0b11ef735528c53ad1d70ff4daa8	https://github.com/meme-party/dionysus/commit/d5ae5168f13a0b11ef735528c53ad1d70ff4daa8	fix: 잘못된 DEBUG 설정 수정
+2025-01-27T06:59:29Z	dd538c776c8d18e8fa593e7057ca51489b51e7ea	https://github.com/meme-party/dionysus/commit/dd538c776c8d18e8fa593e7057ca51489b51e7ea	fix: 별도의 sql로 DB를 생성하지 않도록 함
+2025-01-27T06:50:24Z	e0fa74c80fa0ba5bc9c033f8754f0d91ecc3fe84	https://github.com/meme-party/dionysus/commit/e0fa74c80fa0ba5bc9c033f8754f0d91ecc3fe84	fix: 의미없는 shell script 내용 삭제
+2025-01-27T06:38:28Z	ab10a67db43ebbcf652a2e7cc6a0949cff0aa2c9	https://github.com/meme-party/dionysus/commit/ab10a67db43ebbcf652a2e7cc6a0949cff0aa2c9	fix: formatter
+2025-01-27T06:32:04Z	cc6fc6a06be7dea6e984000298952dac09ca88af	https://github.com/meme-party/dionysus/commit/cc6fc6a06be7dea6e984000298952dac09ca88af	feat: django + docker + docker-compose를 이용한 기본 로컬 개발 환경 설정
+2025-01-27T06:29:46Z	211d035d02eaa4b9d4871e3fe46dd36b3e164a9f	https://github.com/meme-party/dionysus/commit/211d035d02eaa4b9d4871e3fe46dd36b3e164a9f	feat: django project로 포팅
+2024-11-02T12:04:19Z	c8b4cb27989345ce01f844144b783f13ef3acc6b	https://github.com/meme-party/dionysus/commit/c8b4cb27989345ce01f844144b783f13ef3acc6b	Merge pull request #17 from shinkeonkim/0002-dockerized-dev-setting 0002 - dockerized dev setting
+2024-11-02T11:59:47Z	d161c006a58238a7071603a0542401a7e73ff806	https://github.com/meme-party/dionysus/commit/d161c006a58238a7071603a0542401a7e73ff806	feat: dockerized fastAPI application & local postgres database settings
+2024-11-02T11:58:49Z	efb4efe6996206bd8caec9416d6b74945b104938	https://github.com/meme-party/dionysus/commit/efb4efe6996206bd8caec9416d6b74945b104938	feat: fastAPI 기본 application 설정
+2024-11-02T09:16:47Z	4f38197545ac8b0abdec11e8c71eaa5209d75429	https://github.com/meme-party/dionysus/commit/4f38197545ac8b0abdec11e8c71eaa5209d75429	Merge pull request #9 from shinkeonkim/0001-precommit-setting 0001 - pre-commit / poetry setting
+2024-11-02T09:03:12Z	4f0952be427645fa317f732fd90ce04e71627121	https://github.com/meme-party/dionysus/commit/4f0952be427645fa317f732fd90ce04e71627121	Merge pull request #8 from shinkeonkim/0007-pr-template 0007 - PR Template 추가
+2024-11-02T09:01:47Z	1e51511209646ec62d80dad1ab6ac45802b6ca59	https://github.com/meme-party/dionysus/commit/1e51511209646ec62d80dad1ab6ac45802b6ca59	feat: PR Template 추가
+2024-11-02T08:57:22Z	333195b077b64d6ef0052de98d30e7c470c5e7c8	https://github.com/meme-party/dionysus/commit/333195b077b64d6ef0052de98d30e7c470c5e7c8	Merge pull request #6 from shinkeonkim/0005-issue-template feat: Issue Template
+2024-11-02T08:57:04Z	1b89379947b6c19a44541d797646f181038155c2	https://github.com/meme-party/dionysus/commit/1b89379947b6c19a44541d797646f181038155c2	feat: Issue Template
+2024-11-02T08:50:16Z	93aba8fd8b4c2cc95d39fe5195299578897b4885	https://github.com/meme-party/dionysus/commit/93aba8fd8b4c2cc95d39fe5195299578897b4885	feat: 기본적인 pre-commit 설정 추가 - 부가적으로 발생하는 이슈 또는 필요한 설정은 프로젝트 진행하면서 추가하도록 함.
+2024-11-02T08:49:40Z	25238e65a70c0a6817a25fdded052ccf0ca6a207	https://github.com/meme-party/dionysus/commit/25238e65a70c0a6817a25fdded052ccf0ca6a207	feat: pre-commit / fastapi 프로젝트를 위한 기본적인 패키지 설치
+2024-11-02T08:49:12Z	ac4d4fd6f4b4031f0dd43891572a5eee7f51a981	https://github.com/meme-party/dionysus/commit/ac4d4fd6f4b4031f0dd43891572a5eee7f51a981	feat: 기본적인 .gitignore contents 추가
+2024-11-02T08:39:14Z	22b858737a650f731c919a785a6d0888c1586331	https://github.com/meme-party/dionysus/commit/22b858737a650f731c919a785a6d0888c1586331	feat: first commit

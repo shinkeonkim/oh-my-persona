@@ -1,0 +1,57 @@
+GitHub repository: https://github.com/shinkeonkim/re_hanalum
+Author account: shinkeonkim
+
+2020-09-23T02:28:13Z	b18afdfc4fde1a1767e17ce669cd67d0b9886c58	https://github.com/shinkeonkim/re_hanalum/commit/b18afdfc4fde1a1767e17ce669cd67d0b9886c58	Merge branch 'develop'
+2020-09-23T02:27:51Z	4aa2df5812fc30a2c18a486dac7bdb652d2f4e35	https://github.com/shinkeonkim/re_hanalum/commit/4aa2df5812fc30a2c18a486dac7bdb652d2f4e35	Merge branch 'feature_member' into develop
+2020-09-23T02:27:37Z	f9d866865636946be968d41114d7f632d9fd42ca	https://github.com/shinkeonkim/re_hanalum/commit/f9d866865636946be968d41114d7f632d9fd42ca	feat: 교직원 분류 추가
+2020-09-13T09:04:40Z	1cf0ccf0c1b13c23223b03acd90eb5edebf77c6a	https://github.com/shinkeonkim/re_hanalum/commit/1cf0ccf0c1b13c23223b03acd90eb5edebf77c6a	Merge branch 'feature_main'
+2020-09-13T09:04:14Z	840e1b8f5761dcf92b90d98db8a71ff1862ba8a5	https://github.com/shinkeonkim/re_hanalum/commit/840e1b8f5761dcf92b90d98db8a71ff1862ba8a5	feat:중복제거 쿼리 추가
+2020-09-13T08:44:08Z	7b91520a06ea9bb1ee21b0dccf7d6539432d3305	https://github.com/shinkeonkim/re_hanalum/commit/7b91520a06ea9bb1ee21b0dccf7d6539432d3305	Merge branch 'develop'
+2020-09-13T08:43:39Z	604ce11c0c205d788b214e4ba7b8963e73327236	https://github.com/shinkeonkim/re_hanalum/commit/604ce11c0c205d788b214e4ba7b8963e73327236	Merge branch 'feature_venv' into develop
+2020-09-13T08:43:11Z	627e68ca3558c85e86f64af1a4a493fc09da3543	https://github.com/shinkeonkim/re_hanalum/commit/627e68ca3558c85e86f64af1a4a493fc09da3543	fix: requirements.txt
+2020-09-13T08:21:53Z	b03b997fb80d716f5713752b6c858b74df87fa0e	https://github.com/shinkeonkim/re_hanalum/commit/b03b997fb80d716f5713752b6c858b74df87fa0e	Merge branch 'develop'
+2020-09-13T08:21:29Z	5487a235ce7a6c799b4b5ffda718ada2db7057aa	https://github.com/shinkeonkim/re_hanalum/commit/5487a235ce7a6c799b4b5ffda718ada2db7057aa	Merge branch 'feature_board' into develop
+2020-09-13T08:20:55Z	b8a7fde721d292abe96853ff82bbd7af8022a52f	https://github.com/shinkeonkim/re_hanalum/commit/b8a7fde721d292abe96853ff82bbd7af8022a52f	fix: board 제목 제한
+2020-09-12T03:30:11Z	85b25a8995d751c024fac2428c6f721c85aa3fd6	https://github.com/shinkeonkim/re_hanalum/commit/85b25a8995d751c024fac2428c6f721c85aa3fd6	Merge branch 'develop'
+2020-09-12T03:29:49Z	b33c26c8e0634cca1909c379e66bd53d38f05230	https://github.com/shinkeonkim/re_hanalum/commit/b33c26c8e0634cca1909c379e66bd53d38f05230	Merge branch 'feature_article' into develop
+2020-09-12T03:29:29Z	821879eed3c9d76c9bca39f9dc96fa03559e8e04	https://github.com/shinkeonkim/re_hanalum/commit/821879eed3c9d76c9bca39f9dc96fa03559e8e04	feat: article admin 페이지 수정
+2020-09-12T02:51:35Z	606773d3371a07e754cd4b15705e50dea3ce47a6	https://github.com/shinkeonkim/re_hanalum/commit/606773d3371a07e754cd4b15705e50dea3ce47a6	Merge branch 'develop'
+2020-09-12T02:51:10Z	1637e874800152741c5f95285156aee52fe3159e	https://github.com/shinkeonkim/re_hanalum/commit/1637e874800152741c5f95285156aee52fe3159e	Merge branch 'feature_nav' into develop
+2020-09-12T02:49:51Z	72017c479eebeb9e6d66cb9a632cebac44e2b18d	https://github.com/shinkeonkim/re_hanalum/commit/72017c479eebeb9e6d66cb9a632cebac44e2b18d	fix: nav바 메뉴 이슈
+2020-09-12T01:32:50Z	5cdf70699fb02eea85b4c408a0ea4dfb45ab979c	https://github.com/shinkeonkim/re_hanalum/commit/5cdf70699fb02eea85b4c408a0ea4dfb45ab979c	Merge branch 'develop'
+2020-09-12T01:32:29Z	bda31e53eebf1b028523852b3bd9b6b3c4fddecd	https://github.com/shinkeonkim/re_hanalum/commit/bda31e53eebf1b028523852b3bd9b6b3c4fddecd	Merge branch 'feature_admin' into develop
+2020-09-12T01:31:42Z	cfa0c3b4cb1b42570faaccc3019ddf46c660c620	https://github.com/shinkeonkim/re_hanalum/commit/cfa0c3b4cb1b42570faaccc3019ddf46c660c620	feat: super user setting
+2020-09-11T23:55:00Z	9883c1d266c4fa7623d4265d6ca66f4c1dd20fa4	https://github.com/shinkeonkim/re_hanalum/commit/9883c1d266c4fa7623d4265d6ca66f4c1dd20fa4	Merge branch 'develop'
+2020-09-11T23:54:46Z	6a9a923459611383315d95fe1d51079e3f454287	https://github.com/shinkeonkim/re_hanalum/commit/6a9a923459611383315d95fe1d51079e3f454287	Merge branch 'feature_nav' into develop
+2020-09-11T23:54:37Z	cbff7c538f344a01bbcfa0c01d69e6050ac81705	https://github.com/shinkeonkim/re_hanalum/commit/cbff7c538f344a01bbcfa0c01d69e6050ac81705	feat: nav바 shadow 더 잘보이게 수정
+2020-09-11T23:21:04Z	4d0f2c6ea6014c5c9b69cf675c4d509599721c5e	https://github.com/shinkeonkim/re_hanalum/commit/4d0f2c6ea6014c5c9b69cf675c4d509599721c5e	Merge branch 'develop'
+2020-09-11T23:20:45Z	a6160b27366ba38ded691306b2c27cdab5d074cb	https://github.com/shinkeonkim/re_hanalum/commit/a6160b27366ba38ded691306b2c27cdab5d074cb	Merge branch 'feature_board' into develop
+2020-09-11T23:19:46Z	832d91963cbd484b0620df9d6e6419db075979a5	https://github.com/shinkeonkim/re_hanalum/commit/832d91963cbd484b0620df9d6e6419db075979a5	fix: article save issue
+2020-09-11T19:58:10Z	ecafa054e54ad8cce8154176ecbf6d90892c9f48	https://github.com/shinkeonkim/re_hanalum/commit/ecafa054e54ad8cce8154176ecbf6d90892c9f48	Merge branch 'develop'
+2020-09-11T19:57:30Z	63387c5ec1c29473721030e95857caf4f8922da4	https://github.com/shinkeonkim/re_hanalum/commit/63387c5ec1c29473721030e95857caf4f8922da4	Merge branch 'feature_notice' into develop
+2020-09-11T19:57:18Z	82fb3795a229d50bc3e783651b343e59de20bdc3	https://github.com/shinkeonkim/re_hanalum/commit/82fb3795a229d50bc3e783651b343e59de20bdc3	feat: 공지사항 redirect
+2020-09-11T19:28:23Z	e789662552e56c0a390313081b92207ef6e86b31	https://github.com/shinkeonkim/re_hanalum/commit/e789662552e56c0a390313081b92207ef6e86b31	Merge branch 'develop'
+2020-09-11T19:28:02Z	8c31a265a1807d842037148ad6eec686836cc363	https://github.com/shinkeonkim/re_hanalum/commit/8c31a265a1807d842037148ad6eec686836cc363	Merge branch 'feature_authority' into develop
+2020-09-11T19:27:40Z	539df40f8980d6db8958d579ec75327fb1fef642	https://github.com/shinkeonkim/re_hanalum/commit/539df40f8980d6db8958d579ec75327fb1fef642	feat: 글 쓰기 권한에 따라 제한
+2020-09-11T18:18:52Z	bb09f7384d8bc80aa70728880389774a9fb533c2	https://github.com/shinkeonkim/re_hanalum/commit/bb09f7384d8bc80aa70728880389774a9fb533c2	Merge branch 'develop'
+2020-09-11T18:18:26Z	41f22db63eb71e4e27da47183b02a94b4bdb5d76	https://github.com/shinkeonkim/re_hanalum/commit/41f22db63eb71e4e27da47183b02a94b4bdb5d76	Merge branch 'feature_main_board' into develop
+2020-09-11T18:18:04Z	e958cb0cf1650eede7a10b6bfe8c6c956b8e873f	https://github.com/shinkeonkim/re_hanalum/commit/e958cb0cf1650eede7a10b6bfe8c6c956b8e873f	feat: 우선순위에 따라 hot 게시판 렌더링
+2020-09-11T17:49:32Z	51fa452e8491f9c2b630534aa68fe6462bfbb7bb	https://github.com/shinkeonkim/re_hanalum/commit/51fa452e8491f9c2b630534aa68fe6462bfbb7bb	Merge branch 'feature_notice' into develop
+2020-09-11T17:49:20Z	f27eaa4d71b9fba91fccbacbf6c1d2cc9d25b32a	https://github.com/shinkeonkim/re_hanalum/commit/f27eaa4d71b9fba91fccbacbf6c1d2cc9d25b32a	feat: 공지사항 동적으로 가져오게 설정
+2020-09-11T17:32:34Z	287155502e0afb25bac8145ac50b53ec26e2fe19	https://github.com/shinkeonkim/re_hanalum/commit/287155502e0afb25bac8145ac50b53ec26e2fe19	Merge branch 'feature_board' into develop
+2020-09-11T17:19:36Z	a3d82e4e76aa7eba71da075d8e2a36373280ffc2	https://github.com/shinkeonkim/re_hanalum/commit/a3d82e4e76aa7eba71da075d8e2a36373280ffc2	feat: board 페이지 색상 적용
+2020-09-11T17:01:44Z	02ec5e45198870a6850556039f4ea1ade78d323f	https://github.com/shinkeonkim/re_hanalum/commit/02ec5e45198870a6850556039f4ea1ade78d323f	feat: nav 보드 우선순위에 따라 정렬
+2020-09-11T16:49:06Z	00ae57e2aa67728c7919221fe97fb4878a0d9d9e	https://github.com/shinkeonkim/re_hanalum/commit/00ae57e2aa67728c7919221fe97fb4878a0d9d9e	Merge branch 'feature_board_model' into develop
+2020-09-11T16:48:52Z	9cb023de9297e64819b87d4d71cb1b85cef3e534	https://github.com/shinkeonkim/re_hanalum/commit/9cb023de9297e64819b87d4d71cb1b85cef3e534	feat: board 모델 priority, represent_color 필드
+2020-09-11T16:06:49Z	98baaa87b857f50a77855a8b38a50738244ff510	https://github.com/shinkeonkim/re_hanalum/commit/98baaa87b857f50a77855a8b38a50738244ff510	Merge branch 'feature_nav' into develop
+2020-09-11T16:06:29Z	ed1e80b7f4a2b8a2cd0714e29db1147fe0dd2e3f	https://github.com/shinkeonkim/re_hanalum/commit/ed1e80b7f4a2b8a2cd0714e29db1147fe0dd2e3f	fix: 메뉴바 게시판 연결2
+2020-09-11T16:06:07Z	1f219d14b2f490c5b85e0eae3b13fd3aee48e72c	https://github.com/shinkeonkim/re_hanalum/commit/1f219d14b2f490c5b85e0eae3b13fd3aee48e72c	fix: 메뉴바 게시판 연결
+2020-09-11T15:45:59Z	5ed05cfa690c4d8a4da39e77007bfd0a9d27210d	https://github.com/shinkeonkim/re_hanalum/commit/5ed05cfa690c4d8a4da39e77007bfd0a9d27210d	Merge branch 'fix_weather' into develop
+2020-09-11T15:44:45Z	a1fcf08f30d4154d77c994d43842acb4c627ed72	https://github.com/shinkeonkim/re_hanalum/commit/a1fcf08f30d4154d77c994d43842acb4c627ed72	fix: weather 기능 주석처리
+2020-07-19T17:46:27Z	6d830d383b3207948962cfa4e558242cab46a9ae	https://github.com/shinkeonkim/re_hanalum/commit/6d830d383b3207948962cfa4e558242cab46a9ae	fix: 서버 배포용 media url 추가
+2020-07-19T17:15:42Z	69b5ae757c5d4d0af66fb99eeb8afefbe97665c7	https://github.com/shinkeonkim/re_hanalum/commit/69b5ae757c5d4d0af66fb99eeb8afefbe97665c7	fix: nav바 avatar 이미지 안 뜨는 이슈
+2020-07-06T15:15:37Z	4a66a0591890d0afb3572eb75da1a61b18d2a81b	https://github.com/shinkeonkim/re_hanalum/commit/4a66a0591890d0afb3572eb75da1a61b18d2a81b	docs: 실행 관련 내용 추가
+2020-07-06T15:09:48Z	cbc7f713a673b8b66271f68957f3fbbdf185d2bd	https://github.com/shinkeonkim/re_hanalum/commit/cbc7f713a673b8b66271f68957f3fbbdf185d2bd	fix: Email smtpauthenticationerror & Security Issue
+2020-07-06T13:31:16Z	98c95fec66b73c525ba811d433092fc85313f20f	https://github.com/shinkeonkim/re_hanalum/commit/98c95fec66b73c525ba811d433092fc85313f20f	docs:README.md
+2020-07-06T12:54:35Z	def13c771b5ce4a9b2c22e86a8dc7fd052087e49	https://github.com/shinkeonkim/re_hanalum/commit/def13c771b5ce4a9b2c22e86a8dc7fd052087e49	feat:requirements.txt
+2020-07-06T12:34:23Z	ae25735c891bb6f726a9047e27f3c9391f4a4c11	https://github.com/shinkeonkim/re_hanalum/commit/ae25735c891bb6f726a9047e27f3c9391f4a4c11	fix.gitignore

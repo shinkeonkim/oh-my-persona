@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-back-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:27:37Z	ee73555ef65fa23f495fcdd4ebb248c64d0aaea0	https://github.com/kokoa-hobby/minecraft-back-plugin/commit/ee73555ef65fa23f495fcdd4ebb248c64d0aaea0	Add README
+2026-07-22T12:22:12Z	3248d7f750837ace85cedc7856f2701de5befb04	https://github.com/kokoa-hobby/minecraft-back-plugin/commit/3248d7f750837ace85cedc7856f2701de5befb04	Add BackPlugin main class
+2026-07-22T12:22:12Z	902a46c3d8b8063269e186c065b12dee05054258	https://github.com/kokoa-hobby/minecraft-back-plugin/commit/902a46c3d8b8063269e186c065b12dee05054258	Add listeners
+2026-07-22T12:22:12Z	77f40d9b8d83b27fc123e445915101dfc6ff43ef	https://github.com/kokoa-hobby/minecraft-back-plugin/commit/77f40d9b8d83b27fc123e445915101dfc6ff43ef	Add commands
+2026-07-22T12:22:12Z	834692ccb759bd0299ec357cefc19337d35bbc04	https://github.com/kokoa-hobby/minecraft-back-plugin/commit/834692ccb759bd0299ec357cefc19337d35bbc04	Add plugin manifest and resources
+2026-07-22T12:22:12Z	7690d0ba977ac0dbf33f4a014c59dc2bcd1dc02d	https://github.com/kokoa-hobby/minecraft-back-plugin/commit/7690d0ba977ac0dbf33f4a014c59dc2bcd1dc02d	Add Gradle project scaffold

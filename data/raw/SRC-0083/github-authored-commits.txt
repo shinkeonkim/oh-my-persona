@@ -1,0 +1,5 @@
+GitHub repository: https://github.com/kmu-aws-capstone-team-4/poster
+Author account: shinkeonkim
+
+2026-05-08T04:21:49Z	2406973da89bfbd94f0312bf168ca0be11369b5f	https://github.com/kmu-aws-capstone-team-4/poster/commit/2406973da89bfbd94f0312bf168ca0be11369b5f	chore: pdf file
+2026-05-08T04:21:00Z	bcdb41b10b5b2155821992aad17544df0b3943a4	https://github.com/kmu-aws-capstone-team-4/poster/commit/bcdb41b10b5b2155821992aad17544df0b3943a4	feat: 초안 포스터 내용 구성

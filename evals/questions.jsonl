@@ -4,3 +4,6 @@
 {"id":"EVAL-004","question":"SIPE에서 무엇을 했나요?","required_source_ids":["SRC-0002","SRC-0008","SRC-0009"],"required_terms":["SIPE"],"category":"activity"}
 {"id":"EVAL-005","question":"AWS Solutions Architect Associate 자격증 정보를 언제 추가했나요?","required_source_ids":["SRC-0011"],"required_terms":["2026-08-03","AWS Solutions Architect Associate"],"category":"temporal_activity"}
 {"id":"EVAL-006","question":"career document library 기능은 언제 추가했나요?","required_source_ids":["SRC-0012"],"required_terms":["2026-08-28","career document library"],"category":"temporal_activity"}
+{"id":"EVAL-007","question":"MeFit 백엔드는 어떤 기술 스택으로 구성했나요?","required_source_ids":["SRC-0072"],"required_terms":["Django","PostgreSQL","Celery"],"category":"github_project"}
+{"id":"EVAL-008","question":"kkambbaki backend의 Celery 구성을 설명해 주세요.","required_source_ids":["SRC-0063"],"required_terms":["Django","Celery"],"category":"github_project"}
+{"id":"EVAL-009","question":"AWS 자격증 학습 사이트의 기술 스택은 무엇인가요?","required_source_ids":["SRC-0158"],"required_terms":["Next.js","Nest.js","PostgreSQL"],"category":"github_project"}

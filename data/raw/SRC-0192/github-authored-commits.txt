@@ -1,0 +1,5 @@
+GitHub repository: https://github.com/shinkeonkim/HelloAlgo
+Author account: shinkeonkim
+
+2020-05-15T05:46:47Z	68eb5d3e293b9f59a6804a1a5941524743d2c1cb	https://github.com/shinkeonkim/HelloAlgo/commit/68eb5d3e293b9f59a6804a1a5941524743d2c1cb	test highchart example code
+2020-05-15T05:08:08Z	0b4c4379382a21a09810758c3f9a7ea3896a8b43	https://github.com/shinkeonkim/HelloAlgo/commit/0b4c4379382a21a09810758c3f9a7ea3896a8b43	django init

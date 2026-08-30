@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 222 47% 6%;
+    --foreground: 40 100% 95%;
+
+    --card: 222 40% 10%;
+    --card-foreground: 40 100% 95%;
+
+    --popover: 222 40% 10%;
+    --popover-foreground: 40 100% 95%;
+
+    --primary: 32 100% 55%;
+    --primary-foreground: 222 47% 6%;
+
+    --secondary: 222 30% 18%;
+    --secondary-foreground: 40 80% 90%;
+
+    --muted: 222 25% 14%;
+    --muted-foreground: 220 15% 55%;
+
+    --accent: 145 60% 40%;
+    --accent-foreground: 145 80% 95%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 222 25% 18%;
+    --input: 222 25% 18%;
+    --ring: 32 100% 55%;
+
+    --radius: 0.75rem;
+
+    --sky-top: 222 47% 6%;
+    --sky-bottom: 25 80% 40%;
+    --building: 222 30% 12%;
+    --building-lit: 45 100% 70%;
+    --park: 145 60% 35%;
+    --bridge: 30 40% 45%;
+    --window-glow: 45 100% 75%;
+
+    --sidebar-background: 222 40% 8%;
+    --sidebar-foreground: 40 80% 90%;
+    --sidebar-primary: 32 100% 55%;
+    --sidebar-primary-foreground: 222 47% 6%;
+    --sidebar-accent: 222 25% 14%;
+    --sidebar-accent-foreground: 40 80% 90%;
+    --sidebar-border: 222 25% 18%;
+    --sidebar-ring: 32 100% 55%;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@keyframes float-clouds {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(30px); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+@keyframes building-rise {
+  from { transform: scaleY(0); transform-origin: bottom; }
+  to { transform: scaleY(1); transform-origin: bottom; }
+}
+
+@keyframes window-flicker {
+  0%, 90%, 100% { opacity: 1; }
+  95% { opacity: 0.3; }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

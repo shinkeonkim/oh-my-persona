@@ -1,0 +1,76 @@
+GitHub repository: https://github.com/joah-team/backend
+Author account: shinkeonkim
+
+2026-01-05T05:10:29Z	81c55adac2a2c9001b6906ae83b4fe544d5f653a	https://github.com/joah-team/backend/commit/81c55adac2a2c9001b6906ae83b4fe544d5f653a	feat: 로컬 환경에서 db_data 디렉토리에 디비 파일 넣을 수 있도록함
+2025-12-15T12:40:40Z	54b9aae0f96032b9d5e48b7cb9c2ea70914c8a58	https://github.com/joah-team/backend/commit/54b9aae0f96032b9d5e48b7cb9c2ea70914c8a58	fix: decimal issue
+2025-12-15T12:33:14Z	aa13ffce751e0df7512d24325f692bac491a21a2	https://github.com/joah-team/backend/commit/aa13ffce751e0df7512d24325f692bac491a21a2	fix: 배당금 내용 parsing 키 변경
+2025-12-15T12:17:23Z	1bf43140c271c22d1588ffa83727545f89dc25ba	https://github.com/joah-team/backend/commit/1bf43140c271c22d1588ffa83727545f89dc25ba	fix: disclosure ingest form에 대해서 기간으로 변경
+2025-12-15T11:27:56Z	93394a278fe5cfebbe9bf2767044f64c36c8b94a	https://github.com/joah-team/backend/commit/93394a278fe5cfebbe9bf2767044f64c36c8b94a	fix: count 쿼리 삭제
+2025-12-15T04:32:55Z	44f13e4d7d3af6a9e6559bbc4d775bce75899612	https://github.com/joah-team/backend/commit/44f13e4d7d3af6a9e6559bbc4d775bce75899612	feat: 재무제표 API 추가
+2025-12-13T04:43:40Z	b0e5aa52dec4185ca2409961999e7040c7ad405d	https://github.com/joah-team/backend/commit/b0e5aa52dec4185ca2409961999e7040c7ad405d	fix: task
+2025-12-13T03:59:54Z	e1d8b74a88d6b560781104a8eb74989845113750	https://github.com/joah-team/backend/commit/e1d8b74a88d6b560781104a8eb74989845113750	fix: schedule
+2025-12-13T03:59:40Z	45e0fc8e55bf32b76c108296d694079b9c164be1	https://github.com/joah-team/backend/commit/45e0fc8e55bf32b76c108296d694079b9c164be1	feat: 재무제표 전체 재수집 태스크 by AI
+2025-12-13T03:59:02Z	75c877bee45cc7e6580f9b762357eb09c1748dc2	https://github.com/joah-team/backend/commit/75c877bee45cc7e6580f9b762357eb09c1748dc2	fix: task
+2025-12-13T03:12:42Z	de31f0976d32450cd3cc1df171e15f7b8ed2dd10	https://github.com/joah-team/backend/commit/de31f0976d32450cd3cc1df171e15f7b8ed2dd10	fix: 어드민 UI
+2025-12-13T02:43:44Z	935b7e091deeccd9c612764050fb6877dc991c19	https://github.com/joah-team/backend/commit/935b7e091deeccd9c612764050fb6877dc991c19	feat: 회사 corp name 거르는 필터 추가
+2025-12-13T02:43:24Z	0c4f6612f363e09126efe3d8cac0b56d31e44666	https://github.com/joah-team/backend/commit/0c4f6612f363e09126efe3d8cac0b56d31e44666	feat: 최근 파생지표 정보 활용 추가
+2025-12-09T05:43:38Z	15eec5b20323750c124006346f73d5f964aaa2f2	https://github.com/joah-team/backend/commit/15eec5b20323750c124006346f73d5f964aaa2f2	feat: 재무제표 수집 및 재생성에 대한 task 개선
+2025-12-09T05:42:57Z	b97593246ae66e7cc5c9bee32e73524b16caae94	https://github.com/joah-team/backend/commit/b97593246ae66e7cc5c9bee32e73524b16caae94	feat: 파생 지표 관련 기능 추가 - view 로직 AI
+2025-12-05T04:23:08Z	dcc51726b27fc0d3081317e725aa94d85708dab4	https://github.com/joah-team/backend/commit/dcc51726b27fc0d3081317e725aa94d85708dab4	fix: slack setting
+2025-12-05T04:22:43Z	daa14b859fec6e1364e2d2b8bc8beb467693bd46	https://github.com/joah-team/backend/commit/daa14b859fec6e1364e2d2b8bc8beb467693bd46	fix: environment
+2025-12-05T04:11:09Z	2b3e34e45d52f47397103cab9249934f47f2bb4f	https://github.com/joah-team/backend/commit/2b3e34e45d52f47397103cab9249934f47f2bb4f	feat: 재무제표 parser 적용 및 어드민 미리보기
+2025-12-04T13:33:13Z	8e69a05ec376d8d5987831620d603de49969f6c4	https://github.com/joah-team/backend/commit/8e69a05ec376d8d5987831620d603de49969f6c4	fix: 수집 로직
+2025-12-04T12:48:02Z	17334dc0f1275ec57792cccbe4a570e2688248aa	https://github.com/joah-team/backend/commit/17334dc0f1275ec57792cccbe4a570e2688248aa	feat: ListSerializer는 별도로 분리해서 처리
+2025-12-04T12:24:35Z	14de4ef8b6f0ccb035ffbec315ed9ed4a1c9f82f	https://github.com/joah-team/backend/commit/14de4ef8b6f0ccb035ffbec315ed9ed4a1c9f82f	feat: 공시에 대한 어드민 연결
+2025-12-04T12:21:30Z	369dc8d33c8782d06f93e684ce7a594998392063	https://github.com/joah-team/backend/commit/369dc8d33c8782d06f93e684ce7a594998392063	feat: watchlist API 추가
+2025-12-04T12:21:04Z	a9393ee528e5ec9b07330fc15180315a3f1b55ab	https://github.com/joah-team/backend/commit/a9393ee528e5ec9b07330fc15180315a3f1b55ab	feat: watchlists 모델 어드민 추가
+2025-12-04T12:20:32Z	b14905dd430fdcf09b3c1b717c6cd687c685dbc6	https://github.com/joah-team/backend/commit/b14905dd430fdcf09b3c1b717c6cd687c685dbc6	feat: watchlist 모델 추가
+2025-12-04T10:39:37Z	298187956b6141a15ae36599e0686959d0b05290	https://github.com/joah-team/backend/commit/298187956b6141a15ae36599e0686959d0b05290	feat: watchlist 앱 추가
+2025-12-04T10:38:30Z	49c43403ced7ccd1eacad73f66f407d25613b108	https://github.com/joah-team/backend/commit/49c43403ced7ccd1eacad73f66f407d25613b108	fix: 다른 시장 데이터는 저장하지 않도록 함
+2025-12-04T10:38:19Z	e5e431a4da9972e76de9e73c4144c45b172d5d99	https://github.com/joah-team/backend/commit/e5e431a4da9972e76de9e73c4144c45b172d5d99	feat: 모델 매니저 변경
+2025-12-04T10:37:37Z	24964027ba54957ef2946ec9f666a09ccf01dfcd	https://github.com/joah-team/backend/commit/24964027ba54957ef2946ec9f666a09ccf01dfcd	feat: dart용 stock_code 추가
+2025-12-04T10:37:11Z	e0c825468dff6a4e77fee3cdeec44dcbc402ece8	https://github.com/joah-team/backend/commit/e0c825468dff6a4e77fee3cdeec44dcbc402ece8	fix: 검색 파라미터 수정
+2025-12-04T09:54:39Z	ad559cde73853811838e32f05479fa32c637d927	https://github.com/joah-team/backend/commit/ad559cde73853811838e32f05479fa32c637d927	feat: 회사 정보 / 주식 정보 수집 분리하고 로직 고도화
+2025-12-04T09:42:33Z	3c50bb46f9898539b27ca5d5232f55a3a79f5743	https://github.com/joah-team/backend/commit/3c50bb46f9898539b27ca5d5232f55a3a79f5743	fix: 상장된 주식만 검색하도록 함
+2025-12-04T06:35:41Z	c11d928b158f6326674d1a0fe9d04a33b9b769de	https://github.com/joah-team/backend/commit/c11d928b158f6326674d1a0fe9d04a33b9b769de	refactor: stocks, financial_statements, disclosures app 분리
+2025-11-24T13:47:47Z	975ac7b14bb1e7eec68760b1528fe5f000f737c0	https://github.com/joah-team/backend/commit/975ac7b14bb1e7eec68760b1528fe5f000f737c0	fix: default value
+2025-11-24T08:38:47Z	1f553448694a4c1958a8836929e94df9c77f5b3b	https://github.com/joah-team/backend/commit/1f553448694a4c1958a8836929e94df9c77f5b3b	feat: ingest 로직 개선
+2025-11-24T08:37:32Z	38c9b4b6930f71e9d5192b2a915e4a12cbb615bd	https://github.com/joah-team/backend/commit/38c9b4b6930f71e9d5192b2a915e4a12cbb615bd	feat: dataclass 분리
+2025-11-24T08:37:17Z	be9fdccef09100bcb0808a24aa0eadacaaaa383f	https://github.com/joah-team/backend/commit/be9fdccef09100bcb0808a24aa0eadacaaaa383f	refactor: client 분리
+2025-11-24T08:34:09Z	44fa3c7a581123386b354971ce9e2a99b0a52ac3	https://github.com/joah-team/backend/commit/44fa3c7a581123386b354971ce9e2a99b0a52ac3	feat: slack util 추가
+2025-11-20T06:01:03Z	a844511bf026c196e088d05b23f945bdb7784b4d	https://github.com/joah-team/backend/commit/a844511bf026c196e088d05b23f945bdb7784b4d	feat: 기본적인 API 엔드포인트 추가
+2025-11-20T04:03:52Z	8940f1dc57749a86cf8f67750d079ade16732af7	https://github.com/joah-team/backend/commit/8940f1dc57749a86cf8f67750d079ade16732af7	feat: 주식 가격 수집 task 스케줄 등록
+2025-11-20T03:09:30Z	7d6a331fb772513d6430a512d0ad14a7653b6bd4	https://github.com/joah-team/backend/commit/7d6a331fb772513d6430a512d0ad14a7653b6bd4	refactor: 코드 형식 개선
+2025-11-19T14:47:09Z	0fbe8305cba1ae107273ac679b964228f786583c	https://github.com/joah-team/backend/commit/0fbe8305cba1ae107273ac679b964228f786583c	fix: KAKAO_CLIENT_ID 지정 수정
+2025-11-19T14:29:35Z	abce3b87610846feaf55e756de8ebd7d7fedbeb4	https://github.com/joah-team/backend/commit/abce3b87610846feaf55e756de8ebd7d7fedbeb4	fix: auth
+2025-11-19T11:48:43Z	e5bd4ee39bf56b851b348cf4290020df33329d8d	https://github.com/joah-team/backend/commit/e5bd4ee39bf56b851b348cf4290020df33329d8d	fix: allow_cidr
+2025-11-19T11:43:45Z	a7c280ceb6c232dc46410084416b0e43eaf434e9	https://github.com/joah-team/backend/commit/a7c280ceb6c232dc46410084416b0e43eaf434e9	fix: aws 내용 삭제
+2025-11-19T11:35:56Z	39a31c73ba6ff00dbbe99576262c82211247e725	https://github.com/joah-team/backend/commit/39a31c73ba6ff00dbbe99576262c82211247e725	fix: urls
+2025-11-19T11:33:29Z	fbfa19834fef00904c5b0c19f4eb005503e3a3d6	https://github.com/joah-team/backend/commit/fbfa19834fef00904c5b0c19f4eb005503e3a3d6	feat: ssh 기반 배포 workflow
+2025-11-19T11:18:22Z	6d12edb6d871d9ac1ca7f39a9bbba8b32903d97f	https://github.com/joah-team/backend/commit/6d12edb6d871d9ac1ca7f39a9bbba8b32903d97f	feat: 상장 폐지 종목 수집 로직
+2025-11-19T11:15:50Z	d419d542487f85888f6e8d8bf3881287d353695d	https://github.com/joah-team/backend/commit/d419d542487f85888f6e8d8bf3881287d353695d	feat: 어드민 views
+2025-11-19T11:09:22Z	4ac00c17f091a7356a8971a81e1675e43acae796	https://github.com/joah-team/backend/commit/4ac00c17f091a7356a8971a81e1675e43acae796	refactor: 데이터 수집 클라이언트 방식 리팩토링
+2025-11-19T11:07:46Z	6b16be8b0546f5dd856125e7495c6f864043f4db	https://github.com/joah-team/backend/commit/6b16be8b0546f5dd856125e7495c6f864043f4db	fix: environments
+2025-11-18T02:31:28Z	82b7545a4f1519aedb6e0b0e0e736f8ca68fa782	https://github.com/joah-team/backend/commit/82b7545a4f1519aedb6e0b0e0e736f8ca68fa782	feat: 어드민 개선
+2025-11-18T02:26:38Z	2197487b364b2c5026846b6c84d1928e42799ef8	https://github.com/joah-team/backend/commit/2197487b364b2c5026846b6c84d1928e42799ef8	refactor: settings component 단위로 분리하여 리팩토링
+2025-11-12T05:30:45Z	af3f0452d5aa7411ac4948355ecbf2701142bed8	https://github.com/joah-team/backend/commit/af3f0452d5aa7411ac4948355ecbf2701142bed8	fix: 파일 정리
+2025-11-12T05:25:46Z	6f08a828bd75a6caff4de2a23d0d9a4936c8be11	https://github.com/joah-team/backend/commit/6f08a828bd75a6caff4de2a23d0d9a4936c8be11	feat: companies 내의 어드민 추가
+2025-11-12T05:22:34Z	2b538f63997d5f5d76fd682b5002fb27b07d7db4	https://github.com/joah-team/backend/commit/2b538f63997d5f5d76fd682b5002fb27b07d7db4	feat: 데이터 수집기 로직 - 재무제표에 대한 처리가 더 필요함
+2025-11-12T05:18:47Z	8b79dd3ec5e6cb04f802489d625318feb49ad5c3	https://github.com/joah-team/backend/commit/8b79dd3ec5e6cb04f802489d625318feb49ad5c3	feat: 재무제표 / 공시 정보 관련 수집을 위한 모델
+2025-11-11T17:03:36Z	7d472b797a38bdc8b2105254e921cca4b0e321c9	https://github.com/joah-team/backend/commit/7d472b797a38bdc8b2105254e921cca4b0e321c9	fix: timescaledb 내용 덜어내기
+2025-11-11T15:31:33Z	a65040a641b143200b049a8a7ae7ebcd168d413b	https://github.com/joah-team/backend/commit/a65040a641b143200b049a8a7ae7ebcd168d413b	feat: companies app 파일
+2025-11-11T15:31:05Z	def658383890765c6f598e4d096191e34154f042	https://github.com/joah-team/backend/commit/def658383890765c6f598e4d096191e34154f042	fix: __str__
+2025-11-11T15:30:56Z	913055500fc9ccffdd8f5e7135b7843c318dd62a	https://github.com/joah-team/backend/commit/913055500fc9ccffdd8f5e7135b7843c318dd62a	fix: 기본 .env 예제 port 수정
+2025-11-11T15:30:38Z	4fc7f92e2b8d8d286f4d35838b69a57c785282f6	https://github.com/joah-team/backend/commit/4fc7f92e2b8d8d286f4d35838b69a57c785282f6	feat: 프로젝트 설정 추가
+2025-11-11T12:40:57Z	1fd3529e4521808e8f1019c64850e2612452b5c0	https://github.com/joah-team/backend/commit/1fd3529e4521808e8f1019c64850e2612452b5c0	feat: Stock, StockPrice 모델 추가
+2025-11-10T13:49:37Z	e38872515e21721a67a8d9e08b539922a0317f67	https://github.com/joah-team/backend/commit/e38872515e21721a67a8d9e08b539922a0317f67	feat: timescaleDB 설정
+2025-11-10T13:49:10Z	af3d7b03385ab0aa5148e8ed7c48d060ce1e5efd	https://github.com/joah-team/backend/commit/af3d7b03385ab0aa5148e8ed7c48d060ce1e5efd	fix: login view
+2025-11-10T13:30:57Z	cd92da66f7aadf5e43b9579d64e1ee904f51e9d6	https://github.com/joah-team/backend/commit/cd92da66f7aadf5e43b9579d64e1ee904f51e9d6	feat: 기본 market 데이터 생성 command 추가
+2025-11-10T13:30:39Z	bb43e58ac10721681e9af8cbc320015074e526fa	https://github.com/joah-team/backend/commit/bb43e58ac10721681e9af8cbc320015074e526fa	feat: market 모델 추가
+2025-11-10T13:22:10Z	8fab89aa43c1c0d5701e896779d34c60db378380	https://github.com/joah-team/backend/commit/8fab89aa43c1c0d5701e896779d34c60db378380	feat: 기본 국가 데이터 추가
+2025-11-10T13:20:09Z	2d4c4cc30778ec3accf06a0ce43ade4c2e266993	https://github.com/joah-team/backend/commit/2d4c4cc30778ec3accf06a0ce43ade4c2e266993	feat: Country 모델 추가
+2025-11-10T13:05:17Z	8c1578e3405c4eb68ca72e01b27fee2f3ff7f816	https://github.com/joah-team/backend/commit/8c1578e3405c4eb68ca72e01b27fee2f3ff7f816	feat: 회사 / 섹터 / 산업군 관리 모델 추가
+2025-11-10T13:01:11Z	5b096b9ab3c7f0a4097306ab35eb26efc78abf67	https://github.com/joah-team/backend/commit/5b096b9ab3c7f0a4097306ab35eb26efc78abf67	fix: pre-commit 설정 등 패키지 변경
+2025-10-29T13:01:00Z	ef6e8995c4d380b4dc532f68f8f2d62b39ebc981	https://github.com/joah-team/backend/commit/ef6e8995c4d380b4dc532f68f8f2d62b39ebc981	feat: google login test
+2025-10-29T10:35:42Z	341324f2407fae398c84a9db44e44f7315638bed	https://github.com/joah-team/backend/commit/341324f2407fae398c84a9db44e44f7315638bed	fix: workflow trigger
+2025-10-29T10:28:10Z	2ca29f583f05e96592237cf5152e933a59e0f756	https://github.com/joah-team/backend/commit/2ca29f583f05e96592237cf5152e933a59e0f756	feat: 기본 프로젝트 설정 추가

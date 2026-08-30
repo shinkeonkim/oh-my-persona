@@ -1,0 +1,7 @@
+GitHub repository: https://github.com/kmu-shinkeonkim/sw-arhitecture-garage-system
+Author account: shinkeonkim
+
+2025-09-30T03:03:28Z	be5a97299c422a2d4781a051414a27e586879990	https://github.com/kmu-shinkeonkim/sw-arhitecture-garage-system/commit/be5a97299c422a2d4781a051414a27e586879990	Expand README with requirements and scenarios Added requirements and additional scenarios for garage door system design.
+2025-09-30T03:02:04Z	6fe2baf30adfe824929938897e087e394e13eaf7	https://github.com/kmu-shinkeonkim/sw-arhitecture-garage-system/commit/6fe2baf30adfe824929938897e087e394e13eaf7	Update README.md
+2025-09-24T07:14:05Z	e7f9713b1b1f539338c82344e23ffad4ef2d1fdc	https://github.com/kmu-shinkeonkim/sw-arhitecture-garage-system/commit/e7f9713b1b1f539338c82344e23ffad4ef2d1fdc	Add initial README with project overview and diagrams
+2025-09-24T07:12:34Z	6a57e285e58f41c2ecb05b514d4aa480826df1e1	https://github.com/kmu-shinkeonkim/sw-arhitecture-garage-system/commit/6a57e285e58f41c2ecb05b514d4aa480826df1e1	docs: 제출 파일 추가

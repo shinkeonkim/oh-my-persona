@@ -1,0 +1,53 @@
+/* 브라우저 기본 스타일시트.
+ *
+ * 어떤 태그가 블록인지, 무엇이 굵고 기울고 고정폭인지 여기서 정한다.
+ * 하드코딩된 태그 목록 대신 CSS 로 두면 페이지가 display 로 덮어쓸 수 있다.
+ */
+
+html, body, article, section, nav, aside,
+h1, h2, h3, h4, h5, h6, hgroup, header,
+footer, address, p, hr, pre, blockquote,
+ol, ul, menu, li, dl, dt, dd, figure,
+figcaption, main, div, table, form, fieldset,
+legend, details, summary, iframe { display: block; }
+
+img, canvas { display: inline; }
+
+pre { background-color: gray; font-family: monospace; }
+code { font-family: monospace; }
+
+a { color: blue; }
+i { font-style: italic; }
+b { font-weight: bold; }
+small { font-size: 90%; }
+big { font-size: 110%; }
+
+input {
+  font-weight: normal; font-style: normal;
+  background-color: lightblue;
+}
+button {
+  font-weight: normal; font-style: normal;
+  background-color: orange;
+}
+
+/* 방문한 링크 — Frame 이 visited 클래스를 붙여 준다 */
+a.visited { color: purple; }
+
+/* 포커스 표시. :focus-visible 은 키보드로 옮겨 왔을 때만 켜진다. */
+input:focus { outline: 2px solid black; }
+button:focus { outline: 2px solid black; }
+div:focus { outline: 2px solid black; }
+a:focus { outline: 2px solid black; }
+
+a:hover { outline: 1px solid black; }
+
+@media (prefers-color-scheme: dark) {
+  a { color: lightblue; }
+  input { background-color: #2222ff; }
+  button { background-color: #992500; }
+}
+
+@media (forced-colors: active) {
+  a { color: #00ffff; }
+}

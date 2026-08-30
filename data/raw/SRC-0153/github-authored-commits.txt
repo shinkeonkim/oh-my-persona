@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/kokoa-lab/video-serving-experiment
+Author account: shinkeonkim
+
+2025-10-02T16:05:15Z	06e24a4357025445d03fdc5c245ac638594991c7	https://github.com/kokoa-lab/video-serving-experiment/commit/06e24a4357025445d03fdc5c245ac638594991c7	feat: 비디오 서빙 서비스에 대한 실험 레포 - claude code 활용

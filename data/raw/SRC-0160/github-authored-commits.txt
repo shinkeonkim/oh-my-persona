@@ -1,0 +1,16 @@
+GitHub repository: https://github.com/kokoa-study-room/browser.engineering-practice
+Author account: shinkeonkim
+
+2026-02-19T17:09:35Z	b622cda5b8f447c18091997aa2d62ade01711e11	https://github.com/kokoa-study-room/browser.engineering-practice/commit/b622cda5b8f447c18091997aa2d62ade01711e11	feat: 브라우저에 대한 기본적인 tab 처리 및 urlbar 그리고 뒤로가기까지
+2026-02-16T06:02:56Z	47b4d49e715dcabe1badc91c379658302d9cb16f	https://github.com/kokoa-study-room/browser.engineering-practice/commit/47b4d49e715dcabe1badc91c379658302d9cb16f	refactor: package 리팩토링
+2026-02-15T16:53:52Z	df186e3793a27f95703db9f53382f85c181e3d93	https://github.com/kokoa-study-room/browser.engineering-practice/commit/df186e3793a27f95703db9f53382f85c181e3d93	feat: 챕터 6 CSS
+2026-02-15T11:19:21Z	28b0eceef082ef54f1178b7cd49b7a7b4c01da55	https://github.com/kokoa-study-room/browser.engineering-practice/commit/28b0eceef082ef54f1178b7cd49b7a7b4c01da55	refactor: component로 분할해서 개선
+2026-02-15T11:06:42Z	02c3803d07c4095dc8401ae7b459db186c3b5799	https://github.com/kokoa-study-room/browser.engineering-practice/commit/02c3803d07c4095dc8401ae7b459db186c3b5799	text, rect 분리
+2026-02-15T09:54:41Z	15fee5103d69a63b9f56b90b6850e2389a573fba	https://github.com/kokoa-study-room/browser.engineering-practice/commit/15fee5103d69a63b9f56b90b6850e2389a573fba	feat: block layout 고려
+2026-02-15T09:13:56Z	94929a08d5f9d1d2c5f89bf01f47837c92050d5b	https://github.com/kokoa-study-room/browser.engineering-practice/commit/94929a08d5f9d1d2c5f89bf01f47837c92050d5b	트리 구조 적용
+2026-02-15T07:50:01Z	9aab7bf9ace458b705046aeb2b140a1bb6bcbc70	https://github.com/kokoa-study-room/browser.engineering-practice/commit/9aab7bf9ace458b705046aeb2b140a1bb6bcbc70	line을 기준으로 처리하면서 태그 지원 추가
+2026-02-15T06:40:53Z	1fef38b375a2d68590164464f4c0086552de047d	https://github.com/kokoa-study-room/browser.engineering-practice/commit/1fef38b375a2d68590164464f4c0086552de047d	Layout을 리팩토링했지만, 텍스트 사이즈에따라 이상하게 보이는 문제가 생긴다
+2026-02-15T06:15:05Z	9b81abb020d558cd664a67ab3c2940a235d2f258	https://github.com/kokoa-study-room/browser.engineering-practice/commit/9b81abb020d558cd664a67ab3c2940a235d2f258	refactor: 의미없는 코드들 정리
+2026-02-15T06:14:03Z	bf909f25c2eebdc95e401156a422e7b9e00ca796	https://github.com/kokoa-study-room/browser.engineering-practice/commit/bf909f25c2eebdc95e401156a422e7b9e00ca796	i와 b 태그를 tag를 인식하자
+2026-02-15T06:04:54Z	f476bd9d0c36ea3f877aab4da2ab218d739c9f27	https://github.com/kokoa-study-room/browser.engineering-practice/commit/f476bd9d0c36ea3f877aab4da2ab218d739c9f27	단어별 font 너비를 고려하자.
+2026-02-13T14:59:08Z	d416705bb405582c97b71d5bb8af164d7002d477	https://github.com/kokoa-study-room/browser.engineering-practice/commit/d416705bb405582c97b71d5bb8af164d7002d477	feat: graphics 섹션까지

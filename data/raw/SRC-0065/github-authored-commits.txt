@@ -1,0 +1,21 @@
+GitHub repository: https://github.com/kkambbaki/infra
+Author account: shinkeonkim
+
+2025-11-13T16:22:16Z	1ae669ba645a476a43340dfb61cfe0903a8de0f8	https://github.com/kkambbaki/infra/commit/1ae669ba645a476a43340dfb61cfe0903a8de0f8	fix: staticfile volume
+2025-11-13T12:13:26Z	9fb94f654c97fe433ccab3148195f41751962712	https://github.com/kkambbaki/infra/commit/9fb94f654c97fe433ccab3148195f41751962712	docs: README.md 추가
+2025-11-13T09:40:05Z	4acaa06fdb1938a1376d8c8227269df01cdcf346	https://github.com/kkambbaki/infra/commit/4acaa06fdb1938a1376d8c8227269df01cdcf346	Update deployment.yml
+2025-11-13T09:39:28Z	d71f9cec542b7452493de01e40363b84a086b53c	https://github.com/kkambbaki/infra/commit/d71f9cec542b7452493de01e40363b84a086b53c	Update deployment.yml
+2025-11-05T10:17:23Z	acda5b475675d3fc1d775225ce20301072e9e840	https://github.com/kkambbaki/infra/commit/acda5b475675d3fc1d775225ce20301072e9e840	fix: health-check url
+2025-11-05T10:04:12Z	37be726fb7152b19995b6ea0e00689b88478410f	https://github.com/kkambbaki/infra/commit/37be726fb7152b19995b6ea0e00689b88478410f	fix: deploy.sh check하는 과정 수정
+2025-11-05T10:02:11Z	2d81f3acbca09ee53b1554e43f1eb51704b5dba2	https://github.com/kkambbaki/infra/commit/2d81f3acbca09ee53b1554e43f1eb51704b5dba2	fix: nginx 설정 수정
+2025-11-05T08:01:34Z	244dc014704e7c6aa39e4123a7ec934e33f192ec	https://github.com/kkambbaki/infra/commit/244dc014704e7c6aa39e4123a7ec934e33f192ec	fix: uvicorn으로 수정
+2025-11-05T07:20:15Z	3c43ac3fe8ed3223823eeaa5a9aafd4f843a1e50	https://github.com/kkambbaki/infra/commit/3c43ac3fe8ed3223823eeaa5a9aafd4f843a1e50	fix: host mode로 변경
+2025-11-05T06:54:58Z	a713d67e49bf2a3708fa765ff063f203b35dbab4	https://github.com/kkambbaki/infra/commit/a713d67e49bf2a3708fa765ff063f203b35dbab4	feat: production용 설정 파일 추가
+2025-11-05T06:39:17Z	2b80ef70c51b797d6b878a4f40450fbaf9f35162	https://github.com/kkambbaki/infra/commit/2b80ef70c51b797d6b878a4f40450fbaf9f35162	fix: celery 관련 이미지는 별도로 사용하도록 함
+2025-10-16T10:40:08Z	ef52fcac56f85f4cc8b737d21ce670ead789c49c	https://github.com/kkambbaki/infra/commit/ef52fcac56f85f4cc8b737d21ce670ead789c49c	feat: ALLOWED_HOSTS에 도메인 반영
+2025-10-15T06:49:55Z	bc6d38bf7744287b0778960bf82adbade1e657e0	https://github.com/kkambbaki/infra/commit/bc6d38bf7744287b0778960bf82adbade1e657e0	fix: api ingress를 직접 적용
+2025-10-15T06:37:39Z	a018aff9c7e5aa084c0ded8df2efae289301c06f	https://github.com/kkambbaki/infra/commit/a018aff9c7e5aa084c0ded8df2efae289301c06f	fix: ingress
+2025-10-15T06:12:33Z	dfe5c151ff1521d4a0b7a0cb6b25fb49354aca70	https://github.com/kkambbaki/infra/commit/dfe5c151ff1521d4a0b7a0cb6b25fb49354aca70	fix: 잘못된 targetport 수정
+2025-10-15T06:04:51Z	9243cdbcea28e1b302b46c85f2e7a6ed490cc345	https://github.com/kkambbaki/infra/commit/9243cdbcea28e1b302b46c85f2e7a6ed490cc345	fix: mount path
+2025-10-14T19:15:00Z	3f5644f302a84cf67b603c1b9b96ab6a8d249c40	https://github.com/kkambbaki/infra/commit/3f5644f302a84cf67b603c1b9b96ab6a8d249c40	fix: webapp deployment
+2025-10-14T18:15:57Z	27f8fd0fd3c7302aecac502a9b8049415b8b7b77	https://github.com/kkambbaki/infra/commit/27f8fd0fd3c7302aecac502a9b8049415b8b7b77	feat: 기본적인 알파 환경을 위한 yml 선언 추가

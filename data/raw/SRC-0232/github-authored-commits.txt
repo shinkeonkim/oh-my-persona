@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/shinkeonkim/umjunsik-lang-server
+Author account: shinkeonkim
+
+2025-10-08T11:05:30Z	54b322f361f70664b2e0dbe650b5862a62ecda2e	https://github.com/shinkeonkim/umjunsik-lang-server/commit/54b322f361f70664b2e0dbe650b5862a62ecda2e	feat: 기본적인 구조 및 예제 추가

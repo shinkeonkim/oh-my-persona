@@ -1,0 +1,24 @@
+GitHub repository: https://github.com/shinkeonkim/oh-my-persona
+Author account: shinkeonkim
+
+2026-08-30T14:09:35Z	46828a05fb95931d59d6b4cae834fcd59bc02a81	https://github.com/shinkeonkim/oh-my-persona/commit/46828a05fb95931d59d6b4cae834fcd59bc02a81	docs: complete response and GitHub expansion task [skip ci]
+2026-08-30T13:56:52Z	478d8e18582b89604a4f8587617ce8d9da8964ab	https://github.com/shinkeonkim/oh-my-persona/commit/478d8e18582b89604a4f8587617ce8d9da8964ab	fix: block persona coaching offer variants
+2026-08-30T13:36:58Z	3d93e569097c4dfde6c90c6d92a422806f6f3468	https://github.com/shinkeonkim/oh-my-persona/commit/3d93e569097c4dfde6c90c6d92a422806f6f3468	feat: harden persona responses and expand GitHub evidence
+2026-08-30T13:08:22Z	8b4597bca3babd5f43a1d651e92319965eb77078	https://github.com/shinkeonkim/oh-my-persona/commit/8b4597bca3babd5f43a1d651e92319965eb77078	fix: version messenger static assets
+2026-08-30T12:50:13Z	2c3a162f9d56402bc7577235a3a2e8ce736d9542	https://github.com/shinkeonkim/oh-my-persona/commit/2c3a162f9d56402bc7577235a3a2e8ce736d9542	feat: add mobile navigation drawer
+2026-08-30T11:14:03Z	ca634c85447b0b2d950f732bb56232c3da8befbc	https://github.com/shinkeonkim/oh-my-persona/commit/ca634c85447b0b2d950f732bb56232c3da8befbc	docs: complete messenger visual deployment task [skip ci]
+2026-08-30T10:58:26Z	abb07cc2bade6e2444c1b25e7279a1282bf132b8	https://github.com/shinkeonkim/oh-my-persona/commit/abb07cc2bade6e2444c1b25e7279a1282bf132b8	fix: keep desktop send action readable
+2026-08-30T07:50:16Z	f250e36c534adf4bc0ca2475f1053106514752af	https://github.com/shinkeonkim/oh-my-persona/commit/f250e36c534adf4bc0ca2475f1053106514752af	test: stabilize messenger visual regression
+2026-08-30T07:47:50Z	77dedb16b49c60aad9b4e2d057fb0c4d46a96ed7	https://github.com/shinkeonkim/oh-my-persona/commit/77dedb16b49c60aad9b4e2d057fb0c4d46a96ed7	feat: rebuild messenger UI with visual regression
+2026-08-30T06:41:24Z	2458da2ad3e2ff17802eee62fd93efec93ad528b	https://github.com/shinkeonkim/oh-my-persona/commit/2458da2ad3e2ff17802eee62fd93efec93ad528b	docs: record persona admin production verification
+2026-08-30T06:25:00Z	671a38e0f3a8a3e734d23aa946605afc587c1e67	https://github.com/shinkeonkim/oh-my-persona/commit/671a38e0f3a8a3e734d23aa946605afc587c1e67	feat: add first-person persona admin and messenger UI
+2026-08-29T03:54:50Z	7b13948253cfe9c1768fb57e860d9bc1dc60f9da	https://github.com/shinkeonkim/oh-my-persona/commit/7b13948253cfe9c1768fb57e860d9bc1dc60f9da	fix: bound persona model context size
+2026-08-28T17:26:22Z	9812fff931ac6a02c7334d5e782ce35f70e63d70	https://github.com/shinkeonkim/oh-my-persona/commit/9812fff931ac6a02c7334d5e782ce35f70e63d70	docs: record production chat verification
+2026-08-28T17:13:18Z	525206196913297bef6893e178b15c19c6d0e90b	https://github.com/shinkeonkim/oh-my-persona/commit/525206196913297bef6893e178b15c19c6d0e90b	feat: expand grounded chat memory and corpus
+2026-08-28T16:42:24Z	b4e82f9b7899c169d76925aba86895caf1b9bd5e	https://github.com/shinkeonkim/oh-my-persona/commit/b4e82f9b7899c169d76925aba86895caf1b9bd5e	fix: include processed corpus in image context
+2026-08-28T16:39:35Z	60b046bf2b9ba006ca83725882b2a24433b564e5	https://github.com/shinkeonkim/oh-my-persona/commit/60b046bf2b9ba006ca83725882b2a24433b564e5	feat: expand persona corpus beyond five thousand chunks
+2026-08-28T16:22:21Z	c711d1960ab1b408ec54e2023ec1051faed6640a	https://github.com/shinkeonkim/oh-my-persona/commit/c711d1960ab1b408ec54e2023ec1051faed6640a	fix: use provider-default sampling
+2026-08-28T15:53:15Z	7124d62e533af58396941e7c358e10e4cf09cbe0	https://github.com/shinkeonkim/oh-my-persona/commit/7124d62e533af58396941e7c358e10e4cf09cbe0	fix: resolve runtime assets from container root
+2026-08-28T15:42:42Z	99f27a5fa850ccc0994cf7570b1cb1d64afa2ec3	https://github.com/shinkeonkim/oh-my-persona/commit/99f27a5fa850ccc0994cf7570b1cb1d64afa2ec3	docs: record repository and image publication
+2026-08-28T15:41:23Z	80bcf6daa0963f42a87e9ff47c2fe89cbf9e7bfb	https://github.com/shinkeonkim/oh-my-persona/commit/80bcf6daa0963f42a87e9ff47c2fe89cbf9e7bfb	ci: initialize qemu for multi-arch images
+2026-08-28T15:34:20Z	b3cdd0d692884f0fb6cadb7c418460f663613b31	https://github.com/shinkeonkim/oh-my-persona/commit/b3cdd0d692884f0fb6cadb7c418460f663613b31	feat: bootstrap provenance-first persona RAG

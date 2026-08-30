@@ -1,0 +1,8 @@
+GitHub repository: https://github.com/shinkeonkim/my-claude-code-settings
+Author account: shinkeonkim
+
+2025-09-30T14:43:22Z	444d538197946faa950456228e25cf4146520a08	https://github.com/shinkeonkim/my-claude-code-settings/commit/444d538197946faa950456228e25cf4146520a08	settungs.local.json 추가
+2025-09-29T07:32:48Z	eea40e0b0a88ff4743d2c425d53e223ead3ab87a	https://github.com/shinkeonkim/my-claude-code-settings/commit/eea40e0b0a88ff4743d2c425d53e223ead3ab87a	claude-setup 명령어 추가
+2025-09-29T05:55:37Z	6b9298b5490370b5cfea9fd4da8a2da752b2b7f7	https://github.com/shinkeonkim/my-claude-code-settings/commit/6b9298b5490370b5cfea9fd4da8a2da752b2b7f7	docs: README.md
+2025-09-29T05:53:00Z	1a0b442cc93edde69d31c03494c4af7c41dbc8a4	https://github.com/shinkeonkim/my-claude-code-settings/commit/1a0b442cc93edde69d31c03494c4af7c41dbc8a4	commands 모아보기
+2025-09-29T05:48:54Z	2b423e16d214bcc2e2a80f036e1ba8e1e7b8fd9b	https://github.com/shinkeonkim/my-claude-code-settings/commit/2b423e16d214bcc2e2a80f036e1ba8e1e7b8fd9b	claude-code 설정파일 모아보기

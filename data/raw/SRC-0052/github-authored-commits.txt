@@ -1,0 +1,6 @@
+GitHub repository: https://github.com/shinkeonkim/android-hanalum
+Author account: shinkeonkim
+
+2019-07-17T05:39:06Z	74a0d354c8cd3a71308c64275d3e253501116162	https://github.com/shinkeonkim/android-hanalum/commit/74a0d354c8cd3a71308c64275d3e253501116162	2019-07-17 README.md 0.0.1 알림 기능 계획 추가
+2019-07-17T04:55:58Z	74b43a7367a341775543c13d76fe38be987623b2	https://github.com/shinkeonkim/android-hanalum/commit/74b43a7367a341775543c13d76fe38be987623b2	2019-07-17 readme.md 0.0.1 계획 작성
+2019-07-17T04:43:30Z	35f4e3a5ede7ba5f5cd396b8d99d0b3277848802	https://github.com/shinkeonkim/android-hanalum/commit/35f4e3a5ede7ba5f5cd396b8d99d0b3277848802	Initial commit

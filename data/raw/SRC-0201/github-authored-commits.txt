@@ -1,0 +1,5 @@
+GitHub repository: https://github.com/shinkeonkim/clone-bs-youtube
+Author account: shinkeonkim
+
+2021-01-22T16:50:28Z	e4fcbc2eed1b75d490f3b1ab18588aa35658e974	https://github.com/shinkeonkim/clone-bs-youtube/commit/e4fcbc2eed1b75d490f3b1ab18588aa35658e974	feat: initial setting
+2021-01-22T16:20:12Z	6f50d950af6d6896d7dfd1f805d3ec891c18fad1	https://github.com/shinkeonkim/clone-bs-youtube/commit/6f50d950af6d6896d7dfd1f805d3ec891c18fad1	Initial commit

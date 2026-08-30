@@ -1,0 +1,510 @@
+GitHub repository: https://github.com/palette-team/palette_api
+Author account: shinkeonkim
+
+2026-02-14T17:01:17Z	4fa31ab24b3518ad50d1b6b3e8048a88afca6c59	https://github.com/palette-team/palette_api/commit/4fa31ab24b3518ad50d1b6b3e8048a88afca6c59	chore: 의미없는 테스트 코드 삭제
+2025-12-06T09:15:25Z	512bd4f35df5bbe994caa656a6c61df775cc03a3	https://github.com/palette-team/palette_api/commit/512bd4f35df5bbe994caa656a6c61df775cc03a3	fix: 중복된 값이 나오는 문제 수정
+2025-12-02T13:35:29Z	d5f82b6692d95cbc8805854709c16955ad7e02be	https://github.com/palette-team/palette_api/commit/d5f82b6692d95cbc8805854709c16955ad7e02be	feat: pagination 적용
+2025-12-02T13:35:16Z	48deffc9b5f2ca94ad64a085aa064a49466c22d5	https://github.com/palette-team/palette_api/commit/48deffc9b5f2ca94ad64a085aa064a49466c22d5	fix: link
+2025-12-02T13:29:03Z	bedd7528992e60dac6a99ab61fe3aab9f5ed518b	https://github.com/palette-team/palette_api/commit/bedd7528992e60dac6a99ab61fe3aab9f5ed518b	feat: 직업 정보에 대해서도 직군 검색시에 같이 검색되도록 함
+2025-12-02T07:02:47Z	a33c29c0dc2647ccf5263f0001a2881c78d26775	https://github.com/palette-team/palette_api/commit/a33c29c0dc2647ccf5263f0001a2881c78d26775	fix: 사용자 IP 추적 제대로 처리되도록 함
+2025-12-02T05:46:03Z	cc182b3544e2682c33ce4c694c04e9db6e470d52	https://github.com/palette-team/palette_api/commit/cc182b3544e2682c33ce4c694c04e9db6e470d52	fix: 필수 소개 컬럼에서 job, job_category 삭제
+2025-11-29T12:19:36Z	a7a59aed56707b01573f2151410e79981f830d89	https://github.com/palette-team/palette_api/commit/a7a59aed56707b01573f2151410e79981f830d89	fix: referral 정보 수정
+2025-11-29T12:02:25Z	80f78db6ef34964d3a99155398a0d1badf27627d	https://github.com/palette-team/palette_api/commit/80f78db6ef34964d3a99155398a0d1badf27627d	feat: Referral에 대해서 API 추가
+2025-11-29T12:01:48Z	52d735fedb8c083a02e5601ed2f42af173bb6be2	https://github.com/palette-team/palette_api/commit/52d735fedb8c083a02e5601ed2f42af173bb6be2	feat: matching에서 referral 정보 추가
+2025-11-29T11:58:04Z	dcda145d0257d73dee820615bba0ee44e5305eaa	https://github.com/palette-team/palette_api/commit/dcda145d0257d73dee820615bba0ee44e5305eaa	feat: opposite_conversation_messages 생성 로직 연결
+2025-11-29T11:57:40Z	2d01fedc9a25b8a2a696f4125ede6a317d955cc0	https://github.com/palette-team/palette_api/commit/2d01fedc9a25b8a2a696f4125ede6a317d955cc0	feat: 호감을 받은 경우에 대해서도 정보 확인할 수 있도록 함
+2025-11-29T11:57:05Z	ce5f03bfaca48ab004889632f89560996c8d52dd	https://github.com/palette-team/palette_api/commit/ce5f03bfaca48ab004889632f89560996c8d52dd	fix: 기본 에러 코드 수정
+2025-11-29T11:56:53Z	495a2ae911ad64febc917633b32d0b52650ae433	https://github.com/palette-team/palette_api/commit/495a2ae911ad64febc917633b32d0b52650ae433	feat: 반대 대화 데이터 추가
+2025-11-29T11:23:10Z	0b99405cb3b1e4ceb833fbc030cdf6c00db6f7e7	https://github.com/palette-team/palette_api/commit/0b99405cb3b1e4ceb833fbc030cdf6c00db6f7e7	fix: 궁합 태그 제대로 import 되지 않는 문제
+2025-11-29T09:06:50Z	11ad92aaef5057b8c8290aab8e1008e6573189eb	https://github.com/palette-team/palette_api/commit/11ad92aaef5057b8c8290aab8e1008e6573189eb	fix: 추천 횟수 복구 시간 상수 변경
+2025-11-29T08:58:21Z	d85083d72c161908dd86d75236d645e4fc07fec4	https://github.com/palette-team/palette_api/commit/d85083d72c161908dd86d75236d645e4fc07fec4	test: 티켓 소모 상수 변경으로 인한 테스트 코드 변경
+2025-11-29T08:49:18Z	755a5e8e41804cb3832c859f187d064582593be1	https://github.com/palette-team/palette_api/commit/755a5e8e41804cb3832c859f187d064582593be1	fix: 호감 보낼 때의 티켓 개수 수정
+2025-11-28T08:43:01Z	e86779523d100e621af88062c369b9bbab412147	https://github.com/palette-team/palette_api/commit/e86779523d100e621af88062c369b9bbab412147	fix: methodtype을 get으로 고정
+2025-11-28T06:23:27Z	3f087ee442d31cbcdb0583cb2bb396b700d4e476	https://github.com/palette-team/palette_api/commit/3f087ee442d31cbcdb0583cb2bb396b700d4e476	fix: alpha settings
+2025-11-27T11:28:21Z	279a00505422f754eda56e6ea5033e36bb22dc85	https://github.com/palette-team/palette_api/commit/279a00505422f754eda56e6ea5033e36bb22dc85	Merge branch 'feature/approved-email' into develop
+2025-11-27T11:28:02Z	3649f2229d31d4c9ac8d6fdd23c544a541931cbd	https://github.com/palette-team/palette_api/commit/3649f2229d31d4c9ac8d6fdd23c544a541931cbd	fix: 어드민에서 use-ticket 제대로 안 되는 이슈
+2025-11-27T11:20:25Z	90124c58421202a1f40c23b01ec436008c2bcf19	https://github.com/palette-team/palette_api/commit/90124c58421202a1f40c23b01ec436008c2bcf19	fix: 프론트 URL을 사용하도록 함
+2025-11-27T11:17:11Z	25ec2a820ea87d71ef7e4678b76cf128d9857782	https://github.com/palette-team/palette_api/commit/25ec2a820ea87d71ef7e4678b76cf128d9857782	feat: 사용자 승인 알림 이메일 추가
+2025-11-26T07:42:07Z	cded2a798c4f8b5d43ebba5bd6b9a16d168f9546	https://github.com/palette-team/palette_api/commit/cded2a798c4f8b5d43ebba5bd6b9a16d168f9546	fix: common app 등록하여 tasks 정상적으로 구동되도록 함
+2025-11-25T11:59:13Z	ab6c54f32d4c11c9c058f65d0e3133732b4c06c0	https://github.com/palette-team/palette_api/commit/ab6c54f32d4c11c9c058f65d0e3133732b4c06c0	fix: 슬랙 메세지 상 user 어드민 링크 수정
+2025-11-25T11:30:21Z	c8c447b2180ece5c14cfeccd02b5a277f5b9d740	https://github.com/palette-team/palette_api/commit/c8c447b2180ece5c14cfeccd02b5a277f5b9d740	feat: SMTP 설정 추가
+2025-11-25T11:29:45Z	e050ddc680a9fe5e75a497e0906beb8b1c7fb0c4	https://github.com/palette-team/palette_api/commit/e050ddc680a9fe5e75a497e0906beb8b1c7fb0c4	feat: health check urls
+2025-11-25T11:29:13Z	146655b646382f1399da3410e4504550c533f0b4	https://github.com/palette-team/palette_api/commit/146655b646382f1399da3410e4504550c533f0b4	fix: saju profile tag 정보 import 과정 수정
+2025-11-25T11:06:36Z	ab9b7d79bbdeb6685632d0c4c934a3f778bbd479	https://github.com/palette-team/palette_api/commit/ab9b7d79bbdeb6685632d0c4c934a3f778bbd479	feat: 사주 프로필에 대해 어드민 개선 (AI)
+2025-11-25T06:59:36Z	99bdc7956709e9d3f0123383bf86c2c6e1a6c1e9	https://github.com/palette-team/palette_api/commit/99bdc7956709e9d3f0123383bf86c2c6e1a6c1e9	feat: sentry SDK
+2025-11-23T02:54:44Z	3990afadeef811ff5d90f6cc7bf6f973f2101d93	https://github.com/palette-team/palette_api/commit/3990afadeef811ff5d90f6cc7bf6f973f2101d93	fix: 프로필 이미지는 승인 취소 로직 삭제
+2025-11-19T08:13:39Z	e584e7aa546a9824ed8851dec3864c095f8b1db8	https://github.com/palette-team/palette_api/commit/e584e7aa546a9824ed8851dec3864c095f8b1db8	feat: 프로필 정보 수정시 재승인하도록 하기
+2025-11-19T06:14:35Z	0ad5cbd08401cd6290b2672a05240ac5795e1688	https://github.com/palette-team/palette_api/commit/0ad5cbd08401cd6290b2672a05240ac5795e1688	fix: production에서는 swagger / redoc 문서 노출되지 않도록 함
+2025-11-19T06:05:44Z	efa7c24729a5de454918afec6a4470dca8d6ab9a	https://github.com/palette-team/palette_api/commit/efa7c24729a5de454918afec6a4470dca8d6ab9a	feat: 직업 검색에 대해 유사도 검사 적용
+2025-11-19T05:57:58Z	f898a4e86347eb4b381361e0842cd5aa7e1c143a	https://github.com/palette-team/palette_api/commit/f898a4e86347eb4b381361e0842cd5aa7e1c143a	feat: 어드민 개선
+2025-11-19T05:53:16Z	dca2457a8db8615b3c44061fd49f8cdf2fdfeaab	https://github.com/palette-team/palette_api/commit/dca2457a8db8615b3c44061fd49f8cdf2fdfeaab	fix: introduction과 one_liner의 바뀐 역할
+2025-11-19T03:09:11Z	6df097efc1a07a0c7adeffacbd45e65c7a5a4a41	https://github.com/palette-team/palette_api/commit/6df097efc1a07a0c7adeffacbd45e65c7a5a4a41	Merge pull request #41 from palette-team/feature/address-similarity-api Feature/address similarity api
+2025-11-19T03:04:30Z	ab4a7098fd73e40a1fce193d9e757131555be7f3	https://github.com/palette-team/palette_api/commit/ab4a7098fd73e40a1fce193d9e757131555be7f3	feat: gemini 코드 리뷰 반영
+2025-11-19T03:01:20Z	9aec067f0791568c2610fe39de7461df5b0fe721	https://github.com/palette-team/palette_api/commit/9aec067f0791568c2610fe39de7461df5b0fe721	Update webapp/api/v1/profiles/views/address_view.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-11-19T02:53:49Z	fc158cb70291721d2b62b948d009232917e51e51	https://github.com/palette-team/palette_api/commit/fc158cb70291721d2b62b948d009232917e51e51	feat: init-db.sql 추가
+2025-11-18T16:21:34Z	7ca61df0f195a085e9852378af41c79c230df5ae	https://github.com/palette-team/palette_api/commit/7ca61df0f195a085e9852378af41c79c230df5ae	feat: address api에 대해서 유사도 검색 로직 추가
+2025-11-18T10:33:02Z	1e34076a8095a0816dc9fdd7362069b045bec38a	https://github.com/palette-team/palette_api/commit/1e34076a8095a0816dc9fdd7362069b045bec38a	test: unique index 관련 오류로 테스트 수정
+2025-11-18T10:21:26Z	1fb19df477420c1ce8f55441f1fb1bfbfeef510b	https://github.com/palette-team/palette_api/commit/1fb19df477420c1ce8f55441f1fb1bfbfeef510b	feat: referral 로그 관련 처리 추가
+2025-11-18T07:16:47Z	9c22feff887e72d41bba143321b2c3df5aacf094	https://github.com/palette-team/palette_api/commit/9c22feff887e72d41bba143321b2c3df5aacf094	fix: 환경변수 불러오는 부분에 대해서 env.str로 개선
+2025-11-18T06:52:56Z	e145f3593e1e636d1d88053a2314492799561baa	https://github.com/palette-team/palette_api/commit/e145f3593e1e636d1d88053a2314492799561baa	fix: 잘못된 어드민 검색 내용 삭제
+2025-11-18T06:22:12Z	149c92b17f926891898b521047d4b01be32c81b7	https://github.com/palette-team/palette_api/commit/149c92b17f926891898b521047d4b01be32c81b7	fix: settings
+2025-11-16T15:04:25Z	a04cd9d9c38a9cf43132a4ab517217a38e247914	https://github.com/palette-team/palette_api/commit/a04cd9d9c38a9cf43132a4ab517217a38e247914	fix: actions
+2025-11-16T14:56:33Z	6a3989ba9bcb38e505ad2d083e5b2466058eac0d	https://github.com/palette-team/palette_api/commit/6a3989ba9bcb38e505ad2d083e5b2466058eac0d	feat: backup/restore action
+2025-11-16T14:43:51Z	1485b2a406c3a6f5d20f29d09b10483f55e87834	https://github.com/palette-team/palette_api/commit/1485b2a406c3a6f5d20f29d09b10483f55e87834	fix: restart
+2025-11-16T14:20:39Z	fd8e25332d67ccd0ddeb91dc5d10c3fbdcd2ec35	https://github.com/palette-team/palette_api/commit/fd8e25332d67ccd0ddeb91dc5d10c3fbdcd2ec35	fix: path
+2025-11-16T14:19:28Z	749d12966aa74157003135e38167de8aebfc547f	https://github.com/palette-team/palette_api/commit/749d12966aa74157003135e38167de8aebfc547f	feat: production deploy action
+2025-11-16T12:51:49Z	65fe8f25a63419a462a5e2e8faa7ffa7271e58be	https://github.com/palette-team/palette_api/commit/65fe8f25a63419a462a5e2e8faa7ffa7271e58be	fix: production workflow name
+2025-11-16T12:49:19Z	3e33118db15b892041c99e82e4e213502152ccc7	https://github.com/palette-team/palette_api/commit/3e33118db15b892041c99e82e4e213502152ccc7	fix: s3 settings
+2025-11-16T12:29:32Z	62ee4bbcf9114e4df57a1debffa3acfb5f89a903	https://github.com/palette-team/palette_api/commit/62ee4bbcf9114e4df57a1debffa3acfb5f89a903	fix: urls
+2025-11-16T12:24:05Z	53b3cc966071a932ccec040540e94a5cbbfa04f4	https://github.com/palette-team/palette_api/commit/53b3cc966071a932ccec040540e94a5cbbfa04f4	fix: CORS settings
+2025-11-16T12:10:35Z	583939ea48d09ba5b9ea4e8bd4cf86289f371659	https://github.com/palette-team/palette_api/commit/583939ea48d09ba5b9ea4e8bd4cf86289f371659	fix: CORS_ALLOWED_ORIGINS
+2025-11-16T12:03:18Z	39f37a9d23e020675f0a331f62ff95ebf9f3ccc3	https://github.com/palette-team/palette_api/commit/39f37a9d23e020675f0a331f62ff95ebf9f3ccc3	fix: cidr
+2025-11-16T11:55:14Z	1074e15a09d7293c2a9279918205a2d1b5ced4dd	https://github.com/palette-team/palette_api/commit/1074e15a09d7293c2a9279918205a2d1b5ced4dd	fix: production settings
+2025-11-16T11:35:16Z	a3ee7d97a1bed6e14c54d16895b0ed5dd5a593ac	https://github.com/palette-team/palette_api/commit/a3ee7d97a1bed6e14c54d16895b0ed5dd5a593ac	fix: cidr
+2025-11-16T11:34:25Z	bff8537f7a4ba63c71c674fc16caf4f20da5ba88	https://github.com/palette-team/palette_api/commit/bff8537f7a4ba63c71c674fc16caf4f20da5ba88	Revert "fix: AWS cidr 관련 내용 삭제" This reverts commit cf5fbffde0ebb40cc1e2275cf23ba352b3e7eb93.
+2025-11-16T11:26:03Z	cf5fbffde0ebb40cc1e2275cf23ba352b3e7eb93	https://github.com/palette-team/palette_api/commit/cf5fbffde0ebb40cc1e2275cf23ba352b3e7eb93	fix: AWS cidr 관련 내용 삭제
+2025-11-16T11:07:57Z	cd34921fb69a36b26fdab7151c7ebcb54f75412a	https://github.com/palette-team/palette_api/commit/cd34921fb69a36b26fdab7151c7ebcb54f75412a	fix: workflow
+2025-11-16T10:15:53Z	9f6a41e4c97dfb2f1ca0d57197497d1d7a2c6306	https://github.com/palette-team/palette_api/commit/9f6a41e4c97dfb2f1ca0d57197497d1d7a2c6306	feat: production image workflow
+2025-11-14T05:25:41Z	2aac2814e43be85500f674daea0e615346f9c45f	https://github.com/palette-team/palette_api/commit/2aac2814e43be85500f674daea0e615346f9c45f	feat: age 정보 추가 및 user 모델에서 주 로직을 관리하도록 함
+2025-11-14T05:17:47Z	60a2d612f34b795a395c507fe0d22dd4e558cbaa	https://github.com/palette-team/palette_api/commit/60a2d612f34b795a395c507fe0d22dd4e558cbaa	feat: 생일 정보 추가
+2025-11-11T13:10:43Z	e172bb10aea22809ed0f849c8de26abb6169cf9b	https://github.com/palette-team/palette_api/commit/e172bb10aea22809ed0f849c8de26abb6169cf9b	fix: introduction 대신에 one_liner를 반환하도록 함
+2025-11-08T18:10:04Z	f5e4c37efceeb50186c013bc4e0640cceb235576	https://github.com/palette-team/palette_api/commit/f5e4c37efceeb50186c013bc4e0640cceb235576	chore: https: 인증 전 https redirect 비활성화
+2025-11-08T17:33:00Z	ed54bb7f5b360218722d1507cf1964d2ed37f3b4	https://github.com/palette-team/palette_api/commit/ed54bb7f5b360218722d1507cf1964d2ed37f3b4	fix: 301 issue
+2025-11-08T17:01:17Z	8ce77421be390ab9c87a19f03c351c7d9f13169b	https://github.com/palette-team/palette_api/commit/8ce77421be390ab9c87a19f03c351c7d9f13169b	feat: /health/
+2025-11-08T16:48:03Z	2352545bb33c75b0a38ce80f0bf08cfb4db1c6ac	https://github.com/palette-team/palette_api/commit/2352545bb33c75b0a38ce80f0bf08cfb4db1c6ac	fix: allowed host로 10.1.0.0 대역대를 허용하도록 함
+2025-11-08T16:11:22Z	878c1443ad3bb886cea2a988f9f3286c6d309bdb	https://github.com/palette-team/palette_api/commit/878c1443ad3bb886cea2a988f9f3286c6d309bdb	fix: codedeploy issue
+2025-11-08T16:04:40Z	bf9f64c927fd0bd59f10d40ab08ec9b076281d1d	https://github.com/palette-team/palette_api/commit/bf9f64c927fd0bd59f10d40ab08ec9b076281d1d	fix: code deploy
+2025-11-08T15:54:35Z	c05168237b14b5ffe1f705e3737e20fce54ff0d9	https://github.com/palette-team/palette_api/commit/c05168237b14b5ffe1f705e3737e20fce54ff0d9	fix: yml
+2025-11-08T15:52:34Z	46e6bfd23939e8d1968102656fa82f5f52ccc6f6	https://github.com/palette-team/palette_api/commit/46e6bfd23939e8d1968102656fa82f5f52ccc6f6	fix: deploy settings
+2025-11-08T15:40:51Z	f6bfd977f562c7db3ef6812e76cdf164c02fca4b	https://github.com/palette-team/palette_api/commit/f6bfd977f562c7db3ef6812e76cdf164c02fca4b	fix: deploy issue
+2025-11-08T15:30:51Z	1ee3e6b026434ef7eed2570783d5edaad143011f	https://github.com/palette-team/palette_api/commit/1ee3e6b026434ef7eed2570783d5edaad143011f	Merge branch 'develop'
+2025-11-08T15:30:40Z	d6ce239e8af4dadbfd1e9e161c12823fc55b2eda	https://github.com/palette-team/palette_api/commit/d6ce239e8af4dadbfd1e9e161c12823fc55b2eda	fix: celery issue
+2025-11-08T15:04:25Z	e525a2764be6ebfd89f79ac0eddcd5c37b146305	https://github.com/palette-team/palette_api/commit/e525a2764be6ebfd89f79ac0eddcd5c37b146305	Merge branch 'develop'
+2025-11-08T15:04:13Z	16129e92b95e792a23937e22a43baa5c40af8fbd	https://github.com/palette-team/palette_api/commit/16129e92b95e792a23937e22a43baa5c40af8fbd	fix: db engine
+2025-11-08T14:11:40Z	a6ac60084115961ae3ae0ff8a9ed34209e31f10b	https://github.com/palette-team/palette_api/commit/a6ac60084115961ae3ae0ff8a9ed34209e31f10b	Merge pull request #40 from palette-team/develop 001
+2025-11-08T06:39:15Z	231523c93b78e19921a7d9bc78dbcbcbbb52019c	https://github.com/palette-team/palette_api/commit/231523c93b78e19921a7d9bc78dbcbcbbb52019c	fix: production build
+2025-11-08T06:16:32Z	12054072176cdd97919e81678d0e1a430c683895	https://github.com/palette-team/palette_api/commit/12054072176cdd97919e81678d0e1a430c683895	feat: production 설정 추가
+2025-11-08T05:14:36Z	d5857e526077911e3f6970a3d736f5cc6098668e	https://github.com/palette-team/palette_api/commit/d5857e526077911e3f6970a3d736f5cc6098668e	test: 대표 이미지 관련 테스트 수정
+2025-11-08T05:08:33Z	69ee7b93b7b36ec0bfd310959377d47fdbad5498	https://github.com/palette-team/palette_api/commit/69ee7b93b7b36ec0bfd310959377d47fdbad5498	fix: 대표 이미지 추가
+2025-11-07T05:25:23Z	551eb00299d1773cc04bc405104f3edae5c28e5f	https://github.com/palette-team/palette_api/commit/551eb00299d1773cc04bc405104f3edae5c28e5f	feat: 추천된 알고리즘도 중개인의 종합의견 API에 같이 반환되도록 함
+2025-11-07T05:00:49Z	fa8ed0ea6fbbe9926c0815ec6c5c73ebeb0a5fd5	https://github.com/palette-team/palette_api/commit/fa8ed0ea6fbbe9926c0815ec6c5c73ebeb0a5fd5	Merge pull request #39 from palette-team/hotfix/add-username-in-profile hotfix: username을 profile 내의 정보에 중첩으로 추가
+2025-11-07T04:56:44Z	b23d76bc293efc8f8f8ce6ed4bbdbd50f28481fc	https://github.com/palette-team/palette_api/commit/b23d76bc293efc8f8f8ce6ed4bbdbd50f28481fc	hotfix: username을 profile 내의 정보에 중첩으로 추가
+2025-11-06T13:28:16Z	0e53ae75bb1ffe8460bc80f0db3860dbc98c00fc	https://github.com/palette-team/palette_api/commit/0e53ae75bb1ffe8460bc80f0db3860dbc98c00fc	fix: 추천 횟수 초기화 티켓 개수 수정
+2025-11-06T07:19:28Z	3c4ee0751104ffeec90216d9dadebc8dfa443059	https://github.com/palette-team/palette_api/commit/3c4ee0751104ffeec90216d9dadebc8dfa443059	Merge pull request #38 from palette-team/refactor-import-files fix: /tmp 를 서로 공유하지 않아 발생하는 서버 오류 및 import 시간이 오래걸리는 문제 수정
+2025-11-06T07:10:36Z	611aad3644b0e35df86838b9492243ce29bd9c73	https://github.com/palette-team/palette_api/commit/611aad3644b0e35df86838b9492243ce29bd9c73	fix: /tmp 를 서로 공유하지 않아 발생하는 서버 오류 및 import 시간이 오래걸리는 문제 수정
+2025-11-06T06:31:49Z	c049b74c5fd6dd471ada8d80f5982fa0919a30d9	https://github.com/palette-team/palette_api/commit/c049b74c5fd6dd471ada8d80f5982fa0919a30d9	Merge pull request #37 from palette-team/feature/saju-tags Feature/saju tags
+2025-11-06T06:20:01Z	436a3be487519324a789f63550b07306923ed2b7	https://github.com/palette-team/palette_api/commit/436a3be487519324a789f63550b07306923ed2b7	feat: 사주 프로필에 사주 태그 정보 추가
+2025-11-06T06:09:31Z	32a13a8a8758e9790ee4def9ed15d40dfc453c8a	https://github.com/palette-team/palette_api/commit/32a13a8a8758e9790ee4def9ed15d40dfc453c8a	feat: 음양력 변환 패키지 추가
+2025-11-06T06:09:15Z	69da52ce068ab4053bf642099fbcdb953e6e55e1	https://github.com/palette-team/palette_api/commit/69da52ce068ab4053bf642099fbcdb953e6e55e1	fix: 음력 정보를 이용하여 정확한 사주 원국(pillar 정보)이 나오도록 함
+2025-11-06T06:08:46Z	a575f534980cb86cb316a107de2d99b011aed3e0	https://github.com/palette-team/palette_api/commit/a575f534980cb86cb316a107de2d99b011aed3e0	refactor: migration 내용 정리
+2025-11-06T06:05:38Z	eec1b4e6feac34a713503a92233cb5aecfe3c5e7	https://github.com/palette-team/palette_api/commit/eec1b4e6feac34a713503a92233cb5aecfe3c5e7	feat: saju profile에 대한 서비스 추가 및 m_stem 등으로 키워드 통일
+2025-11-06T06:04:33Z	c33c72a0f5fd8a1bcef9e2f27955bb2b3fd99f98	https://github.com/palette-team/palette_api/commit/c33c72a0f5fd8a1bcef9e2f27955bb2b3fd99f98	fix: profile_admin에서 성별 정보를 확인할 수 있도록 함
+2025-11-06T03:04:35Z	2eed32db5fd6f557b7d319fd568f4cd208a3c7bc	https://github.com/palette-team/palette_api/commit/2eed32db5fd6f557b7d319fd568f4cd208a3c7bc	feat: saju tag 관련 어드민 추가 (csv 파일을 통해 import 처리 추가)
+2025-11-06T03:04:02Z	4dddbcef3bc2388fbb2143386dc493acca24957b	https://github.com/palette-team/palette_api/commit/4dddbcef3bc2388fbb2143386dc493acca24957b	feat: 사전에 준비한 사주원국 태그를 모델에 저장될 수 있도록 함
+2025-11-06T03:02:20Z	1a2a62f7ce274a1f48b33f6c53c63c51e75e2396	https://github.com/palette-team/palette_api/commit/1a2a62f7ce274a1f48b33f6c53c63c51e75e2396	Merge pull request #36 from palette-team/feature/import-compatibility-tags-csv Feature/import compatibility tags csv and API View
+2025-11-06T01:51:44Z	3dd551f52fd9d862b1ea8e91b1a0fdac5994519c	https://github.com/palette-team/palette_api/commit/3dd551f52fd9d862b1ea8e91b1a0fdac5994519c	fix: gemini 코드 리뷰 반영
+2025-11-06T01:47:24Z	a68eb8e88a914a299ed6fd5aa75c84e7aaeee506	https://github.com/palette-team/palette_api/commit/a68eb8e88a914a299ed6fd5aa75c84e7aaeee506	Update webapp/matchmakings/admin/prepared_compatibility_tag_admin.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-11-05T16:38:05Z	7829c69d32c4b6d10782bcf2550f6ad3620fc5d0	https://github.com/palette-team/palette_api/commit/7829c69d32c4b6d10782bcf2550f6ad3620fc5d0	feat: referral 생성 시에 랜덤으로 궁합 태그를 연결하도록 하고, API View 추가
+2025-11-05T16:37:12Z	9c4c995e24c0785a496f831b3e74e9a93a9033a8	https://github.com/palette-team/palette_api/commit/9c4c995e24c0785a496f831b3e74e9a93a9033a8	feat: 사전 정의한 tag를 가져오고 어드민을 통해 bulk create하는 과정 추가
+2025-11-05T16:11:02Z	9a7dbf87cfee620ba1071f545ec75ef0673923e9	https://github.com/palette-team/palette_api/commit/9a7dbf87cfee620ba1071f545ec75ef0673923e9	Merge pull request #35 from palette-team/feature/ten_god_saju_profile 사주 프로필에 십신 정보 추가
+2025-11-05T15:55:13Z	61a3949f4f9a210f14cf4fedd76517b1acb0d61b	https://github.com/palette-team/palette_api/commit/61a3949f4f9a210f14cf4fedd76517b1acb0d61b	Update webapp/api/v1/profiles/serializers/saju_profile_serializer.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-11-05T15:54:38Z	1f3a11a22e8faad6d17e9ffcac0c12afe5638137	https://github.com/palette-team/palette_api/commit/1f3a11a22e8faad6d17e9ffcac0c12afe5638137	fix: 수정한 반환 형식 반영
+2025-11-05T15:54:00Z	de476c9690fee438d1b9775a87f457ec1ee1a19b	https://github.com/palette-team/palette_api/commit/de476c9690fee438d1b9775a87f457ec1ee1a19b	Update webapp/saju/tests/test_ten_god_service.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-11-05T15:53:50Z	099678f937d28b2574d381cdb680560f06ca23b6	https://github.com/palette-team/palette_api/commit/099678f937d28b2574d381cdb680560f06ca23b6	Update webapp/saju/tests/test_ten_god_service.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-11-05T15:30:42Z	d2f2ed1ca0fb105a94631f202e98719657cd6a6f	https://github.com/palette-team/palette_api/commit/d2f2ed1ca0fb105a94631f202e98719657cd6a6f	Merge pull request #34 from palette-team/feature/action_tracking Feature/action tracking
+2025-11-05T15:30:29Z	87e14062363c87eb3ff3c974da66f7e09182995a	https://github.com/palette-team/palette_api/commit/87e14062363c87eb3ff3c974da66f7e09182995a	feat: saju_profile 내에서 tengod 정보를 구해서 반환하는 과정 추가
+2025-11-05T15:28:45Z	ce327fef42dafd1f1ae9d3e16ba59c6c7faa35cb	https://github.com/palette-team/palette_api/commit/ce327fef42dafd1f1ae9d3e16ba59c6c7faa35cb	fix: gemini code review 반영
+2025-11-05T15:22:39Z	8792419c6976bfcda3c7f595fe8d8a5a14580932	https://github.com/palette-team/palette_api/commit/8792419c6976bfcda3c7f595fe8d8a5a14580932	refactor: profile 모델 코드 정리
+2025-11-05T15:22:23Z	136acb745c4697fe6640f055c2a03e5bdc58fdab	https://github.com/palette-team/palette_api/commit/136acb745c4697fe6640f055c2a03e5bdc58fdab	feat: 사주원국 십신 정보 추가
+2025-11-05T15:05:14Z	fbc15f0177b8cccee3abb744811ce867cbdc56ff	https://github.com/palette-team/palette_api/commit/fbc15f0177b8cccee3abb744811ce867cbdc56ff	fix: 잘못된 argument 수정
+2025-11-05T15:03:22Z	03ee7eefbedebd8de71ab855d3da26ce0393e9da	https://github.com/palette-team/palette_api/commit/03ee7eefbedebd8de71ab855d3da26ce0393e9da	Merge pull request #33 from palette-team/feature/profile-image-api 프로필 정보 API에 프로필 이미지 정보 추가
+2025-11-05T15:03:12Z	09eb3edb105d1c7e0f13cc9bc720110d270ccd0b	https://github.com/palette-team/palette_api/commit/09eb3edb105d1c7e0f13cc9bc720110d270ccd0b	feat: migration file
+2025-11-05T14:59:56Z	42fc56d8238d6c4674aaae3170b7dc8d8408c483	https://github.com/palette-team/palette_api/commit/42fc56d8238d6c4674aaae3170b7dc8d8408c483	feat: action_tracking 관련 어드민 추가
+2025-11-05T14:57:14Z	c5e203beb66898248c67b9c33f2d085cc7419d4b	https://github.com/palette-team/palette_api/commit/c5e203beb66898248c67b9c33f2d085cc7419d4b	fix: 코드 리뷰 반영
+2025-11-05T14:56:07Z	3ec29b2fad95e8ca9435c13743749cc7a8a56757	https://github.com/palette-team/palette_api/commit/3ec29b2fad95e8ca9435c13743749cc7a8a56757	Update webapp/api/v1/profiles/views/my_profile_image_view.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-11-05T14:55:38Z	38e8d408230f0f88517f446eabe1a7afdee5c8f8	https://github.com/palette-team/palette_api/commit/38e8d408230f0f88517f446eabe1a7afdee5c8f8	feat: action_tracking decorator를 통해 트래킹 로직 추가
+2025-11-05T14:53:22Z	16e5032303fea18e94690ccbc955c3e955f85c02	https://github.com/palette-team/palette_api/commit/16e5032303fea18e94690ccbc955c3e955f85c02	feat: action_tracking choices (카테고리) 추가
+2025-11-05T14:52:01Z	3d751597d74c6b3b156ca11909e1de29c2d1e641	https://github.com/palette-team/palette_api/commit/3d751597d74c6b3b156ca11909e1de29c2d1e641	feat: action_tracking 모델 추가 및 ProfileViewTracking을 Proxy로 추가
+2025-11-05T14:48:43Z	7b6e939e176609c6fa76da0ebf126bc66b4afd9e	https://github.com/palette-team/palette_api/commit/7b6e939e176609c6fa76da0ebf126bc66b4afd9e	feat: action trackings app 추가
+2025-11-05T14:46:06Z	89fad8a1f57092d6690858cf42125234df7ad5f2	https://github.com/palette-team/palette_api/commit/89fad8a1f57092d6690858cf42125234df7ad5f2	feat: 프로필 정보에 프로필 이미지 정보 추가
+2025-11-04T18:20:58Z	8adb3758c6e99841cf35624dc4e042400d2a7874	https://github.com/palette-team/palette_api/commit/8adb3758c6e99841cf35624dc4e042400d2a7874	Merge pull request #32 from palette-team/feature/saju-infos 중개인의 종합 의견 / 천생연분 시너지 / 궁합 점수 API 추가
+2025-11-04T18:18:38Z	d80bdac44d702d70f7299e317870f115ca55908a	https://github.com/palette-team/palette_api/commit/d80bdac44d702d70f7299e317870f115ca55908a	fix: 코드 리뷰 반영
+2025-11-04T18:13:49Z	04f900349c1e20938db3f971a56dc5d36ea91667	https://github.com/palette-team/palette_api/commit/04f900349c1e20938db3f971a56dc5d36ea91667	test: 변경사항에 맞게 테스트 수정
+2025-11-04T17:54:28Z	0101b3bb5d922cb157e03396490de1f347949e70	https://github.com/palette-team/palette_api/commit/0101b3bb5d922cb157e03396490de1f347949e70	fix: 코드 정리
+2025-11-04T17:50:25Z	f51eff3df3356141f21967aec2b5447a20915fc5	https://github.com/palette-team/palette_api/commit/f51eff3df3356141f21967aec2b5447a20915fc5	feat: Profile & Referral에 기반한 궁합 점수 / 종합 의견 / 천생연분 시너지 반환 API 추가
+2025-11-04T17:27:06Z	b4c23040247c6206f03273cb7a1d10a877e8355f	https://github.com/palette-team/palette_api/commit/b4c23040247c6206f03273cb7a1d10a877e8355f	fix: matching 정보에 연관된 referral은 삭제되지 않도록 함
+2025-11-04T17:06:32Z	312e230da7ce01b43b61debb2874262f6aa105a2	https://github.com/palette-team/palette_api/commit/312e230da7ce01b43b61debb2874262f6aa105a2	fix: profile view 버그 수정
+2025-11-04T16:39:49Z	a32ba0fedf8e72ffefb592492fcd6d6a51d5e87e	https://github.com/palette-team/palette_api/commit/a32ba0fedf8e72ffefb592492fcd6d6a51d5e87e	feat: referral_synerge를 3개 생성하는 과정으로 변경
+2025-11-04T16:10:54Z	57318c50e4ae3d840d9a38a2f17b777251230198	https://github.com/palette-team/palette_api/commit/57318c50e4ae3d840d9a38a2f17b777251230198	feat: referral 생성 시에 pre_matching의 score를 궁합 점수로 가져와서 캐싱하도록 함
+2025-11-04T15:54:24Z	aebd83145af0512b57fa7d15db0b7addf7663c2d	https://github.com/palette-team/palette_api/commit/aebd83145af0512b57fa7d15db0b7addf7663c2d	feat: Referral admin에서 중개장의 종합 의견 / 천생연분 시너지 확인할 수 있도록 하기
+2025-11-04T15:49:08Z	c3d806986bd09490e34a8e54d92c6b76b35b652f	https://github.com/palette-team/palette_api/commit/c3d806986bd09490e34a8e54d92c6b76b35b652f	fix: 시너지 프롬프트에서 길이에 대한 메세지 수정
+2025-11-04T15:48:50Z	72b5a70e3f296c1877a14faf995db32c890d7304	https://github.com/palette-team/palette_api/commit/72b5a70e3f296c1877a14faf995db32c890d7304	feat: referral에 궁합 점수 컬럼을 추가
+2025-11-04T15:47:56Z	999f0aa69d4620d5c439de7acaa347dd55f22bc6	https://github.com/palette-team/palette_api/commit/999f0aa69d4620d5c439de7acaa347dd55f22bc6	fix: pre_matching과 연결되는 궁합 태그 정보 삭제
+2025-11-04T12:54:41Z	59bd4f3a9a7503cc8a9ff9be34596405a8a9cfe1	https://github.com/palette-team/palette_api/commit/59bd4f3a9a7503cc8a9ff9be34596405a8a9cfe1	feat: 추천 생성 시에 LLM을 통한 데이터 생성 비동기로 시작
+2025-11-04T12:54:06Z	61ea88eaad08fd000869ebee791eda3eb5def661	https://github.com/palette-team/palette_api/commit/61ea88eaad08fd000869ebee791eda3eb5def661	feat: 중개인의 종합 의견 및 천생연분 시너지 메세지 생성 서비스 / task 추가
+2025-11-04T12:51:16Z	60dc4bcce43e2f0991ea6a90f61a1d6474cd87b1	https://github.com/palette-team/palette_api/commit/60dc4bcce43e2f0991ea6a90f61a1d6474cd87b1	feat: 천생연분 시너지 및 중개인의 종합의견 모델 추가
+2025-11-04T10:28:32Z	b6534c54b96e9ae3374c48e5ef89733afa337a54	https://github.com/palette-team/palette_api/commit/b6534c54b96e9ae3374c48e5ef89733afa337a54	feat: 정해진 JSON 스키마를 통해 응답받도록 schema 추가
+2025-11-04T10:27:55Z	a82e8eda53afce9cfa6df562b8f8775bfb901fd6	https://github.com/palette-team/palette_api/commit/a82e8eda53afce9cfa6df562b8f8775bfb901fd6	feat: 종합 의견 및 천생연분 시너지에 대한 메세지 생성 LLM 프롬프트
+2025-11-04T10:07:34Z	f8df86fdc48bbaf17e4a09aeffa86f3883539089	https://github.com/palette-team/palette_api/commit/f8df86fdc48bbaf17e4a09aeffa86f3883539089	feat: LLM 생성에 대한 상태 선택값 Choice 나열
+2025-11-04T09:54:00Z	3fe02894d1f7a19218392c9e89f19aa740097e7c	https://github.com/palette-team/palette_api/commit/3fe02894d1f7a19218392c9e89f19aa740097e7c	Merge branch 'develop' into feature/saju-infos
+2025-11-04T09:53:47Z	4010ead4329af310736d8925565d57672fe78c73	https://github.com/palette-team/palette_api/commit/4010ead4329af310736d8925565d57672fe78c73	hotfix: 추가 작업 내용 삭제
+2025-11-04T06:58:41Z	feccff1bbed39ef81fcdd4501f80832a6c748175	https://github.com/palette-team/palette_api/commit/feccff1bbed39ef81fcdd4501f80832a6c748175	feat: saju_profile 및 saju_tag에 대한 어드민 추가
+2025-11-04T06:43:48Z	9177267323e7e26f757e97794a2de7a4109dac7e	https://github.com/palette-team/palette_api/commit/9177267323e7e26f757e97794a2de7a4109dac7e	feat: saju_tags에 대한 모델 및 ManyToMany relation추가
+2025-11-04T03:16:06Z	7d8687730d101f784118cd5f3e71334a10a3bd00	https://github.com/palette-team/palette_api/commit/7d8687730d101f784118cd5f3e71334a10a3bd00	fix: profile_list_serializer에 saju_profile 정보 추가
+2025-11-04T03:14:51Z	c30f8a4d04f71385f93528b20834cf22d6b2d1e1	https://github.com/palette-team/palette_api/commit/c30f8a4d04f71385f93528b20834cf22d6b2d1e1	fix: openapi example 정리
+2025-11-01T07:13:19Z	68bff00a8e4fa056e3f6ecc8cd936fb8d9a5e297	https://github.com/palette-team/palette_api/commit/68bff00a8e4fa056e3f6ecc8cd936fb8d9a5e297	Merge pull request #31 from palette-team/feature/referral_conversation 추천시 소개 대화 내용 생성
+2025-11-01T07:13:09Z	0e1d7759153e010b134cac8988825466a67af91d	https://github.com/palette-team/palette_api/commit/0e1d7759153e010b134cac8988825466a67af91d	fix: 코드 리뷰 반영
+2025-11-01T07:03:31Z	287073e06e7bef65cdbe7c3e1596d59a9695ad16	https://github.com/palette-team/palette_api/commit/287073e06e7bef65cdbe7c3e1596d59a9695ad16	fix: keepdb
+2025-11-01T06:57:10Z	366700700df0aa147838f57d7bce0c3b3edf0116	https://github.com/palette-team/palette_api/commit/366700700df0aa147838f57d7bce0c3b3edf0116	feat: 소개 대화 생성 내용 추가
+2025-11-01T06:25:30Z	d5c7a5bfdfde9af943310cce98bb8a27adf0488e	https://github.com/palette-team/palette_api/commit/d5c7a5bfdfde9af943310cce98bb8a27adf0488e	test: AI 기반 테스트 생성
+2025-11-01T06:07:31Z	40cfd43efae3341f3b7b0c10e64f7b9472302ebe	https://github.com/palette-team/palette_api/commit/40cfd43efae3341f3b7b0c10e64f7b9472302ebe	fix: formatter 변경
+2025-11-01T06:03:01Z	504653ca71934b8e4768bcf9e74a40550ff28542	https://github.com/palette-team/palette_api/commit/504653ca71934b8e4768bcf9e74a40550ff28542	test: matchimakings 모델 테스트 코드 추가
+2025-11-01T06:00:09Z	77f430935c11d7d722abff305b55a3a6ca035b74	https://github.com/palette-team/palette_api/commit/77f430935c11d7d722abff305b55a3a6ca035b74	test: profiles 내의 모델 spec 추가
+2025-10-31T17:49:22Z	3aab83aabd0390542182ef6b1ce08c8877b931b3	https://github.com/palette-team/palette_api/commit/3aab83aabd0390542182ef6b1ce08c8877b931b3	test: address, profile_image factory 추가
+2025-10-31T17:48:35Z	86544d30d46795b1ed4de9b357bda5cdc17b431b	https://github.com/palette-team/palette_api/commit/86544d30d46795b1ed4de9b357bda5cdc17b431b	test: job_category model spec 추가
+2025-10-31T17:46:52Z	499b2df02df6eba7cf895b50b790b1909332e577	https://github.com/palette-team/palette_api/commit/499b2df02df6eba7cf895b50b790b1909332e577	test: job model spec 추가
+2025-10-31T17:45:05Z	47f936f2aa6bd264afc12572bfee9c02fdcae212	https://github.com/palette-team/palette_api/commit/47f936f2aa6bd264afc12572bfee9c02fdcae212	test: address model spec 추가
+2025-10-31T17:42:29Z	f2d3a6131fc7b0226d0c93ca1a32d4787a24c8d9	https://github.com/palette-team/palette_api/commit/f2d3a6131fc7b0226d0c93ca1a32d4787a24c8d9	feat: test packages
+2025-10-31T17:41:35Z	dcad97283eb932c34e752db95005a35604aba153	https://github.com/palette-team/palette_api/commit/dcad97283eb932c34e752db95005a35604aba153	fix: 테스트 과정 중 serializer fields 정의 필요하여 추가
+2025-10-31T12:13:36Z	b4178ec671e88ce6346cb80edd5e252b77fe2185	https://github.com/palette-team/palette_api/commit/b4178ec671e88ce6346cb80edd5e252b77fe2185	Merge pull request #30 from palette-team/feature/completed_and_past_matching 지난 인연 및 매칭 완료 목록 API 추가
+2025-10-31T12:11:29Z	8e7cf97a77a14e14d491223398d385b48b288d51	https://github.com/palette-team/palette_api/commit/8e7cf97a77a14e14d491223398d385b48b288d51	fix: 동일한 브랜치에서 최신 워크플로우만 실행되도록 함
+2025-10-31T12:08:39Z	f2cb35f1c9eadffc494e7bb434e8340346169915	https://github.com/palette-team/palette_api/commit/f2cb35f1c9eadffc494e7bb434e8340346169915	fix: 파일명 오타 수정
+2025-10-31T12:09:15Z	47437b7d97190b28af8640a034fabcefebf14792	https://github.com/palette-team/palette_api/commit/47437b7d97190b28af8640a034fabcefebf14792	Update webapp/common/utils/slack.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-10-31T12:08:56Z	0ab9d4108c7131c7100113ee49edb53b51c7ae70	https://github.com/palette-team/palette_api/commit/0ab9d4108c7131c7100113ee49edb53b51c7ae70	Update webapp/users/services/ticket_service.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-10-31T12:08:46Z	2c166e60b50bd8ebf475043b47a97aa6bfa5c5ac	https://github.com/palette-team/palette_api/commit/2c166e60b50bd8ebf475043b47a97aa6bfa5c5ac	Update webapp/api/v1/profiles/serializers/complated_matching_user_profile_list_serializer.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-10-31T12:08:02Z	71fe275863df4208823ebbcab3ff78ee5c13ff08	https://github.com/palette-team/palette_api/commit/71fe275863df4208823ebbcab3ff78ee5c13ff08	Update webapp/api/v1/matchmakings/serializers/completed_matching_list_serializer.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-10-31T12:07:45Z	039a590dcd878924aa0b7b33a1a5f87c38178ae9	https://github.com/palette-team/palette_api/commit/039a590dcd878924aa0b7b33a1a5f87c38178ae9	Update webapp/api/v1/matchmakings/serializers/completed_matching_list_serializer.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-10-31T12:07:38Z	0d1b7cb6c8af1a1efef0464f755662f401ae06c5	https://github.com/palette-team/palette_api/commit/0d1b7cb6c8af1a1efef0464f755662f401ae06c5	Update webapp/matchmakings/tasks/auto_expire_matching_task.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-10-31T12:06:48Z	b7cedaa923a655c37177a1fb18bba6c845d9e97c	https://github.com/palette-team/palette_api/commit/b7cedaa923a655c37177a1fb18bba6c845d9e97c	fix: CI
+2025-10-31T09:43:50Z	3fb533a2f88cbcbd98c8932d4243a9b9196bd15e	https://github.com/palette-team/palette_api/commit/3fb533a2f88cbcbd98c8932d4243a9b9196bd15e	feat: 새벽 4시마다 만료처리 하도록 함
+2025-10-31T09:23:16Z	7eca0f160650dda79d421b8edfe7b2226d621dc6	https://github.com/palette-team/palette_api/commit/7eca0f160650dda79d421b8edfe7b2226d621dc6	fix: 로컬 환경에서 TEST DB 설정 정리
+2025-10-31T08:32:07Z	25c7cf9fd7ad9010f35031526748e5946f604d32	https://github.com/palette-team/palette_api/commit/25c7cf9fd7ad9010f35031526748e5946f604d32	fix: 빠진 내용 추가
+2025-10-31T08:31:55Z	0a91b0695e58a2e1be968a4ccf5433dc0cdfeb68	https://github.com/palette-team/palette_api/commit/0a91b0695e58a2e1be968a4ccf5433dc0cdfeb68	fix: 오타 수정
+2025-10-31T08:31:43Z	6d53b55ad1494b2092e051afbe716d14891fccd6	https://github.com/palette-team/palette_api/commit/6d53b55ad1494b2092e051afbe716d14891fccd6	fix: test.sh 수정
+2025-10-31T08:30:12Z	3e191dc76ff0ded83e1549bc107b8a9fd66f2ceb	https://github.com/palette-team/palette_api/commit/3e191dc76ff0ded83e1549bc107b8a9fd66f2ceb	feat: ENVIRONMENT 설정 및 test DB 설정 변경
+2025-10-31T08:29:13Z	3fbe8173cb0792ce09a0d116c81975afde15999e	https://github.com/palette-team/palette_api/commit/3fbe8173cb0792ce09a0d116c81975afde15999e	fix: 개발 환경 또는 테스트 환경에서는 슬랙 메세지를 보내지 않도록 함
+2025-10-31T08:25:26Z	4d30f643e1d46a911321990c4d49f65104720245	https://github.com/palette-team/palette_api/commit/4d30f643e1d46a911321990c4d49f65104720245	fix: 잘못된 구현 방식 수정
+2025-10-31T06:44:23Z	fdbd1d1a133cba9620d6eb33c357b10206550ec5	https://github.com/palette-team/palette_api/commit/fdbd1d1a133cba9620d6eb33c357b10206550ec5	feat: 매칭에 대해서 만료 처리하고 티켓 환불하는 과정 추가
+2025-10-31T06:22:09Z	54775a365365635c8dcb932f1649fc98aaea7080	https://github.com/palette-team/palette_api/commit/54775a365365635c8dcb932f1649fc98aaea7080	feat: 지난 인연에 대한 API 기능 추가
+2025-10-31T06:19:40Z	2549a0f6a34b677f8488bf4296af337586f4ec86	https://github.com/palette-team/palette_api/commit/2549a0f6a34b677f8488bf4296af337586f4ec86	feat: matching에 대해 만료일자 정보 추가
+2025-10-31T06:13:23Z	918645647cb5ed12ba5f6fef00f4f2a1db7e4dbf	https://github.com/palette-team/palette_api/commit/918645647cb5ed12ba5f6fef00f4f2a1db7e4dbf	feat: ticket 처리에 대해서 user lock 적용
+2025-10-31T05:57:58Z	1bd4b4921a9bd5ad20cd8778a074454bcd0bd30e	https://github.com/palette-team/palette_api/commit/1bd4b4921a9bd5ad20cd8778a074454bcd0bd30e	chore: 일부 사주 코드에 대한 주석 추가
+2025-10-31T05:36:57Z	77d99ceb0387825541bbd1630c16e69cd5cd80ef	https://github.com/palette-team/palette_api/commit/77d99ceb0387825541bbd1630c16e69cd5cd80ef	feat: ticket_log admin에서 payment, matching 정보 추가
+2025-10-31T05:36:35Z	4b3dc4d134b69d917950731f721cd2deca2226d4	https://github.com/palette-team/palette_api/commit/4b3dc4d134b69d917950731f721cd2deca2226d4	refactor: ticket_service에서 연관 주체를 받아 정보를 같이 처리하여 저장하도록 함
+2025-10-31T05:29:54Z	b7cea9a1915973bf022a6a6f9bc205395d5f102e	https://github.com/palette-team/palette_api/commit/b7cea9a1915973bf022a6a6f9bc205395d5f102e	feat: ticket_log에 환불된 matching을 표시하기 위한 컬럼 추가
+2025-10-31T05:27:53Z	41016669d043fe95763a8d695e87b2c5b639ea63	https://github.com/palette-team/palette_api/commit/41016669d043fe95763a8d695e87b2c5b639ea63	fix: proxy class method를 사용하도록 함
+2025-10-31T05:26:02Z	076721372b2b795624c7b10cd88b358c4071a260	https://github.com/palette-team/palette_api/commit/076721372b2b795624c7b10cd88b358c4071a260	feat: 매칭 만료된 내용이 보낸 호감 / 받은 호감에서 보이지 않도록 함
+2025-10-31T05:25:30Z	9fe1c03bd3ed55af02a90a1d0a83483a37192c37	https://github.com/palette-team/palette_api/commit/9fe1c03bd3ed55af02a90a1d0a83483a37192c37	feat: 매칭 만료 및 환불 관련 상수 추가
+2025-10-31T05:24:32Z	c6c7819e1d4fab8bdd968840e4060a092a5f418f	https://github.com/palette-team/palette_api/commit/c6c7819e1d4fab8bdd968840e4060a092a5f418f	fix: 의미없는 주석 삭제
+2025-10-31T05:24:16Z	219706f1a06329dcbf5839248035d68606045ba0	https://github.com/palette-team/palette_api/commit/219706f1a06329dcbf5839248035d68606045ba0	feat: matching에 만료일 정보 추가
+2025-10-31T05:05:57Z	84fe2a238fe69d131db11c4c2c3264ba6db3e181	https://github.com/palette-team/palette_api/commit/84fe2a238fe69d131db11c4c2c3264ba6db3e181	feat: completed_matching_list 가져오는 service logic
+2025-10-31T05:03:46Z	91c1e2c2fcb266ad6a9380c21ca64c12f77f9bf1	https://github.com/palette-team/palette_api/commit/91c1e2c2fcb266ad6a9380c21ca64c12f77f9bf1	feat: 실제 사용자의 나이가 반환되도록 함 / 본인인증 여부에 대한 검증 로직을 리팩토링함
+2025-10-31T04:59:27Z	a13ab4c13a90e6af196d609923ce8c24e6576ec5	https://github.com/palette-team/palette_api/commit/a13ab4c13a90e6af196d609923ce8c24e6576ec5	fix: 더미 유저의 전화번호에 - 기호가 들어가지 않도록 함
+2025-10-31T04:58:56Z	5248d6bdaf9e84f35b8fdfb02ef246d510a7c31a	https://github.com/palette-team/palette_api/commit/5248d6bdaf9e84f35b8fdfb02ef246d510a7c31a	feat: 매칭 완료 API 추가 및 보낸 호감 / 받은 호감 상에서는 매칭 완료 및 거절 케이스가 나오지 않도록 함
+2025-10-30T11:58:34Z	9be3c222dff42fc217058221ffb93e8319bc310f	https://github.com/palette-team/palette_api/commit/9be3c222dff42fc217058221ffb93e8319bc310f	Merge pull request #29 from palette-team/reset-referral-quota 남은 추천 횟수를 초기화하는 기능(티켓 소모) 추가
+2025-10-30T11:51:22Z	395bd2ef6f6fd95cf510ea2c4d7f1bed39e364fb	https://github.com/palette-team/palette_api/commit/395bd2ef6f6fd95cf510ea2c4d7f1bed39e364fb	feat: 남은 추천 횟수를 초기화하는 기능(티켓 소모) 추가
+2025-10-29T15:18:08Z	40da0a88c97baaafb49ee40868ce4de179912847	https://github.com/palette-team/palette_api/commit/40da0a88c97baaafb49ee40868ce4de179912847	feat: 같은 날에는 운 정보가 바뀌지 않도록 함 (12:00을 기준으로 처리)
+2025-10-29T12:07:34Z	b645a00da19731248b62f772a454aad7fd815d78	https://github.com/palette-team/palette_api/commit/b645a00da19731248b62f772a454aad7fd815d78	Merge pull request #28 from palette-team/feature/referral_quota_recover_at 사용자 추천 생성 횟수가 회복되는 시기 / 사용자 승인 여부를 User 상세 정보 API에서 확인할 수 있도록 함
+2025-10-29T12:07:06Z	b3333d42a84f3a74a5cbb7537cf4ac0c9156bc20	https://github.com/palette-team/palette_api/commit/b3333d42a84f3a74a5cbb7537cf4ac0c9156bc20	feat: 알고리즘 3개로 나누어 처리
+2025-10-29T10:56:26Z	da5e387dced66352e1cc157616f180b5a2df72ce	https://github.com/palette-team/palette_api/commit/da5e387dced66352e1cc157616f180b5a2df72ce	fix: 비지니스 정책에 따라 기본 티켓 product 변경
+2025-10-29T10:49:27Z	471dbde5ab06470f258be40e27b4250fc6364951	https://github.com/palette-team/palette_api/commit/471dbde5ab06470f258be40e27b4250fc6364951	feat: 사용자 승인 여부도 API 상에 추가함
+2025-10-29T10:49:14Z	bc54ba43430a04507e8450b23f6eab409ba2a0ee	https://github.com/palette-team/palette_api/commit/bc54ba43430a04507e8450b23f6eab409ba2a0ee	feat: 사용자의 추천받기 가능 횟수가 회복되는 시기를 API 상에 추가함
+2025-10-28T12:44:54Z	e14f68db8a4e91ac74c1a3f2841a062bf7ac3dd0	https://github.com/palette-team/palette_api/commit/e14f68db8a4e91ac74c1a3f2841a062bf7ac3dd0	hotfix: image에 대해서 BASE_URL을 기반으로 url이 노출되도록 함
+2025-10-28T12:19:41Z	71070ede44a12da4fcd23d7ba52814089c0fd127	https://github.com/palette-team/palette_api/commit/71070ede44a12da4fcd23d7ba52814089c0fd127	fix: lint issue
+2025-10-28T12:18:31Z	107ae2dd3747d862bda59cb093b3c1ca199e66c4	https://github.com/palette-team/palette_api/commit/107ae2dd3747d862bda59cb093b3c1ca199e66c4	Merge pull request #27 from palette-team/feature/toss-payments-api 토스 페이먼츠 결제 모듈 연동
+2025-10-28T12:15:32Z	b98f3490399e298fa8bb02458904bd1e3189d879	https://github.com/palette-team/palette_api/commit/b98f3490399e298fa8bb02458904bd1e3189d879	fix: pre-commit settings
+2025-10-28T12:06:19Z	b4a97280d19678d5055bba4127423c0f221e1783	https://github.com/palette-team/palette_api/commit/b4a97280d19678d5055bba4127423c0f221e1783	fix: swagger-docs 브랜치에 커밋이 쌓이는 이슈
+2025-10-28T12:00:05Z	b67dede259f215ac13864a5166356f25e0da1a97	https://github.com/palette-team/palette_api/commit/b67dede259f215ac13864a5166356f25e0da1a97	fix: 부분 환불이 되지 않도록 함
+2025-10-28T11:59:12Z	d4e0e5ee423e8ec4873de3c3a54f07aad48d614e	https://github.com/palette-team/palette_api/commit/d4e0e5ee423e8ec4873de3c3a54f07aad48d614e	fix: 코드 리뷰 반영
+2025-10-28T11:53:51Z	ac5520f84fe204e4ca0c7481b439919c1e6c3b79	https://github.com/palette-team/palette_api/commit/ac5520f84fe204e4ca0c7481b439919c1e6c3b79	fix: isort 규칙 수정
+2025-10-27T13:25:19Z	a7d217e63a7806435bf0bed5941619e933934253	https://github.com/palette-team/palette_api/commit/a7d217e63a7806435bf0bed5941619e933934253	feat: 토스 페이먼츠 결제 모듈 연동
+2025-10-27T13:18:59Z	a758576effe1e1f37c985fdf84360ef3bd3fd11f	https://github.com/palette-team/palette_api/commit/a758576effe1e1f37c985fdf84360ef3bd3fd11f	feat: 토스 페이먼츠 및 Ticket Product 관련 어드민 추가
+2025-10-27T13:16:31Z	fa077dfde2217c3205e1df14568a025bcb775ded	https://github.com/palette-team/palette_api/commit/fa077dfde2217c3205e1df14568a025bcb775ded	fix: webhook 처리에 대한 대비를 하기 위해 payment secret 컬럼 추가
+2025-10-27T08:42:39Z	57b82d93fe5dfb9c6c8089e6ad62ad0514514737	https://github.com/palette-team/palette_api/commit/57b82d93fe5dfb9c6c8089e6ad62ad0514514737	refactor: is_active=True에 대해 active() queryset 정의 추가
+2025-10-27T08:40:21Z	ec4a0f09e96c3095a8586445895dfd8aaa629e2f	https://github.com/palette-team/palette_api/commit/ec4a0f09e96c3095a8586445895dfd8aaa629e2f	feat: read only base viewset 추가
+2025-10-27T07:36:46Z	7b9a74c683db9c38b2758ddca5f10e5c81a9cff5	https://github.com/palette-team/palette_api/commit/7b9a74c683db9c38b2758ddca5f10e5c81a9cff5	feat: payments app 기본 구성
+2025-10-27T07:36:08Z	41cb4533a5eec0c4ce031a62e1e5648942372d67	https://github.com/palette-team/palette_api/commit/41cb4533a5eec0c4ce031a62e1e5648942372d67	feat: ticket_product 기본 생성 command 추가
+2025-10-27T07:35:51Z	6414ba7d58a574a0b89ce6b8b0762fd66a656782	https://github.com/palette-team/palette_api/commit/6414ba7d58a574a0b89ce6b8b0762fd66a656782	feat: 기본 티켓별 가격 상수 추가
+2025-10-27T07:28:51Z	d2380fd0bd6564d229fb9df0010e31c9346df9bd	https://github.com/palette-team/palette_api/commit/d2380fd0bd6564d229fb9df0010e31c9346df9bd	feat: 토스페이먼츠 결제를 위한 기본 상품 및 결제 정보 모델
+2025-10-26T16:44:18Z	397a8ea2ae348f8a8f5d7fbf1d4f90b9d5706404	https://github.com/palette-team/palette_api/commit/397a8ea2ae348f8a8f5d7fbf1d4f90b9d5706404	feat: toss payments 관련 설정값 추가
+2025-10-26T08:49:42Z	f1b8b0b15f854cd4df370e32c421662d5044b755	https://github.com/palette-team/palette_api/commit/f1b8b0b15f854cd4df370e32c421662d5044b755	Merge pull request #26 from palette-team/feature/saju-api 본인인증 로직/사주 로직을 이용한 사전 매칭
+2025-10-26T08:34:09Z	708f9ea0d20597dc2cd08c1e71ca500a4a238405	https://github.com/palette-team/palette_api/commit/708f9ea0d20597dc2cd08c1e71ca500a4a238405	test: 테스트 코드 반영
+2025-10-26T07:54:49Z	c0c75e5924a04393a524da0e2900a93d137e59d4	https://github.com/palette-team/palette_api/commit/c0c75e5924a04393a524da0e2900a93d137e59d4	fix: nice api 보안 이슈 수정
+2025-10-26T06:54:51Z	2e62cb6dc9bec4157702f710d38d645617630963	https://github.com/palette-team/palette_api/commit/2e62cb6dc9bec4157702f710d38d645617630963	feat: django command에 대해서 부가 tool 추가
+2025-10-26T06:46:25Z	f215bd3626a0352f1a50dcf3711c17f3f94524ae	https://github.com/palette-team/palette_api/commit/f215bd3626a0352f1a50dcf3711c17f3f94524ae	feat: 테스트용 dummy user 생성과정에서 본인인증 정보도 임의로 생성하도록 함
+2025-10-26T06:45:50Z	fd8b025391c13ee7883d4c195666da1d5d83e102	https://github.com/palette-team/palette_api/commit/fd8b025391c13ee7883d4c195666da1d5d83e102	feat: saju algorithm을 기본으로 pre_matching을 생성하도록 함
+2025-10-26T06:35:33Z	09475ab23bbec3b86893457650aba402e604060f	https://github.com/palette-team/palette_api/commit/09475ab23bbec3b86893457650aba402e604060f	fix: pre_matching을 다시 생성하는 과정에서 이미 saju_profile이 있는 경우 발생하는 오류 수정
+2025-10-26T06:33:44Z	f0547c131cef4e997ec26b6a1f47e890433432b9	https://github.com/palette-team/palette_api/commit/f0547c131cef4e997ec26b6a1f47e890433432b9	fix: CI 정보는 저장하지 않기로 함
+2025-10-26T06:15:44Z	7ebe09b20884714aeb082e345250b6f524e65de4	https://github.com/palette-team/palette_api/commit/7ebe09b20884714aeb082e345250b6f524e65de4	fix: migrate.sh에 대해서 전체 마이그레이션 기능 추가로 개발 사용성 개선
+2025-10-24T11:34:11Z	9bbb2e1e11f2ebbcf5ac3b6e923a5cbc6bfb6020	https://github.com/palette-team/palette_api/commit/9bbb2e1e11f2ebbcf5ac3b6e923a5cbc6bfb6020	fix: saju_profile serializer에 대해서 노출 정보 변경
+2025-10-24T10:23:42Z	c881e8c42ffe01a85436071bc33ac89138491c67	https://github.com/palette-team/palette_api/commit/c881e8c42ffe01a85436071bc33ac89138491c67	feat: 사주 원국 정보가 profile API 상에서도 보이도록 함
+2025-10-24T09:19:13Z	870635b4f2f8af6b0d3270875d56f8d124b1a73c	https://github.com/palette-team/palette_api/commit/870635b4f2f8af6b0d3270875d56f8d124b1a73c	fix: 잘못된 메서드명 변경
+2025-10-24T09:19:03Z	dc0d132c1e1e5208b7a9e47106dee99744faffd5	https://github.com/palette-team/palette_api/commit/dc0d132c1e1e5208b7a9e47106dee99744faffd5	fix: mocking API 삭제
+2025-10-24T09:08:00Z	953ce0cb0eff52269475c61a1b217c5235a2ffd5	https://github.com/palette-team/palette_api/commit/953ce0cb0eff52269475c61a1b217c5235a2ffd5	fix: 오늘의 사주에 실제 사용자 정보를 사용하도록 변경
+2025-10-24T09:07:20Z	d9199cfb6bd167a7e906d1ce072723d9367a0960	https://github.com/palette-team/palette_api/commit/d9199cfb6bd167a7e906d1ce072723d9367a0960	feat: 사주 데이터 생성 로직 및 프로필 업데이트 과정 개선
+2025-10-24T08:55:32Z	41ede0c865357da6529e5c201b2ff937c1ffffed	https://github.com/palette-team/palette_api/commit/41ede0c865357da6529e5c201b2ff937c1ffffed	feat: 사전 매칭 작업 과정 중에 saju_profile이 없는 경우 생성하는 처리
+2025-10-24T08:30:32Z	1bf1cb8aeee362c53cdc8e59b6ac6154cb6fd59c	https://github.com/palette-team/palette_api/commit/1bf1cb8aeee362c53cdc8e59b6ac6154cb6fd59c	feat: 작업에 필요한 package 추가
+2025-10-24T08:29:44Z	1b7ef9d0afb053b159219ff64378e96e1514ab3e	https://github.com/palette-team/palette_api/commit/1b7ef9d0afb053b159219ff64378e96e1514ab3e	feat: nice api 초기 access_token 발급 코드
+2025-10-24T08:28:20Z	374833069dd5bbe9f1b52065fa8da90711d3cfa0	https://github.com/palette-team/palette_api/commit/374833069dd5bbe9f1b52065fa8da90711d3cfa0	feat: nice api 관련 .env 샘플 내용 추가
+2025-10-24T08:27:53Z	0a4e89a28ce2d14d68a095fe91723b5d55b32697	https://github.com/palette-team/palette_api/commit/0a4e89a28ce2d14d68a095fe91723b5d55b32697	feat: NiceAPI 설정 추가
+2025-10-24T08:27:02Z	3d0babcc2050336c30298b89add715d6e274f920	https://github.com/palette-team/palette_api/commit/3d0babcc2050336c30298b89add715d6e274f920	feat: development 환경에서도 CORS, CSRF 설정 추가
+2025-10-24T08:25:52Z	afae76a719fc8c44f894870b2962d14fa083f946	https://github.com/palette-team/palette_api/commit/afae76a719fc8c44f894870b2962d14fa083f946	feat: 사주 원국을 저장하기 위한 연/월/일/주 정보를 저장하는 모델 추가
+2025-10-24T08:11:58Z	162f319797bc85235c64f9e61578a810b80ef7ed	https://github.com/palette-team/palette_api/commit/162f319797bc85235c64f9e61578a810b80ef7ed	feat: NICE API 본인인증 API 추가 및 기존 users 내에 있던 API v1으로 마이그레이션
+2025-10-24T08:07:20Z	ade2ea9010b7c6c13dfd04c3278b97628c493d17	https://github.com/palette-team/palette_api/commit/ade2ea9010b7c6c13dfd04c3278b97628c493d17	feat: niceAPI와 관련된 serializer 추가
+2025-10-24T08:05:26Z	0d03ffb6e2cb76d3bed3c9aae989c756b6394ec4	https://github.com/palette-team/palette_api/commit/0d03ffb6e2cb76d3bed3c9aae989c756b6394ec4	fix: matchmakings task package 처리
+2025-10-24T07:52:29Z	ef3389e01c469c9bcfe8a2513836746a8bb58ad2	https://github.com/palette-team/palette_api/commit/ef3389e01c469c9bcfe8a2513836746a8bb58ad2	feat: saju django app으로 추가
+2025-10-24T07:51:23Z	38e9af7f7cb9de08e066b8a0cd3a06472b2ba370	https://github.com/palette-team/palette_api/commit/38e9af7f7cb9de08e066b8a0cd3a06472b2ba370	feat: nice API 와 연관된 오류 코드 설정
+2025-10-24T07:50:47Z	3ab6fe4971b71a2f4e4cde45836adc4eee37ca49	https://github.com/palette-team/palette_api/commit/3ab6fe4971b71a2f4e4cde45836adc4eee37ca49	fix: signal 코드 삭제
+2025-10-24T07:38:48Z	c9ca161deafcbc0560da942d48e660c2752d2348	https://github.com/palette-team/palette_api/commit/c9ca161deafcbc0560da942d48e660c2752d2348	feat: 본인인증 기능에 사용되는 util, service로직 추가
+2025-10-24T07:37:07Z	7612f3fc97e3cc1c7c84c5f7eedd749ae7070f1c	https://github.com/palette-team/palette_api/commit/7612f3fc97e3cc1c7c84c5f7eedd749ae7070f1c	feat: 본인인증을 위한 model 변경
+2025-10-24T07:34:11Z	d2f2b490cbcf85ccb07919d3d1f1fbff28593479	https://github.com/palette-team/palette_api/commit/d2f2b490cbcf85ccb07919d3d1f1fbff28593479	refactor: 사용자 승인 요청 슬랙 메세지 서비스 분리
+2025-10-24T07:33:18Z	8849b3429620dd211e1fbc228ef31ad5e9e1e26f	https://github.com/palette-team/palette_api/commit/8849b3429620dd211e1fbc228ef31ad5e9e1e26f	fix: 사주 정보 기반으로 pre matching을 생성하는 타이밍 수정
+2025-10-24T07:09:58Z	408db654d2999d4e904c34ff6a89be30461a2a68	https://github.com/palette-team/palette_api/commit/408db654d2999d4e904c34ff6a89be30461a2a68	fix: profile에 대해서 문서와 구현이 동일하지 않는 내용 수정
+2025-10-24T06:32:02Z	f8f3a1cc3e3d4b734f52dd485901808a919231d8	https://github.com/palette-team/palette_api/commit/f8f3a1cc3e3d4b734f52dd485901808a919231d8	feat: 더미 데이터를 이용한 금일 운 정보 API 추가
+2025-10-24T06:27:32Z	a5d5aee86df5c0f7d643bdf2e6240d6590773375	https://github.com/palette-team/palette_api/commit/a5d5aee86df5c0f7d643bdf2e6240d6590773375	feat: 오늘의 사주 점수를 위한 로직 추가
+2025-10-24T06:25:28Z	991e9fbf64dbf25458b7f98f15cacba8d7348474	https://github.com/palette-team/palette_api/commit/991e9fbf64dbf25458b7f98f15cacba8d7348474	feat: Pillar 정보만 담는 dataclass 추가
+2025-10-24T06:16:33Z	7697477097b2d791f1a987e4544c094fb04847a5	https://github.com/palette-team/palette_api/commit/7697477097b2d791f1a987e4544c094fb04847a5	fix: __eq__ 로 인한 unhashable issue 수정
+2025-10-24T05:32:53Z	c0f1ba49044c8501006897e3a6e3e6cfdef951bc	https://github.com/palette-team/palette_api/commit/c0f1ba49044c8501006897e3a6e3e6cfdef951bc	feat: 한 사람의 생일/생시 정보를 통해 기본적인 사주 정보를 뽑아내는 과정을 추가
+2025-10-24T05:29:06Z	9688357b27d56eb8d3e87ec2e6a6d76144339815	https://github.com/palette-team/palette_api/commit/9688357b27d56eb8d3e87ec2e6a6d76144339815	feat: 사주 기본 차트에 대한 결과 dataclass 추가
+2025-10-24T05:28:18Z	beb216077c2091730724994687db796cb02c9602	https://github.com/palette-team/palette_api/commit/beb216077c2091730724994687db796cb02c9602	feat: 사주 삼화국 기반 간단 툴 추가
+2025-10-24T05:27:25Z	ffb45734e898bf702cf87fd7269f1c24e898c8e0	https://github.com/palette-team/palette_api/commit/ffb45734e898bf702cf87fd7269f1c24e898c8e0	feat: 사주 공통 상수 관리 추가
+2025-10-24T05:26:56Z	cf103ea3c4994fdee4c5e13ac46015a709507067	https://github.com/palette-team/palette_api/commit/cf103ea3c4994fdee4c5e13ac46015a709507067	feat: 십신 판정 추가
+2025-10-24T05:26:41Z	2fbb9105411cb4e3fe602af2d6d227eae34b5c02	https://github.com/palette-team/palette_api/commit/2fbb9105411cb4e3fe602af2d6d227eae34b5c02	feat: 오행 벡터 계산 추가
+2025-10-24T05:13:03Z	a7083bd604600844d54cc2caf177d5e7bd1aa148	https://github.com/palette-team/palette_api/commit/a7083bd604600844d54cc2caf177d5e7bd1aa148	feat: 각 enum에 대해서 model 내의 choices로 사용하기 위한 choices 클래스를 분리
+2025-10-24T05:03:41Z	05817880049b7837f080c7f037e54d20c50807e6	https://github.com/palette-team/palette_api/commit/05817880049b7837f080c7f037e54d20c50807e6	feat: 문자열 데이터와도 동일하게 작동하도록 __eq__ 추가
+2025-10-23T14:02:41Z	26444903323e91f95d3618d15c277d4140350043	https://github.com/palette-team/palette_api/commit/26444903323e91f95d3618d15c277d4140350043	feat: 연/월/일/시 주 계산 로직
+2025-10-23T14:00:52Z	b07092e3249a0d7ae6cb6ee355f2eb3b0d232b49	https://github.com/palette-team/palette_api/commit/b07092e3249a0d7ae6cb6ee355f2eb3b0d232b49	feat: 기본 사주 관련 enum 추가
+2025-10-23T13:53:56Z	18bb5b951ab8cefc15f220f78125cc4d74551668	https://github.com/palette-team/palette_api/commit/18bb5b951ab8cefc15f220f78125cc4d74551668	fix: alpha image 빌드 과정에서 commit hash tag 추가
+2025-10-21T07:09:02Z	60e32aafb825ce2667a874d10bc0b0eeed94d1a2	https://github.com/palette-team/palette_api/commit/60e32aafb825ce2667a874d10bc0b0eeed94d1a2	hotfix: 잘못된 예시 데이터 삭제
+2025-10-21T05:09:47Z	37864e07087c1cec49d87a3bab54f7a2867fd3c7	https://github.com/palette-team/palette_api/commit/37864e07087c1cec49d87a3bab54f7a2867fd3c7	hotfix: env values
+2025-10-21T04:53:58Z	b9bbffd3c27e3fca6c62538ab1cd4c4e73a752fe	https://github.com/palette-team/palette_api/commit/b9bbffd3c27e3fca6c62538ab1cd4c4e73a752fe	fix: error에 대해서 text로 기록하도록 변경
+2025-10-14T14:03:45Z	41657135df24181b787eab71b95a59648639375b	https://github.com/palette-team/palette_api/commit/41657135df24181b787eab71b95a59648639375b	hotfix: 문서가 잘못 나오는 문제 수정
+2025-10-13T16:11:14Z	fb730e7df33500d2dd69cb0c47d3947f17cf380f	https://github.com/palette-team/palette_api/commit/fb730e7df33500d2dd69cb0c47d3947f17cf380f	fix: python cache 파일이 남는 문제 수정
+2025-10-13T16:02:28Z	8d387f7aed5b7ed6267ee86b0932b250d9edbf49	https://github.com/palette-team/palette_api/commit/8d387f7aed5b7ed6267ee86b0932b250d9edbf49	Merge pull request #25 from palette-team/feature/login-as-user 어드민 사이트에서 특정 사용자로 로그인할 수 있도록 access, refresh token을 생성하는 기능 추가
+2025-10-13T16:01:36Z	87c14e5e58629196befe4b71be4de55029f33505	https://github.com/palette-team/palette_api/commit/87c14e5e58629196befe4b71be4de55029f33505	hotfix: coverage report에 의미없는 파일까지 올라가는 이슈 수정
+2025-10-13T16:01:19Z	150501c60380889d4024171de8b11ea3f53a78ea	https://github.com/palette-team/palette_api/commit/150501c60380889d4024171de8b11ea3f53a78ea	hotfix: CI
+2025-10-13T15:56:05Z	590d1cfd433da6c8ac31557b13ab07d9a0a46ddf	https://github.com/palette-team/palette_api/commit/590d1cfd433da6c8ac31557b13ab07d9a0a46ddf	fix: gemini 코드 리뷰 반영
+2025-10-13T15:54:02Z	66ca4a604e7c4d5b85c9dbc49872cd11d53d9258	https://github.com/palette-team/palette_api/commit/66ca4a604e7c4d5b85c9dbc49872cd11d53d9258	fix: coverage report 생성 방식 수정
+2025-10-13T15:45:15Z	2968701be18a002f7ce236eb8ad7ad38536f7bcb	https://github.com/palette-team/palette_api/commit/2968701be18a002f7ce236eb8ad7ad38536f7bcb	hotfix: DB 변경사항 롤백
+2025-10-13T15:38:25Z	f1c54ff0be0dbab275a224504b49b070c4959611	https://github.com/palette-team/palette_api/commit/f1c54ff0be0dbab275a224504b49b070c4959611	fix: celery-beat에 대한 network 설정 수정
+2025-10-13T15:37:53Z	af9c827688bb28b5aa531ae83cff78abbf38c629	https://github.com/palette-team/palette_api/commit/af9c827688bb28b5aa531ae83cff78abbf38c629	feat: 전역적으로 timestamp을 second 단위의 UNIX timestamp를 사용하도록 함
+2025-10-13T15:37:11Z	e9825a5e84cebcefe9fbc7d4294605e946b2bddc	https://github.com/palette-team/palette_api/commit/e9825a5e84cebcefe9fbc7d4294605e946b2bddc	chore: 알파 환경에서 access_token을 1분간 사용할 수 있도록 임시 처리
+2025-10-13T15:25:47Z	b6636bcda1195db58cead2b3feb88a5a0c92b56c	https://github.com/palette-team/palette_api/commit/b6636bcda1195db58cead2b3feb88a5a0c92b56c	Merge branch 'develop' into feature/login-as-user
+2025-10-13T15:25:34Z	7f5c9b81b337fcef8861e2bc1a02de3bb39f884d	https://github.com/palette-team/palette_api/commit/7f5c9b81b337fcef8861e2bc1a02de3bb39f884d	hotfix: allowed_hosts env
+2025-10-13T15:24:58Z	0c3153077dae47c1754d38810173c744770e4cd3	https://github.com/palette-team/palette_api/commit/0c3153077dae47c1754d38810173c744770e4cd3	Merge remote-tracking branch 'origin/develop' into feature/login-as-user
+2025-10-13T15:24:25Z	6f80d2d55a61a4c01746259f7e85a08aec304885	https://github.com/palette-team/palette_api/commit/6f80d2d55a61a4c01746259f7e85a08aec304885	Merge pull request #24 from palette-team/feature/remaining-referral-quota 추천 횟수 제한에 대한 로직
+2025-10-13T15:24:09Z	741bfa75e10b831b12ddb7a2f497a6639f5f22d9	https://github.com/palette-team/palette_api/commit/741bfa75e10b831b12ddb7a2f497a6639f5f22d9	fix: models default value
+2025-10-13T15:21:30Z	182b8282a2136b693ee648d12fd203c9df191493	https://github.com/palette-team/palette_api/commit/182b8282a2136b693ee648d12fd203c9df191493	fix: gemini code review를 통해 race condition 수정
+2025-10-13T15:17:15Z	a2cca07f31b12a40a8a3260954d4fd32bcccc83c	https://github.com/palette-team/palette_api/commit/a2cca07f31b12a40a8a3260954d4fd32bcccc83c	Merge pull request #23 from palette-team/feature/psql-conf 개발환경 psql lock 관련 설정 추가
+2025-10-13T15:16:35Z	50bffc0fbdff64e857bb011abfa883847cda05a2	https://github.com/palette-team/palette_api/commit/50bffc0fbdff64e857bb011abfa883847cda05a2	feat: 사용자로 임의로 로그인하는 어드민 기능 추가
+2025-10-13T15:02:57Z	8156dac2efa68325e900a10ab8e652bb70fa56b4	https://github.com/palette-team/palette_api/commit/8156dac2efa68325e900a10ab8e652bb70fa56b4	feat: 사용자 상세 API View에서 남은 추천 횟수 보여주도록 함
+2025-10-13T15:02:36Z	ce0b7e560d2f8e59dcfc8be35371bc5a01d1b239	https://github.com/palette-team/palette_api/commit/ce0b7e560d2f8e59dcfc8be35371bc5a01d1b239	feat: referral 생성 시에 횟수를 차감하는 로직 추가
+2025-10-13T15:02:01Z	4964d17afdd5ca63898546f92b75ce005a789780	https://github.com/palette-team/palette_api/commit/4964d17afdd5ca63898546f92b75ce005a789780	feat: 남은 추천 횟수 관련 로직 추가 - 특정 초기화 시간이 지남에 따라 처리가 되어야 함
+2025-10-13T14:59:13Z	c048da13004be8a299ac569ab53b2373c47600c6	https://github.com/palette-team/palette_api/commit/c048da13004be8a299ac569ab53b2373c47600c6	feat: 사용자에게 남은 추천횟수 관련 정보를 어드민에서 확인할 수 있도록 함
+2025-10-13T14:26:13Z	fb426d765702383f1df8209c41fdc777113ebc66	https://github.com/palette-team/palette_api/commit/fb426d765702383f1df8209c41fdc777113ebc66	feat: 추천 횟수 관련한 settings 상수 추가
+2025-10-13T14:17:18Z	237e7d65a1f191f36c35ec090f191ddc0802980c	https://github.com/palette-team/palette_api/commit/237e7d65a1f191f36c35ec090f191ddc0802980c	feat: remaining_referral_quota / last_exhausted_referral_quota_at 컬럼 추가
+2025-10-13T14:49:20Z	b788653553d6e3df0b6f55c61d6a78dead0d80b4	https://github.com/palette-team/palette_api/commit/b788653553d6e3df0b6f55c61d6a78dead0d80b4	fix: listen address
+2025-10-13T14:40:27Z	06904e6a8043a192e57dd0f2efeff287577dd8dd	https://github.com/palette-team/palette_api/commit/06904e6a8043a192e57dd0f2efeff287577dd8dd	fix: gemini review 반영
+2025-10-13T14:26:43Z	b04014708f9ea282aae95b9315e7eb3b0bf1505d	https://github.com/palette-team/palette_api/commit/b04014708f9ea282aae95b9315e7eb3b0bf1505d	Merge pull request #22 from palette-team/feature/commands 개발환경에서 명령어를 관리하기 편하도록 tool.sh로 처리
+2025-10-13T14:12:55Z	90a6388348eb19c78152afcb176426694c170a11	https://github.com/palette-team/palette_api/commit/90a6388348eb19c78152afcb176426694c170a11	feat: psql lock 관련 설정 추가
+2025-10-13T14:07:26Z	641a379767c747f201587d9b7481a96e82c1e97d	https://github.com/palette-team/palette_api/commit/641a379767c747f201587d9b7481a96e82c1e97d	feat: 명령어를 관리하기 편하도록 tool.sh로 처리
+2025-10-13T14:04:31Z	a267da4583f0d5e81b995d2ef227d5b58db11953	https://github.com/palette-team/palette_api/commit/a267da4583f0d5e81b995d2ef227d5b58db11953	hotfix: coverage-report 브랜치에 커밋이 누적되는 이슈 수정
+2025-10-12T09:17:12Z	a1d4aea2acb4f8688837aa56c1970cb145f0c5ec	https://github.com/palette-team/palette_api/commit/a1d4aea2acb4f8688837aa56c1970cb145f0c5ec	hotfix: import export에 대한 임시 디렉토리 오류 수정
+2025-10-12T06:36:23Z	95e7e901806f5e3adc364f4045b8d2b9fe003d6b	https://github.com/palette-team/palette_api/commit/95e7e901806f5e3adc364f4045b8d2b9fe003d6b	Update CI.yml
+2025-10-12T06:32:57Z	7ee1c2c6dc7afc0f850a9a06d96472e8a33e7a61	https://github.com/palette-team/palette_api/commit/7ee1c2c6dc7afc0f850a9a06d96472e8a33e7a61	fix: integer port issue
+2025-10-12T06:05:29Z	bc7849f1568f939e52ace7325e06fd6b6d28f097	https://github.com/palette-team/palette_api/commit/bc7849f1568f939e52ace7325e06fd6b6d28f097	hotfix: database settings
+2025-10-12T05:53:52Z	7c540bd119e11b46e39bdf25ddcb2e8a8d8422bf	https://github.com/palette-team/palette_api/commit/7c540bd119e11b46e39bdf25ddcb2e8a8d8422bf	fix: matching ticket count
+2025-10-12T05:53:41Z	938649331490789ef139f1b6c25d4f8b9031fff5	https://github.com/palette-team/palette_api/commit/938649331490789ef139f1b6c25d4f8b9031fff5	fix: base db settings
+2025-10-11T17:04:07Z	d4321355d1bf15f57c7cdfd300e5a45a0bbd69c3	https://github.com/palette-team/palette_api/commit/d4321355d1bf15f57c7cdfd300e5a45a0bbd69c3	feat: CI, build_alpha_image workflow
+2025-10-09T08:31:43Z	ff970d7c02d0943418241537d253250360aea95c	https://github.com/palette-team/palette_api/commit/ff970d7c02d0943418241537d253250360aea95c	hotfix: 인증 이미지가 제대로 삭제처리 되지 않는 이슈 수정
+2025-10-09T06:54:15Z	fe8b364dc34c2c3124923079770cfcb9e31b08bc	https://github.com/palette-team/palette_api/commit/fe8b364dc34c2c3124923079770cfcb9e31b08bc	hotfix: serializer server error
+2025-09-30T13:25:40Z	4d793f8fba871eaf79b15ab33200265fa40422ac	https://github.com/palette-team/palette_api/commit/4d793f8fba871eaf79b15ab33200265fa40422ac	hotfix: display + issue
+2025-09-29T15:00:19Z	742ffc3482c3fb3551d86d623d0ddcf68c4494e6	https://github.com/palette-team/palette_api/commit/742ffc3482c3fb3551d86d623d0ddcf68c4494e6	hotfix: 본인인증 취소 mock api 추가
+2025-09-29T14:53:51Z	984ec2ba33d4c1d54a4a3195ba7172c57e7fb4d1	https://github.com/palette-team/palette_api/commit/984ec2ba33d4c1d54a4a3195ba7172c57e7fb4d1	Merge pull request #21 from palette-team/feature/identity_verification_mocking 본인인증 정보 모델 추가 및 NICE API 사용 전 모킹 API View 추가
+2025-09-29T14:52:30Z	1314096bb4fe75a8a291a64a0c4cf4b0b367fd79	https://github.com/palette-team/palette_api/commit/1314096bb4fe75a8a291a64a0c4cf4b0b367fd79	fix: gemini code review 반영
+2025-09-29T14:45:58Z	a665f39aeba91e2b7ef88be9d4d94c95a7a26a1e	https://github.com/palette-team/palette_api/commit/a665f39aeba91e2b7ef88be9d4d94c95a7a26a1e	feat: 모킹 본인인증 API view 추가
+2025-09-29T14:44:24Z	b632b35c04b04fa0611b3dbc041787f3c7400061	https://github.com/palette-team/palette_api/commit/b632b35c04b04fa0611b3dbc041787f3c7400061	feat: 본명, 전화번호 정보도 User 정보로 반환되도록 함
+2025-09-29T14:39:34Z	be7b403298b20142b1c836fa37089c765d750c4a	https://github.com/palette-team/palette_api/commit/be7b403298b20142b1c836fa37089c765d750c4a	feat: 본인인증을 위한 모델 추가 및 mocking service 추가
+2025-09-29T14:16:22Z	bd4c00236272ff0b2d0cb3c2d064de3acc300e88	https://github.com/palette-team/palette_api/commit/bd4c00236272ff0b2d0cb3c2d064de3acc300e88	feat: intro에서의 소개 내용을 모두 작성하였는지 여부 반환
+2025-09-28T14:06:43Z	46756b7666105a62364b50d6a0bcac9316a85b32	https://github.com/palette-team/palette_api/commit/46756b7666105a62364b50d6a0bcac9316a85b32	chore: TODO comment 수정
+2025-09-28T14:04:20Z	a78e11d46822d8c9b08a698e1097a112a93d6026	https://github.com/palette-team/palette_api/commit/a78e11d46822d8c9b08a698e1097a112a93d6026	Merge pull request #20 from palette-team/feature/matchmaking 호감 보내기 / 받은 호감 / 보낸 호감 / 새로운 매칭 대상 찾기
+2025-09-28T14:02:04Z	33f21a44042a8b4148f8dd8628213ab54abdd01a	https://github.com/palette-team/palette_api/commit/33f21a44042a8b4148f8dd8628213ab54abdd01a	fix: flaky test
+2025-09-28T13:56:47Z	cb5b53f0fe8b00e5d1c8a4865d37dbc829b64e27	https://github.com/palette-team/palette_api/commit/cb5b53f0fe8b00e5d1c8a4865d37dbc829b64e27	fix: gemini 코드 리뷰 반영
+2025-09-28T13:09:00Z	38b8ba7fd3287f19c085806f719346ce0edefc3f	https://github.com/palette-team/palette_api/commit/38b8ba7fd3287f19c085806f719346ce0edefc3f	fix: 잘못된 필드 제거
+2025-09-28T09:39:21Z	357d47b44cc33f3a1b62b6c0113271c331fc7754	https://github.com/palette-team/palette_api/commit/357d47b44cc33f3a1b62b6c0113271c331fc7754	fix: matching status 정보 추가
+2025-09-28T09:25:17Z	e8892486e2d0f78be77f49905a2e331365d9f9f4	https://github.com/palette-team/palette_api/commit/e8892486e2d0f78be77f49905a2e331365d9f9f4	fix: 의미없는 내용 삭제
+2025-09-28T09:17:15Z	34a245183e94d3f1d6cbcc7544c0a16bdc0ea076	https://github.com/palette-team/palette_api/commit/34a245183e94d3f1d6cbcc7544c0a16bdc0ea076	feat: matchmaking API POST /api/v1/matchmakings/matchings/ - 추천으로부터 매칭 생성 GET /api/v1/matchmakings/matchings/{matchingId}/ - 매칭 상세 정보 조회 POST /api/v1/matchmakings/matchings/{matchingId}/action/ 호감 승인/거부 GET /api/v1/matchmakings/matchings/received/ 받은 호감 목록 조회 GET /api/v1/matchmakings/matchings/sent/ 보낸 호감 목록 조회 POST /api/v1/matchmakings/referrals/ 새로운 추천 생성 GET /api/v1/matchmakings/referrals/latest/ 가장 최근 추천 조회
+2025-09-28T09:15:25Z	8747f2646bbbc8d965b30eb7f65bd592ec2e9a1c	https://github.com/palette-team/palette_api/commit/8747f2646bbbc8d965b30eb7f65bd592ec2e9a1c	feat: matchmaking 관련 서비스 로직 추가
+2025-09-28T09:11:05Z	9b299591441fe00b0b34c4e1c70b5cbc34e8f8d4	https://github.com/palette-team/palette_api/commit/9b299591441fe00b0b34c4e1c70b5cbc34e8f8d4	feat: matchmaking API를 위한 serizlier
+2025-09-28T08:43:11Z	38a5334135767095d1fe4e059b275f38ec84cc5d	https://github.com/palette-team/palette_api/commit/38a5334135767095d1fe4e059b275f38ec84cc5d	feat: 호감 / 추천 관련 권한 설정
+2025-09-28T07:29:14Z	858bc54b5ae5846a5e5dfffcd6ef4fb8f4076b83	https://github.com/palette-team/palette_api/commit/858bc54b5ae5846a5e5dfffcd6ef4fb8f4076b83	feat: 사용자 + 프로필 정보를 위한 serializer 개선
+2025-09-28T07:28:10Z	c5511145417329c1c8e169adc3e9be29e07b68f3	https://github.com/palette-team/palette_api/commit/c5511145417329c1c8e169adc3e9be29e07b68f3	fix: algorithm category 관련 변경사항 및 circular import 수정 반영
+2025-09-28T07:27:29Z	1abd0b9b5602d8cc891698df4636e376478781dc	https://github.com/palette-team/palette_api/commit/1abd0b9b5602d8cc891698df4636e376478781dc	feat: 매칭을 동일한 대상에게 보내지 않도록 함
+2025-09-28T07:26:51Z	a627f8b38dd5eb92b9c56360ee520030202bfa11	https://github.com/palette-team/palette_api/commit/a627f8b38dd5eb92b9c56360ee520030202bfa11	fix: 잘못된 정보 삭제
+2025-09-28T07:26:06Z	8bd3a722bfac578360b098615a146b3a1e9aeeda	https://github.com/palette-team/palette_api/commit/8bd3a722bfac578360b098615a146b3a1e9aeeda	feat: 오류 처리 추가
+2025-09-28T07:25:32Z	9bea02be3f0638bd78394c0f1825a3188bf4a1ea	https://github.com/palette-team/palette_api/commit/9bea02be3f0638bd78394c0f1825a3188bf4a1ea	feat: 알고리즘 목록을 django.conf.settings를 통해 가져올 수 있게 함
+2025-09-28T05:24:52Z	9347b17bed549b776acc161c41a332bf9ddc5552	https://github.com/palette-team/palette_api/commit/9347b17bed549b776acc161c41a332bf9ddc5552	feat: 기본 matchmaking api view 추가 / 승인받은 유저만 사용가능하도록 제한함
+2025-09-28T05:23:54Z	7ca92f695f0065d338da88e010dac7bedce87d26	https://github.com/palette-team/palette_api/commit/7ca92f695f0065d338da88e010dac7bedce87d26	feat: 사전 매칭을 돌리는 user admin action 추가
+2025-09-28T05:23:19Z	cbd2684bd61883a00f762fa36d847f6b85751f86	https://github.com/palette-team/palette_api/commit/cbd2684bd61883a00f762fa36d847f6b85751f86	feat: 사전 매칭 정보를 만드는 task 추가
+2025-09-28T05:18:03Z	493b9780be7dfbaf94aa5f7ecbd195217363f3f6	https://github.com/palette-team/palette_api/commit/493b9780be7dfbaf94aa5f7ecbd195217363f3f6	feat: matchmakings내의 모델 관련 어드민 추가
+2025-09-27T18:50:32Z	6d8c045a4112e7b323fdc47737cf670794ea95ba	https://github.com/palette-team/palette_api/commit/6d8c045a4112e7b323fdc47737cf670794ea95ba	feat: 개발 편의를 위한 sh 추가
+2025-09-27T18:50:11Z	2a2b44a0df656daec2aa1906288514fef2ebe1eb	https://github.com/palette-team/palette_api/commit/2a2b44a0df656daec2aa1906288514fef2ebe1eb	fix: django log 상 나오는 warning 수정
+2025-09-27T18:49:45Z	f3bdfd87eb64ea65832bfbc4eef93912808e2757	https://github.com/palette-team/palette_api/commit/f3bdfd87eb64ea65832bfbc4eef93912808e2757	feat: error_code 추가
+2025-09-27T18:49:20Z	bda207783c4c0a6ad0168ebd1b4d4826555035b2	https://github.com/palette-team/palette_api/commit/bda207783c4c0a6ad0168ebd1b4d4826555035b2	feat: matchmaking 앱 기본 구성 파일 추가
+2025-09-27T18:48:37Z	dfd8b0a14d7b9af9165406daadf1464da27c6af6	https://github.com/palette-team/palette_api/commit/dfd8b0a14d7b9af9165406daadf1464da27c6af6	fix: 사용자가 직업 정보를 입력하지 않고 넘어가있을 때, 강제로 직업 정보를 넣기 위한 로직 추가 실제 서비스에서는 발생할 가능성이 없지만 어드민 상에서 방어하기 위해 추가
+2025-09-27T18:46:36Z	9c1e5f992cdf806fd0c5cf9340db9b6880fcf02a	https://github.com/palette-team/palette_api/commit/9c1e5f992cdf806fd0c5cf9340db9b6880fcf02a	feat: 개발용 사용자 더미 데이터 생성
+2025-09-27T18:39:25Z	19a3f467bd6d56e1628a10d387c1845f5759b271	https://github.com/palette-team/palette_api/commit/19a3f467bd6d56e1628a10d387c1845f5759b271	feat: pre_matching을 위한 점수 계산 알고리즘을 관리하는 내용 추가
+2025-09-27T18:34:29Z	3d63ea192785b8e6378728601036f302e460f9a6	https://github.com/palette-team/palette_api/commit/3d63ea192785b8e6378728601036f302e460f9a6	feat: matchmakings app 추가
+2025-09-27T18:09:10Z	0abda9e422ac15629bac03e5a7a60c583993742a	https://github.com/palette-team/palette_api/commit/0abda9e422ac15629bac03e5a7a60c583993742a	Revert "fix: 임시로 matchmaking 로직을 대체함" This reverts commit 5da63396ffb6a215350f92eb4db207d204c7d180.
+2025-09-27T17:56:13Z	80d6e3bc32c2893d2b4920f326a10cf190bde82a	https://github.com/palette-team/palette_api/commit/80d6e3bc32c2893d2b4920f326a10cf190bde82a	feat: api.v1.matchmakings 기본 구성 추가
+2025-09-27T17:55:04Z	0796fa93da32a791bfdce86880a0cb695b9ec880	https://github.com/palette-team/palette_api/commit/0796fa93da32a791bfdce86880a0cb695b9ec880	feat: matchmaking 기본 오류 처리 클래스 추가
+2025-09-27T17:53:18Z	5de9a72a4d73173365561756a51698c701903869	https://github.com/palette-team/palette_api/commit/5de9a72a4d73173365561756a51698c701903869	feat: matchmaking 기본 모델 추가
+2025-09-27T18:29:26Z	f8b41b8ff02b1002e399b77bea88a8cfc0218c47	https://github.com/palette-team/palette_api/commit/f8b41b8ff02b1002e399b77bea88a8cfc0218c47	Merge pull request #19 from palette-team/feature/job_approval 사용자 직업 정보 처리 및 승인 처리 연결 / 프로필 API 직업 정보 개선
+2025-09-27T18:28:00Z	1b8190507b61afc5f92e07136ef0927d82be53ea	https://github.com/palette-team/palette_api/commit/1b8190507b61afc5f92e07136ef0927d82be53ea	fix: gemini 코드 리뷰 반영
+2025-09-27T18:08:50Z	5da63396ffb6a215350f92eb4db207d204c7d180	https://github.com/palette-team/palette_api/commit/5da63396ffb6a215350f92eb4db207d204c7d180	fix: 임시로 matchmaking 로직을 대체함
+2025-09-27T17:57:39Z	64fea66cf068538a19a574e8b60b9484d21ab17d	https://github.com/palette-team/palette_api/commit/64fea66cf068538a19a574e8b60b9484d21ab17d	feat: 프로필관련 permission class 추가
+2025-09-27T17:47:06Z	203e5fa655311ff6307e253aef14d5fdc544c17f	https://github.com/palette-team/palette_api/commit/203e5fa655311ff6307e253aef14d5fdc544c17f	feat: choices 추가
+2025-09-27T17:39:23Z	d655d4d1fa9e88155a91cc6d23059f3ef2b1a33a	https://github.com/palette-team/palette_api/commit/d655d4d1fa9e88155a91cc6d23059f3ef2b1a33a	fix: 승인 조건에서 manual로라도 입력했으면 넘어가도록 함
+2025-09-27T17:34:45Z	97948cf31619664e48b50f5eb6c27d2bc961932e	https://github.com/palette-team/palette_api/commit/97948cf31619664e48b50f5eb6c27d2bc961932e	test: AI를 통한 테스트코드 추가
+2025-09-27T17:31:48Z	af21f75268eb1b550cb86268a98a97cd798176c9	https://github.com/palette-team/palette_api/commit/af21f75268eb1b550cb86268a98a97cd798176c9	test: test factory가 상호 참조로 인해 발생하는 테스트 불가능 이슈 수정
+2025-09-27T16:56:36Z	5b80776d2440583a9eac72145b93b357c439798a	https://github.com/palette-team/palette_api/commit/5b80776d2440583a9eac72145b93b357c439798a	feat: my_profile_view와 profile_view를 분리하여 관리
+2025-09-27T16:49:00Z	7d32a2db9a0bfc3f30a2cd8ba276e64f161017d2	https://github.com/palette-team/palette_api/commit/7d32a2db9a0bfc3f30a2cd8ba276e64f161017d2	feat: JobInfoSerializer 추가
+2025-09-27T16:48:32Z	e25fce5579d74e8527702585c5d4b8ebd52ffb6b	https://github.com/palette-team/palette_api/commit/e25fce5579d74e8527702585c5d4b8ebd52ffb6b	refactor: my_profile, profile serializer 분리 및 nested serializer 적용 - 타 사용자의 프로필에 접근하는 경우에 대해서 명확하게 분리할 필요가 있었습니다. - profile 내의 job_info를 수정하는 과정을 편하게 하기 위해 nested serializer를 적용했습니다
+2025-09-27T16:30:54Z	041e847752d22d52e38118f74e127e5749efc8f3	https://github.com/palette-team/palette_api/commit/041e847752d22d52e38118f74e127e5749efc8f3	test: profile 및 연관 모델 test factory 추가
+2025-09-27T16:24:46Z	84feab9dbcb121f3f90446bc11c394ba1a9b2cc6	https://github.com/palette-team/palette_api/commit/84feab9dbcb121f3f90446bc11c394ba1a9b2cc6	feat: 유저 승인 어드민 추가 및 직접 입력 직업 처리 과정 추가
+2025-09-27T16:19:31Z	e6de898add364645e84ff09c7fe2ec58f090cc27	https://github.com/palette-team/palette_api/commit/e6de898add364645e84ff09c7fe2ec58f090cc27	feature: user의 confirm 과정 중에 validation을 수행하도록 함
+2025-09-27T16:18:44Z	6837028a1d63e3c70a38d04a0c122528de00eccd	https://github.com/palette-team/palette_api/commit/6837028a1d63e3c70a38d04a0c122528de00eccd	feat: user_approval proxy model을 추가 - django에서 모델을 어드민에 등록할 때, 단일로 등록할 수 있음. - user를 승인하는 기능의 어드민을 분리하기 위해 proxy model을 도입함
+2025-09-27T16:17:31Z	0891b970f2e0d64f2f5e6b8613124776b887ab0c	https://github.com/palette-team/palette_api/commit/0891b970f2e0d64f2f5e6b8613124776b887ab0c	fix: business domain에 맞게 "수동 입력" -> "직접 입력" 으로 변경
+2025-09-27T15:14:20Z	97d93dc535c0715c9434540d4d5799bef2803768	https://github.com/palette-team/palette_api/commit/97d93dc535c0715c9434540d4d5799bef2803768	fix: import 경로 수정
+2025-09-27T15:09:22Z	b5ea12aff037f3e6fd359f09593990adf77fde8f	https://github.com/palette-team/palette_api/commit/b5ea12aff037f3e6fd359f09593990adf77fde8f	Merge pull request #18 from palette-team/feature/ticket-log Ticket 처리 로직 추가
+2025-09-27T15:05:58Z	66a7eaf2a22cf33127089f9c660b1ca3e7a80081	https://github.com/palette-team/palette_api/commit/66a7eaf2a22cf33127089f9c660b1ca3e7a80081	feat: 기본적인 유저 Test Factory 추가
+2025-09-27T15:04:11Z	65014002eed3dfdac194293be8fb527c5d76778a	https://github.com/palette-team/palette_api/commit/65014002eed3dfdac194293be8fb527c5d76778a	fix: 사용되지 않은 confirm, unconfirm 액션 삭제
+2025-09-27T15:02:11Z	25b7b15a991017e2e073a27ffac8bec685e3b3ee	https://github.com/palette-team/palette_api/commit/25b7b15a991017e2e073a27ffac8bec685e3b3ee	feat: django ValidationError에 대한 exception handling 과정 추가
+2025-09-27T15:01:26Z	1816eedc994e559b92f791f2476006df73ccbc50	https://github.com/palette-team/palette_api/commit/1816eedc994e559b92f791f2476006df73ccbc50	fix: 어드민 컴포넌트 사용성 개선
+2025-09-27T14:58:38Z	7c6e1cb5a4732ab1d2dc207e1e3a4c50019a053d	https://github.com/palette-team/palette_api/commit/7c6e1cb5a4732ab1d2dc207e1e3a4c50019a053d	feat: 승인 구조 및 테스팅을 위한 패키지 추가
+2025-09-27T14:54:03Z	6c5b54baba7f0b8fff56e2750008de7dfcbe89f7	https://github.com/palette-team/palette_api/commit/6c5b54baba7f0b8fff56e2750008de7dfcbe89f7	feat: job_info 모델로 별도로 분리하여 승인 구조를 쉽게 구현할 수 있도록 함
+2025-09-27T14:57:51Z	5846b90ddd08b18694c5371b43cd0432672219e5	https://github.com/palette-team/palette_api/commit/5846b90ddd08b18694c5371b43cd0432672219e5	feat: 공통 logger 모듈 추가
+2025-09-27T06:53:04Z	de087729bc50519056599354766c7252b43ac969	https://github.com/palette-team/palette_api/commit/de087729bc50519056599354766c7252b43ac969	feat: gemini 코드 리뷰 반영 및 ui component 추가
+2025-09-27T06:34:19Z	98b1a776d696381ab4f2d757572eb5c327b89158	https://github.com/palette-team/palette_api/commit/98b1a776d696381ab4f2d757572eb5c327b89158	fix: migration 파일 추가
+2025-09-27T05:50:29Z	5f3fecaa049565b60289e425d20841a5573cecca	https://github.com/palette-team/palette_api/commit/5f3fecaa049565b60289e425d20841a5573cecca	feat: 사용자 티켓을 어드민이 처리하는 액션을 추가
+2025-09-27T05:25:05Z	38fcf056f35085588dd0aa47e594e743044bf1cf	https://github.com/palette-team/palette_api/commit/38fcf056f35085588dd0aa47e594e743044bf1cf	feat: 티켓 구매 / 사용 / 환불에 대한 액션을 정의한 service 로직 추가
+2025-09-27T05:24:33Z	aa7308a0afbe94d601da5d9a50575ad5af654084	https://github.com/palette-team/palette_api/commit/aa7308a0afbe94d601da5d9a50575ad5af654084	fix: ticket_log_admin에서는 생성/수정/삭제하지 못하도록 함
+2025-09-27T04:57:33Z	e13b132e3f31e8a939c9c3b83e2de9282ded3daf	https://github.com/palette-team/palette_api/commit/e13b132e3f31e8a939c9c3b83e2de9282ded3daf	feat: TicketLog 어드민 추가
+2025-09-27T04:55:33Z	ca7371b807349c24d26e28b69be364cb6da7b126	https://github.com/palette-team/palette_api/commit/ca7371b807349c24d26e28b69be364cb6da7b126	feat: 어드민 공통 컴포넌트 추가
+2025-09-27T04:30:53Z	630f875004a5bb9a01aa88cebfbdcbd1c2065841	https://github.com/palette-team/palette_api/commit/630f875004a5bb9a01aa88cebfbdcbd1c2065841	feat: 사용자 티켓 카운트 컬럼 및 TicketLog 모델 추가
+2025-09-27T04:27:05Z	d9a93a5cde3c2f6ad3a8a2d6291ed5b696a38926	https://github.com/palette-team/palette_api/commit/d9a93a5cde3c2f6ad3a8a2d6291ed5b696a38926	chore: .env.sample 내용 추가
+2025-09-24T11:56:16Z	87b2c0f03efe543be0446614db3001544a03034b	https://github.com/palette-team/palette_api/commit/87b2c0f03efe543be0446614db3001544a03034b	hotfix: alpha_csrf
+2025-09-24T11:46:33Z	30b0e5aab9c9bb57c9c23c09b998e6613d7b6219	https://github.com/palette-team/palette_api/commit/30b0e5aab9c9bb57c9c23c09b998e6613d7b6219	Merge pull request #17 from palette-team/feature/additional_infos 프로필 중에 추후 작업으로 미루었던 필드 관련 작업
+2025-09-24T11:45:00Z	ba39f10a2fdf845ed20d78d9dad520c64edf5b12	https://github.com/palette-team/palette_api/commit/ba39f10a2fdf845ed20d78d9dad520c64edf5b12	fix: 코드 리뷰 반영
+2025-09-24T11:39:26Z	4d8501644cad51f8f96f8bad1745cb941ea25467	https://github.com/palette-team/palette_api/commit/4d8501644cad51f8f96f8bad1745cb941ea25467	fix: 추가 작업 관련 내용 삭제
+2025-09-24T11:36:22Z	1a303ba40bfaa551743344fb8db94c47581a020f	https://github.com/palette-team/palette_api/commit/1a303ba40bfaa551743344fb8db94c47581a020f	fix: 잘못된 verbose_name 수정
+2025-09-24T11:31:48Z	35a72d4e467a4bd1ccdf385b943e431648b79c43	https://github.com/palette-team/palette_api/commit/35a72d4e467a4bd1ccdf385b943e431648b79c43	feat: 프로필 상에 누락되었던 추가정보 관련 API 추가 / 이미지를 타입별로 나누어 관리하도록 함
+2025-09-24T10:47:28Z	dbd8462dc3409e72cebdae895435c07ab7d2b40c	https://github.com/palette-team/palette_api/commit/dbd8462dc3409e72cebdae895435c07ab7d2b40c	feat: CSRF 설정 추가
+2025-09-24T10:22:45Z	c2fff781416239110c1e161700e35463f6f90a86	https://github.com/palette-team/palette_api/commit/c2fff781416239110c1e161700e35463f6f90a86	feat: male, female 유저를 분리하는 proxy model 추가
+2025-09-24T10:16:34Z	a0f35d4dacb8310d3a9a9bb8fd059524e9e37889	https://github.com/palette-team/palette_api/commit/a0f35d4dacb8310d3a9a9bb8fd059524e9e37889	Merge pull request #16 from palette-team/feature/alpha 알파 서버를 위한 설정 추가
+2025-09-24T10:00:10Z	993816aeb9afd958fa8c3b9a5bc2b8f0b317ecae	https://github.com/palette-team/palette_api/commit/993816aeb9afd958fa8c3b9a5bc2b8f0b317ecae	chore: .env.sample 최신화
+2025-09-24T09:56:25Z	74add6d95c1eafeae0730b1054a8f1cbb229ea32	https://github.com/palette-team/palette_api/commit/74add6d95c1eafeae0730b1054a8f1cbb229ea32	feat: nginx를 docker-compose를 통해 추가 및 alpha 환경용 docker-compose 추가
+2025-09-19T13:06:24Z	0afbb2510adc9fd47d039124b6d4da90e791c7f7	https://github.com/palette-team/palette_api/commit/0afbb2510adc9fd47d039124b6d4da90e791c7f7	hotfix: .dockerignore 추가
+2025-09-19T11:20:12Z	b3cf7ac67027c5b7c41e7f83adb02039e6bf5107	https://github.com/palette-team/palette_api/commit/b3cf7ac67027c5b7c41e7f83adb02039e6bf5107	Merge pull request #15 from palette-team/feature/task-settings 로컬 환경에서 기본적인 비동기 태스크를 돌릴 수 있도록 설정
+2025-09-19T11:08:27Z	eb0b6d8a72c19041b51750cc1cd7d4858516473a	https://github.com/palette-team/palette_api/commit/eb0b6d8a72c19041b51750cc1cd7d4858516473a	fix: gemini 코드 리뷰 반영하여 코드 개선
+2025-09-19T10:52:20Z	8896e690c2d3fa15a1c56aac51f3a2f9bd3f4767	https://github.com/palette-team/palette_api/commit/8896e690c2d3fa15a1c56aac51f3a2f9bd3f4767	Merge branch 'develop' into feature/task-settings
+2025-09-18T12:17:52Z	9ec6b68a1d5e8dba317ad2677855aa086480bcc4	https://github.com/palette-team/palette_api/commit/9ec6b68a1d5e8dba317ad2677855aa086480bcc4	Merge pull request #14 from palette-team/feature/refactor-response-schema
+2025-09-18T12:17:35Z	d9198a45d6a5042a6e3ec669f9646a452be66fad	https://github.com/palette-team/palette_api/commit/d9198a45d6a5042a6e3ec669f9646a452be66fad	Merge pull request #13 from palette-team/feature/image-model
+2025-09-18T12:17:09Z	157b9f1b1ed4728f039bcc72d28ecb9286761de5	https://github.com/palette-team/palette_api/commit/157b9f1b1ed4728f039bcc72d28ecb9286761de5	Merge pull request #12 from palette-team/feature/kakao_account_email
+2025-09-17T10:05:42Z	f0205bf210c07d7736a96bdae2deb332c5ab6f03	https://github.com/palette-team/palette_api/commit/f0205bf210c07d7736a96bdae2deb332c5ab6f03	feat: celery를 이용한 세팅 추가
+2025-09-17T09:22:27Z	4bac1c7415cee50add8563c786d830164a767158	https://github.com/palette-team/palette_api/commit/4bac1c7415cee50add8563c786d830164a767158	feat: media 파일 설정 추가
+2025-09-17T09:21:59Z	4356b050fbb63f20f0f03966ea8c1fec7a9bad20	https://github.com/palette-team/palette_api/commit/4356b050fbb63f20f0f03966ea8c1fec7a9bad20	refactor: exception handler를 사용하도록 함
+2025-09-17T08:51:43Z	58bf691c9e69751bc5489294f5896b878a5c5764	https://github.com/palette-team/palette_api/commit/58bf691c9e69751bc5489294f5896b878a5c5764	feat: 공통 에러 코드 추가
+2025-09-17T08:17:09Z	7ecb40346be95cf6c1e99e79b28440a79c665735	https://github.com/palette-team/palette_api/commit/7ecb40346be95cf6c1e99e79b28440a79c665735	refactor: 동일한 error 형식을 따르도록 구조 개선 # Conflicts: # webapp/api/v1/profiles/views/profile_image_view.py # webapp/common/views/base_api_view.py
+2025-09-17T08:40:10Z	435dad9b2917c66bdc32630e410008872a4b9933	https://github.com/palette-team/palette_api/commit/435dad9b2917c66bdc32630e410008872a4b9933	fix: 잘못된 오류 처리 과정 수정
+2025-09-17T08:34:54Z	956d86bbe0568accaf3d53a59ca330cfecd813c7	https://github.com/palette-team/palette_api/commit/956d86bbe0568accaf3d53a59ca330cfecd813c7	fix: gemini 코드 리뷰 반영
+2025-09-17T08:19:23Z	da89c9547ebd763a8af262824cf4c90276e27e22	https://github.com/palette-team/palette_api/commit/da89c9547ebd763a8af262824cf4c90276e27e22	fix: kakao scope
+2025-09-17T08:12:30Z	98d8a2b576096c6c92891d542a35ed929ba98ab4	https://github.com/palette-team/palette_api/commit/98d8a2b576096c6c92891d542a35ed929ba98ab4	feat: image owner 정보 추가
+2025-09-17T07:31:42Z	1179b43d3cfcf5f1b409e62cc106fd2acde7d980	https://github.com/palette-team/palette_api/commit/1179b43d3cfcf5f1b409e62cc106fd2acde7d980	feat: 프로필 이미지 목록 조회 / 추가 / 삭제 API 추가
+2025-09-17T07:21:42Z	3e9d594fe20632f815928c0ce8f30dff6bc0cc78	https://github.com/palette-team/palette_api/commit/3e9d594fe20632f815928c0ce8f30dff6bc0cc78	feat: image 및 profile_image serializer 추가
+2025-09-17T07:11:22Z	2a9c1dce58f68800d19bd53d41d1496efc062e20	https://github.com/palette-team/palette_api/commit/2a9c1dce58f68800d19bd53d41d1496efc062e20	feat: image 및 profile_image 어드민 추가
+2025-09-17T07:10:15Z	14ea8e779be8d5550064c818d70617310d7d2539	https://github.com/palette-team/palette_api/commit/14ea8e779be8d5550064c818d70617310d7d2539	feat: image 모델 및 profile_image 모델 추가
+2025-09-17T05:30:07Z	e9769ed13af217e621d94f9cb942c856edfe3c59	https://github.com/palette-team/palette_api/commit/e9769ed13af217e621d94f9cb942c856edfe3c59	feat: file_manager app 추가
+2025-09-17T05:27:53Z	230f8a6ec915fe827447e0e0e6e4db503a69788d	https://github.com/palette-team/palette_api/commit/230f8a6ec915fe827447e0e0e6e4db503a69788d	feat: kakao account_email 수집 항목 추가
+2025-09-16T13:50:23Z	76cc9cb83dfde33caf64f4fef3867a34b8273913	https://github.com/palette-team/palette_api/commit/76cc9cb83dfde33caf64f4fef3867a34b8273913	Merge pull request #11 from palette-team/feature/user-confirm-flow 유저 승인 절차 간소화 과정 및 유저 대시보드
+2025-09-16T13:46:18Z	34922aeb82b30fc079f849929d073f1ce8839919	https://github.com/palette-team/palette_api/commit/34922aeb82b30fc079f849929d073f1ce8839919	fix: css 개선
+2025-09-16T13:45:07Z	45f3ee1e2a633570f73a7e9d8170e95a09837859	https://github.com/palette-team/palette_api/commit/45f3ee1e2a633570f73a7e9d8170e95a09837859	fix: gemini 코드 리뷰 반영
+2025-09-16T13:27:14Z	ae84e27b37d5c942da3a5bf522ebf1f196463a40	https://github.com/palette-team/palette_api/commit/ae84e27b37d5c942da3a5bf522ebf1f196463a40	feat: user dashboard 정보 추가
+2025-09-16T13:23:28Z	9d2880e137513938da813661f4dbbce6afbac409	https://github.com/palette-team/palette_api/commit/9d2880e137513938da813661f4dbbce6afbac409	feat: 사용자 어드민 개선
+2025-09-16T13:22:41Z	4d6b62e61a2d7cf4f43bdc6b2b71bf13dd60316f	https://github.com/palette-team/palette_api/commit/4d6b62e61a2d7cf4f43bdc6b2b71bf13dd60316f	feat: 가입 승인 일자에 대한 컬럼 추가 및 관련 queryset 추가
+2025-09-16T13:21:38Z	a257cae771204bc2f3cc760c20889d7810be8305	https://github.com/palette-team/palette_api/commit/a257cae771204bc2f3cc760c20889d7810be8305	feat: 개발 환경 상 필요한 sh 파일들 추가
+2025-09-16T13:13:16Z	9976da8f8fe2f6bbaa9dc2b29061f48567954faa	https://github.com/palette-team/palette_api/commit/9976da8f8fe2f6bbaa9dc2b29061f48567954faa	fix: 프로젝트명 수정
+2025-09-16T05:37:49Z	4955e2f942d800c0e07cbd6d6d2bbb99f4e34ad2	https://github.com/palette-team/palette_api/commit/4955e2f942d800c0e07cbd6d6d2bbb99f4e34ad2	Merge pull request #10 from pallete-team/feature/testing-workflow Feature/testing workflow
+2025-09-16T05:33:27Z	c10063e1d943b5dae175486c3702bff8cc30e2c5	https://github.com/palette-team/palette_api/commit/c10063e1d943b5dae175486c3702bff8cc30e2c5	fix: test db settings 수정
+2025-09-16T05:30:05Z	823b65ecad23bacf7f750435575e1630a55eb03c	https://github.com/palette-team/palette_api/commit/823b65ecad23bacf7f750435575e1630a55eb03c	Merge branch 'feature/testing-workflow' of https://github.com/pallete-team/pallete_api into feature/testing-workflow
+2025-09-16T05:29:59Z	6f256590bf7160fe92d02c48df0892d66e328a43	https://github.com/palette-team/palette_api/commit/6f256590bf7160fe92d02c48df0892d66e328a43	refactor: 커버리지 리포트를 뽑는 과정은 별도 워크플로우로 수정
+2025-09-15T23:49:18Z	884a8453aa18817ffb7b8f5f61fd7397ac039a7d	https://github.com/palette-team/palette_api/commit/884a8453aa18817ffb7b8f5f61fd7397ac039a7d	Update environments/development/run_test_code.sh Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-09-15T10:32:37Z	69f1838201fa4b965cf6b5b940159e73e3f9fa38	https://github.com/palette-team/palette_api/commit/69f1838201fa4b965cf6b5b940159e73e3f9fa38	fix: workflow files
+2025-09-15T08:05:15Z	83bfe0ae4005ebb0e334b0fe6d202b2f5ca297d6	https://github.com/palette-team/palette_api/commit/83bfe0ae4005ebb0e334b0fe6d202b2f5ca297d6	feat: CI workflow 추가
+2025-09-15T08:05:06Z	3d7bdce7a9a1acba66f9e32eaa84571aff672aaa	https://github.com/palette-team/palette_api/commit/3d7bdce7a9a1acba66f9e32eaa84571aff672aaa	feat: 간단한 테스트 예시 및 설정 추가
+2025-09-15T08:03:09Z	a5206e01c09524dc161d108e1c41c244a2655832	https://github.com/palette-team/palette_api/commit/a5206e01c09524dc161d108e1c41c244a2655832	feat: 로컬환경에서 테스트코드 쉽게 구동하도록 sh 파일 추가
+2025-09-15T08:02:46Z	3295eaf9e2c2548885b505a489df60f249cc69ad	https://github.com/palette-team/palette_api/commit/3295eaf9e2c2548885b505a489df60f249cc69ad	refactor: env 재사용하도록 처리
+2025-09-15T07:53:06Z	17790f0879046bdd3ca249fdcfca64e219e63de3	https://github.com/palette-team/palette_api/commit/17790f0879046bdd3ca249fdcfca64e219e63de3	hotfix: 로깅 과정에서 duration 처리 미비로 오류 발생
+2025-09-15T03:20:48Z	03d4fd0c563cbf97262c361cbad918138b8b6bcf	https://github.com/palette-team/palette_api/commit/03d4fd0c563cbf97262c361cbad918138b8b6bcf	hotfix: camelCase Middleware로 인해 어드민 페이지가 제대로 동작하지 않는 문제
+2025-09-15T02:41:47Z	88f462a79ab7578f94c0cc2f2ab414121f660a50	https://github.com/palette-team/palette_api/commit/88f462a79ab7578f94c0cc2f2ab414121f660a50	refactor: saju -> pallete 프로젝트명 변경
+2025-09-14T03:01:23Z	42203d1967479902427864853cdce5fd3e71e862	https://github.com/palette-team/palette_api/commit/42203d1967479902427864853cdce5fd3e71e862	Merge pull request #9 from saju-service/feature/camelCase-api
+2025-09-14T03:01:11Z	aea438fcb13ab84bde9afab3cde21971165de19c	https://github.com/palette-team/palette_api/commit/aea438fcb13ab84bde9afab3cde21971165de19c	Merge pull request #8 from saju-service/feature/profiles-app-basic-models
+2025-09-12T01:54:27Z	3f45c89f2aba815a18eb8a11887674777f2ddadf	https://github.com/palette-team/palette_api/commit/3f45c89f2aba815a18eb8a11887674777f2ddadf	Revert "Update webapp/config/middlewares/camel_case_middleware.py" This reverts commit 862b5f2354683c32b20c6168c511eee79d1d1d6f.
+2025-09-12T01:51:11Z	1e71c79ec567a340d44d01f00078bbe4f185bed6	https://github.com/palette-team/palette_api/commit/1e71c79ec567a340d44d01f00078bbe4f185bed6	refactor: mbti 옵션 클래스로 개선
+2025-09-12T01:49:44Z	ba1cacfb0406a7269bfd3f0ecf02b7001718ec81	https://github.com/palette-team/palette_api/commit/ba1cacfb0406a7269bfd3f0ecf02b7001718ec81	refactor: 조건문 개선
+2025-09-12T01:48:44Z	fb144aa716e3d4e834da1f4e2c3e659fe9f0e1aa	https://github.com/palette-team/palette_api/commit/fb144aa716e3d4e834da1f4e2c3e659fe9f0e1aa	fix: put method 삭제
+2025-09-12T01:47:33Z	097e27e68c23c323096cd7622c2763a81938c93e	https://github.com/palette-team/palette_api/commit/097e27e68c23c323096cd7622c2763a81938c93e	fix: on_delete issue
+2025-09-12T01:45:38Z	862b5f2354683c32b20c6168c511eee79d1d1d6f	https://github.com/palette-team/palette_api/commit/862b5f2354683c32b20c6168c511eee79d1d1d6f	Update webapp/config/middlewares/camel_case_middleware.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-09-11T12:18:36Z	8049c41cc49b0e69de81265dd439eaea19520466	https://github.com/palette-team/palette_api/commit/8049c41cc49b0e69de81265dd439eaea19520466	fix: github actions 내의 DB 설정 변경
+2025-09-11T12:15:39Z	8ac35d5cecad46f9dd803e153e8c091e75127be7	https://github.com/palette-team/palette_api/commit/8ac35d5cecad46f9dd803e153e8c091e75127be7	fix: environments default value 추가
+2025-09-11T11:50:10Z	709129d10a7ef12aaaeac77baf4938619ab61556	https://github.com/palette-team/palette_api/commit/709129d10a7ef12aaaeac77baf4938619ab61556	Merge pull request #7 from saju-service/feature/workflow-creating-swagger-yml develop 브랜치 변경 시, swagger 파일 갱신되어 관리하도록하는 workflow 추가
+2025-09-11T11:50:02Z	877c874a5035fcef2f59d5f8fa29603fa93dacb4	https://github.com/palette-team/palette_api/commit/877c874a5035fcef2f59d5f8fa29603fa93dacb4	Merge pull request #6 from saju-service/feature/slack-settings slack-sdk 를 통해 기본적인 슬랙 메세지 전송 과정 추가
+2025-09-11T11:49:55Z	36881c002ae9fd278ad121618831f79d93a4d917	https://github.com/palette-team/palette_api/commit/36881c002ae9fd278ad121618831f79d93a4d917	Merge branch 'develop' into feature/slack-settings
+2025-09-11T11:49:27Z	6a147ad476f38081aa2dc633e828d62fcd02f907	https://github.com/palette-team/palette_api/commit/6a147ad476f38081aa2dc633e828d62fcd02f907	Merge pull request #5 from saju-service/feature/user-oauth-2.0 Oauth 2.0 Kakao API 추가
+2025-09-11T11:49:08Z	b1d002e72bda105a8dc901705b637ab6d4101e88	https://github.com/palette-team/palette_api/commit/b1d002e72bda105a8dc901705b637ab6d4101e88	Merge pull request #4 from saju-service/feature/drf-base-setting 기본적인 DRF 설정 및 기본 User 모델 추가
+2025-09-11T11:44:05Z	f02a0c93701e677289e2c4b94dcf2ee23d80d21e	https://github.com/palette-team/palette_api/commit/f02a0c93701e677289e2c4b94dcf2ee23d80d21e	fix: camelCase 문서로 수정
+2025-09-11T11:15:59Z	106fea6fad718b7dcbd260e69e44ea5f8c692ca2	https://github.com/palette-team/palette_api/commit/106fea6fad718b7dcbd260e69e44ea5f8c692ca2	feat: camelCase를 이용한 req, res 처리 추가
+2025-09-11T11:14:52Z	4de1635cc63f7da35690fecae2da0ba128117eba	https://github.com/palette-team/palette_api/commit/4de1635cc63f7da35690fecae2da0ba128117eba	feat: import export 관련 패키지
+2025-09-11T11:13:49Z	1be2d078297fd6013fa7803794d199cb7ae59731	https://github.com/palette-team/palette_api/commit/1be2d078297fd6013fa7803794d199cb7ae59731	feat: profile 관련 기본 API 추가
+2025-09-11T11:12:05Z	c40c95a3815afda12854c5d1ce1be97a5c52fdf5	https://github.com/palette-team/palette_api/commit/c40c95a3815afda12854c5d1ce1be97a5c52fdf5	feat: profile 관련 모델 어드민 추가
+2025-09-11T11:11:45Z	e587443d15e56d039148c2c151247441aa3811fd	https://github.com/palette-team/palette_api/commit/e587443d15e56d039148c2c151247441aa3811fd	feat: profile 관련 모델 추가
+2025-09-11T05:13:32Z	f7af152b9a76f27ccf81b4ef28e9657b1013a00c	https://github.com/palette-team/palette_api/commit/f7af152b9a76f27ccf81b4ef28e9657b1013a00c	feat: profiles app 생성
+2025-09-11T05:39:18Z	c2bbf31363745ba417af0cf2cb42beec56e89987	https://github.com/palette-team/palette_api/commit/c2bbf31363745ba417af0cf2cb42beec56e89987	fix: Cloud watch 관련 설정은 이후에 하도록 삭제
+2025-09-11T05:04:50Z	47732635d296c022dc0ec989b22679e3160d1c93	https://github.com/palette-team/palette_api/commit/47732635d296c022dc0ec989b22679e3160d1c93	fix: tags를 Class 단위로 동일하게 사용하도록 수정
+2025-09-11T05:01:38Z	fdfc3d65571159bd59696b896531c450067e1aeb	https://github.com/palette-team/palette_api/commit/fdfc3d65571159bd59696b896531c450067e1aeb	fix: users 앱 내에서는 User 모델을 바로 가져가도록 함
+2025-09-11T05:01:02Z	369dfd543e3147cd158bef7bf70d288b610f1fbe	https://github.com/palette-team/palette_api/commit/369dfd543e3147cd158bef7bf70d288b610f1fbe	refactor: health-check API view 또한 user API View와 유사하게 개선
+2025-09-11T04:56:02Z	daad473d0cd932bd7a26ecbfcae640823d0063b2	https://github.com/palette-team/palette_api/commit/daad473d0cd932bd7a26ecbfcae640823d0063b2	feat: logging 설정 추가
+2025-09-11T04:52:32Z	6483266837b36cc4f240202e5acca3e7b19542bb	https://github.com/palette-team/palette_api/commit/6483266837b36cc4f240202e5acca3e7b19542bb	refactor: user kakao API에 대해 stateless JWT에서 refresh_token을 관리하는 방식으로 변경
+2025-09-09T04:33:19Z	b6b5b676a8b8be4fcbfaece9d4506aef832b13ce	https://github.com/palette-team/palette_api/commit/b6b5b676a8b8be4fcbfaece9d4506aef832b13ce	feat: develop 브랜치 변경 시, swagger 파일 갱신되어 관리하도록하는 workflow 추가
+2025-09-08T15:25:56Z	940cc4ab8050b9d377baf9273bd9edfc282f7e6a	https://github.com/palette-team/palette_api/commit/940cc4ab8050b9d377baf9273bd9edfc282f7e6a	fix: slash가 2개인 문제 수정
+2025-09-08T13:53:03Z	0250a7f8a8fbfa6cdae9e9bebd66325cfde7af87	https://github.com/palette-team/palette_api/commit/0250a7f8a8fbfa6cdae9e9bebd66325cfde7af87	Update webapp/common/utils/slack.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-09-08T13:52:53Z	2aadd1813f2e02ca83ee63f9895578956b2f6be4	https://github.com/palette-team/palette_api/commit/2aadd1813f2e02ca83ee63f9895578956b2f6be4	Update webapp/config/settings/base.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-09-08T13:52:46Z	1efc8b418779c81e5d16bd919583e4922dfb6e28	https://github.com/palette-team/palette_api/commit/1efc8b418779c81e5d16bd919583e4922dfb6e28	Update webapp/common/utils/slack.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-09-08T13:13:21Z	03d6073e8a937f7adfe415d155fed62ecbbf50b0	https://github.com/palette-team/palette_api/commit/03d6073e8a937f7adfe415d155fed62ecbbf50b0	feat: slack-sdk 를 통해 기본적인 슬랙 메세지 전송 과정 추가
+2025-09-08T13:17:11Z	baf287a435539a00051c7a4f4980ae69db35fb89	https://github.com/palette-team/palette_api/commit/baf287a435539a00051c7a4f4980ae69db35fb89	fix: Gemini 리뷰 반영
+2025-09-08T12:37:44Z	45f5118aac36645ae9bc39d1cb444b61a47e2850	https://github.com/palette-team/palette_api/commit/45f5118aac36645ae9bc39d1cb444b61a47e2850	refactor: isort 다시 실행
+2025-09-08T12:36:37Z	5643ab1665a697b82001c0c0d7f997e1a99ca057	https://github.com/palette-team/palette_api/commit/5643ab1665a697b82001c0c0d7f997e1a99ca057	chore: isort django 옵션으로 다시 적용 (import 문을 재정렬해주는 패키지 설정)
+2025-09-08T12:36:17Z	61a08e3aaabdc37b20754cfc171b80a670f9073c	https://github.com/palette-team/palette_api/commit/61a08e3aaabdc37b20754cfc171b80a670f9073c	feat: django-allauth 와 dj-rest-auth를 활용한 kakao login 구현
+2025-09-08T12:23:22Z	4af6d01a675075c530e10a719920732b5ffe32c7	https://github.com/palette-team/palette_api/commit/4af6d01a675075c530e10a719920732b5ffe32c7	fix: gemini 리뷰 반영
+2025-09-08T12:15:19Z	76e457b94dd78a2e1cea1d5e7ed9795e2c900c71	https://github.com/palette-team/palette_api/commit/76e457b94dd78a2e1cea1d5e7ed9795e2c900c71	Update webapp/config/settings/base.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-09-08T12:05:08Z	a44e04720cfa702fe1a2da69802eef37bdb1b397	https://github.com/palette-team/palette_api/commit/a44e04720cfa702fe1a2da69802eef37bdb1b397	feat: 기본적인 health-check API 추가
+2025-09-08T12:04:13Z	76c2a77447de9529e6b25849f2a1e5b326544d87	https://github.com/palette-team/palette_api/commit/76c2a77447de9529e6b25849f2a1e5b326544d87	feat: common package - base model 및 base view 추가
+2025-09-08T12:03:34Z	6a1ff84d8086fc0ce323dbc35113ef413de1719a	https://github.com/palette-team/palette_api/commit/6a1ff84d8086fc0ce323dbc35113ef413de1719a	feat: 기본적인 user 모델 추가
+2025-09-08T12:02:42Z	fc82e4788a49863e3b782da098e6a7e2281da89a	https://github.com/palette-team/palette_api/commit/fc82e4788a49863e3b782da098e6a7e2281da89a	feat: oauth 2.0 및 user 관련 패키지 설정 내용 추가
+2025-09-08T11:58:08Z	0808f43802efe6ecde0ef90c7a2dae0756dad23a	https://github.com/palette-team/palette_api/commit/0808f43802efe6ecde0ef90c7a2dae0756dad23a	Merge branch 'initial-project-settings' into develop
+2025-09-07T03:44:31Z	9400b4c6d506184a17eae5811ad7ee8852d18126	https://github.com/palette-team/palette_api/commit/9400b4c6d506184a17eae5811ad7ee8852d18126	Merge pull request #3 from saju-service/dockerize-django-webapp django 기본 프로젝트 설정 및 Docker / docker-compose 설정 (개발 환경 전용)
+2025-09-07T03:44:11Z	b0c25571694cf6f6b12c9b8e920c619bdbd12856	https://github.com/palette-team/palette_api/commit/b0c25571694cf6f6b12c9b8e920c619bdbd12856	Merge pull request #1 from saju-service/feature/pull-request-template Pull Request template 추가
+2025-09-06T11:41:23Z	3a44bd6be13d8a99869b39c0c1d2e302dc884d0d	https://github.com/palette-team/palette_api/commit/3a44bd6be13d8a99869b39c0c1d2e302dc884d0d	fix: 개발환경 상에서 health-check 삭제
+2025-09-04T10:06:38Z	f4f3c1c092a5acff94790ba3b12b366c020c1ec4	https://github.com/palette-team/palette_api/commit/f4f3c1c092a5acff94790ba3b12b366c020c1ec4	fix: change default value of django settings module
+2025-09-04T10:06:10Z	1e772c6213cb1f69103ebb962451df3be1dc1886	https://github.com/palette-team/palette_api/commit/1e772c6213cb1f69103ebb962451df3be1dc1886	fix: 환경변수 값을 사용하도록 수정
+2025-09-04T05:12:23Z	831a27ad5afa6ae022f34bb4f1b8505d73b53ce0	https://github.com/palette-team/palette_api/commit/831a27ad5afa6ae022f34bb4f1b8505d73b53ce0	chore: production directory gitkeep
+2025-09-04T05:03:58Z	52f425668c55cc95df3403dd9a3afb45babde139	https://github.com/palette-team/palette_api/commit/52f425668c55cc95df3403dd9a3afb45babde139	feat: django 기본 프로젝트 설정 및 Docker / docker-compose 설정 (개발 환경 전용)
+2025-09-05T10:49:31Z	e1d3b30430f7311c6ab6b47070d92bc740f42263	https://github.com/palette-team/palette_api/commit/e1d3b30430f7311c6ab6b47070d92bc740f42263	fix: 잘못된 AI 제안사항 수정 uv를 사용하는 상황이라 >= 를 통해 처리하는게 이후 패키지 추가에 용이함
+2025-09-04T10:12:02Z	a2d4e0e9cc2645fe8643c15ee8d06b5d1399801f	https://github.com/palette-team/palette_api/commit/a2d4e0e9cc2645fe8643c15ee8d06b5d1399801f	Update pyproject.toml Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-09-04T10:11:49Z	c69bde28c9c3bbb4d1943025143a78695eb56a1b	https://github.com/palette-team/palette_api/commit/c69bde28c9c3bbb4d1943025143a78695eb56a1b	Update pyproject.toml Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-09-03T11:18:40Z	b0f2c2e09e446eebdcd5dcf0909d3b6e861eeae6	https://github.com/palette-team/palette_api/commit/b0f2c2e09e446eebdcd5dcf0909d3b6e861eeae6	feat: 기본적인 pre-commit 설정
+2025-09-03T11:18:17Z	aca5c45f468e6c1ce711142ce4e13d0f817a5d32	https://github.com/palette-team/palette_api/commit/aca5c45f468e6c1ce711142ce4e13d0f817a5d32	feat: uv package manager 설정 및 기본적인 패키지 추가 - https://docs.astral.sh/uv/ ## DJANGO 기본 패키지 - django : https://www.djangoproject.com/ - cors 관련 패키지 : https://pypi.org/project/django-cors-headers/ - 환경변수 패키지 : https://django-environ.readthedocs.io/en/latest/ - django 내에 편의 기능 추가 : https://django-extensions.readthedocs.io/en/latest/ - event log 상에 GUID 삽입 등을 편리하게 해주는 패키지 : https://github.com/snok/django-guid - postgres 연결을 위한 패키지 : https://pypi.org/project/psycopg2-binary/ - django와 postgres 사이의 편의 기능 추가 : https://pypi.org/project/django-postgres-extra/ - django 어드민 테마 패키지 : https://github.com/unfoldadmin/django-unfold - n + 1 쿼리 로깅 : https://github.com/jmcarp/nplusone - 이미지 처리를 위한 패키지 : https://github.com/python-pillow/Pillow - uvicorn, ASGI 처리를 위한 패키지 : https://www.uvicorn.org/ ## DRF 관련 패키지 - django-restframework : https://www.django-rest-framework.org/ - drf 편의 기능 추가 : https://github.com/chibisov/drf-extensions - swagger 문서 자동화 : https://drf-spectacular.readthedocs.io/en/latest/ - routing이 nested 구조일 때 사용하는 패키지 : https://github.com/beda-software/drf-writable-nested
+2025-09-03T11:10:44Z	2be9079a75faecd00cb31a8ca35106914ac9e035	https://github.com/palette-team/palette_api/commit/2be9079a75faecd00cb31a8ca35106914ac9e035	chore: .gitignore 초기 설정
+2025-09-02T03:57:09Z	12150fe3439b5bb82ef06c6e358f98131126a909	https://github.com/palette-team/palette_api/commit/12150fe3439b5bb82ef06c6e358f98131126a909	Update .github/PULL_REQUEST_TEMPLATE.md 오타 수정 Co-authored-by: Copilot <175728472+Copilot@users.noreply.github.com>
+2025-09-02T02:49:54Z	324ea2758d16a974a6658d31374513e786a1a2a8	https://github.com/palette-team/palette_api/commit/324ea2758d16a974a6658d31374513e786a1a2a8	feat: Pull Request template 추가
+2025-09-02T02:47:55Z	eb5de633dffc530257a0350aa29fc28df182b794	https://github.com/palette-team/palette_api/commit/eb5de633dffc530257a0350aa29fc28df182b794	docs: README.md

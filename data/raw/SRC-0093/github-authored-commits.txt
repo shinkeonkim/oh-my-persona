@@ -1,0 +1,7 @@
+GitHub repository: https://github.com/kmu-shinkeonkim/smart-network-service-hw2
+Author account: shinkeonkim
+
+2025-11-10T08:18:58Z	ac64bb21640059076c4865c23ba034ef6154bd96	https://github.com/kmu-shinkeonkim/smart-network-service-hw2/commit/ac64bb21640059076c4865c23ba034ef6154bd96	fix: 의미없는 내용 삭제
+2025-11-10T08:10:13Z	fedf68e5f5a45e427067aaaed790401a94e5349c	https://github.com/kmu-shinkeonkim/smart-network-service-hw2/commit/fedf68e5f5a45e427067aaaed790401a94e5349c	fix: 마지막 데이터를 읽기 전에 종료되는 경우 수정
+2025-11-10T08:00:18Z	bb0bde68ffb81e5545d9edd50b6824a9c099e9ec	https://github.com/kmu-shinkeonkim/smart-network-service-hw2/commit/bb0bde68ffb81e5545d9edd50b6824a9c099e9ec	feat: 기본적인 출력 추가
+2025-11-10T07:35:30Z	1c6aeea346794426b0f99fcd2cff21aa75521c24	https://github.com/kmu-shinkeonkim/smart-network-service-hw2/commit/1c6aeea346794426b0f99fcd2cff21aa75521c24	feat: 초기 세팅

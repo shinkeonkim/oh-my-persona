@@ -1,0 +1,15 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-jobs-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:29:58Z	2cf4d1d652a97b8c961ad38c346a2ffced322e56	https://github.com/kokoa-hobby/minecraft-jobs-plugin/commit/2cf4d1d652a97b8c961ad38c346a2ffced322e56	Add README
+2026-07-22T12:22:17Z	3bbba744b554d0cd86cf0c1037599cbf8198ca15	https://github.com/kokoa-hobby/minecraft-jobs-plugin/commit/3bbba744b554d0cd86cf0c1037599cbf8198ca15	Add tests
+2026-07-22T12:22:16Z	953062be82b5b11336361f8f1209932044cdad39	https://github.com/kokoa-hobby/minecraft-jobs-plugin/commit/953062be82b5b11336361f8f1209932044cdad39	Add JobsPlugin main class
+2026-07-22T12:22:16Z	69c49915940fb9bf14f09be9e3520aa6081ae5ea	https://github.com/kokoa-hobby/minecraft-jobs-plugin/commit/69c49915940fb9bf14f09be9e3520aa6081ae5ea	Add PlayerJobRecord
+2026-07-22T12:22:16Z	3e0f972c9387875d4267eafc23c3da94de30d939	https://github.com/kokoa-hobby/minecraft-jobs-plugin/commit/3e0f972c9387875d4267eafc23c3da94de30d939	Add JobType
+2026-07-22T12:22:16Z	b5cc9df4db8429e1906bb8a0716001ae611ba2d4	https://github.com/kokoa-hobby/minecraft-jobs-plugin/commit/b5cc9df4db8429e1906bb8a0716001ae611ba2d4	Add JobsGui
+2026-07-22T12:22:16Z	fdd42d63b61ce6c05cb80d79f4c0ae49013d2baf	https://github.com/kokoa-hobby/minecraft-jobs-plugin/commit/fdd42d63b61ce6c05cb80d79f4c0ae49013d2baf	Add JobConstants
+2026-07-22T12:22:16Z	007b759ca23a04e7e29365e0512f9eceb6f19406	https://github.com/kokoa-hobby/minecraft-jobs-plugin/commit/007b759ca23a04e7e29365e0512f9eceb6f19406	Add JobAbility
+2026-07-22T12:22:16Z	b62d4ab434ea65a25ecea755ec891e049f8c4c42	https://github.com/kokoa-hobby/minecraft-jobs-plugin/commit/b62d4ab434ea65a25ecea755ec891e049f8c4c42	Add listeners
+2026-07-22T12:22:16Z	8242edecfcf201cf3ee29d6af4a27457c58cfc82	https://github.com/kokoa-hobby/minecraft-jobs-plugin/commit/8242edecfcf201cf3ee29d6af4a27457c58cfc82	Add commands
+2026-07-22T12:22:16Z	18c5dda0e991a7ad5e05615dee2762b79fa79d7e	https://github.com/kokoa-hobby/minecraft-jobs-plugin/commit/18c5dda0e991a7ad5e05615dee2762b79fa79d7e	Add plugin manifest and resources
+2026-07-22T12:22:16Z	e70eda53d6e810bdb7adb60e3e0dd782ef5d4b64	https://github.com/kokoa-hobby/minecraft-jobs-plugin/commit/e70eda53d6e810bdb7adb60e3e0dd782ef5d4b64	Add Gradle project scaffold

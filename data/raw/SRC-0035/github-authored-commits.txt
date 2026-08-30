@@ -1,0 +1,62 @@
+GitHub repository: https://github.com/shinkeonkim/AD_project_athena
+Author account: shinkeonkim
+
+2025-06-15T06:08:56Z	1695485ff3d6d0eb7a24330888a93763c03f3df3	https://github.com/shinkeonkim/AD_project_athena/commit/1695485ff3d6d0eb7a24330888a93763c03f3df3	docs: 보고서 추가
+2025-06-14T02:26:01Z	34ad47d5ef10e1ab92340b6af6600aff64a30714	https://github.com/shinkeonkim/AD_project_athena/commit/34ad47d5ef10e1ab92340b6af6600aff64a30714	chore: 발표 영상 자료 추가
+2025-06-13T09:00:15Z	d28a52a12e8ac34a653a6931a12881240ad8ace3	https://github.com/shinkeonkim/AD_project_athena/commit/d28a52a12e8ac34a653a6931a12881240ad8ace3	docs: 발표 자료 이미지 수정
+2025-06-13T06:30:30Z	7074c27f9a7c352006161f5655e480c46a4b721e	https://github.com/shinkeonkim/AD_project_athena/commit/7074c27f9a7c352006161f5655e480c46a4b721e	docs: 발표 자료 수정
+2025-06-12T14:42:45Z	a430d9459234b4e8b67bffb227e7a9f23182cecc	https://github.com/shinkeonkim/AD_project_athena/commit/a430d9459234b4e8b67bffb227e7a9f23182cecc	docs: 글꼴포함 저장
+2025-06-12T14:41:51Z	309fa53044b46139dae27be43a53faba79f8f76f	https://github.com/shinkeonkim/AD_project_athena/commit/309fa53044b46139dae27be43a53faba79f8f76f	docs: 피피티 수정
+2025-06-12T11:57:13Z	4f92f6d2c39f2fe4aec881fdad3ef6a20284b41d	https://github.com/shinkeonkim/AD_project_athena/commit/4f92f6d2c39f2fe4aec881fdad3ef6a20284b41d	feat: 어드민 개선
+2025-06-12T11:56:59Z	275c8f4c286d560b6df289a4cd527552b63d4cf2	https://github.com/shinkeonkim/AD_project_athena/commit/275c8f4c286d560b6df289a4cd527552b63d4cf2	chore: AD 프로젝트 관련 내용 추가
+2025-06-12T10:09:40Z	b6686cad4de3bd76c82b325e6a1a3c33e6f36882	https://github.com/shinkeonkim/AD_project_athena/commit/b6686cad4de3bd76c82b325e6a1a3c33e6f36882	fix: 잘못된 url name 수정
+2025-06-12T10:09:29Z	73c1f49b910d4d9201ca47819dc0c33e4c38540d	https://github.com/shinkeonkim/AD_project_athena/commit/73c1f49b910d4d9201ca47819dc0c33e4c38540d	chore: 로그인 / 회원가입시 자동완성 기능 삭제
+2025-06-05T07:01:08Z	60198a3a5795fbfe150971af9bf1e1d674021a30	https://github.com/shinkeonkim/AD_project_athena/commit/60198a3a5795fbfe150971af9bf1e1d674021a30	feat: 문제를 통해 테케 자동생성하는 서비스와의 연결
+2025-06-05T06:19:41Z	d4e92afb3283e1cf0841852c44569f837a006763	https://github.com/shinkeonkim/AD_project_athena/commit/d4e92afb3283e1cf0841852c44569f837a006763	feat: favicon.ico 추가
+2025-06-04T05:50:43Z	7e480236a5a3a28f1e809f6fb082acc71f2bb3c3	https://github.com/shinkeonkim/AD_project_athena/commit/7e480236a5a3a28f1e809f6fb082acc71f2bb3c3	feat: 공식 테스트케이스와 별도로 생성하는 테스트케이스를 분류하여 생성
+2025-06-04T04:47:37Z	c76e0dfb9ade6dd9db835bc4127493cd97e95289	https://github.com/shinkeonkim/AD_project_athena/commit/c76e0dfb9ade6dd9db835bc4127493cd97e95289	feat: cpp, java에 대한 실행 버전 정보 추가
+2025-06-04T01:29:43Z	c8e8cfe391250b7d8d74feb2151730179467a251	https://github.com/shinkeonkim/AD_project_athena/commit/c8e8cfe391250b7d8d74feb2151730179467a251	design: question page 디자인 요소 수정
+2025-06-03T11:09:04Z	5af2a2e4f1350419094348571a2d7b1150eeaeba	https://github.com/shinkeonkim/AD_project_athena/commit/5af2a2e4f1350419094348571a2d7b1150eeaeba	refactor: 어드민 개선
+2025-06-03T11:08:53Z	04e20a50aa5909434b53f2d9e25d9f7d94a9a25b	https://github.com/shinkeonkim/AD_project_athena/commit/04e20a50aa5909434b53f2d9e25d9f7d94a9a25b	feat: code-judger 프로젝트와의 연동
+2025-06-02T17:57:28Z	dcf60996feb86162fd8571f5e530883ebef4c888	https://github.com/shinkeonkim/AD_project_athena/commit/dcf60996feb86162fd8571f5e530883ebef4c888	refactor: classmethod
+2025-06-02T17:50:12Z	5e95fcafd445447e8b3f6f2007c9e3fcf8e61e53	https://github.com/shinkeonkim/AD_project_athena/commit/5e95fcafd445447e8b3f6f2007c9e3fcf8e61e53	feat: code-executor와의 연결 과정 추가
+2025-05-30T06:29:37Z	d74feb42f5cc39a4ae58a0ecf8f31b3bcfeb77a6	https://github.com/shinkeonkim/AD_project_athena/commit/d74feb42f5cc39a4ae58a0ecf8f31b3bcfeb77a6	feat: 403 error page
+2025-05-28T11:46:30Z	1abed33b793d5a524a454d275dcaa2f48e1a3b94	https://github.com/shinkeonkim/AD_project_athena/commit/1abed33b793d5a524a454d275dcaa2f48e1a3b94	feat: LLM Feedback 답변에 대한 사용자 평가 정보 수집 기능
+2025-05-28T04:53:26Z	00e7e1469931cc8f103a2f4f982dc0e61b2e92ef	https://github.com/shinkeonkim/AD_project_athena/commit/00e7e1469931cc8f103a2f4f982dc0e61b2e92ef	feat: nginx 추가
+2025-05-28T04:52:53Z	8a702f286a62ed690f00fe5ae449e8323bfd647f	https://github.com/shinkeonkim/AD_project_athena/commit/8a702f286a62ed690f00fe5ae449e8323bfd647f	refactor: 게시글 수집 과정에 있어서 Exception 및 로직 정리
+2025-05-28T04:52:10Z	2c6bd875a2322aa3d95937928bfd70c412460115	https://github.com/shinkeonkim/AD_project_athena/commit/2c6bd875a2322aa3d95937928bfd70c412460115	feat: 서버 장애 페이지를 추가 / AD 프로젝트 내에서 다루기 위해 데모 에러 테스팅 페이지도 같이 추가함
+2025-05-26T09:49:29Z	b35a6f9b34f48825489cfb9ff62596372dae7da5	https://github.com/shinkeonkim/AD_project_athena/commit/b35a6f9b34f48825489cfb9ff62596372dae7da5	test: user views test code 추가
+2025-05-26T09:49:17Z	f8512aa9ac16a7ca8884354b2d9cdaa5cb571450	https://github.com/shinkeonkim/AD_project_athena/commit/f8512aa9ac16a7ca8884354b2d9cdaa5cb571450	test: model testcode 추가
+2025-05-26T08:53:35Z	f7a31127f3a6bf12d73641ad7fa64d2cb10d02d6	https://github.com/shinkeonkim/AD_project_athena/commit/f7a31127f3a6bf12d73641ad7fa64d2cb10d02d6	feat: 수집된 게시글 정보 프롬프트에 추가 및 로깅 추가
+2025-05-26T08:53:07Z	aafcf2047a15486dff0376242b503933254bf2a0	https://github.com/shinkeonkim/AD_project_athena/commit/aafcf2047a15486dff0376242b503933254bf2a0	fix: form code 개선
+2025-05-26T08:52:36Z	1eba6f6cc22909c39bd09062e200def0856e4d93	https://github.com/shinkeonkim/AD_project_athena/commit/1eba6f6cc22909c39bd09062e200def0856e4d93	feat: 게시글 수집 과정 개선 (LLM을 이용한 검증 과정 고도화)
+2025-05-26T08:51:26Z	2ffc1ee786cd2c772ed4fa0676b606c648459a5b	https://github.com/shinkeonkim/AD_project_athena/commit/2ffc1ee786cd2c772ed4fa0676b606c648459a5b	feat: 테스트 구동을 위한 환경 설정
+2025-05-26T08:49:30Z	315db6aa7f2e8fd0eb8fc9cfb1981295cf24615e	https://github.com/shinkeonkim/AD_project_athena/commit/315db6aa7f2e8fd0eb8fc9cfb1981295cf24615e	feat: 요금제에 따라 할당량 분리되도록 함
+2025-05-26T08:48:47Z	39c3522bdd80cfa47f904052db8ebaa3d66a1306	https://github.com/shinkeonkim/AD_project_athena/commit/39c3522bdd80cfa47f904052db8ebaa3d66a1306	chore: 요금제 정보 변경
+2025-05-21T05:02:45Z	f634257e7c6303a45a8a75a3b7a49a1cb0dd7a0c	https://github.com/shinkeonkim/AD_project_athena/commit/f634257e7c6303a45a8a75a3b7a49a1cb0dd7a0c	refactor: 패키지로 파일들을 분리하여 작성
+2025-05-21T05:02:10Z	7d3c5f13ad20bd96bfe3bc019dfd2ec95bc87a78	https://github.com/shinkeonkim/AD_project_athena/commit/7d3c5f13ad20bd96bfe3bc019dfd2ec95bc87a78	feat: user view를 CBV로 개선하여 파일 정리
+2025-05-15T03:49:03Z	d8d3155e36217a8b5015ecec8b34aec0225d358a	https://github.com/shinkeonkim/AD_project_athena/commit/d8d3155e36217a8b5015ecec8b34aec0225d358a	feat: 기본적인 문제 정보 수집 및 디자인 개선
+2025-05-15T03:47:43Z	e90ea88bebf2a07875844db6aa40283ff46a441a	https://github.com/shinkeonkim/AD_project_athena/commit/e90ea88bebf2a07875844db6aa40283ff46a441a	feat: GIN Index를 위한 dockerfile 변경
+2025-05-14T05:47:02Z	fd934052787feac0d33aa92cea41def77c2b39ea	https://github.com/shinkeonkim/AD_project_athena/commit/fd934052787feac0d33aa92cea41def77c2b39ea	fix: LLM 답변을 가져오다가 오류가 난 경우, ticket을 원복시키는 작업 추가
+2025-05-14T05:33:37Z	aca793e824aaf3bc6729ed859ba645f24a93110f	https://github.com/shinkeonkim/AD_project_athena/commit/aca793e824aaf3bc6729ed859ba645f24a93110f	docs: 간단한 설명 추가
+2025-05-14T05:24:45Z	a49ff5f79567ca2a5779d618c5afc37a2e168a0a	https://github.com/shinkeonkim/AD_project_athena/commit/a49ff5f79567ca2a5779d618c5afc37a2e168a0a	chore: 코드 정리
+2025-05-14T05:03:20Z	70b0a87dadd04d7a6b2ed64a0e37442f208018ff	https://github.com/shinkeonkim/AD_project_athena/commit/70b0a87dadd04d7a6b2ed64a0e37442f208018ff	feat: 질문 기록 기능 추가
+2025-05-14T04:43:43Z	4c3b709fbf403b05137e58247710d294637a4e08	https://github.com/shinkeonkim/AD_project_athena/commit/4c3b709fbf403b05137e58247710d294637a4e08	feat: 문제 검색 관련하여 Index 적용하여 개선
+2025-05-14T04:34:46Z	4483ccc96f9f0d07cb9b0a166d5beac6b0168507	https://github.com/shinkeonkim/AD_project_athena/commit/4483ccc96f9f0d07cb9b0a166d5beac6b0168507	feat: ticket admin에 대해서 unfold admin 적용
+2025-05-14T04:34:26Z	09f56f0c94421066c51911f2ad3588808c4dcce7	https://github.com/shinkeonkim/AD_project_athena/commit/09f56f0c94421066c51911f2ad3588808c4dcce7	feat: 질문 페이지에 대한 사용성 개선 - codemirror 적용 - solved.ac 티어 디자인 적용
+2025-05-14T04:32:59Z	58601ef6c1f63a8efa287518b86f00dcdb7628be	https://github.com/shinkeonkim/AD_project_athena/commit/58601ef6c1f63a8efa287518b86f00dcdb7628be	fix: 마지막 질문 일자를 업데이트 하지 않는 이슈 수정
+2025-05-14T04:32:38Z	44ccff60791e728889e15db093eb32077cd5a13d	https://github.com/shinkeonkim/AD_project_athena/commit/44ccff60791e728889e15db093eb32077cd5a13d	fix: 로그인하지 않고 질문 페이지에 접근할 수 없도록 함
+2025-05-14T03:55:19Z	6cc63caad5c3dfea1fc46bf859782969e46f2957	https://github.com/shinkeonkim/AD_project_athena/commit/6cc63caad5c3dfea1fc46bf859782969e46f2957	feat: ticket을 통한 사용량 제한
+2025-05-14T03:54:18Z	f7d67546ded872c754477a5f42039def5ba1fa8d	https://github.com/shinkeonkim/AD_project_athena/commit/f7d67546ded872c754477a5f42039def5ba1fa8d	design: question 페이지 디자인 개선
+2025-05-14T02:34:08Z	62fe2976b46b9b9b572456e8afee4d4bea39a70c	https://github.com/shinkeonkim/AD_project_athena/commit/62fe2976b46b9b9b572456e8afee4d4bea39a70c	refactor: 로그인 / 회원가입 관련 디자인 및 navbar 개선
+2025-05-14T01:50:13Z	fa8c040bf56ced9c337fac7d79946d60b3ac5abb	https://github.com/shinkeonkim/AD_project_athena/commit/fa8c040bf56ced9c337fac7d79946d60b3ac5abb	feat: 기본적인 사용자 기능 추가 및 템플릿 상속을 통해 템플릿 파일 관리 추가
+2025-05-14T01:48:42Z	07d8656b9adc4813c151b728cd35100180849ea9	https://github.com/shinkeonkim/AD_project_athena/commit/07d8656b9adc4813c151b728cd35100180849ea9	design: 미리보기 이미지 추가
+2025-05-14T00:19:08Z	b862221dd012fb678d7214082b105ecd9c5020bd	https://github.com/shinkeonkim/AD_project_athena/commit/b862221dd012fb678d7214082b105ecd9c5020bd	feat: QuestionTaskAdmin 추가
+2025-05-14T00:18:51Z	c520eb999f7c940fce60830c54fa4f90403ffb3f	https://github.com/shinkeonkim/AD_project_athena/commit/c520eb999f7c940fce60830c54fa4f90403ffb3f	feat: 메인페이지 추가
+2025-05-14T00:18:06Z	c683d3da5c0a50c996f9adeefb8618e6cc1fc816	https://github.com/shinkeonkim/AD_project_athena/commit/c683d3da5c0a50c996f9adeefb8618e6cc1fc816	fix: 이미지 수집시에 URL을 변조하여 가져오도록 함
+2025-05-14T00:16:31Z	7e1877e4bc6268accd8075fbfa3778c33d1639e1	https://github.com/shinkeonkim/AD_project_athena/commit/7e1877e4bc6268accd8075fbfa3778c33d1639e1	feat: 디자인 개선 및 메인 페이지 MVP 디자인
+2025-05-12T12:51:18Z	f6683e4a47e0d5091baa70e66e320e49107ed913	https://github.com/shinkeonkim/AD_project_athena/commit/f6683e4a47e0d5091baa70e66e320e49107ed913	feat: MVP 버전 개발
+2025-05-12T12:48:23Z	13792307e18c87107b702662c9cfe9541b4fd3cf	https://github.com/shinkeonkim/AD_project_athena/commit/13792307e18c87107b702662c9cfe9541b4fd3cf	feat: 프로젝트 기초 세팅
+2025-05-12T12:45:06Z	0e41efe06bda31506cf00eef82af48213267fa99	https://github.com/shinkeonkim/AD_project_athena/commit/0e41efe06bda31506cf00eef82af48213267fa99	feat: pre-commit 및 poetry package 설정
+2025-05-12T12:44:37Z	76b0771d0491922f768d1e0df9ca5d7ebdde04ae	https://github.com/shinkeonkim/AD_project_athena/commit/76b0771d0491922f768d1e0df9ca5d7ebdde04ae	feat: .gitignore 추가
+2025-05-12T12:42:25Z	ad27c948d92e9c2901018679564f777eb887138d	https://github.com/shinkeonkim/AD_project_athena/commit/ad27c948d92e9c2901018679564f777eb887138d	docs: 기본 AD 프로젝트 디렉토리 구성

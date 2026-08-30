@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/meme-party/studio-front
+Author account: shinkeonkim
+
+2025-09-10T06:28:19Z	50d40ea047d1df49a2939a038db992c4072be26e	https://github.com/meme-party/studio-front/commit/50d40ea047d1df49a2939a038db992c4072be26e	chore: project init settings

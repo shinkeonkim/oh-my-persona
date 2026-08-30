@@ -1,0 +1,12 @@
+/* 브라우저 크롬용 스타일시트.
+ *
+ * 크롬도 페이지와 똑같이 HTML + CSS 로 적고 같은 엔진으로 배치한다.
+ */
+
+body { background-color: white; }
+nav { display: block; }
+button { background-color: #eeeeee; }
+input { background-color: white; }
+a { color: black; }
+a.current { font-weight: bold; }
+button.disabled { color: #999999; }

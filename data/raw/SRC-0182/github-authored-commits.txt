@@ -1,0 +1,6 @@
+GitHub repository: https://github.com/palette-team/job_extractor
+Author account: shinkeonkim
+
+2025-10-28T15:32:12Z	5b6cf27c500d42955c2df152c67eea2c0631e8c4	https://github.com/palette-team/job_extractor/commit/5b6cf27c500d42955c2df152c67eea2c0631e8c4	fix: gh actions 권한 이슈 수정
+2025-10-28T15:29:44Z	9ef5c84afe047d829ee22bf5765b2e57334ded06	https://github.com/palette-team/job_extractor/commit/9ef5c84afe047d829ee22bf5765b2e57334ded06	fix: untracked file에 대한 오류 수정
+2025-10-28T15:26:19Z	08ac7d97d538d73c61a61f0b7da2ae00c7ada5b1	https://github.com/palette-team/job_extractor/commit/08ac7d97d538d73c61a61f0b7da2ae00c7ada5b1	feat: 직군/직업 정보 추출기 프로젝트 추가

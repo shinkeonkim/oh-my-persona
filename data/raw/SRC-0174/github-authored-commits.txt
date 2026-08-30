@@ -1,0 +1,6 @@
+GitHub repository: https://github.com/kokoa-tools/pr-archiving
+Author account: shinkeonkim
+
+2025-03-13T10:05:58Z	8b835933b226e9ade703a72aa269682c6b74ac43	https://github.com/kokoa-tools/pr-archiving/commit/8b835933b226e9ade703a72aa269682c6b74ac43	docs: 로그인 설명 추가
+2025-03-13T10:05:08Z	367715ec31d5de2c8aed5d1339c5970d4c526c58	https://github.com/kokoa-tools/pr-archiving/commit/367715ec31d5de2c8aed5d1339c5970d4c526c58	docs: 제공 기능 설명 추가
+2025-03-13T10:00:27Z	d4120a0a4178fb35d92bf1031d1fcb9c0ba7efa4	https://github.com/kokoa-tools/pr-archiving/commit/d4120a0a4178fb35d92bf1031d1fcb9c0ba7efa4	feat: initial project code

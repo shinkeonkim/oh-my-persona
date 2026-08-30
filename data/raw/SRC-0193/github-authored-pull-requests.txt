@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/shinkeonkim/In-Kookmin-Extension
+Pull request author: shinkeonkim
+
+2020-12-07T10:49:37Z	#1	MERGED	https://github.com/shinkeonkim/In-Kookmin-Extension/pull/1	Featuer/Chrome-extension-setting	merged=2020-12-07T10:49:45Z	closed=2020-12-07T10:49:45Z	commits=1	files=19	+12169/-0	- create-react-app - update manifest.json - update README.md

@@ -1,0 +1,10 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-tpa-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:27:26Z	20dd81c555bd68ce4bdd31ef84a51dfb4ea3083e	https://github.com/kokoa-hobby/minecraft-tpa-plugin/commit/20dd81c555bd68ce4bdd31ef84a51dfb4ea3083e	Add README
+2026-07-22T12:22:20Z	c45f961548fe484e241e46dd5f9392b766fafa0b	https://github.com/kokoa-hobby/minecraft-tpa-plugin/commit/c45f961548fe484e241e46dd5f9392b766fafa0b	Add TpaPlugin main class
+2026-07-22T12:22:20Z	cf0b47b99f9ef03a85063899318c293a1ef410e5	https://github.com/kokoa-hobby/minecraft-tpa-plugin/commit/cf0b47b99f9ef03a85063899318c293a1ef410e5	Add PendingRequest
+2026-07-22T12:22:20Z	b403efc5e4df101f195a54cf020ac042045d7d7e	https://github.com/kokoa-hobby/minecraft-tpa-plugin/commit/b403efc5e4df101f195a54cf020ac042045d7d7e	Add listeners
+2026-07-22T12:22:20Z	bd25b1a90e2867fc19064e69a2163f5285f7c600	https://github.com/kokoa-hobby/minecraft-tpa-plugin/commit/bd25b1a90e2867fc19064e69a2163f5285f7c600	Add commands
+2026-07-22T12:22:20Z	23ba33a2cc6275596ca8c622a96eef45e2d5aaab	https://github.com/kokoa-hobby/minecraft-tpa-plugin/commit/23ba33a2cc6275596ca8c622a96eef45e2d5aaab	Add plugin manifest and resources
+2026-07-22T12:22:20Z	cb2c4054aaa97f495fe613d9c04e2f2c5b6eaaf8	https://github.com/kokoa-hobby/minecraft-tpa-plugin/commit/cb2c4054aaa97f495fe613d9c04e2f2c5b6eaaf8	Add Gradle project scaffold

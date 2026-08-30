@@ -1,0 +1,12 @@
+GitHub repository: https://github.com/kkambbaki/frontend
+Author account: shinkeonkim
+
+2025-11-14T08:25:26Z	ace92ce82ba42152a589c57019e93ca1d667d59f	https://github.com/kkambbaki/frontend/commit/ace92ce82ba42152a589c57019e93ca1d667d59f	Merge remote-tracking branch 'origin/dev'
+2025-11-14T08:25:14Z	444c110d8d4ffbadda05c62fb607df9d3c293018	https://github.com/kkambbaki/frontend/commit/444c110d8d4ffbadda05c62fb607df9d3c293018	Merge pull request #80 from kkambbaki/fix/favicon-500-error fix: next.js 기본 favicon과 중첩되어 발생하는 오류 수정
+2025-11-14T08:25:04Z	fe931e2a7e67d8dda113a62de54a118e4c04f28b	https://github.com/kkambbaki/frontend/commit/fe931e2a7e67d8dda113a62de54a118e4c04f28b	Merge pull request #74 from kkambbaki/fix/report-email-duplicate-click fix: 중복 클릭 방지
+2025-11-14T08:22:38Z	e6827c9182c8c7cfa07e7ef4f98675599686e194	https://github.com/kkambbaki/frontend/commit/e6827c9182c8c7cfa07e7ef4f98675599686e194	fix: next.js 기본 favicon과 중첩되어 발생하는 오류 수정
+2025-11-13T18:29:54Z	3a79625a1d2156dc6e65154a641131096449d119	https://github.com/kkambbaki/frontend/commit/3a79625a1d2156dc6e65154a641131096449d119	fix: 중복 클릭 방지
+2025-11-13T10:33:00Z	323e74c4493447791a78bb4718351ebcb25b3f72	https://github.com/kkambbaki/frontend/commit/323e74c4493447791a78bb4718351ebcb25b3f72	fix: gemini 코드 리뷰 반영
+2025-11-13T10:21:06Z	46541540a2138b04347c6b2c3ee32af2764594b9	https://github.com/kkambbaki/frontend/commit/46541540a2138b04347c6b2c3ee32af2764594b9	fix: package-lock에 zustand 누락된 내용 추가
+2025-11-13T10:20:32Z	06e596ac098c7166f97e13ef6a2312539669499d	https://github.com/kkambbaki/frontend/commit/06e596ac098c7166f97e13ef6a2312539669499d	feat: site title, description 추가
+2025-11-13T10:20:19Z	e9fb59c9cf1b259677dffc646dab4af5e5f2c18b	https://github.com/kkambbaki/frontend/commit/e9fb59c9cf1b259677dffc646dab4af5e5f2c18b	feat: favicon 설정 추가

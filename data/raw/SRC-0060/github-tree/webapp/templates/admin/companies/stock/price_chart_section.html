@@ -1,0 +1,317 @@
+{% load i18n stock_tags %}
+
+<div style="width: 100%;">
+  {% if instance.recent_prices %}
+    <div style="margin-bottom: 30px;">
+      <!-- 주가 차트 -->
+      <div style="margin-bottom: 20px; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; background-color: #ffffff;">
+        <h3 style="margin-top: 0; margin-bottom: 20px; color: #333; font-size: 18px;">
+          {% trans "종가 추이" %} ({% trans "최근 90일" %})
+        </h3>
+
+        <canvas id="stock-price-chart-{{ instance.id }}" style="max-height: 400px;"></canvas>
+
+        <script>
+          (function() {
+            const ctx = document.getElementById('stock-price-chart-{{ instance.id }}');
+            if (ctx && typeof Chart !== 'undefined') {
+              const prices = [{% for price in instance.recent_prices %}{{ price.close_price }}{% if not forloop.last %}, {% endif %}{% endfor %}];
+              const labels = [{% for price in instance.recent_prices %}'{{ price.trade_date|date:"Y-m-d" }}'{% if not forloop.last %}, {% endif %}{% endfor %}];
+              const volumes = [{% for price in instance.recent_prices %}{{ price.volume }}{% if not forloop.last %}, {% endif %}{% endfor %}];
+              const highPrices = [{% for price in instance.recent_prices %}{{ price.high_price }}{% if not forloop.last %}, {% endif %}{% endfor %}];
+              const lowPrices = [{% for price in instance.recent_prices %}{{ price.low_price }}{% if not forloop.last %}, {% endif %}{% endfor %}];
+
+              new Chart(ctx, {
+                type: 'line',
+                data: {
+                  labels: labels,
+                  datasets: [
+                    {
+                      label: '{% trans "종가" %}',
+                      data: prices,
+                      borderColor: '#417690',
+                      backgroundColor: 'rgba(65, 118, 144, 0.1)',
+                      tension: 0.3,
+                      fill: true,
+                      pointRadius: 3,
+                      pointHoverRadius: 6,
+                      pointBackgroundColor: '#417690',
+                      pointBorderColor: '#fff',
+                      pointBorderWidth: 2,
+                      yAxisID: 'y'
+                    },
+                    {
+                      label: '{% trans "고가" %}',
+                      data: highPrices,
+                      borderColor: '#d32f2f',
+                      backgroundColor: 'rgba(211, 47, 47, 0.05)',
+                      tension: 0.3,
+                      fill: false,
+                      pointRadius: 0,
+                      pointHoverRadius: 4,
+                      borderDash: [5, 5],
+                      yAxisID: 'y'
+                    },
+                    {
+                      label: '{% trans "저가" %}',
+                      data: lowPrices,
+                      borderColor: '#1976d2',
+                      backgroundColor: 'rgba(25, 118, 210, 0.05)',
+                      tension: 0.3,
+                      fill: false,
+                      pointRadius: 0,
+                      pointHoverRadius: 4,
+                      borderDash: [5, 5],
+                      yAxisID: 'y'
+                    }
+                  ]
+                },
+                options: {
+                  responsive: true,
+                  maintainAspectRatio: true,
+                  aspectRatio: 2.5,
+                  interaction: {
+                    mode: 'index',
+                    intersect: false,
+                  },
+                  plugins: {
+                    legend: {
+                      display: true,
+                      position: 'top',
+                      labels: {
+                        usePointStyle: true,
+                        padding: 15,
+                        font: {
+                          size: 12
+                        }
+                      }
+                    },
+                    tooltip: {
+                      mode: 'index',
+                      intersect: false,
+                      backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                      padding: 12,
+                      titleFont: {
+                        size: 13,
+                        weight: 'bold'
+                      },
+                      bodyFont: {
+                        size: 12
+                      },
+                      callbacks: {
+                        label: function(context) {
+                          const label = context.dataset.label || '';
+                          const value = context.parsed.y.toLocaleString('ko-KR');
+                          return label + ': ' + value + ' {{ instance.currency }}';
+                        }
+                      }
+                    }
+                  },
+                  scales: {
+                    y: {
+                      type: 'linear',
+                      display: true,
+                      position: 'left',
+                      beginAtZero: false,
+                      title: {
+                        display: true,
+                        text: '{% trans "가격" %} ({{ instance.currency }})',
+                        font: {
+                          size: 12,
+                          weight: 'bold'
+                        }
+                      },
+                      ticks: {
+                        callback: function(value) {
+                          return value.toLocaleString('ko-KR');
+                        }
+                      },
+                      grid: {
+                        color: 'rgba(0, 0, 0, 0.05)'
+                      }
+                    },
+                    x: {
+                      grid: {
+                        display: false
+                      },
+                      ticks: {
+                        maxRotation: 45,
+                        minRotation: 45,
+                        autoSkip: true,
+                        maxTicksLimit: 15
+                      }
+                    }
+                  }
+                }
+              });
+            }
+          })();
+        </script>
+      </div>
+
+      <!-- 거래량 차트 -->
+      <div style="margin-bottom: 20px; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; background-color: #ffffff;">
+        <h3 style="margin-top: 0; margin-bottom: 20px; color: #333; font-size: 18px;">
+          {% trans "거래량 추이" %} ({% trans "최근 90일" %})
+        </h3>
+
+        <canvas id="stock-volume-chart-{{ instance.id }}" style="max-height: 300px;"></canvas>
+
+        <script>
+          (function() {
+            const ctx = document.getElementById('stock-volume-chart-{{ instance.id }}');
+            if (ctx && typeof Chart !== 'undefined') {
+              const volumes = [{% for price in instance.recent_prices %}{{ price.volume }}{% if not forloop.last %}, {% endif %}{% endfor %}];
+              const labels = [{% for price in instance.recent_prices %}'{{ price.trade_date|date:"Y-m-d" }}'{% if not forloop.last %}, {% endif %}{% endfor %}];
+              const changeRates = [{% for price in instance.recent_prices %}{{ price.change_rate }}{% if not forloop.last %}, {% endif %}{% endfor %}];
+
+              // 등락률에 따라 색상 변경
+              const backgroundColors = changeRates.map(rate =>
+                rate >= 0 ? 'rgba(211, 47, 47, 0.6)' : 'rgba(25, 118, 210, 0.6)'
+              );
+              const borderColors = changeRates.map(rate =>
+                rate >= 0 ? '#d32f2f' : '#1976d2'
+              );
+
+              new Chart(ctx, {
+                type: 'bar',
+                data: {
+                  labels: labels,
+                  datasets: [{
+                    label: '{% trans "거래량" %}',
+                    data: volumes,
+                    backgroundColor: backgroundColors,
+                    borderColor: borderColors,
+                    borderWidth: 1
+                  }]
+                },
+                options: {
+                  responsive: true,
+                  maintainAspectRatio: true,
+                  aspectRatio: 3,
+                  plugins: {
+                    legend: {
+                      display: false
+                    },
+                    tooltip: {
+                      mode: 'index',
+                      intersect: false,
+                      backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                      padding: 12,
+                      callbacks: {
+                        label: function(context) {
+                          const value = context.parsed.y.toLocaleString('ko-KR');
+                          const changeRate = changeRates[context.dataIndex];
+                          return '{% trans "거래량" %}: ' + value + ' ({% trans "등락률" %}: ' + changeRate.toFixed(2) + '%)';
+                        }
+                      }
+                    }
+                  },
+                  scales: {
+                    y: {
+                      beginAtZero: true,
+                      title: {
+                        display: true,
+                        text: '{% trans "거래량" %}',
+                        font: {
+                          size: 12,
+                          weight: 'bold'
+                        }
+                      },
+                      ticks: {
+                        callback: function(value) {
+                          if (value >= 1000000) {
+                            return (value / 1000000).toFixed(1) + 'M';
+                          } else if (value >= 1000) {
+                            return (value / 1000).toFixed(1) + 'K';
+                          }
+                          return value.toLocaleString('ko-KR');
+                        }
+                      },
+                      grid: {
+                        color: 'rgba(0, 0, 0, 0.05)'
+                      }
+                    },
+                    x: {
+                      grid: {
+                        display: false
+                      },
+                      ticks: {
+                        maxRotation: 45,
+                        minRotation: 45,
+                        autoSkip: true,
+                        maxTicksLimit: 15
+                      }
+                    }
+                  }
+                }
+              });
+            }
+          })();
+        </script>
+      </div>
+
+      <!-- 통계 정보 -->
+      {% with latest=instance.recent_prices|last first=instance.recent_prices|first %}
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
+        <div style="padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; background-color: #f8f9fa;">
+          <div style="font-size: 12px; color: #666; margin-bottom: 5px;">{% trans "최근 종가" %}</div>
+          <div style="font-size: 20px; font-weight: bold; color: #333;">
+            {{ latest.close_price|floatformat:0 }} {{ instance.currency }}
+          </div>
+        </div>
+
+        <div style="padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; background-color: #f8f9fa;">
+          <div style="font-size: 12px; color: #666; margin-bottom: 5px;">{% trans "전일대비" %}</div>
+          <div style="font-size: 20px; font-weight: bold; color: {% if latest.change_rate >= 0 %}#d32f2f{% else %}#1976d2{% endif %};">
+            {{ latest.diff|floatformat:0 }} ({{ latest.change_rate|floatformat:2 }}%)
+          </div>
+        </div>
+
+        <div style="padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; background-color: #f8f9fa;">
+          <div style="font-size: 12px; color: #666; margin-bottom: 5px;">{% trans "90일 최고가" %}</div>
+          <div style="font-size: 20px; font-weight: bold; color: #d32f2f;">
+            {{ instance.recent_prices|max_high_price|floatformat:0 }} {{ instance.currency }}
+          </div>
+        </div>
+
+        <div style="padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; background-color: #f8f9fa;">
+          <div style="font-size: 12px; color: #666; margin-bottom: 5px;">{% trans "90일 최저가" %}</div>
+          <div style="font-size: 20px; font-weight: bold; color: #1976d2;">
+            {{ instance.recent_prices|min_low_price|floatformat:0 }} {{ instance.currency }}
+          </div>
+        </div>
+
+        <div style="padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; background-color: #f8f9fa;">
+          <div style="font-size: 12px; color: #666; margin-bottom: 5px;">{% trans "최근 시가총액" %}</div>
+          <div style="font-size: 20px; font-weight: bold; color: #333;">
+            {% if latest.market_cap >= 1000000000000 %}
+              {{ latest.market_cap|floatformat:0|slice:"-12" }}조
+            {% elif latest.market_cap >= 100000000 %}
+              {{ latest.market_cap|floatformat:0|slice:"-8" }}억
+            {% else %}
+              {{ latest.market_cap|floatformat:0 }}
+            {% endif %}
+          </div>
+        </div>
+
+        <div style="padding: 15px; border: 1px solid #e0e0e0; border-radius: 8px; background-color: #f8f9fa;">
+          <div style="font-size: 12px; color: #666; margin-bottom: 5px;">{% trans "최근 거래량" %}</div>
+          <div style="font-size: 20px; font-weight: bold; color: #333;">
+            {{ latest.volume|floatformat:0 }}
+          </div>
+        </div>
+      </div>
+      {% endwith %}
+    </div>
+  {% else %}
+    <div style="padding: 40px; text-align: center; border: 1px solid #e0e0e0; border-radius: 8px; background-color: #f8f9fa;">
+      <p style="color: #666; font-size: 16px; margin: 0;">
+        {% trans "최근 90일 동안의 주가 데이터가 없습니다." %}
+      </p>
+    </div>
+  {% endif %}
+</div>
+
+<!-- Chart.js 라이브러리 -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>

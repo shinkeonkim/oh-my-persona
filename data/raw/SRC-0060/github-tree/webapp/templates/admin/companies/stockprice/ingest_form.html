@@ -1,0 +1,228 @@
+{% extends "admin/base.html" %}
+{% load i18n unfold %}
+
+{% block breadcrumbs %}
+{% if not is_popup %}
+<div class="px-4">
+    <div class="container mb-6 mx-auto -my-3 lg:mb-12">
+        <ul class="flex flex-wrap">
+            {% url 'admin:index' as link %}
+            {% trans 'Home' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with link=link name=name %}
+
+            {% url 'admin:stocks_stockprice_changelist' as link %}
+            {% trans 'Stock prices' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with link=link name=name %}
+
+            {% trans 'Stock Price Data Ingest' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with name=name %}
+        </ul>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="px-4">
+    <div class="container mx-auto">
+        <div class="main-card bg-white dark:bg-gray-900 shadow-lg rounded-lg p-6 border border-gray-200 dark:border-gray-700">
+            <h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">{{ title }}</h2>
+
+            <div class="mb-6">
+                <p class="text-gray-700 dark:text-gray-300 mb-2">
+                    KRX API를 통해 주식 가격 데이터를 수집합니다.
+                </p>
+            </div>
+
+            <form method="post" class="space-y-6">
+                {% csrf_token %}
+
+                {% if form.non_field_errors %}
+                <div class="bg-red-50 dark:bg-red-900/30 border border-red-400 dark:border-red-500 text-red-700 dark:text-red-300 px-4 py-3 rounded mb-4">
+                    {{ form.non_field_errors }}
+                </div>
+                {% endif %}
+
+                <div class="space-y-5">
+                    <!-- Ingest Type -->
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-3">
+                            {{ form.ingest_type.label }}
+                        </label>
+                        <div class="space-y-2">
+                            {% for radio in form.ingest_type %}
+                            <div class="flex items-center">
+                                {{ radio.tag }}
+                                <label for="{{ radio.id_for_label }}" class="ml-2 text-sm text-gray-700 dark:text-gray-300 cursor-pointer">
+                                    {{ radio.choice_label }}
+                                </label>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        {% if form.ingest_type.errors %}
+                        <p class="mt-2 text-sm text-red-600 dark:text-red-400">{{ form.ingest_type.errors }}</p>
+                        {% endif %}
+                    </div>
+
+                    <!-- Trade Date (for single date) -->
+                    <div id="single-date-field">
+                        <label for="{{ form.trade_date.id_for_label }}" class="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                            {{ form.trade_date.label }}
+                        </label>
+                        {{ form.trade_date }}
+                        {% if form.trade_date.help_text %}
+                        <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ form.trade_date.help_text }}</p>
+                        {% endif %}
+                        {% if form.trade_date.errors %}
+                        <p class="mt-2 text-sm text-red-600 dark:text-red-400">{{ form.trade_date.errors }}</p>
+                        {% endif %}
+                    </div>
+
+                    <!-- Date Range Fields -->
+                    <div id="date-range-fields" class="hidden p-4 bg-blue-50 dark:bg-gray-800 rounded-lg border border-blue-200 dark:border-gray-600 space-y-4">
+                        <div>
+                            <label for="{{ form.start_date.id_for_label }}" class="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                                {{ form.start_date.label }}
+                            </label>
+                            {{ form.start_date }}
+                            {% if form.start_date.help_text %}
+                            <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ form.start_date.help_text }}</p>
+                            {% endif %}
+                            {% if form.start_date.errors %}
+                            <p class="mt-2 text-sm text-red-600 dark:text-red-400">{{ form.start_date.errors }}</p>
+                            {% endif %}
+                        </div>
+
+                        <div>
+                            <label for="{{ form.end_date.id_for_label }}" class="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                                {{ form.end_date.label }}
+                            </label>
+                            {{ form.end_date }}
+                            {% if form.end_date.help_text %}
+                            <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ form.end_date.help_text }}</p>
+                            {% endif %}
+                            {% if form.end_date.errors %}
+                            <p class="mt-2 text-sm text-red-600 dark:text-red-400">{{ form.end_date.errors }}</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 pt-6 border-t border-gray-200 dark:border-gray-700">
+                    <button type="submit" name="apply" class="bg-primary-600 hover:bg-primary-700 dark:bg-primary-600 dark:hover:bg-primary-700 text-white font-semibold py-2.5 px-6 rounded-lg shadow-sm transition-colors">
+                        수집 시작
+                    </button>
+                    <a href="{% url 'admin:stocks_stockprice_changelist' %}"
+                       class="bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-semibold py-2.5 px-6 rounded-lg transition-colors">
+                        취소
+                    </a>
+                </div>
+            </form>
+
+            <div class="reference-section mt-8 p-5 bg-blue-50 dark:bg-gray-800 rounded-lg border border-blue-200 dark:border-gray-600">
+                <h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white">참고사항</h3>
+                <ul class="list-disc list-inside space-y-3 text-sm text-gray-800 dark:text-gray-200">
+                    <li><strong>단일 날짜 수집:</strong> 특정 거래일의 주식 가격 데이터를 수집합니다.</li>
+                    <li><strong>날짜 범위 수집:</strong> 지정한 기간의 모든 거래일 데이터를 순차적으로 수집합니다.</li>
+                    <li>KRX API에서 제공하는 시가, 고가, 저가, 종가, 거래량 등의 데이터를 수집합니다.</li>
+                    <li>기존 데이터가 있는 경우 업데이트됩니다.</li>
+                    <li>수집 작업은 백그라운드에서 실행되며, Task ID로 진행 상황을 확인할 수 있습니다.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* 기본 폼 필드 스타일 (라이트 모드) */
+.main-card input[type="date"],
+.main-card input[type="text"],
+.main-card input[type="radio"],
+.main-card select {
+    padding: 0.625rem 0.875rem;
+    border: 2px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    transition: all 0.15s ease-in-out;
+    background-color: white;
+    color: #111827;
+}
+
+.main-card input[type="date"],
+.main-card input[type="text"],
+.main-card select {
+    width: 100%;
+}
+
+.main-card input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+/* 다크모드 스타일 */
+.dark .main-card input[type="date"],
+.dark .main-card input[type="text"],
+.dark .main-card input[type="radio"],
+.dark .main-card select {
+    background-color: #1f2937;
+    border-color: #6b7280;
+    color: #f3f4f6;
+}
+
+.dark .main-card input[type="date"]:hover,
+.dark .main-card input[type="text"]:hover,
+.dark .main-card select:hover {
+    border-color: #9ca3af;
+}
+
+.dark .main-card input[type="date"]:focus,
+.dark .main-card input[type="text"]:focus,
+.dark .main-card select:focus,
+.dark .main-card input[type="radio"]:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.dark .main-card {
+  background-color: #111827;
+}
+
+.dark .reference-section {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+
+.dark #date-range-fields {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const ingestTypeRadios = document.querySelectorAll('input[name="ingest_type"]');
+    const dateRangeFields = document.getElementById('date-range-fields');
+    const singleDateField = document.getElementById('single-date-field');
+
+    function updateFieldsVisibility() {
+        const selectedType = document.querySelector('input[name="ingest_type"]:checked')?.value;
+        if (selectedType === 'range') {
+            dateRangeFields.classList.remove('hidden');
+            singleDateField.classList.add('hidden');
+        } else {
+            dateRangeFields.classList.add('hidden');
+            singleDateField.classList.remove('hidden');
+        }
+    }
+
+    ingestTypeRadios.forEach(radio => {
+        radio.addEventListener('change', updateFieldsVisibility);
+    });
+
+    // 초기 상태 설정
+    updateFieldsVisibility();
+});
+</script>
+{% endblock %}

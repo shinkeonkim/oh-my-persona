@@ -1,0 +1,5 @@
+GitHub repository: https://github.com/kokoa-lab/dice-art
+Pull request author: shinkeonkim
+
+2026-08-28T07:01:42Z	#2	MERGED	https://github.com/kokoa-lab/dice-art/pull/2	chore(ads): add ads.txt	merged=2026-08-28T07:55:04Z	closed=2026-08-28T07:55:04Z	commits=1	files=1	+1/-0	project-lens가 자동 생성한 PR입니다. - public/ads.txt를 추가했습니다. - AdSense 게시자: ca-pub-3060818993817836
+2026-08-27T05:05:13Z	#1	MERGED	https://github.com/kokoa-lab/dice-art/pull/1	chore(tracking): GTM 스니펫 추가 (GTM-MFLG64TQ)	merged=2026-08-27T16:48:15Z	closed=2026-08-27T16:48:15Z	commits=1	files=1	+13/-0	project-lens가 자동 생성한 PR입니다. - index.html에 GTM(GTM-MFLG64TQ) 스니펫을 삽입했습니다. - GTM 컨테이너: GTM-MFLG64TQ

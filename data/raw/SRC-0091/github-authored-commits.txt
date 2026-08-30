@@ -1,0 +1,18 @@
+GitHub repository: https://github.com/kmu-shinkeonkim/smart-network-service-ad-project
+Author account: shinkeonkim
+
+2025-12-09T06:57:32Z	bb9de4debb4e0be8d019122e415870fba0b77dd6	https://github.com/kmu-shinkeonkim/smart-network-service-ad-project/commit/bb9de4debb4e0be8d019122e415870fba0b77dd6	docs: README.md 에 대해서 PDF로 변환 (제출용)
+2025-12-09T06:55:31Z	1fc18e699fcedf97bd6d56e03d9cc5acbc0f3d3c	https://github.com/kmu-shinkeonkim/smart-network-service-ad-project/commit/1fc18e699fcedf97bd6d56e03d9cc5acbc0f3d3c	fix: 화질 개선
+2025-12-09T06:53:26Z	7a30eecea7cf3b545fb99b293b859fd3ed87b9a2	https://github.com/kmu-shinkeonkim/smart-network-service-ad-project/commit/7a30eecea7cf3b545fb99b293b859fd3ed87b9a2	docs: README.md + slides
+2025-12-09T04:37:12Z	d2a12ba9681f4c5c47787de65060588d73133835	https://github.com/kmu-shinkeonkim/smart-network-service-ad-project/commit/d2a12ba9681f4c5c47787de65060588d73133835	refactor comment
+2025-12-09T04:36:48Z	0afe01e4dd665366a133192f60dfa5367e78a652	https://github.com/kmu-shinkeonkim/smart-network-service-ad-project/commit/0afe01e4dd665366a133192f60dfa5367e78a652	refactor
+2025-12-09T04:27:50Z	76219c8eecb5646d1b4d73570372c7b4b3b33939	https://github.com/kmu-shinkeonkim/smart-network-service-ad-project/commit/76219c8eecb5646d1b4d73570372c7b4b3b33939	refactor
+2025-12-08T11:31:58Z	4a4831d086f461358edd90f862440fe3f794596a	https://github.com/kmu-shinkeonkim/smart-network-service-ad-project/commit/4a4831d086f461358edd90f862440fe3f794596a	refactor
+2025-12-07T07:56:46Z	26620c0cdd5b1c089e422fc0cc2d5e8af4f743a7	https://github.com/kmu-shinkeonkim/smart-network-service-ad-project/commit/26620c0cdd5b1c089e422fc0cc2d5e8af4f743a7	refactor
+2025-11-24T15:25:33Z	1e5f58f07fd8982145414a5b2ade7c5dd4c66b66	https://github.com/kmu-shinkeonkim/smart-network-service-ad-project/commit/1e5f58f07fd8982145414a5b2ade7c5dd4c66b66	refactor: tab 분리
+2025-11-24T14:33:12Z	44fd8253fb65bbf4c74caddcbea7a26f961b15fe	https://github.com/kmu-shinkeonkim/smart-network-service-ad-project/commit/44fd8253fb65bbf4c74caddcbea7a26f961b15fe	feat: 프로젝트 초기 세팅
+2025-11-24T14:28:16Z	6475bae811979f91a458cc2c0e8b9cecc81045cc	https://github.com/kmu-shinkeonkim/smart-network-service-ad-project/commit/6475bae811979f91a458cc2c0e8b9cecc81045cc	feat: mininet & ryu controller를 위한 ubuntu 컨테이너 추가
+2025-11-24T14:27:35Z	fd96d568c3d687e485e166ef2d9c76748277cd33	https://github.com/kmu-shinkeonkim/smart-network-service-ad-project/commit/fd96d568c3d687e485e166ef2d9c76748277cd33	fix: python pip package
+2025-11-24T14:22:33Z	fc1ce074831ddf367478a2bc176c996d537046e6	https://github.com/kmu-shinkeonkim/smart-network-service-ad-project/commit/fc1ce074831ddf367478a2bc176c996d537046e6	docs: 과제 내용
+2025-11-20T15:04:51Z	afb1333cedbbc6329b52ee2fbad460fbfffccfca	https://github.com/kmu-shinkeonkim/smart-network-service-ad-project/commit/afb1333cedbbc6329b52ee2fbad460fbfffccfca	main.py
+2025-11-20T06:44:26Z	599b5fa1a78285afd1c27de76f6073da03ecbb06	https://github.com/kmu-shinkeonkim/smart-network-service-ad-project/commit/599b5fa1a78285afd1c27de76f6073da03ecbb06	feat: 프로젝트 초기 스켈레톤 세팅

@@ -1,0 +1,8 @@
+GitHub repository: https://github.com/kokoa-study-room/db-connection-study-page
+Author account: shinkeonkim
+
+2026-06-11T15:05:25Z	51fa13aa15d572cf427d5118d43f73ba3a925e89	https://github.com/kokoa-study-room/db-connection-study-page/commit/51fa13aa15d572cf427d5118d43f73ba3a925e89	Delete CNAME
+2026-06-11T14:56:17Z	416395ad508214c953df4dce9f67a379570f1ba8	https://github.com/kokoa-study-room/db-connection-study-page/commit/416395ad508214c953df4dce9f67a379570f1ba8	Create CNAME
+2026-06-11T14:44:34Z	c1497a192979b5b4ce68ad7f19d69df82cc62e4c	https://github.com/kokoa-study-room/db-connection-study-page/commit/c1497a192979b5b4ce68ad7f19d69df82cc62e4c	Delete CNAME
+2026-06-11T14:44:14Z	41c76a1b365ef029bea63e3af24a17be2e9ca1bd	https://github.com/kokoa-study-room/db-connection-study-page/commit/41c76a1b365ef029bea63e3af24a17be2e9ca1bd	Create CNAME
+2026-06-11T14:34:45Z	a651c0d98b5e29185175ce72d615d3c29611fde7	https://github.com/kokoa-study-room/db-connection-study-page/commit/a651c0d98b5e29185175ce72d615d3c29611fde7	AI 생성 문서 파일 추가

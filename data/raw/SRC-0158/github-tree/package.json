@@ -1,0 +1,38 @@
+{
+  "name": "@aws-study/root",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "bun@1.3.14",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "bun --env-file=.env.example --env-file=.env run --parallel --filter './apps/*' dev",
+    "build": "bun run --sequential --workspaces build",
+    "typecheck": "bun run --parallel --workspaces typecheck && bun run typecheck:e2e",
+    "typecheck:e2e": "tsc --noEmit -p apps/web/e2e/tsconfig.json",
+    "lint": "biome check .",
+    "format": "biome check --write .",
+    "test": "bun test --recursive",
+    "check:size": "bun run scripts/check-file-size.ts",
+    "check": "bun run check:size && bun run lint && bun run typecheck && bun run test",
+    "db:generate": "bun --filter '@aws-study/db' generate",
+    "db:migrate": "bun --filter '@aws-study/db' migrate",
+    "content:build": "bun --filter '@aws-study/content' build:content",
+    "content:audit": "bun --filter '@aws-study/content' audit",
+    "create-admin": "bun --filter '@aws-study/api' create-admin",
+    "e2e": "bunx playwright test",
+    "e2e:install": "bunx playwright install chromium"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.6",
+    "@playwright/test": "1.62.1",
+    "@types/bun": "1.3.14",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "bun": ">=1.3.14"
+  }
+}

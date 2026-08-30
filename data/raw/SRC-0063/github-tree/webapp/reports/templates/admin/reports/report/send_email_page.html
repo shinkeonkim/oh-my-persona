@@ -1,0 +1,146 @@
+{% extends "admin/base.html" %}
+{% load admin_urls i18n unfold %}
+
+{% block breadcrumbs %}
+{% if not is_popup %}
+<div class="px-4">
+    <div class="container mb-6 mx-auto -my-3 lg:mb-12">
+        <ul class="flex flex-wrap">
+            {% url 'admin:index' as link %}
+            {% trans 'Home' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with link=link name=name %}
+
+            {% url 'admin:reports_report_changelist' as link %}
+            {% trans '레포트' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with link=link name=name %}
+
+            {% url 'admin:reports_report_change' report.pk as link %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with link=link name=report %}
+
+            {% trans '이메일 전송' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with name=name %}
+        </ul>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="px-4">
+    <div class="container mx-auto">
+        <div class="main-card bg-white dark:bg-gray-900 shadow-lg rounded-lg p-6 border border-gray-200 dark:border-gray-700">
+            <h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">레포트 이메일 전송</h2>
+
+            <div class="mb-6">
+                <p class="text-gray-700 dark:text-gray-300 mb-2">
+                    선택한 레포트를 PDF로 생성하여 지정된 이메일로 전송합니다.
+                </p>
+            </div>
+
+            <!-- 레포트 정보 섹션 -->
+            <div class="info-section mb-6 p-5 bg-blue-50 dark:bg-gray-800 rounded-lg border border-blue-200 dark:border-gray-600">
+                <h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white">레포트 정보</h3>
+                <div class="space-y-2 text-sm text-gray-800 dark:text-gray-200">
+                    <p><strong class="font-semibold text-gray-900 dark:text-white">사용자:</strong> {{ report.user.username }} ({{ report.user.email }})</p>
+                    <p><strong class="font-semibold text-gray-900 dark:text-white">아동:</strong> {{ report.child.name }}</p>
+                    <p><strong class="font-semibold text-gray-900 dark:text-white">집중력 점수:</strong> {{ report.concentration_score }}%</p>
+                </div>
+            </div>
+
+            <form method="post" class="space-y-6">
+                {% csrf_token %}
+
+                {% if form.non_field_errors %}
+                <div class="bg-red-50 dark:bg-red-900/30 border border-red-400 dark:border-red-500 text-red-700 dark:text-red-300 px-4 py-3 rounded mb-4">
+                    {{ form.non_field_errors }}
+                </div>
+                {% endif %}
+
+                <div class="space-y-5">
+                    {% for field in form %}
+                    <div>
+                        <label for="{{ field.id_for_label }}" class="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                            {{ field.label }}
+                        </label>
+                        {{ field }}
+                        {% if field.help_text %}
+                        <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ field.help_text }}</p>
+                        {% endif %}
+                        {% if field.errors %}
+                        <p class="mt-2 text-sm text-red-600 dark:text-red-400">{{ field.errors }}</p>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                </div>
+
+                <div class="flex items-center space-x-4 pt-6 border-t border-gray-200 dark:border-gray-700">
+                    <button type="submit" class="bg-primary-600 hover:bg-primary-700 dark:bg-primary-600 dark:hover:bg-primary-700 text-white font-semibold py-2.5 px-6 rounded-lg shadow-sm transition-colors">
+                        이메일 전송
+                    </button>
+                    <a href="{% url 'admin:reports_report_change' report.pk %}"
+                       class="bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-semibold py-2.5 px-6 rounded-lg transition-colors">
+                        취소
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+/* 기본 폼 필드 스타일 (라이트 모드) */
+.main-card input[type="email"],
+.main-card input[type="text"] {
+    width: 100%;
+    padding: 0.625rem 0.875rem;
+    border: 2px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    transition: all 0.15s ease-in-out;
+    background-color: white;
+    color: #111827;
+}
+
+.main-card input[type="email"]:hover,
+.main-card input[type="text"]:hover {
+    border-color: #9ca3af;
+}
+
+.main-card input[type="email"]:focus,
+.main-card input[type="text"]:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* 다크모드 스타일 */
+.dark .main-card input[type="email"],
+.dark .main-card input[type="text"] {
+    background-color: #1f2937;
+    border-color: #6b7280;
+    color: #f3f4f6;
+}
+
+.dark .main-card input[type="email"]:hover,
+.dark .main-card input[type="text"]:hover {
+    border-color: #9ca3af;
+}
+
+.dark .main-card input[type="email"]:focus,
+.dark .main-card input[type="text"]:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.dark .main-card {
+    background-color: #111827;
+}
+
+.dark .info-section {
+    background-color: #1f2937;
+    border-color: #374151;
+}
+</style>
+{% endblock %}

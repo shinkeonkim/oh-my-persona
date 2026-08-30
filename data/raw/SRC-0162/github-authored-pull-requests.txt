@@ -1,0 +1,5 @@
+GitHub repository: https://github.com/kokoa-study-room/compiler-study-site
+Pull request author: shinkeonkim
+
+2026-08-28T07:04:51Z	#2	MERGED	https://github.com/kokoa-study-room/compiler-study-site/pull/2	chore(ads): add ads.txt	merged=2026-08-28T07:50:30Z	closed=2026-08-28T07:50:30Z	commits=1	files=1	+1/-0	project-lens가 자동 생성한 PR입니다. - site/static/ads.txt를 추가했습니다. - AdSense 게시자: ca-pub-3060818993817836
+2026-08-27T05:08:39Z	#1	MERGED	https://github.com/kokoa-study-room/compiler-study-site/pull/1	chore(tracking): GTM 스니펫 추가 (GTM-KF7296CH)	merged=2026-08-27T08:47:32Z	closed=2026-08-27T08:47:32Z	commits=1	files=1	+3/-0	project-lens가 자동 생성한 PR입니다. - site/docusaurus.config.ts에 Docusaurus googleTagManager(GTM-KF7296CH) 설정을 추가했습니다. - GTM 컨테이너: GTM-KF7296CH

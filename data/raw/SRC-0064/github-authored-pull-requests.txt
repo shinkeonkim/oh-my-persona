@@ -1,0 +1,6 @@
+GitHub repository: https://github.com/kkambbaki/frontend
+Pull request author: shinkeonkim
+
+2025-11-14T08:23:18Z	#80	MERGED	https://github.com/kkambbaki/frontend/pull/80	fix: next.js 기본 favicon과 중첩되어 발생하는 오류 수정	merged=2025-11-14T08:25:14Z	closed=2025-11-14T08:25:14Z	commits=1	files=2	+0/-0	## 🧩 관련 이슈 ## ✨ 구현 내용 - favicon 500 오류 수정 ## 📸 스크린샷 > ## 🧠 기타 참고 사항 -
+2025-11-13T18:31:07Z	#74	MERGED	https://github.com/kkambbaki/frontend/pull/74	fix: 중복 클릭 방지	merged=2025-11-14T08:25:04Z	closed=2025-11-14T08:25:04Z	commits=1	files=1	+2/-0	## 🧩 관련 이슈 ## ✨ 구현 내용 - 레포트 이메일 전송 버튼이 여러 번 눌리면서, 중복 이메일이 발송됩니다. ## 📸 스크린샷 > before / after 비교가 있으면 같이 첨부해주세요 ## 🧠 기타 참고 사항 - 코드 리뷰어가 알아야 할 내용이 있다면 추가해주세요.
+2025-11-13T10:25:48Z	#57	MERGED	https://github.com/kkambbaki/frontend/pull/57	Favicon 추가 / site title, description 추가 / package-lock 누락 문제 수정	merged=2025-11-13T11:48:05Z	closed=2025-11-13T11:48:05Z	commits=4	files=9	+61/-3	## 🧩 관련 이슈 #56 ## ✨ 구현 내용 - Favicon 추가 - site title, description 추가 _ package-lock 누락 문제 수정 ## 📸 스크린샷 > <img width="183" height="42" alt="image" src="https://github.com/user-attachments/assets/ff8928c4-493f-4d29-99b0-3ee233116e39" /> ## 🧠 기타 참고 사항 -

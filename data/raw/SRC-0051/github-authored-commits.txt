@@ -1,0 +1,11 @@
+GitHub repository: https://github.com/shinkeonkim/1day1commit
+Author account: shinkeonkim
+
+2020-04-30T14:53:09Z	4705853fa7d7c78384a216ce02efad52ade88a12	https://github.com/shinkeonkim/1day1commit/commit/4705853fa7d7c78384a216ce02efad52ade88a12	solve security issue
+2020-04-29T11:48:14Z	fa223a459f3d73ac54e8d1f8bee0a8a9f07c92af	https://github.com/shinkeonkim/1day1commit/commit/fa223a459f3d73ac54e8d1f8bee0a8a9f07c92af	Update README.md
+2020-04-29T07:22:49Z	fa2bc8110f6c08129b281db98b3de160fa5067d6	https://github.com/shinkeonkim/1day1commit/commit/fa2bc8110f6c08129b281db98b3de160fa5067d6	1day1commit react native app: ios version init
+2020-01-28T04:15:34Z	0c955a555779df456c5588263632ff6a973d73f8	https://github.com/shinkeonkim/1day1commit/commit/0c955a555779df456c5588263632ff6a973d73f8	app.js init
+2020-01-28T02:50:28Z	bb9c29761b32ad1e552786da39f3f95591e80f40	https://github.com/shinkeonkim/1day1commit/commit/bb9c29761b32ad1e552786da39f3f95591e80f40	node_server init
+2019-12-24T00:18:04Z	3b494c38687bc673b8c7c24c9c6b0e8587f9e4bb	https://github.com/shinkeonkim/1day1commit/commit/3b494c38687bc673b8c7c24c9c6b0e8587f9e4bb	README.md 수정
+2019-12-23T23:55:04Z	b767c648a3585d0573fda676410e8595fc29fcc0	https://github.com/shinkeonkim/1day1commit/commit/b767c648a3585d0573fda676410e8595fc29fcc0	README.md 수정
+2019-12-23T23:48:09Z	cefe9bf6676284442c7072decf9f07b3e3814c25	https://github.com/shinkeonkim/1day1commit/commit/cefe9bf6676284442c7072decf9f07b3e3814c25	git 초기화, 최근 커밋 검사 코드 완성

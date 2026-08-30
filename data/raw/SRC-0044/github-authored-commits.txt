@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/shinkeonkim/where-am-i
+Author account: shinkeonkim
+
+2021-06-13T04:56:11Z	d15c7e1ee11f31eeec452ec155c0f4bda91bc226	https://github.com/shinkeonkim/where-am-i/commit/d15c7e1ee11f31eeec452ec155c0f4bda91bc226	feat: vue3 project setting

@@ -7,6 +7,12 @@ from pathlib import Path
 from .audit import write_audit
 from .collect import collect_local_repository
 from .corpus import build_chunks, iter_corpus_files, read_jsonl, validate
+from .github_deep import (
+    collect_deep,
+    collect_priority_trees,
+    collect_public_docs,
+    collect_pull_requests,
+)
 from .github_research import discover, write_inventory
 from .ingest import approve_inbox, inspect_inbox
 from .qa import build_answers
@@ -20,7 +26,7 @@ def project_root() -> Path:
 
 def main() -> None:
     parser = argparse.ArgumentParser(prog="persona")
-    parser.add_argument("command", choices=("validate", "inventory", "chunk", "audit", "collect-local", "collect-web", "collect-github-metadata", "inspect-inbox", "ingest-inbox", "build-answers", "evaluate"))
+    parser.add_argument("command", choices=("validate", "inventory", "chunk", "audit", "collect-local", "collect-web", "collect-github-metadata", "collect-github-deep", "collect-github-prs", "collect-github-docs", "collect-github-priority", "inspect-inbox", "ingest-inbox", "build-answers", "evaluate"))
     parser.add_argument("--approve", action="store_true", help="required before copying inbox files to raw")
     parser.add_argument("--source-id")
     parser.add_argument("--repo", type=Path)
@@ -70,6 +76,22 @@ def main() -> None:
         if not args.approve:
             raise SystemExit("collect-github-metadata requires --approve")
         print(json.dumps(write_inventory(root, discover()), ensure_ascii=False))
+    elif args.command == "collect-github-deep":
+        if not args.approve:
+            raise SystemExit("collect-github-deep requires --approve")
+        print(json.dumps(collect_deep(root), ensure_ascii=False))
+    elif args.command == "collect-github-prs":
+        if not args.approve:
+            raise SystemExit("collect-github-prs requires --approve")
+        print(json.dumps(collect_pull_requests(root), ensure_ascii=False))
+    elif args.command == "collect-github-docs":
+        if not args.approve:
+            raise SystemExit("collect-github-docs requires --approve")
+        print(json.dumps(collect_public_docs(root), ensure_ascii=False))
+    elif args.command == "collect-github-priority":
+        if not args.approve:
+            raise SystemExit("collect-github-priority requires --approve")
+        print(json.dumps(collect_priority_trees(root), ensure_ascii=False))
     elif args.command in {"inspect-inbox", "ingest-inbox"}:
         if args.command == "ingest-inbox" and not args.approve:
             raise SystemExit("ingest-inbox requires --approve")

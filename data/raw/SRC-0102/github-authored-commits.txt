@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-blocklog-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:29:27Z	e2147673110a2ba30adb47ad5837b0c8526c0e1a	https://github.com/kokoa-hobby/minecraft-blocklog-plugin/commit/e2147673110a2ba30adb47ad5837b0c8526c0e1a	Add README
+2026-07-22T12:22:13Z	1bf1fa5ebf91ce9591a489e1c5fecb550a6fa0dd	https://github.com/kokoa-hobby/minecraft-blocklog-plugin/commit/1bf1fa5ebf91ce9591a489e1c5fecb550a6fa0dd	Add BlockLogPlugin main class
+2026-07-22T12:22:13Z	a273b5c914cabb44031a452dcdccdc37607d38c0	https://github.com/kokoa-hobby/minecraft-blocklog-plugin/commit/a273b5c914cabb44031a452dcdccdc37607d38c0	Add listeners
+2026-07-22T12:22:13Z	22a02f5ea3aa02d170690134075bcb0be7239dc6	https://github.com/kokoa-hobby/minecraft-blocklog-plugin/commit/22a02f5ea3aa02d170690134075bcb0be7239dc6	Add commands
+2026-07-22T12:22:13Z	9b2c3639229b3b387833efdd83e5a896dd13de7e	https://github.com/kokoa-hobby/minecraft-blocklog-plugin/commit/9b2c3639229b3b387833efdd83e5a896dd13de7e	Add plugin manifest and resources
+2026-07-22T12:22:13Z	fd4fba8f7535f7a74c6dce93bff455d0eac3b094	https://github.com/kokoa-hobby/minecraft-blocklog-plugin/commit/fd4fba8f7535f7a74c6dce93bff455d0eac3b094	Add Gradle project scaffold

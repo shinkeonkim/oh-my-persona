@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-lab/cookie-bakery
+Author account: shinkeonkim
+
+2026-08-28T07:53:51Z	956c3110b1f59a2db274aa981a596da1525ba87d	https://github.com/kokoa-lab/cookie-bakery/commit/956c3110b1f59a2db274aa981a596da1525ba87d	Merge pull request #3 from kokoa-lab/project-lens/add-ads-txt-b62f04d8 chore(ads): add ads.txt
+2026-08-28T07:53:42Z	00f4fe5e8ff8b5154ac37ed7d0b2259e5c228de1	https://github.com/kokoa-lab/cookie-bakery/commit/00f4fe5e8ff8b5154ac37ed7d0b2259e5c228de1	Merge pull request #2 from kokoa-lab/docs/add-readme docs: add README
+2026-08-28T07:00:42Z	149d8d0dd4bc9454fad62bb509d4ca42913c942e	https://github.com/kokoa-lab/cookie-bakery/commit/149d8d0dd4bc9454fad62bb509d4ca42913c942e	chore(ads): add ads.txt project-lens automated commit.
+2026-08-28T03:53:55Z	dc66fc06f36f863a19846eff38f166694218460a	https://github.com/kokoa-lab/cookie-bakery/commit/dc66fc06f36f863a19846eff38f166694218460a	Merge pull request #1 from kokoa-lab/project-lens/add-gtm-tracking-83 chore(tracking): GTM 스니펫 추가 (GTM-NPGFWV4T)
+2026-08-27T16:53:31Z	aeef70e81a5d1cd2b61cdf44fd7a1eef22a9d340	https://github.com/kokoa-lab/cookie-bakery/commit/aeef70e81a5d1cd2b61cdf44fd7a1eef22a9d340	chore(tracking): add GTM snippet (GTM-NPGFWV4T) project-lens automated commit.
+2026-03-09T06:41:57Z	a78acf532d9b4bdd51d57b7901f4c31c6f4da165	https://github.com/kokoa-lab/cookie-bakery/commit/a78acf532d9b4bdd51d57b7901f4c31c6f4da165	feat: initial project settings by lovable

@@ -1,0 +1,6 @@
+GitHub repository: https://github.com/shinkeonkim/move-it
+Author account: shinkeonkim
+
+2022-03-09T06:31:28Z	6b88c81f73f3656fb6ea152c0e676d0d9fb18497	https://github.com/shinkeonkim/move-it/commit/6b88c81f73f3656fb6ea152c0e676d0d9fb18497	docs: 간단한 소개말
+2022-03-09T06:28:56Z	9bb38681dbe08c13f52b1d618c0ccbb1120c72ef	https://github.com/shinkeonkim/move-it/commit/9bb38681dbe08c13f52b1d618c0ccbb1120c72ef	feat: Move It
+2022-03-09T04:35:36Z	90b26292feb848c02b8ce77df51f37e50034744f	https://github.com/shinkeonkim/move-it/commit/90b26292feb848c02b8ce77df51f37e50034744f	Initial commit

@@ -1,0 +1,6 @@
+GitHub repository: https://github.com/kokoa-lab/cozy-hive
+Pull request author: shinkeonkim
+
+2026-08-28T07:01:15Z	#4	MERGED	https://github.com/kokoa-lab/cozy-hive/pull/4	chore(ads): add ads.txt	merged=2026-08-28T07:54:45Z	closed=2026-08-28T07:54:45Z	commits=1	files=1	+1/-0	project-lens가 자동 생성한 PR입니다. - public/ads.txt를 추가했습니다. - AdSense 게시자: ca-pub-3060818993817836
+2026-08-28T05:28:06Z	#3	MERGED	https://github.com/kokoa-lab/cozy-hive/pull/3	docs: write a real README	merged=2026-08-28T07:54:30Z	closed=2026-08-28T07:54:30Z	commits=1	files=1	+33/-0	README.md was thin/placeholder. Replaced it with an accurate description based on the actual source (features, tech stack, real dev/build/deploy commands read from package.json and wrangler.toml).
+2026-08-27T05:07:36Z	#2	MERGED	https://github.com/kokoa-lab/cozy-hive/pull/2	chore(tracking): GTM 스니펫 추가 (GTM-53RJS739)	merged=2026-08-27T16:46:49Z	closed=2026-08-27T16:46:49Z	commits=1	files=1	+13/-0	project-lens가 자동 생성한 PR입니다. - index.html에 GTM(GTM-53RJS739) 스니펫을 삽입했습니다. - GTM 컨테이너: GTM-53RJS739

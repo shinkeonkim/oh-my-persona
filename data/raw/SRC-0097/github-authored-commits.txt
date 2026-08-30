@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-afk-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:28:00Z	737ddfb6fd3628beafa75f2a77bb2f9b7548782a	https://github.com/kokoa-hobby/minecraft-afk-plugin/commit/737ddfb6fd3628beafa75f2a77bb2f9b7548782a	Add README
+2026-07-22T12:22:11Z	1c3d2ae1bed5f4c1dab09d9eb32e0171edf2d354	https://github.com/kokoa-hobby/minecraft-afk-plugin/commit/1c3d2ae1bed5f4c1dab09d9eb32e0171edf2d354	Add AfkPlugin main class
+2026-07-22T12:22:11Z	fe83473b635b57b71999bca4e56da4e200065ccb	https://github.com/kokoa-hobby/minecraft-afk-plugin/commit/fe83473b635b57b71999bca4e56da4e200065ccb	Add AfkApi
+2026-07-22T12:22:11Z	400cd95341c9798d8eb3e42d8db494d131717ebe	https://github.com/kokoa-hobby/minecraft-afk-plugin/commit/400cd95341c9798d8eb3e42d8db494d131717ebe	Add listeners
+2026-07-22T12:22:11Z	a8fd668911466f8a70f418fad5637e7a76f497a7	https://github.com/kokoa-hobby/minecraft-afk-plugin/commit/a8fd668911466f8a70f418fad5637e7a76f497a7	Add plugin manifest and resources
+2026-07-22T12:22:11Z	ba3a9c6fd9c83fcb35561a76715df83687ff23d7	https://github.com/kokoa-hobby/minecraft-afk-plugin/commit/ba3a9c6fd9c83fcb35561a76715df83687ff23d7	Add Gradle project scaffold

@@ -1,0 +1,5 @@
+GitHub repository: https://github.com/kokoa-study-room/aws-saa-study-notes
+Author account: shinkeonkim
+
+2026-04-26T15:49:11Z	a729cc9385dbd6c77a00477568d0a4d8a0190fa9	https://github.com/kokoa-study-room/aws-saa-study-notes/commit/a729cc9385dbd6c77a00477568d0a4d8a0190fa9	docs: 문제 풀이 및 내용 추가
+2026-04-26T15:25:54Z	a82101f4e1dcfb188de0afcb4e0207f8047af7dd	https://github.com/kokoa-study-room/aws-saa-study-notes/commit/a82101f4e1dcfb188de0afcb4e0207f8047af7dd	docs: 2026-04-27

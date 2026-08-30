@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/kokoa-lab/maeil-mail-video-interview-demo
+Author account: shinkeonkim
+
+2026-03-10T15:58:03Z	17c6f3b90db5ce62f900b3d1adc261e74fc6ce88	https://github.com/kokoa-lab/maeil-mail-video-interview-demo/commit/17c6f3b90db5ce62f900b3d1adc261e74fc6ce88	feat: initial project settings by lovable

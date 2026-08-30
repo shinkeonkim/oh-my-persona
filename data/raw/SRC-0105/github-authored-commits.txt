@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-customenchants-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:28:22Z	081d552786bf5d7af7113fbe5c78a5506f1069a1	https://github.com/kokoa-hobby/minecraft-customenchants-plugin/commit/081d552786bf5d7af7113fbe5c78a5506f1069a1	Add README
+2026-07-22T12:22:14Z	c3281c7dfcb3ac923f21ffeb07bbe7c97706a073	https://github.com/kokoa-hobby/minecraft-customenchants-plugin/commit/c3281c7dfcb3ac923f21ffeb07bbe7c97706a073	Add CustomEnchantsPlugin main class
+2026-07-22T12:22:14Z	4770d18b04747f5fd9408ea6da7532a59927368e	https://github.com/kokoa-hobby/minecraft-customenchants-plugin/commit/4770d18b04747f5fd9408ea6da7532a59927368e	Add CustomEnchantsBootstrap
+2026-07-22T12:22:13Z	c31fe68987119a7caad3ec824da487eeb9363309	https://github.com/kokoa-hobby/minecraft-customenchants-plugin/commit/c31fe68987119a7caad3ec824da487eeb9363309	Add commands
+2026-07-22T12:22:13Z	fddf4b4d0dedebe8390e80cc05cebde63ab384c9	https://github.com/kokoa-hobby/minecraft-customenchants-plugin/commit/fddf4b4d0dedebe8390e80cc05cebde63ab384c9	Add plugin manifest and resources
+2026-07-22T12:22:13Z	6726bf301a98114f7e9b7b5913ae3a448d3a5c20	https://github.com/kokoa-hobby/minecraft-customenchants-plugin/commit/6726bf301a98114f7e9b7b5913ae3a448d3a5c20	Add Gradle project scaffold

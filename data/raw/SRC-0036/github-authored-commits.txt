@@ -1,0 +1,20 @@
+GitHub repository: https://github.com/shinkeonkim/boj-jandi-site
+Author account: shinkeonkim
+
+2026-01-23T06:02:21Z	251ec0851a7b4ec8358e688ff11eb292ba538a8c	https://github.com/shinkeonkim/boj-jandi-site/commit/251ec0851a7b4ec8358e688ff11eb292ba538a8c	feat: 잘못된 사용자 handle을 입력했을 경우에 대한 에러 처리
+2026-01-21T16:42:18Z	efd0a1aa9c4dd8426d0a7fd6faae3e99333c194e	https://github.com/shinkeonkim/boj-jandi-site/commit/efd0a1aa9c4dd8426d0a7fd6faae3e99333c194e	fix: css version
+2026-01-21T16:38:16Z	07d5e61d02b0e1a6db32d1e42a90ce06ce413222	https://github.com/shinkeonkim/boj-jandi-site/commit/07d5e61d02b0e1a6db32d1e42a90ce06ce413222	feat: 모바일 사용성 개선 실험
+2026-01-21T16:22:56Z	243089c8672d91f675641383c926c3cec051b54f	https://github.com/shinkeonkim/boj-jandi-site/commit/243089c8672d91f675641383c926c3cec051b54f	feat: 티어 색상 및 title 표시 추가
+2026-01-20T16:53:29Z	08235c2fc70e9a01f702240cfa827bb0cab38841	https://github.com/shinkeonkim/boj-jandi-site/commit/08235c2fc70e9a01f702240cfa827bb0cab38841	feat: GA 추가
+2026-01-20T16:50:33Z	30903b1acda343c9fceedcce4baa71f56af0a078	https://github.com/shinkeonkim/boj-jandi-site/commit/30903b1acda343c9fceedcce4baa71f56af0a078	design: responice web design
+2026-01-20T11:35:57Z	cf2460cb4d003b01798aded95148a13b3586a03c	https://github.com/shinkeonkim/boj-jandi-site/commit/cf2460cb4d003b01798aded95148a13b3586a03c	refactor: template에 대해서 base.html 상속하도록 리팩토링
+2026-01-20T11:35:40Z	fd5373d22acdc7b466ed194dbc8a76f4ad7a4f13	https://github.com/shinkeonkim/boj-jandi-site/commit/fd5373d22acdc7b466ed194dbc8a76f4ad7a4f13	docs: README.md
+2026-01-20T11:32:27Z	31cac6f95091c08459dfef35e792e92d8d281e1d	https://github.com/shinkeonkim/boj-jandi-site/commit/31cac6f95091c08459dfef35e792e92d8d281e1d	Add image to README.md
+2026-01-20T11:07:07Z	66250e625faa01ed38744a993e4fda1c59f16d97	https://github.com/shinkeonkim/boj-jandi-site/commit/66250e625faa01ed38744a993e4fda1c59f16d97	fix: /api 에 대하여 traefik ingress 규칙이 우선적으로 실행되는 이슈 수정
+2026-01-20T11:03:41Z	7da2a42b078d24135cc47283b45b159b079aba3e	https://github.com/shinkeonkim/boj-jandi-site/commit/7da2a42b078d24135cc47283b45b159b079aba3e	fix: ingress
+2026-01-20T10:55:24Z	a77c6cb31319b2c34d318f2669aa69d4ce3d51dd	https://github.com/shinkeonkim/boj-jandi-site/commit/a77c6cb31319b2c34d318f2669aa69d4ce3d51dd	feat: namespace.yml
+2026-01-20T10:54:19Z	f0e13d23b658859a1991bb838d7ba56756b75260	https://github.com/shinkeonkim/boj-jandi-site/commit/f0e13d23b658859a1991bb838d7ba56756b75260	feat: namespace
+2026-01-20T10:41:04Z	71b63bbb33bba1bc91f4e87c7458acfbec8e7416	https://github.com/shinkeonkim/boj-jandi-site/commit/71b63bbb33bba1bc91f4e87c7458acfbec8e7416	feat: infra
+2026-01-20T10:40:46Z	aba611ae804b9458c126fd47a7c2c86c0bb6c56e	https://github.com/shinkeonkim/boj-jandi-site/commit/aba611ae804b9458c126fd47a7c2c86c0bb6c56e	feat: 이미지 빌드 과정
+2026-01-20T10:23:07Z	6bd0d85367075d94ad06b3108c9aeca47bb20f76	https://github.com/shinkeonkim/boj-jandi-site/commit/6bd0d85367075d94ad06b3108c9aeca47bb20f76	feat: initial project app
+2026-01-20T10:21:49Z	8f3a549f4be7c4197c3cea445a96475488fbada4	https://github.com/shinkeonkim/boj-jandi-site/commit/8f3a549f4be7c4197c3cea445a96475488fbada4	feat: initial package setting

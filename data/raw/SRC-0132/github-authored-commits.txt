@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-lab/boj-problems
+Author account: shinkeonkim
+
+2026-04-18T11:11:43Z	33e1ef95c7ae0bfaf86d54b4977fd8eedb2e6694	https://github.com/kokoa-lab/boj-problems/commit/33e1ef95c7ae0bfaf86d54b4977fd8eedb2e6694	chore: problems 삭제
+2026-04-18T10:53:02Z	2de70455c5a176b404ca7d4a0f152e6bd24f36b8	https://github.com/kokoa-lab/boj-problems/commit/2de70455c5a176b404ca7d4a0f152e6bd24f36b8	fix: yaml meta data format
+2026-04-18T10:39:01Z	31e12064803f6b0a8ffaa86e5ca34602f887589b	https://github.com/kokoa-lab/boj-problems/commit/31e12064803f6b0a8ffaa86e5ca34602f887589b	fix: directory files
+2026-04-18T10:30:01Z	b6b789d2b1733fb661a1fae79b51e022cdae7180	https://github.com/kokoa-lab/boj-problems/commit/b6b789d2b1733fb661a1fae79b51e022cdae7180	chore: original files
+2026-04-18T10:22:46Z	364196fdc2f5a95a20f0f78305426f105c5e0409	https://github.com/kokoa-lab/boj-problems/commit/364196fdc2f5a95a20f0f78305426f105c5e0409	chore: data
+2026-04-18T10:20:59Z	6506fbad0edf6a11cf134b6cfb5b4a0ea7f6a681	https://github.com/kokoa-lab/boj-problems/commit/6506fbad0edf6a11cf134b6cfb5b4a0ea7f6a681	feat: initial project settings

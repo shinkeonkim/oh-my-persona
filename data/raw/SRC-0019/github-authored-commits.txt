@@ -1,0 +1,42 @@
+GitHub repository: https://github.com/shinkeonkim/paeon
+Author account: shinkeonkim
+
+2026-08-28T09:10:02Z	9483c818b9197b251effe5c6be1bd5ac02d9f5c5	https://github.com/shinkeonkim/paeon/commit/9483c818b9197b251effe5c6be1bd5ac02d9f5c5	Merge pull request #3 from shinkeonkim/fix/clusterissuer-name fix(deploy): correct clusterIssuer name to cloudflare-dns01
+2026-08-28T08:14:44Z	e85dea39eae2915f4fef4efbea51284818a9c1f4	https://github.com/shinkeonkim/paeon/commit/e85dea39eae2915f4fef4efbea51284818a9c1f4	Merge pull request #2 from shinkeonkim/fix/ci-push-latest-tag fix(ci): also push :latest tag
+2026-08-28T07:48:38Z	618d9a0a2b2d6428470e4afa7fc83b0c98471c68	https://github.com/shinkeonkim/paeon/commit/618d9a0a2b2d6428470e4afa7fc83b0c98471c68	Merge pull request #1 from shinkeonkim/feat/django-6-upgrade-and-k8s-deploy feat: Django 6.1 upgrade, remove dead SERVICE_KEY code, k8s deploy
+2026-08-28T04:06:33Z	39b3ad845aba7fc5091d9d5acbaae9fea939a7d4	https://github.com/shinkeonkim/paeon/commit/39b3ad845aba7fc5091d9d5acbaae9fea939a7d4	feat: upgrade to Django 6.1, remove dead SERVICE_KEY code, add k8s deploy - Django 4.0.1 -> 6.1, Python -> 3.14. Removed django-heroku (replaced with dj-database-url + whitenoise), removed USE_L10N (removed upstream in 5.0), added STORAGES setting (STATICFILES_STORAGE successor). - Removed the unreachable live government-API lookup path: views.py's only route never called it. Deleted get_openapi_result/ parse_openapi_result/API_URL/API_DEV_MODE/SERVICE_KEY from main/utils.py + config/settings.py, and main/dump.py (only consumer was the dead path's dev-mode fixture). - ALLOWED_HOSTS/CSRF_TRUSTED_ORIGINS updated for paeon.xn--hy1by51c.kr (paeon.코드.kr), replacing the dead .herokuapp.com entries. - Added Dockerfile (verified: docker build + run + real HTTP 200 locally) and deploy/charts/paeon Helm chart: Deployment (with a migrate initContainer), Service, Ingress, and a monthly CronJob running `manage.py reload_pension_company` (the government pension- company dataset this app searches updates monthly). DB moves to Postgres via a DATABASE_URL Secret (falls back to SQLite locally) since the reload does a full delete+bulk_create each run. - No secret values committed anywhere — the chart only references secretKeyRef against a `paeon-secrets` Secret that a separate oh-my-homelab change will supply.
+2022-05-06T05:05:03Z	6ae94d61a32d2a748b58ddc89fff1b66ef6d584e	https://github.com/shinkeonkim/paeon/commit/6ae94d61a32d2a748b58ddc89fff1b66ef6d584e	feat: admin search
+2022-05-06T05:04:54Z	c73cb7823d5bef8427d96b4838823e44212e5b3d	https://github.com/shinkeonkim/paeon/commit/c73cb7823d5bef8427d96b4838823e44212e5b3d	fix: bug
+2022-05-04T10:35:39Z	eb1bae0cca2497e928ab13ea765d311f5c47e8b1	https://github.com/shinkeonkim/paeon/commit/eb1bae0cca2497e928ab13ea765d311f5c47e8b1	feat: batch_size 추가
+2022-05-04T10:05:17Z	8c8e3d0a32b6320ade05a2c69f9bf9248f136fae	https://github.com/shinkeonkim/paeon/commit/8c8e3d0a32b6320ade05a2c69f9bf9248f136fae	chore: bulk create 내용 임시 삭제
+2022-05-04T09:49:36Z	92c3bd53ed8e55d54b29ca3a504972c4f4b527d6	https://github.com/shinkeonkim/paeon/commit/92c3bd53ed8e55d54b29ca3a504972c4f4b527d6	chore: 다운로드에서 멈춰있는 이슈를 알아보기 위한 구문 추가
+2022-05-04T09:40:04Z	bc0c8e1f8cd628044c1407aac2794c4d92558eed	https://github.com/shinkeonkim/paeon/commit/bc0c8e1f8cd628044c1407aac2794c4d92558eed	chore: 진행상황을 알 수 있도록 출력문 추가
+2022-05-04T09:34:43Z	451e14722b114f46e96d47e4a0740556bb736417	https://github.com/shinkeonkim/paeon/commit/451e14722b114f46e96d47e4a0740556bb736417	fix: 어드민 액션이 아닌, management command로 처리하도록 함.
+2022-05-04T09:24:36Z	5889168b7a850685dac277589838f7e48d7ae58c	https://github.com/shinkeonkim/paeon/commit/5889168b7a850685dac277589838f7e48d7ae58c	chore: 임시로 timeout 시간을 증가시킴
+2022-05-04T09:13:35Z	9fc46d86ae6a24ff44438d301cdce6e4e9c49bd6	https://github.com/shinkeonkim/paeon/commit/9fc46d86ae6a24ff44438d301cdce6e4e9c49bd6	feat: 데이터 내재화
+2022-04-23T06:17:00Z	308f3bc5423fb9ae6824f4c4cc177db1bc447570	https://github.com/shinkeonkim/paeon/commit/308f3bc5423fb9ae6824f4c4cc177db1bc447570	Update README.md
+2022-04-23T06:13:02Z	b79e81e0ab80a74489af80ee1d481a5940e7fd6f	https://github.com/shinkeonkim/paeon/commit/b79e81e0ab80a74489af80ee1d481a5940e7fd6f	fix: 버그 수정
+2022-04-23T06:08:26Z	6b5f7d933b6bbf34d2cb1683215bc30a6150c3cc	https://github.com/shinkeonkim/paeon/commit/6b5f7d933b6bbf34d2cb1683215bc30a6150c3cc	feat: 검색결과가 없는 경우 bizno.net 검색 결과를 iframe으로 띄우도록 함.
+2022-04-23T05:42:16Z	a2c77f0b49df4462d88b1327fb5f2e61dbc9eeaf	https://github.com/shinkeonkim/paeon/commit/a2c77f0b49df4462d88b1327fb5f2e61dbc9eeaf	Update README.md
+2022-04-23T05:38:37Z	dd5d27cf9ef761e970a9f7e85cb32e6f5672e180	https://github.com/shinkeonkim/paeon/commit/dd5d27cf9ef761e970a9f7e85cb32e6f5672e180	style: 검색 결과 디자인 수정
+2022-04-23T05:16:19Z	d5a1f0474ca6e102764dc51535b2ce5f8f12973a	https://github.com/shinkeonkim/paeon/commit/d5a1f0474ca6e102764dc51535b2ce5f8f12973a	feat: bulma를 통한 디자인 추가 및 폼,테이블 컴포넌트 템플릿 분리
+2022-04-23T05:15:40Z	264b1ec36b2d2084a95831ab850777568777b961	https://github.com/shinkeonkim/paeon/commit/264b1ec36b2d2084a95831ab850777568777b961	feat: API_DEV_MODE 환경변수를 통해 DUMP 데이터를 사용하도록 함.
+2022-04-23T04:41:26Z	3c9eb4ad7208488655610e570c80818a3ae129c8	https://github.com/shinkeonkim/paeon/commit/3c9eb4ad7208488655610e570c80818a3ae129c8	feat: django-template base.html 분리
+2022-04-22T08:05:05Z	2b80f9e641b1ef95ba3aef1780f1cae50687a859	https://github.com/shinkeonkim/paeon/commit/2b80f9e641b1ef95ba3aef1780f1cae50687a859	feat: 검색 전에는 검색 결과 없음 메세지 안보이도록 함
+2022-04-22T06:44:29Z	dd06fa3d01593e72b11515350582456dbe618b87	https://github.com/shinkeonkim/paeon/commit/dd06fa3d01593e72b11515350582456dbe618b87	feat: 검색결과가 없는 경우 문구 추가
+2022-04-22T06:15:58Z	553fde8be0cf90a697127f6da36b6b3f9ffb9aae	https://github.com/shinkeonkim/paeon/commit/553fde8be0cf90a697127f6da36b6b3f9ffb9aae	fix: MAX_RESULT_SIZE 조절
+2022-04-22T06:13:28Z	8e997bd1ef71694722349180386a52287ab07a06	https://github.com/shinkeonkim/paeon/commit/8e997bd1ef71694722349180386a52287ab07a06	feat: 필수 키워드 기능 추가
+2022-04-22T06:06:33Z	a5e2f85cc220b47e1beaca9855623d3ef9b6bc1e	https://github.com/shinkeonkim/paeon/commit/a5e2f85cc220b47e1beaca9855623d3ef9b6bc1e	feat: MAX_RESULT_SIZE 증가
+2022-04-22T06:02:58Z	d3b1a8681995822990e7670f062c67a0e3bc4ed2	https://github.com/shinkeonkim/paeon/commit/d3b1a8681995822990e7670f062c67a0e3bc4ed2	feat: 설명 문구 추가
+2022-04-21T13:47:15Z	7e223e775dbb38a30af4bffaead2be87819efead	https://github.com/shinkeonkim/paeon/commit/7e223e775dbb38a30af4bffaead2be87819efead	feat: 클립보드 복사 기능 추가
+2022-04-21T13:22:58Z	c872f34b8f7e27d443f4743161e651717a1baefc	https://github.com/shinkeonkim/paeon/commit/c872f34b8f7e27d443f4743161e651717a1baefc	feat: 양끝에 공백이 실수로 들어간경우, 제외하고 고려하도록 함.
+2022-04-21T13:21:45Z	0ae69539188ba58928df0b178f9b68d65355d1c3	https://github.com/shinkeonkim/paeon/commit/0ae69539188ba58928df0b178f9b68d65355d1c3	fix: 주식회사, (주) 등의 키워드를 제외하고 유사도를 검사하도록 함.
+2022-04-21T13:16:27Z	fa9a016a4c94147ae4486baaabde30d9a347d846	https://github.com/shinkeonkim/paeon/commit/fa9a016a4c94147ae4486baaabde30d9a347d846	chore: requirements.txt 정리
+2022-04-21T13:11:41Z	566e14544828b3897eb5f5494a3c34fbfa628475	https://github.com/shinkeonkim/paeon/commit/566e14544828b3897eb5f5494a3c34fbfa628475	chore: django-browser-reload 삭제
+2022-04-21T13:07:23Z	938c2fdcab317a808a239a3df352fb2a556378e9	https://github.com/shinkeonkim/paeon/commit/938c2fdcab317a808a239a3df352fb2a556378e9	feat: heroku deploy settings
+2022-04-21T12:54:20Z	524bbd21a36377505e9c9c5bb8cb1b0d87e3b9b6	https://github.com/shinkeonkim/paeon/commit/524bbd21a36377505e9c9c5bb8cb1b0d87e3b9b6	Update README.md
+2022-04-21T12:52:39Z	ca27cb96f489259b5679231c65b42f5724144f0c	https://github.com/shinkeonkim/paeon/commit/ca27cb96f489259b5679231c65b42f5724144f0c	docs: 문서 추가
+2022-04-21T12:49:28Z	5bc67919174f90c5d89ef7a4da0b617cba2d498c	https://github.com/shinkeonkim/paeon/commit/5bc67919174f90c5d89ef7a4da0b617cba2d498c	feat: 국민연금 데이터 API 로부터 비슷한 회사명을 찾아 도출하는 View
+2022-04-21T11:35:46Z	c4fc65f10e021ceed526a5a0ff5ba60bdc7ca0a5	https://github.com/shinkeonkim/paeon/commit/c4fc65f10e021ceed526a5a0ff5ba60bdc7ca0a5	feat: main app 생성 및 url 연결
+2022-04-21T11:19:37Z	8d5b4bab525d75f5338c7359c491f96b0eb512ca	https://github.com/shinkeonkim/paeon/commit/8d5b4bab525d75f5338c7359c491f96b0eb512ca	feat: django-environ을 이용한 .env setting
+2022-04-21T11:09:20Z	fb916ba10c38579864cffb67dee2b2e909eca0aa	https://github.com/shinkeonkim/paeon/commit/fb916ba10c38579864cffb67dee2b2e909eca0aa	feat: initial django project

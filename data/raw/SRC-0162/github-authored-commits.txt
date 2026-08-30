@@ -1,0 +1,7 @@
+GitHub repository: https://github.com/kokoa-study-room/compiler-study-site
+Author account: shinkeonkim
+
+2026-08-28T07:50:30Z	452c273ee62f8bce6e3c8011efe18f7cf40a1e28	https://github.com/kokoa-study-room/compiler-study-site/commit/452c273ee62f8bce6e3c8011efe18f7cf40a1e28	Merge pull request #2 from kokoa-study-room/project-lens/add-ads-txt-43aa95c1 chore(ads): add ads.txt
+2026-08-28T07:04:48Z	4e4f2b3a018e5c31b21a9ae55a42e1f5f06b4b09	https://github.com/kokoa-study-room/compiler-study-site/commit/4e4f2b3a018e5c31b21a9ae55a42e1f5f06b4b09	chore(ads): add ads.txt project-lens automated commit.
+2026-08-27T08:47:32Z	499f0e6d746c00bb6af7b5b68d21498e4ba95868	https://github.com/kokoa-study-room/compiler-study-site/commit/499f0e6d746c00bb6af7b5b68d21498e4ba95868	Merge pull request #1 from kokoa-study-room/project-lens/add-gtm-tracking-15 chore(tracking): GTM 스니펫 추가 (GTM-KF7296CH)
+2026-08-27T05:08:33Z	54e224a9b1d9a72be4eb2c4d1e7900886723ec51	https://github.com/kokoa-study-room/compiler-study-site/commit/54e224a9b1d9a72be4eb2c4d1e7900886723ec51	chore(tracking): add GTM snippet (GTM-KF7296CH) project-lens automated commit.

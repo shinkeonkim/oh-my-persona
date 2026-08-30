@@ -1,0 +1,182 @@
+GitHub repository: https://github.com/kkambbaki/backend
+Author account: shinkeonkim
+
+2025-11-14T14:16:50Z	f2b4b8bd05c3ba97e17e580400d92173a03a55b4	https://github.com/kkambbaki/backend/commit/f2b4b8bd05c3ba97e17e580400d92173a03a55b4	fix: 키워드, 레포트 사이즈 변경
+2025-11-14T04:53:31Z	e0bf86ff302c04b9d79b431f9ba760a220396777	https://github.com/kkambbaki/backend/commit/e0bf86ff302c04b9d79b431f9ba760a220396777	test: 테스트 정리
+2025-11-14T04:27:48Z	6c8bc9cd7009338d558225f6ad420bf88216c1e7	https://github.com/kkambbaki/backend/commit/6c8bc9cd7009338d558225f6ad420bf88216c1e7	feat: 어드민에서 이메일 전송 확인할 수 있도록 하는 액션 추가
+2025-11-14T04:27:12Z	f40cb4477129b645f023da8555ce1d06b2abcaa4	https://github.com/kkambbaki/backend/commit/f40cb4477129b645f023da8555ce1d06b2abcaa4	feat: 이메일 전송 후 토큰 만료 로직
+2025-11-13T18:26:45Z	c3354477b73b3df484cf670a6af758636d0201be	https://github.com/kkambbaki/backend/commit/c3354477b73b3df484cf670a6af758636d0201be	fix: viewport 롤백
+2025-11-13T18:19:28Z	dd7b2955ec6109e4262363d5f956aa557de021a3	https://github.com/kkambbaki/backend/commit/dd7b2955ec6109e4262363d5f956aa557de021a3	fix: width, height
+2025-11-13T18:11:03Z	5a31de70d26a3cc1373d9061e4eb7bbd9fbfe7d0	https://github.com/kkambbaki/backend/commit/5a31de70d26a3cc1373d9061e4eb7bbd9fbfe7d0	fix: viewport size
+2025-11-13T18:00:14Z	98f81d9411009707201478f53816b5efa68c3e87	https://github.com/kkambbaki/backend/commit/98f81d9411009707201478f53816b5efa68c3e87	fix: 커스텀 헤더 적용
+2025-11-13T16:11:53Z	19558071cc39980a77c0e7f09a7ef18c7afb84eb	https://github.com/kkambbaki/backend/commit/19558071cc39980a77c0e7f09a7ef18c7afb84eb	fix: 최적화 없애고, alpha와 동일하게 변경
+2025-11-13T12:57:31Z	0be017e4d595872dd7cedf3a864f90a4b290899d	https://github.com/kkambbaki/backend/commit/0be017e4d595872dd7cedf3a864f90a4b290899d	feat: 파비콘 적용 및 팀명 제대로 반영
+2025-11-13T12:28:46Z	050dd6b01b4486ee6ffc4ad7b15cbd34265d7764	https://github.com/kkambbaki/backend/commit/050dd6b01b4486ee6ffc4ad7b15cbd34265d7764	docs: README 최신화
+2025-11-13T11:27:44Z	6c98c696f8b5dc3e935429c3dcfb8e733d0ff5b5	https://github.com/kkambbaki/backend/commit/6c98c696f8b5dc3e935429c3dcfb8e733d0ff5b5	fix: 권한 테스트 수정
+2025-11-13T11:20:15Z	ba3b00be59cf82e9f88db3ba0f9b9a7a9c4c46b6	https://github.com/kkambbaki/backend/commit/ba3b00be59cf82e9f88db3ba0f9b9a7a9c4c46b6	fix: 어드민 테스트 수정
+2025-11-13T11:10:54Z	f02e235ec4e6894714e02e147fddf618c2547de1	https://github.com/kkambbaki/backend/commit/f02e235ec4e6894714e02e147fddf618c2547de1	fix: LLM 답변에 대해 어드민에서 수정 가능하도록 함
+2025-11-13T10:51:47Z	0bb18780f6e84824f0a5b9d79f12f11124c282dd	https://github.com/kkambbaki/backend/commit/0bb18780f6e84824f0a5b9d79f12f11124c282dd	Merge pull request #56 from kkambbaki/feature/ranking-entry-result-timestamp Feature/ranking entry result timestamp
+2025-11-13T10:31:36Z	415f2ca7a5b11e52a8e5ee66efe2c9a1af9f462f	https://github.com/kkambbaki/backend/commit/415f2ca7a5b11e52a8e5ee66efe2c9a1af9f462f	fix: logo
+2025-11-13T10:28:53Z	4aac22734dea6e786d0101f621382af7f299a3a0	https://github.com/kkambbaki/backend/commit/4aac22734dea6e786d0101f621382af7f299a3a0	test: game result test 수정
+2025-11-13T10:11:50Z	743ba2a9f7c21b20a347707ddfcf69b40db1597a	https://github.com/kkambbaki/backend/commit/743ba2a9f7c21b20a347707ddfcf69b40db1597a	Update webapp/games/models/game_result.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-11-13T10:03:49Z	9cb3c90de9d261933def1cf6888b54241e41dc99	https://github.com/kkambbaki/backend/commit/9cb3c90de9d261933def1cf6888b54241e41dc99	fix: rest_framework.generics.get_object_or_404 으로 수정
+2025-11-13T10:02:35Z	a39404808fdac07a3646f0bf2e3044eb7a7685b9	https://github.com/kkambbaki/backend/commit/a39404808fdac07a3646f0bf2e3044eb7a7685b9	fix: game_result __str__ 이 구체적으로 되도록 함
+2025-11-13T05:57:24Z	f8aa9d76598e191b9f1c9c8a3741e539464b065e	https://github.com/kkambbaki/backend/commit/f8aa9d76598e191b9f1c9c8a3741e539464b065e	Merge branch 'develop'
+2025-11-12T15:55:26Z	540436208d3a9f3e0733215cf6d722860effa0e2	https://github.com/kkambbaki/backend/commit/540436208d3a9f3e0733215cf6d722860effa0e2	fix: coverage report configs
+2025-11-12T15:34:01Z	b359697d0f2278721c480f12dba222369857d7f2	https://github.com/kkambbaki/backend/commit/b359697d0f2278721c480f12dba222369857d7f2	fix: 테스트코드에서 LLM 호출되고 있는 부분 수정
+2025-11-12T15:22:21Z	4cd970f7148d33cf7e93afb27ad422183b1fc072	https://github.com/kkambbaki/backend/commit/4cd970f7148d33cf7e93afb27ad422183b1fc072	test: AI 기반 테스트 작성
+2025-11-12T12:55:54Z	871aaa3608f8d1ace9d35fd30c18ee61189de621	https://github.com/kkambbaki/backend/commit/871aaa3608f8d1ace9d35fd30c18ee61189de621	fix: test package 설정
+2025-11-12T12:54:27Z	72b1b346704540078d3a500807df7919708282f8	https://github.com/kkambbaki/backend/commit/72b1b346704540078d3a500807df7919708282f8	fix: games app_name 변경
+2025-11-12T06:53:55Z	33944102973f09ee470a0676a57f0821a2333571	https://github.com/kkambbaki/backend/commit/33944102973f09ee470a0676a57f0821a2333571	Merge branch 'develop'
+2025-11-12T06:53:45Z	109d483a5b2f482294cb0db7bb29bc296a8d3ae7	https://github.com/kkambbaki/backend/commit/109d483a5b2f482294cb0db7bb29bc296a8d3ae7	fix: 발표 당일 지장없도록 access_token에 대해서 6시간 만료 처리
+2025-11-12T06:40:21Z	01bdd249ba81e9c9e3a40694928f626a87bc3dd7	https://github.com/kkambbaki/backend/commit/01bdd249ba81e9c9e3a40694928f626a87bc3dd7	Merge branch 'develop'
+2025-11-12T06:37:45Z	9233a2b0cde2519834b84a826956d62921b62932	https://github.com/kkambbaki/backend/commit/9233a2b0cde2519834b84a826956d62921b62932	Merge pull request #55 from kkambbaki/feat-51-dashboard Feat 51 dashboard
+2025-11-12T06:34:34Z	4901f614ab777799c7a9044f2fcf9b907194e832	https://github.com/kkambbaki/backend/commit/4901f614ab777799c7a9044f2fcf9b907194e832	feat: 랭킹 대시보드 화면 추가
+2025-11-12T06:32:02Z	5f528203a75237c4646fb11210a6d1579de529d2	https://github.com/kkambbaki/backend/commit/5f528203a75237c4646fb11210a6d1579de529d2	feat: 소속 정보 추가
+2025-11-11T11:41:35Z	57b705e8a0f3e644cd203400c95b097cfae26d23	https://github.com/kkambbaki/backend/commit/57b705e8a0f3e644cd203400c95b097cfae26d23	chore: 상수 변경
+2025-11-11T11:35:33Z	d7f5c48016c95a10fafc55159a16d7347359fa7c	https://github.com/kkambbaki/backend/commit/d7f5c48016c95a10fafc55159a16d7347359fa7c	fix: child_id 관련 정보 남아있는 부분 삭제
+2025-11-11T02:41:47Z	1ad97c9916fec6da1e11b1eb88d280d6b0e4239d	https://github.com/kkambbaki/backend/commit/1ad97c9916fec6da1e11b1eb88d280d6b0e4239d	feat: API 상에서도 최대 라운드 도달 비율 나오도록 함
+2025-11-11T02:41:22Z	b80d2e3b227dbef46ff75ff6cfa5b8b97304e775	https://github.com/kkambbaki/backend/commit/b80d2e3b227dbef46ff75ff6cfa5b8b97304e775	feat: 프롬프트 개선 / 여러 게임 결과에 대한 내용임을 반영
+2025-11-11T02:40:43Z	32da7572ec001514038f7c2014ab3dfc0fd407ef	https://github.com/kkambbaki/backend/commit/32da7572ec001514038f7c2014ab3dfc0fd407ef	fix: 최대 라운드 도달 비율 통계 추가
+2025-11-10T16:52:26Z	54d408e037adef74601fef261a2c61bc4c245e34	https://github.com/kkambbaki/backend/commit/54d408e037adef74601fef261a2c61bc4c245e34	Merge branch 'develop'
+2025-11-10T16:51:59Z	4662816d8f1407b6f62966cfc3f5f035058e1b04	https://github.com/kkambbaki/backend/commit/4662816d8f1407b6f62966cfc3f5f035058e1b04	Merge pull request #52 from kkambbaki/hotfix/pin-report-api hotfix: JWT 인증인 경우, Pin번호를 검증하고 report 정보를 반환함
+2025-11-10T16:48:45Z	dc087853c82483b8eba96baa1d20c5168ef3bfad	https://github.com/kkambbaki/backend/commit/dc087853c82483b8eba96baa1d20c5168ef3bfad	fix: JWT 인증인 경우, Pin번호를 검증하고 report 정보를 반환함
+2025-11-10T15:19:53Z	e23bf5f6aab7542e96e0d2d6ff3b6c4da7c3f7c1	https://github.com/kkambbaki/backend/commit/e23bf5f6aab7542e96e0d2d6ff3b6c4da7c3f7c1	Merge branch 'develop'
+2025-11-10T15:19:12Z	1a3c20e8120292e9af7b39fea6d5b3d7d33452e3	https://github.com/kkambbaki/backend/commit/1a3c20e8120292e9af7b39fea6d5b3d7d33452e3	fix: X-BOT-TOKEN Header Authentication 관련 문서 추가
+2025-11-10T15:18:02Z	423480e1487d46fbe92fba619dd5a4a09da9f69b	https://github.com/kkambbaki/backend/commit/423480e1487d46fbe92fba619dd5a4a09da9f69b	fix: swagger 문서 issue 수정
+2025-11-09T17:21:21Z	0b5099db441129c3d4c779f88c4bb97adf683a9c	https://github.com/kkambbaki/backend/commit/0b5099db441129c3d4c779f88c4bb97adf683a9c	Merge branch 'develop'
+2025-11-09T17:21:04Z	1a5dd7fbba9561af1f4f036c058ea113b5ad35a3	https://github.com/kkambbaki/backend/commit/1a5dd7fbba9561af1f4f036c058ea113b5ad35a3	fix: 이름 변경
+2025-11-09T17:21:04Z	6ed1e5f157bc3588fe9856064e0988ca102e0f78	https://github.com/kkambbaki/backend/commit/6ed1e5f157bc3588fe9856064e0988ca102e0f78	fix: 이름 변경
+2025-11-09T17:15:47Z	a7db703507cb6c7d9a8014fc9264f13e42ad0250	https://github.com/kkambbaki/backend/commit/a7db703507cb6c7d9a8014fc9264f13e42ad0250	Merge pull request #48 from kkambbaki/feature/base-report-service Feature/base report service
+2025-11-09T17:12:30Z	00a3522cd2fa18aba8a0d707660ce8d59c40b768	https://github.com/kkambbaki/backend/commit/00a3522cd2fa18aba8a0d707660ce8d59c40b768	fix: TODO comment 삭제
+2025-11-09T17:12:07Z	c31e80d66b9360902e718bf71a8ed10f57428420	https://github.com/kkambbaki/backend/commit/c31e80d66b9360902e718bf71a8ed10f57428420	fix: LLM help docs 삭제
+2025-11-09T17:10:53Z	4bdd7e6ab359726429467609d068043526793c4a	https://github.com/kkambbaki/backend/commit/4bdd7e6ab359726429467609d068043526793c4a	fix: 잘못된 글자 제한 수정
+2025-11-09T17:10:14Z	305ca2844c9c29353b409dcf06df3f3ada3d8cd5	https://github.com/kkambbaki/backend/commit/305ca2844c9c29353b409dcf06df3f3ada3d8cd5	fix: gemini code review 반영 update_or_create_game_report 메서드는 @transaction.atomic으로 데코레이트되어 있습니다. 이 메서드 내부에서 _generate_game_report_advice가 호출되고, 여기서 LLM API를 호출하는 네트워크 요청이 발생합니다. 외부 API 호출은 시간이 오래 걸릴 수 있으므로 데이터베이스 트랜잭션 내에서 실행하는 것은 매우 위험합니다. 트랜잭션이 오래 유지되면 데이터베이스 커넥션 풀이 고갈되거나 다른 요청들이 블로킹될 수 있습니다. LLM 호출 로직을 트랜잭션 외부로 분리해야 합니다. 예를 들어, 통계 집계와 저장을 먼저 트랜잭션 내에서 완료한 후, 트랜잭션 밖에서 LLM을 호출하고 그 결과를 별도로 저장하는 방식으로 리팩토링하는 것이 좋습니다.
+2025-11-09T16:51:59Z	32a0412a9cd181e748d58f5d9fa2d4d0ea2aeec7	https://github.com/kkambbaki/backend/commit/32a0412a9cd181e748d58f5d9fa2d4d0ea2aeec7	feat: 대략적인 집중력 점수 로직 추가
+2025-11-09T16:04:51Z	5364211acbe7efa2bda8592e44279c5473bea323	https://github.com/kkambbaki/backend/commit/5364211acbe7efa2bda8592e44279c5473bea323	fix: gpt-4.1 모델로 변경
+2025-11-09T16:04:06Z	7946f4d394909880b7b924f30398cf4ef04e6a51	https://github.com/kkambbaki/backend/commit/7946f4d394909880b7b924f30398cf4ef04e6a51	fix: prompt 상에서 부모에게 제공됨을 명시
+2025-11-09T16:03:52Z	dbd51a45bba3f2cd5d0306f58c433aa048109a7c	https://github.com/kkambbaki/backend/commit/dbd51a45bba3f2cd5d0306f58c433aa048109a7c	fix: 코드 리뷰 반영
+2025-11-09T15:49:54Z	2286a3a2b30b75a618c62907819c1ff689dd7153	https://github.com/kkambbaki/backend/commit/2286a3a2b30b75a618c62907819c1ff689dd7153	Update webapp/users/admin/bot_token_admin.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-11-09T15:49:41Z	02594d3ab172229119291a8b01c4382d71b22516	https://github.com/kkambbaki/backend/commit/02594d3ab172229119291a8b01c4382d71b22516	Update webapp/reports/llm/prompt.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-11-09T15:47:47Z	89e9f979c78174972caf6765278954c9ce4aa6fa	https://github.com/kkambbaki/backend/commit/89e9f979c78174972caf6765278954c9ce4aa6fa	fix: 잘못된 indentation 수정
+2025-11-09T15:44:02Z	fef6f361ea2d4af845d286fff917a91ad7836b4b	https://github.com/kkambbaki/backend/commit/fef6f361ea2d4af845d286fff917a91ad7836b4b	fix: 평균 ms는 소숫점 없도록 함
+2025-11-09T15:43:51Z	f8af424df0eacdc3154b31e508f9c5f03def72a3	https://github.com/kkambbaki/backend/commit/f8af424df0eacdc3154b31e508f9c5f03def72a3	feat: 평균 도달 라운드 정보 추가
+2025-11-09T15:30:07Z	60a86bfa963e601854a32f0ad4be94ee0d2b523f	https://github.com/kkambbaki/backend/commit/60a86bfa963e601854a32f0ad4be94ee0d2b523f	fix: queryset에서 remove 호출 불가
+2025-11-09T15:19:46Z	fe9b111be12c95e295c16ebd0330dd0af9e08186	https://github.com/kkambbaki/backend/commit/fe9b111be12c95e295c16ebd0330dd0af9e08186	fix: 통계 컬럼을 추가하고 해당 정보를 이용한 리포트를 구성하도록 함
+2025-11-09T15:16:50Z	317a7ab251af11df104d3daad764e9d7d4c197f7	https://github.com/kkambbaki/backend/commit/317a7ab251af11df104d3daad764e9d7d4c197f7	fix: game_report가 아예 없을 때 생성이 되지 않는 이슈 수정
+2025-11-09T15:11:00Z	067ee7ea15b7e95a87fb8da7c39925760b9429ff	https://github.com/kkambbaki/backend/commit/067ee7ea15b7e95a87fb8da7c39925760b9429ff	fix: last_session_id가 없으면 반영되지 않은 것으로 간주
+2025-11-09T15:10:25Z	e5b2a33d8767e25ba1a490fc461096ab07bacaca	https://github.com/kkambbaki/backend/commit/e5b2a33d8767e25ba1a490fc461096ab07bacaca	feat: max_round 정보 추가
+2025-11-09T13:14:12Z	3b2068650b6edec61f34f552c49259469b0fe689	https://github.com/kkambbaki/backend/commit/3b2068650b6edec61f34f552c49259469b0fe689	Merge branch 'develop' into feature/base-report-service
+2025-11-09T09:20:53Z	533ca53a59a2131a1d3cea9ca2dea1d69e65214f	https://github.com/kkambbaki/backend/commit/533ca53a59a2131a1d3cea9ca2dea1d69e65214f	feat: 집중력 점수 API에 추가
+2025-11-09T08:51:31Z	41cbf861d80b9bb7023b7d71f8be9eb0cdcbd97e	https://github.com/kkambbaki/backend/commit/41cbf861d80b9bb7023b7d71f8be9eb0cdcbd97e	fix: 이메일 전송 API 추가
+2025-11-09T08:38:37Z	8341be2a63fe34e57add9c0fe93fda47fec37dee	https://github.com/kkambbaki/backend/commit/8341be2a63fe34e57add9c0fe93fda47fec37dee	refactor: naming
+2025-11-09T07:33:41Z	c7f70dd022b526415bef661568a0477280d3c194	https://github.com/kkambbaki/backend/commit/c7f70dd022b526415bef661568a0477280d3c194	fix: report API 및 기본 Service 로직 추가 - GameResult에 저장될 정보에 따라 meta 들을 모두 바꿔야함
+2025-11-09T07:29:08Z	f5dd8ea97ecb08b1c02ec87c299d4849ba566e70	https://github.com/kkambbaki/backend/commit/f5dd8ea97ecb08b1c02ec87c299d4849ba566e70	feat: LLM call 관련 로직 추가
+2025-11-09T07:25:22Z	5d6cdbec18a814e49379af0450fce57dfd1bbc5b	https://github.com/kkambbaki/backend/commit/5d6cdbec18a814e49379af0450fce57dfd1bbc5b	fix: 사용하지 않는 status value 삭제
+2025-11-09T06:49:28Z	1908c8dc6b937aa5c9783db7f2c9165c4fbbb289	https://github.com/kkambbaki/backend/commit/1908c8dc6b937aa5c9783db7f2c9165c4fbbb289	feat: Report API에서 사용할 Bot Token Authentication 추가
+2025-11-09T06:44:59Z	3b5fa8053807044a84b6ec9794bb39bfb1ed1e3e	https://github.com/kkambbaki/backend/commit/3b5fa8053807044a84b6ec9794bb39bfb1ed1e3e	feat: report_bot_token -> bot_token으로 user에 종속되도록 함
+2025-11-09T06:15:44Z	7c3bb5001aa64166169556a142ba53b860c2a606	https://github.com/kkambbaki/backend/commit/7c3bb5001aa64166169556a142ba53b860c2a606	feat: OPENAI 관련 설정 상수 추가
+2025-11-09T06:15:08Z	d15549bfa72b8835965c174b12dbea693de9170c	https://github.com/kkambbaki/backend/commit/d15549bfa72b8835965c174b12dbea693de9170c	feat: report bot token 관련 어드민 추가
+2025-11-09T06:14:24Z	44b0b53ac3b28741eb76351d04655903b73b48fa	https://github.com/kkambbaki/backend/commit/44b0b53ac3b28741eb76351d04655903b73b48fa	feat: report bot token 모델 추가
+2025-11-09T06:12:30Z	824c37dcfbffa67e65586608338d399f30aab7de	https://github.com/kkambbaki/backend/commit/824c37dcfbffa67e65586608338d399f30aab7de	feat: LLM 기능 관련 langchain 패키지 추가
+2025-11-08T10:45:38Z	982ef9bd8a109b1d348fe3f93f79ab1692f6f396	https://github.com/kkambbaki/backend/commit/982ef9bd8a109b1d348fe3f93f79ab1692f6f396	hotfix: JWT Serializer에 대한 warning 수정
+2025-11-08T10:43:26Z	9ed9a416301a7e19c719b06175a30197d1630d6b	https://github.com/kkambbaki/backend/commit/9ed9a416301a7e19c719b06175a30197d1630d6b	fix: 빠진 설정 내용 추가
+2025-11-07T10:13:48Z	ad603d42bd5798e3487b1d58d16ce6345356e4de	https://github.com/kkambbaki/backend/commit/ad603d42bd5798e3487b1d58d16ce6345356e4de	Merge pull request #45 from kkambbaki/feature/mail-service PDF 파일 첨부 / 기본 메일 전송 로직
+2025-11-07T10:13:40Z	ed91fae6b37ec39962453864d33db912a213210a	https://github.com/kkambbaki/backend/commit/ed91fae6b37ec39962453864d33db912a213210a	Merge pull request #44 from kkambbaki/feature/report-models Feature/report models
+2025-11-07T10:11:51Z	fc28288987253a9930981d384209c141dbd59543	https://github.com/kkambbaki/backend/commit/fc28288987253a9930981d384209c141dbd59543	fix: gemini 코드 리뷰 반영
+2025-11-07T08:17:03Z	da070203803aa1c28e42b4346242ed647ef5f4bc	https://github.com/kkambbaki/backend/commit/da070203803aa1c28e42b4346242ed647ef5f4bc	chore: static logo file 추가
+2025-11-07T08:16:46Z	96f393c435de7e2f8e55d94585fd9de58aace707	https://github.com/kkambbaki/backend/commit/96f393c435de7e2f8e55d94585fd9de58aace707	feat: CID 방식으로 이미지를 첨부하고, 디자인 개선
+2025-11-07T06:54:14Z	fef0a39342489332cf7594dc421be2423f8a0ae2	https://github.com/kkambbaki/backend/commit/fef0a39342489332cf7594dc421be2423f8a0ae2	feat: 기본적인 pdf 생성 및 이메일 전송 로직 추가 - 이후에 계정 인증하면서 PDF 생성하는 방법을 찾아야함
+2025-11-07T06:06:35Z	193e7e13bf6227fb95f92423a627c04eac8f5c6a	https://github.com/kkambbaki/backend/commit/193e7e13bf6227fb95f92423a627c04eac8f5c6a	feat: 기본적인 메일 전송 서비스 로직 추가
+2025-11-07T06:05:53Z	1e781c3f9987bc2c32af11e578c41ab656bc5938	https://github.com/kkambbaki/backend/commit/1e781c3f9987bc2c32af11e578c41ab656bc5938	feat: 기본적인 SMTP 설정값 추가
+2025-11-07T04:46:55Z	fa419ce27d8895f5b22bdf6a7d71c3be50140ea9	https://github.com/kkambbaki/backend/commit/fa419ce27d8895f5b22bdf6a7d71c3be50140ea9	feat: report 더미 데이터 생성 command 추가
+2025-11-07T04:46:27Z	cb7db645e217d1c897323af54c59b9a8d4cb7229	https://github.com/kkambbaki/backend/commit/cb7db645e217d1c897323af54c59b9a8d4cb7229	feat: report 관련 어드민 추가
+2025-11-07T04:46:04Z	b981cb78c95d15cd8c661c48c2c2817325dbb53e	https://github.com/kkambbaki/backend/commit/b981cb78c95d15cd8c661c48c2c2817325dbb53e	feat: 기본적인 Report 모델 구조 추가
+2025-11-07T03:10:02Z	907c04afd1fbf93bedb4fef787e19a9492d82af9	https://github.com/kkambbaki/backend/commit/907c04afd1fbf93bedb4fef787e19a9492d82af9	Merge pull request #43 from kkambbaki/feature/game-features Feature/game features
+2025-11-06T11:26:41Z	b5f78b4a98592316ac8d42b9909f8194771ca1c8	https://github.com/kkambbaki/backend/commit/b5f78b4a98592316ac8d42b9909f8194771ca1c8	Update webapp/games/admin/game_result_admin.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-11-06T11:12:47Z	008353ba97ba9be9f4efe37d6ceb5fba9a7d2fd6	https://github.com/kkambbaki/backend/commit/008353ba97ba9be9f4efe37d6ceb5fba9a7d2fd6	feat: 게임 관련 모델에 대한 어드민 추가
+2025-11-06T11:10:59Z	19665687f73db6df653268d059ee645d518595c5	https://github.com/kkambbaki/backend/commit/19665687f73db6df653268d059ee645d518595c5	feat: 문서를 위한 코드 추가
+2025-11-05T10:09:59Z	1d8ae9e95aa890943765d8e98053b7fb28860984	https://github.com/kkambbaki/backend/commit/1d8ae9e95aa890943765d8e98053b7fb28860984	feat: production 배포 workflow
+2025-11-05T09:49:58Z	4ea8a7da4ac6a76ca1d9eaebb1753c9d56a60c39	https://github.com/kkambbaki/backend/commit/4ea8a7da4ac6a76ca1d9eaebb1753c9d56a60c39	fix: celery 관련 container에서는 DB 마이그레이션이 발생하지 않도록 함
+2025-11-05T09:00:19Z	4b2c24ba65ab717070ab1cb8cac0008194bc22dd	https://github.com/kkambbaki/backend/commit/4b2c24ba65ab717070ab1cb8cac0008194bc22dd	fix: image 최적화
+2025-11-05T08:34:45Z	461a192de735a947a1fde4248e3a162cf6bbaf17	https://github.com/kkambbaki/backend/commit/461a192de735a947a1fde4248e3a162cf6bbaf17	fix: image file 최적화
+2025-11-05T07:57:38Z	2182f52e5157981b3634bcdd0ef2b507c6ff84b8	https://github.com/kkambbaki/backend/commit/2182f52e5157981b3634bcdd0ef2b507c6ff84b8	hotfix: migrations 파일 덜 만들어진 내용 추가
+2025-11-05T06:45:35Z	98a55036576d5bb1025f363a904deebc90f8dc99	https://github.com/kkambbaki/backend/commit/98a55036576d5bb1025f363a904deebc90f8dc99	feat: production용 이미지 빌드 과정 추가
+2025-11-05T06:31:56Z	6f99eaf533f151329e28381cfefb505e44b0128f	https://github.com/kkambbaki/backend/commit/6f99eaf533f151329e28381cfefb505e44b0128f	feat: celery image를 별도로 분리하여 관리하도록 함
+2025-11-04T18:27:28Z	be79c96ac046b92f9afc21b1098e039921db3267	https://github.com/kkambbaki/backend/commit/be79c96ac046b92f9afc21b1098e039921db3267	Merge pull request #38 from kkambbaki/feature/0019-report-pin-api Feature/0019 report pin api
+2025-11-04T18:27:20Z	691770ae346ceea61bbf3fc937126865c36f255c	https://github.com/kkambbaki/backend/commit/691770ae346ceea61bbf3fc937126865c36f255c	Merge pull request #37 from kkambbaki/feature/0018-child-api Feature/0018 child api
+2025-11-02T08:02:03Z	e08264154a112047caff3c404048fd2ef2de8bd9	https://github.com/kkambbaki/backend/commit/e08264154a112047caff3c404048fd2ef2de8bd9	fix: report <-> user relation 변경
+2025-11-02T08:00:37Z	49ba6e42a51bf383d6b8b545fc74e34703462558	https://github.com/kkambbaki/backend/commit/49ba6e42a51bf383d6b8b545fc74e34703462558	Update webapp/reports/admin/report_pin_admin.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-11-02T08:00:15Z	29a96e23250c177948919d71fdfa5b37fe56854a	https://github.com/kkambbaki/backend/commit/29a96e23250c177948919d71fdfa5b37fe56854a	Update webapp/api/v1/reports/serializers/set_report_pin_request_serializer.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-11-02T07:53:20Z	e92f7fd21ff20d4b7cd82dad17f11cdc70744fe4	https://github.com/kkambbaki/backend/commit/e92f7fd21ff20d4b7cd82dad17f11cdc70744fe4	fix: patch -> post로 수정
+2025-11-02T07:51:40Z	6f9405c1cf8be57f225f87f14cc61a017f88b23b	https://github.com/kkambbaki/backend/commit/6f9405c1cf8be57f225f87f14cc61a017f88b23b	feat: report pin 설정하는 API 추가
+2025-11-02T07:50:45Z	19a2ed5147482e4045122f44f28dbf3a20f01a71	https://github.com/kkambbaki/backend/commit/19a2ed5147482e4045122f44f28dbf3a20f01a71	feat: report pin을 set, verify하는 과정에 대해서 model method 추가
+2025-11-02T07:50:22Z	a12652cf27ac0fd6c65aacf004dce15355969eff	https://github.com/kkambbaki/backend/commit/a12652cf27ac0fd6c65aacf004dce15355969eff	feat: report model admin 추가
+2025-11-02T07:29:01Z	148956acb311fbf0bfad4ff3af4bf33e6ced82de	https://github.com/kkambbaki/backend/commit/148956acb311fbf0bfad4ff3af4bf33e6ced82de	feat: reports app 생성 및 ReportPin 모델 추가
+2025-11-02T07:18:22Z	1f45979ce55443e2b8327b2f3c820c9f48bfd76a	https://github.com/kkambbaki/backend/commit/1f45979ce55443e2b8327b2f3c820c9f48bfd76a	feat: 자녀 정보 API 추가
+2025-11-02T07:17:20Z	fdae575922fce4f9af9309274b09f5f67039b4d9	https://github.com/kkambbaki/backend/commit/fdae575922fce4f9af9309274b09f5f67039b4d9	feat: 기본적인 child 정보를 다루는 serializer 추가
+2025-10-28T12:16:29Z	d29db67967b9c0939bddc37410f99655fd95f80b	https://github.com/kkambbaki/backend/commit/d29db67967b9c0939bddc37410f99655fd95f80b	fix: python format
+2025-10-28T12:16:00Z	4ca0b947e4dff4b68d5777076b482aa4dfa8d6a7	https://github.com/kkambbaki/backend/commit/4ca0b947e4dff4b68d5777076b482aa4dfa8d6a7	fix: pre-commit settings
+2025-10-28T12:08:25Z	4b2875156151ce97191c0ae7b5ece40c12062145	https://github.com/kkambbaki/backend/commit/4b2875156151ce97191c0ae7b5ece40c12062145	fix: swagger-docs, coverage-docs 브랜치에 커밋이 쌓이는 이슈 수정
+2025-10-27T23:18:55Z	f404fb89dcbebc3dbb4923e91e19731b918eee48	https://github.com/kkambbaki/backend/commit/f404fb89dcbebc3dbb4923e91e19731b918eee48	Merge pull request #35 from kkambbaki/0033-child-model
+2025-10-27T23:18:24Z	538f1570282d52e805c97a3b0212e413ce27ee7a	https://github.com/kkambbaki/backend/commit/538f1570282d52e805c97a3b0212e413ce27ee7a	Merge pull request #32 from kkambbaki/0015-username-email-api
+2025-10-27T23:18:07Z	6f38b59ce41304a541b92302eaf4207181a47aac	https://github.com/kkambbaki/backend/commit/6f38b59ce41304a541b92302eaf4207181a47aac	Merge pull request #31 from kkambbaki/feature/0014-user-register-rule
+2025-10-26T10:55:28Z	9b2c7475da0ab25c8937d0722312d2a555265211	https://github.com/kkambbaki/backend/commit/9b2c7475da0ab25c8937d0722312d2a555265211	Update webapp/users/tests/test_child_model.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-10-26T10:55:08Z	b282e01558b6fb45a30c2dc8476c9254542cdcb8	https://github.com/kkambbaki/backend/commit/b282e01558b6fb45a30c2dc8476c9254542cdcb8	Update webapp/users/tests/test_child_model.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-10-26T10:54:51Z	2b91bd080088b5986e61418069e8f31d9c4232ca	https://github.com/kkambbaki/backend/commit/2b91bd080088b5986e61418069e8f31d9c4232ca	Update webapp/users/admin/child_admin.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-10-26T10:50:57Z	cb03cb873e662a2dea12419ca639fa2dae6c79fa	https://github.com/kkambbaki/backend/commit/cb03cb873e662a2dea12419ca639fa2dae6c79fa	test: child 모델에 대한 기본적인 테스트 코드 추가
+2025-10-26T10:50:14Z	71cbc8adafb3b5f569cee90509adaeb8e0e48030	https://github.com/kkambbaki/backend/commit/71cbc8adafb3b5f569cee90509adaeb8e0e48030	feat: child admin 추가
+2025-10-26T10:49:35Z	d6172c330402fecd8560ec759b28fd862a0cacb8	https://github.com/kkambbaki/backend/commit/d6172c330402fecd8560ec759b28fd862a0cacb8	feat: child 모델 추가
+2025-10-26T10:21:34Z	8a9b2dede7cc318f0c8294bc4b62656042da0c07	https://github.com/kkambbaki/backend/commit/8a9b2dede7cc318f0c8294bc4b62656042da0c07	feat: username이 현재 중복되어 있는지 확인하는 API 추가
+2025-10-26T10:20:37Z	77ef00504a623e592fbafe1d525f36efca57c497	https://github.com/kkambbaki/backend/commit/77ef00504a623e592fbafe1d525f36efca57c497	feat: email 업데이트 API 추가
+2025-10-26T10:18:09Z	807715487115fa02640c23a7f8217900a5aacfe6	https://github.com/kkambbaki/backend/commit/807715487115fa02640c23a7f8217900a5aacfe6	fix: 다음 작업 관련 내용 올라간 것 삭제
+2025-10-26T10:16:53Z	709d6ad63c798a7b1ae3bbf8e4ab5d676c681183	https://github.com/kkambbaki/backend/commit/709d6ad63c798a7b1ae3bbf8e4ab5d676c681183	refactor: save 로직을 model의 로직을 사용하도록 함
+2025-10-26T10:12:47Z	df311824f75d8e83fe5f9866e16ad5755731e3d5	https://github.com/kkambbaki/backend/commit/df311824f75d8e83fe5f9866e16ad5755731e3d5	test: 로그인 / 회원가입 관련 테스트 추가
+2025-10-26T09:53:51Z	9c5a0cafae6d6b5926235cacd104b5b3b0514857	https://github.com/kkambbaki/backend/commit/9c5a0cafae6d6b5926235cacd104b5b3b0514857	feat: 사용자 회원가입 / 로그인 과정에서 이메일이 아닌 username 기준으로 작동하도록 함
+2025-10-26T09:48:57Z	1cf4754cbeb73122fd6e9e5dfe1dba848a35e4d4	https://github.com/kkambbaki/backend/commit/1cf4754cbeb73122fd6e9e5dfe1dba848a35e4d4	feat: django command에 대한 tool 개선
+2025-10-16T10:38:03Z	e8579597f7a3724e491fbb0b4efb53c59a4196cc	https://github.com/kkambbaki/backend/commit/e8579597f7a3724e491fbb0b4efb53c59a4196cc	feat: CORS_ALLOWED_ORIGINS, CSRF_TRUSTED_ORIGINS 추가
+2025-10-15T06:15:39Z	7fb4c6f486a4bea03aac695526338ab6227761c9	https://github.com/kkambbaki/backend/commit/7fb4c6f486a4bea03aac695526338ab6227761c9	fix: 사용되지 않는 환경변수 삭제
+2025-10-14T19:10:45Z	0df02b815d6fa1846c102859fb82e469a9c2ad63	https://github.com/kkambbaki/backend/commit/0df02b815d6fa1846c102859fb82e469a9c2ad63	fix: port number가 정수로 떨어지지 않는 문제 수정
+2025-10-14T18:34:45Z	25bb5cec79b83a8b20333cf471eb3d02c5c88220	https://github.com/kkambbaki/backend/commit/25bb5cec79b83a8b20333cf471eb3d02c5c88220	fix: alpha image 내에서 uv를 찾지 못하는 이슈 수정
+2025-10-14T18:16:23Z	310292915bc3540b1b9fa39dffb688cd5ca54f39	https://github.com/kkambbaki/backend/commit/310292915bc3540b1b9fa39dffb688cd5ca54f39	Merge pull request #13 from kkambbaki/feature/0006-alpha-workflow Feature/0006 alpha workflow
+2025-10-14T17:59:16Z	318bcc648b59d3bc3824ab56f3f41af6c7be588d	https://github.com/kkambbaki/backend/commit/318bcc648b59d3bc3824ab56f3f41af6c7be588d	refactor: gemini code review 반영
+2025-10-14T17:57:09Z	688811f252caea95ae6a0ebefd4a46a70b01944a	https://github.com/kkambbaki/backend/commit/688811f252caea95ae6a0ebefd4a46a70b01944a	Update environments/alpha/build.sh Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-10-14T17:55:16Z	7e95239cc9ad193d2e756a788723e16999e7a71f	https://github.com/kkambbaki/backend/commit/7e95239cc9ad193d2e756a788723e16999e7a71f	feat: test settings 추가
+2025-10-14T17:49:50Z	64c7ec21e6702c17741d434d455a1c1e3d3fd48a	https://github.com/kkambbaki/backend/commit/64c7ec21e6702c17741d434d455a1c1e3d3fd48a	feat: alpha image 빌드 workflow 추가
+2025-10-14T17:39:25Z	fd9f23144f5b3246c15ae0b2c9456664ad725376	https://github.com/kkambbaki/backend/commit/fd9f23144f5b3246c15ae0b2c9456664ad725376	feat: test coverage report 추가
+2025-10-14T17:39:08Z	9d272e0a0fed41b4437f5366d2adc9a157c10a00	https://github.com/kkambbaki/backend/commit/9d272e0a0fed41b4437f5366d2adc9a157c10a00	feat: swagger file generate workflow
+2025-10-14T17:38:53Z	c13b288a5a20382076b76b9abdcc91e068919a92	https://github.com/kkambbaki/backend/commit/c13b288a5a20382076b76b9abdcc91e068919a92	feat: CI workflow
+2025-10-14T17:38:26Z	19d113047f03cf8b9dd018489d3edab34bf697c0	https://github.com/kkambbaki/backend/commit/19d113047f03cf8b9dd018489d3edab34bf697c0	feat: alpha image dockerfile 추가
+2025-10-14T17:36:34Z	d6e1a5ea2bfd636ba8608a8874a63d42fb869a56	https://github.com/kkambbaki/backend/commit/d6e1a5ea2bfd636ba8608a8874a63d42fb869a56	Merge pull request #12 from kkambbaki/feature/0005-dockerize Feature/0005 dockerize
+2025-10-14T17:36:23Z	f05ecbc5487ad879084e41c5e0fb6e52a0b116d5	https://github.com/kkambbaki/backend/commit/f05ecbc5487ad879084e41c5e0fb6e52a0b116d5	Merge pull request #11 from kkambbaki/feature/0007-user-api Feature/0007 기본적인 사용자 로그인 / 회원가입 등 API 추가
+2025-10-14T17:35:54Z	fcb1d1c8ae150dd969a490a34f754550ed5bcb5b	https://github.com/kkambbaki/backend/commit/fcb1d1c8ae150dd969a490a34f754550ed5bcb5b	Update webapp/api/v1/users/serializers/user_detail_serializer.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-10-14T17:35:00Z	50147daa4d41f53f715848ec8369c12c3ab03bbd	https://github.com/kkambbaki/backend/commit/50147daa4d41f53f715848ec8369c12c3ab03bbd	Merge pull request #10 from kkambbaki/feature/0004-django-and-drf-settings Feature/0004 django and drf settings
+2025-10-14T17:34:47Z	a78764146eccd46563f8e05ce39d138727d2292e	https://github.com/kkambbaki/backend/commit/a78764146eccd46563f8e05ce39d138727d2292e	Merge pull request #9 from kkambbaki/feature/0002-uv-settings uv setting 및 pre-commit 설정 추가
+2025-10-14T17:30:39Z	16273c98f6298e5e5d01b8c0aa8b5114acacd039	https://github.com/kkambbaki/backend/commit/16273c98f6298e5e5d01b8c0aa8b5114acacd039	fix: .env.sample 수정
+2025-10-14T12:49:43Z	c1e241b5f173e4cc51890a001f71cc093ab1e2da	https://github.com/kkambbaki/backend/commit/c1e241b5f173e4cc51890a001f71cc093ab1e2da	docs: README.md
+2025-10-14T12:44:03Z	797d6253edcdb19bb3f41c27fb9540ad21c77b88	https://github.com/kkambbaki/backend/commit/797d6253edcdb19bb3f41c27fb9540ad21c77b88	feat: docker container 내에서 명령어를 쉽게 구동할 수 있도록 추가
+2025-10-14T12:43:42Z	7da7f8a3eca644ba73bdfc4d636a415fa235b274	https://github.com/kkambbaki/backend/commit/7da7f8a3eca644ba73bdfc4d636a415fa235b274	feat: dockerize를 위한 파일 추가
+2025-10-14T12:39:41Z	9f88b05040305fa5abf70cb9fea9b2600ce56aa7	https://github.com/kkambbaki/backend/commit/9f88b05040305fa5abf70cb9fea9b2600ce56aa7	feat: 기본적인 사용자 로그인 / 회원가입 등 API 추가
+2025-10-14T12:15:45Z	9f9deb1ccdcf17e37bb21655275498f9cc3967b7	https://github.com/kkambbaki/backend/commit/9f9deb1ccdcf17e37bb21655275498f9cc3967b7	fix: gemini 코드 리뷰 반영
+2025-10-14T12:13:43Z	5f5e131f81bae6861d228fffd7ace6c277d53060	https://github.com/kkambbaki/backend/commit/5f5e131f81bae6861d228fffd7ace6c277d53060	Update webapp/common/utils/datetime.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-10-14T12:11:58Z	ce589b47eb30ca1ce6d3c0cfa5940c5d90f8a1ef	https://github.com/kkambbaki/backend/commit/ce589b47eb30ca1ce6d3c0cfa5940c5d90f8a1ef	Update webapp/common/exceptions/base_api_exception.py Co-authored-by: gemini-code-assist[bot] <176961590+gemini-code-assist[bot]@users.noreply.github.com>
+2025-10-14T12:10:38Z	e6a3f92a104308f117c919914211d53ddd515561	https://github.com/kkambbaki/backend/commit/e6a3f92a104308f117c919914211d53ddd515561	fix: allauth 관련 내용 rollback / dj-rest-auth에서 사용됨
+2025-10-14T12:09:37Z	0046c98d44c66748ecf1dbc2aa9689fabfb5c6f1	https://github.com/kkambbaki/backend/commit/0046c98d44c66748ecf1dbc2aa9689fabfb5c6f1	fix: 빠진 error code 선언 추가
+2025-10-14T11:48:38Z	7eed6947acb23685ae3c07857807f7cf970981b8	https://github.com/kkambbaki/backend/commit/7eed6947acb23685ae3c07857807f7cf970981b8	Merge pull request #8 from kkambbaki/feature/0001-pr-template PULL_REQUEST_TEMPLATE.md 추가
+2025-10-14T11:47:24Z	142dc367b4e3cfbe9a17b8c1b35d0a0d0353a3b5	https://github.com/kkambbaki/backend/commit/142dc367b4e3cfbe9a17b8c1b35d0a0d0353a3b5	fix: pre-commit-config
+2025-10-14T11:46:41Z	a756a8a1b319d4b2f37c55f7617a01ab0698d9be	https://github.com/kkambbaki/backend/commit/a756a8a1b319d4b2f37c55f7617a01ab0698d9be	feat: 기본 permission 클래스 추가
+2025-10-14T11:38:16Z	78b1c367e10b05f3be6226faa296d4129979aaae	https://github.com/kkambbaki/backend/commit/78b1c367e10b05f3be6226faa296d4129979aaae	fix: template 코드에서 social account 관련 내용 삭제
+2025-10-14T11:36:56Z	61876b5fac29c271ed6796e34731e8fc8f8e5606	https://github.com/kkambbaki/backend/commit/61876b5fac29c271ed6796e34731e8fc8f8e5606	feat: 기본적인 User 모델 추가
+2025-10-14T11:34:27Z	74af9319b4c40a2197806a1f3ecdd6ce8cae12e9	https://github.com/kkambbaki/backend/commit/74af9319b4c40a2197806a1f3ecdd6ce8cae12e9	feat: api/v1/health-check API 추가
+2025-10-14T11:33:21Z	da22762cc592b7e0ee95ecad2af4c77bdf5f2665	https://github.com/kkambbaki/backend/commit/da22762cc592b7e0ee95ecad2af4c77bdf5f2665	feat: 날짜에 대한 기본 util 모듈 추가
+2025-10-14T11:32:51Z	bc0404e37157e8f2c1e691b116d55dd9dff77868	https://github.com/kkambbaki/backend/commit/bc0404e37157e8f2c1e691b116d55dd9dff77868	feat: common.choices 패키지 사전 생성
+2025-10-14T11:32:17Z	4c1b880e9b247922434f5d9f278b2d6ea76a86c2	https://github.com/kkambbaki/backend/commit/4c1b880e9b247922434f5d9f278b2d6ea76a86c2	feat: 기본 에러 처리 클래스 추가
+2025-10-14T11:31:43Z	c31d34e1494cf8f9581857a3e28442d85493b8d1	https://github.com/kkambbaki/backend/commit/c31d34e1494cf8f9581857a3e28442d85493b8d1	feat: 기본 페이지네이션 클래스 추가
+2025-10-14T11:31:10Z	83cd3cbc7ada3dcefd48b1c80534f067533d9cb6	https://github.com/kkambbaki/backend/commit/83cd3cbc7ada3dcefd48b1c80534f067533d9cb6	feat: 기본 camelCase middleware 추가
+2025-10-14T11:30:45Z	58a9b381b576ca37a64c366325f17c5c77094627	https://github.com/kkambbaki/backend/commit/58a9b381b576ca37a64c366325f17c5c77094627	feat: 기본 APIView, Viewset 추가
+2025-10-14T11:29:47Z	56b4635430bc03a05dd0313daa12e1d6317b3113	https://github.com/kkambbaki/backend/commit/56b4635430bc03a05dd0313daa12e1d6317b3113	feat: base model 클래스 추가
+2025-10-14T11:29:07Z	2044625b118534b41f15121dc44f450e94e8905c	https://github.com/kkambbaki/backend/commit/2044625b118534b41f15121dc44f450e94e8905c	feat: development / alpha / production 환경에 맞는 설정 분리
+2025-10-14T11:24:54Z	af716754491f2b7b2c183dab284f47e9fa88cb29	https://github.com/kkambbaki/backend/commit/af716754491f2b7b2c183dab284f47e9fa88cb29	feat: 기본적인 django server 파일 추가
+2025-10-14T07:08:15Z	98d57983a674349710d4a6cd1441c056d282e3d1	https://github.com/kkambbaki/backend/commit/98d57983a674349710d4a6cd1441c056d282e3d1	feat: uv setting 및 pre-commit 설정 추가
+2025-10-14T07:03:31Z	0d42a130bfa9df55130f40fafc49960d7ec0728b	https://github.com/kkambbaki/backend/commit/0d42a130bfa9df55130f40fafc49960d7ec0728b	docs: PULL_REQUEST_TEMPLATE.md 추가
+2025-10-14T07:01:54Z	6e949c2f9afc224417c9466c49ecdec24cfb91d5	https://github.com/kkambbaki/backend/commit/6e949c2f9afc224417c9466c49ecdec24cfb91d5	docs: 기본 README.md 추가

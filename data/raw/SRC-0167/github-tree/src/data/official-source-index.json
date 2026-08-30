@@ -1,0 +1,147 @@
+{
+  "repository": "hashicorp/web-unified-docs",
+  "license": "BUSL-1.1 with the repository Additional Use Grant; verify LICENSE before redistribution",
+  "examBaseline": "Terraform 1.12",
+  "resolvedCommit": "79430c3eebc55958a9c0610bf6b14ef5423cfbde",
+  "generatedAt": "2026-08-02T11:19:27.507Z",
+  "sources": [
+    {
+      "path": "content/terraform/v1.12.x/docs/intro/index.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/intro/index.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/intro/v1.12.x"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/intro/core-workflow.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/intro/core-workflow.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/intro/v1.12.x/core-workflow"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/cli/commands/init.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/cli/commands/init.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/cli/v1.12.x/commands/init"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/cli/commands/plan.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/cli/commands/plan.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/cli/v1.12.x/commands/plan"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/cli/commands/apply.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/cli/commands/apply.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/cli/v1.12.x/commands/apply"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/cli/commands/destroy.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/cli/commands/destroy.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/cli/v1.12.x/commands/destroy"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/cli/commands/fmt.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/cli/commands/fmt.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/cli/v1.12.x/commands/fmt"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/cli/commands/validate.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/cli/commands/validate.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/cli/v1.12.x/commands/validate"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/cli/commands/import.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/cli/commands/import.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/cli/v1.12.x/commands/import"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/cli/commands/state/index.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/cli/commands/state/index.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/cli/v1.12.x/commands/state"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/internals/graph.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/internals/graph.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/internals/v1.12.x/graph"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/internals/debugging.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/internals/debugging.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/internals/v1.12.x/debugging"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/language/providers/index.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/language/providers/index.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/language/v1.12.x/providers"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/language/files/dependency-lock.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/language/files/dependency-lock.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/language/v1.12.x/files/dependency-lock"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/language/backend/s3.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/language/backend/s3.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/language/v1.12.x/backend/s3"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/language/state/index.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/language/state/index.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/language/v1.12.x/state"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/language/state/locking.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/language/state/locking.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/language/v1.12.x/state/locking"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/language/block/moved.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/language/block/moved.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/language/v1.12.x/block/moved"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/language/block/removed.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/language/block/removed.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/language/v1.12.x/block/removed"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/language/import/index.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/language/import/index.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/language/v1.12.x/import"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/language/manage-sensitive-data/index.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/language/manage-sensitive-data/index.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/language/v1.12.x/manage-sensitive-data"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/language/manage-sensitive-data/ephemeral.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/language/manage-sensitive-data/ephemeral.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/language/v1.12.x/manage-sensitive-data/ephemeral"
+    },
+    {
+      "path": "content/terraform/v1.12.x/docs/language/manage-sensitive-data/write-only.mdx",
+      "available": true,
+      "repositoryUrl": "https://github.com/hashicorp/web-unified-docs/blob/79430c3eebc55958a9c0610bf6b14ef5423cfbde/content/terraform/v1.12.x/docs/language/manage-sensitive-data/write-only.mdx",
+      "developerUrl": "https://developer.hashicorp.com/terraform/language/v1.12.x/manage-sensitive-data/write-only"
+    }
+  ]
+}

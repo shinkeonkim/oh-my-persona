@@ -1,0 +1,8 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-double-jump-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:27:08Z	617def190d477e0dab6086f68a25cb0e664a93c7	https://github.com/kokoa-hobby/minecraft-double-jump-plugin/commit/617def190d477e0dab6086f68a25cb0e664a93c7	Add README
+2026-07-22T12:22:14Z	ec4595bd471a9bf28f4b11a6773eaa21dea1f105	https://github.com/kokoa-hobby/minecraft-double-jump-plugin/commit/ec4595bd471a9bf28f4b11a6773eaa21dea1f105	Add DoubleJumpPlugin main class
+2026-07-22T12:22:14Z	37ab2fae424fc450bb017974ceb00052117a786c	https://github.com/kokoa-hobby/minecraft-double-jump-plugin/commit/37ab2fae424fc450bb017974ceb00052117a786c	Add listeners
+2026-07-22T12:22:14Z	d88361f605d42abe5c72548b260c3b0457550792	https://github.com/kokoa-hobby/minecraft-double-jump-plugin/commit/d88361f605d42abe5c72548b260c3b0457550792	Add plugin manifest and resources
+2026-07-22T12:22:14Z	314fca14166490fd6f6a8f9a5905820ef12f4d6b	https://github.com/kokoa-hobby/minecraft-double-jump-plugin/commit/314fca14166490fd6f6a8f9a5905820ef12f4d6b	Add Gradle project scaffold

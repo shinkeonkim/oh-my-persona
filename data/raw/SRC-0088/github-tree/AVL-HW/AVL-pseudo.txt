@@ -1,0 +1,152 @@
+insertAVL(T, newKey)
+  p <- T;
+  q <- null;
+  x <- null;
+  f <- null;
+  stack <- [];
+
+  // find position to insert newKey while storing parent node on stack
+  while (p != null) do
+    if (newKey = p.key) then return;
+    end if
+    
+    q <- p;
+    push q on stack;
+    
+    if (newKey < p.key) then p <- p.left;
+    else then p <- p.right;
+    end if
+  end while
+
+  // create new node
+  y <- getAVLNode();
+  y.key <- newKey;
+
+  // insert y as a child of q
+  if (T = null) then T <- y;
+  else if (newKey < q.key) then q.left <- y;
+  else then q.right <- y;
+  end if
+
+  // update height and balancing factor while popping parent node from stack
+  while (stack is not empty) do
+    q <- pop from stack;
+    q.height <- 1 + max(q.left.height, q.right.height);
+    q.bf <- q.left.height - q.right.height;
+
+    if (1 < q.bf or q.bf < -1) then
+      if (x = null) then
+        x <- q;
+        f <- top of stack;
+      end if
+    end if
+  end while
+
+  // if there's no problem, return
+  if (x = null) then return;
+  end if
+
+  // rebalance tree
+  if (1 < x.bf) then
+    if (0 < x.left.bf) then rotate LL;
+    else then rotate LR;
+    end if
+  else if (x.bf < -1) then
+    if (x.right.bf < 0) then rotate RR;
+    else then rotate RL;
+    end if
+  end if
+end insertAVL
+
+
+
+deleteAVL(T, deleteKey)
+  p <- T;
+  q <- null;
+  x <- null;
+  f <- null;
+  stack <- [];
+
+  // perform standard BST deletion
+
+  // find position of deleteKey while storing parent node on stack
+  while (p != null and deleteKey != p.key) do
+    q <- p;
+    push q on stack;
+
+    if (deleteKey < p.key) then p <- p.left;
+    else then p <- p.right;
+    end if
+  end while
+
+  if (p = null) then return;  // deleteKey was not found
+  end if
+
+  // case of degree 2 is reduced to case of degree 0 or case of degree 1
+  if (p.left != null and p.right != null) then
+    push p on stack;
+    tempNode <- p;
+
+    if (p.left.height < p.right.height or (p.left.height == p.right.height and p.left.size < p.right.size)) then
+      p <- p.right;
+      while (p.left != null)
+        push p on stack;
+        p <- p.left;
+      end while
+    else then
+      p <- p.left;
+      while (p.right != null)
+        push p on stack;
+        p <- p.right;
+      end while
+    end if
+
+    tempNode.key <- p.key;
+    q <- top of stack;
+  end if
+
+  // now degree of p is 0 or 1
+  // delete p from T
+  if (p.left = null and p.right = null) then  // case of degree 0
+    if (q = null) then T <- null; // case of root
+    else if (q.left = p) then q.left = null;
+    else then q.right = null;
+    end if
+  else then // case of degree 1
+    if (p.left != null) then
+      if (q = null) then T <- T.left; // case of root
+      else if (q.left = p) then q.left <- p.left;
+      else then q.right <- p.left;
+      end if
+    else then
+      if (q = null) then  T <- T.right; // case of root
+      else if (q.left = p) then q.left <- p.right;
+      else then q.right <- p.right;
+      end if
+    end if
+  end if
+
+  delete p;
+
+  // update height and balancing factor while popping parent node from stack
+  while (stack is not empty) do
+    q <- pop from stack;
+    q.height <- 1 + max(q.left.height, q.right.height);
+    q.bf <- q.left.height - q.right.height;
+
+    if (q.bf < -1 or 1 < q.bf) then
+      x <- q;
+      f <- top of stack;
+      // rebalance tree
+      if (1 < x.bf) then
+        if (0 <= x.left.bf) then rotate LL;
+        else then rotate LR;
+        end if
+      else if (x.bf < -1) then
+        if (x.right.bf <= 0) then rotate RR;
+        else then rotate RL;
+        end if
+      end if
+    end if
+  end while
+end deleteAVL

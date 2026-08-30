@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/kmu-aws-capstone-team-4/kmu-aws-capstone-team-4.github.io
+Author account: shinkeonkim
+
+2026-03-26T10:49:09Z	3c6e87841ea83e53569a2538c4c863d50b70186e	https://github.com/kmu-aws-capstone-team-4/kmu-aws-capstone-team-4.github.io/commit/3c6e87841ea83e53569a2538c4c863d50b70186e	Initial commit

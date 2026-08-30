@@ -1,0 +1,5 @@
+GitHub repository: https://github.com/shinkeonkim/microbit-choreboard-initial-code
+Author account: shinkeonkim
+
+2020-08-04T09:11:21Z	8ad12f85fb51b1227bfee610344d4e7d35e4ca37	https://github.com/shinkeonkim/microbit-choreboard-initial-code/commit/8ad12f85fb51b1227bfee610344d4e7d35e4ca37	Initial files for MakeCode project
+2020-08-04T09:11:08Z	40b6daded6f0e35978b887ccbb2aa691bb9e9d99	https://github.com/shinkeonkim/microbit-choreboard-initial-code/commit/40b6daded6f0e35978b887ccbb2aa691bb9e9d99	빈 저장소 초기화

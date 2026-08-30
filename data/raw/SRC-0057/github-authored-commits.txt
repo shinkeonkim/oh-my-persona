@@ -1,0 +1,19 @@
+GitHub repository: https://github.com/shinkeonkim/personal-awesome
+Author account: shinkeonkim
+
+2022-11-16T13:13:34Z	c2cfb812f702004dd9917a727a8748898684bb4f	https://github.com/shinkeonkim/personal-awesome/commit/c2cfb812f702004dd9917a727a8748898684bb4f	Update README.md
+2022-11-16T12:57:56Z	85b13b468541499bad59ce42b5df0a799e830a13	https://github.com/shinkeonkim/personal-awesome/commit/85b13b468541499bad59ce42b5df0a799e830a13	Update README.md
+2022-11-16T12:47:57Z	969ca9b4718c2d4ba62f285f0ae57e33fdd20201	https://github.com/shinkeonkim/personal-awesome/commit/969ca9b4718c2d4ba62f285f0ae57e33fdd20201	Update README.md
+2022-11-16T12:46:35Z	90e32459c5320310311c3202a5ced8f0db05fc41	https://github.com/shinkeonkim/personal-awesome/commit/90e32459c5320310311c3202a5ced8f0db05fc41	Update README.md
+2022-11-16T12:39:29Z	b9e585c7bddefd75eb4d7606d8c7ebff2aaba9e6	https://github.com/shinkeonkim/personal-awesome/commit/b9e585c7bddefd75eb4d7606d8c7ebff2aaba9e6	Update README.md
+2022-11-16T12:33:42Z	1cbb9bac3e5fd87735c66d96353a4af3a840e5e6	https://github.com/shinkeonkim/personal-awesome/commit/1cbb9bac3e5fd87735c66d96353a4af3a840e5e6	Update README.md
+2022-11-16T06:55:33Z	69288556278e63192fba2bb224eb42bfb0aa1d7e	https://github.com/shinkeonkim/personal-awesome/commit/69288556278e63192fba2bb224eb42bfb0aa1d7e	Update README.md
+2022-11-16T06:54:02Z	532821db0da5c192cdab02fa06fb6f183f70202a	https://github.com/shinkeonkim/personal-awesome/commit/532821db0da5c192cdab02fa06fb6f183f70202a	Update README.md
+2022-11-08T06:52:48Z	6f9d511eac46e91eb6b0d5be872b66568802a239	https://github.com/shinkeonkim/personal-awesome/commit/6f9d511eac46e91eb6b0d5be872b66568802a239	Update README.md
+2022-11-08T06:47:56Z	35937a69e4e666fc88d9c417cb14cc36e66b9075	https://github.com/shinkeonkim/personal-awesome/commit/35937a69e4e666fc88d9c417cb14cc36e66b9075	Update README.md
+2022-11-06T13:23:08Z	8dec0ec7ffcabeb17b5b17c540b913640e133ef4	https://github.com/shinkeonkim/personal-awesome/commit/8dec0ec7ffcabeb17b5b17c540b913640e133ef4	Update README.md
+2022-11-06T13:18:11Z	c36c90d06b1cc60028228b9e66e15baabc55cb09	https://github.com/shinkeonkim/personal-awesome/commit/c36c90d06b1cc60028228b9e66e15baabc55cb09	Update README.md
+2022-11-06T13:15:09Z	94835765a37e733dabf284acd0a315c77df45476	https://github.com/shinkeonkim/personal-awesome/commit/94835765a37e733dabf284acd0a315c77df45476	Update README.md
+2022-11-06T13:09:03Z	7399aa09c4d0ea9cfe3839ce5c43b8765ef49470	https://github.com/shinkeonkim/personal-awesome/commit/7399aa09c4d0ea9cfe3839ce5c43b8765ef49470	Update README.md
+2022-11-05T13:18:41Z	2cb4150fe3cf8c67c0ee22f4e6449cf543daabfc	https://github.com/shinkeonkim/personal-awesome/commit/2cb4150fe3cf8c67c0ee22f4e6449cf543daabfc	Update README.md
+2022-07-09T11:32:50Z	24b10b2e0d7fb2f2846bbab77a68c48354696caa	https://github.com/shinkeonkim/personal-awesome/commit/24b10b2e0d7fb2f2846bbab77a68c48354696caa	Initial commit

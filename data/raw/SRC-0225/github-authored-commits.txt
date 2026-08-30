@@ -1,0 +1,40 @@
+GitHub repository: https://github.com/shinkeonkim/random_word_website
+Author account: shinkeonkim
+
+2019-08-05T08:41:04Z	05b6d4120f119e0f1245b3e15db97285e8edfb4d	https://github.com/shinkeonkim/random_word_website/commit/05b6d4120f119e0f1245b3e15db97285e8edfb4d	last update
+2019-07-15T00:43:12Z	84bf331d94af86a7d983ad1dcb350f9bf59e1fa7	https://github.com/shinkeonkim/random_word_website/commit/84bf331d94af86a7d983ad1dcb350f9bf59e1fa7	의미없는 POST 전송 삭제
+2019-07-12T09:49:13Z	376aa790e337461b7f416cf02a074278298f8447	https://github.com/shinkeonkim/random_word_website/commit/376aa790e337461b7f416cf02a074278298f8447	CSS 수정, head, tail 추가, class명 수정
+2019-07-06T14:56:28Z	679080338c5bbc3d588578b6f039badb010cfddc	https://github.com/shinkeonkim/random_word_website/commit/679080338c5bbc3d588578b6f039badb010cfddc	Merge branch 'master' of https://github.com/shinkeonkim/random_word_website
+2019-07-06T14:55:10Z	4cde3715021d5b0f74c89f6c0109d52dda0eecb9	https://github.com/shinkeonkim/random_word_website/commit/4cde3715021d5b0f74c89f6c0109d52dda0eecb9	단어 웹사이트 파싱 자동 DB 저장 기능 추가
+2019-07-01T06:17:58Z	85afd152ea4880877a80b4bd4c4cdc4b9596809c	https://github.com/shinkeonkim/random_word_website/commit/85afd152ea4880877a80b4bd4c4cdc4b9596809c	Create README.md
+2019-07-01T06:14:05Z	48d47e546323ff1e4d59f5bf826115891ee0bb83	https://github.com/shinkeonkim/random_word_website/commit/48d47e546323ff1e4d59f5bf826115891ee0bb83	최근 추가한 단어 기능, 오류 메세지 등 jsp로 수정, 일부 디자인 수정
+2019-06-28T08:41:15Z	50c00a26a650c6a5041524dc9fb80b55cf2028b8	https://github.com/shinkeonkim/random_word_website/commit/50c00a26a650c6a5041524dc9fb80b55cf2028b8	random_word_website initialization
+2019-06-18T12:17:51Z	a14f3baa94148e23c248b57d97bd1e5300e4eb55	https://github.com/shinkeonkim/random_word_website/commit/a14f3baa94148e23c248b57d97bd1e5300e4eb55	최종이라 생각되는 변경 사항들 수정
+2019-06-17T05:11:00Z	f028bae7c8ea95426aeebfc4daadf840fc8272d9	https://github.com/shinkeonkim/random_word_website/commit/f028bae7c8ea95426aeebfc4daadf840fc8272d9	안드로이드와 통신 맞추기 위해 조정
+2019-06-17T05:10:19Z	ecac1323be6bcc61fb82edc9c847f4108ae892d4	https://github.com/shinkeonkim/random_word_website/commit/ecac1323be6bcc61fb82edc9c847f4108ae892d4	최신순으로 정렬하도록 수정, rate도 json에 반환하도록 추가
+2019-06-17T05:09:03Z	bf501b061c83ef4e649da4fad4fb29c985ebf113	https://github.com/shinkeonkim/random_word_website/commit/bf501b061c83ef4e649da4fad4fb29c985ebf113	register.php 수정
+2019-06-17T05:07:54Z	89462ec8527089b4c7f324d73974d5642ab25c82	https://github.com/shinkeonkim/random_word_website/commit/89462ec8527089b4c7f324d73974d5642ab25c82	test용 코드 삽입
+2019-06-01T10:10:24Z	76bfca9f2cabd0090a0020ea1cbbb2db4856ed25	https://github.com/shinkeonkim/random_word_website/commit/76bfca9f2cabd0090a0020ea1cbbb2db4856ed25	init.php 관련 수정, 안드로이드와 통신 관련 수정
+2019-05-31T07:34:50Z	d810731baa7084df96f205005183c81a417558d1	https://github.com/shinkeonkim/random_word_website/commit/d810731baa7084df96f205005183c81a417558d1	안드로이드와 통신하는 과정에서의 json 응답 수정
+2019-05-30T10:00:02Z	889ed8d6a8d9797b08deb2853413d9d52f8f8aba	https://github.com/shinkeonkim/random_word_website/commit/889ed8d6a8d9797b08deb2853413d9d52f8f8aba	서버 오류 해결 작업
+2019-05-28T16:21:45Z	b1d5a6917822484dbbc2e5142124228ebe4fd325	https://github.com/shinkeonkim/random_word_website/commit/b1d5a6917822484dbbc2e5142124228ebe4fd325	1. 리뷰 업로드, 조회 기능 추가 2. json 양식 개량(유니코드 인코딩, 백슬래시 오류 해결) 3. 로직 개편
+2019-05-27T04:55:49Z	b1a818de3b453a5ca09d23484b919a2f82987d2c	https://github.com/shinkeonkim/random_word_website/commit/b1a818de3b453a5ca09d23484b919a2f82987d2c	html 태그 삭제, resources.html 초기화
+2019-05-24T07:18:50Z	87228fca3d592d04e772eecd47cebaf2db93f1d8	https://github.com/shinkeonkim/random_word_website/commit/87228fca3d592d04e772eecd47cebaf2db93f1d8	login 기능 POST 전송방식 내 아이디 변경
+2019-05-24T06:59:18Z	5349a4059763dd859abdc46f67e6c968196635aa	https://github.com/shinkeonkim/random_word_website/commit/5349a4059763dd859abdc46f67e6c968196635aa	사용자 등록 및 로그인 기능 업데이트
+2019-05-21T12:33:06Z	ba95e4f8896a60056e6e52a60fbb838d2b526181	https://github.com/shinkeonkim/random_word_website/commit/ba95e4f8896a60056e6e52a60fbb838d2b526181	login 기능과 사용자 등록 기능 수정 및 json으로 반환하는 기능 제작
+2019-05-20T01:57:38Z	328756fb10dbc341e3e94c69fb99c86d1baf0aff	https://github.com/shinkeonkim/random_word_website/commit/328756fb10dbc341e3e94c69fb99c86d1baf0aff	사용자 등록시 username, email 중복 제한
+2019-05-19T09:22:27Z	7dc73f4e06f5513974b5b43ab844dd84c446c9d0	https://github.com/shinkeonkim/random_word_website/commit/7dc73f4e06f5513974b5b43ab844dd84c446c9d0	login 기능 구현
+2019-05-19T08:29:54Z	e59da279e05b23732473f378e2c36de12dbc73a5	https://github.com/shinkeonkim/random_word_website/commit/e59da279e05b23732473f378e2c36de12dbc73a5	pstgram_update
+2019-05-14T03:46:39Z	89d787b14e69e124e8233447a836d532e024da66	https://github.com/shinkeonkim/random_word_website/commit/89d787b14e69e124e8233447a836d532e024da66	php 파일 임시 수정
+2019-05-14T03:43:56Z	79e0893ac68474737dc3c0d3903febd8fb85f8e2	https://github.com/shinkeonkim/random_word_website/commit/79e0893ac68474737dc3c0d3903febd8fb85f8e2	README.md DB파트 업데이트
+2019-05-14T03:40:26Z	8f1a3bf6783e9eb1b495b726dda944699bee8ff9	https://github.com/shinkeonkim/random_word_website/commit/8f1a3bf6783e9eb1b495b726dda944699bee8ff9	README.md DB 파트 업데이트
+2019-05-13T19:19:52Z	e88d48fc6d0059047ad73d5537f38593b78a113e	https://github.com/shinkeonkim/random_word_website/commit/e88d48fc6d0059047ad73d5537f38593b78a113e	Merge branch 'feature_lookup.php' into develop
+2019-05-13T19:19:39Z	b9f599d667fbea6469c8017d97e4b5442ed7156a	https://github.com/shinkeonkim/random_word_website/commit/b9f599d667fbea6469c8017d97e4b5442ed7156a	Merge branch 'feature_index.php' into develop
+2019-05-13T19:19:18Z	cd1d2fcefdcc8770fc4e8dafbfcead66e284dfd1	https://github.com/shinkeonkim/random_word_website/commit/cd1d2fcefdcc8770fc4e8dafbfcead66e284dfd1	Merge branch 'feature_review.php' into develop
+2019-05-13T19:15:22Z	ad032eda7dadb933f7aafcc86355de9dd9879343	https://github.com/shinkeonkim/random_word_website/commit/ad032eda7dadb933f7aafcc86355de9dd9879343	review.php init
+2019-05-13T19:14:20Z	f03c2a446c030e6d7639f5e45073428bc713f761	https://github.com/shinkeonkim/random_word_website/commit/f03c2a446c030e6d7639f5e45073428bc713f761	README.md 내용 개선
+2019-05-13T19:13:05Z	0a7aa1ffae94d069781733373aa631a13bf22dac	https://github.com/shinkeonkim/random_word_website/commit/0a7aa1ffae94d069781733373aa631a13bf22dac	index.php 수정 API test용 웹 사이트 제작
+2019-05-13T19:12:07Z	8c6a0d07633032e8d4d6d1852d52e908b6e9ed14	https://github.com/shinkeonkim/random_word_website/commit/8c6a0d07633032e8d4d6d1852d52e908b6e9ed14	lookup.php 생성 및 제작 id(db상 번호)가 입력되면 userId, id,username 을 json으로 반환하는 api
+2019-05-13T14:19:14Z	2bcfcb38fd53213e5d10aeec6a62cd2cdc721dd6	https://github.com/shinkeonkim/random_word_website/commit/2bcfcb38fd53213e5d10aeec6a62cd2cdc721dd6	init index.php 초기화
+2019-05-13T14:17:02Z	01afcf8ee5c7267b4abaa2884801a08714c64773	https://github.com/shinkeonkim/random_word_website/commit/01afcf8ee5c7267b4abaa2884801a08714c64773	Create review.php
+2019-05-13T14:14:43Z	d10f946293b77aa63b5a6f7ab0c3da25429a0ce0	https://github.com/shinkeonkim/random_word_website/commit/d10f946293b77aa63b5a6f7ab0c3da25429a0ce0	Initial commit

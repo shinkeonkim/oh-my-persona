@@ -1,0 +1,8 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-enhance-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:31:17Z	a19fb14f30afaf01c6443a5ce65b28882003a693	https://github.com/kokoa-hobby/minecraft-enhance-plugin/commit/a19fb14f30afaf01c6443a5ce65b28882003a693	Add README
+2026-07-22T12:22:15Z	66fb76b128c971cb14cea8d9518565e0f41d34ba	https://github.com/kokoa-hobby/minecraft-enhance-plugin/commit/66fb76b128c971cb14cea8d9518565e0f41d34ba	Add EnhancePlugin main class
+2026-07-22T12:22:15Z	97e03a0e55d3ae694d1f50cbecbcdaf94cee8c83	https://github.com/kokoa-hobby/minecraft-enhance-plugin/commit/97e03a0e55d3ae694d1f50cbecbcdaf94cee8c83	Add commands
+2026-07-22T12:22:15Z	53d3f117868ed074ca1b1db833ddc240b9cbbf93	https://github.com/kokoa-hobby/minecraft-enhance-plugin/commit/53d3f117868ed074ca1b1db833ddc240b9cbbf93	Add plugin manifest and resources
+2026-07-22T12:22:15Z	e30038ad78e4f34e8e897818a36fc6b97b32bd9f	https://github.com/kokoa-hobby/minecraft-enhance-plugin/commit/e30038ad78e4f34e8e897818a36fc6b97b32bd9f	Add Gradle project scaffold

@@ -1,0 +1,8 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-discordwebhook-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:28:33Z	a6e291e4b870a7c862f2e562f41f87254a689e49	https://github.com/kokoa-hobby/minecraft-discordwebhook-plugin/commit/a6e291e4b870a7c862f2e562f41f87254a689e49	Add README
+2026-07-22T12:22:14Z	0dc991cd4336cd0312b19efda1198692aa98f93b	https://github.com/kokoa-hobby/minecraft-discordwebhook-plugin/commit/0dc991cd4336cd0312b19efda1198692aa98f93b	Add DiscordWebhookPlugin main class
+2026-07-22T12:22:14Z	b4261994d39999d44045be9b93d46b8362c01ae0	https://github.com/kokoa-hobby/minecraft-discordwebhook-plugin/commit/b4261994d39999d44045be9b93d46b8362c01ae0	Add listeners
+2026-07-22T12:22:14Z	dd313321a03467fc1ba144fdb42f5eda8ef9e4e2	https://github.com/kokoa-hobby/minecraft-discordwebhook-plugin/commit/dd313321a03467fc1ba144fdb42f5eda8ef9e4e2	Add plugin manifest and resources
+2026-07-22T12:22:14Z	4fa16713389d39fd5489799bcb165bb04a824589	https://github.com/kokoa-hobby/minecraft-discordwebhook-plugin/commit/4fa16713389d39fd5489799bcb165bb04a824589	Add Gradle project scaffold

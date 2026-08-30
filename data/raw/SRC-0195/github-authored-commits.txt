@@ -1,0 +1,186 @@
+GitHub repository: https://github.com/shinkeonkim/alcolpedia-1
+Author account: shinkeonkim
+
+2020-12-29T11:44:43Z	1e6c4872c7d94579b90f711c9fc31331cac91238	https://github.com/shinkeonkim/alcolpedia-1/commit/1e6c4872c7d94579b90f711c9fc31331cac91238	Merge pull request #22 from rlwjd4177/develop Deploy
+2020-12-21T11:47:40Z	faf3a659b62336f91c2da2e605677ffb48aa6526	https://github.com/shinkeonkim/alcolpedia-1/commit/faf3a659b62336f91c2da2e605677ffb48aa6526	Merge pull request #6 from rlwjd4177/feature_api Feature api
+2020-12-21T11:47:11Z	8cf5e26526f39342375fd0c0accc5571e2167d7f	https://github.com/shinkeonkim/alcolpedia-1/commit/8cf5e26526f39342375fd0c0accc5571e2167d7f	Merge pull request #10 from rlwjd4177/feature_html fix_game.html
+2020-11-30T11:43:41Z	277079b06a70065fd996ff6b499c11f2360d25ae	https://github.com/shinkeonkim/alcolpedia-1/commit/277079b06a70065fd996ff6b499c11f2360d25ae	Merge pull request #8 from rlwjd4177/feature_comment cheers_alcohol_footer_fix
+2020-11-30T11:41:13Z	5a7c947e62f168f0a0e7cf8782b49e267b8544cc	https://github.com/shinkeonkim/alcolpedia-1/commit/5a7c947e62f168f0a0e7cf8782b49e267b8544cc	Merge pull request #7 from rlwjd4177/feature_comment Feature comment
+2020-11-23T12:09:21Z	f12ad912fe36113eea8c1803506cb8b8e72c0cea	https://github.com/shinkeonkim/alcolpedia-1/commit/f12ad912fe36113eea8c1803506cb8b8e72c0cea	Merge pull request #4 from rlwjd4177/feature_comment Feature comment
+2020-11-23T12:05:43Z	37cc75f3f7f0532009e98f97673e348de340eb7e	https://github.com/shinkeonkim/alcolpedia-1/commit/37cc75f3f7f0532009e98f97673e348de340eb7e	Merge pull request #5 from rlwjd4177/feature_home 홈 조금수정
+2020-11-23T12:05:34Z	3a72b328d02560a2c3b4358afa7942ec52e1dcc7	https://github.com/shinkeonkim/alcolpedia-1/commit/3a72b328d02560a2c3b4358afa7942ec52e1dcc7	Merge branch 'develop' into feature_home
+2020-11-09T12:08:05Z	860f6c4852491ca500defe9d995bc1210f1e1839	https://github.com/shinkeonkim/alcolpedia-1/commit/860f6c4852491ca500defe9d995bc1210f1e1839	Merge pull request #2 from shinkeonkim/feature_api feat: api 초기 보안 설정
+2020-11-09T12:06:49Z	c1d03a173f111b35139f24da49a31b5f08144c13	https://github.com/shinkeonkim/alcolpedia-1/commit/c1d03a173f111b35139f24da49a31b5f08144c13	feat: api 초기 보안 설정
+2020-11-09T11:55:03Z	eed599f2301463652bff71fae8df0f467c546679	https://github.com/shinkeonkim/alcolpedia-1/commit/eed599f2301463652bff71fae8df0f467c546679	Merge pull request #1 from shinkeonkim/develop Merge master to develop
+2020-11-09T11:53:03Z	78829782d935c9569c6890ad12d161786a2207cf	https://github.com/shinkeonkim/alcolpedia-1/commit/78829782d935c9569c6890ad12d161786a2207cf	Merge branch 'master' into develop
+2020-10-05T12:02:17Z	3b83b424d86a2804b163edd62c76807d953ce7e2	https://github.com/shinkeonkim/alcolpedia-1/commit/3b83b424d86a2804b163edd62c76807d953ce7e2	Merge pull request #54 from rlwjd4177/develop fix: admin
+2020-10-05T12:01:12Z	4e71e544d5d82cade6a00d5785f3787a3d949e59	https://github.com/shinkeonkim/alcolpedia-1/commit/4e71e544d5d82cade6a00d5785f3787a3d949e59	hotfix: syntax error
+2020-10-05T11:58:43Z	fc928dd5244e7bba5db606c43780a0d7e05d1c11	https://github.com/shinkeonkim/alcolpedia-1/commit/fc928dd5244e7bba5db606c43780a0d7e05d1c11	Merge pull request #51 from rlwjd4177/feature_content_admin feat: Content admin 레이아웃 수정 및 기능 추가
+2020-10-05T11:58:35Z	bc3d8a6f47c560f5e47667e2f608031f3ee83f4f	https://github.com/shinkeonkim/alcolpedia-1/commit/bc3d8a6f47c560f5e47667e2f608031f3ee83f4f	Merge branch 'develop' into feature_content_admin
+2020-10-05T11:56:10Z	c4ff622ed8557cd87f34b11412a697847d236e1a	https://github.com/shinkeonkim/alcolpedia-1/commit/c4ff622ed8557cd87f34b11412a697847d236e1a	Merge pull request #53 from rlwjd4177/develop fix: action 추가
+2020-10-05T11:53:58Z	24f00f065f4c0cc5321b7778acbc238d3b27fbd4	https://github.com/shinkeonkim/alcolpedia-1/commit/24f00f065f4c0cc5321b7778acbc238d3b27fbd4	Merge branch 'feature_admin' into develop
+2020-10-05T11:53:47Z	12ac375ccd26e2de75ff519f870d5fbbd5af53e4	https://github.com/shinkeonkim/alcolpedia-1/commit/12ac375ccd26e2de75ff519f870d5fbbd5af53e4	fix: action 추가
+2020-10-04T06:21:45Z	0aca71a2634bda441597b56817149d472ce37d81	https://github.com/shinkeonkim/alcolpedia-1/commit/0aca71a2634bda441597b56817149d472ce37d81	Merge pull request #50 from rlwjd4177/develop feat: article status field
+2020-10-04T06:19:12Z	dbe841d4f35622aecb097900d10479a2faae559c	https://github.com/shinkeonkim/alcolpedia-1/commit/dbe841d4f35622aecb097900d10479a2faae559c	Merge branch 'feature_draft' into develop
+2020-10-04T06:18:27Z	ac45a85c2696360bdd9714e102bb6e8079d81ce2	https://github.com/shinkeonkim/alcolpedia-1/commit/ac45a85c2696360bdd9714e102bb6e8079d81ce2	feat: article status 기능 추가
+2020-09-12T07:46:54Z	c9120dbd85ea4c57267a3789696e8b0daaf25d0b	https://github.com/shinkeonkim/alcolpedia-1/commit/c9120dbd85ea4c57267a3789696e8b0daaf25d0b	feat: google adsense
+2020-08-30T07:17:57Z	b912a4afe4a5ef14aa16649b991e265130fe11db	https://github.com/shinkeonkim/alcolpedia-1/commit/b912a4afe4a5ef14aa16649b991e265130fe11db	Merge branch 'master' of https://github.com/rlwjd4177/alcolpedia
+2020-08-30T07:17:47Z	039acd72b561c90d68ee12ab7b008aee273c0c33	https://github.com/shinkeonkim/alcolpedia-1/commit/039acd72b561c90d68ee12ab7b008aee273c0c33	fix: html lang issue
+2020-08-29T07:47:50Z	9d1e12ed584b6735734ebeb9fee74de3030e9684	https://github.com/shinkeonkim/alcolpedia-1/commit/9d1e12ed584b6735734ebeb9fee74de3030e9684	feat: bgm modal img css
+2020-08-29T07:39:42Z	2d09c135fd0027a75e7ca53ebcda47972dcb9863	https://github.com/shinkeonkim/alcolpedia-1/commit/2d09c135fd0027a75e7ca53ebcda47972dcb9863	fix: audio 재생 끝나면 재생 아이콘으로 변경
+2020-08-29T07:20:57Z	93df4fc2a9581e5131246f16e1f1b483b06d5ddf	https://github.com/shinkeonkim/alcolpedia-1/commit/93df4fc2a9581e5131246f16e1f1b483b06d5ddf	fix: home slide 속성 변경
+2020-08-29T06:44:23Z	6c6c0d02503b5d477d398d64123bd0d978f7c2eb	https://github.com/shinkeonkim/alcolpedia-1/commit/6c6c0d02503b5d477d398d64123bd0d978f7c2eb	fix: 좋아요 기준 내림차순으로 적용
+2020-08-29T06:42:47Z	5a4c6856f03b405342d2c40664671f98a190265e	https://github.com/shinkeonkim/alcolpedia-1/commit/5a4c6856f03b405342d2c40664671f98a190265e	fix: 좋아요 기준만 적용
+2020-08-29T06:39:39Z	d7acd00a0ac17d8ced19bb532610acacaa3a5c11	https://github.com/shinkeonkim/alcolpedia-1/commit/d7acd00a0ac17d8ced19bb532610acacaa3a5c11	fix: 좋아요 많은 순으로 추가
+2020-08-28T13:02:47Z	a4ba7c6e51d3071c7cbefa8c6ddcf2a39ea079db	https://github.com/shinkeonkim/alcolpedia-1/commit/a4ba7c6e51d3071c7cbefa8c6ddcf2a39ea079db	메세지 프레임워크 뒤에 묻히는 이슈
+2020-08-28T10:33:50Z	6ff47df371bb4acc5cc6f23b16c40707d03cd1c2	https://github.com/shinkeonkim/alcolpedia-1/commit/6ff47df371bb4acc5cc6f23b16c40707d03cd1c2	fix: agent 판단 로직 추가
+2020-08-28T10:16:38Z	b67a91865236277700061bb35b5e33ce4f2c7fcc	https://github.com/shinkeonkim/alcolpedia-1/commit/b67a91865236277700061bb35b5e33ce4f2c7fcc	fix: 의미없는 bgm 페이지 패딩 제거
+2020-08-28T10:15:07Z	1c552ddfaaf9b8e77337aecb04762ef4ddc9a3ee	https://github.com/shinkeonkim/alcolpedia-1/commit/1c552ddfaaf9b8e77337aecb04762ef4ddc9a3ee	Merge branch 'master' of https://github.com/rlwjd4177/alcolpedia
+2020-08-28T10:15:05Z	8749c2d7da17de869d44cfaee22856299dad66ce	https://github.com/shinkeonkim/alcolpedia-1/commit/8749c2d7da17de869d44cfaee22856299dad66ce	fix: bgm tip button 반응형 디자인
+2020-08-28T09:59:33Z	55a7682c97b9cd8dd8bc2f4fc77c4f945e3f77aa	https://github.com/shinkeonkim/alcolpedia-1/commit/55a7682c97b9cd8dd8bc2f4fc77c4f945e3f77aa	fix: video issue
+2020-08-28T08:04:52Z	2b3710e3c54f34d86c2e0ae43391e6acff8a5582	https://github.com/shinkeonkim/alcolpedia-1/commit/2b3710e3c54f34d86c2e0ae43391e6acff8a5582	Merge branch 'master' of https://github.com/rlwjd4177/alcolpedia
+2020-08-28T08:04:41Z	6372dcce6c440e2685ebffe7318daff86e49fb14	https://github.com/shinkeonkim/alcolpedia-1/commit/6372dcce6c440e2685ebffe7318daff86e49fb14	fix: filter기능 삭제
+2020-08-27T08:59:35Z	57b9ba4261fa84709cc2b004801185dc9322d999	https://github.com/shinkeonkim/alcolpedia-1/commit/57b9ba4261fa84709cc2b004801185dc9322d999	fix: css 브라우저 캐쉬 무력화
+2020-08-27T08:36:45Z	68bcb611d2367c2598bdc0a3361e5478a05942fd	https://github.com/shinkeonkim/alcolpedia-1/commit/68bcb611d2367c2598bdc0a3361e5478a05942fd	fix: pagination default count
+2020-08-27T08:34:25Z	eee9095519f8606ecf6a2ce6bcce06c7b4ea66bc	https://github.com/shinkeonkim/alcolpedia-1/commit/eee9095519f8606ecf6a2ce6bcce06c7b4ea66bc	fix: pagination count
+2020-08-27T08:28:07Z	89af1febebdf377059db81858a380cfd681c455b	https://github.com/shinkeonkim/alcolpedia-1/commit/89af1febebdf377059db81858a380cfd681c455b	fix: 건배사 데이터 replace 내용 수정
+2020-08-27T08:26:19Z	22f6cad4da0f23b007ea701a3e6057d00722191e	https://github.com/shinkeonkim/alcolpedia-1/commit/22f6cad4da0f23b007ea701a3e6057d00722191e	fix: 건배사 데이터 replace 내용 수정
+2020-08-27T08:22:28Z	9ead631653d470c290a67963843dee53ca8d0296	https://github.com/shinkeonkim/alcolpedia-1/commit/9ead631653d470c290a67963843dee53ca8d0296	건배사 공백인 컨텐츠 안뜨는 issue
+2020-08-27T07:57:43Z	6420600438195f57a2b1aaf32949a0877c1b1939	https://github.com/shinkeonkim/alcolpedia-1/commit/6420600438195f57a2b1aaf32949a0877c1b1939	Merge branch 'master' of https://github.com/rlwjd4177/alcolpedia
+2020-08-27T07:57:34Z	c9db4a641956aa37f363c1e462adcadd4e81b3bc	https://github.com/shinkeonkim/alcolpedia-1/commit/c9db4a641956aa37f363c1e462adcadd4e81b3bc	fix: 폭탄주 페이지 좋아요 추가
+2020-08-27T07:46:14Z	4fc9293664ec7ab3704b1625270c63253b60ac9d	https://github.com/shinkeonkim/alcolpedia-1/commit/4fc9293664ec7ab3704b1625270c63253b60ac9d	fix: search 쿼리에 공백 들어가는 issue
+2020-08-27T07:40:14Z	48e4687d943a315f418e46d4e54e4edadf2f2151	https://github.com/shinkeonkim/alcolpedia-1/commit/48e4687d943a315f418e46d4e54e4edadf2f2151	Merge branch 'master' of https://github.com/rlwjd4177/alcolpedia
+2020-08-27T07:40:00Z	64d816fe9268a26374fb7b857b3a89c232b312ca	https://github.com/shinkeonkim/alcolpedia-1/commit/64d816fe9268a26374fb7b857b3a89c232b312ca	fix: main 페이지 좋아요가 많응 게임 순으로
+2020-08-27T07:16:28Z	1f17eb2ad7bd1916bbaa92c425c41e6b2fd6baba	https://github.com/shinkeonkim/alcolpedia-1/commit/1f17eb2ad7bd1916bbaa92c425c41e6b2fd6baba	fix: settings page 반응형 웹 디자인 적용
+2020-08-27T05:48:00Z	875e6e7ec9388bb68eeaa949cccb22c85fe4fb8d	https://github.com/shinkeonkim/alcolpedia-1/commit/875e6e7ec9388bb68eeaa949cccb22c85fe4fb8d	feat: search_page 검색 결과 연결
+2020-08-27T04:11:11Z	b6443e732601dad434122a3ec25e7639099deeff	https://github.com/shinkeonkim/alcolpedia-1/commit/b6443e732601dad434122a3ec25e7639099deeff	fix: 폭탄주 페이지 카드 사이즈, 리스트 조정
+2020-08-26T20:21:41Z	d07437ed9bcf800217b1c1320aef9d166144754a	https://github.com/shinkeonkim/alcolpedia-1/commit/d07437ed9bcf800217b1c1320aef9d166144754a	feat: 술게임 페이지 인트로 있는 경우 오디오 추가
+2020-08-26T20:16:09Z	b3fb93226a953f3a6a77fee117fa8184f34c4f6b	https://github.com/shinkeonkim/alcolpedia-1/commit/b3fb93226a953f3a6a77fee117fa8184f34c4f6b	feat: search 결과 대체 이미지 추가
+2020-08-26T20:08:50Z	1d2f72624cbccb0b297f0ce7bffe923148ad628a	https://github.com/shinkeonkim/alcolpedia-1/commit/1d2f72624cbccb0b297f0ce7bffe923148ad628a	fix: 술게임 페이지 반응형 grid
+2020-08-26T19:35:49Z	8a8b79af72f85d025d770b06c096d68523903f68	https://github.com/shinkeonkim/alcolpedia-1/commit/8a8b79af72f85d025d770b06c096d68523903f68	fix: footer 반응형 자체 반응형 css 추가
+2020-08-26T19:24:16Z	d9bd791f4f475a11aa7d056e331f2084aad23783	https://github.com/shinkeonkim/alcolpedia-1/commit/d9bd791f4f475a11aa7d056e331f2084aad23783	fix: footer font-size vw
+2020-08-26T18:30:54Z	1c540fb6924197a5bf330b602d88adacd8a0c3bd	https://github.com/shinkeonkim/alcolpedia-1/commit/1c540fb6924197a5bf330b602d88adacd8a0c3bd	fix: game 목록 페이지 링크 연결
+2020-08-26T18:24:55Z	8b2f98382babb03672164892639696d8f462dee3	https://github.com/shinkeonkim/alcolpedia-1/commit/8b2f98382babb03672164892639696d8f462dee3	fix: homepage design
+2020-08-26T17:05:13Z	25379b13eb1ae12a58bbe90a84f9dba1932efe4d	https://github.com/shinkeonkim/alcolpedia-1/commit/25379b13eb1ae12a58bbe90a84f9dba1932efe4d	feat: search 기능 연동
+2020-08-26T16:09:46Z	a61d9e6b3562b1ca78f01dc13e119e4df15d6dbb	https://github.com/shinkeonkim/alcolpedia-1/commit/a61d9e6b3562b1ca78f01dc13e119e4df15d6dbb	fix: clone tag onclick issue fix
+2020-08-26T15:55:16Z	4c081149bcd51bcc9bc9ddf718db7d79073b3584	https://github.com/shinkeonkim/alcolpedia-1/commit/4c081149bcd51bcc9bc9ddf718db7d79073b3584	fix: tag slide 속도 조절, 반응형 디자인 수정
+2020-08-26T15:32:41Z	8dab57d659680a92dc49be00d4c97f433a2bbf7d	https://github.com/shinkeonkim/alcolpedia-1/commit/8dab57d659680a92dc49be00d4c97f433a2bbf7d	feat: 태그 slick 적용
+2020-08-26T15:24:22Z	54f2340a7444ddf445972166994a5a3374f8727c	https://github.com/shinkeonkim/alcolpedia-1/commit/54f2340a7444ddf445972166994a5a3374f8727c	feat: 검색창 디자인 수정 & home -> search template 정보 전달
+2020-08-26T10:15:26Z	74ef38eab1227f59384309ca9244eb906314275f	https://github.com/shinkeonkim/alcolpedia-1/commit/74ef38eab1227f59384309ca9244eb906314275f	feat: 메인 화면 chip 검색 기능
+2020-08-25T15:41:28Z	5cb160d318a0768748d740bbd5757e5d86cf2b82	https://github.com/shinkeonkim/alcolpedia-1/commit/5cb160d318a0768748d740bbd5757e5d86cf2b82	Merge branch 'master' of https://github.com/rlwjd4177/alcolpedia
+2020-08-25T15:40:32Z	411eb872caab53583f8d53725d863d84a9624476	https://github.com/shinkeonkim/alcolpedia-1/commit/411eb872caab53583f8d53725d863d84a9624476	Merge branch 'master' of https://github.com/rlwjd4177/alcolpedia
+2020-08-25T15:39:56Z	5a11040228939d17fa09c914e453db242233a4bb	https://github.com/shinkeonkim/alcolpedia-1/commit/5a11040228939d17fa09c914e453db242233a4bb	fix: shadow 제거
+2020-08-25T15:09:29Z	f64441887c20ff959ad1cf920c82a32726a37c68	https://github.com/shinkeonkim/alcolpedia-1/commit/f64441887c20ff959ad1cf920c82a32726a37c68	Merge branch 'master' of https://github.com/rlwjd4177/alcolpedia
+2020-08-25T15:08:04Z	a5608bdb5ce6a68a2f42ebe56c3d79852408ba8d	https://github.com/shinkeonkim/alcolpedia-1/commit/a5608bdb5ce6a68a2f42ebe56c3d79852408ba8d	fix: css 오류
+2020-08-25T14:31:40Z	232692e6bf9e015f1ff1c30e65623e7e4cf31fdd	https://github.com/shinkeonkim/alcolpedia-1/commit/232692e6bf9e015f1ff1c30e65623e7e4cf31fdd	fix: 게임 컨텐츠 텍스트 디자인
+2020-08-25T14:16:38Z	e6a62d4366989ccbd148f7d615c4a9ea3d3f4baf	https://github.com/shinkeonkim/alcolpedia-1/commit/e6a62d4366989ccbd148f7d615c4a9ea3d3f4baf	fix: 의미없는 파라미터 삭제
+2020-08-25T14:10:06Z	9f7abcc90cbad5ec1bd86feb794a03b47b48072b	https://github.com/shinkeonkim/alcolpedia-1/commit/9f7abcc90cbad5ec1bd86feb794a03b47b48072b	fix: 사이트 컨텐츠 축소
+2020-08-25T13:58:27Z	979ebe6691272bee4d2e6df82165b20ace96751f	https://github.com/shinkeonkim/alcolpedia-1/commit/979ebe6691272bee4d2e6df82165b20ace96751f	img height auto
+2020-08-25T13:47:44Z	eee8201a9caed7f59b41e2293db50206f0ce999b	https://github.com/shinkeonkim/alcolpedia-1/commit/eee8201a9caed7f59b41e2293db50206f0ce999b	feat: 메인 화면 컨텐츠 변경
+2020-08-25T13:34:30Z	73c758305dca60f22a6637cfe45c9b0c82ccd127	https://github.com/shinkeonkim/alcolpedia-1/commit/73c758305dca60f22a6637cfe45c9b0c82ccd127	feat: 대표 게임 컨텐츠 메인 화면에 연결
+2020-08-25T13:20:51Z	9c05dd5a1789a9176b231bff0038ebdb56a3c5fe	https://github.com/shinkeonkim/alcolpedia-1/commit/9c05dd5a1789a9176b231bff0038ebdb56a3c5fe	fix: READMD,md place
+2020-08-25T13:19:14Z	6b51c999fae2dfde528a1715d46c8ef300fb63b4	https://github.com/shinkeonkim/alcolpedia-1/commit/6b51c999fae2dfde528a1715d46c8ef300fb63b4	feat: README.md 이미지
+2020-08-25T13:18:22Z	0f519d38f86d8ef1351e687b8560bb1e3eade4de	https://github.com/shinkeonkim/alcolpedia-1/commit/0f519d38f86d8ef1351e687b8560bb1e3eade4de	fix: READMD.md 수정
+2020-08-25T11:15:43Z	0e79039bc566a72df9c7a6963e7a49cc209f7d28	https://github.com/shinkeonkim/alcolpedia-1/commit/0e79039bc566a72df9c7a6963e7a49cc209f7d28	fix: 건배사 디자인 적용 다시
+2020-08-25T11:10:09Z	d81e21fadd3bf05dc97237282a7ac63d2c753aba	https://github.com/shinkeonkim/alcolpedia-1/commit/d81e21fadd3bf05dc97237282a7ac63d2c753aba	feat: 건배사 strong 속성 잘보이게 수정
+2020-08-25T10:59:24Z	9b06a6b1ac0124cd73e2d52eb2e494b9bd823001	https://github.com/shinkeonkim/alcolpedia-1/commit/9b06a6b1ac0124cd73e2d52eb2e494b9bd823001	fix: 건배사 목록 여백 줄이기
+2020-08-25T10:24:08Z	fa7ad95e4fc463ee775e3c43d99cc5b9d8e8f8d7	https://github.com/shinkeonkim/alcolpedia-1/commit/fa7ad95e4fc463ee775e3c43d99cc5b9d8e8f8d7	fix: detail 페이지 title margin top % -> rem
+2020-08-25T10:12:17Z	527b23e61ae0e99934cbfd988494562c3107482a	https://github.com/shinkeonkim/alcolpedia-1/commit/527b23e61ae0e99934cbfd988494562c3107482a	fix: footer responsive grid
+2020-08-25T10:04:31Z	d719636583b03b446bf3d6f937162e0b342737f7	https://github.com/shinkeonkim/alcolpedia-1/commit/d719636583b03b446bf3d6f937162e0b342737f7	Merge branch 'master' of https://github.com/rlwjd4177/alcolpedia
+2020-08-25T10:04:16Z	b5fb30d79651622ed904e271bafa499f7333ae18	https://github.com/shinkeonkim/alcolpedia-1/commit/b5fb30d79651622ed904e271bafa499f7333ae18	fix: filter view parameter search method
+2020-08-25T07:56:48Z	5a145847f84d1221e22036d5a9ce5eaa28ccadc3	https://github.com/shinkeonkim/alcolpedia-1/commit/5a145847f84d1221e22036d5a9ce5eaa28ccadc3	fix: 폭탄주 페이지 버튼 색상 변경
+2020-08-25T07:34:37Z	355ffdf795ad70fe551f866066bccc619962b67b	https://github.com/shinkeonkim/alcolpedia-1/commit/355ffdf795ad70fe551f866066bccc619962b67b	fix: 건의 게시판 modal issue
+2020-08-25T07:20:17Z	19a4d0d46e836c0d8ce32a378fa15c1fe08c360e	https://github.com/shinkeonkim/alcolpedia-1/commit/19a4d0d46e836c0d8ce32a378fa15c1fe08c360e	fix: search page 좋아요 기능 수정
+2020-08-25T07:16:20Z	6e85df65bcba3ecaedeb7a8783d918f618fc10e2	https://github.com/shinkeonkim/alcolpedia-1/commit/6e85df65bcba3ecaedeb7a8783d918f618fc10e2	fix: detail page markdown body css
+2020-08-25T06:37:18Z	029462c41e48ef4998f715d7e85e4c20c7b23ce7	https://github.com/shinkeonkim/alcolpedia-1/commit/029462c41e48ef4998f715d7e85e4c20c7b23ce7	fix: nav바 드롭다운 메뉴 클릭시 색상 변경
+2020-08-24T20:16:52Z	a96960e64d02743558d4686d6ac7f7c1b056f2e1	https://github.com/shinkeonkim/alcolpedia-1/commit/a96960e64d02743558d4686d6ac7f7c1b056f2e1	feat: footer contents a href link
+2020-08-24T20:12:10Z	a5a3041df37166cbc137c9ebd07812e4980726c1	https://github.com/shinkeonkim/alcolpedia-1/commit/a5a3041df37166cbc137c9ebd07812e4980726c1	fix: home.css 통합
+2020-08-24T20:09:31Z	17c69f806452a0ee05d14713b19befb8ea3fdb6e	https://github.com/shinkeonkim/alcolpedia-1/commit/17c69f806452a0ee05d14713b19befb8ea3fdb6e	feat: font.css 추가
+2020-08-24T20:07:26Z	772d8b90977ea070a7b1106379db934ce351abff	https://github.com/shinkeonkim/alcolpedia-1/commit/772d8b90977ea070a7b1106379db934ce351abff	fix: button is not center issue
+2020-08-24T20:00:42Z	c7d1f0019b6b3f1bbeff61e120969141e1f313a6	https://github.com/shinkeonkim/alcolpedia-1/commit/c7d1f0019b6b3f1bbeff61e120969141e1f313a6	feat: footer facebook link
+2020-08-24T19:55:25Z	0233c1a55e49ceef379afece780f2a829c0b9e54	https://github.com/shinkeonkim/alcolpedia-1/commit/0233c1a55e49ceef379afece780f2a829c0b9e54	feat: bgm 페이지 좋아요 ajax 적용
+2020-08-24T19:55:04Z	3e7693a9dfe90384f0453bf1bdc5e01ade413828	https://github.com/shinkeonkim/alcolpedia-1/commit/3e7693a9dfe90384f0453bf1bdc5e01ade413828	fix: nav iPhoneX responsive page issue
+2020-08-24T16:02:18Z	61a4d1b3da88564e330a6fa4869a9aec0fc95e4d	https://github.com/shinkeonkim/alcolpedia-1/commit/61a4d1b3da88564e330a6fa4869a9aec0fc95e4d	fix: home page 반응형 웹 디자인 적용 & slick.js 적용
+2020-08-24T12:14:45Z	0a22bd6e3fc4fabd52dbd91d3f1ec58060973314	https://github.com/shinkeonkim/alcolpedia-1/commit/0a22bd6e3fc4fabd52dbd91d3f1ec58060973314	feat: body overflow-x -> hidden
+2020-08-24T12:05:14Z	480f178bdda7b319d84a99523deab68e44b67194	https://github.com/shinkeonkim/alcolpedia-1/commit/480f178bdda7b319d84a99523deab68e44b67194	fix: no nav css code in base_no_footer
+2020-08-24T12:01:43Z	2c90c1548aba5feb9414fa41cfb79aa9ef438b27	https://github.com/shinkeonkim/alcolpedia-1/commit/2c90c1548aba5feb9414fa41cfb79aa9ef438b27	fix: sign_up, sign_in iPad responsive design & sign_up issue
+2020-08-24T11:47:36Z	43341af629aba7488d1375972e82211a22b60268	https://github.com/shinkeonkim/alcolpedia-1/commit/43341af629aba7488d1375972e82211a22b60268	fix: sign_in.html iPad responsive issue
+2020-08-24T11:32:08Z	0ab20cfa774d33c3df269c760e8743b29ec89d78	https://github.com/shinkeonkim/alcolpedia-1/commit/0ab20cfa774d33c3df269c760e8743b29ec89d78	fix: top-bar-title % hidden issue
+2020-08-24T11:18:41Z	914fc189c25108bf201e71f58a48758bb40d9945	https://github.com/shinkeonkim/alcolpedia-1/commit/914fc189c25108bf201e71f58a48758bb40d9945	feat: 메세지 프레임워크 적용
+2020-08-24T10:54:04Z	e1e760fc93d039713e4788753986623664445e07	https://github.com/shinkeonkim/alcolpedia-1/commit/e1e760fc93d039713e4788753986623664445e07	fix: search 페이지 좋아요 기능 ajax 적용, nav footer css 파일 분리
+2020-08-24T10:15:25Z	940b04ed5c337962e07a50c06262e79330757e0e	https://github.com/shinkeonkim/alcolpedia-1/commit/940b04ed5c337962e07a50c06262e79330757e0e	fix: search 페이지 분류 추가 및 디자인 수정
+2020-08-24T10:00:45Z	6ee2c4deaa55b6bef9e6d9814800104d5c67f2ca	https://github.com/shinkeonkim/alcolpedia-1/commit/6ee2c4deaa55b6bef9e6d9814800104d5c67f2ca	fix: search 페이지 반응형 웹 디자인
+2020-08-23T18:50:17Z	7e670504178c4319e2790b7e42c1cc07c4823893	https://github.com/shinkeonkim/alcolpedia-1/commit/7e670504178c4319e2790b7e42c1cc07c4823893	fix: bgm page 반응형 디자인 적용
+2020-08-23T18:28:22Z	1cd79a92993d7e19d43a7878f1254cbea82331b0	https://github.com/shinkeonkim/alcolpedia-1/commit/1cd79a92993d7e19d43a7878f1254cbea82331b0	fix: article 이미지 반응형 적용
+2020-08-22T18:30:11Z	960eba168b67988d83ff1e72b5b953c126067ec8	https://github.com/shinkeonkim/alcolpedia-1/commit/960eba168b67988d83ff1e72b5b953c126067ec8	fix: a태그 난리 issue
+2020-08-22T18:24:57Z	7812a9322ce5ed44c2f87525b5a020a147e502a6	https://github.com/shinkeonkim/alcolpedia-1/commit/7812a9322ce5ed44c2f87525b5a020a147e502a6	fix: footer a태그 target 추가
+2020-08-22T18:18:27Z	940f9686c2716b58f1dcdb427ad58b298ffe590d	https://github.com/shinkeonkim/alcolpedia-1/commit/940f9686c2716b58f1dcdb427ad58b298ffe590d	feat: 스크롤바 디자인
+2020-08-22T18:12:14Z	9ec50267a8aca9a3d9381e3dfa502dd2edbc5822	https://github.com/shinkeonkim/alcolpedia-1/commit/9ec50267a8aca9a3d9381e3dfa502dd2edbc5822	fix: signup, signin page 반응형 웹 디자인 적용
+2020-08-22T17:51:42Z	a17141b814659c496f627afd7ecb9bde43249966	https://github.com/shinkeonkim/alcolpedia-1/commit/a17141b814659c496f627afd7ecb9bde43249966	Merge branch 'master' of https://github.com/rlwjd4177/alcolpedia
+2020-08-22T17:51:20Z	71a5282a147e75faaa625cc79de22889786e2cdb	https://github.com/shinkeonkim/alcolpedia-1/commit/71a5282a147e75faaa625cc79de22889786e2cdb	fix: sign_in 반응형웹 수정 추가
+2020-08-22T15:02:48Z	3fe7d2f5a903404b0a9b4877aa553acb0754c8bf	https://github.com/shinkeonkim/alcolpedia-1/commit/3fe7d2f5a903404b0a9b4877aa553acb0754c8bf	Merge branch 'master' of https://github.com/rlwjd4177/alcolpedia
+2020-08-22T15:02:38Z	3b08e8addb6fcb027642d6befa9466ffb51f62d2	https://github.com/shinkeonkim/alcolpedia-1/commit/3b08e8addb6fcb027642d6befa9466ffb51f62d2	fix: sign in 반응형 웹 디자인
+2020-08-22T14:15:46Z	f1d206d0250d5b857206e9555e797b2082aac315	https://github.com/shinkeonkim/alcolpedia-1/commit/f1d206d0250d5b857206e9555e797b2082aac315	fix: member 페이지 배경 수정
+2020-08-22T13:45:24Z	f5211016f9163c6b5b4281e168139c9425d9c5f6	https://github.com/shinkeonkim/alcolpedia-1/commit/f5211016f9163c6b5b4281e168139c9425d9c5f6	fix: footer 반응형 웹페이지 적용
+2020-08-22T13:13:59Z	c34f41adfaf38b0d9ff7aac53b35f93148288895	https://github.com/shinkeonkim/alcolpedia-1/commit/c34f41adfaf38b0d9ff7aac53b35f93148288895	fix: md-editor
+2020-08-22T12:40:13Z	dabc406074fbb3ccc64d2669362f94eb64ccb4ab	https://github.com/shinkeonkim/alcolpedia-1/commit/dabc406074fbb3ccc64d2669362f94eb64ccb4ab	Merge branch 'master' of https://github.com/rlwjd4177/alcolpedia
+2020-08-22T12:39:59Z	9900a6f26cedab16c8b2390b22d3f92fc1506767	https://github.com/shinkeonkim/alcolpedia-1/commit/9900a6f26cedab16c8b2390b22d3f92fc1506767	fix: profile page
+2020-08-22T09:43:31Z	b06887a727c0c483640ab689c1df2cd4f6eced55	https://github.com/shinkeonkim/alcolpedia-1/commit/b06887a727c0c483640ab689c1df2cd4f6eced55	Merge branch 'master' of https://github.com/rlwjd4177/alcolpedia
+2020-08-22T09:43:17Z	2713ba7ea2ffcd9163bb6bf39098aff8556ed93c	https://github.com/shinkeonkim/alcolpedia-1/commit/2713ba7ea2ffcd9163bb6bf39098aff8556ed93c	프로필 페이지 디자인 WIP
+2020-08-22T09:35:51Z	1781fc6fcb76385d0328f52e49becdc470be5931	https://github.com/shinkeonkim/alcolpedia-1/commit/1781fc6fcb76385d0328f52e49becdc470be5931	fix: 검색어 return 추가
+2020-08-22T08:46:09Z	604bbca0e7e0c1fb10dc8ad6df071c6e7a353d41	https://github.com/shinkeonkim/alcolpedia-1/commit/604bbca0e7e0c1fb10dc8ad6df071c6e7a353d41	fix: card 1 row issue
+2020-08-22T07:43:16Z	ead857f107f363dc26edc50357eacd4f525edd87	https://github.com/shinkeonkim/alcolpedia-1/commit/ead857f107f363dc26edc50357eacd4f525edd87	fix: nav 바 반응형 디자인 적용
+2020-08-22T06:36:38Z	66e9024c61eb131d076b18d538589668249265a5	https://github.com/shinkeonkim/alcolpedia-1/commit/66e9024c61eb131d076b18d538589668249265a5	feat: 홈페이지 브금 재생시 일시정지 아이콘으로 변경
+2020-08-22T06:23:06Z	1c0be17c350092c9178820b98400fbe999c75bf4	https://github.com/shinkeonkim/alcolpedia-1/commit/1c0be17c350092c9178820b98400fbe999c75bf4	Merge branch 'master' of https://github.com/rlwjd4177/alcolpedia
+2020-08-22T06:22:19Z	d8e1077670bdd16e221cdab6cb66f3fbb0c306b8	https://github.com/shinkeonkim/alcolpedia-1/commit/d8e1077670bdd16e221cdab6cb66f3fbb0c306b8	feat: 메인 페이지 브금 목록
+2020-08-22T05:18:30Z	a0a86509f75b58016eb16b9cbbc4b9edc64efe44	https://github.com/shinkeonkim/alcolpedia-1/commit/a0a86509f75b58016eb16b9cbbc4b9edc64efe44	fix: 건의함 modal 디자인 수정
+2020-08-21T18:21:53Z	f3cd7c6fff045236c57951919b2b8071b46aa4ea	https://github.com/shinkeonkim/alcolpedia-1/commit/f3cd7c6fff045236c57951919b2b8071b46aa4ea	feat: 폭탄주 모달 상세 페이지
+2020-08-21T17:46:38Z	f1c257459fc24aac1256ae73809481d15df4a748	https://github.com/shinkeonkim/alcolpedia-1/commit/f1c257459fc24aac1256ae73809481d15df4a748	Merge branch 'master' of https://github.com/rlwjd4177/alcolpedia
+2020-08-21T17:46:27Z	279b9aac9828e66bbee9e897027c6f6b65251fd7	https://github.com/shinkeonkim/alcolpedia-1/commit/279b9aac9828e66bbee9e897027c6f6b65251fd7	feat: favicon 적용
+2020-08-21T17:43:46Z	885c47682a86d8447706ef105cca51e618318afe	https://github.com/shinkeonkim/alcolpedia-1/commit/885c47682a86d8447706ef105cca51e618318afe	feat: html title 적용
+2020-08-21T17:34:45Z	e21b520dc6e2e0c89104d7a9be022d983166ca4d	https://github.com/shinkeonkim/alcolpedia-1/commit/e21b520dc6e2e0c89104d7a9be022d983166ca4d	fix: signin page text
+2020-08-21T17:27:14Z	0619d273eb33dd213082ec911485a2fdfd778274	https://github.com/shinkeonkim/alcolpedia-1/commit/0619d273eb33dd213082ec911485a2fdfd778274	fix: signin, signup footer 제거
+2020-08-21T17:24:26Z	b5e69fc516aa351b52b58030d34d2f7e722422db	https://github.com/shinkeonkim/alcolpedia-1/commit/b5e69fc516aa351b52b58030d34d2f7e722422db	fix: signin, signup issue
+2020-08-21T17:13:37Z	a2d4877d6627921a000c9c2d0f6075196c36dee8	https://github.com/shinkeonkim/alcolpedia-1/commit/a2d4877d6627921a000c9c2d0f6075196c36dee8	fix: 홈페이지 술게임 목록 url 연결
+2020-08-21T17:12:11Z	24c976dd4a34d6bbe5707efdda484867f461869a	https://github.com/shinkeonkim/alcolpedia-1/commit/24c976dd4a34d6bbe5707efdda484867f461869a	fix: home 페이지 술게임 데이터 전송 + css 선택자 수정
+2020-08-21T16:38:03Z	96343ea1d5322b3bc2063b6f16a5a2c9c7d8be10	https://github.com/shinkeonkim/alcolpedia-1/commit/96343ea1d5322b3bc2063b6f16a5a2c9c7d8be10	fix: requirements.txt 추가
+2020-08-21T16:36:46Z	9847bce904344d64cd99c38881505f2654636eb2	https://github.com/shinkeonkim/alcolpedia-1/commit/9847bce904344d64cd99c38881505f2654636eb2	fix: bgm 페이지 디자인 WIP
+2020-08-21T15:21:22Z	23800a549875bd794a4c9ffece1f47224f440333	https://github.com/shinkeonkim/alcolpedia-1/commit/23800a549875bd794a4c9ffece1f47224f440333	fix: home.html footer 중복
+2020-08-21T12:52:32Z	8756962478fd62ef4d3e55b4a8bb0e250aeb55e0	https://github.com/shinkeonkim/alcolpedia-1/commit/8756962478fd62ef4d3e55b4a8bb0e250aeb55e0	feat: footer 추가, 폭탄주 페이지 WIP
+2020-08-21T09:42:51Z	c0b9f164ce4519d1ef4796d5fd62f23856362ca6	https://github.com/shinkeonkim/alcolpedia-1/commit/c0b9f164ce4519d1ef4796d5fd62f23856362ca6	fix: 술게임 목록 a태그가 아닌 카드 onclick 이동으로 수정
+2020-08-21T09:42:12Z	0423002cf7645bbf89dcf819df0b77bdc4e0b5a6	https://github.com/shinkeonkim/alcolpedia-1/commit/0423002cf7645bbf89dcf819df0b77bdc4e0b5a6	fix: popup으로 할 경우, 다른 컨텐츠의 a태그가 망가지는 이슈 -> modal로 수정
+2020-08-20T17:01:00Z	5c19c15a89bbacd08414e152de2aeac168b7c897	https://github.com/shinkeonkim/alcolpedia-1/commit/5c19c15a89bbacd08414e152de2aeac168b7c897	feat: detail 페이지 데이터 적용
+2020-08-19T18:38:12Z	691a873bcc98ba9d8961fbb4d743f9e35761d7a8	https://github.com/shinkeonkim/alcolpedia-1/commit/691a873bcc98ba9d8961fbb4d743f9e35761d7a8	fix: nav바 메뉴 호버시 라인 제거, 프로필 이미지 둥글게 수정
+2020-08-19T18:33:12Z	45331b44c57a50a6159f408017e493c67a6aa3ac	https://github.com/shinkeonkim/alcolpedia-1/commit/45331b44c57a50a6159f408017e493c67a6aa3ac	fix: 브금 페이지 audio 태그로 수정
+2020-08-19T08:37:32Z	9e93fac145297767e05a5619d3aa9cc51ab341ce	https://github.com/shinkeonkim/alcolpedia-1/commit/9e93fac145297767e05a5619d3aa9cc51ab341ce	Merge branch 'master' of https://github.com/rlwjd4177/alcolpedia
+2020-08-19T08:37:17Z	0c7d1486085238b12b75a1e42e81715b20043656	https://github.com/shinkeonkim/alcolpedia-1/commit/0c7d1486085238b12b75a1e42e81715b20043656	feat: 브금 페이지 오디오 적용
+2020-08-19T07:33:36Z	69fbc96073a5679aed370214b9809b1c8bc44f0c	https://github.com/shinkeonkim/alcolpedia-1/commit/69fbc96073a5679aed370214b9809b1c8bc44f0c	fix: body x-overflow hidden 적용
+2020-08-19T07:18:16Z	4cb6426a42e08c8e9c3af28b49223f193a17f855	https://github.com/shinkeonkim/alcolpedia-1/commit/4cb6426a42e08c8e9c3af28b49223f193a17f855	fix: nav css 통일
+2020-08-19T06:30:18Z	91ba71d461d92165fe8054af404725399227857e	https://github.com/shinkeonkim/alcolpedia-1/commit/91ba71d461d92165fe8054af404725399227857e	Merge pull request #26 from rlwjd4177/dain Dain
+2020-08-19T06:29:33Z	bf2ce433664448d99052583e8d9213563e90245f	https://github.com/shinkeonkim/alcolpedia-1/commit/bf2ce433664448d99052583e8d9213563e90245f	Merge branch 'master' into dain
+2020-08-19T05:29:18Z	ecfcfd739f2d453f09629a39f6a24e757c77ebd1	https://github.com/shinkeonkim/alcolpedia-1/commit/ecfcfd739f2d453f09629a39f6a24e757c77ebd1	fix: form view 연결
+2020-08-19T04:36:19Z	d4566856a8bad1b3bcad22249770bb5921dc60bf	https://github.com/shinkeonkim/alcolpedia-1/commit/d4566856a8bad1b3bcad22249770bb5921dc60bf	fix: remove home link
+2020-08-18T05:25:12Z	c535159a450223b9c694cfe6806106467280d01b	https://github.com/shinkeonkim/alcolpedia-1/commit/c535159a450223b9c694cfe6806106467280d01b	fix: 사용자 프로필 이미지 gitignore 추가
+2020-08-17T13:10:03Z	f3ca99a2d3838d0cf88ee906fb08be5e93941ddb	https://github.com/shinkeonkim/alcolpedia-1/commit/f3ca99a2d3838d0cf88ee906fb08be5e93941ddb	feat: api 관련 수정
+2020-08-17T06:05:35Z	3b8d990a01adedc4a03f49ef2ff80d82741ac0bf	https://github.com/shinkeonkim/alcolpedia-1/commit/3b8d990a01adedc4a03f49ef2ff80d82741ac0bf	feat: rest-auth api 등록
+2020-08-15T15:58:27Z	2076cf579331a03eba313f8701d39648fdd629f9	https://github.com/shinkeonkim/alcolpedia-1/commit/2076cf579331a03eba313f8701d39648fdd629f9	src: 기본 html 변경
+2020-08-15T15:52:04Z	206d70a5b7eeed0a52a3755bf24c97965d5e9dd0	https://github.com/shinkeonkim/alcolpedia-1/commit/206d70a5b7eeed0a52a3755bf24c97965d5e9dd0	fix: refresh requirements.txt
+2020-08-15T15:51:08Z	9cc780c9901d8cfc75e6358a56b6e17db7b58706	https://github.com/shinkeonkim/alcolpedia-1/commit/9cc780c9901d8cfc75e6358a56b6e17db7b58706	fix: refresh requirements.txt
+2020-08-14T12:21:12Z	0766360d8fddb3ea8bfecbad466ff10ce41181f3	https://github.com/shinkeonkim/alcolpedia-1/commit/0766360d8fddb3ea8bfecbad466ff10ce41181f3	fix: 사용자가 화면 크기 조정하는 것 방지+ allowed host 변경
+2020-08-14T09:21:22Z	f8b36858e188a9dea2b1d882b61ef73e1ece945e	https://github.com/shinkeonkim/alcolpedia-1/commit/f8b36858e188a9dea2b1d882b61ef73e1ece945e	fix: 이상하게 된 clone issue 해결, api 앱 연동
+2020-08-11T09:28:50Z	caf1c8f0cf3a0167112d91b51e273ea9ad72c38a	https://github.com/shinkeonkim/alcolpedia-1/commit/caf1c8f0cf3a0167112d91b51e273ea9ad72c38a	fix: member profile 수정 기능
+2020-07-20T16:02:11Z	333aa7e2045fedc7943b05aa0f2765b09c067c57	https://github.com/shinkeonkim/alcolpedia-1/commit/333aa7e2045fedc7943b05aa0f2765b09c067c57	Merge pull request #4 from rlwjd4177/develop docs: app 설계 mockup
+2020-07-20T16:01:10Z	9ee66461db566198d1ae054855da3a2000043aeb	https://github.com/shinkeonkim/alcolpedia-1/commit/9ee66461db566198d1ae054855da3a2000043aeb	Merge pull request #2 from shinkeonkim/master api 설정 및 member app init
+2020-07-20T16:00:33Z	46d4b2ccf708ecec2044f14409a61fb3f9987370	https://github.com/shinkeonkim/alcolpedia-1/commit/46d4b2ccf708ecec2044f14409a61fb3f9987370	Merge pull request #3 from rlwjd4177/feature_mockup docs: app 설계 init
+2020-07-20T15:57:56Z	29a1336c8e1129f5918a669adf92de81c7ede7a4	https://github.com/shinkeonkim/alcolpedia-1/commit/29a1336c8e1129f5918a669adf92de81c7ede7a4	docs: app 설계 init
+2020-07-20T15:47:48Z	7cffca0ee5019ed88562654fbe04a1afc9be95c6	https://github.com/shinkeonkim/alcolpedia-1/commit/7cffca0ee5019ed88562654fbe04a1afc9be95c6	feat: member app init
+2020-07-20T15:47:24Z	c4de7f89447ed5069299034d8f5af0378fba3fe7	https://github.com/shinkeonkim/alcolpedia-1/commit/c4de7f89447ed5069299034d8f5af0378fba3fe7	feat: api 서버 관련 pip 설치 내용
+2020-07-19T11:25:56Z	576fa3cdb417ee011bf01f98ed070d257dc8378f	https://github.com/shinkeonkim/alcolpedia-1/commit/576fa3cdb417ee011bf01f98ed070d257dc8378f	docs: README.md 오타 수정
+2020-07-19T06:57:00Z	bb4bba023a738fd21572a9500d9291b61c91496b	https://github.com/shinkeonkim/alcolpedia-1/commit/bb4bba023a738fd21572a9500d9291b61c91496b	docs: mockup design 링크 추가
+2020-07-15T15:57:52Z	552ef813e860e788dfc3c6973a63c1cf79a57100	https://github.com/shinkeonkim/alcolpedia-1/commit/552ef813e860e788dfc3c6973a63c1cf79a57100	docs: 술 게임 목록 템플릿
+2020-07-15T15:27:00Z	98cb1337fcb281ccffcac4dd3411cc7208d03ea6	https://github.com/shinkeonkim/alcolpedia-1/commit/98cb1337fcb281ccffcac4dd3411cc7208d03ea6	docs: README.md 수정
+2020-07-15T15:25:59Z	2e41c29d590501c8ccf0875c1958d3d37a7c775e	https://github.com/shinkeonkim/alcolpedia-1/commit/2e41c29d590501c8ccf0875c1958d3d37a7c775e	docs: README.md 수정
+2020-07-15T15:25:46Z	c7c3e23d9be7b9bef4aad3c79026f1eb1ed9b394	https://github.com/shinkeonkim/alcolpedia-1/commit/c7c3e23d9be7b9bef4aad3c79026f1eb1ed9b394	feat: django project init
+2020-07-15T15:25:19Z	6d82994be06c7aa09a6dcabebb5f054ab836cea3	https://github.com/shinkeonkim/alcolpedia-1/commit/6d82994be06c7aa09a6dcabebb5f054ab836cea3	feat: pip requirements.txt init
+2020-07-15T15:24:55Z	8a0a16630d1b8a53f60c263122da0f1d63ef5d2b	https://github.com/shinkeonkim/alcolpedia-1/commit/8a0a16630d1b8a53f60c263122da0f1d63ef5d2b	feat: .gitignore 추가
+2020-07-15T14:36:34Z	4b4eab24b35515760fb21d93e25f491d6ac65491	https://github.com/shinkeonkim/alcolpedia-1/commit/4b4eab24b35515760fb21d93e25f491d6ac65491	docs: meeting 2020-07-15

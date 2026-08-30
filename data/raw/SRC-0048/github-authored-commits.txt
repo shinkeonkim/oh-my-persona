@@ -1,0 +1,10 @@
+GitHub repository: https://github.com/shinkeonkim/drawing
+Author account: shinkeonkim
+
+2025-03-18T23:55:00Z	9582c2494af2cb9afd70343ec0594f27c513bca5	https://github.com/shinkeonkim/drawing/commit/9582c2494af2cb9afd70343ec0594f27c513bca5	Update README.md
+2022-04-29T10:12:32Z	e4fa2562333702993e7a3f5f565b5f891bfb1d40	https://github.com/shinkeonkim/drawing/commit/e4fa2562333702993e7a3f5f565b5f891bfb1d40	feat: 모두 지우기 버튼 추가
+2022-04-29T10:12:15Z	3b855a187315c919f3eded0073528b9e3e26d257	https://github.com/shinkeonkim/drawing/commit/3b855a187315c919f3eded0073528b9e3e26d257	feat: 선이 매끄럽게 그려지도록 함. https://stackoverflow.com/questions/40650306/how-to-draw-a-smooth-continuous-line-with-mouse-using-html-canvas-and-javascript
+2022-04-23T08:47:49Z	18585ea99fb78883db33929231db3c835d723788	https://github.com/shinkeonkim/drawing/commit/18585ea99fb78883db33929231db3c835d723788	feat: canvas class 분리 및 linewidth 조정
+2022-04-23T08:28:58Z	41f4071e6cbf6835290d0efb4ddb2ccdbad8d486	https://github.com/shinkeonkim/drawing/commit/41f4071e6cbf6835290d0efb4ddb2ccdbad8d486	feat: canvas를 통해 선 그리기
+2022-04-23T08:08:43Z	bff6c3d0b28756c504475ab5484a3963fe717609	https://github.com/shinkeonkim/drawing/commit/bff6c3d0b28756c504475ab5484a3963fe717609	feat: window 사이즈에 따라 canvas size가 조정되도록 함
+2022-04-23T07:36:09Z	19cec77ff53f0442c773bdc4177dc4a602f3bb2e	https://github.com/shinkeonkim/drawing/commit/19cec77ff53f0442c773bdc4177dc4a602f3bb2e	feat: electron project settings

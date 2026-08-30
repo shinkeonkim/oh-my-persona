@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-lab/gc-sweeper
+Author account: shinkeonkim
+
+2026-08-28T07:55:55Z	2a49480c429f5f660b04f38fd6a45c8cf6eb9c70	https://github.com/kokoa-lab/gc-sweeper/commit/2a49480c429f5f660b04f38fd6a45c8cf6eb9c70	Merge pull request #3 from kokoa-lab/project-lens/add-ads-txt-93d8a32f chore(ads): add ads.txt
+2026-08-28T07:55:47Z	1f6f0833019b7ebf732e19892ff117f73fffbbe9	https://github.com/kokoa-lab/gc-sweeper/commit/1f6f0833019b7ebf732e19892ff117f73fffbbe9	Merge pull request #2 from kokoa-lab/docs/readme docs: write a real README
+2026-08-28T07:02:05Z	809f25b0adc7b6db53700d32f0b92043f9269076	https://github.com/kokoa-lab/gc-sweeper/commit/809f25b0adc7b6db53700d32f0b92043f9269076	chore(ads): add ads.txt project-lens automated commit.
+2026-08-28T03:53:24Z	e9bfea667b21e9e0f8a162ca51103da72f737ccd	https://github.com/kokoa-lab/gc-sweeper/commit/e9bfea667b21e9e0f8a162ca51103da72f737ccd	Merge pull request #1 from kokoa-lab/project-lens/add-gtm-tracking-86 chore(tracking): GTM 스니펫 추가 (GTM-W4LH4L5W)
+2026-08-27T16:54:56Z	19aeb64341a2546dca883d0f7bfe8395b770e093	https://github.com/kokoa-lab/gc-sweeper/commit/19aeb64341a2546dca883d0f7bfe8395b770e093	chore(tracking): add GTM snippet (GTM-W4LH4L5W) project-lens automated commit.
+2026-03-09T06:31:32Z	7f27dd8aed5f185fda2057d8bc99fc18e1a19643	https://github.com/kokoa-lab/gc-sweeper/commit/7f27dd8aed5f185fda2057d8bc99fc18e1a19643	feat: initial project settings by lovable

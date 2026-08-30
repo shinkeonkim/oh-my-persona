@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-freeze-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:30:36Z	66cb8a43acf49db4121035ba9849c99adfaecd63	https://github.com/kokoa-hobby/minecraft-freeze-plugin/commit/66cb8a43acf49db4121035ba9849c99adfaecd63	Add README
+2026-07-22T12:22:15Z	a231a785059dcc8d19c3c0c05b2b184c9aa2eea0	https://github.com/kokoa-hobby/minecraft-freeze-plugin/commit/a231a785059dcc8d19c3c0c05b2b184c9aa2eea0	Add FreezePlugin main class
+2026-07-22T12:22:15Z	008f7862fc5d2b62ed18e8878e0cfec067537d2b	https://github.com/kokoa-hobby/minecraft-freeze-plugin/commit/008f7862fc5d2b62ed18e8878e0cfec067537d2b	Add listeners
+2026-07-22T12:22:15Z	c8ffae6a85ca4c9643793768e09969263df6f34a	https://github.com/kokoa-hobby/minecraft-freeze-plugin/commit/c8ffae6a85ca4c9643793768e09969263df6f34a	Add commands
+2026-07-22T12:22:15Z	ff64e19d6552c423ac20fda13d3e1830f318b43a	https://github.com/kokoa-hobby/minecraft-freeze-plugin/commit/ff64e19d6552c423ac20fda13d3e1830f318b43a	Add plugin manifest and resources
+2026-07-22T12:22:15Z	d674c0fe20d04618a35c5cd84e67b243831975b7	https://github.com/kokoa-hobby/minecraft-freeze-plugin/commit/d674c0fe20d04618a35c5cd84e67b243831975b7	Add Gradle project scaffold

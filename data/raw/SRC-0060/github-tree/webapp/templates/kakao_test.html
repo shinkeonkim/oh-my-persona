@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>카카오 OAuth 테스트</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #FEE500;
+            color: #000;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .btn:hover { background-color: #FFDC00; }
+        .code {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+        .info {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>카카오 OAuth 2.0 테스트</h1>
+
+        <div class="info">
+            <h3>📝 테스트 방법</h3>
+            <ol>
+                <li>아래 "카카오 로그인" 버튼을 클릭</li>
+                <li>카카오 계정으로 로그인</li>
+                <li>권한 동의 후 callback URL에서 authorization_code 확인</li>
+                <li>받은 code를 사용해서 API 테스트</li>
+            </ol>
+        </div>
+
+        <a href="{{ auth_url }}" class="btn">🍯 카카오 로그인</a>
+
+        <h3>API 테스트용 curl 명령어</h3>
+        <div class="code">
+curl -X POST http://localhost:8000/api/v1/users/kakao/login/ -H "Content-Type: application/json" -d '{"code": "YOUR_AUTHORIZATION_CODE_HERE"}'
+        </div>
+
+        <h3>설정 정보</h3>
+        <div class="code">
+Client ID: {{ client_id }}<br>
+Redirect URI: {{ redirect_uri }}<br>
+Scope: {{ scope }}
+        </div>
+
+        <div class="info">
+            <strong>주의:</strong>
+            <ul>
+                <li>카카오 개발자 콘솔에서 Redirect URI를 <code>{{ redirect_uri }}</code>로 등록해야 합니다.</li>
+                <li>실제 프로덕션에서는 이 테스트 페이지를 사용하지 않습니다.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

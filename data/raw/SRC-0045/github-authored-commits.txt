@@ -1,0 +1,18 @@
+GitHub repository: https://github.com/shinkeonkim/dpd_template
+Author account: shinkeonkim
+
+2022-07-10T07:28:37Z	5d0c88da235f4bba202318acc9c717070e7fe454	https://github.com/shinkeonkim/dpd_template/commit/5d0c88da235f4bba202318acc9c717070e7fe454	feat: postgres db dockerize
+2022-07-10T06:59:25Z	3d0a09d4ca1d38e9d240fa274e3a21ded238489d	https://github.com/shinkeonkim/dpd_template/commit/3d0a09d4ca1d38e9d240fa274e3a21ded238489d	Merge pull request #1 from shinkeonkim/add-license-1
+2022-07-10T06:59:14Z	bcc3c120d7e65ab6623e90f0815947ecf3293e9d	https://github.com/shinkeonkim/dpd_template/commit/bcc3c120d7e65ab6623e90f0815947ecf3293e9d	Create LICENSE
+2022-07-10T06:30:01Z	c38c0ea9e6ffa4ae233dd6c0c7bd5e072e3afc8d	https://github.com/shinkeonkim/dpd_template/commit/c38c0ea9e6ffa4ae233dd6c0c7bd5e072e3afc8d	fix: production nginx port
+2022-07-10T06:23:53Z	22cc81ed62ef2f2c96798a1022aa377bf40a1325	https://github.com/shinkeonkim/dpd_template/commit/22cc81ed62ef2f2c96798a1022aa377bf40a1325	refactor: env 파일 내부에서 따로 사용하지 않고 compose 파일에서 주입
+2022-07-10T06:17:21Z	4ca9c91e5bc6f1cae8fbe0ebf536dc568b68e74b	https://github.com/shinkeonkim/dpd_template/commit/4ca9c91e5bc6f1cae8fbe0ebf536dc568b68e74b	chore: 의미없는 docs 삭제
+2022-07-10T06:16:10Z	1e099ba72566eaed42b7b8c3a4fcbff493b76c8d	https://github.com/shinkeonkim/dpd_template/commit/1e099ba72566eaed42b7b8c3a4fcbff493b76c8d	chore: infra dir 추가
+2022-07-10T06:11:40Z	33f4d0c87906a2eadfe43612fc0cf0658e339200	https://github.com/shinkeonkim/dpd_template/commit/33f4d0c87906a2eadfe43612fc0cf0658e339200	feat: docker-compose를 이용해 nginx, webapp 구동 (개발 환경 별도 고려함, README 참고)
+2022-07-10T05:22:20Z	738d86126ddc7e40fa16602b7c517f1e5212b13f	https://github.com/shinkeonkim/dpd_template/commit/738d86126ddc7e40fa16602b7c517f1e5212b13f	feat: webapp dockerize
+2022-07-10T04:50:19Z	362a7a231b69bb3d2b4d91a6c299bd5a0c0cfdb0	https://github.com/shinkeonkim/dpd_template/commit/362a7a231b69bb3d2b4d91a6c299bd5a0c0cfdb0	chore: 별도 webapp 폴더로 이동
+2022-07-10T03:41:34Z	c81e764205c70554de6d003e08bdca5ed637e84b	https://github.com/shinkeonkim/dpd_template/commit/c81e764205c70554de6d003e08bdca5ed637e84b	feat: pre-commit 추가
+2022-07-10T03:41:11Z	24a93616ce974b744a872b646d25e32f514190a0	https://github.com/shinkeonkim/dpd_template/commit/24a93616ce974b744a872b646d25e32f514190a0	feat: django-environ을 이용한 환경변수 적용
+2022-07-10T03:28:40Z	9511fa046ff369eb99e530b6679bf5dc847b75bd	https://github.com/shinkeonkim/dpd_template/commit/9511fa046ff369eb99e530b6679bf5dc847b75bd	chore: settings 를 환경별로 분리함.
+2022-07-10T03:19:11Z	c9117a2c7599ad3275923d072bf5253b30cd1a36	https://github.com/shinkeonkim/dpd_template/commit/c9117a2c7599ad3275923d072bf5253b30cd1a36	pipenv 적용 https://www.daleseo.com/python-pipenv/
+2022-07-10T02:50:24Z	4cf0a2c7fa629a01c2f8784d5e95a500f353dd13	https://github.com/shinkeonkim/dpd_template/commit/4cf0a2c7fa629a01c2f8784d5e95a500f353dd13	initial django settings

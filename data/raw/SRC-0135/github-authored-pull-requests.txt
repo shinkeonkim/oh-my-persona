@@ -1,0 +1,6 @@
+GitHub repository: https://github.com/kokoa-lab/cookie-bakery
+Pull request author: shinkeonkim
+
+2026-08-28T07:00:45Z	#3	MERGED	https://github.com/kokoa-lab/cookie-bakery/pull/3	chore(ads): add ads.txt	merged=2026-08-28T07:53:52Z	closed=2026-08-28T07:53:52Z	commits=1	files=1	+1/-0	project-lens가 자동 생성한 PR입니다. - public/ads.txt를 추가했습니다. - AdSense 게시자: ca-pub-3060818993817836
+2026-08-28T05:28:41Z	#2	MERGED	https://github.com/kokoa-lab/cookie-bakery/pull/2	docs: add README	merged=2026-08-28T07:53:43Z	closed=2026-08-28T07:53:43Z	commits=1	files=1	+31/-1	이 프로젝트가 실제로 무엇을 하는지 설명하는 README를 작성했습니다 (기존엔 없었거나 제목만 있었습니다).
+2026-08-27T16:53:35Z	#1	MERGED	https://github.com/kokoa-lab/cookie-bakery/pull/1	chore(tracking): GTM 스니펫 추가 (GTM-NPGFWV4T)	merged=2026-08-28T03:53:56Z	closed=2026-08-28T03:53:56Z	commits=1	files=1	+13/-0	project-lens가 자동 생성한 PR입니다. - index.html에 GTM(GTM-NPGFWV4T) 스니펫을 삽입했습니다. - GTM 컨테이너: GTM-NPGFWV4T

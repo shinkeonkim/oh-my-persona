@@ -1,0 +1,8 @@
+GitHub repository: https://github.com/kokoa-hobby/minecraft-sleepvote-plugin
+Author account: shinkeonkim
+
+2026-07-22T13:27:51Z	0de8a59287509bd332ad1e01c30e48a78f61b09c	https://github.com/kokoa-hobby/minecraft-sleepvote-plugin/commit/0de8a59287509bd332ad1e01c30e48a78f61b09c	Add README
+2026-07-22T12:22:19Z	7f480e57abbb64ee5654e67b0eb4345b1f41c700	https://github.com/kokoa-hobby/minecraft-sleepvote-plugin/commit/7f480e57abbb64ee5654e67b0eb4345b1f41c700	Add SleepVotePlugin main class
+2026-07-22T12:22:19Z	a4784035bf256a08c62db80891001c386205b3d0	https://github.com/kokoa-hobby/minecraft-sleepvote-plugin/commit/a4784035bf256a08c62db80891001c386205b3d0	Add listeners
+2026-07-22T12:22:19Z	e26f6da3854bace93f4194e01003120e6fe47db7	https://github.com/kokoa-hobby/minecraft-sleepvote-plugin/commit/e26f6da3854bace93f4194e01003120e6fe47db7	Add plugin manifest and resources
+2026-07-22T12:22:19Z	d3d19a62e64cc1d40da7aa2eca5a0ad23b8bd311	https://github.com/kokoa-hobby/minecraft-sleepvote-plugin/commit/d3d19a62e64cc1d40da7aa2eca5a0ad23b8bd311	Add Gradle project scaffold

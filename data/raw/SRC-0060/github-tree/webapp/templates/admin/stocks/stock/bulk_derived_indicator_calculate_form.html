@@ -1,0 +1,214 @@
+{% extends "admin/base.html" %}
+{% load i18n unfold %}
+
+{% block breadcrumbs %}
+{% if not is_popup %}
+<div class="px-4">
+    <div class="container mb-6 mx-auto -my-3 lg:mb-12">
+        <ul class="flex flex-wrap">
+            {% url 'admin:index' as link %}
+            {% trans 'Home' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with link=link name=name %}
+
+            {% url 'admin:stocks_stock_changelist' as link %}
+            {% trans 'Stocks' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with link=link name=name %}
+
+            {% trans 'Calculate Derived Indicators for All Stocks' as name %}
+            {% include 'unfold/helpers/breadcrumb_item.html' with name=name %}
+        </ul>
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="px-4">
+    <div class="container mx-auto">
+        <div class="main-card bg-white dark:bg-gray-900 shadow-lg rounded-lg p-6 border border-gray-200 dark:border-gray-700">
+            <h2 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">{{ title }}</h2>
+
+            <div class="mb-6">
+                <p class="text-gray-700 dark:text-gray-300 mb-2">
+                    모든 종목에 대해 특정 연도의 파생지표(PER, PBR, ROE, ROA 등)를 재무제표와 주가 데이터를 기반으로 계산합니다.
+                </p>
+                <p class="text-sm text-yellow-600 dark:text-yellow-400 mt-2">
+                    ⚠️ 대량의 백그라운드 작업이 실행됩니다. 신중하게 사용하세요.
+                </p>
+            </div>
+
+            <!-- 통계 정보 -->
+            <div class="stats-grid grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                <div class="stat-card p-4 bg-blue-50 dark:bg-gray-800 rounded-lg border border-blue-200 dark:border-gray-600">
+                    <div class="text-sm text-gray-600 dark:text-gray-400">전체 종목</div>
+                    <div class="text-2xl font-bold text-blue-600 dark:text-blue-400">{{ stats.total }}</div>
+                </div>
+                <div class="stat-card p-4 bg-green-50 dark:bg-gray-800 rounded-lg border border-green-200 dark:border-gray-600">
+                    <div class="text-sm text-gray-600 dark:text-gray-400">상장 종목</div>
+                    <div class="text-2xl font-bold text-green-600 dark:text-green-400">{{ stats.listed }}</div>
+                </div>
+                <div class="stat-card p-4 bg-purple-50 dark:bg-gray-800 rounded-lg border border-purple-200 dark:border-gray-600">
+                    <div class="text-sm text-gray-600 dark:text-gray-400">보통주</div>
+                    <div class="text-2xl font-bold text-purple-600 dark:text-purple-400">{{ stats.primary }}</div>
+                </div>
+                <div class="stat-card p-4 bg-indigo-50 dark:bg-gray-800 rounded-lg border border-indigo-200 dark:border-gray-600">
+                    <div class="text-sm text-gray-600 dark:text-gray-400">상장 보통주</div>
+                    <div class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">{{ stats.listed_primary }}</div>
+                </div>
+            </div>
+
+            <form method="post" class="space-y-6">
+                {% csrf_token %}
+
+                {% if form.non_field_errors %}
+                <div class="bg-red-50 dark:bg-red-900/30 border border-red-400 dark:border-red-500 text-red-700 dark:text-red-300 px-4 py-3 rounded mb-4">
+                    {{ form.non_field_errors }}
+                </div>
+                {% endif %}
+
+                <div class="space-y-5">
+                    <!-- Fiscal Year (Required) -->
+                    <div>
+                        <label for="{{ form.fiscal_year.id_for_label }}" class="block text-sm font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                            {{ form.fiscal_year.label }} <span class="text-red-500">*</span>
+                        </label>
+                        {{ form.fiscal_year }}
+                        {% if form.fiscal_year.help_text %}
+                        <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">{{ form.fiscal_year.help_text }}</p>
+                        {% endif %}
+                        {% if form.fiscal_year.errors %}
+                        <p class="mt-2 text-sm text-red-600 dark:text-red-400">{{ form.fiscal_year.errors }}</p>
+                        {% endif %}
+                    </div>
+
+                    <!-- Filter Options -->
+                    <div class="filter-options space-y-3 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-600">
+                        <h3 class="text-sm font-bold text-gray-800 dark:text-gray-200 mb-3">필터 옵션</h3>
+
+                        <div class="flex items-center space-x-3">
+                            {{ form.is_listed_only }}
+                            <label for="{{ form.is_listed_only.id_for_label }}" class="text-sm font-medium text-gray-800 dark:text-gray-200">
+                                {{ form.is_listed_only.label }}
+                            </label>
+                        </div>
+                        {% if form.is_listed_only.help_text %}
+                        <p class="text-sm text-gray-600 dark:text-gray-400 ml-8">{{ form.is_listed_only.help_text }}</p>
+                        {% endif %}
+
+                        <div class="flex items-center space-x-3">
+                            {{ form.is_primary_only }}
+                            <label for="{{ form.is_primary_only.id_for_label }}" class="text-sm font-medium text-gray-800 dark:text-gray-200">
+                                {{ form.is_primary_only.label }}
+                            </label>
+                        </div>
+                        {% if form.is_primary_only.help_text %}
+                        <p class="text-sm text-gray-600 dark:text-gray-400 ml-8">{{ form.is_primary_only.help_text }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="flex items-center space-x-4 pt-6 border-t border-gray-200 dark:border-gray-700">
+                    <button type="submit" name="apply_calculation" class="bg-primary-600 hover:bg-primary-700 dark:bg-primary-600 dark:hover:bg-primary-700 text-white font-semibold py-2.5 px-6 rounded-lg shadow-sm transition-colors">
+                        전체 계산 시작
+                    </button>
+                    <a href="{% url 'admin:stocks_stock_changelist' %}"
+                       class="bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-200 font-semibold py-2.5 px-6 rounded-lg transition-colors">
+                        취소
+                    </a>
+                </div>
+            </form>
+
+            <div class="reference-section mt-8 p-5 bg-blue-50 dark:bg-gray-800 rounded-lg border border-blue-200 dark:border-gray-600">
+                <h3 class="text-lg font-bold mb-4 text-gray-900 dark:text-white">참고사항</h3>
+                <ul class="list-disc list-inside space-y-3 text-sm text-gray-800 dark:text-gray-200">
+                    <li><strong>처리 범위:</strong> 선택한 필터 조건에 맞는 모든 종목에 대해 해당 연도의 전체 분기(Q1-Q4)를 계산합니다.</li>
+                    <li><strong>백그라운드 작업:</strong> 각 종목의 각 분기마다 별도의 Celery 작업이 실행됩니다.</li>
+                    <li><strong>예상 작업 수:</strong> 상장 보통주 {{ stats.listed_primary }}개 × 4분기 = 약 {{ stats.listed_primary|add:"0"|add:"0"|add:"0"|add:"0"|slice:":4" }}개의 작업</li>
+                    <li><strong>계산 지표:</strong> PER, EPS, PBR, BPS, ROE, ROA, 배당수익률, DPS</li>
+                    <li><strong>필요 데이터:</strong> 재무제표(FinancialStatement)와 주가(StockPrice) 데이터가 필요합니다.</li>
+                    <li><strong>기준 주가:</strong> 각 분기 말일의 종가를 기준으로 지표를 계산합니다.</li>
+                    <li><strong>성능 고려:</strong> 대량 작업이므로 Celery Worker의 상태를 확인하고 실행하세요.</li>
+                </ul>
+            </div>
+
+            <div class="warning-section mt-4 p-5 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg border border-yellow-200 dark:border-yellow-700">
+                <h3 class="text-lg font-bold mb-3 text-yellow-800 dark:text-yellow-400">⚠️ 주의사항</h3>
+                <ul class="list-disc list-inside space-y-2 text-sm text-yellow-800 dark:text-yellow-300">
+                    <li>이 작업은 수백~수천 개의 백그라운드 작업을 생성할 수 있습니다.</li>
+                    <li>Celery Worker가 충분히 실행 중인지 확인하세요.</li>
+                    <li>처리 시간은 종목 수와 Worker 수에 따라 달라집니다.</li>
+                    <li>작업 진행 상황은 Celery Flower나 로그를 통해 확인할 수 있습니다.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* 기본 폼 필드 스타일 (라이트 모드) */
+.main-card input[type="number"],
+.main-card input[type="text"],
+.main-card input[type="checkbox"],
+.main-card select {
+    padding: 0.625rem 0.875rem;
+    border: 2px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    transition: all 0.15s ease-in-out;
+    background-color: white;
+    color: #111827;
+}
+
+.main-card input[type="number"],
+.main-card input[type="text"],
+.main-card select {
+    width: 100%;
+    max-width: 400px;
+}
+
+.main-card input[type="checkbox"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+}
+
+/* 다크모드 스타일 */
+.dark .main-card input[type="number"],
+.dark .main-card input[type="text"],
+.dark .main-card input[type="checkbox"],
+.dark .main-card select {
+    background-color: #1f2937;
+    border-color: #6b7280;
+    color: #f3f4f6;
+}
+
+.dark .main-card input[type="number"]:hover,
+.dark .main-card input[type="text"]:hover,
+.dark .main-card select:hover {
+    border-color: #9ca3af;
+}
+
+.dark .main-card input[type="number"]:focus,
+.dark .main-card input[type="text"]:focus,
+.dark .main-card select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.dark .main-card input[type="checkbox"]:checked {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+.dark .main-card {
+  background-color: #111827;
+}
+
+.dark .reference-section {
+  background-color: #1f2937;
+  border-color: #374151;
+}
+</style>
+{% endblock %}

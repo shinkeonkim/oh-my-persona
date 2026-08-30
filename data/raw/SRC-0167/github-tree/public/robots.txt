@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://terraform-study.shinkeonkim.com/sitemap-index.xml

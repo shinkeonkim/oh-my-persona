@@ -1,0 +1,25 @@
+GitHub repository: https://github.com/shinkeonkim/django-blog
+Author account: shinkeonkim
+
+2020-07-09T10:50:47Z	5a6de31a29f919b0783a14502c727196ccc17ceb	https://github.com/shinkeonkim/django-blog/commit/5a6de31a29f919b0783a14502c727196ccc17ceb	fix:like & comment 기능 보완 및 디자인 수정
+2020-07-03T05:17:43Z	eff12354d278974227b9108ea0ded97225bc98d7	https://github.com/shinkeonkim/django-blog/commit/eff12354d278974227b9108ea0ded97225bc98d7	feat: requiremets.txt 추가
+2020-07-03T05:16:41Z	1ce34043d6af88bad6834e747bbc13544c15ef34	https://github.com/shinkeonkim/django-blog/commit/1ce34043d6af88bad6834e747bbc13544c15ef34	fix: 좋아요, 댓글 실시간 반영 기능 수정, base.html 템플릿 상속 수정
+2020-07-02T11:55:31Z	5e9ccd4810789a11503b22a63fc538bbe515b160	https://github.com/shinkeonkim/django-blog/commit/5e9ccd4810789a11503b22a63fc538bbe515b160	feat:좋아요, 댓글 모델, 템플릿 연결
+2020-05-26T06:38:24Z	7c43312f1bc7d9348f8499ec019e88d069efda71	https://github.com/shinkeonkim/django-blog/commit/7c43312f1bc7d9348f8499ec019e88d069efda71	accout 앱 제작, account 적용
+2020-05-25T10:27:47Z	a1cd1c803ace1fe89c970ec5fab231a1be3911cf	https://github.com/shinkeonkim/django-blog/commit/a1cd1c803ace1fe89c970ec5fab231a1be3911cf	.gitignore 수정
+2020-05-24T11:56:41Z	49ec1abb76ae12daf07921220c5b05d0501eea71	https://github.com/shinkeonkim/django-blog/commit/49ec1abb76ae12daf07921220c5b05d0501eea71	submit button bootstrap 적용
+2020-05-24T11:33:18Z	fd0de750be085880c86ea64365f18c3352b03954	https://github.com/shinkeonkim/django-blog/commit/fd0de750be085880c86ea64365f18c3352b03954	README.md 수정
+2020-05-23T19:35:50Z	b0dde4e310520eeba186296e94ae18b31926bf47	https://github.com/shinkeonkim/django-blog/commit/b0dde4e310520eeba186296e94ae18b31926bf47	favicon error, debug = false 일때 media 안보이는 문제 해결
+2020-05-23T19:00:52Z	72c1d10b7c4b561c710d468bb254dc58ab7dfd92	https://github.com/shinkeonkim/django-blog/commit/72c1d10b7c4b561c710d468bb254dc58ab7dfd92	ALLOWED_HOSTS 변경
+2020-05-23T18:59:48Z	e1fb423f26db28ac6609abc4049af3cebd72ba45	https://github.com/shinkeonkim/django-blog/commit/e1fb423f26db28ac6609abc4049af3cebd72ba45	DEBUG 옵션 제거
+2020-05-23T18:38:08Z	cf35d763125558934246372b924928787b1f1960	https://github.com/shinkeonkim/django-blog/commit/cf35d763125558934246372b924928787b1f1960	solve favicon error
+2020-05-23T18:35:00Z	52922010d0e57a5fd3d8db8e80319a1c0ca1031e	https://github.com/shinkeonkim/django-blog/commit/52922010d0e57a5fd3d8db8e80319a1c0ca1031e	update form bootstrap 적용
+2020-05-23T18:07:32Z	4bc54d68cd27e53fc3606a134d7711c768d91a11	https://github.com/shinkeonkim/django-blog/commit/4bc54d68cd27e53fc3606a134d7711c768d91a11	bootstrap 적용
+2020-05-23T15:06:09Z	0be9a19ae69ab2409c27371f1d2321ee9be0f812	https://github.com/shinkeonkim/django-blog/commit/0be9a19ae69ab2409c27371f1d2321ee9be0f812	gitignore 수정
+2020-05-23T15:04:51Z	5e27e312df45ac6f284b59b7466935a113e9ca6c	https://github.com/shinkeonkim/django-blog/commit/5e27e312df45ac6f284b59b7466935a113e9ca6c	Delete secrets.json
+2020-05-23T15:04:16Z	f33271a87eb27ebad66acfd5ae913e62428db3e7	https://github.com/shinkeonkim/django-blog/commit/f33271a87eb27ebad66acfd5ae913e62428db3e7	django form 적용, secret.json 진짜 분리
+2020-05-23T14:24:30Z	bc0348be5d623b380239eef242f39ddf7177c951	https://github.com/shinkeonkim/django-blog/commit/bc0348be5d623b380239eef242f39ddf7177c951	.gitignore 추가
+2020-05-23T14:23:27Z	b86ff32bfd52155a38823a0b7d0a7b5b20e9f0f8	https://github.com/shinkeonkim/django-blog/commit/b86ff32bfd52155a38823a0b7d0a7b5b20e9f0f8	media .gitignore 추가
+2020-05-23T14:17:58Z	125adf039be54a5ec78c5f1d524c3f9f64bf8ff0	https://github.com/shinkeonkim/django-blog/commit/125adf039be54a5ec78c5f1d524c3f9f64bf8ff0	secret_key 분리, 초기 model, template 작성, blog 기본 기능 추가
+2020-05-18T12:52:45Z	a3d844d4a053cc1eedb48be484b9158167c32160	https://github.com/shinkeonkim/django-blog/commit/a3d844d4a053cc1eedb48be484b9158167c32160	django 초기 설정, urls 분리
+2020-05-18T12:37:11Z	600f44d7c85e6080dd541263b753eb66f3929206	https://github.com/shinkeonkim/django-blog/commit/600f44d7c85e6080dd541263b753eb66f3929206	Initial commit

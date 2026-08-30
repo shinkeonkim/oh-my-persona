@@ -1,0 +1,5 @@
+GitHub repository: https://github.com/shinkeonkim/github-stats-box
+Author account: shinkeonkim
+
+2022-10-23T13:48:08Z	29d1cf0435e7848d27d99ec3c807fe5b90d1d28f	https://github.com/shinkeonkim/github-stats-box/commit/29d1cf0435e7848d27d99ec3c807fe5b90d1d28f	Update run.yml
+2022-08-02T05:10:38Z	96b73827fd27c9246c8b8d1ceb9cf32918e2bd42	https://github.com/shinkeonkim/github-stats-box/commit/96b73827fd27c9246c8b8d1ceb9cf32918e2bd42	Update run.yml

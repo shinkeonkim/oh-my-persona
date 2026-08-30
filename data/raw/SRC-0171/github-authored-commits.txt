@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/kokoa-tools/github-digging-actions
+Author account: shinkeonkim
+
+2026-03-16T07:25:15Z	504e13e5ce05445131c74d542dc1f191ed12096e	https://github.com/kokoa-tools/github-digging-actions/commit/504e13e5ce05445131c74d542dc1f191ed12096e	fix: 분석결과가 폴더 안에 계속 쌓이는 문제 수정
+2025-09-29T12:00:09Z	784fba68a9eecb807f14e77bf535e7e6996678c4	https://github.com/kokoa-tools/github-digging-actions/commit/784fba68a9eecb807f14e77bf535e7e6996678c4	fix: 커밋이 비어있는 문제
+2025-09-29T11:25:20Z	2d6c40ae6cc43c38580020162c1f4c965e7c0756	https://github.com/kokoa-tools/github-digging-actions/commit/2d6c40ae6cc43c38580020162c1f4c965e7c0756	fix: datetime issue
+2025-09-29T11:18:59Z	b61f919e03cb7d81688cd714cccd02a679ac47f6	https://github.com/kokoa-tools/github-digging-actions/commit/b61f919e03cb7d81688cd714cccd02a679ac47f6	fix: bundle을 사용하여 Gem을 설치하도록 함
+2025-09-29T11:15:57Z	186cc97f4ad4378c0b7deb8c66e9b8e94a973e93	https://github.com/kokoa-tools/github-digging-actions/commit/186cc97f4ad4378c0b7deb8c66e9b8e94a973e93	fix: GH_TOKEN으로 env 변경
+2025-09-29T11:13:03Z	8605347e290df933555edafd51e6857955e4b1ea	https://github.com/kokoa-tools/github-digging-actions/commit/8605347e290df933555edafd51e6857955e4b1ea	feat: github 분석 리포트 액션 추가 - claude-code 활용

@@ -1,0 +1,280 @@
+{
+  "observed_at": "2026-08-30T15:49:50.975313+00:00",
+  "selected": 30,
+  "accepted_documents": 3549,
+  "rejected": 1,
+  "duplicates": 208,
+  "clone_failures": 0,
+  "repositories": [
+    {
+      "repository": "kmu-aws-capstone-team-4/backend",
+      "score": 4510,
+      "commits": 744,
+      "pull_requests": 79,
+      "commit_sha": "81ab2add8f2bf07f716a84d94ae69ccf4ce8f3b2",
+      "tracked_text_documents": 355,
+      "status": "accepted"
+    },
+    {
+      "repository": "palette-team/palette_api",
+      "score": 2945,
+      "commits": 507,
+      "pull_requests": 41,
+      "commit_sha": "4fa31ab24b3518ad50d1b6b3e8048a88afca6c59",
+      "tracked_text_documents": 363,
+      "status": "accepted"
+    },
+    {
+      "repository": "kmu-aws-capstone-team-4/frontend",
+      "score": 2035,
+      "commits": 331,
+      "pull_requests": 38,
+      "commit_sha": "932ae43b5dc86ea363bcbe46a0ed4309bb8b2c66",
+      "tracked_text_documents": 400,
+      "status": "accepted"
+    },
+    {
+      "repository": "kkambbaki/backend",
+      "score": 1075,
+      "commits": 179,
+      "pull_requests": 18,
+      "commit_sha": "f2b4b8bd05c3ba97e17e580400d92173a03a55b4",
+      "tracked_text_documents": 210,
+      "status": "accepted"
+    },
+    {
+      "repository": "meme-party/dionysus",
+      "score": 870,
+      "commits": 162,
+      "pull_requests": 6,
+      "commit_sha": "130eeee5eadfe2b28b1b3fbd09e4688663c961bd",
+      "tracked_text_documents": 172,
+      "status": "accepted"
+    },
+    {
+      "repository": "kokoa-study-room/aws-study-site",
+      "score": 390,
+      "commits": 52,
+      "pull_requests": 13,
+      "commit_sha": "e695b8942dc2514be8e866bd9b8042fe395d903b",
+      "tracked_text_documents": 221,
+      "status": "accepted"
+    },
+    {
+      "repository": "kmu-aws-capstone-team-4/infra",
+      "score": 375,
+      "commits": 75,
+      "pull_requests": 0,
+      "commit_sha": "5fa3e3aaad301d6f4389ce5ebf59718d15dda4f0",
+      "tracked_text_documents": 4,
+      "status": "accepted"
+    },
+    {
+      "repository": "joah-team/backend",
+      "score": 365,
+      "commits": 73,
+      "pull_requests": 0,
+      "commit_sha": "81c55adac2a2c9001b6906ae83b4fe544d5f653a",
+      "tracked_text_documents": 295,
+      "status": "accepted"
+    },
+    {
+      "repository": "kokoa-study-room/browser-engineering-ko",
+      "score": 300,
+      "commits": 60,
+      "pull_requests": 0,
+      "commit_sha": "d9a2f611a721c858f6dbbfcb89c15f8a9f582bae",
+      "tracked_text_documents": 179,
+      "status": "accepted"
+    },
+    {
+      "repository": "kmu-shinkeonkim/File-Proessing-Report-Tester",
+      "score": 270,
+      "commits": 54,
+      "pull_requests": 0,
+      "commit_sha": "5104638932bc76a35f4ed5e0c2c89c27849d80e2",
+      "tracked_text_documents": 9,
+      "status": "accepted"
+    },
+    {
+      "repository": "palette-team/palette-dev-infra",
+      "score": 255,
+      "commits": 51,
+      "pull_requests": 0,
+      "commit_sha": "7f3e4bbad257e458fb96397f479b03a87764fa71",
+      "tracked_text_documents": 1,
+      "status": "accepted"
+    },
+    {
+      "repository": "kokoa-study-room/terraform-associate-004-study-notes",
+      "score": 250,
+      "commits": 46,
+      "pull_requests": 2,
+      "commit_sha": "1193b44f47dc764d4b3146012f7119a969a7b975",
+      "tracked_text_documents": 113,
+      "status": "accepted"
+    },
+    {
+      "repository": "kmu-aws-capstone-team-4/analysis-video",
+      "score": 145,
+      "commits": 29,
+      "pull_requests": 0,
+      "commit_sha": "b71a80ed706bf1d7b9d739db9987d9dd7709cc07",
+      "tracked_text_documents": 19,
+      "status": "accepted"
+    },
+    {
+      "repository": "kmu-aws-capstone-team-4/booth-rag",
+      "score": 145,
+      "commits": 29,
+      "pull_requests": 0,
+      "commit_sha": "001b0c65388c509e067a1bf34fef3ddc07b0b7dc",
+      "tracked_text_documents": 53,
+      "status": "accepted"
+    },
+    {
+      "repository": "kmu-aws-capstone-team-4/mefit-diagrams",
+      "score": 125,
+      "commits": 25,
+      "pull_requests": 0,
+      "commit_sha": "07833c158c6fd6857eddd1212b4b325048a08671",
+      "tracked_text_documents": 23,
+      "status": "accepted"
+    },
+    {
+      "repository": "kmu-aws-capstone-team-4/all-projects",
+      "score": 115,
+      "commits": 23,
+      "pull_requests": 0,
+      "commit_sha": "afa56b3f2b99af88c6a71ae45f4725c1479b9e1a",
+      "tracked_text_documents": 81,
+      "status": "accepted"
+    },
+    {
+      "repository": "kmu-aws-capstone-team-4/docs",
+      "score": 115,
+      "commits": 23,
+      "pull_requests": 0,
+      "commit_sha": "625b20df5a9bf80cad75abc08c3febd98f805c36",
+      "tracked_text_documents": 44,
+      "status": "accepted"
+    },
+    {
+      "repository": "kokoa-study-room/aws-saa-sutdy-notes",
+      "score": 105,
+      "commits": 21,
+      "pull_requests": 0,
+      "commit_sha": "1084d850a6d61871595bb5d55521035c68d76a78",
+      "tracked_text_documents": 399,
+      "status": "accepted"
+    },
+    {
+      "repository": "kkambbaki/infra",
+      "score": 90,
+      "commits": 18,
+      "pull_requests": 0,
+      "commit_sha": "1ae669ba645a476a43340dfb61cfe0903a8de0f8",
+      "tracked_text_documents": 1,
+      "status": "accepted"
+    },
+    {
+      "repository": "kmu-aws-capstone-team-4/interview-analysis-report",
+      "score": 85,
+      "commits": 15,
+      "pull_requests": 1,
+      "commit_sha": "83cf9f2a5b70e135a2d24dde99e17eec0f6d0463",
+      "tracked_text_documents": 16,
+      "status": "accepted"
+    },
+    {
+      "repository": "kkambbaki/frontend",
+      "score": 75,
+      "commits": 9,
+      "pull_requests": 3,
+      "commit_sha": "59dbff7ac7f212a42d313ad1cc669475af8a84b0",
+      "tracked_text_documents": 69,
+      "status": "accepted"
+    },
+    {
+      "repository": "kmu-aws-capstone-team-4/scraping",
+      "score": 75,
+      "commits": 11,
+      "pull_requests": 2,
+      "commit_sha": "fecfdb1842b8200ca5ed462487f011efd8e20767",
+      "tracked_text_documents": 28,
+      "status": "accepted"
+    },
+    {
+      "repository": "kmu-shinkeonkim/smart-network-service-ad-project",
+      "score": 75,
+      "commits": 15,
+      "pull_requests": 0,
+      "commit_sha": "bb9de4debb4e0be8d019122e415870fba0b77dd6",
+      "tracked_text_documents": 19,
+      "status": "accepted"
+    },
+    {
+      "repository": "kokoa-lab/stack-digger",
+      "score": 75,
+      "commits": 9,
+      "pull_requests": 3,
+      "commit_sha": "05cb5348040317b820ed7273221545267808ff31",
+      "tracked_text_documents": 83,
+      "status": "accepted"
+    },
+    {
+      "repository": "kokoa-lab/cozy-hive",
+      "score": 70,
+      "commits": 8,
+      "pull_requests": 3,
+      "commit_sha": "b0fb86639f991f6e8ec851179ac1309f9d9f7ca3",
+      "tracked_text_documents": 93,
+      "status": "accepted"
+    },
+    {
+      "repository": "kokoa-lab/dice-art",
+      "score": 70,
+      "commits": 10,
+      "pull_requests": 2,
+      "commit_sha": "12f27edabdb48185e82ac593e3dd7151c2a07d2f",
+      "tracked_text_documents": 16,
+      "status": "accepted"
+    },
+    {
+      "repository": "kokoa-lab/please-delete-my-account",
+      "score": 70,
+      "commits": 8,
+      "pull_requests": 3,
+      "commit_sha": "8809aebdb206eeb83b4f59cf79570430176e2880",
+      "tracked_text_documents": 103,
+      "status": "accepted"
+    },
+    {
+      "repository": "kokoa-lab/works-on-mine",
+      "score": 70,
+      "commits": 8,
+      "pull_requests": 3,
+      "commit_sha": "55f4d69ec982071be9223fe705c4ad71401b42f4",
+      "tracked_text_documents": 80,
+      "status": "accepted"
+    },
+    {
+      "repository": "kmu-aws-capstone-team-4/voice-api",
+      "score": 65,
+      "commits": 11,
+      "pull_requests": 1,
+      "commit_sha": "419cef9aba394b170991e76ed05cdfbef399cbd7",
+      "tracked_text_documents": 20,
+      "status": "accepted"
+    },
+    {
+      "repository": "kokoa-lab/commit-city",
+      "score": 65,
+      "commits": 7,
+      "pull_requests": 3,
+      "commit_sha": "8c7407ae93d5645fe24a6b87d15d65cbd0af1174",
+      "tracked_text_documents": 80,
+      "status": "accepted"
+    }
+  ]
+}

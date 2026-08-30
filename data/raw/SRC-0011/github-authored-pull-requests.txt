@@ -1,0 +1,4 @@
+GitHub repository: https://github.com/shinkeonkim/my-cv
+Pull request author: shinkeonkim
+
+2026-08-27T05:09:34Z	#1	MERGED	https://github.com/shinkeonkim/my-cv/pull/1	chore(tracking): GTM 스니펫 추가 (GTM-T3DTFMFT)	merged=2026-08-27T16:49:31Z	closed=2026-08-27T16:49:31Z	commits=1	files=1	+13/-0	project-lens가 자동 생성한 PR입니다. - index.html에 GTM(GTM-T3DTFMFT) 스니펫을 삽입했습니다. - GTM 컨테이너: GTM-T3DTFMFT

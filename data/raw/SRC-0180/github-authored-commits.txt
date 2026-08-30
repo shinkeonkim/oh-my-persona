@@ -1,0 +1,9 @@
+GitHub repository: https://github.com/palette-team/address_extractor
+Author account: shinkeonkim
+
+2025-10-28T15:37:34Z	42d57c8a19b2318588b6a311254e29fb4d314169	https://github.com/palette-team/address_extractor/commit/42d57c8a19b2318588b6a311254e29fb4d314169	feat: gh actions를 통해 최신화할 수 있도록 함
+2025-10-28T15:35:45Z	0a8332f3156fe59b436bcf965233625a7c621be9	https://github.com/palette-team/address_extractor/commit/0a8332f3156fe59b436bcf965233625a7c621be9	fix: 파일명 변경
+2025-09-15T03:21:51Z	4410adaaea503d3e6351b94782277edae2ec90b2	https://github.com/palette-team/address_extractor/commit/4410adaaea503d3e6351b94782277edae2ec90b2	fix: django-import-export에 맞게 파일 형식 변경
+2025-09-08T15:22:41Z	ed99dbc5cf58c67096a5c7f2be5668366d267e19	https://github.com/palette-team/address_extractor/commit/ed99dbc5cf58c67096a5c7f2be5668366d267e19	feat: 주소 목록을 추출하는 스크립트
+2025-09-08T15:22:22Z	3ebb60fe051368f3dc260a5bcaebf864b3136241	https://github.com/palette-team/address_extractor/commit/3ebb60fe051368f3dc260a5bcaebf864b3136241	feat: 실제 사이트에서 zip 파일을 다운로드 받은 후, 디렉토리에 저장하는 스크립트
+2025-09-08T15:21:49Z	37dcdf20d585f8790a2fe0ba830a8761fddbb15b	https://github.com/palette-team/address_extractor/commit/37dcdf20d585f8790a2fe0ba830a8761fddbb15b	feat: 주소 추출기 프로젝트 설정

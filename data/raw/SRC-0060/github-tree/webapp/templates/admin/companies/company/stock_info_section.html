@@ -1,0 +1,141 @@
+{% load i18n stock_tags %}
+
+<div style="display: flex; gap: 20px; width: 100%;">
+  <!-- Left: Stock List -->
+  <div style="flex: 1; min-width: 300px;">
+    <h3 style="margin-top: 0;">{% trans "주식 목록" %}</h3>
+    {% if instance.stocks.all %}
+      <table style="width: 100%; border-collapse: collapse;">
+        <thead>
+          <tr style="background-color: #f5f5f5;">
+            <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">{% trans "종목코드" %}</th>
+            <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">{% trans "종목명" %}</th>
+            <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">{% trans "시장" %}</th>
+            <th style="padding: 8px; border: 1px solid #ddd; text-align: left;">{% trans "구분" %}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for stock in instance.stocks.all %}
+          <tr>
+            <td style="padding: 8px; border: 1px solid #ddd;">{{ stock.code }}</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">
+              {{ stock.name }}
+              {% if stock.is_primary %}<span style="color: #417690; font-weight: bold;">★</span>{% endif %}
+            </td>
+            <td style="padding: 8px; border: 1px solid #ddd;">{{ stock.market.code }}</td>
+            <td style="padding: 8px; border: 1px solid #ddd;">{{ stock.category }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% else %}
+      <p style="color: #666;">{% trans "등록된 주식이 없습니다." %}</p>
+    {% endif %}
+  </div>
+
+  <!-- Right: Stock Price Charts -->
+  <div style="flex: 2; min-width: 400px;">
+    <h3 style="margin-top: 0;">{% trans "최근 10일 주가 추이" %}</h3>
+
+    {% for stock in instance.stocks.all %}
+      {% get_recent_stock_prices stock as prices %}
+
+      {% if prices %}
+        <div style="margin-bottom: 30px; padding: 15px; border: 1px solid #e0e0e0; border-radius: 4px; background-color: #fafafa;">
+          <h4 style="margin-top: 0; margin-bottom: 15px; color: #333;">
+            {{ stock.name }} ({{ stock.code }})
+          </h4>
+
+          <canvas id="chart-{{ instance.id }}-{{ stock.code }}" style="max-height: 250px;"></canvas>
+
+          <script>
+            (function() {
+              const ctx = document.getElementById('chart-{{ instance.id }}-{{ stock.code }}');
+              if (ctx && typeof Chart !== 'undefined') {
+                const prices = [{% for price in prices %}{{ price.close_price }}{% if not forloop.last %}, {% endif %}{% endfor %}];
+                const labels = [{% for price in prices %}'{{ price.trade_date|date:"m/d" }}'{% if not forloop.last %}, {% endif %}{% endfor %}];
+
+                new Chart(ctx, {
+                  type: 'line',
+                  data: {
+                    labels: labels,
+                    datasets: [{
+                      label: '{% trans "종가" %}',
+                      data: prices,
+                      borderColor: '#417690',
+                      backgroundColor: 'rgba(65, 118, 144, 0.1)',
+                      tension: 0.3,
+                      fill: true,
+                      pointRadius: 4,
+                      pointHoverRadius: 6,
+                      pointBackgroundColor: '#417690',
+                      pointBorderColor: '#fff',
+                      pointBorderWidth: 2
+                    }]
+                  },
+                  options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    aspectRatio: 2.5,
+                    plugins: {
+                      legend: {
+                        display: false
+                      },
+                      tooltip: {
+                        mode: 'index',
+                        intersect: false,
+                        callbacks: {
+                          label: function(context) {
+                            return '{% trans "종가" %}: ' + context.parsed.y.toLocaleString('ko-KR') + ' KRW';
+                          }
+                        }
+                      }
+                    },
+                    scales: {
+                      y: {
+                        beginAtZero: false,
+                        ticks: {
+                          callback: function(value) {
+                            return value.toLocaleString('ko-KR');
+                          }
+                        }
+                      },
+                      x: {
+                        grid: {
+                          display: false
+                        }
+                      }
+                    }
+                  }
+                });
+              }
+            })();
+          </script>
+
+          <!-- Summary Stats -->
+          {% with latest=prices|last %}
+          <div style="display: flex; gap: 15px; margin-top: 10px; font-size: 13px;">
+            <div>
+              <strong>{% trans "최근가" %}:</strong>
+              <span style="color: #417690;">{{ latest.close_price|floatformat:0 }} KRW</span>
+            </div>
+            <div>
+              <strong>{% trans "변동률" %}:</strong>
+              <span style="color: {% if latest.change_rate >= 0 %}#d32f2f{% else %}#1976d2{% endif %};">
+                {{ latest.change_rate|floatformat:2 }}%
+              </span>
+            </div>
+          </div>
+          {% endwith %}
+        </div>
+      {% endif %}
+    {% endfor %}
+
+    {% if not instance.stocks.all %}
+      <p style="color: #666;">{% trans "주가 데이터가 없습니다." %}</p>
+    {% endif %}
+  </div>
+</div>
+
+<!-- Chart.js 라이브러리 -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
