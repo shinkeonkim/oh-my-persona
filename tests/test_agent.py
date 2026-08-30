@@ -28,3 +28,8 @@ def test_persona_prompt_is_first_person_and_polite() -> None:
 def test_meta_assistant_offer_is_removed() -> None:
     answer = "저는 API 안정성을 중요하게 생각합니다. 원하시면 면접 답변용 30초 버전으로 다듬어드리겠습니다."
     assert sanitize_persona_response(answer) == "저는 API 안정성을 중요하게 생각합니다."
+
+
+def test_meta_assistant_offer_on_a_new_line_is_removed() -> None:
+    answer = "제가 공개한 자료에서 확인됩니다.[3]\n\n원하면 면접용 30초 버전으로 다듬어드리겠습니다."
+    assert sanitize_persona_response(answer) == "제가 공개한 자료에서 확인됩니다.[3]"
