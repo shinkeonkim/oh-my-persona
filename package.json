@@ -1,0 +1,11 @@
+{
+  "name": "oh-my-persona-ui",
+  "private": true,
+  "scripts": {
+    "test:ui": "playwright test",
+    "test:ui:update": "playwright test --update-snapshots"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.62.1"
+  }
+}

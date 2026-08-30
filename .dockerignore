@@ -3,6 +3,9 @@
 .venv
 .pytest_cache
 .ruff_cache
+node_modules
+test-results
+playwright-report
 **/__pycache__
 data/inbox
 data/raw
