@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/oh-my-interview-helper
+URL: https://github.com/shinkeonkim/oh-my-interview-helper
+Relationship to shinkeonkim: owner
+Description: 로컬 AI 에이전트를 통해 이력서/채용공고/기업 분석, 이력서 피드백, 면접 준비를 제공합니다.
+Created at: 2026-08-24T15:38:11Z
+Updated at: 2026-08-30T13:17:51Z
+Pushed at: 2026-08-30T13:17:40Z
+Archived: False
+Fork: False
+Languages: TypeScript, Vue, CSS, JavaScript, Dockerfile, HTML
+Topics: (none)
+Default branch: main
+Latest commit: de2f7fb71b41193bf13c3e5da1861126481cacb1 at 2026-08-30T13:16:30Z

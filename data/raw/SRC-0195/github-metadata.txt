@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/alcolpedia-1
+URL: https://github.com/shinkeonkim/alcolpedia-1
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2020-11-09T11:34:40Z
+Updated at: 2020-12-29T12:14:37Z
+Pushed at: 2020-12-30T13:12:17Z
+Archived: False
+Fork: True
+Languages: JavaScript, CSS, HTML, Python, SCSS, Less, Ruby
+Topics: (none)
+Default branch: master
+Latest commit: 1e6c4872c7d94579b90f711c9fc31331cac91238 at 2020-12-29T11:44:43Z

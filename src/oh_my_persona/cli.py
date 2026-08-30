@@ -7,6 +7,7 @@ from pathlib import Path
 from .audit import write_audit
 from .collect import collect_local_repository
 from .corpus import build_chunks, iter_corpus_files, read_jsonl, validate
+from .github_research import discover, write_inventory
 from .ingest import approve_inbox, inspect_inbox
 from .qa import build_answers
 from .service import search
@@ -19,7 +20,7 @@ def project_root() -> Path:
 
 def main() -> None:
     parser = argparse.ArgumentParser(prog="persona")
-    parser.add_argument("command", choices=("validate", "inventory", "chunk", "audit", "collect-local", "collect-web", "inspect-inbox", "ingest-inbox", "build-answers", "evaluate"))
+    parser.add_argument("command", choices=("validate", "inventory", "chunk", "audit", "collect-local", "collect-web", "collect-github-metadata", "inspect-inbox", "ingest-inbox", "build-answers", "evaluate"))
     parser.add_argument("--approve", action="store_true", help="required before copying inbox files to raw")
     parser.add_argument("--source-id")
     parser.add_argument("--repo", type=Path)
@@ -65,6 +66,10 @@ def main() -> None:
         if not source or source.get("collection") != "web":
             raise SystemExit("source-id must identify a registered web source")
         print(json.dumps(collect_web_source(root, source), ensure_ascii=False))
+    elif args.command == "collect-github-metadata":
+        if not args.approve:
+            raise SystemExit("collect-github-metadata requires --approve")
+        print(json.dumps(write_inventory(root, discover()), ensure_ascii=False))
     elif args.command in {"inspect-inbox", "ingest-inbox"}:
         if args.command == "ingest-inbox" and not args.approve:
             raise SystemExit("ingest-inbox requires --approve")

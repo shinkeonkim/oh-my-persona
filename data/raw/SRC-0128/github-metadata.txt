@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-tpa-plugin
+URL: https://github.com/kokoa-hobby/minecraft-tpa-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: tpa-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:39:04Z
+Updated at: 2026-07-22T13:29:25Z
+Pushed at: 2026-07-22T13:27:27Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: 20dd81c555bd68ce4bdd31ef84a51dfb4ea3083e at 2026-07-22T13:27:26Z

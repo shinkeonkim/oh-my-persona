@@ -1,0 +1,13 @@
+GitHub repository: kmu-aws-capstone-team-4/scraping
+URL: https://github.com/kmu-aws-capstone-team-4/scraping
+Relationship to shinkeonkim: contributor
+Description: 채용공고 URL을 입력하면 핵심 정보를 자동으로 추출하여 구조화된 데이터로 반환하는 파이프라인
+Created at: 2026-04-01T09:49:50Z
+Updated at: 2026-05-11T11:01:08Z
+Pushed at: 2026-05-09T16:57:57Z
+Archived: False
+Fork: False
+Languages: Python, Shell, Dockerfile, Batchfile
+Topics: beautifulsoup4, celery, fake-useragent, httpx, langchain, lxml, openai-gpt4o, openai-gpt4o-mini, pillow, playwright, postgresql, pydantic, redis
+Default branch: main
+Latest commit: fecfdb1842b8200ca5ed462487f011efd8e20767 at 2026-05-09T16:56:47Z

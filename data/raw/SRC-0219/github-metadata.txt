@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/move-it
+URL: https://github.com/shinkeonkim/move-it
+Relationship to shinkeonkim: owner
+Description: Move Green Box! Avoid Red Dot!
+Created at: 2022-03-09T04:35:35Z
+Updated at: 2022-03-15T09:45:20Z
+Pushed at: 2022-03-09T06:31:32Z
+Archived: False
+Fork: False
+Languages: JavaScript, CSS, HTML
+Topics: web-game
+Default branch: main
+Latest commit: 6b88c81f73f3656fb6ea152c0e676d0d9fb18497 at 2022-03-09T06:31:28Z

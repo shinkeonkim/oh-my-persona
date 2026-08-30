@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/1day1commit
+URL: https://github.com/shinkeonkim/1day1commit
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2019-12-23T23:47:22Z
+Updated at: 2020-04-30T14:53:25Z
+Pushed at: 2022-12-11T22:15:33Z
+Archived: False
+Fork: False
+Languages: JavaScript, Python
+Topics: (none)
+Default branch: master
+Latest commit: 4705853fa7d7c78384a216ce02efad52ade88a12 at 2020-04-30T14:53:09Z

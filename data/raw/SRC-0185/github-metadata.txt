@@ -1,0 +1,13 @@
+GitHub repository: palette-team/palette-prod-infra
+URL: https://github.com/palette-team/palette-prod-infra
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2025-11-07T03:02:55Z
+Updated at: 2025-11-10T06:55:27Z
+Pushed at: 2025-11-10T06:55:24Z
+Archived: False
+Fork: False
+Languages: HCL, Shell
+Topics: (none)
+Default branch: main
+Latest commit: 1276edb1562da3b84f90d59c30d2f6ed8b6edbeb at 2025-11-10T06:55:21Z

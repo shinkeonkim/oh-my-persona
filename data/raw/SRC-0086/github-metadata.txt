@@ -1,0 +1,13 @@
+GitHub repository: kmu-aws-capstone-team-4/voice-fe-example
+URL: https://github.com/kmu-aws-capstone-team-4/voice-fe-example
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-04-01T18:37:18Z
+Updated at: 2026-04-01T19:32:37Z
+Pushed at: 2026-04-01T19:32:33Z
+Archived: False
+Fork: False
+Languages: TypeScript, CSS, JavaScript, Dockerfile, HTML
+Topics: (none)
+Default branch: main
+Latest commit: 8971e6edcb1d919b04f2d1a4024cb0f6d04cbafe at 2026-04-01T19:32:30Z

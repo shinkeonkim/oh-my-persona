@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/drawing
+URL: https://github.com/shinkeonkim/drawing
+Relationship to shinkeonkim: owner
+Description: 심플 그림판 프로젝트
+Created at: 2022-04-23T07:28:40Z
+Updated at: 2025-03-18T23:55:04Z
+Pushed at: 2025-03-18T23:55:01Z
+Archived: False
+Fork: False
+Languages: JavaScript, HTML, CSS
+Topics: canvas, electron
+Default branch: main
+Latest commit: 9582c2494af2cb9afd70343ec0594f27c513bca5 at 2025-03-18T23:55:00Z

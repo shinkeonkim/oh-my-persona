@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/poll-system-experiment
+URL: https://github.com/kokoa-lab/poll-system-experiment
+Relationship to shinkeonkim: contributor
+Description: 투표 시스템 실험 프로젝트
+Created at: 2025-09-18T02:32:28Z
+Updated at: 2025-09-24T13:46:16Z
+Pushed at: 2025-09-24T13:46:12Z
+Archived: False
+Fork: False
+Languages: Python, Vue, JavaScript, CSS, Dockerfile, HTML, Shell
+Topics: (none)
+Default branch: main
+Latest commit: 01b79854b146b3933ee1e4cf2b1f994887ab7b38 at 2025-09-24T13:45:30Z

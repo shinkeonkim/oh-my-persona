@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/code-judger
+URL: https://github.com/shinkeonkim/code-judger
+Relationship to shinkeonkim: owner
+Description: Rust/Docker 기반 code-executor를 활용하는 코드 채점기
+Created at: 2025-06-03T03:11:39Z
+Updated at: 2025-06-11T02:40:37Z
+Pushed at: 2025-06-04T03:02:25Z
+Archived: False
+Fork: False
+Languages: Rust, Dockerfile
+Topics: (none)
+Default branch: main
+Latest commit: d49dea2ca5828a2a6a4ff93f6b0df4c9a748129d at 2025-06-04T03:02:22Z

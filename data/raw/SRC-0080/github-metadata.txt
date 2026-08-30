@@ -1,0 +1,13 @@
+GitHub repository: kmu-aws-capstone-team-4/kmu-fastchat-api-example
+URL: https://github.com/kmu-aws-capstone-team-4/kmu-fastchat-api-example
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-04-02T14:44:07Z
+Updated at: 2026-04-02T14:47:32Z
+Pushed at: 2026-04-02T14:47:23Z
+Archived: False
+Fork: False
+Languages: Python
+Topics: (none)
+Default branch: main
+Latest commit: 65420589b9ece91dfacce7dd038912cd5b2a71b8 at 2026-04-02T14:47:20Z

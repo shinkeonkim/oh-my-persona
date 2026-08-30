@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/good-bye-boj
+URL: https://github.com/shinkeonkim/good-bye-boj
+Relationship to shinkeonkim: owner
+Description: Good Bye BOJ..
+Created at: 2026-04-15T14:35:13Z
+Updated at: 2026-04-15T16:22:13Z
+Pushed at: 2026-04-16T12:43:07Z
+Archived: False
+Fork: False
+Languages: Python, Shell, Batchfile
+Topics: (none)
+Default branch: main
+Latest commit: 20415d775f1f96c68acbc312dd4bd6c49328ed74 at 2026-04-15T15:17:23Z

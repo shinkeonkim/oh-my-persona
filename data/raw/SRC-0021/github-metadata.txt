@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/my-leetcode
+URL: https://github.com/shinkeonkim/my-leetcode
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2026-06-19T05:23:01Z
+Updated at: 2026-08-27T08:17:47Z
+Pushed at: 2026-08-27T08:14:10Z
+Archived: False
+Fork: False
+Languages: Python, C++, JavaScript
+Topics: (none)
+Default branch: main
+Latest commit: e97b3a5981c1c3849a3bb1ceb21983ff7021bf50 at 2026-08-27T08:14:10Z

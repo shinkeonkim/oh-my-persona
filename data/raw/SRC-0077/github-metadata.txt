@@ -1,0 +1,13 @@
+GitHub repository: kmu-aws-capstone-team-4/infra
+URL: https://github.com/kmu-aws-capstone-team-4/infra
+Relationship to shinkeonkim: contributor
+Description: EC2 위 k3s 클러스터에서 mefit 백엔드를 운영하기 위한 Kubernetes 매니페스트 및 배포 스크립트
+Created at: 2026-03-25T11:24:20Z
+Updated at: 2026-05-11T04:01:46Z
+Pushed at: 2026-05-11T04:01:42Z
+Archived: False
+Fork: False
+Languages: Shell
+Topics: (none)
+Default branch: main
+Latest commit: 5fa3e3aaad301d6f4389ce5ebf59718d15dda4f0 at 2026-05-11T04:01:38Z

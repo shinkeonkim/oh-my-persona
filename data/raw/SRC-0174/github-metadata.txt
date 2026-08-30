@@ -1,0 +1,13 @@
+GitHub repository: kokoa-tools/pr-archiving
+URL: https://github.com/kokoa-tools/pr-archiving
+Relationship to shinkeonkim: contributor
+Description: 특정 유저가 작성한 Repository의 Github PR 목록을 가져옵니다. 각 PR 상세 페이지 및 files 페이지의 스크린샷을 저장합니다.
+Created at: 2025-03-13T09:58:12Z
+Updated at: 2026-03-16T07:29:51Z
+Pushed at: 2025-03-13T10:06:02Z
+Archived: False
+Fork: False
+Languages: JavaScript
+Topics: (none)
+Default branch: main
+Latest commit: 8b835933b226e9ade703a72aa269682c6b74ac43 at 2025-03-13T10:05:58Z

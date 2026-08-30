@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/oh-my-persona
+URL: https://github.com/shinkeonkim/oh-my-persona
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2026-08-28T15:33:38Z
+Updated at: 2026-08-30T13:08:36Z
+Pushed at: 2026-08-30T13:08:24Z
+Archived: False
+Fork: False
+Languages: Python, CSS, HTML, JavaScript, Dockerfile
+Topics: (none)
+Default branch: main
+Latest commit: 8b4597bca3babd5f43a1d651e92319965eb77078 at 2026-08-30T13:08:22Z

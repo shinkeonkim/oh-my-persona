@@ -1,0 +1,13 @@
+GitHub repository: kokoa-study-room/kokoa-study-room.github.io
+URL: https://github.com/kokoa-study-room/kokoa-study-room.github.io
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-06-11T14:40:02Z
+Updated at: 2026-06-11T15:11:20Z
+Pushed at: 2026-06-11T15:07:25Z
+Archived: False
+Fork: False
+Languages: (none)
+Topics: (none)
+Default branch: main
+Latest commit: 861331da90ccc94c064cced1e0ffba21ee283cdd at 2026-06-11T15:07:24Z

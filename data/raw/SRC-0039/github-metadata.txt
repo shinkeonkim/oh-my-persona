@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/basic_django_template
+URL: https://github.com/shinkeonkim/basic_django_template
+Relationship to shinkeonkim: owner
+Description: 🧐 no more same directory name | 🚀 basic gitignore template from gitignore.io
+Created at: 2022-05-06T11:46:33Z
+Updated at: 2025-09-22T20:33:50Z
+Pushed at: 2022-05-06T12:09:18Z
+Archived: False
+Fork: False
+Languages: Python
+Topics: django, django-template, template
+Default branch: main
+Latest commit: 61863415280e3b4fe5250120c4029ff3783cec07 at 2022-05-06T12:08:18Z

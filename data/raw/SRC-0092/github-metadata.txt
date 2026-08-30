@@ -1,0 +1,13 @@
+GitHub repository: kmu-shinkeonkim/smart-network-service-hw1
+URL: https://github.com/kmu-shinkeonkim/smart-network-service-hw1
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2025-10-01T10:24:37Z
+Updated at: 2025-10-02T06:49:07Z
+Pushed at: 2025-10-02T06:27:18Z
+Archived: False
+Fork: False
+Languages: C++, C, Makefile
+Topics: kookmin-university, socket-programming
+Default branch: main
+Latest commit: 31a32f49f015f675782cb0331bc78a36d85159d7 at 2025-10-02T06:27:15Z

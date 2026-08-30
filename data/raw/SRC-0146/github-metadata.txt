@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/pattern-type
+URL: https://github.com/kokoa-lab/pattern-type
+Relationship to shinkeonkim: contributor
+Description: 12개의 코딩 상황 질문을 통해 당신의 코딩 성격을 7가지 디자인 패턴 중 하나로 진단하는 심리테스트
+Created at: 2026-03-09T04:46:00Z
+Updated at: 2026-08-28T07:58:22Z
+Pushed at: 2026-08-28T07:56:53Z
+Archived: False
+Fork: False
+Languages: TypeScript, CSS, HTML, JavaScript
+Topics: (none)
+Default branch: main
+Latest commit: ddbf03614e92e17ad7ef67eee1c656e03275480c at 2026-08-28T07:56:53Z

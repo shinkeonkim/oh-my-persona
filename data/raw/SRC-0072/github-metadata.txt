@@ -1,0 +1,13 @@
+GitHub repository: kmu-aws-capstone-team-4/backend
+URL: https://github.com/kmu-aws-capstone-team-4/backend
+Relationship to shinkeonkim: contributor
+Description: 가상 면접 서비스(MeFit) 메인 백엔드
+Created at: 2026-03-11T07:07:06Z
+Updated at: 2026-05-19T04:43:27Z
+Pushed at: 2026-05-19T04:46:41Z
+Archived: False
+Fork: False
+Languages: Python, HTML, Shell, Dockerfile
+Topics: boto3, celery, django, django-rest-framework, langchain, openai, pre-commit, redis, yapf
+Default branch: develop
+Latest commit: 81ab2add8f2bf07f716a84d94ae69ccf4ce8f3b2 at 2026-05-19T04:43:17Z

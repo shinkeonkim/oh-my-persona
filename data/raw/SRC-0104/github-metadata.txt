@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-chestshop-plugin
+URL: https://github.com/kokoa-hobby/minecraft-chestshop-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: chestshop-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:37:02Z
+Updated at: 2026-07-22T13:30:39Z
+Pushed at: 2026-07-22T13:28:58Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: fe5a720bcc1766d02e4f5b8bb66b668e2a2ea044 at 2026-07-22T13:28:56Z

@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/django_o_template
+URL: https://github.com/shinkeonkim/django_o_template
+Relationship to shinkeonkim: owner
+Description: django template
+Created at: 2021-07-17T08:00:57Z
+Updated at: 2021-07-31T08:36:54Z
+Pushed at: 2021-07-31T08:36:52Z
+Archived: False
+Fork: False
+Languages: Python, HTML, Dockerfile, SCSS
+Topics: django
+Default branch: main
+Latest commit: 99cb8fd1a2fa44708ebdea7a1343366f5867ddb0 at 2021-07-31T08:36:48Z

@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/army-tiger
+URL: https://github.com/shinkeonkim/army-tiger
+Relationship to shinkeonkim: owner
+Description: 🪖 군대 일정을 Github 프로필에 남겨둘 수 있어요
+Created at: 2022-10-23T12:19:42Z
+Updated at: 2025-03-06T11:10:32Z
+Pushed at: 2022-10-23T15:05:40Z
+Archived: False
+Fork: False
+Languages: JavaScript
+Topics: gist, army, gistbox, korea-army
+Default branch: main
+Latest commit: 6d4451509e6b9da92dc0837f062f5d5121c69793 at 2022-10-23T15:05:40Z

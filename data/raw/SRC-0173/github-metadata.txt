@@ -1,0 +1,13 @@
+GitHub repository: kokoa-tools/port-killer
+URL: https://github.com/kokoa-tools/port-killer
+Relationship to shinkeonkim: contributor
+Description: 특정 TCP 포트를 사용하고 있는 프로세스 또는 도커 컨테이너를 죽이는 sh | why? -> AI tool이 백그라운드로 포트를 사용하고 있다.
+Created at: 2025-09-18T10:31:28Z
+Updated at: 2025-09-18T10:37:23Z
+Pushed at: 2025-09-18T10:32:01Z
+Archived: False
+Fork: False
+Languages: Shell, Makefile
+Topics: shell-script
+Default branch: main
+Latest commit: a91b520cdefe455cb8adf80b2fc8f2285be2840b at 2025-09-18T10:31:57Z

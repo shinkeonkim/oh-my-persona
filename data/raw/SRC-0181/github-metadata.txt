@@ -1,0 +1,13 @@
+GitHub repository: palette-team/extractor-data
+URL: https://github.com/palette-team/extractor-data
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-02-14T16:48:08Z
+Updated at: 2026-02-14T16:51:20Z
+Pushed at: 2026-02-14T16:51:16Z
+Archived: False
+Fork: False
+Languages: (none)
+Topics: (none)
+Default branch: main
+Latest commit: 2b6adb7556b463c59219cc52d6b4fd197ad5e52f at 2026-02-14T16:51:15Z

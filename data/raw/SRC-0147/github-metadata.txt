@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/please-delete-my-account
+URL: https://github.com/kokoa-lab/please-delete-my-account
+Relationship to shinkeonkim: contributor
+Description: 대한민국 서비스 회원탈퇴의 모든 다크패턴을 체험하세요. 총 20개의 스테이지를 클리어하면 진정한 탈퇴가 완료됩니다.
+Created at: 2026-03-12T09:45:33Z
+Updated at: 2026-08-28T07:57:37Z
+Pushed at: 2026-08-28T07:57:23Z
+Archived: False
+Fork: False
+Languages: TypeScript, CSS, HTML, JavaScript
+Topics: (none)
+Default branch: main
+Latest commit: 8809aebdb206eeb83b4f59cf79570430176e2880 at 2026-08-28T07:57:18Z

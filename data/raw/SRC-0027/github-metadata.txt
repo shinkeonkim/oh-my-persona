@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/code-executor
+URL: https://github.com/shinkeonkim/code-executor
+Relationship to shinkeonkim: owner
+Description: Rust/Docker 기반 코드 실행기 (Python, Java, C++, Ruby 지원)
+Created at: 2025-05-02T13:06:36Z
+Updated at: 2025-06-11T02:40:18Z
+Pushed at: 2025-06-04T04:42:57Z
+Archived: False
+Fork: False
+Languages: Rust, Shell, Dockerfile
+Topics: (none)
+Default branch: main
+Latest commit: 23c8db08cac5cb26548556143ed93d701d9126dd at 2025-06-04T04:42:54Z

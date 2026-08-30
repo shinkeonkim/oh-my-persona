@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/kmu-ecampus-darkmode-extension
+URL: https://github.com/shinkeonkim/kmu-ecampus-darkmode-extension
+Relationship to shinkeonkim: owner
+Description: KMU ecampus darkmode chrome extension
+Created at: 2020-10-07T16:06:44Z
+Updated at: 2021-08-15T10:06:49Z
+Pushed at: 2020-10-20T04:47:43Z
+Archived: False
+Fork: False
+Languages: HTML, CSS, JavaScript
+Topics: kmu, ecampus, dark-mode, chrome-extension
+Default branch: main
+Latest commit: 01c6d86eee1370e807178bdebc6ebc4a296c51a2 at 2020-10-20T04:47:35Z

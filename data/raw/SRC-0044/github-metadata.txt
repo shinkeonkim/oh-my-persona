@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/where-am-i
+URL: https://github.com/shinkeonkim/where-am-i
+Relationship to shinkeonkim: owner
+Description: to build CS Roadmap site
+Created at: 2021-06-11T13:25:43Z
+Updated at: 2023-01-28T06:45:46Z
+Pushed at: 2021-09-03T03:10:48Z
+Archived: True
+Fork: False
+Languages: Vue, JavaScript, HTML, CSS
+Topics: (none)
+Default branch: main
+Latest commit: d15c7e1ee11f31eeec452ec155c0f4bda91bc226 at 2021-06-13T04:56:11Z

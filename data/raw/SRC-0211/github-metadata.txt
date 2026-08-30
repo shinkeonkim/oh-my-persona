@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/janggi-go-game-server
+URL: https://github.com/shinkeonkim/janggi-go-game-server
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2020-06-23T01:01:32Z
+Updated at: 2020-06-23T01:01:36Z
+Pushed at: 2020-06-23T01:01:33Z
+Archived: False
+Fork: False
+Languages: (none)
+Topics: (none)
+Default branch: master
+Latest commit: 9fbfb6df330c771021b43442317c0be173e2cebd at 2020-06-23T01:01:33Z

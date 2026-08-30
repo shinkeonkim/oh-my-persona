@@ -1,0 +1,13 @@
+GitHub repository: kmu-aws-capstone-team-4/interview-analysis-report
+URL: https://github.com/kmu-aws-capstone-team-4/interview-analysis-report
+Relationship to shinkeonkim: contributor
+Description: 면접이 완료된 후 질문, 답변 데이터와 음성 결과를 GPT로 종합 분석하여 리포트를 생성하는 서비스
+Created at: 2026-04-06T09:17:47Z
+Updated at: 2026-05-21T06:26:54Z
+Pushed at: 2026-05-21T06:26:51Z
+Archived: False
+Fork: False
+Languages: Python, Dockerfile
+Topics: boto3, celery, langchain, openai, postgresql, redis
+Default branch: main
+Latest commit: 83cf9f2a5b70e135a2d24dde99e17eec0f6d0463 at 2026-05-21T06:26:35Z

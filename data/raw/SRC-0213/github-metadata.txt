@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/kmu-likelion-slack-noti-action
+URL: https://github.com/shinkeonkim/kmu-likelion-slack-noti-action
+Relationship to shinkeonkim: owner
+Description: slack noti using github action
+Created at: 2021-11-17T14:24:49Z
+Updated at: 2025-09-17T12:22:55Z
+Pushed at: 2021-11-17T15:39:42Z
+Archived: True
+Fork: False
+Languages: Python
+Topics: github-actions, slack
+Default branch: main
+Latest commit: 55c9e83dc2978e1e8a21edc0d2edf5e0613b13d9 at 2021-11-17T15:39:42Z

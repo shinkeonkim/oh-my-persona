@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-elevator-plugin
+URL: https://github.com/kokoa-hobby/minecraft-elevator-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: elevator-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:37:33Z
+Updated at: 2026-07-22T13:28:44Z
+Pushed at: 2026-07-22T13:27:09Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: 3fd29fe1faa5728217c862fcc696779059c16591 at 2026-07-22T13:27:08Z

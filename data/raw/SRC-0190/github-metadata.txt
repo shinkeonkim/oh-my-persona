@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/Basic-Shopping-Basket
+URL: https://github.com/shinkeonkim/Basic-Shopping-Basket
+Relationship to shinkeonkim: owner
+Description: Basic shopping basket(cart) web application using React.js and GraphQL + Apollo for tutorial
+Created at: 2020-06-03T04:25:40Z
+Updated at: 2020-06-03T04:25:42Z
+Pushed at: 2020-05-25T12:12:52Z
+Archived: False
+Fork: True
+Languages: JavaScript, HTML, CSS
+Topics: (none)
+Default branch: master
+Latest commit: 25790e5ca29be573016484ea155fa89f95f4acbb at 2020-04-24T07:32:54Z

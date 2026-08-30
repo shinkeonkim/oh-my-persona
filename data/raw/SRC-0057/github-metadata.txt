@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/personal-awesome
+URL: https://github.com/shinkeonkim/personal-awesome
+Relationship to shinkeonkim: owner
+Description: 나만의 awesome 북마크 🔖
+Created at: 2022-07-09T11:32:50Z
+Updated at: 2022-11-08T06:50:10Z
+Pushed at: 2022-11-16T13:13:34Z
+Archived: False
+Fork: False
+Languages: (none)
+Topics: (none)
+Default branch: main
+Latest commit: c2cfb812f702004dd9917a727a8748898684bb4f at 2022-11-16T13:13:34Z

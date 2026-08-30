@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/cors-port
+URL: https://github.com/kokoa-lab/cors-port
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-03-09T06:54:57Z
+Updated at: 2026-08-28T07:54:45Z
+Pushed at: 2026-08-28T07:54:12Z
+Archived: False
+Fork: False
+Languages: TypeScript, CSS, HTML, JavaScript
+Topics: (none)
+Default branch: main
+Latest commit: f2ebadd62ddecb0e9c8f4d84b018555c28e7390b at 2026-08-28T07:54:12Z

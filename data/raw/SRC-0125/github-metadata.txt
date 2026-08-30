@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-storage-plugin
+URL: https://github.com/kokoa-hobby/minecraft-storage-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: storage-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:38:48Z
+Updated at: 2026-07-22T13:31:49Z
+Pushed at: 2026-07-22T13:28:06Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: 016a1c07b12af202b7146c7ff812240cde6ae577 at 2026-07-22T13:28:05Z

@@ -1,0 +1,13 @@
+GitHub repository: kokoa-study-room/browser-engineering-ko
+URL: https://github.com/kokoa-study-room/browser-engineering-ko
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-08-24T15:10:27Z
+Updated at: 2026-08-25T14:48:02Z
+Pushed at: 2026-08-25T14:39:54Z
+Archived: False
+Fork: False
+Languages: Python, JavaScript, CSS
+Topics: (none)
+Default branch: main
+Latest commit: d9a2f611a721c858f6dbbfcb89c15f8a9f582bae at 2026-08-25T14:39:53Z

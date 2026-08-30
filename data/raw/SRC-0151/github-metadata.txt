@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/term-card
+URL: https://github.com/kokoa-lab/term-card
+Relationship to shinkeonkim: contributor
+Description: 터미널 스타일 ASCII 명함을 생성하세요. neofetch 감성의 타이핑 애니메이션과 이미지 내보내기 지원
+Created at: 2026-03-09T09:11:20Z
+Updated at: 2026-08-28T08:01:44Z
+Pushed at: 2026-08-28T07:58:07Z
+Archived: False
+Fork: False
+Languages: TypeScript, Python, CSS, HTML, JavaScript
+Topics: reactjs-project, terminal, vite
+Default branch: main
+Latest commit: 62c2879480d5fcc699e2bbc698c1e4d5c0727cc8 at 2026-08-28T07:58:07Z

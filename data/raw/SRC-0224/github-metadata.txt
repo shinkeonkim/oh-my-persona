@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/productive-box
+URL: https://github.com/shinkeonkim/productive-box
+Relationship to shinkeonkim: owner
+Description: Are you an early 🐤 or a night 🦉? Let's check out in gist
+Created at: 2020-05-06T10:05:40Z
+Updated at: 2022-01-04T01:23:10Z
+Pushed at: 2024-03-09T01:33:05Z
+Archived: False
+Fork: True
+Languages: TypeScript, JavaScript
+Topics: (none)
+Default branch: master
+Latest commit: 77d3c27bb7b541f75b24f59f3ab8f7e2b0c40f50 at 2024-03-09T01:33:05Z

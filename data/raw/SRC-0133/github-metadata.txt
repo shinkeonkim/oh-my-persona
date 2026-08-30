@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/cache-fridge
+URL: https://github.com/kokoa-lab/cache-fridge
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-03-09T06:34:00Z
+Updated at: 2026-08-28T07:54:33Z
+Pushed at: 2026-08-28T07:53:04Z
+Archived: False
+Fork: False
+Languages: TypeScript, CSS, HTML, JavaScript
+Topics: (none)
+Default branch: main
+Latest commit: 6a268e893b162755505f570c2e9cbdb065aa2018 at 2026-08-28T07:53:04Z

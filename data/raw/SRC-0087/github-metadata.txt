@@ -1,0 +1,13 @@
+GitHub repository: kmu-shinkeonkim/.github
+URL: https://github.com/kmu-shinkeonkim/.github
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2025-09-25T03:18:01Z
+Updated at: 2025-09-25T03:20:39Z
+Pushed at: 2025-09-25T03:20:10Z
+Archived: False
+Fork: False
+Languages: (none)
+Topics: (none)
+Default branch: main
+Latest commit: dec8e5218d29d5310db7e8051b02d599ae41bec0 at 2025-09-25T03:20:10Z

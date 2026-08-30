@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/commit-city
+URL: https://github.com/kokoa-lab/commit-city
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-03-09T04:10:06Z
+Updated at: 2026-08-28T07:54:07Z
+Pushed at: 2026-08-28T07:53:26Z
+Archived: False
+Fork: False
+Languages: TypeScript, CSS, HTML, JavaScript
+Topics: (none)
+Default branch: main
+Latest commit: 8c7407ae93d5645fe24a6b87d15d65cbd0af1174 at 2026-08-28T07:53:26Z

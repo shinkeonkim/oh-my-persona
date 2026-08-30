@@ -1,0 +1,13 @@
+GitHub repository: kokoa-study-room/aws-study-site
+URL: https://github.com/kokoa-study-room/aws-study-site
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-08-03T13:07:22Z
+Updated at: 2026-08-28T08:01:29Z
+Pushed at: 2026-08-28T07:59:36Z
+Archived: False
+Fork: False
+Languages: TypeScript, CSS, PLpgSQL, Go Template, JavaScript
+Topics: (none)
+Default branch: main
+Latest commit: e695b8942dc2514be8e866bd9b8042fe395d903b at 2026-08-28T07:59:36Z

@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/AD_project_athena
+URL: https://github.com/shinkeonkim/AD_project_athena
+Relationship to shinkeonkim: owner
+Description: Athena는 문제 해결과 학습을 위한 인터랙티브 웹 플랫폼입니다. 
+Created at: 2025-05-12T12:39:30Z
+Updated at: 2025-06-21T06:25:09Z
+Pushed at: 2025-06-15T06:09:03Z
+Archived: False
+Fork: False
+Languages: Python, JavaScript, HTML, CSS, Dockerfile, Shell
+Topics: (none)
+Default branch: main
+Latest commit: 1695485ff3d6d0eb7a24330888a93763c03f3df3 at 2025-06-15T06:08:56Z

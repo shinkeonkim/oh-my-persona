@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/In-Kookmin-Extension
+URL: https://github.com/shinkeonkim/In-Kookmin-Extension
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2020-11-30T08:12:35Z
+Updated at: 2020-11-30T08:35:55Z
+Pushed at: 2020-12-07T10:49:46Z
+Archived: False
+Fork: False
+Languages: (none)
+Topics: (none)
+Default branch: develop
+Latest commit: 493436c4a9770c579b81d5b1bca506fde0577bb2 at 2020-12-07T10:49:44Z

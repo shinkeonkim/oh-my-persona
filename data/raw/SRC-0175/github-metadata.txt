@@ -1,0 +1,13 @@
+GitHub repository: kokoa-tools/pr-message-generator
+URL: https://github.com/kokoa-tools/pr-message-generator
+Relationship to shinkeonkim: contributor
+Description: pr-message-generator
+Created at: 2026-04-06T10:52:57Z
+Updated at: 2026-04-06T13:33:53Z
+Pushed at: 2026-04-06T13:33:24Z
+Archived: False
+Fork: False
+Languages: Go, Makefile
+Topics: (none)
+Default branch: main
+Latest commit: 1b15b6dbdccef58f126c1ef36c94f972ce1fa352 at 2026-04-06T13:33:19Z

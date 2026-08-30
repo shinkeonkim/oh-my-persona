@@ -1,0 +1,13 @@
+GitHub repository: kmu-aws-capstone-team-4/analysis-video
+URL: https://github.com/kmu-aws-capstone-team-4/analysis-video
+Relationship to shinkeonkim: contributor
+Description: 면접 녹화 영상에 대해 영상 변환, 프레임 추출, 음성 분리, 음성 분석을 수행하는 영상, 음성 후처리 파이프라인입
+Created at: 2026-04-17T18:31:53Z
+Updated at: 2026-05-13T07:07:06Z
+Pushed at: 2026-05-13T07:07:02Z
+Archived: False
+Fork: False
+Languages: Python, Shell
+Topics: ffmpeg, numpy, pydub
+Default branch: main
+Latest commit: b71a80ed706bf1d7b9d739db9987d9dd7709cc07 at 2026-05-13T07:06:59Z

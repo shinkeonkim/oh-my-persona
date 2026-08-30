@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/prevent-factory-video-deletion
+URL: https://github.com/shinkeonkim/prevent-factory-video-deletion
+Relationship to shinkeonkim: owner
+Description: https://www.youtube.com/watch?v=oiQUD5WBChk 이 영상을 지워지지 않게 하겠습니다... 였지만.. 작동을 안한다..
+Created at: 2021-09-06T11:38:55Z
+Updated at: 2021-11-20T07:00:49Z
+Pushed at: 2021-11-20T07:00:47Z
+Archived: False
+Fork: False
+Languages: Python
+Topics: (none)
+Default branch: main
+Latest commit: 557a8d840bfbeb7959326dac0c93c8a7bff823a7 at 2021-11-20T07:00:47Z

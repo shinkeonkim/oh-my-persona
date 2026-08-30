@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/ACM-ICPC-Algorithms
+URL: https://github.com/shinkeonkim/ACM-ICPC-Algorithms
+Relationship to shinkeonkim: owner
+Description: Algorithms used in Competitive Programming
+Created at: 2021-05-17T16:26:26Z
+Updated at: 2021-05-17T16:26:28Z
+Pushed at: 2020-10-30T16:50:56Z
+Archived: False
+Fork: True
+Languages: C++, Java, Python, C, C#, JavaScript, Ada, Common Lisp, Go, Kotlin
+Topics: (none)
+Default branch: master
+Latest commit: eb7050344a7f3677c0980c94f3a57b852b4f9bc0 at 2019-02-26T00:02:47Z

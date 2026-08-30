@@ -1,0 +1,13 @@
+GitHub repository: kkambbaki/.github
+URL: https://github.com/kkambbaki/.github
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2025-11-13T11:48:40Z
+Updated at: 2025-11-14T09:32:29Z
+Pushed at: 2025-11-14T09:32:26Z
+Archived: False
+Fork: False
+Languages: (none)
+Topics: (none)
+Default branch: main
+Latest commit: b4c32dd88fef61a05423bb7dcff8d4fac0165a00 at 2025-11-14T09:32:26Z

@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/books
+URL: https://github.com/shinkeonkim/books
+Relationship to shinkeonkim: owner
+Description: 내가 읽었고, 읽고 있고 읽고 싶은 책들
+Created at: 2020-03-29T06:56:20Z
+Updated at: 2021-02-19T09:46:36Z
+Pushed at: 2021-02-19T09:46:34Z
+Archived: False
+Fork: False
+Languages: (none)
+Topics: (none)
+Default branch: master
+Latest commit: d52ed59fa02f144ef2b7e2731af3289c0c5f670a at 2021-02-19T09:46:22Z

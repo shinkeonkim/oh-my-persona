@@ -52,3 +52,14 @@ test('suggested question fills the composer', async ({ page }) => {
   await expect(page.locator('#message')).toHaveValue('최근에 가장 집중하고 있는 일은 무엇인가요?');
   await expect(page.locator('#message')).toBeFocused();
 });
+
+test('assistant markdown emphasis renders as strong without allowing HTML', async ({ page }) => {
+  await page.evaluate(() => {
+    const bubble = document.querySelector('.welcome .bubble');
+    bubble.textContent = '';
+    renderMessage(bubble, '**중요한 내용**과 <script>태그</script>');
+  });
+  await expect(page.locator('.welcome .bubble strong')).toHaveText('중요한 내용');
+  await expect(page.locator('.welcome .bubble script')).toHaveCount(0);
+  await expect(page.locator('.welcome .bubble')).toContainText('<script>태그</script>');
+});

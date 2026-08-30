@@ -1,0 +1,13 @@
+GitHub repository: kokoa-study-room/db-connection-study-page
+URL: https://github.com/kokoa-study-room/db-connection-study-page
+Relationship to shinkeonkim: contributor
+Description: DB 커넥션에 대한 개념
+Created at: 2026-06-11T14:32:02Z
+Updated at: 2026-06-11T15:09:26Z
+Pushed at: 2026-06-11T15:05:25Z
+Archived: False
+Fork: False
+Languages: HTML
+Topics: (none)
+Default branch: main
+Latest commit: 51fa13aa15d572cf427d5118d43f73ba3a925e89 at 2026-06-11T15:05:25Z

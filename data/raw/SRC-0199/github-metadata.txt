@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/can-you-catch-circle
+URL: https://github.com/shinkeonkim/can-you-catch-circle
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2021-12-17T14:47:46Z
+Updated at: 2021-12-19T10:28:06Z
+Pushed at: 2021-12-19T10:28:03Z
+Archived: False
+Fork: False
+Languages: Vue, TypeScript, HTML
+Topics: (none)
+Default branch: main
+Latest commit: 2a369df5142ed47d20c0c5498b16b8c0f5782ae7 at 2021-12-19T10:28:03Z

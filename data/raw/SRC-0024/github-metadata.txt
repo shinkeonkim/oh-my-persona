@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/anime-ontology
+URL: https://github.com/shinkeonkim/anime-ontology
+Relationship to shinkeonkim: owner
+Description: 애니메이션 세계관 온톨로지 기반 지식 그래프
+Created at: 2026-07-04T11:36:21Z
+Updated at: 2026-07-19T16:21:06Z
+Pushed at: 2026-07-19T16:21:02Z
+Archived: False
+Fork: False
+Languages: Python, JavaScript, CSS, HTML
+Topics: (none)
+Default branch: main
+Latest commit: 08ffd1daf62d45de08ad95b3990715fc5697e39e at 2026-07-04T14:59:21Z

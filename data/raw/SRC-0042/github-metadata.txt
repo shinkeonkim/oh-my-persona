@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/Coding_Camp
+URL: https://github.com/shinkeonkim/Coding_Camp
+Relationship to shinkeonkim: owner
+Description: HM_Coding_Camp
+Created at: 2019-03-19T10:18:30Z
+Updated at: 2025-09-17T12:38:39Z
+Pushed at: 2019-04-03T02:54:33Z
+Archived: True
+Fork: False
+Languages: C++, Python
+Topics: (none)
+Default branch: master
+Latest commit: 3154c89dd0d1991305cc47f53d2a664ed5452277 at 2019-04-03T02:54:18Z

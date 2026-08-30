@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/awesome
+URL: https://github.com/shinkeonkim/awesome
+Relationship to shinkeonkim: owner
+Description: 😎 Awesome lists about all kinds of interesting topics
+Created at: 2020-01-07T08:48:30Z
+Updated at: 2020-01-07T08:48:32Z
+Pushed at: 2020-01-06T21:33:12Z
+Archived: False
+Fork: True
+Languages: (none)
+Topics: (none)
+Default branch: master
+Latest commit: 0d5eede3daf4b1b9a333350bf700bb8222086f3e at 2019-12-24T13:22:55Z

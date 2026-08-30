@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/alcolpedia-app
+URL: https://github.com/shinkeonkim/alcolpedia-app
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2020-08-11T08:59:23Z
+Updated at: 2023-01-28T12:05:08Z
+Pushed at: 2020-08-17T07:00:48Z
+Archived: True
+Fork: False
+Languages: Dart, Swift, Kotlin, Objective-C
+Topics: flutter-app, likelion, university-project
+Default branch: master
+Latest commit: 21866ab976eec46259a0e343886d3131721cce66 at 2020-08-17T07:00:40Z

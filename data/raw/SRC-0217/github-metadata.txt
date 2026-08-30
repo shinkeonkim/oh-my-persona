@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/lotteng
+URL: https://github.com/shinkeonkim/lotteng
+Relationship to shinkeonkim: owner
+Description: 🦁2020 멋쟁이 사자처럼 8기 해커톤 LOTTENG🕒
+Created at: 2020-10-24T16:34:10Z
+Updated at: 2020-10-24T16:35:05Z
+Pushed at: 2020-10-25T08:09:47Z
+Archived: False
+Fork: True
+Languages: JavaScript, CSS, HTML, Python, Shell
+Topics: (none)
+Default branch: master
+Latest commit: 8087cf83eea3f79f784cc4c8aa295e91b09b73d0 at 2020-10-24T13:47:35Z

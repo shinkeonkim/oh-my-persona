@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/dice-art
+URL: https://github.com/kokoa-lab/dice-art
+Relationship to shinkeonkim: contributor
+Description: 주사위 모자이크 아트 생성기
+Created at: 2026-03-24T07:18:35Z
+Updated at: 2026-08-28T07:56:45Z
+Pushed at: 2026-08-28T07:55:09Z
+Archived: False
+Fork: False
+Languages: TypeScript, HTML, JavaScript, CSS
+Topics: (none)
+Default branch: main
+Latest commit: 12f27edabdb48185e82ac593e3dd7151c2a07d2f at 2026-08-28T07:55:04Z

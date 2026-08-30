@@ -1,0 +1,13 @@
+GitHub repository: kokoa-study-room/terraform-associate-004-study-notes
+URL: https://github.com/kokoa-study-room/terraform-associate-004-study-notes
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-08-02T08:54:24Z
+Updated at: 2026-08-28T08:01:13Z
+Pushed at: 2026-08-28T07:59:17Z
+Archived: False
+Fork: False
+Languages: JavaScript, HCL, TypeScript, CSS, MDX, Astro
+Topics: (none)
+Default branch: main
+Latest commit: 1193b44f47dc764d4b3146012f7119a969a7b975 at 2026-08-28T07:59:17Z

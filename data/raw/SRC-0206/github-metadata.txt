@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/flutter_slidable_example
+URL: https://github.com/shinkeonkim/flutter_slidable_example
+Relationship to shinkeonkim: owner
+Description: Flutter Slidable Example Repository
+Created at: 2021-05-23T10:47:43Z
+Updated at: 2021-10-12T22:02:17Z
+Pushed at: 2021-05-23T10:48:40Z
+Archived: False
+Fork: False
+Languages: Dart, Swift, Kotlin, Objective-C
+Topics: flutter, flutter-slidable, flutter-example
+Default branch: main
+Latest commit: 62334d3aeb40222c91591ac6b63d748a2f126013 at 2021-05-23T10:48:26Z

@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/project_a
+URL: https://github.com/shinkeonkim/project_a
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2023-03-25T01:15:35Z
+Updated at: 2023-11-08T14:12:03Z
+Pushed at: 2023-11-08T14:11:59Z
+Archived: False
+Fork: False
+Languages: JavaScript, HTML, CSS
+Topics: (none)
+Default branch: master
+Latest commit: ee051086c382ad0bf28478dc9d6b59e19d5c2fd7 at 2023-11-08T14:11:56Z

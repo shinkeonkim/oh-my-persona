@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/django-coffee-model
+URL: https://github.com/shinkeonkim/django-coffee-model
+Relationship to shinkeonkim: owner
+Description:  Base Models of Django such as Coffee of Developers
+Created at: 2021-11-14T05:26:54Z
+Updated at: 2021-11-28T07:17:41Z
+Pushed at: 2021-11-28T07:17:38Z
+Archived: False
+Fork: False
+Languages: Python
+Topics: (none)
+Default branch: main
+Latest commit: a2efd080aba969231ad1faa5e7e4aae4293a285a at 2021-11-28T07:17:35Z

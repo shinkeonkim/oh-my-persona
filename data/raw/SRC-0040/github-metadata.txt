@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/what-did-you-do-today
+URL: https://github.com/shinkeonkim/what-did-you-do-today
+Relationship to shinkeonkim: owner
+Description: https://algorithm.sellon.link/
+Created at: 2022-09-05T10:16:33Z
+Updated at: 2022-11-27T17:17:35Z
+Pushed at: 2022-10-02T02:49:31Z
+Archived: False
+Fork: False
+Languages: Python, Shell, HTML, Dockerfile
+Topics: (none)
+Default branch: main
+Latest commit: 400b35bd8e115cd80e952247867a00e55230f170 at 2022-10-02T02:49:22Z

@@ -1,0 +1,13 @@
+GitHub repository: joah-team/backend
+URL: https://github.com/joah-team/backend
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2025-10-25T05:08:15Z
+Updated at: 2026-01-05T05:10:35Z
+Pushed at: 2026-01-05T05:11:37Z
+Archived: False
+Fork: False
+Languages: Python, HTML, Shell, Dockerfile
+Topics: (none)
+Default branch: main
+Latest commit: 81c55adac2a2c9001b6906ae83b4fe544d5f653a at 2026-01-05T05:10:29Z

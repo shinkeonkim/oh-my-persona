@@ -1,0 +1,13 @@
+GitHub repository: kmu-shinkeonkim/file-proessing-exam-helper
+URL: https://github.com/kmu-shinkeonkim/file-proessing-exam-helper
+Relationship to shinkeonkim: contributor
+Description: 화일처리 기말고사 도우미
+Created at: 2025-11-27T09:52:27Z
+Updated at: 2025-12-10T12:43:33Z
+Pushed at: 2025-12-10T12:43:29Z
+Archived: False
+Fork: False
+Languages: Python
+Topics: (none)
+Default branch: main
+Latest commit: 4cfc18b7d6e4dba7be9d3db1c6fe9e9337226f10 at 2025-12-10T12:43:26Z

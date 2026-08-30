@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-party-plugin
+URL: https://github.com/kokoa-hobby/minecraft-party-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: party-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:38:22Z
+Updated at: 2026-07-22T13:31:38Z
+Pushed at: 2026-07-22T13:28:48Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: 2399098a619ba6dcda815e82eb3a6fca4907e028 at 2026-07-22T13:28:47Z

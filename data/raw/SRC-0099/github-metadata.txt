@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-autofurnace-plugin
+URL: https://github.com/kokoa-hobby/minecraft-autofurnace-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: autofurnace-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:36:36Z
+Updated at: 2026-07-26T03:53:40Z
+Pushed at: 2026-07-26T03:53:36Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: 6aa2b07ced7eef5e57b039f44051b557878d56be at 2026-07-26T03:53:27Z

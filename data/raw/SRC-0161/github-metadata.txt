@@ -1,0 +1,13 @@
+GitHub repository: kokoa-study-room/clf-c02-study-notes
+URL: https://github.com/kokoa-study-room/clf-c02-study-notes
+Relationship to shinkeonkim: contributor
+Description: nxtcloud 자료 및 AI 요약 자료
+Created at: 2026-07-17T03:10:46Z
+Updated at: 2026-07-18T08:54:13Z
+Pushed at: 2026-07-18T08:54:05Z
+Archived: False
+Fork: False
+Languages: JavaScript, CSS, Python, HTML
+Topics: (none)
+Default branch: main
+Latest commit: ef72932f7bac6c55302ce6d5af0f6e84ebaf987b at 2026-07-18T08:54:02Z

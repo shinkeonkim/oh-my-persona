@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-tombstone-plugin
+URL: https://github.com/kokoa-hobby/minecraft-tombstone-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: tombstone-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:38:59Z
+Updated at: 2026-07-22T13:30:24Z
+Pushed at: 2026-07-22T13:27:22Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: 99a07df4da9b8b071faf805a85963b8dc772e0f1 at 2026-07-22T13:27:21Z

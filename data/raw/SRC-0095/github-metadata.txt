@@ -1,0 +1,13 @@
+GitHub repository: kmu-shinkeonkim/smart-network-service-practice
+URL: https://github.com/kmu-shinkeonkim/smart-network-service-practice
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2025-09-19T06:52:01Z
+Updated at: 2025-09-19T08:27:58Z
+Pushed at: 2025-09-19T08:27:54Z
+Archived: False
+Fork: False
+Languages: Python
+Topics: (none)
+Default branch: main
+Latest commit: 94bea5c2063cfe618dca73c4fd62a0e1ae159961 at 2025-09-19T08:27:50Z

@@ -1,0 +1,13 @@
+GitHub repository: kokoa-study-room/browser.engineering-practice
+URL: https://github.com/kokoa-study-room/browser.engineering-practice
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-02-13T14:59:46Z
+Updated at: 2026-02-19T17:10:08Z
+Pushed at: 2026-02-19T17:09:39Z
+Archived: False
+Fork: False
+Languages: Python, CSS
+Topics: (none)
+Default branch: main
+Latest commit: b622cda5b8f447c18091997aa2d62ade01711e11 at 2026-02-19T17:09:35Z

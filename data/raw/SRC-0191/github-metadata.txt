@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/Course-Registeration-System
+URL: https://github.com/shinkeonkim/Course-Registeration-System
+Relationship to shinkeonkim: owner
+Description: course registration system implemented by java,javaFX,MySQL
+Created at: 2019-05-10T08:42:05Z
+Updated at: 2019-05-10T08:42:08Z
+Pushed at: 2017-05-10T18:44:55Z
+Archived: False
+Fork: True
+Languages: Java
+Topics: (none)
+Default branch: master
+Latest commit: fbe725ccb2dd3f0b8cf89dcd16e6bc3517646e86 at 2017-05-10T18:44:30Z

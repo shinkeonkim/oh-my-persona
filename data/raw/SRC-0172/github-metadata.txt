@@ -1,0 +1,13 @@
+GitHub repository: kokoa-tools/pdf-to-jpgs
+URL: https://github.com/kokoa-tools/pdf-to-jpgs
+Relationship to shinkeonkim: contributor
+Description: PDF의 페이지를 각각 JPG로 변환하는 도구
+Created at: 2025-10-08T11:09:08Z
+Updated at: 2025-10-08T11:43:55Z
+Pushed at: 2025-10-08T11:41:50Z
+Archived: False
+Fork: False
+Languages: Python, Shell
+Topics: pdf, pdf-to-image
+Default branch: main
+Latest commit: 6a674576ef7d20d6e7f9eb3d3adf667bae5a7ee0 at 2025-10-08T11:41:50Z

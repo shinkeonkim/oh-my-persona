@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/know_yeah_bot
+URL: https://github.com/shinkeonkim/know_yeah_bot
+Relationship to shinkeonkim: owner
+Description: Discord Bot
+Created at: 2020-11-24T03:57:43Z
+Updated at: 2020-11-24T03:57:44Z
+Pushed at: 2020-11-24T03:57:17Z
+Archived: False
+Fork: True
+Languages: Python
+Topics: (none)
+Default branch: main
+Latest commit: e9dc30314d97528694404fd1bcf287cfc9733284 at 2020-11-24T03:57:16Z

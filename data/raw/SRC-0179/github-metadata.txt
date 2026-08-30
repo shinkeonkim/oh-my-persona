@@ -1,0 +1,13 @@
+GitHub repository: palette-team/.github
+URL: https://github.com/palette-team/.github
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2025-09-08T14:42:27Z
+Updated at: 2025-09-08T14:44:40Z
+Pushed at: 2025-09-08T14:44:37Z
+Archived: False
+Fork: False
+Languages: (none)
+Topics: (none)
+Default branch: main
+Latest commit: f69e8de6b9887a87503eec0282e523437f080bf2 at 2025-09-08T14:44:33Z

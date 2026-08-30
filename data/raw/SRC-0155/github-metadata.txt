@@ -1,0 +1,13 @@
+GitHub repository: kokoa-study-room/PEP723-practice
+URL: https://github.com/kokoa-study-room/PEP723-practice
+Relationship to shinkeonkim: contributor
+Description: https://peps.python.org/pep-0723/
+Created at: 2026-02-20T06:42:07Z
+Updated at: 2026-02-20T06:45:37Z
+Pushed at: 2026-02-20T06:45:33Z
+Archived: False
+Fork: False
+Languages: Python
+Topics: (none)
+Default branch: main
+Latest commit: f4216bc4c75fdabe837e0159fc9dab556e10dab0 at 2026-02-20T06:45:23Z

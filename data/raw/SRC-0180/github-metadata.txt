@@ -1,0 +1,13 @@
+GitHub repository: palette-team/address_extractor
+URL: https://github.com/palette-team/address_extractor
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2025-09-08T14:47:36Z
+Updated at: 2025-10-28T15:47:40Z
+Pushed at: 2025-10-28T15:40:48Z
+Archived: False
+Fork: False
+Languages: Python
+Topics: (none)
+Default branch: main
+Latest commit: 7e7c783d512c9d7712a8504ad058aabdd977742f at 2025-10-28T15:40:48Z

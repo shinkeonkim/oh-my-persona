@@ -1,0 +1,13 @@
+GitHub repository: kmu-aws-capstone-team-4/analysis-resume
+URL: https://github.com/kmu-aws-capstone-team-4/analysis-resume
+Relationship to shinkeonkim: contributor
+Description: 이력서 분석 전용
+Created at: 2026-04-08T04:34:46Z
+Updated at: 2026-05-11T11:26:13Z
+Pushed at: 2026-05-11T10:17:08Z
+Archived: False
+Fork: False
+Languages: Python, Dockerfile
+Topics: (none)
+Default branch: main
+Latest commit: 444c0d9d1cc27643980dfcd36084a82862bb990b at 2026-05-11T10:17:01Z

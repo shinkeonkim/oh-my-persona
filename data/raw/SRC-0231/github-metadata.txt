@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/teamnotes
+URL: https://github.com/shinkeonkim/teamnotes
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2024-07-27T06:28:44Z
+Updated at: 2024-07-27T09:39:13Z
+Pushed at: 2024-07-27T09:39:10Z
+Archived: False
+Fork: False
+Languages: C++, TeX, Shell
+Topics: (none)
+Default branch: main
+Latest commit: 4e7c8862cb8762e345c6c157c3687a257947f257 at 2024-07-27T09:39:08Z

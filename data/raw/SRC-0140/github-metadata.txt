@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/duck-therapy
+URL: https://github.com/kokoa-lab/duck-therapy
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-03-09T06:20:51Z
+Updated at: 2026-08-28T07:55:59Z
+Pushed at: 2026-08-28T07:55:31Z
+Archived: False
+Fork: False
+Languages: TypeScript, CSS, HTML, JavaScript
+Topics: (none)
+Default branch: main
+Latest commit: 6e25c0261f0e4791febbc7e310564163da3cf608 at 2026-08-28T07:55:31Z

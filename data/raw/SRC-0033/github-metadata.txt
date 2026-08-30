@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/BOJ
+URL: https://github.com/shinkeonkim/BOJ
+Relationship to shinkeonkim: owner
+Description: 다시 시작하는 백준 온라인 저지 풀이
+Created at: 2022-06-09T12:40:28Z
+Updated at: 2026-01-14T09:26:32Z
+Pushed at: 2026-01-14T09:26:28Z
+Archived: False
+Fork: False
+Languages: Python, C++, Go, Ruby
+Topics: (none)
+Default branch: main
+Latest commit: 75253f0a61f8a61c5cef151da82abde5f463b46b at 2026-01-14T09:26:26Z

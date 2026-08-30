@@ -1,0 +1,13 @@
+GitHub repository: kokoa-study-room/aws-saa-sutdy-notes
+URL: https://github.com/kokoa-study-room/aws-saa-sutdy-notes
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-07-28T23:48:44Z
+Updated at: 2026-08-02T08:29:19Z
+Pushed at: 2026-08-02T08:29:09Z
+Archived: False
+Fork: False
+Languages: JavaScript, Python, CSS, HTML
+Topics: (none)
+Default branch: main
+Latest commit: 1084d850a6d61871595bb5d55521035c68d76a78 at 2026-08-02T08:19:41Z

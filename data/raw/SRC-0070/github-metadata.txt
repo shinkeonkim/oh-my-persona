@@ -1,0 +1,13 @@
+GitHub repository: kmu-aws-capstone-team-4/analysis-stt
+URL: https://github.com/kmu-aws-capstone-team-4/analysis-stt
+Relationship to shinkeonkim: contributor
+Description: 면접 답변 녹음 파일을 받아서 말한 내용을 텍스트로 변환(받아쓰기) 해주는 서비스
+Created at: 2026-04-29T05:42:16Z
+Updated at: 2026-05-11T11:40:56Z
+Pushed at: 2026-04-30T08:27:57Z
+Archived: False
+Fork: False
+Languages: Python, Dockerfile
+Topics: (none)
+Default branch: main
+Latest commit: 986c2b15d85fc2aca660f45ec4cf5988cb06f0a2 at 2026-04-30T08:27:53Z

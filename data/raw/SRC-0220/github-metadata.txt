@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/my-claude-code-settings
+URL: https://github.com/shinkeonkim/my-claude-code-settings
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2025-09-29T05:35:23Z
+Updated at: 2025-09-30T14:43:30Z
+Pushed at: 2025-09-30T14:43:27Z
+Archived: False
+Fork: False
+Languages: Shell
+Topics: (none)
+Default branch: main
+Latest commit: 444d538197946faa950456228e25cf4146520a08 at 2025-09-30T14:43:22Z

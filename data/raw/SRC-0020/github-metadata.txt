@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/url-shortener
+URL: https://github.com/shinkeonkim/url-shortener
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2026-05-21T16:08:49Z
+Updated at: 2026-08-28T06:56:36Z
+Pushed at: 2026-08-28T06:56:14Z
+Archived: False
+Fork: False
+Languages: Go, HTML, Shell, Dockerfile, Makefile
+Topics: (none)
+Default branch: main
+Latest commit: 2f6fcd7239e9c5698d4cf0541b64c2294327ba19 at 2026-08-28T06:56:14Z

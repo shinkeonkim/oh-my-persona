@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/is_likelion
+URL: https://github.com/shinkeonkim/is_likelion
+Relationship to shinkeonkim: owner
+Description: Is Likelion?
+Created at: 2022-03-28T11:47:15Z
+Updated at: 2022-05-08T05:44:03Z
+Pushed at: 2022-04-03T11:25:58Z
+Archived: False
+Fork: False
+Languages: Python
+Topics: likelion, python-library
+Default branch: main
+Latest commit: c3f5afd927b50f682e475cdc8b100955cc2698ef at 2022-04-03T11:24:19Z

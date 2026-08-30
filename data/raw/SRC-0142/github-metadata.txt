@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/gc-sweeper
+URL: https://github.com/kokoa-lab/gc-sweeper
+Relationship to shinkeonkim: contributor
+Description: 메모리 블록에서 쓰레기를 찾아 수거하는 GC 알고리즘 학습 퍼즐 게임
+Created at: 2026-03-09T06:29:44Z
+Updated at: 2026-08-28T07:57:44Z
+Pushed at: 2026-08-28T07:55:55Z
+Archived: False
+Fork: False
+Languages: TypeScript, CSS, HTML, JavaScript
+Topics: (none)
+Default branch: main
+Latest commit: 2a49480c429f5f660b04f38fd6a45c8cf6eb9c70 at 2026-08-28T07:55:55Z

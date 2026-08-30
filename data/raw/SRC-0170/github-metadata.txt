@@ -1,0 +1,13 @@
+GitHub repository: kokoa-tools/commit-message-generator
+URL: https://github.com/kokoa-tools/commit-message-generator
+Relationship to shinkeonkim: contributor
+Description: 커밋 메세지 생성기 (Claude Code, LLM API 지원)
+Created at: 2026-03-23T14:28:48Z
+Updated at: 2026-04-03T02:47:11Z
+Pushed at: 2026-04-03T02:47:08Z
+Archived: False
+Fork: False
+Languages: Go, Makefile
+Topics: cli-tool
+Default branch: main
+Latest commit: 37e46715850120c8cfc6107c99339bc00ffac94e at 2026-04-03T02:47:07Z

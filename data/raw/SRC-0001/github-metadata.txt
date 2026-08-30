@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/my-resume
+URL: https://github.com/shinkeonkim/my-resume
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2026-01-05T11:29:35Z
+Updated at: 2026-08-27T17:19:44Z
+Pushed at: 2026-08-27T16:49:41Z
+Archived: False
+Fork: False
+Languages: TypeScript, Vue, HTML, CSS
+Topics: (none)
+Default branch: main
+Latest commit: 3eb6bc4853182c25e6799849cb7d203c4e493b56 at 2026-08-27T16:49:41Z

@@ -1,0 +1,13 @@
+GitHub repository: kokoa-tools/github-digging-actions
+URL: https://github.com/kokoa-tools/github-digging-actions
+Relationship to shinkeonkim: contributor
+Description: 개인 Github 분석기, 여러 조직에 걸쳐져 있는 Contribution을 모아서 통계를 확인하세요
+Created at: 2025-09-29T11:09:33Z
+Updated at: 2026-03-16T07:28:34Z
+Pushed at: 2026-08-01T01:53:54Z
+Archived: False
+Fork: False
+Languages: Ruby
+Topics: (none)
+Default branch: main
+Latest commit: 504e13e5ce05445131c74d542dc1f191ed12096e at 2026-03-16T07:25:15Z

@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-enhance-plugin
+URL: https://github.com/kokoa-hobby/minecraft-enhance-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: enhance-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:37:39Z
+Updated at: 2026-07-22T13:35:21Z
+Pushed at: 2026-07-22T13:31:18Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: a19fb14f30afaf01c6443a5ce65b28882003a693 at 2026-07-22T13:31:17Z

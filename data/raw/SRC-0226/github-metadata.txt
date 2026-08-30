@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/re_hanalum
+URL: https://github.com/shinkeonkim/re_hanalum
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2020-07-06T11:58:32Z
+Updated at: 2020-09-23T02:28:27Z
+Pushed at: 2020-09-23T02:28:25Z
+Archived: False
+Fork: True
+Languages: JavaScript, CSS, HTML, Python
+Topics: (none)
+Default branch: master
+Latest commit: b18afdfc4fde1a1767e17ce669cd67d0b9886c58 at 2020-09-23T02:28:13Z

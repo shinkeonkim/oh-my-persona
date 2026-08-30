@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/wordle-online
+URL: https://github.com/shinkeonkim/wordle-online
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2024-08-16T13:28:49Z
+Updated at: 2025-03-18T15:33:57Z
+Pushed at: 2024-08-17T11:05:00Z
+Archived: False
+Fork: False
+Languages: Python, JavaScript, Dockerfile, HTML
+Topics: (none)
+Default branch: main
+Latest commit: 864b30f8d802f7dace34f95ef7538a839cfb2a23 at 2024-08-17T11:04:57Z

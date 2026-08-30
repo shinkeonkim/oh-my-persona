@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/empty_django_project
+URL: https://github.com/shinkeonkim/empty_django_project
+Relationship to shinkeonkim: owner
+Description: This Project is "Empty" Django Project using just test runserver
+Created at: 2021-09-25T00:39:25Z
+Updated at: 2021-10-12T22:00:52Z
+Pushed at: 2021-09-25T00:42:48Z
+Archived: False
+Fork: False
+Languages: Python
+Topics: empty-project, django
+Default branch: main
+Latest commit: 02a6dd808ad1c72dc8c650fc4a0b6f7c76cce7a1 at 2021-09-25T00:42:43Z

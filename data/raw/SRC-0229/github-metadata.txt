@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/slidev-md-boilterplate
+URL: https://github.com/shinkeonkim/slidev-md-boilterplate
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2021-05-23T11:57:18Z
+Updated at: 2021-05-23T11:58:41Z
+Pushed at: 2021-05-23T11:58:18Z
+Archived: False
+Fork: False
+Languages: Vue
+Topics: (none)
+Default branch: main
+Latest commit: 499752e180c7fae2efe88f9e1528d4a3c398e4b3 at 2021-05-23T11:58:03Z

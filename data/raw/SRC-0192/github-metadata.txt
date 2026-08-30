@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/HelloAlgo
+URL: https://github.com/shinkeonkim/HelloAlgo
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2020-05-15T05:07:21Z
+Updated at: 2020-05-15T05:47:03Z
+Pushed at: 2020-05-15T05:47:01Z
+Archived: False
+Fork: False
+Languages: Python, HTML
+Topics: (none)
+Default branch: master
+Latest commit: 68eb5d3e293b9f59a6804a1a5941524743d2c1cb at 2020-05-15T05:46:47Z

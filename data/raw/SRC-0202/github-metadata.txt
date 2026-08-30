@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/css-animation-study
+URL: https://github.com/shinkeonkim/css-animation-study
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2020-11-07T17:04:26Z
+Updated at: 2020-11-12T14:28:23Z
+Pushed at: 2020-11-12T14:28:21Z
+Archived: False
+Fork: False
+Languages: CSS, HTML, JavaScript
+Topics: css, cssanimations, studying
+Default branch: master
+Latest commit: ce0bfd524cef70491b8ed8a70ded960e7f7411dd at 2020-11-12T14:28:11Z

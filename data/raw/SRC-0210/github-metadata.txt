@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/hexagonal-grid-illumination-visualizer
+URL: https://github.com/shinkeonkim/hexagonal-grid-illumination-visualizer
+Relationship to shinkeonkim: owner
+Description: https://www.acmicpc.net/problem/5547 문제에 대한 시각화 사이트
+Created at: 2026-01-18T10:48:08Z
+Updated at: 2026-06-04T11:28:25Z
+Pushed at: 2026-01-18T10:58:38Z
+Archived: False
+Fork: False
+Languages: JavaScript, CSS, HTML
+Topics: (none)
+Default branch: main
+Latest commit: b44960a54dcf83b59c8522344b85b087c2176a63 at 2026-01-18T10:58:37Z

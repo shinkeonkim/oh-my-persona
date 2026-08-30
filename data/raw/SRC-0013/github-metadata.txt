@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/shinkeonkim
+URL: https://github.com/shinkeonkim/shinkeonkim
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2020-07-13T10:43:51Z
+Updated at: 2026-08-08T04:47:47Z
+Pushed at: 2026-08-30T01:59:18Z
+Archived: False
+Fork: False
+Languages: (none)
+Topics: (none)
+Default branch: master
+Latest commit: 63aed529fb6da0550470abc2ef08a02cfe74d8d2 at 2026-08-08T04:47:44Z

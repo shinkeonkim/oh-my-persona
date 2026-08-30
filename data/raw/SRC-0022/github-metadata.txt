@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/study-aif-site
+URL: https://github.com/shinkeonkim/study-aif-site
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2026-07-22T15:16:11Z
+Updated at: 2026-07-23T14:56:54Z
+Pushed at: 2026-07-23T14:55:55Z
+Archived: False
+Fork: False
+Languages: TypeScript, CSS, HTML
+Topics: (none)
+Default branch: main
+Latest commit: d3decc00b648d3ba33e1082b45551405a33deb03 at 2026-07-23T14:55:51Z

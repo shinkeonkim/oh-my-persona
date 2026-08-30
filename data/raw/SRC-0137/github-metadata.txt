@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/cozy-hive
+URL: https://github.com/kokoa-lab/cozy-hive
+Relationship to shinkeonkim: contributor
+Description: 나의 작은 양봉장 - 방치형 양봉 시뮬레이션 게임
+Created at: 2026-03-09T08:53:37Z
+Updated at: 2026-08-28T07:56:10Z
+Pushed at: 2026-08-28T07:54:44Z
+Archived: False
+Fork: False
+Languages: TypeScript, CSS, HTML, JavaScript
+Topics: (none)
+Default branch: main
+Latest commit: b0fb86639f991f6e8ec851179ac1309f9d9f7ca3 at 2026-08-28T07:54:44Z

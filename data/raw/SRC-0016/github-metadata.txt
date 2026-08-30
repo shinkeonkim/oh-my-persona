@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/project-lens
+URL: https://github.com/shinkeonkim/project-lens
+Relationship to shinkeonkim: owner
+Description: 여러 웹사이트 프로젝트의 Google Analytics(GA4) / Google Tag Manager(GTM) / Google Ads / AdSense 설정을 한 곳에서 등록·자동화·감사하는 로컬 CLI
+Created at: 2026-08-26T16:54:10Z
+Updated at: 2026-08-28T14:50:26Z
+Pushed at: 2026-08-28T14:45:30Z
+Archived: False
+Fork: False
+Languages: Python
+Topics: (none)
+Default branch: main
+Latest commit: cd2b69d328e34bb19c52987b431f6e2357387ca7 at 2026-08-28T14:38:35Z

@@ -1,0 +1,13 @@
+GitHub repository: kmu-aws-capstone-team-4/poster
+URL: https://github.com/kmu-aws-capstone-team-4/poster
+Relationship to shinkeonkim: contributor
+Description: 발표 포스터
+Created at: 2026-05-07T08:23:56Z
+Updated at: 2026-05-11T11:43:23Z
+Pushed at: 2026-05-08T04:21:57Z
+Archived: False
+Fork: False
+Languages: TypeScript, JavaScript, CSS, HTML
+Topics: (none)
+Default branch: main
+Latest commit: 2406973da89bfbd94f0312bf168ca0be11369b5f at 2026-05-08T04:21:49Z

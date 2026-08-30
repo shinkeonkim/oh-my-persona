@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-customenchants-plugin
+URL: https://github.com/kokoa-hobby/minecraft-customenchants-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: customenchants-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:37:07Z
+Updated at: 2026-07-22T13:31:08Z
+Pushed at: 2026-07-22T13:28:24Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: 081d552786bf5d7af7113fbe5c78a5506f1069a1 at 2026-07-22T13:28:22Z

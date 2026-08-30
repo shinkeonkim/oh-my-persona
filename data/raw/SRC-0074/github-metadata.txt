@@ -1,0 +1,13 @@
+GitHub repository: kmu-aws-capstone-team-4/docs
+URL: https://github.com/kmu-aws-capstone-team-4/docs
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-03-11T07:07:39Z
+Updated at: 2026-03-18T06:56:22Z
+Pushed at: 2026-03-18T06:56:19Z
+Archived: False
+Fork: False
+Languages: (none)
+Topics: (none)
+Default branch: main
+Latest commit: 625b20df5a9bf80cad75abc08c3febd98f805c36 at 2026-03-18T06:56:16Z

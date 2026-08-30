@@ -1,0 +1,13 @@
+GitHub repository: meme-party/studio-front
+URL: https://github.com/meme-party/studio-front
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2025-09-10T05:37:59Z
+Updated at: 2025-09-10T06:28:27Z
+Pushed at: 2025-09-10T06:28:24Z
+Archived: False
+Fork: False
+Languages: TypeScript, JavaScript, CSS
+Topics: (none)
+Default branch: main
+Latest commit: 50d40ea047d1df49a2939a038db992c4072be26e at 2025-09-10T06:28:19Z

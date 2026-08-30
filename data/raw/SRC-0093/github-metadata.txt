@@ -1,0 +1,13 @@
+GitHub repository: kmu-shinkeonkim/smart-network-service-hw2
+URL: https://github.com/kmu-shinkeonkim/smart-network-service-hw2
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2025-11-07T17:29:57Z
+Updated at: 2025-11-20T06:28:39Z
+Pushed at: 2025-11-10T08:19:00Z
+Archived: False
+Fork: False
+Languages: C
+Topics: (none)
+Default branch: main
+Latest commit: ac64bb21640059076c4865c23ba034ef6154bd96 at 2025-11-10T08:18:58Z

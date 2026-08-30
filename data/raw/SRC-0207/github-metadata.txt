@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/github-stats-box
+URL: https://github.com/shinkeonkim/github-stats-box
+Relationship to shinkeonkim: owner
+Description: 📌 Update a gist to contain your GitHub stats
+Created at: 2022-08-02T05:06:49Z
+Updated at: 2022-08-02T05:10:41Z
+Pushed at: 2022-10-23T13:48:08Z
+Archived: False
+Fork: True
+Languages: JavaScript, Shell
+Topics: (none)
+Default branch: master
+Latest commit: 29d1cf0435e7848d27d99ec3c807fe5b90d1d28f at 2022-10-23T13:48:08Z

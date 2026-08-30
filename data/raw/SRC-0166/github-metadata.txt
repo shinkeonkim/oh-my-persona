@@ -1,0 +1,13 @@
+GitHub repository: kokoa-study-room/redis-practice
+URL: https://github.com/kokoa-study-room/redis-practice
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-04-26T07:00:38Z
+Updated at: 2026-04-26T09:24:27Z
+Pushed at: 2026-04-26T09:24:24Z
+Archived: False
+Fork: False
+Languages: Shell
+Topics: (none)
+Default branch: main
+Latest commit: 435ebc0e2577acd8080be23f1b5a7949e4ec3175 at 2026-04-26T09:24:21Z

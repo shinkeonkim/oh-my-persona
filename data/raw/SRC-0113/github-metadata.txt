@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-hello-plugin
+URL: https://github.com/kokoa-hobby/minecraft-hello-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: hello-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:34:41Z
+Updated at: 2026-07-22T13:29:34Z
+Pushed at: 2026-07-22T13:26:44Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: ab29ff9cd949986607be53a7ef406303bcab00e3 at 2026-07-22T13:26:43Z

@@ -1,0 +1,13 @@
+GitHub repository: kmu-shinkeonkim/nginx-lb-docker-practice
+URL: https://github.com/kmu-shinkeonkim/nginx-lb-docker-practice
+Relationship to shinkeonkim: contributor
+Description: 다음 강의에서 다루는 내용을 Docker 환경에서 다루도록 변경한 실습 내용 | https://github.com/SCKIMOSU/SmartNetworkService/blob/main/%5B2%EC%A3%BC%EC%B0%A8_2%EC%B0%A8%EC%8B%9C%5DDNS%EC%99%80%20%EC%84%9C%EB%B2%84%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%8B%B1.md
+Created at: 2025-09-16T07:08:08Z
+Updated at: 2025-09-16T07:10:00Z
+Pushed at: 2025-09-16T07:09:56Z
+Archived: False
+Fork: False
+Languages: Dockerfile, HTML
+Topics: (none)
+Default branch: main
+Latest commit: c72348b1e7f3b98525b9df9a22b286885f047441 at 2025-09-16T07:09:50Z

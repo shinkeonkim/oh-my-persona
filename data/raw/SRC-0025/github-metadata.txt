@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/my-projects
+URL: https://github.com/shinkeonkim/my-projects
+Relationship to shinkeonkim: owner
+Description: 지금까지 진행했던 프로젝트들을 모두 정리하는 곳입니다.
+Created at: 2025-03-18T14:56:42Z
+Updated at: 2025-06-17T10:10:10Z
+Pushed at: 2025-06-17T10:10:07Z
+Archived: False
+Fork: False
+Languages: (none)
+Topics: (none)
+Default branch: main
+Latest commit: f488f10f2f92a8bec0d27caf7ae4d2b8d68cee46 at 2025-06-17T10:10:06Z

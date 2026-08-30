@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-double-jump-plugin
+URL: https://github.com/kokoa-hobby/minecraft-double-jump-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: double-jump-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:37:23Z
+Updated at: 2026-07-22T13:29:07Z
+Pushed at: 2026-07-22T13:27:09Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: 617def190d477e0dab6086f68a25cb0e664a93c7 at 2026-07-22T13:27:08Z

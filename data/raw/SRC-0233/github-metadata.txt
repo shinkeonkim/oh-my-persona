@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/xaskify
+URL: https://github.com/shinkeonkim/xaskify
+Relationship to shinkeonkim: owner
+Description: Maskify HTML DOM element (or page)
+Created at: 2022-04-19T13:03:45Z
+Updated at: 2022-04-19T15:05:29Z
+Pushed at: 2022-04-19T15:13:59Z
+Archived: False
+Fork: False
+Languages: JavaScript
+Topics: masking, maskify, npm-package, yarn-package, masking-page
+Default branch: main
+Latest commit: c12995c6a41a63553014ae2fb1498f2c6986a9c2 at 2022-04-19T15:13:56Z

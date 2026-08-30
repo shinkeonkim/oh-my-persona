@@ -1,0 +1,13 @@
+GitHub repository: kokoa-study-room/transaction-isolation-level
+URL: https://github.com/kokoa-study-room/transaction-isolation-level
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-08-24T15:17:51Z
+Updated at: 2026-08-28T07:51:59Z
+Pushed at: 2026-08-28T07:51:07Z
+Archived: False
+Fork: False
+Languages: TypeScript, HTML
+Topics: (none)
+Default branch: main
+Latest commit: 6f04a66b152c757c570fe7d50f20346d0c859ced at 2026-08-28T07:51:07Z

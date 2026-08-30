@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/boj-jandi-site
+URL: https://github.com/shinkeonkim/boj-jandi-site
+Relationship to shinkeonkim: owner
+Description: 백준 온라인 저지 핸들을 입력하여 해결한 문제 잔디를 확인하세요
+Created at: 2026-01-20T10:38:57Z
+Updated at: 2026-01-23T06:02:27Z
+Pushed at: 2026-01-23T06:02:24Z
+Archived: False
+Fork: False
+Languages: HTML, Python, CSS, Dockerfile
+Topics: (none)
+Default branch: main
+Latest commit: 251ec0851a7b4ec8358e688ff11eb292ba538a8c at 2026-01-23T06:02:21Z

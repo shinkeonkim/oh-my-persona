@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/review-slot
+URL: https://github.com/kokoa-lab/review-slot
+Relationship to shinkeonkim: contributor
+Description: 슬롯머신을 돌려서 코드리뷰 코멘트를 생성하는 웹 애플리케이션
+Created at: 2026-03-08T18:10:41Z
+Updated at: 2026-08-28T07:57:40Z
+Pushed at: 2026-08-28T07:57:35Z
+Archived: False
+Fork: False
+Languages: TypeScript, CSS, HTML, JavaScript
+Topics: (none)
+Default branch: main
+Latest commit: bb3155ede93f5f6829b0c5c3cbcf58c22101f5c3 at 2026-08-28T07:57:35Z

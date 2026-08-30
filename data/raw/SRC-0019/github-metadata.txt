@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/paeon
+URL: https://github.com/shinkeonkim/paeon
+Relationship to shinkeonkim: owner
+Description: 사업자등록번호를 통해 정확한 상호명을 추려내는 사이트
+Created at: 2022-04-21T12:50:08Z
+Updated at: 2026-08-28T09:10:43Z
+Pushed at: 2026-08-28T09:10:02Z
+Archived: False
+Fork: False
+Languages: Python, HTML, Dockerfile
+Topics: django, registration-number
+Default branch: main
+Latest commit: 9483c818b9197b251effe5c6be1bd5ac02d9f5c5 at 2026-08-28T09:10:02Z

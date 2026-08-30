@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/vanilla-tsx-experiment
+URL: https://github.com/kokoa-lab/vanilla-tsx-experiment
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2025-09-24T17:03:49Z
+Updated at: 2025-09-25T17:28:36Z
+Pushed at: 2025-09-25T17:28:33Z
+Archived: False
+Fork: False
+Languages: JavaScript, TypeScript, HTML
+Topics: (none)
+Default branch: main
+Latest commit: 62d61572b7213faeddf50c37871efa2846556f20 at 2025-09-25T17:28:27Z

@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/how-to-get-google-dot-com
+URL: https://github.com/kokoa-lab/how-to-get-google-dot-com
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-03-11T17:56:29Z
+Updated at: 2026-08-28T07:59:45Z
+Pushed at: 2026-08-28T07:56:09Z
+Archived: False
+Fork: False
+Languages: JavaScript, CSS, HTML
+Topics: (none)
+Default branch: main
+Latest commit: 3b1da2f1e1f1d258895287140b4b8cb14197c73d at 2026-08-28T07:56:08Z

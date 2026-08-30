@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/hackathon-dj-template
+URL: https://github.com/shinkeonkim/hackathon-dj-template
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2025-09-28T16:27:45Z
+Updated at: 2025-10-02T01:29:17Z
+Pushed at: 2025-10-02T01:28:46Z
+Archived: False
+Fork: False
+Languages: Python, Shell, Dockerfile
+Topics: (none)
+Default branch: main
+Latest commit: 38ae7063d75e65e7fc40ec4e075c7847b2a8b2ae at 2025-10-02T01:28:43Z

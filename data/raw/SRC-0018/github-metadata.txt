@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/boj-solution-archiving-site
+URL: https://github.com/shinkeonkim/boj-solution-archiving-site
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2026-01-19T01:06:11Z
+Updated at: 2026-08-28T10:13:20Z
+Pushed at: 2026-08-28T10:12:44Z
+Archived: False
+Fork: False
+Languages: Python, C++, HTML, Java, Go, Ruby, CSS, Dockerfile, Shell, C
+Topics: (none)
+Default branch: main
+Latest commit: b589e0e3a08d994aa8da2319b964505d4fafc07a at 2026-08-28T10:12:44Z

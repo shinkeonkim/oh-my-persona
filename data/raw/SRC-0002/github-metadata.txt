@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/my-portfolio
+URL: https://github.com/shinkeonkim/my-portfolio
+Relationship to shinkeonkim: owner
+Description: My Portfolio
+Created at: 2026-03-24T08:11:42Z
+Updated at: 2026-08-27T17:05:13Z
+Pushed at: 2026-08-27T16:50:00Z
+Archived: False
+Fork: False
+Languages: TypeScript, Vue, Python, CSS, Shell, HTML
+Topics: (none)
+Default branch: main
+Latest commit: 7b019bca548da2bfde145e143baa6ed75a14d273 at 2026-08-27T16:50:00Z

@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/code-testcase-generator
+URL: https://github.com/shinkeonkim/code-testcase-generator
+Relationship to shinkeonkim: owner
+Description: LLM을 활용한 알고리즘 문제 TC 자동 생성기
+Created at: 2025-06-04T02:54:54Z
+Updated at: 2025-06-11T02:39:25Z
+Pushed at: 2025-06-05T07:02:30Z
+Archived: False
+Fork: False
+Languages: Python, Dockerfile
+Topics: (none)
+Default branch: main
+Latest commit: 9cb6011801cc8268e27357d74c337d7a2b8d4c26 at 2025-06-05T07:02:28Z

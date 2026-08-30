@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-landclaim-plugin
+URL: https://github.com/kokoa-hobby/minecraft-landclaim-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: landclaim-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:38:00Z
+Updated at: 2026-07-22T13:33:22Z
+Pushed at: 2026-07-22T13:29:26Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: 5767846cc94656dfd69198255fd18cf568b120ef at 2026-07-22T13:29:24Z

@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/umjunsik-lang-server
+URL: https://github.com/shinkeonkim/umjunsik-lang-server
+Relationship to shinkeonkim: owner
+Description: 엄랭(Umjunsik Language)을 활용한 구현체를 추가로 구현한 간단한 HTTP 웹서버입니다. 
+Created at: 2025-10-08T11:02:13Z
+Updated at: 2025-10-08T11:05:37Z
+Pushed at: 2025-10-08T11:05:33Z
+Archived: False
+Fork: False
+Languages: Python, HTML, CSS
+Topics: (none)
+Default branch: main
+Latest commit: 54b322f361f70664b2e0dbe650b5862a62ecda2e at 2025-10-08T11:05:30Z

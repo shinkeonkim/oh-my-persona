@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/my-cv
+URL: https://github.com/shinkeonkim/my-cv
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2026-04-24T12:15:54Z
+Updated at: 2026-08-27T16:58:25Z
+Pushed at: 2026-08-27T16:49:31Z
+Archived: False
+Fork: False
+Languages: HTML, TypeScript, Vue, CSS
+Topics: (none)
+Default branch: main
+Latest commit: f04bbc4d1fa3e5a6c3df31531e548de195afa220 at 2026-08-27T16:49:31Z

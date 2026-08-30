@@ -1,0 +1,13 @@
+GitHub repository: palette-team/module-testing-example
+URL: https://github.com/palette-team/module-testing-example
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2025-10-28T06:16:18Z
+Updated at: 2025-10-28T06:19:23Z
+Pushed at: 2025-10-28T06:19:19Z
+Archived: False
+Fork: False
+Languages: TypeScript, JavaScript, CSS
+Topics: (none)
+Default branch: main
+Latest commit: 70616516e6ae5865e26f53917528c21b250728df at 2025-10-28T06:19:09Z

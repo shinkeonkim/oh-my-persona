@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/notion-blog
+URL: https://github.com/shinkeonkim/notion-blog
+Relationship to shinkeonkim: owner
+Description: 노션페이지를 이용한 Github 블로그
+Created at: 2022-06-01T02:13:21Z
+Updated at: 2024-04-25T05:24:56Z
+Pushed at: 2024-04-25T05:25:51Z
+Archived: False
+Fork: False
+Languages: TypeScript, JavaScript, CSS
+Topics: gh-pages, notion, react
+Default branch: main
+Latest commit: 6569b170738a84733d1fed3f4d2d4fef7b42cd42 at 2024-04-25T05:24:52Z

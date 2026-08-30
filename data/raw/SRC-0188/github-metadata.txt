@@ -1,0 +1,13 @@
+GitHub repository: palette-team/saju_profile_tags_extractor
+URL: https://github.com/palette-team/saju_profile_tags_extractor
+Relationship to shinkeonkim: contributor
+Description: LLM 기반 사주 프로필(사주원국) 태그 추출 프로젝트
+Created at: 2025-10-30T10:40:32Z
+Updated at: 2025-11-06T12:26:04Z
+Pushed at: 2025-11-06T12:26:00Z
+Archived: False
+Fork: False
+Languages: Python
+Topics: (none)
+Default branch: main
+Latest commit: 9ca2932f77b4e9fa198a4c0c35165aaa3c77febd at 2025-11-06T12:25:57Z

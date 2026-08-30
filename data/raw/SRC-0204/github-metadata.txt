@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/drf-discord-handler
+URL: https://github.com/shinkeonkim/drf-discord-handler
+Relationship to shinkeonkim: owner
+Description: drf exception handler with messaging to discord server
+Created at: 2025-12-21T10:45:08Z
+Updated at: 2025-12-21T11:24:11Z
+Pushed at: 2025-12-21T11:24:08Z
+Archived: False
+Fork: False
+Languages: Python
+Topics: (none)
+Default branch: main
+Latest commit: 3a3be84dee30f28d732c05bfb55fb0c2d8069eb8 at 2025-12-21T11:23:55Z

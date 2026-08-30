@@ -1,0 +1,13 @@
+GitHub repository: kkambbaki/frontend
+URL: https://github.com/kkambbaki/frontend
+Relationship to shinkeonkim: contributor
+Description: 깜빡이 프론트엔드 - 숨겨진 집중력의 불을 켜주는 아동교육 서비스
+Created at: 2025-10-13T11:34:55Z
+Updated at: 2025-11-14T12:47:05Z
+Pushed at: 2025-11-14T14:46:55Z
+Archived: False
+Fork: False
+Languages: TypeScript, JavaScript, CSS
+Topics: (none)
+Default branch: main
+Latest commit: 59dbff7ac7f212a42d313ad1cc669475af8a84b0 at 2025-11-14T14:46:48Z

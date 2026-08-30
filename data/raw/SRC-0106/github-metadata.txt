@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-dailyreward-plugin
+URL: https://github.com/kokoa-hobby/minecraft-dailyreward-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: dailyreward-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:37:12Z
+Updated at: 2026-07-22T13:31:47Z
+Pushed at: 2026-07-22T13:28:58Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: 5c0ca528d7e89d9b2573dfc79e5c141b5932b34b at 2026-07-22T13:28:57Z

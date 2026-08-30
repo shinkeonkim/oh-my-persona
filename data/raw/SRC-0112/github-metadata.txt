@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-freeze-plugin
+URL: https://github.com/kokoa-hobby/minecraft-freeze-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: freeze-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:37:44Z
+Updated at: 2026-07-22T13:32:36Z
+Pushed at: 2026-07-22T13:30:38Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: 66cb8a43acf49db4121035ba9849c99adfaecd63 at 2026-07-22T13:30:36Z

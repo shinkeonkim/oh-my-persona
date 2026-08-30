@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/TDS-experiment-with-pencil
+URL: https://github.com/kokoa-lab/TDS-experiment-with-pencil
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-02-05T07:43:07Z
+Updated at: 2026-02-05T09:54:44Z
+Pushed at: 2026-02-05T09:54:40Z
+Archived: False
+Fork: False
+Languages: (none)
+Topics: (none)
+Default branch: main
+Latest commit: b7c7485ccfc84f3e9eaa35aeda3f35ed13ef3660 at 2026-02-05T09:54:35Z

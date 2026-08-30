@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/mooyaho
+URL: https://github.com/shinkeonkim/mooyaho
+Relationship to shinkeonkim: owner
+Description: 무야호~
+Created at: 2021-03-08T11:15:18Z
+Updated at: 2022-06-04T05:57:47Z
+Pushed at: 2022-06-04T05:59:41Z
+Archived: False
+Fork: False
+Languages: HTML, CSS
+Topics: mooyaho
+Default branch: main
+Latest commit: a222918f4d350eeba96dcacd0cfc8ed26b36c5cc at 2022-06-04T05:59:41Z

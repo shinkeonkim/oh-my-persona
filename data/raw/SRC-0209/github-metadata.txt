@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/hangul
+URL: https://github.com/shinkeonkim/hangul
+Relationship to shinkeonkim: owner
+Description: visualize hangul
+Created at: 2022-05-22T15:33:33Z
+Updated at: 2022-05-23T14:07:38Z
+Pushed at: 2022-05-23T14:05:58Z
+Archived: False
+Fork: False
+Languages: JavaScript, HTML, CSS
+Topics: hangul, interactive-visualizations
+Default branch: main
+Latest commit: ea1b89c05f2acdce66e0c0beac8c30041d9cbf5f at 2022-05-23T14:05:53Z

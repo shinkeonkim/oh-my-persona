@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-sleepvote-plugin
+URL: https://github.com/kokoa-hobby/minecraft-sleepvote-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: sleepvote-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:38:43Z
+Updated at: 2026-07-22T13:30:41Z
+Pushed at: 2026-07-22T13:27:52Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: 0de8a59287509bd332ad1e01c30e48a78f61b09c at 2026-07-22T13:27:51Z

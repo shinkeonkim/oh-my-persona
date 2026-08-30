@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/maeil-mail-video-interview-demo
+URL: https://github.com/kokoa-lab/maeil-mail-video-interview-demo
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-03-10T15:53:39Z
+Updated at: 2026-03-10T15:58:14Z
+Pushed at: 2026-03-10T15:58:10Z
+Archived: False
+Fork: False
+Languages: TypeScript, CSS, JavaScript, HTML
+Topics: (none)
+Default branch: main
+Latest commit: 17c6f3b90db5ce62f900b3d1adc261e74fc6ce88 at 2026-03-10T15:58:03Z

@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/dev-tarot
+URL: https://github.com/kokoa-lab/dev-tarot
+Relationship to shinkeonkim: contributor
+Description: 개발자를 위한 타로 운세 — 오늘의 코딩 운세를 뽑아보세요!
+Created at: 2026-03-08T18:26:43Z
+Updated at: 2026-08-28T07:52:28Z
+Pushed at: 2026-08-28T07:50:44Z
+Archived: False
+Fork: False
+Languages: TypeScript, CSS, HTML, JavaScript
+Topics: (none)
+Default branch: main
+Latest commit: 7e66ecbf869740debbef76716afddf2e1810b14a at 2026-08-28T07:50:44Z

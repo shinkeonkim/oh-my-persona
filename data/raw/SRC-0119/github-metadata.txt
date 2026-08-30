@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-mobdrops-plugin
+URL: https://github.com/kokoa-hobby/minecraft-mobdrops-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: mobdrops-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:38:16Z
+Updated at: 2026-07-22T13:30:31Z
+Pushed at: 2026-07-22T13:28:38Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: ace7b77d5fbb95e46c4c5d6431a1acf1c025c7cb at 2026-07-22T13:28:37Z

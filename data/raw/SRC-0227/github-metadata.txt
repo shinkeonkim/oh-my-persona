@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/react-native-blog-example
+URL: https://github.com/shinkeonkim/react-native-blog-example
+Relationship to shinkeonkim: owner
+Description: react-native-blog-example for likelion org. in Kookmin Univ.
+Created at: 2020-07-26T14:58:28Z
+Updated at: 2020-07-26T15:00:37Z
+Pushed at: 2020-07-26T14:58:31Z
+Archived: False
+Fork: False
+Languages: (none)
+Topics: react-native, mobile-app, blog
+Default branch: master
+Latest commit: dd14bdf07192e4ec0ea141d044304a0b774cd062 at 2020-07-26T14:58:29Z

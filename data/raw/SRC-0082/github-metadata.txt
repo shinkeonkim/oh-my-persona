@@ -1,0 +1,13 @@
+GitHub repository: kmu-aws-capstone-team-4/mefit-tools
+URL: https://github.com/kmu-aws-capstone-team-4/mefit-tools
+Relationship to shinkeonkim: contributor
+Description: MeFit 플랫폼의 로컬 운영/개발을 위한 통합 오케스트레이션 도구
+Created at: 2026-04-17T00:53:16Z
+Updated at: 2026-05-11T11:43:57Z
+Pushed at: 2026-04-20T12:49:16Z
+Archived: False
+Fork: False
+Languages: Python, Makefile, Shell, Dockerfile
+Topics: (none)
+Default branch: main
+Latest commit: 13380dc6c7771a2c8a66913c5c0fb9454028b702 at 2026-04-19T12:43:21Z

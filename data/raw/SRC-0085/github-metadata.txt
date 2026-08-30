@@ -1,0 +1,13 @@
+GitHub repository: kmu-aws-capstone-team-4/voice-api
+URL: https://github.com/kmu-aws-capstone-team-4/voice-api
+Relationship to shinkeonkim: contributor
+Description: 면접 진행 시 질문 텍스트를 음성으로 읽어주는 기능
+Created at: 2026-04-01T17:22:16Z
+Updated at: 2026-05-11T11:36:44Z
+Pushed at: 2026-05-11T11:36:39Z
+Archived: False
+Fork: False
+Languages: Python, Dockerfile
+Topics: (none)
+Default branch: main
+Latest commit: 419cef9aba394b170991e76ed05cdfbef399cbd7 at 2026-05-11T11:36:32Z

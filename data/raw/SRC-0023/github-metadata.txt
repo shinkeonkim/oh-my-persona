@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/boardai
+URL: https://github.com/shinkeonkim/boardai
+Relationship to shinkeonkim: owner
+Description: 보드게임을 같이 해주는 AI (Vision / AI 기반 / 멀티 플레이어 / 다양한 게임 지원)
+Created at: 2026-07-20T07:31:55Z
+Updated at: 2026-07-20T07:42:20Z
+Pushed at: 2026-07-21T02:27:52Z
+Archived: False
+Fork: False
+Languages: (none)
+Topics: (none)
+Default branch: main
+Latest commit: 51409fcb3bdc0c309b6d2a38587b5f3e01c4fa23 at 2026-07-20T07:42:02Z

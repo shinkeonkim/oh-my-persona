@@ -1,0 +1,13 @@
+GitHub repository: kmu-shinkeonkim/sw-arhitecture-garage-system
+URL: https://github.com/kmu-shinkeonkim/sw-arhitecture-garage-system
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2025-09-24T07:11:29Z
+Updated at: 2025-09-30T03:03:31Z
+Pushed at: 2025-09-30T03:03:28Z
+Archived: False
+Fork: False
+Languages: (none)
+Topics: kookmin-university
+Default branch: main
+Latest commit: be5a97299c422a2d4781a051414a27e586879990 at 2025-09-30T03:03:28Z

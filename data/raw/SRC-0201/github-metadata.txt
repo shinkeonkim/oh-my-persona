@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/clone-bs-youtube
+URL: https://github.com/shinkeonkim/clone-bs-youtube
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2021-01-22T16:20:10Z
+Updated at: 2021-01-22T16:50:40Z
+Pushed at: 2021-01-22T16:50:37Z
+Archived: False
+Fork: False
+Languages: HTML
+Topics: (none)
+Default branch: main
+Latest commit: e4fcbc2eed1b75d490f3b1ab18588aa35658e974 at 2021-01-22T16:50:28Z

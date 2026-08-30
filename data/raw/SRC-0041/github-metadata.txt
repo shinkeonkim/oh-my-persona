@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/safe-cover-letter
+URL: https://github.com/shinkeonkim/safe-cover-letter
+Relationship to shinkeonkim: owner
+Description: 자기소개서 버전 관리 프로그램
+Created at: 2020-09-10T17:26:19Z
+Updated at: 2020-09-10T18:05:09Z
+Pushed at: 2020-09-10T18:05:07Z
+Archived: False
+Fork: False
+Languages: JavaScript, HTML
+Topics: (none)
+Default branch: master
+Latest commit: fc486402bb6d546e9920e46e67302aa5442c46b4 at 2020-09-10T18:04:57Z

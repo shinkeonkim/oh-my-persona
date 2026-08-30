@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/vue-blog
+URL: https://github.com/shinkeonkim/vue-blog
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2021-03-20T13:33:17Z
+Updated at: 2021-03-20T13:49:11Z
+Pushed at: 2021-03-20T13:49:09Z
+Archived: False
+Fork: False
+Languages: Vue, HTML, JavaScript
+Topics: (none)
+Default branch: main
+Latest commit: b35e9bbdb7d821263d7c684b2576409e3c50297c at 2021-03-20T13:44:48Z

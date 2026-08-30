@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/works-on-mine
+URL: https://github.com/kokoa-lab/works-on-mine
+Relationship to shinkeonkim: contributor
+Description: "제 컴퓨터에선 되는데요"를 공식 증명서로 발급합니다
+Created at: 2026-03-09T09:20:33Z
+Updated at: 2026-08-28T07:13:33Z
+Pushed at: 2026-08-28T07:11:39Z
+Archived: False
+Fork: False
+Languages: TypeScript, CSS, HTML, JavaScript
+Topics: (none)
+Default branch: main
+Latest commit: 55f4d69ec982071be9223fe705c4ad71401b42f4 at 2026-08-28T07:11:39Z

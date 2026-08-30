@@ -1,0 +1,13 @@
+GitHub repository: kmu-aws-capstone-team-4/face-analyzer
+URL: https://github.com/kmu-aws-capstone-team-4/face-analyzer
+Relationship to shinkeonkim: contributor
+Description: 면접영상에서 추출된 이미지에서 사람 얼굴과 표정을 분석하는 기능
+Created at: 2026-04-15T11:39:10Z
+Updated at: 2026-05-11T10:39:11Z
+Pushed at: 2026-05-11T08:28:18Z
+Archived: False
+Fork: False
+Languages: Python, Shell, Dockerfile
+Topics: boto3, docker, mediapipe, numpy, opencv, pillow
+Default branch: main
+Latest commit: 37813198c7f23262cc6c971602549cf7a2f24419 at 2026-05-11T08:28:07Z

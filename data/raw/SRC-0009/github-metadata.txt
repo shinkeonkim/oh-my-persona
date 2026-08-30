@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/twin-ai
+URL: https://github.com/shinkeonkim/twin-ai
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2025-05-30T13:48:06Z
+Updated at: 2025-06-02T10:42:28Z
+Pushed at: 2025-06-17T10:34:39Z
+Archived: False
+Fork: False
+Languages: Python, Dockerfile
+Topics: (none)
+Default branch: main
+Latest commit: f8faea50e9d8ed7c4c00166ab00c086f8fcaf5ed at 2025-06-02T10:42:22Z

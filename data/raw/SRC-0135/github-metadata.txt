@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/cookie-bakery
+URL: https://github.com/kokoa-lab/cookie-bakery
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-03-09T06:42:17Z
+Updated at: 2026-08-28T07:55:33Z
+Pushed at: 2026-08-28T07:53:51Z
+Archived: False
+Fork: False
+Languages: TypeScript, CSS, HTML, JavaScript
+Topics: (none)
+Default branch: main
+Latest commit: 956c3110b1f59a2db274aa981a596da1525ba87d at 2026-08-28T07:53:51Z

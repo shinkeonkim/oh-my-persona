@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/fastapi-sql-injection-experment
+URL: https://github.com/kokoa-lab/fastapi-sql-injection-experment
+Relationship to shinkeonkim: contributor
+Description: FastAPI SQL Injection 실험 프로젝트
+Created at: 2025-09-18T09:25:30Z
+Updated at: 2025-09-18T09:40:48Z
+Pushed at: 2025-09-18T09:40:44Z
+Archived: False
+Fork: False
+Languages: Python, Dockerfile
+Topics: (none)
+Default branch: main
+Latest commit: 4dbfd827759306a9bdc754500b5e48d340be634e at 2025-09-18T09:40:27Z

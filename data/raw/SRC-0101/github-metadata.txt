@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-backpack-plugin
+URL: https://github.com/kokoa-hobby/minecraft-backpack-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: backpack-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:36:47Z
+Updated at: 2026-07-22T13:31:09Z
+Pushed at: 2026-07-22T13:29:53Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: c3707e6bfaab47d1269483ebeec1030f149cf4ce at 2026-07-22T13:29:52Z

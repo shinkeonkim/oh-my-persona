@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/microbit-choreboard-initial-code
+URL: https://github.com/shinkeonkim/microbit-choreboard-initial-code
+Relationship to shinkeonkim: owner
+Description: A MakeCode project
+Created at: 2020-08-05T05:51:57Z
+Updated at: 2020-08-05T05:51:59Z
+Pushed at: 2020-08-05T05:52:56Z
+Archived: False
+Fork: True
+Languages: TypeScript, Ruby, Makefile
+Topics: (none)
+Default branch: master
+Latest commit: 8ad12f85fb51b1227bfee610344d4e7d35e4ca37 at 2020-08-04T09:11:21Z

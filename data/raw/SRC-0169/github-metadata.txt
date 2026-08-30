@@ -1,0 +1,13 @@
+GitHub repository: kokoa-study-room/tree
+URL: https://github.com/kokoa-study-room/tree
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2025-10-09T09:05:20Z
+Updated at: 2025-10-09T09:15:36Z
+Pushed at: 2025-10-09T09:15:32Z
+Archived: False
+Fork: False
+Languages: Python, C++, Go, Ruby
+Topics: (none)
+Default branch: main
+Latest commit: 858509afb998b3c3bb2c3bd1a1d109142a472f86 at 2025-10-09T09:15:31Z

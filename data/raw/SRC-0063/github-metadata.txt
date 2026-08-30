@@ -1,0 +1,13 @@
+GitHub repository: kkambbaki/backend
+URL: https://github.com/kkambbaki/backend
+Relationship to shinkeonkim: contributor
+Description: 깜빡이 백엔드 API - 숨겨진 집중력의 불을 켜주는 아동교육 서비스
+Created at: 2025-10-12T12:47:24Z
+Updated at: 2025-11-14T14:17:02Z
+Pushed at: 2025-11-14T14:22:58Z
+Archived: False
+Fork: False
+Languages: Python, HTML, Shell, Dockerfile
+Topics: django, django-project, django-rest-framework, likelion, likelion13
+Default branch: develop
+Latest commit: f2b4b8bd05c3ba97e17e580400d92173a03a55b4 at 2025-11-14T14:16:50Z

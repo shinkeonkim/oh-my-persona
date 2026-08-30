@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/dpd_template
+URL: https://github.com/shinkeonkim/dpd_template
+Relationship to shinkeonkim: owner
+Description: Django, PostgreSQL, Docker Template
+Created at: 2022-05-08T11:36:17Z
+Updated at: 2022-07-10T03:29:15Z
+Pushed at: 2022-07-10T07:28:52Z
+Archived: False
+Fork: False
+Languages: Python, Shell, Dockerfile
+Topics: (none)
+Default branch: main
+Latest commit: 5d0c88da235f4bba202318acc9c717070e7fe454 at 2022-07-10T07:28:45Z

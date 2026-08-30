@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-vanish-plugin
+URL: https://github.com/kokoa-hobby/minecraft-vanish-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: vanish-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:39:15Z
+Updated at: 2026-07-22T13:29:17Z
+Pushed at: 2026-07-22T13:28:14Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: a5143b661f2c75714b2264470a7c24420c973a92 at 2026-07-22T13:28:12Z

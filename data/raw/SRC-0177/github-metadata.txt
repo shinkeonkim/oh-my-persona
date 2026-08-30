@@ -1,0 +1,13 @@
+GitHub repository: meme-party/dionysus
+URL: https://github.com/meme-party/dionysus
+Relationship to shinkeonkim: contributor
+Description: memez.party 를 위한 백엔드 프로젝트 (인프라는 별도로 관리합니다)
+Created at: 2024-11-01T15:17:53Z
+Updated at: 2025-09-14T13:36:15Z
+Pushed at: 2025-09-14T13:41:42Z
+Archived: False
+Fork: False
+Languages: Python, Dockerfile, Shell
+Topics: django, django-rest-api, django-rest-framework, docker, python3
+Default branch: main
+Latest commit: 130eeee5eadfe2b28b1b3fbd09e4688663c961bd at 2025-09-14T13:36:09Z

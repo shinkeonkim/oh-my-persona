@@ -1,0 +1,13 @@
+GitHub repository: kokoa-tools/slack-message-collector
+URL: https://github.com/kokoa-tools/slack-message-collector
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-05-26T05:32:42Z
+Updated at: 2026-05-26T05:32:57Z
+Pushed at: 2026-05-26T05:32:53Z
+Archived: False
+Fork: False
+Languages: Python
+Topics: (none)
+Default branch: main
+Latest commit: 2662f3340cd05914bedeceed0441d91d87f8e97d at 2026-05-26T05:31:01Z

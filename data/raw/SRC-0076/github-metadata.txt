@@ -1,0 +1,13 @@
+GitHub repository: kmu-aws-capstone-team-4/frontend
+URL: https://github.com/kmu-aws-capstone-team-4/frontend
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-03-11T07:07:24Z
+Updated at: 2026-05-21T06:39:00Z
+Pushed at: 2026-05-21T06:39:07Z
+Archived: False
+Fork: False
+Languages: TypeScript, CSS, HTML, JavaScript
+Topics: (none)
+Default branch: develop
+Latest commit: 932ae43b5dc86ea363bcbe46a0ed4309bb8b2c66 at 2026-05-21T06:38:56Z

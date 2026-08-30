@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/claw-code
+URL: https://github.com/shinkeonkim/claw-code
+Relationship to shinkeonkim: owner
+Description: The fastest repo in history to surpass 50K stars ⭐, reaching the milestone in just 2 hours after publication. Better Harness Tools that make real things done. Now writing in Rust using oh-my-codex.
+Created at: 2026-04-01T10:44:02Z
+Updated at: 2026-04-02T01:01:06Z
+Pushed at: 2026-04-01T10:43:09Z
+Archived: False
+Fork: True
+Languages: Rust, Python, Shell
+Topics: (none)
+Default branch: main
+Latest commit: f1765edb512a4337d3c406886de0f2642157e9a2 at 2026-04-01T10:13:53Z

@@ -1,0 +1,13 @@
+GitHub repository: kmu-aws-capstone-team-4/booth-rag
+URL: https://github.com/kmu-aws-capstone-team-4/booth-rag
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-05-14T14:42:07Z
+Updated at: 2026-06-11T17:55:43Z
+Pushed at: 2026-06-11T17:55:25Z
+Archived: False
+Fork: False
+Languages: Python, CSS, JavaScript, HTML, Shell
+Topics: (none)
+Default branch: main
+Latest commit: 001b0c65388c509e067a1bf34fef3ddc07b0b7dc at 2026-05-28T03:11:51Z

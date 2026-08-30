@@ -1,0 +1,13 @@
+GitHub repository: palette-team/palette_api
+URL: https://github.com/palette-team/palette_api
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2025-09-01T07:19:00Z
+Updated at: 2026-02-14T17:01:25Z
+Pushed at: 2026-02-15T05:25:19Z
+Archived: False
+Fork: False
+Languages: Python, HTML, Shell, Dockerfile, CSS
+Topics: (none)
+Default branch: develop
+Latest commit: 4fa31ab24b3518ad50d1b6b3e8048a88afca6c59 at 2026-02-14T17:01:17Z

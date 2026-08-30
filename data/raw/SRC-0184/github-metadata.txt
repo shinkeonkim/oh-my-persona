@@ -1,0 +1,13 @@
+GitHub repository: palette-team/palette-dev-infra
+URL: https://github.com/palette-team/palette-dev-infra
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2025-10-11T07:45:49Z
+Updated at: 2026-02-11T09:02:17Z
+Pushed at: 2026-02-11T09:01:49Z
+Archived: False
+Fork: False
+Languages: Shell, HCL
+Topics: (none)
+Default branch: main
+Latest commit: 7f3e4bbad257e458fb96397f479b03a87764fa71 at 2026-02-11T09:01:46Z

@@ -1,0 +1,13 @@
+GitHub repository: kokoa-study-room/compiler-study-site
+URL: https://github.com/kokoa-study-room/compiler-study-site
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-08-08T06:22:35Z
+Updated at: 2026-08-30T12:59:49Z
+Pushed at: 2026-08-30T12:58:50Z
+Archived: False
+Fork: False
+Languages: MDX, TypeScript, CSS
+Topics: (none)
+Default branch: main
+Latest commit: a663b708c6a7329c11e959d1bfa0ee4fb88ec187 at 2026-08-30T12:58:48Z

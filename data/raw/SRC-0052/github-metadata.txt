@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/android-hanalum
+URL: https://github.com/shinkeonkim/android-hanalum
+Relationship to shinkeonkim: owner
+Description: (none)
+Created at: 2019-07-17T04:43:29Z
+Updated at: 2019-07-17T05:39:17Z
+Pushed at: 2019-07-17T05:39:16Z
+Archived: False
+Fork: False
+Languages: (none)
+Topics: (none)
+Default branch: master
+Latest commit: 74a0d354c8cd3a71308c64275d3e253501116162 at 2019-07-17T05:39:06Z

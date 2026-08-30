@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/OnlineJudge
+URL: https://github.com/shinkeonkim/OnlineJudge
+Relationship to shinkeonkim: owner
+Description: open source online judge based on Vue, Django and Docker. | 青岛大学开源 Online Judge | QQ群 496710125 | admin@qduoj.com
+Created at: 2022-01-23T07:12:51Z
+Updated at: 2022-01-22T05:54:29Z
+Pushed at: 2021-12-17T17:26:18Z
+Archived: False
+Fork: True
+Languages: Python, Shell, HTML, Dockerfile
+Topics: (none)
+Default branch: master
+Latest commit: 8dda05d8d7b90ba3ed277a5a7f4e5af8f6b7c799 at 2021-12-08T00:24:29Z

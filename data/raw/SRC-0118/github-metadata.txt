@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-mailbox-plugin
+URL: https://github.com/kokoa-hobby/minecraft-mailbox-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: mailbox-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:38:11Z
+Updated at: 2026-07-22T13:30:07Z
+Pushed at: 2026-07-22T13:28:57Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: ff2c337ff5545e81bc629c70522cc0e91eff6446 at 2026-07-22T13:28:55Z

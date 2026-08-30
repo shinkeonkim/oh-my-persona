@@ -1,0 +1,13 @@
+GitHub repository: kokoa-hobby/minecraft-homewarp-plugin
+URL: https://github.com/kokoa-hobby/minecraft-homewarp-plugin
+Relationship to shinkeonkim: contributor
+Description: Paper plugin: homewarp-plugin (kokoa hobby minecraft server)
+Created at: 2026-07-22T12:37:49Z
+Updated at: 2026-07-22T13:28:27Z
+Pushed at: 2026-07-22T13:27:27Z
+Archived: False
+Fork: False
+Languages: Kotlin
+Topics: (none)
+Default branch: main
+Latest commit: 8f559a80cf6a5cd21f6bd7ff25ac352563492986 at 2026-07-22T13:27:26Z

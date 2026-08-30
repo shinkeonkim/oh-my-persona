@@ -1,0 +1,13 @@
+GitHub repository: shinkeonkim/codekr
+URL: https://github.com/shinkeonkim/codekr
+Relationship to shinkeonkim: owner
+Description: 오픈소스 온라인 저지 시스템
+Created at: 2026-08-09T16:50:30Z
+Updated at: 2026-08-30T06:08:03Z
+Pushed at: 2026-08-30T13:00:24Z
+Archived: False
+Fork: False
+Languages: Kotlin, TypeScript, Go, Shell, Python, Dockerfile, CSS, Makefile, Go Template, JavaScript
+Topics: (none)
+Default branch: main
+Latest commit: 34451dc8902dba1534473e8ee0f0bbcec612a030 at 2026-08-30T06:07:55Z

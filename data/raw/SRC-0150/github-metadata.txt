@@ -1,0 +1,13 @@
+GitHub repository: kokoa-lab/stack-digger
+URL: https://github.com/kokoa-lab/stack-digger
+Relationship to shinkeonkim: contributor
+Description: (none)
+Created at: 2026-03-09T04:28:59Z
+Updated at: 2026-08-28T07:59:58Z
+Pushed at: 2026-08-28T07:57:55Z
+Archived: False
+Fork: False
+Languages: TypeScript, CSS, HTML, JavaScript
+Topics: (none)
+Default branch: main
+Latest commit: 05cb5348040317b820ed7273221545267808ff31 at 2026-08-28T07:57:55Z
