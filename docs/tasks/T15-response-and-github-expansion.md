@@ -1,6 +1,6 @@
 # T15 — 응답 표현과 GitHub 근거 확장
 
-상태: DOING
+상태: DONE (2026-08-30, metadata 1차 수집)
 선행: T14
 
 ## 순차 작업
@@ -21,3 +21,12 @@
 
 모든 네트워크 수집은 `persona collect-github-metadata --approve`처럼 명시적 승인 플래그를
 요구하며, 공개 HTTPS URL과 관측 시점을 보존합니다.
+
+## 검증 결과
+
+- GitHub 공개 조직 27개, 소유·기여 repository 합집합 226개 조사
+- source 234개, document 13,941개, chunk 21,446개
+- exact duplicate 0, 민감정보 탐지 0, source 역추적률 99.83%
+- Python 20개, Playwright 7개 운영/CI 검증 통과
+- 운영 prompt 회귀 검증에서 금지된 후속 조력 표현 0건, 근거 6개 반환
+- GitOps PR #96, #97 검증·병합 및 `persona.shinkeonkim.com` 반영 완료
