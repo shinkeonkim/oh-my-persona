@@ -20,7 +20,7 @@ test('desktop renders a complete two-pane messenger', async ({ page }, testInfo)
 
 test('mobile uses the full viewport without horizontal overflow', async ({ page }, testInfo) => {
   test.skip(testInfo.project.name !== 'mobile');
-  await expect(page.locator('.sidebar')).toBeHidden();
+  await expect(page.locator('.sidebar')).not.toBeInViewport();
   await expect(page.locator('.chat-header')).toBeVisible();
   const dimensions = await page.evaluate(() => ({
     scrollWidth: document.documentElement.scrollWidth,
@@ -30,6 +30,21 @@ test('mobile uses the full viewport without horizontal overflow', async ({ page 
   expect(dimensions.scrollWidth).toBe(dimensions.clientWidth);
   expect(dimensions.height).toBe(page.viewportSize().height);
   await expect(page).toHaveScreenshot('messenger-mobile.png', { animations: 'disabled' });
+});
+
+test('mobile menu exposes the desktop sidebar as an accessible drawer', async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name !== 'mobile');
+  const menu = page.locator('.mobile-menu');
+  await expect(menu).toHaveAttribute('aria-expanded', 'false');
+  await menu.click();
+  await expect(menu).toHaveAttribute('aria-expanded', 'true');
+  await expect(page.locator('.sidebar')).toBeInViewport();
+  await expect(page.locator('.side-prompts')).toBeVisible();
+  await expect(page.locator('.sidebar footer')).toBeVisible();
+  await expect(page.locator('.sidebar-close')).toBeVisible();
+  await expect(page).toHaveScreenshot('messenger-mobile-menu.png', { animations: 'disabled' });
+  await page.locator('.sidebar-backdrop').click({ position: { x: 380, y: 400 } });
+  await expect(menu).toHaveAttribute('aria-expanded', 'false');
 });
 
 test('suggested question fills the composer', async ({ page }) => {

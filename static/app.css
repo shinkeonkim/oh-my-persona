@@ -259,7 +259,9 @@ select {
   color: #4d5962;
   font-size: 0.72rem;
 }
-.mobile-back {
+.mobile-menu,
+.sidebar-close,
+.sidebar-backdrop {
   display: none;
 }
 .messages {
@@ -460,7 +462,46 @@ select {
     border-radius: 0;
   }
   .sidebar {
-    display: none;
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 20;
+    display: flex;
+    width: min(82vw, 320px);
+    padding-top: calc(24px + env(safe-area-inset-top));
+    transform: translateX(-105%);
+    box-shadow: 18px 0 50px #16212a38;
+    transition: transform 0.24s ease;
+  }
+  .menu-open .sidebar {
+    transform: translateX(0);
+  }
+  .sidebar-close {
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    margin-left: auto;
+    border: 0;
+    border-radius: 10px;
+    background: #e9edf0;
+    color: #65737d;
+    font-size: 1.35rem;
+    line-height: 1;
+  }
+  .sidebar-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 19;
+    border: 0;
+    background: #17212a70;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.24s ease;
+  }
+  .menu-open .sidebar-backdrop {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
   }
   .chat-panel {
     height: 100%;
@@ -470,10 +511,23 @@ select {
     height: 68px;
     padding: 10px 13px;
   }
-  .mobile-back {
-    display: block;
-    color: #83909a;
-    font-size: 1.7rem;
+  .mobile-menu {
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-content: center;
+    gap: 4px;
+    flex: 0 0 auto;
+    padding: 0;
+    border: 0;
+    border-radius: 10px;
+    background: transparent;
+  }
+  .mobile-menu span {
+    width: 18px;
+    height: 2px;
+    border-radius: 2px;
+    background: #65737d;
   }
   .avatar.profile {
     width: 42px;
@@ -525,6 +579,7 @@ select {
   }
   .send {
     width: 38px;
+    min-width: 38px;
     padding: 0;
   }
   .send span {
