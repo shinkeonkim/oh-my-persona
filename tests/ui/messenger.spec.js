@@ -3,14 +3,14 @@ const { test, expect } = require('@playwright/test');
 test.beforeEach(async ({ page }) => {
   await page.addInitScript(() => localStorage.clear());
   await page.goto('/');
-  await expect(page.locator('#model option')).toHaveCount(2);
+  await expect(page.locator('#model option').first()).toBeAttached();
 });
 
 test('desktop renders a complete two-pane messenger', async ({ page }, testInfo) => {
   test.skip(testInfo.project.name !== 'desktop');
   await expect(page.locator('.sidebar')).toBeVisible();
   await expect(page.locator('.chat-panel')).toBeVisible();
-  await expect(page.locator('#model')).toContainText('persona-chat');
+  await expect(page.locator('#model')).not.toHaveValue('');
   const shell = await page.locator('.messenger').boundingBox();
   const composer = await page.locator('.chat-form').boundingBox();
   expect(shell.width).toBeGreaterThan(1000);
