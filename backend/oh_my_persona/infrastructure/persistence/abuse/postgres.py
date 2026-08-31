@@ -48,7 +48,8 @@ class PostgresAbuseStore:
                 """SELECT id,identity_hash,conversation_id,reason,note,blocked_until,
                 created_by,created_at,revoked_at FROM abuse_blocks
                 WHERE revoked_at IS NULL AND (blocked_until IS NULL OR blocked_until > now())
-                AND ((%s <> '' AND identity_hash=%s) OR (%s IS NOT NULL AND conversation_id=%s))
+                AND ((%s <> '' AND identity_hash=%s)
+                  OR (%s::uuid IS NOT NULL AND conversation_id=%s::uuid))
                 ORDER BY created_at DESC LIMIT 1""",
                 (identity_hash, identity_hash, conversation_id, conversation_id),
             ).fetchone()
