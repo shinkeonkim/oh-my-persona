@@ -22,6 +22,10 @@ def test_widget_session_requires_its_access_token() -> None:
     assert client.get(url).status_code == 422
     assert client.get(url, headers={"x-persona-session-token": "wrong-token-value-that-is-long"}).status_code == 401
     assert client.get(url, headers={"x-persona-session-token": session["token"]}).status_code == 200
+    assert client.get(
+        f"{url}/stream",
+        headers={"x-persona-session-token": "wrong-token-value-that-is-long"},
+    ).status_code == 401
 
 
 def test_widget_chat_reuses_authorized_conversation(monkeypatch) -> None:

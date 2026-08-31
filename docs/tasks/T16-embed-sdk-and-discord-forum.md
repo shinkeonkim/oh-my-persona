@@ -21,6 +21,10 @@
 5. Discord 수신은 공식 Gateway의 `MESSAGE_CREATE` 이벤트를 사용하는 단일 replica worker가
    담당한다. 웹 API replica와 분리해 중복 Gateway 연결을 피한다.
 6. Forum 답변 전달은 마지막 활동 시각이 30일 이내인 세션으로 제한한다.
+7. 방문자 메시지는 HTTP `POST`, AI·관리자·Discord에서 추가된 메시지는 인증된 fetch 기반
+   SSE로 전달한다. 브라우저가 임의 이벤트를 지속적으로 서버에 보낼 필요가 없으므로 WebSocket은
+   사용하지 않는다. EventSource는 인증 헤더를 지원하지 않아 접근 토큰이 URL에 남을 수 있으므로
+   `fetch()`의 ReadableStream으로 SSE를 해석한다.
 
 ## 공식 참고 자료
 
@@ -47,13 +51,13 @@ T16A 현행/공식 문서 조사
 
 ## 완료 기준
 
-- [ ] 허용된 origin에서 widget session 생성, 재개, 메시지 조회가 가능하다.
-- [ ] 잘못된 접근 토큰으로 타 세션을 조회하거나 메시지를 추가할 수 없다.
-- [ ] SDK가 데스크톱과 모바일에서 열리고 닫히며 기존 사이트 레이아웃을 침범하지 않는다.
-- [ ] portfolio와 resume 빌드에 동일 SDK가 포함된다.
+- [x] 허용된 origin에서 widget session 생성, 재개, 메시지 조회가 가능하다.
+- [x] 잘못된 접근 토큰으로 타 세션을 조회하거나 메시지를 추가할 수 없다.
+- [x] SDK가 데스크톱과 모바일에서 열리고 닫히며 기존 사이트 레이아웃을 침범하지 않는다.
+- [x] portfolio와 resume 빌드에 동일 SDK가 포함된다.
 - [ ] 방문자 메시지가 Forum 스레드를 생성/갱신한다.
-- [ ] 허용된 Discord 사용자의 Forum 메시지가 30일 이내 세션에 `owner`로 저장된다.
-- [ ] 30일을 지난 세션과 다른 Forum의 메시지는 무시한다.
+- [x] 허용된 Discord 사용자의 Forum 메시지가 30일 이내 세션에 `owner`로 저장된다(자동 테스트).
+- [x] 30일을 지난 세션과 다른 Forum의 메시지는 무시한다(자동 테스트).
 - [ ] Python/프론트엔드/Playwright 테스트와 운영 URL 종단 검증을 통과한다.
 
 ## 운영에 필요한 Secret

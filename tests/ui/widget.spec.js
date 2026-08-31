@@ -31,7 +31,7 @@ test('embedded widget becomes a full-screen mobile messenger', async ({ page }, 
   await expect(page).toHaveScreenshot('widget-mobile-open.png', { animations: 'disabled' });
 });
 
-test('polling does not erase an optimistic message while an answer is pending', async ({ page }) => {
+test('a background refresh does not erase an optimistic pending message', async ({ page }) => {
   await page.route('**/api/widget/sessions', (route) => route.fulfill({
     status: 201,
     contentType: 'application/json',
@@ -60,7 +60,7 @@ test('polling does not erase an optimistic message while an answer is pending', 
   await expect(widget.locator('.bubble.assistant')).toHaveText('답변입니다.');
 });
 
-test('unchanged polling preserves the focused composer and draft', async ({ page }) => {
+test('an unchanged refresh preserves the focused composer and draft', async ({ page }) => {
   await page.route('**/api/widget/sessions', (route) => route.fulfill({
     status: 201,
     contentType: 'application/json',
@@ -79,4 +79,16 @@ test('unchanged polling preserves the focused composer and draft', async ({ page
   await widget.evaluate((element) => element.refresh());
   await expect(composer).toHaveValue('입력 중인 메시지입니다.');
   await expect(composer).toBeFocused();
+});
+
+test('SSE owner messages arrive without losing the current draft', async ({ page }) => {
+  const widget = page.locator('persona-chat-widget');
+  await widget.locator('[data-launcher]').click();
+  const composer = widget.locator('textarea');
+  await composer.fill('작성 중인 초안');
+  await widget.evaluate((element) => element.consumeStreamBlock(
+    'event: messages\ndata: {"messages":[{"role":"owner","content":"관리자 직접 답변"}]}',
+  ));
+  await expect(widget.locator('.bubble.owner')).toHaveText('관리자 직접 답변');
+  await expect(widget.locator('textarea')).toHaveValue('작성 중인 초안');
 });

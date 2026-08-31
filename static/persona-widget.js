@@ -20,7 +20,7 @@
       this.draft = "";
       this.open = false;
       this.pending = false;
-      this.poller = null;
+      this.streamController = null;
     }
 
     connectedCallback() {
@@ -38,7 +38,7 @@
       });
     }
 
-    disconnectedCallback() { clearInterval(this.poller); }
+    disconnectedCallback() { this.stopStream(); }
 
     async onClick(event) {
       if (event.target.closest("[data-launcher]")) {
@@ -48,7 +48,7 @@
       }
       if (event.target.closest("[data-close]")) {
         this.open = false;
-        clearInterval(this.poller);
+        this.stopStream();
         this.render();
       }
     }
@@ -60,8 +60,7 @@
         await this.createSession();
         await this.refresh();
       }
-      clearInterval(this.poller);
-      this.poller = setInterval(() => this.open && this.refresh(), 5000);
+      this.startStream();
     }
 
     async createSession() {
@@ -85,6 +84,57 @@
         this.render();
       }
       return true;
+    }
+
+    stopStream() {
+      this.streamController?.abort();
+      this.streamController = null;
+    }
+
+    async startStream() {
+      this.stopStream();
+      const controller = new AbortController();
+      this.streamController = controller;
+      while (this.open && !controller.signal.aborted) {
+        try {
+          const response = await fetch(
+            `${this.endpoint}/api/widget/conversations/${this.session.conversation_id}/stream`,
+            {
+              headers: { "X-Persona-Session-Token": this.session.token },
+              signal: controller.signal,
+            },
+          );
+          if (!response.ok || !response.body) throw new Error(`stream HTTP ${response.status}`);
+          const reader = response.body.getReader();
+          const decoder = new TextDecoder();
+          let buffer = "";
+          while (this.open && !controller.signal.aborted) {
+            const { value, done } = await reader.read();
+            if (done) break;
+            buffer += decoder.decode(value, { stream: true });
+            const blocks = buffer.split("\n\n");
+            buffer = blocks.pop() || "";
+            for (const block of blocks) this.consumeStreamBlock(block);
+          }
+        } catch (error) {
+          if (error.name === "AbortError" || controller.signal.aborted) return;
+        }
+        if (this.open && !controller.signal.aborted) {
+          await new Promise((resolve) => setTimeout(resolve, 1500));
+        }
+      }
+    }
+
+    consumeStreamBlock(block) {
+      const event = block.split("\n").find((line) => line.startsWith("event:"))?.slice(6).trim();
+      const data = block.split("\n").filter((line) => line.startsWith("data:"))
+        .map((line) => line.slice(5).trim()).join("\n");
+      if (event !== "messages" || !data) return;
+      const messages = JSON.parse(data).messages;
+      if (JSON.stringify(messages) !== JSON.stringify(this.messages)) {
+        this.messages = messages;
+        this.render();
+      }
     }
 
     async onSubmit(event) {

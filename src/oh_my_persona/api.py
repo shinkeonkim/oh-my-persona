@@ -141,6 +141,40 @@ def get_widget_conversation(conversation_id: str, x_persona_session_token: str =
     return {"conversation_id": conversation_id, "messages": store.messages(conversation_id)}
 
 
+@app.get("/api/widget/conversations/{conversation_id}/stream")
+async def stream_widget_conversation(
+    conversation_id: str,
+    http_request: Request,
+    x_persona_session_token: str = Header(),
+):
+    if not verify_widget_session(store, conversation_id, x_persona_session_token):
+        raise HTTPException(status_code=401, detail="invalid widget session")
+
+    async def events():
+        previous = json.dumps(store.messages(conversation_id), ensure_ascii=False, sort_keys=True)
+        idle_ticks = 0
+        yield _sse("ready", {"conversation_id": conversation_id})
+        while not await http_request.is_disconnected():
+            await asyncio.sleep(2)
+            current_messages = await asyncio.to_thread(store.messages, conversation_id)
+            serialized = json.dumps(current_messages, ensure_ascii=False, sort_keys=True)
+            if serialized != previous:
+                previous = serialized
+                idle_ticks = 0
+                yield _sse("messages", {"messages": current_messages})
+            else:
+                idle_ticks += 1
+                if idle_ticks >= 7:
+                    idle_ticks = 0
+                    yield ": keepalive\n\n"
+
+    return StreamingResponse(
+        events(),
+        media_type="text/event-stream",
+        headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"},
+    )
+
+
 @app.post("/api/widget/chat")
 def widget_chat(request: WidgetChatRequest, http_request: Request, background: BackgroundTasks):
     _enforce_rate_limit(http_request)
