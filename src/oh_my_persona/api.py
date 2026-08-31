@@ -75,6 +75,13 @@ class AdminConversationMessageRequest(BaseModel):
     content: str = Field(min_length=1, max_length=4000)
 
 
+class KnowledgeGapAnswerRequest(BaseModel):
+    answer: str = Field(min_length=1, max_length=50_000)
+    answered_at: date
+    visibility: str = Field(pattern="^(private|public)$")
+    evidence_urls: list[AnyHttpUrl] = Field(default_factory=list, max_length=20)
+
+
 def require_admin(authorization: str | None = Header(default=None)) -> None:
     expected = os.environ.get("PERSONA_ADMIN_TOKEN")
     supplied = authorization.removeprefix("Bearer ") if authorization else ""
@@ -248,6 +255,65 @@ def delete_admin_knowledge(item_id: str, _: None = Depends(require_admin)):
         raise HTTPException(status_code=404, detail="knowledge not found")
 
 
+@app.get("/api/admin/knowledge-gaps")
+def admin_knowledge_gaps(_: None = Depends(require_admin)):
+    path = root_path() / "data/processed/knowledge-gaps.json"
+    report = json.loads(path.read_text(encoding="utf-8"))
+    managed = knowledge_store.list(500, 0)
+    answers = {
+        item["title"].split("]", 1)[0].removeprefix("["): item
+        for item in managed if item["title"].startswith("[PQ-") and "]" in item["title"]
+    }
+    questions = []
+    for question in report["questions"]:
+        item = answers.get(question["question_id"])
+        questions.append({
+            **question,
+            "status": (
+                "direct_answer" if item and item["status"] == "active"
+                else "draft_answer" if item else question["status"]
+            ),
+            "managed_answer": item,
+        })
+    return {"summary": _gap_summary(questions), "questions": questions}
+
+
+@app.post("/api/admin/knowledge-gaps/{question_id}/answer")
+def answer_admin_knowledge_gap(
+    question_id: str,
+    request: KnowledgeGapAnswerRequest,
+    _: None = Depends(require_admin),
+):
+    questions = {
+        item["question_id"]: item
+        for item in read_jsonl(root_path() / "data/questionnaires/persona-questions.jsonl")
+    }
+    question = questions.get(question_id)
+    if not question:
+        raise HTTPException(status_code=404, detail="question not found")
+    evidence = [str(url) for url in request.evidence_urls]
+    content = (
+        f"질문: {question['question']}\n\n답변일: {request.answered_at.isoformat()}\n\n"
+        f"답변: {request.answer.strip()}\n\n"
+        f"참고 URL: {', '.join(evidence) if evidence else '없음'}"
+    )
+    values = {
+        "title": f"[{question_id}] {question['question']}",
+        "content": content,
+        "source_url": (
+            "https://github.com/shinkeonkim/oh-my-persona/blob/main/"
+            f"data/curated/persona-interview-answers.md#{question_id.lower()}"
+        ),
+        "observed_at": request.answered_at.isoformat(),
+        "status": "active" if request.visibility == "public" else "draft",
+    }
+    existing = next(
+        (item for item in knowledge_store.list(500, 0) if item["title"].startswith(f"[{question_id}]")),
+        None,
+    )
+    return knowledge_store.update(existing["id"], values) if existing else knowledge_store.create(values)
+
+
 @app.get("/api/admin/conversations")
 def admin_conversations(
     limit: int = Query(100, ge=1, le=500), offset: int = Query(0, ge=0),
@@ -345,3 +411,11 @@ def _knowledge_values(request: KnowledgeRequest) -> dict:
         "observed_at": request.observed_at.isoformat() if request.observed_at else None,
         "status": request.status,
     }
+
+
+def _gap_summary(questions: list[dict]) -> dict[str, int]:
+    summary: dict[str, int] = {}
+    for question in questions:
+        status = question["status"]
+        summary[status] = summary.get(status, 0) + 1
+    return summary

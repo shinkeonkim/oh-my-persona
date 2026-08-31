@@ -22,7 +22,11 @@ async function enter() {
     login.hidden = true;
     dashboard.hidden = false;
     sessionStorage.setItem("personaAdminToken", token);
-    await Promise.all([loadKnowledge(), loadConversations()]);
+    await Promise.all([
+      loadKnowledge(),
+      loadKnowledgeGaps(),
+      loadConversations(),
+    ]);
   } catch (error) {
     document.querySelector("#login-error").textContent = error.message;
   }
@@ -119,6 +123,91 @@ form.addEventListener("submit", async (event) => {
   loadKnowledge();
 });
 document.querySelector("#reload-knowledge").onclick = loadKnowledge;
+let gapQuestions = [];
+async function loadKnowledgeGaps() {
+  const data = await api("/api/admin/knowledge-gaps");
+  gapQuestions = data.questions;
+  document.querySelector("#gap-summary").textContent = Object.entries(
+    data.summary,
+  )
+    .map(([status, count]) => `${status} ${count}`)
+    .join(" · ");
+  document.querySelector("#gap-list").replaceChildren(
+    ...gapQuestions.map((item) => {
+      const node = document.createElement("article");
+      node.className = `item gap-item ${item.status}`;
+      node.innerHTML = '<h3></h3><p></p><span class="badge"></span>';
+      node.querySelector("h3").textContent = item.question;
+      node.querySelector("p").textContent =
+        `${item.category} · 근거 출처 ${item.unique_source_count}개`;
+      node.querySelector(".badge").textContent = item.status;
+      node.onclick = () => selectKnowledgeGap(item);
+      return node;
+    }),
+  );
+}
+function selectKnowledgeGap(item) {
+  const form = document.querySelector("#gap-answer-form"),
+    managed = item.managed_answer;
+  form.hidden = false;
+  document.querySelector("#gap-question-id").value = item.question_id;
+  document.querySelector("#gap-category").textContent =
+    `${item.question_id} · ${item.category}`;
+  document.querySelector("#gap-question").textContent = item.question;
+  document.querySelector("#gap-hint").textContent = item.answer_hint;
+  document.querySelector("#gap-answered-at").value =
+    managed?.observed_at || new Date().toISOString().slice(0, 10);
+  document.querySelector("#gap-visibility").value =
+    managed?.status === "active" ? "public" : "private";
+  document.querySelector("#gap-answer").value = managed
+    ? extractGapAnswer(managed.content)
+    : "";
+  document.querySelector("#gap-evidence-urls").value =
+    item.evidence_urls.join("\n");
+  const evidence = document.querySelector("#gap-evidence");
+  evidence.replaceChildren(
+    ...item.evidence_urls.map((url) => {
+      const link = document.createElement("a");
+      link.href = url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.textContent = url;
+      return link;
+    }),
+  );
+}
+function extractGapAnswer(content) {
+  return content.match(/답변: ([\s\S]*?)\n\n참고 URL:/)?.[1] || content;
+}
+document
+  .querySelector("#gap-answer-form")
+  .addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const questionId = document.querySelector("#gap-question-id").value,
+      status = document.querySelector("#gap-save-status"),
+      evidenceUrls = document
+        .querySelector("#gap-evidence-urls")
+        .value.split("\n")
+        .map((url) => url.trim())
+        .filter(Boolean);
+    status.textContent = "저장 중…";
+    try {
+      await api(`/api/admin/knowledge-gaps/${questionId}/answer`, {
+        method: "POST",
+        body: JSON.stringify({
+          answer: document.querySelector("#gap-answer").value,
+          answered_at: document.querySelector("#gap-answered-at").value,
+          visibility: document.querySelector("#gap-visibility").value,
+          evidence_urls: evidenceUrls,
+        }),
+      });
+      status.textContent = "저장했습니다.";
+      await Promise.all([loadKnowledgeGaps(), loadKnowledge()]);
+    } catch (error) {
+      status.textContent = error.message;
+    }
+  });
+document.querySelector("#reload-gaps").onclick = loadKnowledgeGaps;
 async function loadConversations() {
   const data = await api("/api/admin/conversations?limit=100");
   const list = document.querySelector("#conversation-list");

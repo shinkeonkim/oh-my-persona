@@ -14,4 +14,5 @@ data/processed/*
 !data/processed/.gitkeep
 !data/processed/chunks.jsonl
 !data/processed/audit-report.json
+!data/processed/knowledge-gaps.json
 data/questionnaires/persona-answers.todo.jsonl

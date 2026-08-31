@@ -103,3 +103,27 @@ def test_admin_can_send_a_direct_owner_reply(monkeypatch) -> None:
     assert response.json()["role"] == "owner"
     messages = client.get(f"/api/conversations/{conversation_id}").json()["messages"]
     assert messages[-1]["content"] == "제가 직접 확인하고 남긴 답변입니다."
+
+
+def test_admin_can_fill_a_knowledge_gap_as_draft_then_publish(monkeypatch) -> None:
+    monkeypatch.setenv("PERSONA_ADMIN_TOKEN", "test-admin-token")
+    headers = {"authorization": "Bearer test-admin-token"}
+    gaps = client.get("/api/admin/knowledge-gaps", headers=headers)
+    assert gaps.status_code == 200
+    assert len(gaps.json()["questions"]) == 50
+    payload = {
+        "answer": "운영진 대표 경험을 돌아보며 직접 작성한 답변입니다.",
+        "answered_at": "2026-08-31",
+        "visibility": "private",
+        "evidence_urls": ["https://github.com/shinkeonkim"],
+    }
+    draft = client.post("/api/admin/knowledge-gaps/PQ-014/answer", headers=headers, json=payload)
+    assert draft.status_code == 200
+    assert draft.json()["status"] == "draft"
+    assert client.get("/api/admin/knowledge-gaps", headers=headers).json()["summary"]["draft_answer"] >= 1
+    payload["visibility"] = "public"
+    published = client.post("/api/admin/knowledge-gaps/PQ-014/answer", headers=headers, json=payload)
+    assert published.json()["status"] == "active"
+    assert any(hit["chunk_id"].startswith("ADMIN-") for hit in client.get(
+        "/api/search", params={"q": "운영진 대표 경험 직접 작성"}
+    ).json()["hits"])

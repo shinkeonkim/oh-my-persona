@@ -161,6 +161,49 @@ label {
 .error {
   color: #b83232;
 }
+.help,
+.eyebrow,
+#gap-summary,
+#gap-save-status {
+  color: #64727d;
+  font-size: 0.78rem;
+}
+.eyebrow {
+  margin: 0 0 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.badge {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: #e8edf1;
+  color: #43515c;
+  font-size: 0.66rem;
+  font-weight: 700;
+}
+.gap-item.direct_answer .badge {
+  background: #dff4e5;
+  color: #27633a;
+}
+.gap-item.draft_answer .badge {
+  background: #fff0bd;
+  color: #6e5710;
+}
+.evidence-links {
+  display: grid;
+  gap: 4px;
+  max-height: 110px;
+  overflow: auto;
+}
+.evidence-links a {
+  overflow: hidden;
+  color: #496879;
+  font-size: 0.7rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 @media (max-width: 760px) {
   main {
     padding: 12px;

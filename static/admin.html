@@ -34,6 +34,7 @@
       <div id="dashboard" hidden>
         <nav>
           <button data-tab="knowledge" class="active">지식 데이터</button
+          ><button data-tab="gaps">지식 공백</button
           ><button data-tab="conversations">대화 기록</button>
         </nav>
         <section id="knowledge" class="tab">
@@ -83,6 +84,58 @@
                 <div id="packaged-list" class="list"></div>
               </details>
             </div>
+          </div>
+        </section>
+        <section id="gaps" class="tab" hidden>
+          <div class="grid gap-grid">
+            <div class="card">
+              <div class="title-row">
+                <div>
+                  <h2>추천 질문</h2>
+                  <p id="gap-summary"></p>
+                </div>
+                <button id="reload-gaps" class="secondary">새로고침</button>
+              </div>
+              <p class="help">
+                근거가 적고 직접 답변이 없는 질문부터 표시합니다.
+              </p>
+              <div id="gap-list" class="list"></div>
+            </div>
+            <form id="gap-answer-form" class="card" hidden>
+              <input id="gap-question-id" type="hidden" />
+              <p id="gap-category" class="eyebrow"></p>
+              <h2 id="gap-question"></h2>
+              <p id="gap-hint" class="help"></p>
+              <div id="gap-evidence" class="evidence-links"></div>
+              <label
+                >답변일<input id="gap-answered-at" type="date" required
+              /></label>
+              <label
+                >공개 범위<select id="gap-visibility">
+                  <option value="private">비공개 초안</option>
+                  <option value="public">공개·검색 반영</option>
+                </select></label
+              >
+              <label
+                >근거 URL (한 줄에 하나)<textarea
+                  id="gap-evidence-urls"
+                  rows="4"
+                  placeholder="https://"
+                ></textarea>
+              </label>
+              <label
+                >김신건의 직접 답변<textarea
+                  id="gap-answer"
+                  rows="12"
+                  required
+                  maxlength="50000"
+                  placeholder="상황과 시점, 판단 이유, 행동, 결과, 현재 관점을 직접 작성하세요."
+                ></textarea>
+              </label>
+              <div class="actions">
+                <span id="gap-save-status"></span><button>답변 저장</button>
+              </div>
+            </form>
           </div>
         </section>
         <section id="conversations" class="tab" hidden>
