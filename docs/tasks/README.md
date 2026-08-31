@@ -33,11 +33,13 @@ T00 기준선
 | T14 | DONE | 순차 | T13 | Playwright 기반 메신저 UI 재설계·시각 회귀·운영 검증 |
 | T15 | DONE | 순차+병렬 | T14 | 응답 Markdown·페르소나 이탈 차단·GitHub 프로젝트 근거 확장 |
 | T16 | DOING | 순차+병렬 | T15 | 임베드 SDK, 서명 세션, Discord Forum 비동기 상담, portfolio/resume 통합 |
+| T17 | DOING | 반복 | T16 | 추천 질문 기반 지식 공백 측정, 직접 답변, 재평가 루프 |
 
 T11은 2만 청크 품질 게이트까지 실행됐다. T12는 대화 맥락을 PostgreSQL에 저장하고 공개
 API를 보호하며, 질문지 답변을 검토 가능한 1인칭 자료로 승격한다. 구체적인 절차는
 [T11](T11-corpus-and-production.md)과 [T12](T12-conversations-and-interview.md)에 있다.
 외부 사이트 위젯과 Discord 상담 연결은 [T16](T16-embed-sdk-and-discord-forum.md)에 있다.
+질문으로 빈 지식 영역을 찾고 보강하는 반복 과정은 [T17](T17-knowledge-gap-loop.md)에 있다.
 
 ## 공통 Definition of Done
 

@@ -28,6 +28,7 @@ uv run persona inventory
 uv run persona chunk
 uv run persona audit
 uv run persona evaluate
+uv run persona knowledge-gaps
 uv run pytest
 ```
 

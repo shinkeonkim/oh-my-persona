@@ -15,6 +15,7 @@ from .github_deep import (
 )
 from .github_research import discover, write_inventory
 from .ingest import approve_inbox, inspect_inbox
+from .knowledge_gaps import write_knowledge_gap_outputs
 from .qa import build_answers
 from .service import search
 from .web_collect import collect_web_source
@@ -26,11 +27,13 @@ def project_root() -> Path:
 
 def main() -> None:
     parser = argparse.ArgumentParser(prog="persona")
-    parser.add_argument("command", choices=("validate", "inventory", "chunk", "audit", "collect-local", "collect-web", "collect-github-metadata", "collect-github-deep", "collect-github-prs", "collect-github-docs", "collect-github-priority", "inspect-inbox", "ingest-inbox", "build-answers", "evaluate"))
+    parser.add_argument("command", choices=("validate", "inventory", "chunk", "audit", "collect-local", "collect-web", "collect-github-metadata", "collect-github-deep", "collect-github-prs", "collect-github-docs", "collect-github-priority", "inspect-inbox", "ingest-inbox", "knowledge-gaps", "build-answers", "evaluate"))
     parser.add_argument("--approve", action="store_true", help="required before copying inbox files to raw")
     parser.add_argument("--source-id")
     parser.add_argument("--repo", type=Path)
     parser.add_argument("--answers", type=Path)
+    parser.add_argument("--output", type=Path)
+    parser.add_argument("--template", type=Path)
     args = parser.parse_args()
     root = project_root()
 
@@ -103,6 +106,10 @@ def main() -> None:
         if not args.answers:
             raise SystemExit("build-answers requires --answers")
         print(json.dumps(build_answers(root, args.answers), ensure_ascii=False))
+    elif args.command == "knowledge-gaps":
+        output = args.output or root / "data/processed/knowledge-gaps.json"
+        template = args.template or root / "data/questionnaires/persona-answers.todo.jsonl"
+        print(json.dumps(write_knowledge_gap_outputs(root, output, template), ensure_ascii=False))
     else:
         evaluations = read_jsonl(root / "evals/questions.jsonl")
         failures = []
