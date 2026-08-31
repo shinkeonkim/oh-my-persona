@@ -13,6 +13,12 @@ def test_health_and_models() -> None:
     assert client.get("/").status_code == 200
 
 
+def test_widget_sdk_is_revalidated_after_deployment() -> None:
+    response = client.get("/sdk/persona-widget.js")
+    assert response.status_code == 200
+    assert response.headers["cache-control"] == "no-cache, must-revalidate"
+
+
 def test_search_and_grounded_chat_without_credentials(monkeypatch) -> None:
     monkeypatch.delenv("PERSONA_LITELLM_URL", raising=False)
     monkeypatch.delenv("PERSONA_LITELLM_KEY", raising=False)

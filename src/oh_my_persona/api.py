@@ -96,7 +96,11 @@ def admin_index():
 
 @app.get("/sdk/persona-widget.js", include_in_schema=False)
 def widget_sdk():
-    return FileResponse(STATIC / "persona-widget.js", media_type="text/javascript")
+    return FileResponse(
+        STATIC / "persona-widget.js",
+        media_type="text/javascript",
+        headers={"Cache-Control": "no-cache, must-revalidate"},
+    )
 
 
 @app.get("/healthz")
