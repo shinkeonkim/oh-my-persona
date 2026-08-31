@@ -16,4 +16,4 @@
 
 - `data/registry/sources.jsonl`, `data/curated/claims.jsonl`
 - `migrations/001_initial.sql`
-- `src/oh_my_persona/models.py`
+- `backend/oh_my_persona/domain/`

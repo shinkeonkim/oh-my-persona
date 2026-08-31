@@ -1,11 +1,12 @@
 .git
 .github
-.venv
+backend/.venv
 .pytest_cache
 .ruff_cache
-node_modules
-test-results
-playwright-report
+frontend/node_modules
+frontend/dist
+frontend/test-results
+frontend/playwright-report
 **/__pycache__
 data/inbox
 data/raw
@@ -13,6 +14,7 @@ data/processed/*
 !data/processed/chunks.jsonl
 !data/processed/audit-report.json
 !data/processed/knowledge-gaps.json
-tests
+backend/tests
+frontend/tests
 evals
 compose.yaml

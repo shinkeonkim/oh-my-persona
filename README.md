@@ -14,26 +14,40 @@
 - `docs/persona.md`: 기존 3,000줄 문서를 보강한 시계열 페르소나
 - `docs/research-plan.md`: 20,000~50,000 **검색 청크** 확보 계획과 품질 게이트
 - `docs/architecture.md`: Strands Agents + LiteLLM + PostgreSQL/pgvector 기반 웹 챗봇 설계
-- `src/oh_my_persona`: 수집 자료 정규화·청킹·검증 및 API 골격
+- `backend/oh_my_persona`: 계층화된 FastAPI, RAG, 수집·저장 adapter
+- `backend/tests`: Python 계층별 단위·통합·아키텍처 테스트
+- `frontend/src`: React·TypeScript 사용자/Admin UI
+- `frontend/tests`: Vitest와 Playwright 브라우저 테스트
 - `/admin`: 토큰 인증 기반 관리 지식 CRUD, 패키지 청크 및 대화 기록 조회
 
 ## 빠른 시작
 
-Python 3.11 이상과 `uv`를 권장합니다.
+Python 3.11 이상, `uv`, Bun 1.3 이상을 사용합니다.
 
 ```bash
-uv sync --extra dev
-uv run persona validate
-uv run persona inventory
-uv run persona chunk
-uv run persona audit
-uv run persona evaluate
-uv run persona knowledge-gaps
+uv sync --project backend --extra dev
+uv run --project backend persona validate
+uv run --project backend persona inventory
+uv run --project backend persona chunk
+uv run --project backend persona audit
+uv run --project backend persona evaluate
+uv run --project backend persona knowledge-gaps
+cd backend
+uv run ruff check .
+uv run mypy
 uv run pytest
+cd ..
+
+cd frontend
+bun install --frozen-lockfile
+bun run typecheck
+bun run test
+bun run build
+bun run test:ui
 ```
 
 본인 서술은 `data/questionnaires/persona-questions.jsonl`의 질문에 로컬로 답변한 뒤
-`uv run persona build-answers --answers <답변.jsonl>`로 공개 가능한 답변만 검색 문서로
+`uv run --project backend persona build-answers --answers <답변.jsonl>`로 공개 가능한 답변만 검색 문서로
 승격합니다. 자세한 형식과 검토 절차는 [인터뷰 워크플로](docs/persona-interview-workflow.md)에
 있습니다.
 
@@ -47,7 +61,8 @@ uv run pytest
 PERSONA_MODEL_ID=litellm_proxy/persona-chat \
 PERSONA_LITELLM_URL=https://llm.example.com \
 PERSONA_LITELLM_KEY=... \
-uv run uvicorn oh_my_persona.api:app --reload
+PERSONA_ROOT="$PWD" \
+uv run --project backend uvicorn oh_my_persona.presentation.app:app --reload
 ```
 
 모델 키는 브라우저에 전달하지 않습니다. 운영에서는 LiteLLM Proxy의 논리 모델 이름(`persona-chat`)을 사용해 Provider를 서버 쪽에서 교체합니다.

@@ -13,17 +13,23 @@
 ## 목표 구조
 
 ```text
-src/oh_my_persona/
+backend/
+├── pyproject.toml
+├── oh_my_persona/
 ├── domain/          # entity, value object, repository protocol
 ├── application/     # chat, knowledge, conversation use case
 ├── infrastructure/  # PostgreSQL, corpus, LiteLLM/Strands, Discord adapter
-└── presentation/    # FastAPI app, dependency, DTO, router
+│   └── presentation/ # FastAPI app, dependency, DTO, router
+└── tests/            # Python 계층별 테스트
 
 frontend/
+├── package.json     # Bun 기반 독립 frontend project
+├── bun.lock
 ├── src/api/         # typed HTTP/SSE client
 ├── src/components/  # 공통 UI
 ├── src/features/    # chat, admin knowledge/gaps/chunks/conversations
 └── src/pages/       # ChatPage, AdminPage
+└── tests/           # Vitest/Playwright
 ```
 
 ## 실행 순서
@@ -74,3 +80,4 @@ frontend/
 - 2026-08-31: 레거시 정적 HTML/JS/CSS fallback을 제거하고 React build만 제공하도록 통일.
 - 2026-08-31: Ruff, strict mypy, Pytest 49개, Vitest, React build, Playwright 16개, Docker local build 통과.
 - 재배포는 사용자 요청 전까지 보류한다.
+- 2026-09-01: Python 프로젝트를 `backend/`, Bun 기반 React 프로젝트를 `frontend/`로 완전히 분리.
