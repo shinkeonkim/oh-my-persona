@@ -258,6 +258,8 @@ def delete_admin_knowledge(item_id: str, _: None = Depends(require_admin)):
 @app.get("/api/admin/knowledge-gaps")
 def admin_knowledge_gaps(_: None = Depends(require_admin)):
     path = root_path() / "data/processed/knowledge-gaps.json"
+    if not path.is_file():
+        raise HTTPException(status_code=503, detail="knowledge gap report is not packaged")
     report = json.loads(path.read_text(encoding="utf-8"))
     managed = knowledge_store.list(500, 0)
     answers = {

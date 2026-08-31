@@ -12,6 +12,7 @@ data/raw
 data/processed/*
 !data/processed/chunks.jsonl
 !data/processed/audit-report.json
+!data/processed/knowledge-gaps.json
 tests
 evals
 compose.yaml

@@ -127,3 +127,8 @@ def test_admin_can_fill_a_knowledge_gap_as_draft_then_publish(monkeypatch) -> No
     assert any(hit["chunk_id"].startswith("ADMIN-") for hit in client.get(
         "/api/search", params={"q": "운영진 대표 경험 직접 작성"}
     ).json()["hits"])
+
+
+def test_docker_image_includes_knowledge_gap_report() -> None:
+    dockerignore = (api.ROOT / ".dockerignore").read_text(encoding="utf-8")
+    assert "!data/processed/knowledge-gaps.json" in dockerignore
