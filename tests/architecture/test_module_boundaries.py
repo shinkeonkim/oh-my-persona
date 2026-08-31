@@ -37,6 +37,12 @@ def test_inner_layers_do_not_depend_on_outer_layers() -> None:
         ),
         "infrastructure": ("oh_my_persona.application", "oh_my_persona.presentation"),
         "application": ("oh_my_persona.infrastructure", "oh_my_persona.presentation"),
+        "support": (
+            "oh_my_persona.application",
+            "oh_my_persona.domain",
+            "oh_my_persona.infrastructure",
+            "oh_my_persona.presentation",
+        ),
     }
     violations: list[str] = []
     for layer, prefixes in forbidden.items():
@@ -48,6 +54,16 @@ def test_inner_layers_do_not_depend_on_outer_layers() -> None:
                     if resolved.startswith(prefixes):
                         violations.append(f"{path.relative_to(PACKAGE_ROOT)} -> {resolved}")
     assert violations == []
+
+
+def test_legacy_static_application_renderers_are_removed() -> None:
+    repository_root = PACKAGE_ROOT.parents[1]
+    legacy = {
+        path.name
+        for path in (repository_root / "static").glob("*")
+        if path.name != "persona-widget.js"
+    }
+    assert legacy == set()
 
 
 def _resolve_import(path: Path, node: ast.ImportFrom) -> str:

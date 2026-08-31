@@ -13,7 +13,7 @@ from .client import record_document as _record
 from .client import rest as _gh
 
 
-def _doc_paths(tree: list[dict[str, Any]], limit: int = 40) -> list[str]:
+def select_document_paths(tree: list[dict[str, Any]], limit: int = 40) -> list[str]:
     keywords = {
         "architecture",
         "changelog",
@@ -101,7 +101,7 @@ def collect_public_docs(root: Path) -> dict[str, int]:
         tree_response = _gh(f"repos/{full_name}/git/trees/{commit}", {"recursive": "1"})
         if not tree_response:
             continue
-        paths = _doc_paths(tree_response.get("tree", []))
+        paths = select_document_paths(tree_response.get("tree", []))
         if not paths:
             continue
         owner, name = full_name.split("/", 1)

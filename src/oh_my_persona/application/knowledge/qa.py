@@ -6,7 +6,7 @@ from datetime import UTC, datetime
 from pathlib import Path
 
 from ...domain.privacy import SENSITIVE_PATTERNS
-from .corpus import read_jsonl
+from ...support import read_jsonl
 
 
 def build_answers(root: Path, answers_path: Path) -> dict[str, int]:

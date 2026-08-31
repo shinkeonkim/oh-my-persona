@@ -1,1 +1,1 @@
-"""Package boundary."""
+"""Discord conversation bridge adapter."""

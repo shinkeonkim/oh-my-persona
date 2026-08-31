@@ -37,9 +37,7 @@ def test_widget_session_requires_its_access_token() -> None:
 
 
 def test_widget_chat_reuses_authorized_conversation(monkeypatch) -> None:
-    monkeypatch.setattr(
-        api.persona, "answer", lambda *_: ("제가 직접 답하는 내용입니다.", [])
-    )
+    monkeypatch.setattr(api.persona, "answer", lambda *_: ("제가 직접 답하는 내용입니다.", []))
     session = client.post("/api/widget/sessions").json()
     response = client.post(
         "/api/widget/chat",

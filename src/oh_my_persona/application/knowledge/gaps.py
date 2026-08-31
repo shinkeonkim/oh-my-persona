@@ -5,14 +5,13 @@ from collections import Counter
 from pathlib import Path
 from typing import Any
 
-from .corpus import read_jsonl
-from .retrieval import MemoryRetriever
+from ...domain.search import Retriever
+from ...support import read_jsonl
 
 
-def analyze_knowledge_gaps(root: Path, limit: int = 8) -> dict[str, Any]:
+def analyze_knowledge_gaps(root: Path, retriever: Retriever, limit: int = 8) -> dict[str, Any]:
     """Rank interview questions by how weakly the current corpus can answer them."""
     questions = read_jsonl(root / "data/questionnaires/persona-questions.jsonl")
-    retriever = MemoryRetriever(root)
     rows = []
     for question in questions:
         hits = retriever.search(question["question"], limit)
@@ -58,8 +57,10 @@ def analyze_knowledge_gaps(root: Path, limit: int = 8) -> dict[str, Any]:
     }
 
 
-def write_knowledge_gap_outputs(root: Path, output: Path, template: Path) -> dict[str, Any]:
-    report = analyze_knowledge_gaps(root)
+def write_knowledge_gap_outputs(
+    root: Path, output: Path, template: Path, retriever: Retriever
+) -> dict[str, Any]:
+    report = analyze_knowledge_gaps(root, retriever)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     unanswered = [item for item in report["questions"] if item["status"] != "direct_answer"]

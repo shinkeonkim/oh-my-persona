@@ -1,1 +1,1 @@
-"""Package boundary."""
+"""LLM provider adapters."""

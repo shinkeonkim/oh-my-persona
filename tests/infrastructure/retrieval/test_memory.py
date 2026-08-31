@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from oh_my_persona.application.knowledge.retrieval import MemoryRetriever
+from oh_my_persona.infrastructure.retrieval import MemoryRetriever
 
 ROOT = Path(__file__).resolve().parents[3]
 

@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Any
 
 from ...domain.privacy import SENSITIVE_PATTERNS
+from ...support import read_jsonl
 from .inbox import MAX_FILE_BYTES
 
 TEXT_SUFFIXES = {
@@ -52,7 +53,7 @@ def collect_local_repository(root: Path, repo: Path, source: dict[str, Any]) -> 
     tracked = git_value(repo, "ls-files", "-z").split("\0")
     destination_root = root / "data/raw" / source["source_id"]
     manifest_path = root / "data/registry/documents.jsonl"
-    existing = _read_jsonl(manifest_path)
+    existing = read_jsonl(manifest_path)
     retained = [item for item in existing if item.get("source_id") != source["source_id"]]
     observed_at = datetime.now(UTC).isoformat()
     accepted = rejected = duplicates = 0
@@ -166,14 +167,6 @@ def collect_local_repository(root: Path, repo: Path, source: dict[str, Any]) -> 
         encoding="utf-8",
     )
     return {"accepted": accepted, "rejected": rejected, "duplicates": duplicates}
-
-
-def _read_jsonl(path: Path) -> list[dict[str, Any]]:
-    if not path.exists():
-        return []
-    return [
-        json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()
-    ]
 
 
 def _mime(path: Path) -> str:

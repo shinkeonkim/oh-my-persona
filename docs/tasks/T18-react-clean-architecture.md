@@ -1,6 +1,6 @@
 # T18 — React 전환·Python 책임 분리·응답 지연 개선
 
-상태: DOING
+상태: DONE (코드 검증 완료, 재배포는 사용자 요청 시 수행)
 선행: T17
 
 ## 현재 기준선
@@ -57,7 +57,7 @@ frontend/
 
 - 2026-08-31: React/TypeScript/Vite 사용자·관리자 SPA와 멀티아키텍처 운영 배포 완료.
 - 2026-08-31: Strands 실제 SSE, 연결 취소, 45초 hard timeout 적용.
-- 2026-08-31: FastAPI composition root 527→약 290줄, Admin router 233줄로 분리.
+- 2026-08-31: FastAPI composition root 527→112줄, public/chat/widget/admin router 패키지로 분리.
 - 2026-08-31: domain entity/repository protocol 및 application ChatUseCase 도입.
 - 2026-08-31: 테스트를 `tests/domain`, `tests/application`, UI feature 검증으로 확장.
 - 2026-08-31: GitHub REST/GraphQL client, 민감정보 검사, 문서 writer를 infrastructure adapter로 분리.
@@ -68,5 +68,9 @@ frontend/
 - 2026-08-31: 루트 production 모듈을 제거하고 application/domain/infrastructure/presentation/bootstrap 패키지로 전면 이동.
 - 2026-08-31: PersonaService의 persistence·LLM 직접 생성을 제거하고 composition container에서 의존성을 주입.
 - 2026-08-31: Conversation PostgreSQL와 memory adapter를 물리적으로 분리하고 도메인 repository protocol로 연결.
-- 2026-08-31: strict mypy 범위를 일부 16개 파일에서 전체 production 48개 파일로 확대하고 전부 통과.
-- 남은 작업: Knowledge PostgreSQL와 memory adapter의 물리적 분리, public/chat/widget router 분리.
+- 2026-08-31: strict mypy 범위를 일부 16개 파일에서 전체 production 62개 파일로 확대하고 전부 통과.
+- 2026-08-31: Knowledge PostgreSQL/memory, retrieval PostgreSQL/memory adapter를 물리적으로 분리.
+- 2026-08-31: Admin 지식·지식 공백·대화 router를 각각 독립 모듈로 분리.
+- 2026-08-31: 레거시 정적 HTML/JS/CSS fallback을 제거하고 React build만 제공하도록 통일.
+- 2026-08-31: Ruff, strict mypy, Pytest 49개, Vitest, React build, Playwright 16개, Docker local build 통과.
+- 재배포는 사용자 요청 전까지 보류한다.

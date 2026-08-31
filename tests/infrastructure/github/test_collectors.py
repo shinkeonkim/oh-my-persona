@@ -1,7 +1,7 @@
-from oh_my_persona.infrastructure.github import _doc_paths
+from oh_my_persona.infrastructure.github import select_document_paths
 
 
-def test_doc_paths_prioritize_docs_and_exclude_readme() -> None:
+def test_document_paths_prioritize_docs_and_exclude_readme() -> None:
     tree = [
         {"type": "blob", "path": "README.md"},
         {"type": "blob", "path": "docs/architecture.md"},
@@ -10,4 +10,8 @@ def test_doc_paths_prioritize_docs_and_exclude_readme() -> None:
         {"type": "blob", "path": "DESIGN.md"},
         {"type": "tree", "path": "docs"},
     ]
-    assert _doc_paths(tree) == [".github/CONTRIBUTING.md", "docs/architecture.md", "DESIGN.md"]
+    assert select_document_paths(tree) == [
+        ".github/CONTRIBUTING.md",
+        "docs/architecture.md",
+        "DESIGN.md",
+    ]

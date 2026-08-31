@@ -1,17 +1,3 @@
-import json
-from pathlib import Path
-from typing import Any
+from ...support import read_jsonl
 
-
-def read_jsonl(path: Path) -> list[dict[str, Any]]:
-    records: list[dict[str, Any]] = []
-    if not path.exists():
-        return records
-    for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
-        if not line.strip():
-            continue
-        try:
-            records.append(json.loads(line))
-        except json.JSONDecodeError as error:
-            raise ValueError(f"{path}:{number}: {error.msg}") from error
-    return records
+__all__ = ["read_jsonl"]

@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 
 from ..application.knowledge.audit import write_audit
-from ..application.knowledge.corpus import build_chunks, iter_corpus_files, read_jsonl, validate
+from ..application.knowledge.corpus import build_chunks, iter_corpus_files, validate
 from ..application.knowledge.gaps import write_knowledge_gap_outputs
 from ..application.knowledge.qa import build_answers
 from ..bootstrap.container import create_container
@@ -19,6 +19,8 @@ from ..infrastructure.github import (
     collect_pull_requests,
 )
 from ..infrastructure.github.research import discover, write_inventory
+from ..infrastructure.retrieval import MemoryRetriever
+from ..support import read_jsonl
 
 
 def project_root() -> Path:
@@ -145,7 +147,12 @@ def main() -> None:
     elif args.command == "knowledge-gaps":
         output = args.output or root / "data/processed/knowledge-gaps.json"
         template = args.template or root / "data/questionnaires/persona-answers.todo.jsonl"
-        print(json.dumps(write_knowledge_gap_outputs(root, output, template), ensure_ascii=False))
+        print(
+            json.dumps(
+                write_knowledge_gap_outputs(root, output, template, MemoryRetriever(root)),
+                ensure_ascii=False,
+            )
+        )
     else:
         evaluations = read_jsonl(root / "evals/questions.jsonl")
         failures = []

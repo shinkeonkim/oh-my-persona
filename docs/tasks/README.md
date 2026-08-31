@@ -34,7 +34,7 @@ T00 기준선
 | T15 | DONE | 순차+병렬 | T14 | 응답 Markdown·페르소나 이탈 차단·GitHub 프로젝트 근거 확장 |
 | T16 | DOING | 순차+병렬 | T15 | 임베드 SDK, 서명 세션, Discord Forum 비동기 상담, portfolio/resume 통합 |
 | T17 | DOING | 반복 | T16 | 추천 질문 기반 지식 공백 측정, 직접 답변, 재평가 루프 |
-| T18 | DOING | 순차 | T17 | React·TypeScript 전환, Python 계층 분리, 실제 SSE와 지연 개선 |
+| T18 | DONE | 순차 | T17 | React·TypeScript 전환, Python 계층 분리, 실제 SSE와 지연 개선 |
 
 T11은 2만 청크 품질 게이트까지 실행됐다. T12는 대화 맥락을 PostgreSQL에 저장하고 공개
 API를 보호하며, 질문지 답변을 검토 가능한 1인칭 자료로 승격한다. 구체적인 절차는

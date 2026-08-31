@@ -1,1 +1,1 @@
-"""Package boundary."""
+"""Memory and PostgreSQL repository adapters."""

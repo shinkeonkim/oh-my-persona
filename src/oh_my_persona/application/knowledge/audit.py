@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Any
 
 from ...domain.privacy import SENSITIVE_PATTERNS
-from .corpus import read_jsonl
+from ...support import read_jsonl
 
 
 def audit_corpus(root: Path) -> dict[str, Any]:

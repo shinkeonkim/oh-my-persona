@@ -6,8 +6,7 @@ from typing import Any
 
 from ..domain.privacy import PRIVATE_QUERY_TERMS
 from ..domain.repositories import KnowledgeRepository
-from ..domain.search import SearchHit
-from .knowledge.retrieval import MemoryRetriever, tokenize
+from ..domain.search import Retriever, SearchHit, tokenize
 
 AnswerGenerator = Callable[
     [str, list[dict[str, Any]], str | None, list[dict[str, Any]] | None],
@@ -20,7 +19,7 @@ class PersonaService:
 
     def __init__(
         self,
-        retriever: MemoryRetriever,
+        retriever: Retriever,
         knowledge_repository: KnowledgeRepository,
         answer_generator: AnswerGenerator | None = None,
     ) -> None:
