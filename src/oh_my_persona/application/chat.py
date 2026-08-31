@@ -2,17 +2,19 @@ from __future__ import annotations
 
 from collections.abc import Callable
 from dataclasses import dataclass
+from typing import Any
 
 from ..domain.repositories import ConversationRepository
 
-AnswerFunction = Callable[[str, str | None, list[dict] | None], tuple[str, list[dict]]]
+Record = dict[str, Any]
+AnswerFunction = Callable[[str, str | None, list[Record] | None], tuple[str, list[Record]]]
 
 
 @dataclass(frozen=True, slots=True)
 class ChatResult:
     conversation_id: str
     answer: str
-    sources: list[dict]
+    sources: list[Record]
 
 
 class ChatUseCase:

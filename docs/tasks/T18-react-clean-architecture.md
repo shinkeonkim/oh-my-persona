@@ -60,4 +60,6 @@ frontend/
 - 2026-08-31: FastAPI composition root 527→약 290줄, Admin router 233줄로 분리.
 - 2026-08-31: domain entity/repository protocol 및 application ChatUseCase 도입.
 - 2026-08-31: 테스트를 `tests/domain`, `tests/application`, UI feature 검증으로 확장.
-- 남은 작업: GitHub 수집기 adapter 분리, PostgreSQL store adapter 세분화와 정적 타입 검사 강화.
+- 2026-08-31: GitHub REST/GraphQL client, 민감정보 검사, 문서 writer를 infrastructure adapter로 분리.
+- 2026-08-31: 새 domain/application/presentation 경계에 strict mypy 검사와 CI gate 적용.
+- 남은 작업: GitHub 수집 use case 추가 분리, PostgreSQL store adapter 세분화.
