@@ -25,6 +25,12 @@
       this.render();
       this.shadowRoot.addEventListener("click", (event) => this.onClick(event));
       this.shadowRoot.addEventListener("submit", (event) => this.onSubmit(event));
+      this.shadowRoot.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" && !event.shiftKey && event.target.name === "message") {
+          event.preventDefault();
+          event.target.form.requestSubmit();
+        }
+      });
     }
 
     disconnectedCallback() { clearInterval(this.poller); }

@@ -57,6 +57,14 @@ def test_discord_owner_reply_is_delivered_only_to_recent_linked_session(monkeypa
     assert bridge.accept_owner_message("200", "42", "늦은 답변") is None
 
 
+def test_discord_owner_allowlist_is_required(monkeypatch) -> None:
+    monkeypatch.delenv("PERSONA_DISCORD_OWNER_IDS", raising=False)
+    store = ConversationStore()
+    conversation_id, _ = create_widget_session(store)
+    store.update_metadata(conversation_id, {"discord_thread_id": "300"})
+    assert DiscordBridge(store).accept_owner_message("300", "42", "답변") is None
+
+
 def test_widget_cors_allows_only_registered_sites() -> None:
     allowed = client.options(
         "/api/widget/sessions",

@@ -64,3 +64,8 @@ T16A 현행/공식 문서 조사
 - `PERSONA_DISCORD_OWNER_IDS`: Forum 답변을 전달할 Discord 사용자 ID 목록
 
 Secret 값은 저장소에 커밋하지 않는다.
+
+Discord Developer Portal에서 bot의 **Message Content Intent**를 활성화한다. 서버 초대 시 대상
+Forum에 `View Channel`, `Send Messages`, `Send Messages in Threads`, `Create Public Threads`,
+`Read Message History` 권한을 부여한다. `PERSONA_DISCORD_OWNER_IDS`가 비어 있으면 Forum에서
+웹 세션으로 전달되는 메시지는 보안을 위해 모두 거부한다.

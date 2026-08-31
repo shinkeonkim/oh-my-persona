@@ -43,6 +43,7 @@ class DiscordBridge:
         )
         thread_id = metadata.get("discord_thread_id")
         if thread_id:
+            self._request("PATCH", f"/channels/{thread_id}", {"archived": False})
             self._request("POST", f"/channels/{thread_id}/messages", {"content": content})
             return
         label = (origin or metadata.get("widget_origin") or "web").replace("https://", "")
@@ -51,7 +52,6 @@ class DiscordBridge:
             f"/channels/{self.forum_channel_id}/threads",
             {
                 "name": f"웹 상담 · {label[:50]} · {conversation_id[:8]}",
-                "auto_archive_duration": 4320,
                 "message": {"content": content},
             },
         )
@@ -63,7 +63,7 @@ class DiscordBridge:
             item.strip() for item in os.environ.get("PERSONA_DISCORD_OWNER_IDS", "").split(",")
             if item.strip()
         }
-        if not content.strip() or (allowed and author_id not in allowed):
+        if not content.strip() or not allowed or author_id not in allowed:
             return None
         conversation_id = self.store.conversation_for_discord_thread(thread_id, active_days=30)
         if not conversation_id:
