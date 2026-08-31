@@ -79,10 +79,38 @@
               </div>
               <p id="knowledge-summary"></p>
               <div id="knowledge-list" class="list"></div>
-              <details>
-                <summary>패키지된 검색 청크 보기</summary>
-                <div id="packaged-list" class="list"></div>
-              </details>
+            </div>
+          </div>
+          <div class="card chunk-explorer">
+            <div class="title-row">
+              <div>
+                <h2>검색 청크 탐색기</h2>
+                <p id="chunk-summary"></p>
+              </div>
+              <button id="reload-chunks" class="secondary">검색</button>
+            </div>
+            <div class="chunk-filters">
+              <input
+                id="chunk-query"
+                type="search"
+                placeholder="내용, 문서 ID, 경로 검색"
+              />
+              <select id="chunk-source">
+                <option value="">모든 출처</option>
+              </select>
+            </div>
+            <div class="chunk-layout">
+              <div>
+                <div id="packaged-list" class="list chunk-list"></div>
+                <div class="pager">
+                  <button id="chunk-prev" class="secondary">이전</button
+                  ><span id="chunk-page"></span
+                  ><button id="chunk-next" class="secondary">다음</button>
+                </div>
+              </div>
+              <div id="chunk-detail" class="chunk-detail">
+                청크를 선택하면 전체 내용과 출처 계보를 표시합니다.
+              </div>
             </div>
           </div>
         </section>
@@ -99,6 +127,37 @@
               <p class="help">
                 근거가 적고 직접 답변이 없는 질문부터 표시합니다.
               </p>
+              <details class="question-create">
+                <summary>질문 생성</summary>
+                <form id="gap-question-form">
+                  <label
+                    >질문<textarea
+                      id="new-gap-question"
+                      required
+                      rows="3"
+                      maxlength="500"
+                    ></textarea>
+                  </label>
+                  <label
+                    >분류<input
+                      id="new-gap-category"
+                      required
+                      maxlength="80"
+                      placeholder="career, values, projects"
+                  /></label>
+                  <label
+                    >시점<input
+                      id="new-gap-time-scope"
+                      required
+                      maxlength="80"
+                      placeholder="2026-08 또는 lifetime"
+                  /></label>
+                  <div class="actions">
+                    <span id="gap-question-status"></span
+                    ><button>질문 생성</button>
+                  </div>
+                </form>
+              </details>
               <div id="gap-list" class="list"></div>
             </div>
             <form id="gap-answer-form" class="card" hidden>
@@ -133,6 +192,14 @@
                 ></textarea>
               </label>
               <div class="actions">
+                <button
+                  type="button"
+                  id="delete-gap-question"
+                  class="danger"
+                  hidden
+                >
+                  질문 삭제
+                </button>
                 <span id="gap-save-status"></span><button>답변 저장</button>
               </div>
             </form>

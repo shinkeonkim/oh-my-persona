@@ -18,7 +18,7 @@ from .agent import ALLOWED_MODELS
 from .conversations import ConversationStore, RateLimiter
 from .corpus import read_jsonl
 from .discord_bridge import DiscordBridge
-from .service import answer, knowledge_store, root_path, search
+from .service import answer, knowledge_question_store, knowledge_store, root_path, search
 from .sessions import create_widget_session, verify_widget_session
 
 ROOT = root_path()
@@ -32,6 +32,7 @@ discord_bridge = DiscordBridge(store)
 async def lifespan(_: FastAPI):
     await asyncio.to_thread(store.initialize)
     await asyncio.to_thread(knowledge_store.initialize)
+    await asyncio.to_thread(knowledge_question_store.initialize)
     yield
 
 
@@ -80,6 +81,12 @@ class KnowledgeGapAnswerRequest(BaseModel):
     answered_at: date
     visibility: str = Field(pattern="^(private|public)$")
     evidence_urls: list[AnyHttpUrl] = Field(default_factory=list, max_length=20)
+
+
+class KnowledgeGapQuestionRequest(BaseModel):
+    question: str = Field(min_length=3, max_length=500)
+    category: str = Field(min_length=1, max_length=80)
+    time_scope: str = Field(min_length=1, max_length=80)
 
 
 def require_admin(authorization: str | None = Header(default=None)) -> None:
@@ -230,16 +237,58 @@ def get_conversation(conversation_id: str):
 @app.get("/api/admin/knowledge")
 def admin_knowledge(
     limit: int = Query(100, ge=1, le=500), offset: int = Query(0, ge=0),
+    packaged_limit: int = Query(50, ge=1, le=200),
+    packaged_offset: int = Query(0, ge=0),
+    q: str | None = Query(None, max_length=200),
+    source_id: str | None = Query(None, max_length=100),
     _: None = Depends(require_admin),
 ):
     managed = knowledge_store.list(limit, offset)
     chunks = read_jsonl(root_path() / "data/processed/chunks.jsonl")
-    packaged = [{
-        "id": item["chunk_id"], "title": item.get("source_path", "packaged chunk"),
-        "content": item["text"], "source_url": item.get("canonical_url"),
-        "observed_at": item.get("observed_at"), "status": "packaged", "managed": False,
-    } for item in chunks[offset : offset + limit]]
-    return {"managed": managed, "packaged": packaged, "packaged_total": len(chunks)}
+    sources = {item["source_id"]: item for item in read_jsonl(
+        root_path() / "data/registry/sources.jsonl"
+    )}
+    query = (q or "").casefold()
+    filtered = [
+        item for item in chunks
+        if (not source_id or item.get("source_id") == source_id)
+        and (not query or query in " ".join((
+            item.get("text", ""), item.get("source_path", ""),
+            item.get("source_id", ""), item.get("document_id", ""),
+        )).casefold())
+    ]
+    packaged = [
+        _packaged_chunk(item, sources.get(item.get("source_id", ""), {}))
+        for item in filtered[packaged_offset : packaged_offset + packaged_limit]
+    ]
+    facets = sorted({
+        (item.get("source_id"), sources.get(item.get("source_id", ""), {}).get("title"))
+        for item in chunks if item.get("source_id")
+    })
+    return {
+        "managed": managed,
+        "packaged": packaged,
+        "packaged_total": len(filtered),
+        "packaged_unfiltered_total": len(chunks),
+        "packaged_offset": packaged_offset,
+        "packaged_limit": packaged_limit,
+        "source_facets": [{"source_id": key, "title": title} for key, title in facets],
+    }
+
+
+@app.get("/api/admin/chunks/{chunk_id}")
+def admin_chunk(chunk_id: str, _: None = Depends(require_admin)):
+    chunk = next((
+        item for item in read_jsonl(root_path() / "data/processed/chunks.jsonl")
+        if item["chunk_id"] == chunk_id
+    ), None)
+    if not chunk:
+        raise HTTPException(status_code=404, detail="chunk not found")
+    source = next((
+        item for item in read_jsonl(root_path() / "data/registry/sources.jsonl")
+        if item["source_id"] == chunk.get("source_id")
+    ), {})
+    return _packaged_chunk(chunk, source)
 
 
 @app.post("/api/admin/knowledge", status_code=201)
@@ -272,10 +321,16 @@ def admin_knowledge_gaps(_: None = Depends(require_admin)):
     managed = knowledge_store.list(500, 0)
     answers = {
         item["title"].split("]", 1)[0].removeprefix("["): item
-        for item in managed if item["title"].startswith("[PQ-") and "]" in item["title"]
+        for item in managed if item["title"].startswith("[") and "]" in item["title"]
     }
+    custom = [{
+        **item, "status": "empty", "priority": 3, "evidence_count": 0,
+        "unique_source_count": 0, "source_ids": [], "evidence_urls": [],
+        "answer_hint": "새로 만든 질문입니다. 시점, 판단 이유, 행동, 결과를 직접 답변하세요.",
+        "custom": True,
+    } for item in knowledge_question_store.list()]
     questions = []
-    for question in report["questions"]:
+    for question in [*custom, *report["questions"]]:
         item = answers.get(question["question_id"])
         questions.append({
             **question,
@@ -288,6 +343,19 @@ def admin_knowledge_gaps(_: None = Depends(require_admin)):
     return {"summary": _gap_summary(questions), "questions": questions}
 
 
+@app.post("/api/admin/knowledge-gaps/questions", status_code=201)
+def create_admin_knowledge_gap_question(
+    request: KnowledgeGapQuestionRequest, _: None = Depends(require_admin),
+):
+    return knowledge_question_store.create(request.model_dump())
+
+
+@app.delete("/api/admin/knowledge-gaps/questions/{question_id}", status_code=204)
+def delete_admin_knowledge_gap_question(question_id: str, _: None = Depends(require_admin)):
+    if not knowledge_question_store.delete(question_id):
+        raise HTTPException(status_code=404, detail="question not found")
+
+
 @app.post("/api/admin/knowledge-gaps/{question_id}/answer")
 def answer_admin_knowledge_gap(
     question_id: str,
@@ -298,6 +366,9 @@ def answer_admin_knowledge_gap(
         item["question_id"]: item
         for item in read_jsonl(root_path() / "data/questionnaires/persona-questions.jsonl")
     }
+    custom = knowledge_question_store.get(question_id)
+    if custom:
+        questions[question_id] = custom
     question = questions.get(question_id)
     if not question:
         raise HTTPException(status_code=404, detail="question not found")
@@ -434,3 +505,22 @@ def _gap_summary(questions: list[dict]) -> dict[str, int]:
         status = question["status"]
         summary[status] = summary.get(status, 0) + 1
     return summary
+
+
+def _packaged_chunk(chunk: dict, source: dict) -> dict:
+    return {
+        "id": chunk["chunk_id"],
+        "chunk_id": chunk["chunk_id"],
+        "document_id": chunk.get("document_id"),
+        "source_id": chunk.get("source_id"),
+        "title": source.get("title") or chunk.get("source_path", "packaged chunk"),
+        "content": chunk["text"],
+        "source_path": chunk.get("source_path"),
+        "source_url": chunk.get("canonical_url") or source.get("canonical_url"),
+        "published_at": source.get("published_at"),
+        "observed_at": chunk.get("observed_at") or source.get("observed_at"),
+        "content_sha256": chunk.get("content_sha256"),
+        "ordinal": chunk.get("ordinal"),
+        "status": "packaged",
+        "managed": False,
+    }

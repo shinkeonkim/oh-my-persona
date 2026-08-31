@@ -135,3 +135,44 @@ def test_admin_can_fill_a_knowledge_gap_as_draft_then_publish(monkeypatch) -> No
 def test_docker_image_includes_knowledge_gap_report() -> None:
     dockerignore = (api.ROOT / ".dockerignore").read_text(encoding="utf-8")
     assert "!data/processed/knowledge-gaps.json" in dockerignore
+
+
+def test_admin_can_create_answer_and_delete_a_custom_gap_question(monkeypatch) -> None:
+    monkeypatch.setenv("PERSONA_ADMIN_TOKEN", "test-admin-token")
+    headers = {"authorization": "Bearer test-admin-token"}
+    created = client.post("/api/admin/knowledge-gaps/questions", headers=headers, json={
+        "question": "새롭게 기록하고 싶은 경험은 무엇인가요?",
+        "category": "reflection",
+        "time_scope": "2026-08",
+    })
+    assert created.status_code == 201
+    question_id = created.json()["question_id"]
+    gaps = client.get("/api/admin/knowledge-gaps", headers=headers).json()["questions"]
+    assert any(item["question_id"] == question_id and item["custom"] for item in gaps)
+    answer = client.post(f"/api/admin/knowledge-gaps/{question_id}/answer", headers=headers, json={
+        "answer": "새 질문에 직접 답변했습니다.",
+        "answered_at": "2026-08-31",
+        "visibility": "private",
+        "evidence_urls": [],
+    })
+    assert answer.status_code == 200
+    assert client.delete(
+        f"/api/admin/knowledge-gaps/questions/{question_id}", headers=headers
+    ).status_code == 204
+
+
+def test_admin_can_filter_and_inspect_packaged_chunks(monkeypatch) -> None:
+    monkeypatch.setenv("PERSONA_ADMIN_TOKEN", "test-admin-token")
+    headers = {"authorization": "Bearer test-admin-token"}
+    response = client.get(
+        "/api/admin/knowledge", headers=headers,
+        params={"packaged_limit": 5, "q": "특전사"},
+    )
+    assert response.status_code == 200
+    data = response.json()
+    assert data["packaged_unfiltered_total"] >= data["packaged_total"] > 0
+    assert data["source_facets"]
+    chunk = data["packaged"][0]
+    detail = client.get(f"/api/admin/chunks/{chunk['chunk_id']}", headers=headers).json()
+    assert detail["content"]
+    assert detail["source_path"]

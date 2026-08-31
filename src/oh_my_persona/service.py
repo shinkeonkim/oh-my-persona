@@ -5,12 +5,13 @@ from dataclasses import asdict
 from functools import lru_cache
 from pathlib import Path
 
-from .admin import KnowledgeStore
+from .admin import KnowledgeQuestionStore, KnowledgeStore
 from .models import SearchHit
 from .retrieval import MemoryRetriever, tokenize
 
 PRIVATE_QUERY_TERMS = ("주민등록번호", "전화번호", "집주소", "비밀번호", "API 키", "private key")
 knowledge_store = KnowledgeStore(os.environ.get("PERSONA_DATABASE_URL"))
+knowledge_question_store = KnowledgeQuestionStore(os.environ.get("PERSONA_DATABASE_URL"))
 
 
 def root_path() -> Path:

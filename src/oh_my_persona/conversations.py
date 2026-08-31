@@ -160,6 +160,8 @@ class ConversationStore:
         if not self.database_url:
             items = []
             for conversation_id, messages in reversed(list(self._memory.items())):
+                if not messages:
+                    continue
                 items.append({
                     "id": conversation_id,
                     "message_count": len(messages),
@@ -176,7 +178,8 @@ class ConversationStore:
                    coalesce((array_agg(m.content ORDER BY m.id)
                      FILTER (WHERE m.role='user'))[1],'') AS preview
                    FROM conversations c LEFT JOIN conversation_messages m ON m.conversation_id=c.id
-                   GROUP BY c.id ORDER BY c.updated_at DESC LIMIT %s OFFSET %s""",
+                   GROUP BY c.id HAVING count(m.id) > 0
+                   ORDER BY c.updated_at DESC LIMIT %s OFFSET %s""",
                 (limit, offset),
             ).fetchall()
         return [

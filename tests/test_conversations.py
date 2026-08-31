@@ -15,3 +15,13 @@ def test_memory_store_and_rate_limit() -> None:
     allowed, retry_after = limiter.consume("visitor")
     assert not allowed
     assert retry_after > 0
+
+
+def test_conversation_list_hides_empty_conversations() -> None:
+    store = ConversationStore(database_url=None)
+    empty_id = store.create()
+    visible_id = store.create()
+    store.append(visible_id, "user", "메시지가 있는 대화")
+    ids = [item["id"] for item in store.list_conversations()]
+    assert visible_id in ids
+    assert empty_id not in ids

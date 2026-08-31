@@ -110,5 +110,100 @@ class KnowledgeStore:
             return result.rowcount > 0
 
 
+class KnowledgeQuestionStore:
+    def __init__(self, database_url: str | None = None):
+        self.database_url = database_url
+        self._memory: dict[str, dict] = {}
+        self._lock = threading.Lock()
+
+    def initialize(self) -> None:
+        if not self.database_url:
+            return
+        import psycopg
+
+        with psycopg.connect(self.database_url) as connection:
+            connection.execute("""
+                CREATE TABLE IF NOT EXISTS admin_knowledge_questions (
+                  id uuid PRIMARY KEY, question text NOT NULL, category text NOT NULL,
+                  time_scope text NOT NULL, created_at timestamptz NOT NULL DEFAULT now()
+                )
+            """)
+
+    def list(self) -> list[dict]:
+        if not self.database_url:
+            return list(self._memory.values())
+        import psycopg
+        from psycopg.rows import dict_row
+
+        with psycopg.connect(self.database_url, row_factory=dict_row) as connection:
+            rows = connection.execute(
+                "SELECT * FROM admin_knowledge_questions ORDER BY created_at DESC"
+            ).fetchall()
+        items = []
+        for row in rows:
+            item = _serialize(row)
+            item["question_id"] = f"AQ-{item.pop('id')}"
+            items.append(item)
+        return items
+
+    def get(self, question_id: str) -> dict | None:
+        raw_id = question_id.removeprefix("AQ-")
+        try:
+            uuid.UUID(raw_id)
+        except ValueError:
+            return None
+        if not self.database_url:
+            return self._memory.get(question_id)
+        import psycopg
+        from psycopg.rows import dict_row
+
+        with psycopg.connect(self.database_url, row_factory=dict_row) as connection:
+            row = connection.execute(
+                "SELECT * FROM admin_knowledge_questions WHERE id=%s", (raw_id,)
+            ).fetchone()
+        if not row:
+            return None
+        item = _serialize(row)
+        item["question_id"] = f"AQ-{item.pop('id')}"
+        return item
+
+    def create(self, values: dict) -> dict:
+        raw_id = str(uuid.uuid4())
+        question_id = f"AQ-{raw_id}"
+        item = {
+            "question_id": question_id, **values, "created_at": datetime.now(UTC).isoformat()
+        }
+        if not self.database_url:
+            with self._lock:
+                self._memory[question_id] = item
+            return item
+        import psycopg
+
+        with psycopg.connect(self.database_url) as connection:
+            connection.execute(
+                """INSERT INTO admin_knowledge_questions(id,question,category,time_scope)
+                   VALUES (%s,%s,%s,%s)""",
+                (raw_id, values["question"], values["category"], values["time_scope"]),
+            )
+        return self.get(question_id) or item
+
+    def delete(self, question_id: str) -> bool:
+        raw_id = question_id.removeprefix("AQ-")
+        try:
+            uuid.UUID(raw_id)
+        except ValueError:
+            return False
+        if not self.database_url:
+            with self._lock:
+                return self._memory.pop(question_id, None) is not None
+        import psycopg
+
+        with psycopg.connect(self.database_url) as connection:
+            result = connection.execute(
+                "DELETE FROM admin_knowledge_questions WHERE id=%s", (raw_id,)
+            )
+            return result.rowcount > 0
+
+
 def _serialize(row: dict) -> dict:
     return {key: value.isoformat() if hasattr(value, "isoformat") else value for key, value in row.items()}
