@@ -18,6 +18,7 @@
       this.session = null;
       this.messages = [];
       this.open = false;
+      this.pending = false;
       this.poller = null;
     }
 
@@ -67,6 +68,7 @@
     }
 
     async refresh() {
+      if (this.pending) return true;
       const response = await fetch(
         `${this.endpoint}/api/widget/conversations/${this.session.conversation_id}`,
         { headers: { "X-Persona-Session-Token": this.session.token } },
@@ -84,8 +86,8 @@
       event.preventDefault();
       const input = form.elements.message;
       const message = input.value.trim();
-      if (!message || form.dataset.pending === "true") return;
-      form.dataset.pending = "true";
+      if (!message || this.pending) return;
+      this.pending = true;
       input.value = "";
       this.messages.push({ role: "user", content: message });
       this.render();
@@ -101,6 +103,7 @@
       } catch (error) {
         this.messages.push({ role: "error", content: error.message });
       }
+      this.pending = false;
       this.render();
     }
 
@@ -125,7 +128,7 @@
         @media print{:host{display:none!important}}
         @media(prefers-reduced-motion:no-preference){.panel{animation:up .18s ease-out}@keyframes up{from{opacity:0;transform:translateY(8px)}}}
       </style>
-      ${this.open ? `<section class="panel" role="dialog" aria-label="김신건에게 질문하기"><header><div class="avatar">K</div><div><div class="title">김신건에게 질문하기</div><div class="status">AI가 먼저 답하고, 제가 직접 이어서 답할 수 있습니다</div></div><button class="close" data-close aria-label="닫기">×</button></header><main class="messages">${this.messageMarkup()}</main><form><textarea name="message" maxlength="4000" aria-label="메시지" placeholder="메시지를 입력하세요"></textarea><button type="submit">전송</button></form></section>` : ""}
+      ${this.open ? `<section class="panel" role="dialog" aria-label="김신건에게 질문하기"><header><div class="avatar">K</div><div><div class="title">김신건에게 질문하기</div><div class="status">AI가 먼저 답하고, 제가 직접 이어서 답할 수 있습니다</div></div><button class="close" data-close aria-label="닫기">×</button></header><main class="messages">${this.messageMarkup()}</main><form><textarea name="message" maxlength="4000" aria-label="메시지" placeholder="${this.pending ? "답변을 작성하고 있습니다" : "메시지를 입력하세요"}" ${this.pending ? "disabled" : ""}></textarea><button type="submit" ${this.pending ? "disabled" : ""}>${this.pending ? "···" : "전송"}</button></form></section>` : ""}
       <button class="launcher" data-launcher aria-label="${this.open ? "채팅 닫기" : "김신건에게 질문하기"}">${this.open ? "×" : "✦"}</button>`;
       if (this.open) requestAnimationFrame(() => {
         const messages = this.shadowRoot.querySelector(".messages");

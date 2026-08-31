@@ -30,3 +30,32 @@ test('embedded widget becomes a full-screen mobile messenger', async ({ page }, 
   expect(panel.height).toBe(page.viewportSize().height);
   await expect(page).toHaveScreenshot('widget-mobile-open.png', { animations: 'disabled' });
 });
+
+test('polling does not erase an optimistic message while an answer is pending', async ({ page }) => {
+  await page.route('**/api/widget/sessions', (route) => route.fulfill({
+    status: 201,
+    contentType: 'application/json',
+    body: JSON.stringify({ conversation_id: '00000000-0000-4000-8000-000000000001', token: 'test-token-that-is-long-enough' }),
+  }));
+  await page.route('**/api/widget/conversations/**', (route) => route.fulfill({
+    status: 200,
+    contentType: 'application/json',
+    body: JSON.stringify({ messages: [] }),
+  }));
+  await page.route('**/api/widget/chat', async (route) => {
+    await new Promise((resolve) => setTimeout(resolve, 250));
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({ answer: '답변입니다.', sources: [] }),
+    });
+  });
+  await page.evaluate(() => localStorage.clear());
+  const widget = page.locator('persona-chat-widget');
+  await widget.locator('[data-launcher]').click();
+  await widget.locator('textarea').fill('질문입니다.');
+  await widget.locator('form').evaluate((form) => form.requestSubmit());
+  await widget.evaluate((element) => element.refresh());
+  await expect(widget.locator('.bubble.user')).toHaveText('질문입니다.');
+  await expect(widget.locator('.bubble.assistant')).toHaveText('답변입니다.');
+});
