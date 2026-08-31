@@ -12,6 +12,7 @@ class ConversationStore:
         self.database_url = database_url or os.environ.get("PERSONA_DATABASE_URL")
         self._lock = threading.Lock()
         self._memory: dict[str, list[dict]] = {}
+        self._metadata: dict[str, dict] = {}
 
     def initialize(self) -> None:
         if not self.database_url:
@@ -26,7 +27,7 @@ class ConversationStore:
                 );
                 CREATE TABLE IF NOT EXISTS conversation_messages (
                   id bigserial PRIMARY KEY, conversation_id uuid NOT NULL REFERENCES conversations(id) ON DELETE CASCADE,
-                  role text NOT NULL CHECK (role IN ('user','assistant')), content text NOT NULL,
+                  role text NOT NULL CHECK (role IN ('user','assistant','owner')), content text NOT NULL,
                   model text, sources jsonb NOT NULL DEFAULT '[]', created_at timestamptz NOT NULL DEFAULT now()
                 );
                 CREATE INDEX IF NOT EXISTS conversation_messages_order_idx
@@ -37,19 +38,73 @@ class ConversationStore:
                 );
                 CREATE INDEX IF NOT EXISTS rate_limit_events_lookup_idx
                   ON rate_limit_events(identity_hash, created_at);
+                ALTER TABLE conversation_messages DROP CONSTRAINT IF EXISTS conversation_messages_role_check;
+                ALTER TABLE conversation_messages ADD CONSTRAINT conversation_messages_role_check
+                  CHECK (role IN ('user','assistant','owner'));
             """)
 
-    def create(self) -> str:
+    def create(self, metadata: dict | None = None) -> str:
         conversation_id = str(uuid.uuid4())
         if not self.database_url:
             with self._lock:
                 self._memory[conversation_id] = []
+                self._metadata[conversation_id] = metadata or {}
             return conversation_id
         import psycopg
 
         with psycopg.connect(self.database_url) as connection, connection.cursor() as cursor:
-            cursor.execute("INSERT INTO conversations(id) VALUES (%s)", (conversation_id,))
+            cursor.execute(
+                "INSERT INTO conversations(id,metadata) VALUES (%s,%s::jsonb)",
+                (conversation_id, json.dumps(metadata or {})),
+            )
         return conversation_id
+
+    def metadata(self, conversation_id: str) -> dict:
+        if not self.database_url:
+            return dict(self._metadata.get(conversation_id, {}))
+        import psycopg
+
+        with psycopg.connect(self.database_url) as connection, connection.cursor() as cursor:
+            cursor.execute("SELECT metadata FROM conversations WHERE id=%s", (conversation_id,))
+            row = cursor.fetchone()
+        return dict(row[0]) if row else {}
+
+    def update_metadata(self, conversation_id: str, values: dict) -> None:
+        if not self.database_url:
+            with self._lock:
+                current = self._metadata.setdefault(conversation_id, {})
+                current.update(values)
+            return
+        import psycopg
+
+        with psycopg.connect(self.database_url) as connection, connection.cursor() as cursor:
+            cursor.execute(
+                "UPDATE conversations SET metadata=metadata || %s::jsonb WHERE id=%s",
+                (json.dumps(values), conversation_id),
+            )
+
+    def conversation_for_discord_thread(self, thread_id: str, active_days: int = 30) -> str | None:
+        cutoff = datetime.now(UTC) - timedelta(days=active_days)
+        if not self.database_url:
+            for conversation_id, metadata in self._metadata.items():
+                if metadata.get("discord_thread_id") != thread_id:
+                    continue
+                messages = self._memory.get(conversation_id, [])
+                last_at = messages[-1]["created_at"] if messages else metadata.get("created_at")
+                if last_at and datetime.fromisoformat(last_at) >= cutoff:
+                    return conversation_id
+            return None
+        import psycopg
+
+        with psycopg.connect(self.database_url) as connection, connection.cursor() as cursor:
+            cursor.execute(
+                """SELECT id FROM conversations
+                   WHERE metadata->>'discord_thread_id'=%s AND updated_at >= %s
+                   ORDER BY updated_at DESC LIMIT 1""",
+                (thread_id, cutoff),
+            )
+            row = cursor.fetchone()
+        return str(row[0]) if row else None
 
     def exists(self, conversation_id: str) -> bool:
         try:

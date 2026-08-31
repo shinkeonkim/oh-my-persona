@@ -8,7 +8,8 @@ import secrets
 from contextlib import asynccontextmanager
 from datetime import date
 
-from fastapi import Depends, FastAPI, Header, HTTPException, Query, Request
+from fastapi import BackgroundTasks, Depends, FastAPI, Header, HTTPException, Query, Request
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import AnyHttpUrl, BaseModel, Field
@@ -16,12 +17,15 @@ from pydantic import AnyHttpUrl, BaseModel, Field
 from .agent import ALLOWED_MODELS
 from .conversations import ConversationStore, RateLimiter
 from .corpus import read_jsonl
+from .discord_bridge import DiscordBridge
 from .service import answer, knowledge_store, root_path, search
+from .sessions import create_widget_session, verify_widget_session
 
 ROOT = root_path()
 STATIC = ROOT / "static"
 store = ConversationStore()
 limiter = RateLimiter(store)
+discord_bridge = DiscordBridge(store)
 
 
 @asynccontextmanager
@@ -32,6 +36,17 @@ async def lifespan(_: FastAPI):
 
 
 app = FastAPI(title="oh-my-persona", version="0.2.0", lifespan=lifespan)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://portfolio.shinkeonkim.com",
+        "https://resume.shinkeonkim.com",
+        "http://localhost:4173",
+        "http://localhost:5173",
+    ],
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["Content-Type", "X-Persona-Session-Token"],
+)
 app.mount("/static", StaticFiles(directory=STATIC), name="static")
 
 
@@ -39,6 +54,13 @@ class ChatRequest(BaseModel):
     message: str = Field(min_length=1, max_length=4000)
     model: str | None = None
     conversation_id: str | None = None
+
+
+class WidgetChatRequest(BaseModel):
+    message: str = Field(min_length=1, max_length=4000)
+    conversation_id: str
+    token: str = Field(min_length=20, max_length=200)
+    model: str | None = None
 
 
 class KnowledgeRequest(BaseModel):
@@ -68,6 +90,11 @@ def admin_index():
     return FileResponse(STATIC / "admin.html")
 
 
+@app.get("/sdk/persona-widget.js", include_in_schema=False)
+def widget_sdk():
+    return FileResponse(STATIC / "persona-widget.js", media_type="text/javascript")
+
+
 @app.get("/healthz")
 def healthz() -> dict[str, str]:
     return {"status": "ok"}
@@ -95,6 +122,45 @@ def source_api(source_id: str):
 @app.post("/api/conversations", status_code=201)
 def create_conversation():
     return {"conversation_id": store.create()}
+
+
+@app.post("/api/widget/sessions", status_code=201)
+def create_widget_session_api(request: Request):
+    conversation_id, token = create_widget_session(store, request.headers.get("origin"))
+    return {"conversation_id": conversation_id, "token": token}
+
+
+@app.get("/api/widget/conversations/{conversation_id}")
+def get_widget_conversation(conversation_id: str, x_persona_session_token: str = Header()):
+    if not verify_widget_session(store, conversation_id, x_persona_session_token):
+        raise HTTPException(status_code=401, detail="invalid widget session")
+    return {"conversation_id": conversation_id, "messages": store.messages(conversation_id)}
+
+
+@app.post("/api/widget/chat")
+def widget_chat(request: WidgetChatRequest, http_request: Request, background: BackgroundTasks):
+    _enforce_rate_limit(http_request)
+    if not verify_widget_session(store, request.conversation_id, request.token):
+        raise HTTPException(status_code=401, detail="invalid widget session")
+    history = store.messages(request.conversation_id, 20)
+    try:
+        response, sources = answer(request.message, request.model, history)
+    except ValueError as error:
+        raise HTTPException(status_code=400, detail=str(error)) from error
+    store.append(request.conversation_id, "user", request.message)
+    store.append(request.conversation_id, "assistant", response, request.model, sources)
+    background.add_task(
+        discord_bridge.mirror_exchange,
+        request.conversation_id,
+        request.message,
+        response,
+        http_request.headers.get("origin"),
+    )
+    return {
+        "conversation_id": request.conversation_id,
+        "answer": response,
+        "sources": sources,
+    }
 
 
 @app.get("/api/conversations/{conversation_id}")
