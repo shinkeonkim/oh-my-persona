@@ -10,13 +10,38 @@ from typing import Any
 
 from .ingest import MAX_FILE_BYTES, SENSITIVE_PATTERNS
 
-TEXT_SUFFIXES = {".md", ".markdown", ".txt", ".ts", ".tsx", ".js", ".vue", ".json", ".html", ".css", ".xml", ".py", ".sql"}
-EXCLUDED_PARTS = {".git", ".venv", "node_modules", "dist", "coverage", ".astro", ".cache", "test-results"}
+TEXT_SUFFIXES = {
+    ".md",
+    ".markdown",
+    ".txt",
+    ".ts",
+    ".tsx",
+    ".js",
+    ".vue",
+    ".json",
+    ".html",
+    ".css",
+    ".xml",
+    ".py",
+    ".sql",
+}
+EXCLUDED_PARTS = {
+    ".git",
+    ".venv",
+    "node_modules",
+    "dist",
+    "coverage",
+    ".astro",
+    ".cache",
+    "test-results",
+}
 EXCLUDED_NAMES = {"package-lock.json", "bun.lock", "bun.lockb", "uv.lock"}
 
 
 def git_value(repo: Path, *args: str) -> str:
-    result = subprocess.run(["git", "-C", str(repo), *args], check=True, capture_output=True, text=True)
+    result = subprocess.run(
+        ["git", "-C", str(repo), *args], check=True, capture_output=True, text=True
+    )
     return result.stdout.strip()
 
 
@@ -38,9 +63,16 @@ def collect_local_repository(root: Path, repo: Path, source: dict[str, Any]) -> 
             continue
         relative = Path(relative_text)
         path = repo / relative
-        if any(part in EXCLUDED_PARTS for part in relative.parts) or relative.name in EXCLUDED_NAMES:
+        if (
+            any(part in EXCLUDED_PARTS for part in relative.parts)
+            or relative.name in EXCLUDED_NAMES
+        ):
             continue
-        if path.suffix.lower() not in TEXT_SUFFIXES or not path.is_file() or path.stat().st_size > MAX_FILE_BYTES:
+        if (
+            path.suffix.lower() not in TEXT_SUFFIXES
+            or not path.is_file()
+            or path.stat().st_size > MAX_FILE_BYTES
+        ):
             continue
         content = path.read_text(encoding="utf-8", errors="replace")
         reasons = [name for name, pattern in SENSITIVE_PATTERNS.items() if pattern.search(content)]
@@ -56,14 +88,22 @@ def collect_local_repository(root: Path, repo: Path, source: dict[str, Any]) -> 
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(path, destination)
         blob_url = f"{source['canonical_url']}/blob/{commit}/{relative.as_posix()}"
-        records.append({
-            "document_id": f"DOC-{digest[:20]}", "source_id": source["source_id"],
-            "canonical_url": blob_url, "repository_url": source["canonical_url"],
-            "commit_sha": commit, "relative_path": relative.as_posix(),
-            "raw_path": str(destination.relative_to(root)), "content_sha256": digest,
-            "mime_type": _mime(path), "observed_at": observed_at,
-            "extractor_version": "local-git-v1", "status": "accepted",
-        })
+        records.append(
+            {
+                "document_id": f"DOC-{digest[:20]}",
+                "source_id": source["source_id"],
+                "canonical_url": blob_url,
+                "repository_url": source["canonical_url"],
+                "commit_sha": commit,
+                "relative_path": relative.as_posix(),
+                "raw_path": str(destination.relative_to(root)),
+                "content_sha256": digest,
+                "mime_type": _mime(path),
+                "observed_at": observed_at,
+                "extractor_version": "local-git-v1",
+                "status": "accepted",
+            }
+        )
         accepted += 1
 
     history = git_value(
@@ -97,29 +137,48 @@ def collect_local_repository(root: Path, repo: Path, source: dict[str, Any]) -> 
         destination = destination_root / relative
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_text(content, encoding="utf-8")
-        records.append({
-            "document_id": f"DOC-{digest[:20]}", "source_id": source["source_id"],
-            "canonical_url": f"{source['canonical_url']}/commit/{commit_sha}",
-            "repository_url": source["canonical_url"], "commit_sha": commit_sha,
-            "relative_path": relative.as_posix(),
-            "raw_path": str(destination.relative_to(root)), "content_sha256": digest,
-            "mime_type": "text/plain", "published_at": authored_at,
-            "observed_at": observed_at, "extractor_version": "local-git-history-v1",
-            "status": "accepted",
-        })
+        records.append(
+            {
+                "document_id": f"DOC-{digest[:20]}",
+                "source_id": source["source_id"],
+                "canonical_url": f"{source['canonical_url']}/commit/{commit_sha}",
+                "repository_url": source["canonical_url"],
+                "commit_sha": commit_sha,
+                "relative_path": relative.as_posix(),
+                "raw_path": str(destination.relative_to(root)),
+                "content_sha256": digest,
+                "mime_type": "text/plain",
+                "published_at": authored_at,
+                "observed_at": observed_at,
+                "extractor_version": "local-git-history-v1",
+                "status": "accepted",
+            }
+        )
         accepted += 1
 
     manifest_path.parent.mkdir(parents=True, exist_ok=True)
-    all_records = sorted(retained + records, key=lambda item: (item["source_id"], item["relative_path"]))
-    manifest_path.write_text("".join(json.dumps(item, ensure_ascii=False) + "\n" for item in all_records), encoding="utf-8")
+    all_records = sorted(
+        retained + records, key=lambda item: (item["source_id"], item["relative_path"])
+    )
+    manifest_path.write_text(
+        "".join(json.dumps(item, ensure_ascii=False) + "\n" for item in all_records),
+        encoding="utf-8",
+    )
     return {"accepted": accepted, "rejected": rejected, "duplicates": duplicates}
 
 
 def _read_jsonl(path: Path) -> list[dict[str, Any]]:
     if not path.exists():
         return []
-    return [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+    return [
+        json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()
+    ]
 
 
 def _mime(path: Path) -> str:
-    return {".md": "text/markdown", ".vue": "text/x-vue", ".json": "application/json", ".xml": "application/xml"}.get(path.suffix.lower(), "text/plain")
+    return {
+        ".md": "text/markdown",
+        ".vue": "text/x-vue",
+        ".json": "application/json",
+        ".xml": "application/xml",
+    }.get(path.suffix.lower(), "text/plain")

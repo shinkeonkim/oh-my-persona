@@ -37,10 +37,7 @@ class DiscordBridge:
         if not self.configured:
             return
         metadata = self.store.metadata(conversation_id)
-        content = (
-            f"**방문자**\n{visitor_message[:850]}\n\n"
-            f"**AI 김신건**\n{ai_answer[:850]}"
-        )
+        content = f"**방문자**\n{visitor_message[:850]}\n\n**AI 김신건**\n{ai_answer[:850]}"
         thread_id = metadata.get("discord_thread_id")
         if thread_id:
             self._request("PATCH", f"/channels/{thread_id}", {"archived": False})
@@ -60,7 +57,8 @@ class DiscordBridge:
 
     def accept_owner_message(self, thread_id: str, author_id: str, content: str) -> str | None:
         allowed = {
-            item.strip() for item in os.environ.get("PERSONA_DISCORD_OWNER_IDS", "").split(",")
+            item.strip()
+            for item in os.environ.get("PERSONA_DISCORD_OWNER_IDS", "").split(",")
             if item.strip()
         }
         if not content.strip() or not allowed or author_id not in allowed:

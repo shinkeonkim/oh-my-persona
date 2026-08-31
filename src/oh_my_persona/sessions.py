@@ -26,11 +26,13 @@ def token_hash(token: str) -> str:
 
 def create_widget_session(store: ConversationStore, origin: str | None = None) -> tuple[str, str]:
     token = secrets.token_urlsafe(32)
-    conversation_id = store.create({
-        "widget_token_hash": token_hash(token),
-        "widget_origin": origin or "unknown",
-        "created_at": datetime.now(UTC).isoformat(),
-    })
+    conversation_id = store.create(
+        {
+            "widget_token_hash": token_hash(token),
+            "widget_origin": origin or "unknown",
+            "created_at": datetime.now(UTC).isoformat(),
+        }
+    )
     return conversation_id, token
 
 

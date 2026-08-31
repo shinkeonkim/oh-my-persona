@@ -27,8 +27,30 @@ def project_root() -> Path:
 
 def main() -> None:
     parser = argparse.ArgumentParser(prog="persona")
-    parser.add_argument("command", choices=("validate", "inventory", "chunk", "audit", "collect-local", "collect-web", "collect-github-metadata", "collect-github-deep", "collect-github-prs", "collect-github-docs", "collect-github-priority", "inspect-inbox", "ingest-inbox", "knowledge-gaps", "build-answers", "evaluate"))
-    parser.add_argument("--approve", action="store_true", help="required before copying inbox files to raw")
+    parser.add_argument(
+        "command",
+        choices=(
+            "validate",
+            "inventory",
+            "chunk",
+            "audit",
+            "collect-local",
+            "collect-web",
+            "collect-github-metadata",
+            "collect-github-deep",
+            "collect-github-prs",
+            "collect-github-docs",
+            "collect-github-priority",
+            "inspect-inbox",
+            "ingest-inbox",
+            "knowledge-gaps",
+            "build-answers",
+            "evaluate",
+        ),
+    )
+    parser.add_argument(
+        "--approve", action="store_true", help="required before copying inbox files to raw"
+    )
     parser.add_argument("--source-id")
     parser.add_argument("--repo", type=Path)
     parser.add_argument("--answers", type=Path)
@@ -47,12 +69,26 @@ def main() -> None:
         claims = read_jsonl(root / "data/curated/claims.jsonl")
         documents = read_jsonl(root / "data/registry/documents.jsonl")
         chunks = build_chunks(root)
-        print(json.dumps({"sources": len(sources), "claims": len(claims), "documents": len(documents), "authored_documents": len(list(iter_corpus_files(root))), "chunks": len(chunks)}, ensure_ascii=False))
+        print(
+            json.dumps(
+                {
+                    "sources": len(sources),
+                    "claims": len(claims),
+                    "documents": len(documents),
+                    "authored_documents": len(list(iter_corpus_files(root))),
+                    "chunks": len(chunks),
+                },
+                ensure_ascii=False,
+            )
+        )
     elif args.command == "chunk":
         output = root / "data/processed/chunks.jsonl"
         output.parent.mkdir(parents=True, exist_ok=True)
         chunks = build_chunks(root)
-        output.write_text("".join(json.dumps(chunk, ensure_ascii=False) + "\n" for chunk in chunks), encoding="utf-8")
+        output.write_text(
+            "".join(json.dumps(chunk, ensure_ascii=False) + "\n" for chunk in chunks),
+            encoding="utf-8",
+        )
         print(f"wrote {len(chunks)} chunks to {output.relative_to(root)}")
     elif args.command == "audit":
         report = write_audit(root)
@@ -119,7 +155,9 @@ def main() -> None:
             expected = set(evaluation["required_source_ids"])
             if expected and not expected.intersection(source_ids):
                 failures.append({"id": evaluation["id"], "expected_any_source": sorted(expected)})
-        print(json.dumps({"evaluations": len(evaluations), "failures": failures}, ensure_ascii=False))
+        print(
+            json.dumps({"evaluations": len(evaluations), "failures": failures}, ensure_ascii=False)
+        )
         if failures:
             raise SystemExit(1)
 

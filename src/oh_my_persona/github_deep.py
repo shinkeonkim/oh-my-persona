@@ -45,7 +45,7 @@ def _gh(endpoint: str, fields: dict[str, str] | None = None, paginate: bool = Fa
         if "HTTP 404" in result.stderr or "HTTP 409" in result.stderr:
             return None
         if attempt < 3:
-            time.sleep(2 ** attempt)
+            time.sleep(2**attempt)
     raise RuntimeError(f"GitHub API request failed for {endpoint}: {result.stderr.strip()}")
 
 
@@ -54,26 +54,41 @@ def _safe(text: str) -> bool:
 
 
 def _record(
-    root: Path, source: dict[str, Any], relative: str, content: str, canonical_url: str,
-    observed_at: str, published_at: str | None, commit_sha: str | None, extractor: str,
+    root: Path,
+    source: dict[str, Any],
+    relative: str,
+    content: str,
+    canonical_url: str,
+    observed_at: str,
+    published_at: str | None,
+    commit_sha: str | None,
+    extractor: str,
 ) -> dict[str, Any]:
     digest = hashlib.sha256(content.encode()).hexdigest()
     raw = root / "data/raw" / source["source_id"] / relative
     raw.parent.mkdir(parents=True, exist_ok=True)
     raw.write_text(content, encoding="utf-8")
     return {
-        "document_id": f"DOC-{digest[:20]}", "source_id": source["source_id"],
-        "canonical_url": canonical_url, "repository_url": source["canonical_url"],
-        "commit_sha": commit_sha, "relative_path": relative,
-        "raw_path": str(raw.relative_to(root)), "content_sha256": digest,
+        "document_id": f"DOC-{digest[:20]}",
+        "source_id": source["source_id"],
+        "canonical_url": canonical_url,
+        "repository_url": source["canonical_url"],
+        "commit_sha": commit_sha,
+        "relative_path": relative,
+        "raw_path": str(raw.relative_to(root)),
+        "content_sha256": digest,
         "mime_type": "text/markdown" if relative.endswith(".md") else "text/plain",
-        "published_at": published_at, "observed_at": observed_at,
-        "extractor_version": extractor, "status": "accepted",
+        "published_at": published_at,
+        "observed_at": observed_at,
+        "extractor_version": extractor,
+        "status": "accepted",
     }
 
 
 def collect_deep(root: Path, login: str = "shinkeonkim") -> dict[str, int]:
-    inventory = json.loads((root / "data/research/github-repositories.json").read_text(encoding="utf-8"))
+    inventory = json.loads(
+        (root / "data/research/github-repositories.json").read_text(encoding="utf-8")
+    )
     sources = read_jsonl(root / "data/registry/sources.jsonl")
     by_url = {item["canonical_url"].rstrip("/"): item for item in sources}
     manifest_path = root / "data/registry/documents.jsonl"
@@ -92,17 +107,31 @@ def collect_deep(root: Path, login: str = "shinkeonkim") -> dict[str, int]:
         if readme and readme.get("content"):
             content = base64.b64decode(readme["content"]).decode("utf-8", errors="replace")
             if _safe(content):
-                documents.append(_record(
-                    root, source, "github-readme.md", content, readme["html_url"], observed_at,
-                    repo.get("updatedAt"), readme.get("sha"), "github-readme-v1",
-                ))
+                documents.append(
+                    _record(
+                        root,
+                        source,
+                        "github-readme.md",
+                        content,
+                        readme["html_url"],
+                        observed_at,
+                        repo.get("updatedAt"),
+                        readme.get("sha"),
+                        "github-readme-v1",
+                    )
+                )
                 stats["readmes"] += 1
             else:
                 stats["rejected"] += 1
 
-        pages = _gh(
-            f"repos/{full_name}/commits", {"author": login, "per_page": "100"}, paginate=True,
-        ) or []
+        pages = (
+            _gh(
+                f"repos/{full_name}/commits",
+                {"author": login, "per_page": "100"},
+                paginate=True,
+            )
+            or []
+        )
         commits = [item for page in pages for item in page]
         if commits:
             lines = [f"GitHub repository: {repo['url']}", f"Author account: {login}", ""]
@@ -118,19 +147,31 @@ def collect_deep(root: Path, login: str = "shinkeonkim") -> dict[str, int]:
                 else:
                     stats["rejected"] += 1
             if retained:
-                documents.append(_record(
-                    root, source, "github-authored-commits.txt", "\n".join(lines) + "\n",
-                    f"{repo['url']}/commits?author={login}", observed_at,
-                    retained[0]["commit"]["author"]["date"], retained[0]["sha"],
-                    "github-authored-commits-v1",
-                ))
+                documents.append(
+                    _record(
+                        root,
+                        source,
+                        "github-authored-commits.txt",
+                        "\n".join(lines) + "\n",
+                        f"{repo['url']}/commits?author={login}",
+                        observed_at,
+                        retained[0]["commit"]["author"]["date"],
+                        retained[0]["sha"],
+                        "github-authored-commits-v1",
+                    )
+                )
                 stats["commit_documents"] += 1
                 stats["commits"] += len(retained)
 
     documents.sort(key=lambda item: (item["source_id"], item["relative_path"]))
-    manifest_path.write_text("".join(json.dumps(item, ensure_ascii=False) + "\n" for item in documents), encoding="utf-8")
+    manifest_path.write_text(
+        "".join(json.dumps(item, ensure_ascii=False) + "\n" for item in documents), encoding="utf-8"
+    )
     report = root / "data/research/github-deep-collection.json"
-    report.write_text(json.dumps({"observed_at": observed_at, **stats}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    report.write_text(
+        json.dumps({"observed_at": observed_at, **stats}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
     return stats
 
 
@@ -143,7 +184,7 @@ def _graphql(query: str, fields: dict[str, str]) -> dict[str, Any]:
         if result.returncode == 0:
             return json.loads(result.stdout)["data"]
         if attempt < 3:
-            time.sleep(2 ** attempt)
+            time.sleep(2**attempt)
     raise RuntimeError(f"GitHub GraphQL request failed: {result.stderr.strip()}")
 
 
@@ -175,7 +216,8 @@ def collect_pull_requests(root: Path, login: str = "shinkeonkim") -> dict[str, i
 
     manifest_path = root / "data/registry/documents.jsonl"
     documents = [
-        item for item in read_jsonl(manifest_path)
+        item
+        for item in read_jsonl(manifest_path)
         if item.get("relative_path") != "github-authored-pull-requests.txt"
     ]
     observed_at = datetime.now(UTC).isoformat()
@@ -198,23 +240,49 @@ def collect_pull_requests(root: Path, login: str = "shinkeonkim") -> dict[str, i
             else:
                 rejected += 1
         if retained:
-            documents.append(_record(
-                root, source, "github-authored-pull-requests.txt", "\n".join(lines) + "\n",
-                f"{repo_url}/pulls?q=is%3Apr+author%3A{login}", observed_at,
-                retained[0]["updatedAt"], None, "github-authored-prs-v1",
-            ))
+            documents.append(
+                _record(
+                    root,
+                    source,
+                    "github-authored-pull-requests.txt",
+                    "\n".join(lines) + "\n",
+                    f"{repo_url}/pulls?q=is%3Apr+author%3A{login}",
+                    observed_at,
+                    retained[0]["updatedAt"],
+                    None,
+                    "github-authored-prs-v1",
+                )
+            )
             retained_count += len(retained)
 
     documents.sort(key=lambda item: (item["source_id"], item["relative_path"]))
-    manifest_path.write_text("".join(json.dumps(item, ensure_ascii=False) + "\n" for item in documents), encoding="utf-8")
-    stats = {"pull_requests": retained_count, "repositories": len(grouped), "skipped_unregistered": skipped, "rejected": rejected}
+    manifest_path.write_text(
+        "".join(json.dumps(item, ensure_ascii=False) + "\n" for item in documents), encoding="utf-8"
+    )
+    stats = {
+        "pull_requests": retained_count,
+        "repositories": len(grouped),
+        "skipped_unregistered": skipped,
+        "rejected": rejected,
+    }
     report = root / "data/research/github-pull-requests.json"
-    report.write_text(json.dumps({"observed_at": observed_at, **stats}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    report.write_text(
+        json.dumps({"observed_at": observed_at, **stats}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
     return stats
 
 
 def _doc_paths(tree: list[dict[str, Any]], limit: int = 40) -> list[str]:
-    keywords = {"architecture", "changelog", "contributing", "design", "roadmap", "security", "setup"}
+    keywords = {
+        "architecture",
+        "changelog",
+        "contributing",
+        "design",
+        "roadmap",
+        "security",
+        "setup",
+    }
     candidates: list[tuple[int, str]] = []
     for item in tree:
         path = item.get("path", "")
@@ -237,15 +305,20 @@ def _doc_paths(tree: list[dict[str, Any]], limit: int = 40) -> list[str]:
 def _fetch_blobs(owner: str, name: str, commit: str, paths: list[str]) -> dict[str, dict[str, Any]]:
     blobs: dict[str, dict[str, Any]] = {}
     for offset in range(0, len(paths), 20):
-        batch = paths[offset:offset + 20]
+        batch = paths[offset : offset + 20]
         fields = "\n".join(
             f"b{index}: object(expression:{json.dumps(f'{commit}:{path}')}) "
             "{ ... on Blob { oid byteSize text } }"
             for index, path in enumerate(batch)
         )
         query = (
-            "query { repository(owner:" + json.dumps(owner) + ", name:" + json.dumps(name) + ") {\n"
-            + fields + "\n} }"
+            "query { repository(owner:"
+            + json.dumps(owner)
+            + ", name:"
+            + json.dumps(name)
+            + ") {\n"
+            + fields
+            + "\n} }"
         )
         repository = _graphql(query, {})["repository"]
         for index, path in enumerate(batch):
@@ -255,18 +328,27 @@ def _fetch_blobs(owner: str, name: str, commit: str, paths: list[str]) -> dict[s
 
 
 def collect_public_docs(root: Path) -> dict[str, int]:
-    inventory = json.loads((root / "data/research/github-repositories.json").read_text(encoding="utf-8"))
+    inventory = json.loads(
+        (root / "data/research/github-repositories.json").read_text(encoding="utf-8")
+    )
     source_by_url = {
         item["canonical_url"].rstrip("/"): item
         for item in read_jsonl(root / "data/registry/sources.jsonl")
     }
     manifest_path = root / "data/registry/documents.jsonl"
     documents = [
-        item for item in read_jsonl(manifest_path)
+        item
+        for item in read_jsonl(manifest_path)
         if not item.get("relative_path", "").startswith("github-docs/")
     ]
     observed_at = datetime.now(UTC).isoformat()
-    stats = {"repositories": 0, "repositories_with_docs": 0, "documents": 0, "oversized": 0, "rejected": 0}
+    stats = {
+        "repositories": 0,
+        "repositories_with_docs": 0,
+        "documents": 0,
+        "oversized": 0,
+        "rejected": 0,
+    }
 
     for repo in inventory["repositories"]:
         branch = repo.get("defaultBranchRef") or {}
@@ -297,30 +379,48 @@ def collect_public_docs(root: Path) -> dict[str, int]:
                 continue
             relative = f"github-docs/{path}"
             canonical = f"{repo['url']}/blob/{commit}/{quote(path)}"
-            documents.append(_record(
-                root, source, relative, text, canonical, observed_at,
-                repo.get("updatedAt"), commit, "github-public-doc-v1",
-            ))
+            documents.append(
+                _record(
+                    root,
+                    source,
+                    relative,
+                    text,
+                    canonical,
+                    observed_at,
+                    repo.get("updatedAt"),
+                    commit,
+                    "github-public-doc-v1",
+                )
+            )
             accepted_for_repo += 1
             stats["documents"] += 1
         if accepted_for_repo:
             stats["repositories_with_docs"] += 1
 
     documents.sort(key=lambda item: (item["source_id"], item["relative_path"]))
-    manifest_path.write_text("".join(json.dumps(item, ensure_ascii=False) + "\n" for item in documents), encoding="utf-8")
+    manifest_path.write_text(
+        "".join(json.dumps(item, ensure_ascii=False) + "\n" for item in documents), encoding="utf-8"
+    )
     report = root / "data/research/github-public-docs.json"
-    report.write_text(json.dumps({"observed_at": observed_at, **stats}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    report.write_text(
+        json.dumps({"observed_at": observed_at, **stats}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
     return stats
 
 
 def _line_count(path: Path, header_lines: int = 3) -> int:
     if not path.exists():
         return 0
-    return max(0, len(path.read_text(encoding="utf-8", errors="replace").splitlines()) - header_lines)
+    return max(
+        0, len(path.read_text(encoding="utf-8", errors="replace").splitlines()) - header_lines
+    )
 
 
 def collect_priority_trees(root: Path, limit: int = 30) -> dict[str, Any]:
-    inventory = json.loads((root / "data/research/github-repositories.json").read_text(encoding="utf-8"))
+    inventory = json.loads(
+        (root / "data/research/github-repositories.json").read_text(encoding="utf-8")
+    )
     source_by_url = {
         item["canonical_url"].rstrip("/"): item
         for item in read_jsonl(root / "data/registry/sources.jsonl")
@@ -340,7 +440,8 @@ def collect_priority_trees(root: Path, limit: int = 30) -> dict[str, Any]:
 
     manifest_path = root / "data/registry/documents.jsonl"
     documents = [
-        item for item in read_jsonl(manifest_path)
+        item
+        for item in read_jsonl(manifest_path)
         if not item.get("relative_path", "").startswith("github-tree/")
     ]
     observed_at = datetime.now(UTC).isoformat()
@@ -352,18 +453,36 @@ def collect_priority_trees(root: Path, limit: int = 30) -> dict[str, Any]:
         with tempfile.TemporaryDirectory(prefix="persona-github-") as temp_dir:
             checkout = Path(temp_dir) / "repo"
             clone = subprocess.run(
-                ["git", "clone", "--depth=1", "--filter=blob:none", "--quiet", repo["url"], str(checkout)],
-                check=False, capture_output=True, text=True,
+                [
+                    "git",
+                    "clone",
+                    "--depth=1",
+                    "--filter=blob:none",
+                    "--quiet",
+                    repo["url"],
+                    str(checkout),
+                ],
+                check=False,
+                capture_output=True,
+                text=True,
             )
             if clone.returncode != 0:
                 clone_failures += 1
-                selection_report.append({"repository": repo["nameWithOwner"], "score": score, "status": "clone_failed"})
+                selection_report.append(
+                    {"repository": repo["nameWithOwner"], "score": score, "status": "clone_failed"}
+                )
                 continue
             commit = subprocess.run(
-                ["git", "-C", str(checkout), "rev-parse", "HEAD"], check=True, capture_output=True, text=True,
+                ["git", "-C", str(checkout), "rev-parse", "HEAD"],
+                check=True,
+                capture_output=True,
+                text=True,
             ).stdout.strip()
             tracked = subprocess.run(
-                ["git", "-C", str(checkout), "ls-files", "-z"], check=True, capture_output=True, text=True,
+                ["git", "-C", str(checkout), "ls-files", "-z"],
+                check=True,
+                capture_output=True,
+                text=True,
             ).stdout.split("\0")
             candidates: list[Path] = []
             for relative_text in tracked:
@@ -371,12 +490,24 @@ def collect_priority_trees(root: Path, limit: int = 30) -> dict[str, Any]:
                     continue
                 relative = Path(relative_text)
                 path = checkout / relative
-                if any(part in EXCLUDED_PARTS for part in relative.parts) or relative.name in EXCLUDED_NAMES:
+                if (
+                    any(part in EXCLUDED_PARTS for part in relative.parts)
+                    or relative.name in EXCLUDED_NAMES
+                ):
                     continue
-                if path.suffix.lower() not in TEXT_SUFFIXES or not path.is_file() or path.stat().st_size > 1_000_000:
+                if (
+                    path.suffix.lower() not in TEXT_SUFFIXES
+                    or not path.is_file()
+                    or path.stat().st_size > 1_000_000
+                ):
                     continue
                 candidates.append(relative)
-            candidates.sort(key=lambda path: (0 if path.parts[0] in {"src", "app", "lib"} else 1, path.as_posix()))
+            candidates.sort(
+                key=lambda path: (
+                    0 if path.parts[0] in {"src", "app", "lib"} else 1,
+                    path.as_posix(),
+                )
+            )
             seen: set[str] = set()
             repo_accepted = 0
             for relative in candidates[:400]:
@@ -391,24 +522,52 @@ def collect_priority_trees(root: Path, limit: int = 30) -> dict[str, Any]:
                 seen.add(digest)
                 stored = f"github-tree/{relative.as_posix()}"
                 canonical = f"{repo['url']}/blob/{commit}/{quote(relative.as_posix())}"
-                documents.append(_record(
-                    root, source, stored, content, canonical, observed_at,
-                    repo.get("updatedAt"), commit, "github-priority-tree-v1",
-                ))
+                documents.append(
+                    _record(
+                        root,
+                        source,
+                        stored,
+                        content,
+                        canonical,
+                        observed_at,
+                        repo.get("updatedAt"),
+                        commit,
+                        "github-priority-tree-v1",
+                    )
+                )
                 accepted += 1
                 repo_accepted += 1
-            selection_report.append({
-                "repository": repo["nameWithOwner"], "score": score, "commits": commit_count,
-                "pull_requests": pr_count, "commit_sha": commit, "tracked_text_documents": repo_accepted,
-                "status": "accepted",
-            })
+            selection_report.append(
+                {
+                    "repository": repo["nameWithOwner"],
+                    "score": score,
+                    "commits": commit_count,
+                    "pull_requests": pr_count,
+                    "commit_sha": commit,
+                    "tracked_text_documents": repo_accepted,
+                    "status": "accepted",
+                }
+            )
 
     documents.sort(key=lambda item: (item["source_id"], item["relative_path"]))
-    manifest_path.write_text("".join(json.dumps(item, ensure_ascii=False) + "\n" for item in documents), encoding="utf-8")
+    manifest_path.write_text(
+        "".join(json.dumps(item, ensure_ascii=False) + "\n" for item in documents), encoding="utf-8"
+    )
     stats: dict[str, Any] = {
-        "selected": len(selected), "accepted_documents": accepted, "rejected": rejected,
-        "duplicates": duplicates, "clone_failures": clone_failures,
+        "selected": len(selected),
+        "accepted_documents": accepted,
+        "rejected": rejected,
+        "duplicates": duplicates,
+        "clone_failures": clone_failures,
     }
     report = root / "data/research/github-priority-trees.json"
-    report.write_text(json.dumps({"observed_at": observed_at, **stats, "repositories": selection_report}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    report.write_text(
+        json.dumps(
+            {"observed_at": observed_at, **stats, "repositories": selection_report},
+            ensure_ascii=False,
+            indent=2,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
     return stats

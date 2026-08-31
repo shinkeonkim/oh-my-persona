@@ -44,11 +44,15 @@ class TextExtractor(HTMLParser):
         return re.sub(r"\n\s*\n+", "\n\n", joined).strip()
 
 
-def collect_web_source(root: Path, source: dict[str, Any], delay_seconds: float = 1.0) -> dict[str, Any]:
+def collect_web_source(
+    root: Path, source: dict[str, Any], delay_seconds: float = 1.0
+) -> dict[str, Any]:
     url = source["canonical_url"]
     _assert_robots_allowed(url)
     time.sleep(max(0.0, delay_seconds))
-    with httpx.Client(headers={"User-Agent": USER_AGENT}, follow_redirects=True, timeout=20) as client:
+    with httpx.Client(
+        headers={"User-Agent": USER_AGENT}, follow_redirects=True, timeout=20
+    ) as client:
         response = client.get(url)
         response.raise_for_status()
     if len(response.content) > MAX_RESPONSE_BYTES:
@@ -71,20 +75,48 @@ def collect_web_source(root: Path, source: dict[str, Any], delay_seconds: float 
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_text(text, encoding="utf-8")
     record = {
-        "document_id": f"DOC-{digest[:20]}", "source_id": source["source_id"],
-        "canonical_url": str(response.url), "repository_url": None,
-        "commit_sha": None, "relative_path": "web-page.txt", "raw_path": str(relative),
-        "content_sha256": digest, "mime_type": "text/plain",
-        "published_at": source.get("published_at"), "observed_at": datetime.now(UTC).isoformat(),
-        "extractor_version": "html-text-v1", "status": "accepted",
+        "document_id": f"DOC-{digest[:20]}",
+        "source_id": source["source_id"],
+        "canonical_url": str(response.url),
+        "repository_url": None,
+        "commit_sha": None,
+        "relative_path": "web-page.txt",
+        "raw_path": str(relative),
+        "content_sha256": digest,
+        "mime_type": "text/plain",
+        "published_at": source.get("published_at"),
+        "observed_at": datetime.now(UTC).isoformat(),
+        "extractor_version": "html-text-v1",
+        "status": "accepted",
     }
     manifest = root / "data/registry/documents.jsonl"
-    records = [json.loads(line) for line in manifest.read_text(encoding="utf-8").splitlines() if line.strip()] if manifest.exists() else []
-    records = [item for item in records if not (item["source_id"] == source["source_id"] and item["relative_path"] == "web-page.txt")]
+    records = (
+        [
+            json.loads(line)
+            for line in manifest.read_text(encoding="utf-8").splitlines()
+            if line.strip()
+        ]
+        if manifest.exists()
+        else []
+    )
+    records = [
+        item
+        for item in records
+        if not (
+            item["source_id"] == source["source_id"] and item["relative_path"] == "web-page.txt"
+        )
+    ]
     records.append(record)
     records.sort(key=lambda item: (item["source_id"], item["relative_path"]))
-    manifest.write_text("".join(json.dumps(item, ensure_ascii=False) + "\n" for item in records), encoding="utf-8")
-    return {"source_id": source["source_id"], "bytes": len(text.encode()), "sha256": digest, "url": str(response.url)}
+    manifest.write_text(
+        "".join(json.dumps(item, ensure_ascii=False) + "\n" for item in records), encoding="utf-8"
+    )
+    return {
+        "source_id": source["source_id"],
+        "bytes": len(text.encode()),
+        "sha256": digest,
+        "url": str(response.url),
+    }
 
 
 def _assert_robots_allowed(url: str) -> None:

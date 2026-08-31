@@ -11,7 +11,31 @@ from .corpus import chunk_text, iter_corpus_files, read_jsonl
 from .models import SearchHit
 
 TOKEN = re.compile(r"[0-9A-Za-z가-힣][0-9A-Za-z가-힣_.+#-]*")
-KOREAN_SUFFIXES = ("에서는", "으로부터", "에게서", "까지", "부터", "에서", "으로", "에게", "께서", "처럼", "보다", "은", "는", "이", "가", "을", "를", "의", "에", "와", "과", "도", "로")
+KOREAN_SUFFIXES = (
+    "에서는",
+    "으로부터",
+    "에게서",
+    "까지",
+    "부터",
+    "에서",
+    "으로",
+    "에게",
+    "께서",
+    "처럼",
+    "보다",
+    "은",
+    "는",
+    "이",
+    "가",
+    "을",
+    "를",
+    "의",
+    "에",
+    "와",
+    "과",
+    "도",
+    "로",
+)
 QUERY_EXPANSIONS = {
     "미핏": ("mefit", "kmu-aws-capstone-team-4"),
     "mefit": ("미핏", "kmu-aws-capstone-team-4"),
@@ -45,16 +69,28 @@ class MemoryRetriever:
         self.records: list[tuple[SearchHit, Counter[str]]] = []
         for claim in claims:
             valid_at = claim.get("valid_at")
-            date_text = " ".join(str(value) for value in valid_at.values()) if isinstance(valid_at, dict) else str(valid_at or "")
+            date_text = (
+                " ".join(str(value) for value in valid_at.values())
+                if isinstance(valid_at, dict)
+                else str(valid_at or "")
+            )
             text = f"{claim['subject']} {claim['predicate']} {claim['object']} {date_text}".strip()
             for source_id in claim["source_ids"]:
                 source = self.sources.get(source_id, {})
                 hit = SearchHit(
-                    chunk_id=f"{claim['claim_id']}:{source_id}", text=text, score=0.0,
-                    source_id=source.get("source_id"), title=source.get("title"),
-                    url=source.get("canonical_url"), published_at=source.get("published_at"),
+                    chunk_id=f"{claim['claim_id']}:{source_id}",
+                    text=text,
+                    score=0.0,
+                    source_id=source.get("source_id"),
+                    title=source.get("title"),
+                    url=source.get("canonical_url"),
+                    published_at=source.get("published_at"),
                     observed_at=source.get("observed_at"),
-                    metadata={"claim_id": claim["claim_id"], "kind": claim.get("kind"), "valid_at": claim.get("valid_at")},
+                    metadata={
+                        "claim_id": claim["claim_id"],
+                        "kind": claim.get("kind"),
+                        "valid_at": claim.get("valid_at"),
+                    },
                 )
                 self.records.append((hit, Counter(tokenize(text))))
         processed = read_jsonl(root / "data/processed/chunks.jsonl")
@@ -62,16 +98,25 @@ class MemoryRetriever:
             for chunk in processed:
                 source = self.sources.get(chunk.get("source_id"), {})
                 hit = SearchHit(
-                    chunk["chunk_id"], chunk["text"], 0.0, chunk.get("source_id"),
-                    source.get("title"), chunk.get("canonical_url") or source.get("canonical_url"),
-                    source.get("published_at"), chunk.get("observed_at") or source.get("observed_at"),
+                    chunk["chunk_id"],
+                    chunk["text"],
+                    0.0,
+                    chunk.get("source_id"),
+                    source.get("title"),
+                    chunk.get("canonical_url") or source.get("canonical_url"),
+                    source.get("published_at"),
+                    chunk.get("observed_at") or source.get("observed_at"),
                     {"source_path": chunk["source_path"], "document_id": chunk.get("document_id")},
                 )
                 self.records.append((hit, Counter(tokenize(chunk["text"]))))
         else:
             for path in iter_corpus_files(root):
-                for chunk in chunk_text(path.read_text(encoding="utf-8"), str(path.relative_to(root))):
-                    hit = SearchHit(chunk.chunk_id, chunk.text, 0.0, metadata={"source_path": chunk.source_path})
+                for chunk in chunk_text(
+                    path.read_text(encoding="utf-8"), str(path.relative_to(root))
+                ):
+                    hit = SearchHit(
+                        chunk.chunk_id, chunk.text, 0.0, metadata={"source_path": chunk.source_path}
+                    )
                     self.records.append((hit, Counter(tokenize(chunk.text))))
 
     def search(self, query: str, limit: int = 6) -> list[SearchHit]:
@@ -96,8 +141,7 @@ class MemoryRetriever:
             if score:
                 lowered_text = hit.text.lower()
                 adjacent_matches = sum(
-                    1 for left, right in pairwise(query_tokens)
-                    if f"{left} {right}" in lowered_text
+                    1 for left, right in pairwise(query_tokens) if f"{left} {right}" in lowered_text
                 )
                 score *= 1 + min(adjacent_matches, 4) * 0.2
                 source = self.sources.get(hit.source_id or "", {})
@@ -116,7 +160,9 @@ class MemoryRetriever:
                 scored.append(SearchHit(**{**hit.__dict__, "score": round(score, 6)}))
         # Public citations are preferred over uncited narrative chunks at equal relevance.
         # Narrative chunks remain useful context but cannot alone support a public answer.
-        ranked = sorted(scored, key=lambda item: (item.source_id is None, -item.score, item.chunk_id))
+        ranked = sorted(
+            scored, key=lambda item: (item.source_id is None, -item.score, item.chunk_id)
+        )
         diversified: list[SearchHit] = []
         seen_claims: set[str] = set()
         for hit in ranked:
@@ -138,6 +184,7 @@ class PostgresHybridRetriever:
 
     def search(self, query: str, limit: int = 6) -> list[SearchHit]:
         import psycopg
+
         vector = self.embedding(query)
         sql = """
         WITH lexical AS (
@@ -156,7 +203,19 @@ class PostgresHybridRetriever:
         """
         with psycopg.connect(self.database_url) as connection, connection.cursor() as cursor:
             cursor.execute(sql, {"q": query, "v": vector.values, "m": vector.model, "limit": limit})
-            return [SearchHit(str(row[0]), row[1], float(row[2]), str(row[3]), row[4], row[5], _iso(row[6]), _iso(row[7])) for row in cursor.fetchall()]
+            return [
+                SearchHit(
+                    str(row[0]),
+                    row[1],
+                    float(row[2]),
+                    str(row[3]),
+                    row[4],
+                    row[5],
+                    _iso(row[6]),
+                    _iso(row[7]),
+                )
+                for row in cursor.fetchall()
+            ]
 
 
 def _iso(value):

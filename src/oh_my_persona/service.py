@@ -31,12 +31,18 @@ def search(query: str, limit: int = 6) -> list[dict]:
         matches = query_terms.intersection(tokenize(f"{item['title']} {item['content']}"))
         if not matches:
             continue
-        hits.append(SearchHit(
-            chunk_id=f"ADMIN-{item['id']}", text=item["content"],
-            score=float(len(matches) * 100), source_id="ADMIN", title=item["title"],
-            url=item["source_url"], observed_at=item.get("observed_at"),
-            metadata={"managed": True, "knowledge_id": item["id"]},
-        ))
+        hits.append(
+            SearchHit(
+                chunk_id=f"ADMIN-{item['id']}",
+                text=item["content"],
+                score=float(len(matches) * 100),
+                source_id="ADMIN",
+                title=item["title"],
+                url=item["source_url"],
+                observed_at=item.get("observed_at"),
+                metadata={"managed": True, "knowledge_id": item["id"]},
+            )
+        )
     hits.sort(key=lambda hit: -hit.score)
     return [asdict(hit) for hit in hits[:limit]]
 
@@ -48,12 +54,15 @@ def grounded_fallback(question: str, hits: list[dict]) -> str:
     for index, hit in enumerate(hits[:4], 1):
         excerpt = " ".join(hit["text"].split())[:260]
         lines.append(f"[{index}] {excerpt}")
-    lines.append("검색된 자료의 발췌이므로, 해석이 필요한 부분은 원출처와 시점을 함께 확인해 주세요.")
+    lines.append(
+        "검색된 자료의 발췌이므로, 해석이 필요한 부분은 원출처와 시점을 함께 확인해 주세요."
+    )
     return "\n\n".join(lines)
 
 
-def answer(question: str, model_alias: str | None = None,
-           history: list[dict] | None = None) -> tuple[str, list[dict]]:
+def answer(
+    question: str, model_alias: str | None = None, history: list[dict] | None = None
+) -> tuple[str, list[dict]]:
     if any(term.lower() in question.lower() for term in PRIVATE_QUERY_TERMS):
         return "개인정보나 인증정보는 공개 자료 검색 및 답변 대상에서 제외합니다.", []
     recent_user_context = " ".join(
@@ -61,7 +70,31 @@ def answer(question: str, model_alias: str | None = None,
     )
     retrieval_query = f"{recent_user_context} {question}".strip()
     hits = search(retrieval_query)
-    if not hits or not os.environ.get("PERSONA_LITELLM_URL") or not os.environ.get("PERSONA_LITELLM_KEY"):
+    if (
+        not hits
+        or not os.environ.get("PERSONA_LITELLM_URL")
+        or not os.environ.get("PERSONA_LITELLM_KEY")
+    ):
         return grounded_fallback(question, hits), hits
     from .agent import invoke
+
     return invoke(question, hits, model_alias, history), hits
+
+
+def answer_context(
+    question: str, history: list[dict] | None = None
+) -> tuple[str | None, list[dict]]:
+    """Prepare privacy-safe retrieval context for synchronous or streaming generation."""
+    if any(term.lower() in question.lower() for term in PRIVATE_QUERY_TERMS):
+        return "개인정보나 인증정보는 공개 자료 검색 및 답변 대상에서 제외합니다.", []
+    recent = " ".join(
+        item["content"] for item in (history or [])[-6:] if item.get("role") == "user"
+    )
+    hits = search(f"{recent} {question}".strip())
+    if (
+        not hits
+        or not os.environ.get("PERSONA_LITELLM_URL")
+        or not os.environ.get("PERSONA_LITELLM_KEY")
+    ):
+        return grounded_fallback(question, hits), hits
+    return None, hits

@@ -37,7 +37,9 @@ fragment RepoFields on Repository {
 """
 
 
-def _graphql(login: str, owned_cursor: str | None, contributed_cursor: str | None) -> dict[str, Any]:
+def _graphql(
+    login: str, owned_cursor: str | None, contributed_cursor: str | None
+) -> dict[str, Any]:
     command = ["gh", "api", "graphql", "-f", f"query={QUERY}", "-F", f"login={login}"]
     if owned_cursor:
         command.extend(("-F", f"ownedCursor={owned_cursor}"))
@@ -48,7 +50,7 @@ def _graphql(login: str, owned_cursor: str | None, contributed_cursor: str | Non
         if result.returncode == 0:
             return json.loads(result.stdout)["data"]["user"]
         if attempt < 2:
-            time.sleep(2 ** attempt)
+            time.sleep(2**attempt)
     raise RuntimeError(f"GitHub GraphQL request failed: {result.stderr.strip()}")
 
 
@@ -59,7 +61,9 @@ def discover(login: str = "shinkeonkim") -> dict[str, Any]:
     owned_done = contributed_done = False
     while not (owned_done and contributed_done):
         user = _graphql(login, owned_cursor, contributed_cursor)
-        organizations.update({item["login"]: item["url"] for item in user["organizations"]["nodes"]})
+        organizations.update(
+            {item["login"]: item["url"] for item in user["organizations"]["nodes"]}
+        )
         for relation, connection in (
             ("owner", user["repositories"]),
             ("contributor", user["repositoriesContributedTo"]),
@@ -70,12 +74,20 @@ def discover(login: str = "shinkeonkim") -> dict[str, Any]:
                     item["relations"].append(relation)
         owned_done = not user["repositories"]["pageInfo"]["hasNextPage"]
         contributed_done = not user["repositoriesContributedTo"]["pageInfo"]["hasNextPage"]
-        owned_cursor = user["repositories"]["pageInfo"]["endCursor"] if not owned_done else owned_cursor
-        contributed_cursor = user["repositoriesContributedTo"]["pageInfo"]["endCursor"] if not contributed_done else contributed_cursor
+        owned_cursor = (
+            user["repositories"]["pageInfo"]["endCursor"] if not owned_done else owned_cursor
+        )
+        contributed_cursor = (
+            user["repositoriesContributedTo"]["pageInfo"]["endCursor"]
+            if not contributed_done
+            else contributed_cursor
+        )
     return {
         "login": login,
         "observed_at": datetime.now(UTC).isoformat(),
-        "organizations": [{"login": key, "url": organizations[key]} for key in sorted(organizations)],
+        "organizations": [
+            {"login": key, "url": organizations[key]} for key in sorted(organizations)
+        ],
         "repositories": [repos[key] for key in sorted(repos)],
     }
 
@@ -98,11 +110,15 @@ def write_inventory(root: Path, inventory: dict[str, Any]) -> dict[str, int]:
         url = repo["url"].rstrip("/")
         if url not in by_url:
             source = {
-                "source_id": f"SRC-{next_id:04d}", "canonical_url": url,
-                "source_type": "repository", "title": repo["nameWithOwner"],
-                "publisher": repo["owner"]["login"], "observed_at": observed_at,
+                "source_id": f"SRC-{next_id:04d}",
+                "canonical_url": url,
+                "source_type": "repository",
+                "title": repo["nameWithOwner"],
+                "publisher": repo["owner"]["login"],
+                "observed_at": observed_at,
                 "identity_signals": [inventory["login"], *repo["relations"]],
-                "collection": "github_graphql", "trust": "public_contribution",
+                "collection": "github_graphql",
+                "trust": "public_contribution",
                 "status": "accepted",
             }
             sources.append(source)
@@ -113,38 +129,66 @@ def write_inventory(root: Path, inventory: dict[str, Any]) -> dict[str, int]:
         source = by_url[url]
         branch = repo.get("defaultBranchRef") or {}
         target = branch.get("target") or {}
-        content = "\n".join((
-            f"GitHub repository: {repo['nameWithOwner']}",
-            f"URL: {url}",
-            f"Relationship to shinkeonkim: {', '.join(repo['relations'])}",
-            f"Description: {repo.get('description') or '(none)'}",
-            f"Created at: {repo.get('createdAt')}", f"Updated at: {repo.get('updatedAt')}",
-            f"Pushed at: {repo.get('pushedAt')}", f"Archived: {repo.get('isArchived')}",
-            f"Fork: {repo.get('isFork')}",
-            f"Languages: {', '.join(node['name'] for node in repo['languages']['nodes']) or '(none)'}",
-            f"Topics: {', '.join(node['topic']['name'] for node in repo['repositoryTopics']['nodes']) or '(none)'}",
-            f"Default branch: {branch.get('name') or '(none)'}",
-            f"Latest commit: {target.get('oid') or '(none)'} at {target.get('committedDate') or '(none)'}",
-        )) + "\n"
+        content = (
+            "\n".join(
+                (
+                    f"GitHub repository: {repo['nameWithOwner']}",
+                    f"URL: {url}",
+                    f"Relationship to shinkeonkim: {', '.join(repo['relations'])}",
+                    f"Description: {repo.get('description') or '(none)'}",
+                    f"Created at: {repo.get('createdAt')}",
+                    f"Updated at: {repo.get('updatedAt')}",
+                    f"Pushed at: {repo.get('pushedAt')}",
+                    f"Archived: {repo.get('isArchived')}",
+                    f"Fork: {repo.get('isFork')}",
+                    f"Languages: {', '.join(node['name'] for node in repo['languages']['nodes']) or '(none)'}",
+                    f"Topics: {', '.join(node['topic']['name'] for node in repo['repositoryTopics']['nodes']) or '(none)'}",
+                    f"Default branch: {branch.get('name') or '(none)'}",
+                    f"Latest commit: {target.get('oid') or '(none)'} at {target.get('committedDate') or '(none)'}",
+                )
+            )
+            + "\n"
+        )
         digest = hashlib.sha256(content.encode()).hexdigest()
         raw = root / "data/raw" / source["source_id"] / "github-metadata.txt"
         raw.parent.mkdir(parents=True, exist_ok=True)
         raw.write_text(content, encoding="utf-8")
-        documents = [item for item in documents if not (
-            item.get("source_id") == source["source_id"] and item.get("relative_path") == "github-metadata.txt"
-        )]
-        documents.append({
-            "document_id": f"DOC-{digest[:20]}", "source_id": source["source_id"],
-            "canonical_url": url, "repository_url": url,
-            "commit_sha": target.get("oid"), "relative_path": "github-metadata.txt",
-            "raw_path": str(raw.relative_to(root)), "content_sha256": digest,
-            "mime_type": "text/plain", "published_at": repo.get("updatedAt"),
-            "observed_at": observed_at, "extractor_version": "github-graphql-v1",
-            "status": "accepted",
-        })
+        documents = [
+            item
+            for item in documents
+            if not (
+                item.get("source_id") == source["source_id"]
+                and item.get("relative_path") == "github-metadata.txt"
+            )
+        ]
+        documents.append(
+            {
+                "document_id": f"DOC-{digest[:20]}",
+                "source_id": source["source_id"],
+                "canonical_url": url,
+                "repository_url": url,
+                "commit_sha": target.get("oid"),
+                "relative_path": "github-metadata.txt",
+                "raw_path": str(raw.relative_to(root)),
+                "content_sha256": digest,
+                "mime_type": "text/plain",
+                "published_at": repo.get("updatedAt"),
+                "observed_at": observed_at,
+                "extractor_version": "github-graphql-v1",
+                "status": "accepted",
+            }
+        )
 
     sources.sort(key=lambda item: item["source_id"])
     documents.sort(key=lambda item: (item["source_id"], item["relative_path"]))
-    source_path.write_text("".join(json.dumps(item, ensure_ascii=False) + "\n" for item in sources), encoding="utf-8")
-    document_path.write_text("".join(json.dumps(item, ensure_ascii=False) + "\n" for item in documents), encoding="utf-8")
-    return {"organizations": len(inventory["organizations"]), "repositories": len(inventory["repositories"]), "added_sources": added_sources}
+    source_path.write_text(
+        "".join(json.dumps(item, ensure_ascii=False) + "\n" for item in sources), encoding="utf-8"
+    )
+    document_path.write_text(
+        "".join(json.dumps(item, ensure_ascii=False) + "\n" for item in documents), encoding="utf-8"
+    )
+    return {
+        "organizations": len(inventory["organizations"]),
+        "repositories": len(inventory["repositories"]),
+        "added_sources": added_sources,
+    }

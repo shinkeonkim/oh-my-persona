@@ -42,11 +42,21 @@ def inspect_file(path: Path) -> InboxFinding:
         reasons.append("unsupported or executable file type")
     if suffix in ALLOWED_SUFFIXES - {".pdf"} and path.stat().st_size <= MAX_FILE_BYTES:
         sample = path.read_bytes()[:2_000_000].decode("utf-8", errors="ignore")
-        reasons.extend(f"sensitive pattern: {name}" for name, pattern in SENSITIVE_PATTERNS.items() if pattern.search(sample))
+        reasons.extend(
+            f"sensitive pattern: {name}"
+            for name, pattern in SENSITIVE_PATTERNS.items()
+            if pattern.search(sample)
+        )
     if suffix == ".zip":
         reasons.extend(inspect_zip(path))
     status = "rejected" if reasons else "accepted"
-    return InboxFinding(str(path), status, sha256_file(path), mimetypes.guess_type(path.name)[0] or "application/octet-stream", tuple(reasons))
+    return InboxFinding(
+        str(path),
+        status,
+        sha256_file(path),
+        mimetypes.guess_type(path.name)[0] or "application/octet-stream",
+        tuple(reasons),
+    )
 
 
 def inspect_zip(path: Path) -> list[str]:
@@ -78,7 +88,11 @@ def inspect_zip(path: Path) -> list[str]:
 
 def inspect_inbox(root: Path) -> list[InboxFinding]:
     inbox = root / "data/inbox"
-    return [inspect_file(path) for path in sorted(inbox.iterdir()) if path.is_file() and path.name != ".gitkeep"]
+    return [
+        inspect_file(path)
+        for path in sorted(inbox.iterdir())
+        if path.is_file() and path.name != ".gitkeep"
+    ]
 
 
 def approve_inbox(root: Path) -> list[InboxFinding]:
@@ -100,5 +114,7 @@ def approve_inbox(root: Path) -> list[InboxFinding]:
             "ingested_at": timestamp,
             "review_status": "pending_metadata",
         }
-        destination.with_suffix(destination.suffix + ".meta.json").write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        destination.with_suffix(destination.suffix + ".meta.json").write_text(
+            json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
     return findings

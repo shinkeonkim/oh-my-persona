@@ -20,12 +20,20 @@ def test_widget_session_requires_its_access_token() -> None:
     session = created.json()
     url = f"/api/widget/conversations/{session['conversation_id']}"
     assert client.get(url).status_code == 422
-    assert client.get(url, headers={"x-persona-session-token": "wrong-token-value-that-is-long"}).status_code == 401
+    assert (
+        client.get(
+            url, headers={"x-persona-session-token": "wrong-token-value-that-is-long"}
+        ).status_code
+        == 401
+    )
     assert client.get(url, headers={"x-persona-session-token": session["token"]}).status_code == 200
-    assert client.get(
-        f"{url}/stream",
-        headers={"x-persona-session-token": "wrong-token-value-that-is-long"},
-    ).status_code == 401
+    assert (
+        client.get(
+            f"{url}/stream",
+            headers={"x-persona-session-token": "wrong-token-value-that-is-long"},
+        ).status_code
+        == 401
+    )
 
 
 def test_widget_chat_reuses_authorized_conversation(monkeypatch) -> None:
@@ -54,10 +62,13 @@ def test_discord_owner_reply_is_delivered_only_to_recent_linked_session(monkeypa
     assert store.messages(recent_id)[-1]["role"] == "owner"
 
     old_id, _ = create_widget_session(store)
-    store.update_metadata(old_id, {
-        "discord_thread_id": "200",
-        "created_at": (datetime.now(UTC) - timedelta(days=31)).isoformat(),
-    })
+    store.update_metadata(
+        old_id,
+        {
+            "discord_thread_id": "200",
+            "created_at": (datetime.now(UTC) - timedelta(days=31)).isoformat(),
+        },
+    )
     assert bridge.accept_owner_message("200", "42", "늦은 답변") is None
 
 

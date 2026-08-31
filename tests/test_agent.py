@@ -31,7 +31,9 @@ def test_meta_assistant_offer_is_removed() -> None:
 
 
 def test_meta_assistant_offer_on_a_new_line_is_removed() -> None:
-    answer = "제가 공개한 자료에서 확인됩니다.[3]\n\n원하면 면접용 30초 버전으로 다듬어드리겠습니다."
+    answer = (
+        "제가 공개한 자료에서 확인됩니다.[3]\n\n원하면 면접용 30초 버전으로 다듬어드리겠습니다."
+    )
     assert sanitize_persona_response(answer) == "제가 공개한 자료에서 확인됩니다.[3]"
 
 

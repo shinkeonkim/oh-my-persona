@@ -17,4 +17,6 @@ def test_chunk_ids_are_stable_and_content_is_preserved() -> None:
 
 
 def test_canonical_url_drops_fragment() -> None:
-    assert canonicalize_url("https://GitHub.com/shinkeonkim/#bio") == "https://github.com/shinkeonkim"
+    assert (
+        canonicalize_url("https://GitHub.com/shinkeonkim/#bio") == "https://github.com/shinkeonkim"
+    )

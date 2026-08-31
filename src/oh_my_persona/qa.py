@@ -41,15 +41,24 @@ def build_answers(root: Path, answers_path: Path) -> dict[str, int]:
     digest = hashlib.sha256(content.encode()).hexdigest()
     manifest = root / "data/registry/documents.jsonl"
     records = [item for item in read_jsonl(manifest) if item.get("source_id") != "SRC-0015"]
-    records.append({
-        "document_id": f"DOC-{digest[:20]}", "source_id": "SRC-0015",
-        "canonical_url": "https://github.com/shinkeonkim/oh-my-persona/blob/main/data/curated/persona-interview-answers.md",
-        "repository_url": "https://github.com/shinkeonkim/oh-my-persona",
-        "commit_sha": None, "relative_path": "persona-interview-answers.md",
-        "raw_path": "data/curated/persona-interview-answers.md", "content_sha256": digest,
-        "mime_type": "text/markdown", "observed_at": datetime.now(UTC).isoformat(),
-        "extractor_version": "persona-interview-v1", "status": "accepted",
-    })
+    records.append(
+        {
+            "document_id": f"DOC-{digest[:20]}",
+            "source_id": "SRC-0015",
+            "canonical_url": "https://github.com/shinkeonkim/oh-my-persona/blob/main/data/curated/persona-interview-answers.md",
+            "repository_url": "https://github.com/shinkeonkim/oh-my-persona",
+            "commit_sha": None,
+            "relative_path": "persona-interview-answers.md",
+            "raw_path": "data/curated/persona-interview-answers.md",
+            "content_sha256": digest,
+            "mime_type": "text/markdown",
+            "observed_at": datetime.now(UTC).isoformat(),
+            "extractor_version": "persona-interview-v1",
+            "status": "accepted",
+        }
+    )
     records.sort(key=lambda item: (item["source_id"], item["relative_path"]))
-    manifest.write_text("".join(json.dumps(item, ensure_ascii=False) + "\n" for item in records), encoding="utf-8")
+    manifest.write_text(
+        "".join(json.dumps(item, ensure_ascii=False) + "\n" for item in records), encoding="utf-8"
+    )
     return {"accepted": accepted, "skipped": skipped}

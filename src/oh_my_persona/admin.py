@@ -74,8 +74,14 @@ class KnowledgeStore:
             connection.execute(
                 """INSERT INTO admin_knowledge(id,title,content,source_url,observed_at,status)
                    VALUES (%s,%s,%s,%s,%s,%s)""",
-                (item_id, values["title"], values["content"], values["source_url"],
-                 values.get("observed_at"), values["status"]),
+                (
+                    item_id,
+                    values["title"],
+                    values["content"],
+                    values["source_url"],
+                    values.get("observed_at"),
+                    values["status"],
+                ),
             )
         return self.get(item_id) or item
 
@@ -94,8 +100,14 @@ class KnowledgeStore:
             connection.execute(
                 """UPDATE admin_knowledge SET title=%s,content=%s,source_url=%s,
                    observed_at=%s,status=%s,updated_at=now() WHERE id=%s""",
-                (values["title"], values["content"], values["source_url"],
-                 values.get("observed_at"), values["status"], item_id),
+                (
+                    values["title"],
+                    values["content"],
+                    values["source_url"],
+                    values.get("observed_at"),
+                    values["status"],
+                    item_id,
+                ),
             )
         return self.get(item_id)
 
@@ -170,9 +182,7 @@ class KnowledgeQuestionStore:
     def create(self, values: dict) -> dict:
         raw_id = str(uuid.uuid4())
         question_id = f"AQ-{raw_id}"
-        item = {
-            "question_id": question_id, **values, "created_at": datetime.now(UTC).isoformat()
-        }
+        item = {"question_id": question_id, **values, "created_at": datetime.now(UTC).isoformat()}
         if not self.database_url:
             with self._lock:
                 self._memory[question_id] = item
@@ -206,4 +216,7 @@ class KnowledgeQuestionStore:
 
 
 def _serialize(row: dict) -> dict:
-    return {key: value.isoformat() if hasattr(value, "isoformat") else value for key, value in row.items()}
+    return {
+        key: value.isoformat() if hasattr(value, "isoformat") else value
+        for key, value in row.items()
+    }

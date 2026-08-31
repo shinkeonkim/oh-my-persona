@@ -132,16 +132,32 @@ class ConversationStore:
             )
             rows = list(reversed(cursor.fetchall()))
         return [
-            {"role": row[0], "content": row[1], "model": row[2], "sources": row[3],
-             "created_at": row[4].isoformat()}
+            {
+                "role": row[0],
+                "content": row[1],
+                "model": row[2],
+                "sources": row[3],
+                "created_at": row[4].isoformat(),
+            }
             for row in rows
         ]
 
-    def append(self, conversation_id: str, role: str, content: str, model: str | None = None,
-               sources: list[dict] | None = None) -> None:
+    def append(
+        self,
+        conversation_id: str,
+        role: str,
+        content: str,
+        model: str | None = None,
+        sources: list[dict] | None = None,
+    ) -> None:
         created_at = datetime.now(UTC).isoformat()
-        item = {"role": role, "content": content, "model": model,
-                "sources": sources or [], "created_at": created_at}
+        item = {
+            "role": role,
+            "content": content,
+            "model": model,
+            "sources": sources or [],
+            "created_at": created_at,
+        }
         if not self.database_url:
             with self._lock:
                 self._memory.setdefault(conversation_id, []).append(item)
@@ -152,9 +168,17 @@ class ConversationStore:
             cursor.execute(
                 """INSERT INTO conversation_messages(conversation_id,role,content,model,sources)
                    VALUES (%s,%s,%s,%s,%s::jsonb)""",
-                (conversation_id, role, content, model, json.dumps(sources or [], ensure_ascii=False)),
+                (
+                    conversation_id,
+                    role,
+                    content,
+                    model,
+                    json.dumps(sources or [], ensure_ascii=False),
+                ),
             )
-            cursor.execute("UPDATE conversations SET updated_at=now() WHERE id=%s", (conversation_id,))
+            cursor.execute(
+                "UPDATE conversations SET updated_at=now() WHERE id=%s", (conversation_id,)
+            )
 
     def list_conversations(self, limit: int = 100, offset: int = 0) -> list[dict]:
         if not self.database_url:
@@ -162,12 +186,14 @@ class ConversationStore:
             for conversation_id, messages in reversed(list(self._memory.items())):
                 if not messages:
                     continue
-                items.append({
-                    "id": conversation_id,
-                    "message_count": len(messages),
-                    "preview": messages[0]["content"][:160] if messages else "",
-                    "updated_at": messages[-1]["created_at"] if messages else None,
-                })
+                items.append(
+                    {
+                        "id": conversation_id,
+                        "message_count": len(messages),
+                        "preview": messages[0]["content"][:160] if messages else "",
+                        "updated_at": messages[-1]["created_at"] if messages else None,
+                    }
+                )
             return items[offset : offset + limit]
         import psycopg
         from psycopg.rows import dict_row
@@ -183,17 +209,23 @@ class ConversationStore:
                 (limit, offset),
             ).fetchall()
         return [
-            {key: value.isoformat() if hasattr(value, "isoformat") else value
-             for key, value in row.items()}
+            {
+                key: value.isoformat() if hasattr(value, "isoformat") else value
+                for key, value in row.items()
+            }
             for row in rows
         ]
 
 
 class RateLimiter:
-    def __init__(self, store: ConversationStore, limit: int | None = None, window_seconds: int | None = None):
+    def __init__(
+        self, store: ConversationStore, limit: int | None = None, window_seconds: int | None = None
+    ):
         self.store = store
         self.limit = limit or int(os.environ.get("PERSONA_RATE_LIMIT", "12"))
-        self.window_seconds = window_seconds or int(os.environ.get("PERSONA_RATE_WINDOW_SECONDS", "3600"))
+        self.window_seconds = window_seconds or int(
+            os.environ.get("PERSONA_RATE_WINDOW_SECONDS", "3600")
+        )
         self._events: dict[str, list[datetime]] = {}
         self._lock = threading.Lock()
 
@@ -220,6 +252,10 @@ class RateLimiter:
             count, oldest = cursor.fetchone()
             if count >= self.limit:
                 return False, max(1, int((oldest - cutoff).total_seconds()))
-            cursor.execute("INSERT INTO rate_limit_events(identity_hash) VALUES (%s)", (identity_hash,))
-            cursor.execute("DELETE FROM rate_limit_events WHERE created_at < now() - interval '2 days'")
+            cursor.execute(
+                "INSERT INTO rate_limit_events(identity_hash) VALUES (%s)", (identity_hash,)
+            )
+            cursor.execute(
+                "DELETE FROM rate_limit_events WHERE created_at < now() - interval '2 days'"
+            )
         return True, 0
