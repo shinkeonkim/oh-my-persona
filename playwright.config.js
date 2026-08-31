@@ -13,7 +13,7 @@ module.exports = defineConfig({
     timezoneId: 'Asia/Seoul',
   },
   webServer: {
-    command: 'uv run uvicorn oh_my_persona.api:app --host 127.0.0.1 --port 8765',
+    command: 'uv run uvicorn oh_my_persona.presentation.app:app --host 127.0.0.1 --port 8765',
     url: 'http://127.0.0.1:8765/healthz',
     reuseExistingServer: true,
   },

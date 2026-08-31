@@ -65,4 +65,8 @@ frontend/
 - 2026-08-31: GitHub 활동·공개 문서·priority tree 수집기를 203/149/179줄 adapter로 분리.
 - 2026-08-31: 모든 production Python 모듈을 300줄 이하로 제한하는 architecture test 적용.
 - 2026-08-31: RateLimiter를 conversation persistence에서 infrastructure adapter로 분리.
-- 남은 작업: Knowledge/Conversation PostgreSQL와 memory adapter의 물리적 분리.
+- 2026-08-31: 루트 production 모듈을 제거하고 application/domain/infrastructure/presentation/bootstrap 패키지로 전면 이동.
+- 2026-08-31: PersonaService의 persistence·LLM 직접 생성을 제거하고 composition container에서 의존성을 주입.
+- 2026-08-31: Conversation PostgreSQL와 memory adapter를 물리적으로 분리하고 도메인 repository protocol로 연결.
+- 2026-08-31: strict mypy 범위를 일부 16개 파일에서 전체 production 48개 파일로 확대하고 전부 통과.
+- 남은 작업: Knowledge PostgreSQL와 memory adapter의 물리적 분리, public/chat/widget router 분리.

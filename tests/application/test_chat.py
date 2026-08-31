@@ -1,5 +1,5 @@
 from oh_my_persona.application import ChatUseCase
-from oh_my_persona.conversations import ConversationStore
+from oh_my_persona.infrastructure.persistence.conversations import ConversationStore
 
 
 def test_chat_use_case_creates_and_persists_exchange() -> None:

@@ -1,6 +1,7 @@
 import hashlib
 import json
 import os
+from typing import Any, Protocol
 
 from fastapi import HTTPException, Request
 
@@ -11,7 +12,11 @@ def sse(event: str, data: object) -> str:
     return f"event: {event}\ndata: {json.dumps(data, ensure_ascii=False)}\n\n"
 
 
-def enforce_rate_limit(request: Request, limiter: object) -> None:
+class RateLimit(Protocol):
+    def consume(self, identity_hash: str) -> tuple[bool, int]: ...
+
+
+def enforce_rate_limit(request: Request, limiter: RateLimit) -> None:
     client_ip = request.headers.get("cf-connecting-ip") or (
         request.client.host if request.client else "unknown"
     )
@@ -36,7 +41,7 @@ def knowledge_values(request: KnowledgeRequest) -> dict[str, object]:
     }
 
 
-def gap_summary(questions: list[dict]) -> dict[str, int]:
+def gap_summary(questions: list[dict[str, Any]]) -> dict[str, int]:
     summary: dict[str, int] = {}
     for question in questions:
         status = question["status"]
@@ -44,7 +49,7 @@ def gap_summary(questions: list[dict]) -> dict[str, int]:
     return summary
 
 
-def packaged_chunk(chunk: dict, source: dict) -> dict:
+def packaged_chunk(chunk: dict[str, Any], source: dict[str, Any]) -> dict[str, Any]:
     return {
         "id": chunk["chunk_id"],
         "chunk_id": chunk["chunk_id"],

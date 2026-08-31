@@ -19,8 +19,8 @@ vector = ["pgvector>=0.3", "psycopg[binary]>=3.2"]
 dev = ["mypy>=1.17", "pytest>=8.3", "ruff>=0.9"]
 
 [project.scripts]
-persona = "oh_my_persona.cli:main"
-persona-discord-worker = "oh_my_persona.discord_bridge:run_worker"
+persona = "oh_my_persona.presentation.cli:main"
+persona-discord-worker = "oh_my_persona.infrastructure.discord.bridge:run_worker"
 
 [build-system]
 requires = ["hatchling"]
@@ -41,8 +41,4 @@ extend-exclude = ["data/raw", "data/processed"]
 python_version = "3.11"
 strict = true
 warn_unused_ignores = true
-files = [
-  "src/oh_my_persona/domain",
-  "src/oh_my_persona/application",
-  "src/oh_my_persona/presentation/schemas.py",
-]
+files = ["src/oh_my_persona"]

@@ -8,11 +8,17 @@ from __future__ import annotations
 
 import json
 from collections.abc import Callable
+from pathlib import Path
 from typing import Any
 
 from fastapi import APIRouter, Depends, HTTPException, Query
 
-from ..corpus import read_jsonl
+from ..domain.repositories import (
+    ConversationRepository,
+    KnowledgeQuestionRepository,
+    KnowledgeRepository,
+)
+from ..infrastructure.files import read_jsonl
 from .http_support import gap_summary, knowledge_values, packaged_chunk
 from .schemas import (
     AdminConversationMessageRequest,
@@ -24,10 +30,10 @@ from .schemas import (
 
 def create_admin_router(
     *,
-    root: Any,
-    knowledge_store: Any,
-    question_store: Any,
-    conversation_store: Any,
+    root: Path,
+    knowledge_store: KnowledgeRepository,
+    question_store: KnowledgeQuestionRepository,
+    conversation_store: ConversationRepository,
     authenticate: Callable[..., None],
 ) -> APIRouter:
     router = APIRouter(prefix="/api/admin", dependencies=[Depends(authenticate)])
@@ -40,7 +46,7 @@ def create_admin_router(
         packaged_offset: int = Query(0, ge=0),
         q: str | None = Query(None, max_length=200),
         source_id: str | None = Query(None, max_length=100),
-    ):
+    ) -> dict[str, Any]:
         chunks = read_jsonl(root / "data/processed/chunks.jsonl")
         sources = {
             item["source_id"]: item for item in read_jsonl(root / "data/registry/sources.jsonl")
@@ -84,7 +90,7 @@ def create_admin_router(
         }
 
     @router.get("/chunks/{chunk_id}")
-    def get_chunk(chunk_id: str):
+    def get_chunk(chunk_id: str) -> dict[str, Any]:
         chunk = next(
             (
                 item
@@ -106,23 +112,23 @@ def create_admin_router(
         return packaged_chunk(chunk, source)
 
     @router.post("/knowledge", status_code=201)
-    def create_knowledge(request: KnowledgeRequest):
+    def create_knowledge(request: KnowledgeRequest) -> dict[str, Any]:
         return knowledge_store.create(knowledge_values(request))
 
     @router.put("/knowledge/{item_id}")
-    def update_knowledge(item_id: str, request: KnowledgeRequest):
+    def update_knowledge(item_id: str, request: KnowledgeRequest) -> dict[str, Any]:
         item = knowledge_store.update(item_id, knowledge_values(request))
         if not item:
             raise HTTPException(status_code=404, detail="knowledge not found")
         return item
 
     @router.delete("/knowledge/{item_id}", status_code=204)
-    def delete_knowledge(item_id: str):
+    def delete_knowledge(item_id: str) -> None:
         if not knowledge_store.delete(item_id):
             raise HTTPException(status_code=404, detail="knowledge not found")
 
     @router.get("/knowledge-gaps")
-    def list_gaps():
+    def list_gaps() -> dict[str, Any]:
         path = root / "data/processed/knowledge-gaps.json"
         if not path.is_file():
             raise HTTPException(status_code=503, detail="knowledge gap report is not packaged")
@@ -164,16 +170,16 @@ def create_admin_router(
         return {"summary": gap_summary(questions), "questions": questions}
 
     @router.post("/knowledge-gaps/questions", status_code=201)
-    def create_gap(request: KnowledgeGapQuestionRequest):
+    def create_gap(request: KnowledgeGapQuestionRequest) -> dict[str, Any]:
         return question_store.create(request.model_dump())
 
     @router.delete("/knowledge-gaps/questions/{question_id}", status_code=204)
-    def delete_gap(question_id: str):
+    def delete_gap(question_id: str) -> None:
         if not question_store.delete(question_id):
             raise HTTPException(status_code=404, detail="question not found")
 
     @router.post("/knowledge-gaps/{question_id}/answer")
-    def answer_gap(question_id: str, request: KnowledgeGapAnswerRequest):
+    def answer_gap(question_id: str, request: KnowledgeGapAnswerRequest) -> dict[str, Any] | None:
         questions = {
             item["question_id"]: item
             for item in read_jsonl(root / "data/questionnaires/persona-questions.jsonl")
@@ -211,11 +217,13 @@ def create_admin_router(
         return knowledge_store.update(created["id"], values)
 
     @router.get("/conversations")
-    def conversations(limit: int = Query(100, ge=1, le=500), offset: int = Query(0, ge=0)):
+    def conversations(
+        limit: int = Query(100, ge=1, le=500), offset: int = Query(0, ge=0)
+    ) -> dict[str, Any]:
         return {"conversations": conversation_store.list_conversations(limit, offset)}
 
     @router.get("/conversations/{conversation_id}")
-    def conversation(conversation_id: str):
+    def conversation(conversation_id: str) -> dict[str, Any]:
         if not conversation_store.exists(conversation_id):
             raise HTTPException(status_code=404, detail="conversation not found")
         return {
@@ -224,7 +232,7 @@ def create_admin_router(
         }
 
     @router.post("/conversations/{conversation_id}/messages", status_code=201)
-    def reply(conversation_id: str, request: AdminConversationMessageRequest):
+    def reply(conversation_id: str, request: AdminConversationMessageRequest) -> dict[str, Any]:
         if not conversation_store.exists(conversation_id):
             raise HTTPException(status_code=404, detail="conversation not found")
         conversation_store.append(conversation_id, "owner", request.content.strip())

@@ -21,4 +21,4 @@ COPY migrations ./migrations
 RUN pip install --no-cache-dir .
 USER persona
 EXPOSE 8000
-CMD ["uvicorn","oh_my_persona.api:app","--host","0.0.0.0","--port","8000"]
+CMD ["uvicorn","oh_my_persona.presentation.app:app","--host","0.0.0.0","--port","8000"]
