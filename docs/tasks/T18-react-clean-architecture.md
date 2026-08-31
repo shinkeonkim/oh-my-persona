@@ -62,4 +62,7 @@ frontend/
 - 2026-08-31: 테스트를 `tests/domain`, `tests/application`, UI feature 검증으로 확장.
 - 2026-08-31: GitHub REST/GraphQL client, 민감정보 검사, 문서 writer를 infrastructure adapter로 분리.
 - 2026-08-31: 새 domain/application/presentation 경계에 strict mypy 검사와 CI gate 적용.
-- 남은 작업: GitHub 수집 use case 추가 분리, PostgreSQL store adapter 세분화.
+- 2026-08-31: GitHub 활동·공개 문서·priority tree 수집기를 203/149/179줄 adapter로 분리.
+- 2026-08-31: 모든 production Python 모듈을 300줄 이하로 제한하는 architecture test 적용.
+- 2026-08-31: RateLimiter를 conversation persistence에서 infrastructure adapter로 분리.
+- 남은 작업: Knowledge/Conversation PostgreSQL와 memory adapter의 물리적 분리.
