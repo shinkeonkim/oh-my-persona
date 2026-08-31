@@ -8,6 +8,7 @@ from fastapi import APIRouter, HTTPException, Request
 from fastapi.responses import StreamingResponse
 
 from ...application import ChatUseCase
+from ...application.abuse import AbuseService
 from ...application.persona_service import PersonaService
 from ...domain.repositories import ConversationRepository
 from ...infrastructure.llm.strands_agent import stream_invoke
@@ -21,12 +22,17 @@ def create_chat_router(
     persona: PersonaService,
     conversations: ConversationRepository,
     enforce_limit: Callable[[Request], None],
+    guard_request: Callable[[Request, str | None], str],
+    abuse: AbuseService,
+    verify_human: Callable[[Request, str | None], None],
 ) -> APIRouter:
     router = APIRouter(prefix="/api")
 
     @router.post("/conversations", status_code=201)
-    def create_conversation() -> dict[str, str]:
-        return {"conversation_id": conversations.create()}
+    def create_conversation(http_request: Request) -> dict[str, str]:
+        identity_hash = guard_request(http_request, None)
+        conversation_id = conversations.create({"identity_hash": identity_hash})
+        return {"conversation_id": conversation_id}
 
     @router.get("/conversations/{conversation_id}")
     def get_conversation(conversation_id: str) -> dict[str, object]:
@@ -39,6 +45,8 @@ def create_chat_router(
 
     @router.post("/chat")
     def chat(request: ChatRequest, http_request: Request) -> dict[str, object]:
+        identity_hash = guard_request(http_request, request.conversation_id)
+        verify_human(http_request, request.turnstile_token)
         enforce_limit(http_request)
         try:
             result = use_case.execute(request.message, request.model, request.conversation_id)
@@ -46,6 +54,7 @@ def create_chat_router(
             raise HTTPException(status_code=404, detail=str(error)) from error
         except ValueError as error:
             raise HTTPException(status_code=400, detail=str(error)) from error
+        abuse.bind(result.conversation_id, identity_hash)
         return {
             "conversation_id": result.conversation_id,
             "answer": result.answer,
@@ -54,10 +63,15 @@ def create_chat_router(
 
     @router.post("/chat/stream")
     async def chat_stream(request: ChatRequest, http_request: Request) -> StreamingResponse:
+        identity_hash = guard_request(http_request, request.conversation_id)
+        verify_human(http_request, request.turnstile_token)
         enforce_limit(http_request)
-        conversation_id = request.conversation_id or conversations.create()
+        conversation_id = request.conversation_id or conversations.create(
+            {"identity_hash": identity_hash}
+        )
         if not conversations.exists(conversation_id):
             raise HTTPException(status_code=404, detail="conversation not found")
+        abuse.bind(conversation_id, identity_hash)
         history = conversations.messages(conversation_id, 20)
 
         async def events() -> AsyncIterator[str]:

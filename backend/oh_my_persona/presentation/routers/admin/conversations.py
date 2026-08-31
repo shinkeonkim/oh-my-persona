@@ -4,11 +4,14 @@ from typing import Any
 
 from fastapi import APIRouter, HTTPException, Query
 
+from ....application.abuse import AbuseService
 from ....domain.repositories import ConversationRepository
 from ...schemas import AdminConversationMessageRequest
 
 
-def create_conversation_admin_router(store: ConversationRepository) -> APIRouter:
+def create_conversation_admin_router(
+    store: ConversationRepository, abuse: AbuseService
+) -> APIRouter:
     router = APIRouter()
 
     @router.get("/conversations")
@@ -24,6 +27,7 @@ def create_conversation_admin_router(store: ConversationRepository) -> APIRouter
         return {
             "conversation_id": conversation_id,
             "messages": store.messages(conversation_id, 500),
+            "abuse": abuse.status(conversation_id),
         }
 
     @router.post("/conversations/{conversation_id}/messages", status_code=201)

@@ -1,8 +1,13 @@
-import { FormEvent, useEffect, useRef, useState } from "react";
-import { streamChat } from "../api/client";
+import { FormEvent, useCallback, useEffect, useRef, useState } from "react";
+import { ApiError, streamChat } from "../api/client";
+import { requestJson } from "@/api/client";
+import { ShieldAlert } from "lucide-react";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { TurnstileChallenge } from "@/features/security/TurnstileChallenge";
 import type { ConversationMessage, SourceReference } from "../api/types";
 import { MarkdownText } from "../components/MarkdownText";
 import "../styles/chat.css";
+import "../styles/security.css";
 
 const prompts = [
   "최근에 가장 집중하고 있는 일은 무엇인가요?",
@@ -16,11 +21,21 @@ export function ChatPage() {
   const [draft, setDraft] = useState("");
   const [pending, setPending] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [accessWarning, setAccessWarning] = useState("");
+  const [turnstileSiteKey, setTurnstileSiteKey] = useState("");
+  const [turnstileToken, setTurnstileToken] = useState("");
+  const [challengeKey, setChallengeKey] = useState(0);
   const bottom = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     bottom.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, pending]);
+
+  useEffect(() => {
+    void requestJson<{ turnstile_enabled: boolean; turnstile_site_key?: string }>("/api/security/config")
+      .then((config) => setTurnstileSiteKey(config.turnstile_enabled ? config.turnstile_site_key ?? "" : ""));
+  }, []);
+  const verified = useCallback((token: string) => setTurnstileToken(token), []);
 
   async function send(event: FormEvent) {
     event.preventDefault();
@@ -28,20 +43,23 @@ export function ChatPage() {
     if (!message || pending) return;
     setDraft("");
     setPending(true);
+    setAccessWarning("");
     setMessages((current) => [...current, { role: "user", content: message, sources: [] }]);
     try {
       let sources: SourceReference[] = [];
       setMessages((current) => [...current, { role: "assistant", content: "", sources: [] }]);
-      await streamChat({ message, conversation_id: conversationId }, (eventName, raw) => {
+      await streamChat({ message, conversation_id: conversationId, turnstile_token: turnstileToken || undefined }, (eventName, raw) => {
         if (eventName === "conversation") setConversationId((raw as { conversation_id: string }).conversation_id);
         if (eventName === "sources") sources = raw as SourceReference[];
         if (eventName === "token") setMessages((current) => current.map((item, index) => index === current.length - 1 ? { ...item, content: item.content + (raw as { text: string }).text, sources } : item));
         if (eventName === "error") throw new Error((raw as { message: string }).message);
       });
     } catch (error) {
+      if (error instanceof ApiError && error.status === 403) setAccessWarning(error.message);
       setMessages((current) => current.map((item, index) => index === current.length - 1 && item.role === "assistant" && !item.content ? { ...item, content: error instanceof Error ? error.message : "답변에 실패했습니다." } : item));
     } finally {
       setPending(false);
+      if (turnstileSiteKey) { setTurnstileToken(""); setChallengeKey((value) => value + 1); }
     }
   }
 
@@ -49,6 +67,7 @@ export function ChatPage() {
     setConversationId(undefined);
     setMessages([]);
     setMenuOpen(false);
+    setAccessWarning("");
   }
 
   return (
@@ -70,7 +89,9 @@ export function ChatPage() {
           {pending && <div className="typing">김신건이 답변하고 있습니다…</div>}
           <div ref={bottom} />
         </section>
-        <form className="composer" onSubmit={send}><textarea value={draft} onChange={(event) => setDraft(event.target.value)} onKeyDown={(event) => { if (event.key === "Enter" && !event.shiftKey) { event.preventDefault(); event.currentTarget.form?.requestSubmit(); } }} placeholder="메시지를 입력하세요" /><button disabled={pending}>전송</button></form>
+        {accessWarning && <Alert className="access-warning" variant="destructive"><ShieldAlert /><AlertTitle>대화 이용이 제한되었습니다.</AlertTitle><AlertDescription>{accessWarning}</AlertDescription></Alert>}
+        {turnstileSiteKey && !accessWarning && <TurnstileChallenge key={challengeKey} siteKey={turnstileSiteKey} onVerify={verified} />}
+        <form className="composer" onSubmit={send}><textarea disabled={Boolean(accessWarning)} value={draft} onChange={(event) => setDraft(event.target.value)} onKeyDown={(event) => { if (event.key === "Enter" && !event.shiftKey) { event.preventDefault(); event.currentTarget.form?.requestSubmit(); } }} placeholder={accessWarning ? "현재 메시지를 보낼 수 없습니다" : "메시지를 입력하세요"} /><button disabled={pending || Boolean(accessWarning) || Boolean(turnstileSiteKey && !turnstileToken)}>전송</button></form>
       </main>
     </div>
   );

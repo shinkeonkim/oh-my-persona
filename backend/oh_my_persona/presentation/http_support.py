@@ -17,9 +17,7 @@ class RateLimit(Protocol):
 
 
 def enforce_rate_limit(request: Request, limiter: RateLimit) -> None:
-    client_ip = request.headers.get("cf-connecting-ip") or (
-        request.client.host if request.client else "unknown"
-    )
+    client_ip = request_client_ip(request)
     salt = os.environ.get("PERSONA_RATE_LIMIT_SALT", "persona-public")
     identity = hashlib.sha256(f"{salt}:{client_ip}".encode()).hexdigest()
     allowed, retry_after = limiter.consume(identity)
@@ -29,6 +27,12 @@ def enforce_rate_limit(request: Request, limiter: RateLimit) -> None:
             detail="시간당 AI 질문 한도를 초과했습니다. 잠시 후 다시 시도해주세요.",
             headers={"Retry-After": str(retry_after)},
         )
+
+
+def request_client_ip(request: Request) -> str:
+    return request.headers.get("cf-connecting-ip") or (
+        request.client.host if request.client else "unknown"
+    )
 
 
 def knowledge_values(request: KnowledgeRequest) -> dict[str, object]:

@@ -19,6 +19,8 @@
 - `frontend/src`: React·TypeScript 사용자/Admin UI
 - `frontend/tests`: Vitest와 Playwright 브라우저 테스트
 - `/admin`: 토큰 인증 기반 관리 지식 CRUD, 패키지 청크 및 대화 기록 조회
+- `/admin` 이용 제한: 비식별 사용자·대화 차단, 기간·사유·감사 기록 및 해제
+- 선택적 Cloudflare Turnstile 검증과 WAF 대응 절차: [악성 대화 대응 운영](docs/security-abuse-response.md)
 
 ## 빠른 시작
 

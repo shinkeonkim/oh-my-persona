@@ -7,6 +7,7 @@ class ChatRequest(BaseModel):
     message: str = Field(min_length=1, max_length=4000)
     model: str | None = None
     conversation_id: str | None = None
+    turnstile_token: str | None = Field(default=None, max_length=2048)
 
 
 class WidgetChatRequest(ChatRequest):
@@ -24,6 +25,13 @@ class KnowledgeRequest(BaseModel):
 
 class AdminConversationMessageRequest(BaseModel):
     content: str = Field(min_length=1, max_length=4000)
+
+
+class AbuseBlockRequest(BaseModel):
+    scope: str = Field(pattern="^(conversation|identity)$")
+    duration: str = Field(pattern="^(24h|7d|permanent)$")
+    reason: str = Field(min_length=3, max_length=200)
+    note: str = Field(default="", max_length=2000)
 
 
 class KnowledgeGapAnswerRequest(BaseModel):

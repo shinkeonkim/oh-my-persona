@@ -4,9 +4,10 @@ import { ChunkExplorer } from "../features/admin/ChunkExplorer";
 import { ConversationsPanel } from "../features/admin/ConversationsPanel";
 import { GapsPanel } from "../features/admin/GapsPanel";
 import { KnowledgePanel } from "../features/admin/KnowledgePanel";
+import { AbusePanel } from "../features/admin/AbusePanel";
 import "../styles/admin.css";
 
-type Tab = "knowledge" | "gaps" | "conversations";
+type Tab = "knowledge" | "gaps" | "conversations" | "abuse";
 
 export function AdminPage() {
   const [token, setToken] = useState(() => sessionStorage.getItem("personaAdminToken") ?? "");
@@ -40,9 +41,10 @@ export function AdminPage() {
 
   return <main className="admin-shell">
     <header className="admin-header"><div><small>OH MY PERSONA</small><h1>관리 콘솔</h1></div><button className="secondary" onClick={() => { sessionStorage.removeItem("personaAdminToken"); location.reload(); }}>로그아웃</button></header>
-    <nav className="admin-tabs">{(["knowledge", "gaps", "conversations"] as Tab[]).map((item) => <button key={item} className={tab === item ? "active" : ""} onClick={() => setTab(item)}>{item === "knowledge" ? "지식 데이터" : item === "gaps" ? "지식 공백" : "대화 기록"}</button>)}</nav>
+    <nav className="admin-tabs">{(["knowledge", "gaps", "conversations", "abuse"] as Tab[]).map((item) => <button key={item} className={tab === item ? "active" : ""} onClick={() => setTab(item)}>{item === "knowledge" ? "지식 데이터" : item === "gaps" ? "지식 공백" : item === "conversations" ? "대화 기록" : "이용 제한"}</button>)}</nav>
     {tab === "knowledge" && <><KnowledgePanel token={token} /><ChunkExplorer token={token} /></>}
     {tab === "gaps" && <GapsPanel token={token} />}
     {tab === "conversations" && <ConversationsPanel token={token} />}
+    {tab === "abuse" && <AbusePanel token={token} />}
   </main>;
 }

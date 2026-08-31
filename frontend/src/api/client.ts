@@ -33,7 +33,10 @@ export async function streamChat(
     method: "POST", headers: { "content-type": "application/json" },
     body: JSON.stringify(payload), signal,
   });
-  if (!response.ok || !response.body) throw new ApiError(response.status, `HTTP ${response.status}`);
+  if (!response.ok || !response.body) {
+    const body = (await response.json().catch(() => ({}))) as { detail?: string };
+    throw new ApiError(response.status, body.detail ?? `HTTP ${response.status}`);
+  }
   const reader = response.body.getReader(), decoder = new TextDecoder();
   let buffer = "";
   while (true) {

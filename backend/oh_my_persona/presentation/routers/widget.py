@@ -7,6 +7,7 @@ from collections.abc import AsyncIterator, Callable
 from fastapi import APIRouter, BackgroundTasks, Header, HTTPException, Request
 from fastapi.responses import StreamingResponse
 
+from ...application.abuse import AbuseService
 from ...application.persona_service import PersonaService
 from ...domain.repositories import ConversationRepository
 from ...infrastructure.discord.bridge import DiscordBridge
@@ -21,12 +22,17 @@ def create_widget_router(
     persona: PersonaService,
     discord: DiscordBridge,
     enforce_limit: Callable[[Request], None],
+    guard_request: Callable[[Request, str | None], str],
+    abuse: AbuseService,
+    verify_human: Callable[[Request, str | None], None],
 ) -> APIRouter:
     router = APIRouter(prefix="/api/widget")
 
     @router.post("/sessions", status_code=201)
     def create_session(request: Request) -> dict[str, str]:
+        identity_hash = guard_request(request, None)
         conversation_id, token = create_widget_session(conversations, request.headers.get("origin"))
+        abuse.bind(conversation_id, identity_hash)
         return {"conversation_id": conversation_id, "token": token}
 
     @router.get("/conversations/{conversation_id}")
@@ -78,8 +84,11 @@ def create_widget_router(
         http_request: Request,
         background: BackgroundTasks,
     ) -> dict[str, object]:
+        identity_hash = guard_request(http_request, request.conversation_id)
+        verify_human(http_request, request.turnstile_token)
         enforce_limit(http_request)
         _authorize(conversations, request.conversation_id, request.token)
+        abuse.bind(request.conversation_id, identity_hash)
         history = conversations.messages(request.conversation_id, 20)
         try:
             response, sources = persona.answer(request.message, request.model, history)

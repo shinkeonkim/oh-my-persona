@@ -22,6 +22,24 @@ export interface ConversationSummary {
   updated_at?: string;
 }
 
+export interface AbuseBlock {
+  id: string;
+  identity_fingerprint?: string;
+  conversation_id?: string;
+  reason: string;
+  note: string;
+  blocked_until?: string;
+  created_at: string;
+  revoked_at?: string;
+  active: boolean;
+}
+
+export interface AbuseStatus {
+  blocked: boolean;
+  identity_fingerprint?: string;
+  block?: AbuseBlock;
+}
+
 export interface KnowledgeItem {
   id: string;
   title: string;

@@ -21,6 +21,8 @@
       this.open = false;
       this.pending = false;
       this.streamController = null;
+      this.turnstileSiteKey = "";
+      this.turnstileToken = "";
     }
 
     connectedCallback() {
@@ -54,6 +56,7 @@
     }
 
     async loadSession() {
+      await this.loadSecurity();
       try { this.session = JSON.parse(localStorage.getItem(STORAGE_KEY)); } catch { this.session = null; }
       if (!this.session?.conversation_id || !this.session?.token) await this.createSession();
       if (!(await this.refresh())) {
@@ -61,6 +64,32 @@
         await this.refresh();
       }
       this.startStream();
+    }
+
+    async loadSecurity() {
+      if (this.securityLoaded) return;
+      this.securityLoaded = true;
+      const response = await fetch(`${this.endpoint}/api/security/config`);
+      if (!response.ok) return;
+      const config = await response.json();
+      this.turnstileSiteKey = config.turnstile_enabled ? config.turnstile_site_key : "";
+      if (!this.turnstileSiteKey || window.turnstile) return;
+      await new Promise((resolve) => {
+        const existing = document.querySelector("script[data-persona-turnstile]");
+        if (existing) { existing.addEventListener("load", resolve, { once: true }); return; }
+        const script = document.createElement("script");
+        script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+        script.async = true; script.defer = true; script.dataset.personaTurnstile = "true";
+        script.addEventListener("load", resolve, { once: true }); document.head.append(script);
+      });
+    }
+
+    renderTurnstile() {
+      const target = this.shadowRoot.querySelector("[data-turnstile]");
+      if (!target || !this.turnstileSiteKey || !window.turnstile) return;
+      window.turnstile.render(target, { sitekey: this.turnstileSiteKey, language: "ko",
+        callback: (token) => { this.turnstileToken = token; this.render(); },
+        "expired-callback": () => { this.turnstileToken = ""; this.render(); } });
     }
 
     async createSession() {
@@ -72,6 +101,7 @@
 
     async refresh() {
       if (this.pending) return true;
+      if (!this.session?.conversation_id || !this.session?.token) return false;
       const response = await fetch(
         `${this.endpoint}/api/widget/conversations/${this.session.conversation_id}`,
         { headers: { "X-Persona-Session-Token": this.session.token } },
@@ -143,7 +173,7 @@
       event.preventDefault();
       const input = form.elements.message;
       const message = (this.draft || input.value).trim();
-      if (!message || this.pending) return;
+      if (!message || this.pending || (this.turnstileSiteKey && !this.turnstileToken)) return;
       this.pending = true;
       this.draft = "";
       input.value = "";
@@ -153,7 +183,7 @@
         const response = await fetch(`${this.endpoint}/api/widget/chat`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ ...this.session, message }),
+          body: JSON.stringify({ ...this.session, message, turnstile_token: this.turnstileToken || undefined }),
         });
         const body = await response.json();
         if (!response.ok) throw new Error(body.detail || "답변을 받지 못했습니다.");
@@ -162,6 +192,7 @@
         this.messages.push({ role: "error", content: error.message });
       }
       this.pending = false;
+      this.turnstileToken = "";
       this.render();
     }
 
@@ -181,16 +212,17 @@
         .panel{position:absolute;right:0;bottom:70px;width:min(390px,calc(100vw - 32px));height:min(650px,calc(100vh - 110px));background:#b9c9d5;border:1px solid #ffffff80;border-radius:24px;box-shadow:0 24px 70px #0c172a52;overflow:hidden;display:flex;flex-direction:column}
         header{height:72px;flex:none;background:#fff;padding:14px 16px;display:flex;align-items:center;gap:12px;border-bottom:1px solid #e8edf1}.avatar{width:42px;height:42px;border-radius:15px;background:#17202a;color:#fff;display:grid;place-items:center;font-weight:800}.title{font-size:15px;font-weight:800}.status{font-size:12px;color:#63717e;margin-top:3px}.close{margin-left:auto;border:0;background:transparent;font-size:24px;cursor:pointer;color:#55616c}
         .messages{flex:1;overflow:auto;padding:18px 14px;display:flex;flex-direction:column;gap:12px}.welcome{background:#ffffffd9;border-radius:16px;padding:15px;font-size:13px;line-height:1.65;box-shadow:0 2px 10px #50627317}.row{display:flex;flex-direction:column;align-items:flex-start;max-width:84%}.row.mine{align-self:flex-end;align-items:flex-end}.label{font-size:11px;color:#53636f;margin:0 4px 4px}.bubble{background:#fff;border-radius:5px 16px 16px 16px;padding:10px 12px;font-size:14px;line-height:1.55;box-shadow:0 2px 8px #52657314;word-break:break-word}.mine .bubble{background:#fee500;border-radius:16px 5px 16px 16px}.bubble.owner{outline:2px solid #17202a18}.bubble.error{background:#fff0f0;color:#a12a2a}
-        form{background:#fff;padding:12px;display:flex;gap:8px;border-top:1px solid #e7ebee}textarea{font:inherit;resize:none;flex:1;min-height:42px;max-height:88px;border:1px solid #dce2e6;border-radius:14px;padding:10px 12px;outline:none}textarea:focus{border-color:#8797a4}button[type=submit]{border:0;border-radius:13px;background:#fee500;color:#17202a;font-weight:800;padding:0 15px;cursor:pointer}
+        .challenge{background:#fff;display:flex;justify-content:center;padding:8px}form{background:#fff;padding:12px;display:flex;gap:8px;border-top:1px solid #e7ebee}textarea{font:inherit;resize:none;flex:1;min-height:42px;max-height:88px;border:1px solid #dce2e6;border-radius:14px;padding:10px 12px;outline:none}textarea:focus{border-color:#8797a4}button[type=submit]{border:0;border-radius:13px;background:#fee500;color:#17202a;font-weight:800;padding:0 15px;cursor:pointer}button[type=submit]:disabled{opacity:.5;cursor:not-allowed}
         @media(max-width:520px){:host{right:12px;bottom:12px}.panel{position:fixed;inset:0;width:100vw;height:100dvh;max-height:none;border-radius:0}.launcher{width:54px;height:54px;border-radius:20px}}
         @media print{:host{display:none!important}}
         @media(prefers-reduced-motion:no-preference){.panel{animation:up .18s ease-out}@keyframes up{from{opacity:0;transform:translateY(8px)}}}
       </style>
-      ${this.open ? `<section class="panel" role="dialog" aria-label="김신건에게 질문하기"><header><div class="avatar">K</div><div><div class="title">김신건에게 질문하기</div><div class="status">AI가 먼저 답하고, 제가 직접 이어서 답할 수 있습니다</div></div><button class="close" data-close aria-label="닫기">×</button></header><main class="messages">${this.messageMarkup()}</main><form><textarea name="message" maxlength="4000" aria-label="메시지" placeholder="${this.pending ? "답변을 작성하고 있습니다" : "메시지를 입력하세요"}" ${this.pending ? "disabled" : ""}>${escapeHtml(this.draft)}</textarea><button type="submit" ${this.pending ? "disabled" : ""}>${this.pending ? "···" : "전송"}</button></form></section>` : ""}
+      ${this.open ? `<section class="panel" role="dialog" aria-label="김신건에게 질문하기"><header><div class="avatar">K</div><div><div class="title">김신건에게 질문하기</div><div class="status">AI가 먼저 답하고, 제가 직접 이어서 답할 수 있습니다</div></div><button class="close" data-close aria-label="닫기">×</button></header><main class="messages">${this.messageMarkup()}</main>${this.turnstileSiteKey && !this.turnstileToken ? '<div class="challenge" data-turnstile></div>' : ''}<form><textarea name="message" maxlength="4000" aria-label="메시지" placeholder="${this.pending ? "답변을 작성하고 있습니다" : "메시지를 입력하세요"}" ${this.pending ? "disabled" : ""}>${escapeHtml(this.draft)}</textarea><button type="submit" ${this.pending || (this.turnstileSiteKey && !this.turnstileToken) ? "disabled" : ""}>${this.pending ? "···" : "전송"}</button></form></section>` : ""}
       <button class="launcher" data-launcher aria-label="${this.open ? "채팅 닫기" : "김신건에게 질문하기"}">${this.open ? "×" : "✦"}</button>`;
       if (this.open) requestAnimationFrame(() => {
         const messages = this.shadowRoot.querySelector(".messages");
         if (messages) messages.scrollTop = messages.scrollHeight;
+        this.renderTurnstile();
       });
     }
   }

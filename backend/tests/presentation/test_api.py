@@ -105,6 +105,40 @@ def test_admin_can_send_a_direct_owner_reply(monkeypatch) -> None:
     assert messages[-1]["content"] == "제가 직접 확인하고 남긴 답변입니다."
 
 
+def test_admin_can_block_and_unblock_an_identity(monkeypatch) -> None:
+    monkeypatch.setenv("PERSONA_ADMIN_TOKEN", "test-admin-token")
+    ip = "192.0.2.203"
+    created = client.post(
+        "/api/chat", headers={"cf-connecting-ip": ip}, json={"message": "주민등록번호는?"}
+    ).json()
+    conversation_id = created["conversation_id"]
+    admin = {"authorization": "Bearer test-admin-token"}
+    blocked = client.post(
+        f"/api/admin/conversations/{conversation_id}/blocks",
+        headers=admin,
+        json={
+            "scope": "identity", "duration": "24h",
+            "reason": "반복적인 악성 요청", "note": "운영 테스트",
+        },
+    )
+    assert blocked.status_code == 201
+    assert blocked.json()["identity_fingerprint"]
+    denied = client.post(
+        "/api/chat", headers={"cf-connecting-ip": ip}, json={"message": "다시 요청"}
+    )
+    assert denied.status_code == 403
+    assert "이용이 제한" in denied.json()["detail"]
+    detail = client.get(f"/api/admin/conversations/{conversation_id}", headers=admin).json()
+    assert detail["abuse"]["blocked"] is True
+    assert client.delete(
+        f"/api/admin/abuse/blocks/{blocked.json()['id']}", headers=admin
+    ).status_code == 200
+    allowed = client.post(
+        "/api/chat", headers={"cf-connecting-ip": ip}, json={"message": "주민등록번호는?"}
+    )
+    assert allowed.status_code == 200
+
+
 def test_admin_can_fill_a_knowledge_gap_as_draft_then_publish(monkeypatch) -> None:
     monkeypatch.setenv("PERSONA_ADMIN_TOKEN", "test-admin-token")
     headers = {"authorization": "Bearer test-admin-token"}

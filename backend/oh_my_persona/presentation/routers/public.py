@@ -17,6 +17,7 @@ def create_public_router(
     frontend_dist: Path,
     persona: PersonaService,
     knowledge: KnowledgeRepository,
+    turnstile_site_key: str | None = None,
 ) -> APIRouter:
     router = APIRouter()
 
@@ -46,6 +47,10 @@ def create_public_router(
     @router.get("/api/models")
     def models() -> dict[str, tuple[str, ...]]:
         return {"models": ALLOWED_MODELS}
+
+    @router.get("/api/security/config")
+    def security_config() -> dict[str, object]:
+        return {"turnstile_enabled": bool(turnstile_site_key), "turnstile_site_key": turnstile_site_key}
 
     @router.get("/api/search")
     def search_api(
