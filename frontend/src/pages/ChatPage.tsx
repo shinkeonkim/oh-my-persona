@@ -1,6 +1,7 @@
 import { FormEvent, useEffect, useRef, useState } from "react";
 import { streamChat } from "../api/client";
 import type { ConversationMessage, SourceReference } from "../api/types";
+import { MarkdownText } from "../components/MarkdownText";
 import "../styles/chat.css";
 
 const prompts = [
@@ -79,7 +80,7 @@ function Message({ message }: { message: ConversationMessage }) {
   const mine = message.role === "user";
   return <article className={`message ${mine ? "user" : "assistant"}`}>
     {!mine && <span className="avatar small">김</span>}
-    <div><strong>{mine ? "나" : message.role === "owner" ? "김신건 · 직접 답변" : "김신건"}</strong><div className="bubble">{message.content}</div>
+    <div><strong>{mine ? "나" : message.role === "owner" ? "김신건 · 직접 답변" : "김신건"}</strong><div className="bubble"><MarkdownText>{message.content}</MarkdownText></div>
       {message.sources.length > 0 && <details><summary>답변 근거 {message.sources.length}개</summary>{message.sources.map((source, index) => source.url ? <a key={`${source.url}-${index}`} href={source.url} target="_blank" rel="noreferrer">{source.title ?? source.source_id ?? `출처 ${index + 1}`}</a> : null)}</details>}
     </div>
   </article>;

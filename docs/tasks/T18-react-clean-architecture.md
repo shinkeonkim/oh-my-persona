@@ -52,3 +52,12 @@ frontend/
 - router는 HTTP 변환, use case는 orchestration, repository는 저장만 담당한다.
 - `/api/chat/stream`이 실제 model stream을 전달하고 timeout/error/cancel을 테스트한다.
 - 전체 회귀 및 모바일·데스크톱 Playwright 검증 후 운영 배포한다.
+
+## 진행 기록
+
+- 2026-08-31: React/TypeScript/Vite 사용자·관리자 SPA와 멀티아키텍처 운영 배포 완료.
+- 2026-08-31: Strands 실제 SSE, 연결 취소, 45초 hard timeout 적용.
+- 2026-08-31: FastAPI composition root 527→약 290줄, Admin router 233줄로 분리.
+- 2026-08-31: domain entity/repository protocol 및 application ChatUseCase 도입.
+- 2026-08-31: 테스트를 `tests/domain`, `tests/application`, UI feature 검증으로 확장.
+- 남은 작업: GitHub 수집기 adapter 분리, PostgreSQL store adapter 세분화와 정적 타입 검사 강화.
