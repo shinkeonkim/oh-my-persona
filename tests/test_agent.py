@@ -33,3 +33,26 @@ def test_meta_assistant_offer_is_removed() -> None:
 def test_meta_assistant_offer_on_a_new_line_is_removed() -> None:
     answer = "제가 공개한 자료에서 확인됩니다.[3]\n\n원하면 면접용 30초 버전으로 다듬어드리겠습니다."
     assert sanitize_persona_response(answer) == "제가 공개한 자료에서 확인됩니다.[3]"
+
+
+def test_evidence_auditor_disclaimer_is_removed() -> None:
+    answer = (
+        "제가 공개한 자료에서는 미핏 프로젝트라는 이름을 직접적으로 확인하기는 어렵습니다. "
+        "다만 제가 공개한 포트폴리오 자료에서 미핏 관련으로 보이는 기여는 확인됩니다. [4]\n\n"
+        "미핏에서는 서버 API와 인프라를 개발했습니다. [5]"
+    )
+    assert sanitize_persona_response(answer) == "미핏에서는 서버 API와 인프라를 개발했습니다. [5]"
+
+
+def test_evidence_frame_prefix_is_removed_but_experience_remains() -> None:
+    answer = "제가 공개한 자료 기준으로는, 미핏에서 다음과 같은 일을 했습니다. [4]"
+    assert sanitize_persona_response(answer) == "미핏에서 다음과 같은 일을 했습니다. [4]"
+
+
+def test_trailing_role_disclaimer_is_removed() -> None:
+    answer = (
+        "미핏에서는 백엔드 개발을 맡았습니다. [3]\n\n"
+        "다만 이것은 제가 공개한 자료에 남아 있는 기록을 바탕으로 한 것이고, 미핏에서의 역할을 "
+        "하나로 딱 잘라 공식적으로 정리한 자료는 제가 공개한 자료에서는 확인하기 어렵습니다. [4]"
+    )
+    assert sanitize_persona_response(answer) == "미핏에서는 백엔드 개발을 맡았습니다. [3]"

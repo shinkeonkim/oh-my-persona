@@ -12,6 +12,10 @@ from .models import SearchHit
 
 TOKEN = re.compile(r"[0-9A-Za-z가-힣][0-9A-Za-z가-힣_.+#-]*")
 KOREAN_SUFFIXES = ("에서는", "으로부터", "에게서", "까지", "부터", "에서", "으로", "에게", "께서", "처럼", "보다", "은", "는", "이", "가", "을", "를", "의", "에", "와", "과", "도", "로")
+QUERY_EXPANSIONS = {
+    "미핏": ("mefit", "kmu-aws-capstone-team-4"),
+    "mefit": ("미핏", "kmu-aws-capstone-team-4"),
+}
 
 
 class Retriever(Protocol):
@@ -71,7 +75,12 @@ class MemoryRetriever:
                     self.records.append((hit, Counter(tokenize(chunk.text))))
 
     def search(self, query: str, limit: int = 6) -> list[SearchHit]:
-        terms = Counter(tokenize(query))
+        expanded_query = query.lower()
+        expansion_terms: list[str] = []
+        for alias, expansions in QUERY_EXPANSIONS.items():
+            if alias in expanded_query:
+                expansion_terms.extend(expansions)
+        terms = Counter(tokenize(" ".join((query, *expansion_terms))))
         query_tokens = tokenize(query)
         if not terms:
             return []
