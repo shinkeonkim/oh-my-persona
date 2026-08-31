@@ -10,7 +10,11 @@ from .conversations import ConversationStore
 
 
 def _secret() -> bytes:
-    value = os.environ.get("PERSONA_SESSION_SECRET")
+    value = (
+        os.environ.get("PERSONA_SESSION_SECRET")
+        or os.environ.get("PERSONA_ADMIN_TOKEN")
+        or os.environ.get("PERSONA_RATE_LIMIT_SALT")
+    )
     if value:
         return value.encode()
     return b"persona-development-session-secret"
