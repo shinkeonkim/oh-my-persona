@@ -134,6 +134,14 @@ def source_api(source_id: str):
     return source
 
 
+@app.get("/api/knowledge/{item_id}")
+def public_managed_knowledge(item_id: str):
+    item = knowledge_store.get(item_id)
+    if not item or item["status"] != "active":
+        raise HTTPException(status_code=404, detail="knowledge not found")
+    return item
+
+
 @app.post("/api/conversations", status_code=201)
 def create_conversation():
     return {"conversation_id": store.create()}
@@ -299,21 +307,26 @@ def answer_admin_knowledge_gap(
         f"답변: {request.answer.strip()}\n\n"
         f"참고 URL: {', '.join(evidence) if evidence else '없음'}"
     )
-    values = {
-        "title": f"[{question_id}] {question['question']}",
-        "content": content,
-        "source_url": (
-            "https://github.com/shinkeonkim/oh-my-persona/blob/main/"
-            f"data/curated/persona-interview-answers.md#{question_id.lower()}"
-        ),
-        "observed_at": request.answered_at.isoformat(),
-        "status": "active" if request.visibility == "public" else "draft",
-    }
     existing = next(
         (item for item in knowledge_store.list(500, 0) if item["title"].startswith(f"[{question_id}]")),
         None,
     )
-    return knowledge_store.update(existing["id"], values) if existing else knowledge_store.create(values)
+    item_id = existing["id"] if existing else None
+    values = {
+        "title": f"[{question_id}] {question['question']}",
+        "content": content,
+        "source_url": (
+            f"https://persona.shinkeonkim.com/api/knowledge/{item_id}"
+            if item_id else "https://persona.shinkeonkim.com/"
+        ),
+        "observed_at": request.answered_at.isoformat(),
+        "status": "active" if request.visibility == "public" else "draft",
+    }
+    if existing:
+        return knowledge_store.update(existing["id"], values)
+    created = knowledge_store.create(values)
+    values["source_url"] = f"https://persona.shinkeonkim.com/api/knowledge/{created['id']}"
+    return knowledge_store.update(created["id"], values)
 
 
 @app.get("/api/admin/conversations")

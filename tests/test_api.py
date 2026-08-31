@@ -120,10 +120,13 @@ def test_admin_can_fill_a_knowledge_gap_as_draft_then_publish(monkeypatch) -> No
     draft = client.post("/api/admin/knowledge-gaps/PQ-014/answer", headers=headers, json=payload)
     assert draft.status_code == 200
     assert draft.json()["status"] == "draft"
+    assert client.get(f"/api/knowledge/{draft.json()['id']}").status_code == 404
     assert client.get("/api/admin/knowledge-gaps", headers=headers).json()["summary"]["draft_answer"] >= 1
     payload["visibility"] = "public"
     published = client.post("/api/admin/knowledge-gaps/PQ-014/answer", headers=headers, json=payload)
     assert published.json()["status"] == "active"
+    assert client.get(f"/api/knowledge/{published.json()['id']}").json()["title"].startswith("[PQ-014]")
+    assert published.json()["source_url"].endswith(f"/api/knowledge/{published.json()['id']}")
     assert any(hit["chunk_id"].startswith("ADMIN-") for hit in client.get(
         "/api/search", params={"q": "운영진 대표 경험 직접 작성"}
     ).json()["hits"])
