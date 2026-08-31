@@ -59,3 +59,24 @@ test('polling does not erase an optimistic message while an answer is pending', 
   await expect(widget.locator('.bubble.user')).toHaveText('질문입니다.');
   await expect(widget.locator('.bubble.assistant')).toHaveText('답변입니다.');
 });
+
+test('unchanged polling preserves the focused composer and draft', async ({ page }) => {
+  await page.route('**/api/widget/sessions', (route) => route.fulfill({
+    status: 201,
+    contentType: 'application/json',
+    body: JSON.stringify({ conversation_id: '00000000-0000-4000-8000-000000000002', token: 'test-token-that-is-long-enough' }),
+  }));
+  await page.route('**/api/widget/conversations/**', (route) => route.fulfill({
+    status: 200,
+    contentType: 'application/json',
+    body: JSON.stringify({ messages: [] }),
+  }));
+  await page.evaluate(() => localStorage.clear());
+  const widget = page.locator('persona-chat-widget');
+  await widget.locator('[data-launcher]').click();
+  const composer = widget.locator('textarea');
+  await composer.fill('입력 중인 메시지입니다.');
+  await widget.evaluate((element) => element.refresh());
+  await expect(composer).toHaveValue('입력 중인 메시지입니다.');
+  await expect(composer).toBeFocused();
+});
