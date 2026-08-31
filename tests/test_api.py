@@ -82,3 +82,18 @@ def test_admin_auth_knowledge_crud_and_conversation_list(monkeypatch) -> None:
     assert client.put(f"/api/admin/knowledge/{item_id}", headers=headers, json=payload).status_code == 200
     assert client.get("/api/admin/conversations", headers=headers).status_code == 200
     assert client.delete(f"/api/admin/knowledge/{item_id}", headers=headers).status_code == 204
+
+
+def test_admin_can_send_a_direct_owner_reply(monkeypatch) -> None:
+    monkeypatch.setenv("PERSONA_ADMIN_TOKEN", "test-admin-token")
+    conversation_id = client.post("/api/conversations").json()["conversation_id"]
+    headers = {"authorization": "Bearer test-admin-token"}
+    response = client.post(
+        f"/api/admin/conversations/{conversation_id}/messages",
+        headers=headers,
+        json={"content": "제가 직접 확인하고 남긴 답변입니다."},
+    )
+    assert response.status_code == 201
+    assert response.json()["role"] == "owner"
+    messages = client.get(f"/api/conversations/{conversation_id}").json()["messages"]
+    assert messages[-1]["content"] == "제가 직접 확인하고 남긴 답변입니다."

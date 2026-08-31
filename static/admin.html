@@ -1,7 +1,126 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Persona Admin</title><link rel="stylesheet" href="/static/admin.css"></head><body><main>
-<header><div><p>OH MY PERSONA</p><h1>관리 콘솔</h1></div><button id="logout">토큰 지우기</button></header>
-<section id="login" class="card login"><h2>관리자 인증</h2><p>서버에 설정된 관리자 토큰을 입력하세요. 토큰은 현재 탭에만 보관됩니다.</p><form id="login-form"><input id="token" type="password" autocomplete="current-password" required placeholder="관리자 토큰"><button>접속</button></form><p id="login-error" class="error"></p></section>
-<div id="dashboard" hidden><nav><button data-tab="knowledge" class="active">지식 데이터</button><button data-tab="conversations">대화 기록</button></nav>
-<section id="knowledge" class="tab"><div class="grid"><form id="knowledge-form" class="card"><h2>관리 지식</h2><input id="knowledge-id" type="hidden"><label>제목<input id="title" required maxlength="200"></label><label>근거 URL<input id="source-url" type="url" required placeholder="https://"></label><label>관측일<input id="observed-at" type="date"></label><label>상태<select id="status"><option value="active">활성</option><option value="draft">초안</option></select></label><label>내용<textarea id="content" required maxlength="50000" rows="10"></textarea></label><div class="actions"><button>저장</button><button type="button" id="reset" class="secondary">새로 작성</button></div></form><div class="card"><div class="title-row"><h2>데이터 목록</h2><button id="reload-knowledge" class="secondary">새로고침</button></div><p id="knowledge-summary"></p><div id="knowledge-list" class="list"></div><details><summary>패키지된 검색 청크 보기</summary><div id="packaged-list" class="list"></div></details></div></div></section>
-<section id="conversations" class="tab" hidden><div class="grid"><div class="card"><div class="title-row"><h2>대화 목록</h2><button id="reload-conversations" class="secondary">새로고침</button></div><div id="conversation-list" class="list"></div></div><div class="card"><h2>대화 상세</h2><div id="conversation-detail" class="conversation-detail">대화를 선택하세요.</div></div></div></section></div>
-</main><script src="/static/admin.js" defer></script></body></html>
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Persona Admin</title>
+    <link rel="stylesheet" href="/static/admin.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div>
+          <p>OH MY PERSONA</p>
+          <h1>관리 콘솔</h1>
+        </div>
+        <button id="logout">토큰 지우기</button>
+      </header>
+      <section id="login" class="card login">
+        <h2>관리자 인증</h2>
+        <p>
+          서버에 설정된 관리자 토큰을 입력하세요. 토큰은 현재 탭에만 보관됩니다.
+        </p>
+        <form id="login-form">
+          <input
+            id="token"
+            type="password"
+            autocomplete="current-password"
+            required
+            placeholder="관리자 토큰"
+          /><button>접속</button>
+        </form>
+        <p id="login-error" class="error"></p>
+      </section>
+      <div id="dashboard" hidden>
+        <nav>
+          <button data-tab="knowledge" class="active">지식 데이터</button
+          ><button data-tab="conversations">대화 기록</button>
+        </nav>
+        <section id="knowledge" class="tab">
+          <div class="grid">
+            <form id="knowledge-form" class="card">
+              <h2>관리 지식</h2>
+              <input id="knowledge-id" type="hidden" /><label
+                >제목<input id="title" required maxlength="200" /></label
+              ><label
+                >근거 URL<input
+                  id="source-url"
+                  type="url"
+                  required
+                  placeholder="https://" /></label
+              ><label>관측일<input id="observed-at" type="date" /></label
+              ><label
+                >상태<select id="status">
+                  <option value="active">활성</option>
+                  <option value="draft">초안</option>
+                </select></label
+              ><label
+                >내용<textarea
+                  id="content"
+                  required
+                  maxlength="50000"
+                  rows="10"
+                ></textarea>
+              </label>
+              <div class="actions">
+                <button>저장</button
+                ><button type="button" id="reset" class="secondary">
+                  새로 작성
+                </button>
+              </div>
+            </form>
+            <div class="card">
+              <div class="title-row">
+                <h2>데이터 목록</h2>
+                <button id="reload-knowledge" class="secondary">
+                  새로고침
+                </button>
+              </div>
+              <p id="knowledge-summary"></p>
+              <div id="knowledge-list" class="list"></div>
+              <details>
+                <summary>패키지된 검색 청크 보기</summary>
+                <div id="packaged-list" class="list"></div>
+              </details>
+            </div>
+          </div>
+        </section>
+        <section id="conversations" class="tab" hidden>
+          <div class="grid">
+            <div class="card">
+              <div class="title-row">
+                <h2>대화 목록</h2>
+                <button id="reload-conversations" class="secondary">
+                  새로고침
+                </button>
+              </div>
+              <div id="conversation-list" class="list"></div>
+            </div>
+            <div class="card">
+              <h2>대화 상세</h2>
+              <div id="conversation-detail" class="conversation-detail">
+                대화를 선택하세요.
+              </div>
+              <form id="conversation-reply-form" hidden>
+                <input id="conversation-id" type="hidden" /><label
+                  >김신건으로 직접 답변<textarea
+                    id="conversation-reply"
+                    required
+                    maxlength="4000"
+                    rows="4"
+                    placeholder="이 답변은 방문자의 채팅창으로 전달됩니다."
+                  ></textarea>
+                </label>
+                <div class="actions">
+                  <span id="conversation-reply-status"></span
+                  ><button>답변 보내기</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="/static/admin.js" defer></script>
+  </body>
+</html>

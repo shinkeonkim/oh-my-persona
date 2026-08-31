@@ -71,6 +71,10 @@ class KnowledgeRequest(BaseModel):
     status: str = Field(pattern="^(active|draft)$")
 
 
+class AdminConversationMessageRequest(BaseModel):
+    content: str = Field(min_length=1, max_length=4000)
+
+
 def require_admin(authorization: str | None = Header(default=None)) -> None:
     expected = os.environ.get("PERSONA_ADMIN_TOKEN")
     supplied = authorization.removeprefix("Bearer ") if authorization else ""
@@ -219,6 +223,18 @@ def admin_conversation(conversation_id: str, _: None = Depends(require_admin)):
     if not store.exists(conversation_id):
         raise HTTPException(status_code=404, detail="conversation not found")
     return {"conversation_id": conversation_id, "messages": store.messages(conversation_id, 500)}
+
+
+@app.post("/api/admin/conversations/{conversation_id}/messages", status_code=201)
+def admin_conversation_message(
+    conversation_id: str,
+    request: AdminConversationMessageRequest,
+    _: None = Depends(require_admin),
+):
+    if not store.exists(conversation_id):
+        raise HTTPException(status_code=404, detail="conversation not found")
+    store.append(conversation_id, "owner", request.content.strip())
+    return store.messages(conversation_id, 1)[0]
 
 
 @app.post("/api/chat")
