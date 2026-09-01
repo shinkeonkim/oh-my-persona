@@ -14,8 +14,10 @@
 
 ## Cloudflare Turnstile
 
-Cloudflare Dashboard의 **Turnstile → Add widget**에서 `persona.shinkeonkim.com` hostname과
-**Managed** mode로 widget을 만든 다음 Kubernetes Secret에 다음 값을 추가한다.
+Cloudflare Dashboard의 **Turnstile → Add widget**에서 Hostname Management에 루트 도메인
+`shinkeonkim.com`을 등록하고 **Managed** mode로 widget을 만든 다음 Kubernetes Secret에
+다음 값을 추가한다. 루트 hostname 등록은 `persona.shinkeonkim.com`을 포함한 모든 하위
+도메인을 자동 허용하므로 `*.shinkeonkim.com`이나 URL 전체를 입력하지 않는다.
 
 ```text
 PERSONA_TURNSTILE_SITE_KEY=<public site key>
@@ -27,6 +29,7 @@ PERSONA_TURNSTILE_SECRET_KEY=<secret key>
 설정하는 것은 활성화로 취급하지 않는다.
 
 - Dashboard: https://dash.cloudflare.com/?to=/:account/turnstile
+- Hostname Management: https://developers.cloudflare.com/turnstile/additional-configuration/hostname-management/
 - 홈랩 설정 스크립트: `oh-my-homelab/scripts/persona/configure-turnstile-secrets.sh`
 - 상세 운영 문서: `oh-my-homelab/docs/manuals/20_persona_Turnstile운영.md`
 - 공식 문서: https://developers.cloudflare.com/turnstile/get-started/
