@@ -14,7 +14,8 @@
 
 ## Cloudflare Turnstile
 
-Turnstile widget을 생성한 다음 Kubernetes Secret에 다음 값을 추가한다.
+Cloudflare Dashboard의 **Turnstile → Add widget**에서 `persona.shinkeonkim.com` hostname과
+**Managed** mode로 widget을 만든 다음 Kubernetes Secret에 다음 값을 추가한다.
 
 ```text
 PERSONA_TURNSTILE_SITE_KEY=<public site key>
@@ -25,8 +26,15 @@ PERSONA_TURNSTILE_SECRET_KEY=<secret key>
 매 요청마다 Siteverify API를 호출하며, 검증 실패 시 모델을 호출하지 않는다. 한 값만
 설정하는 것은 활성화로 취급하지 않는다.
 
+- Dashboard: https://dash.cloudflare.com/?to=/:account/turnstile
+- 홈랩 설정 스크립트: `oh-my-homelab/scripts/persona/configure-turnstile-secrets.sh`
+- 상세 운영 문서: `oh-my-homelab/docs/manuals/20_persona_Turnstile운영.md`
 - 공식 문서: https://developers.cloudflare.com/turnstile/get-started/
 - 서버 검증: https://developers.cloudflare.com/turnstile/get-started/server-side-validation/
+
+Free 플랜은 계정당 widget 20개, widget당 hostname 10개와 challenge 요청 무제한을 무료로
+제공하므로 현재 서비스 규모에서 별도 비용은 없다. Site Key는 공개 값이지만 Secret Key는
+평문으로 Git에 커밋하지 않고 홈랩 SOPS Secret에만 보관한다.
 
 ## Cloudflare WAF 긴급 차단
 
